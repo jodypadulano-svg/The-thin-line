@@ -39,4 +39,4 @@ Le schede dei singoli personaggi sono nella cartella [personaggi](personaggi/):
 - [Joanie](personaggi/joanie.md) — la migliore amica (archetipo 5): il lato sentimentale emerge molto più avanti
 - [Jacob](personaggi/jacob.md) — ex di Sara (archetipo 6): passato, ritorno e percorso opzionale
 - [Darius](personaggi/darius.md) — migliore amico di Josh (archetipo 7): percorso opzionale di sostituzione progressiva, solo su scelta del giocatore e con Corruption elevata
-Archetipo senza scheda ancora: la capa di Sara (8).
+- [Barbara](personaggi/barbara.md) — capa di Sara (archetipo 8): rete di colleghe devote, percorso opzionale con Corruption molto elevata ed epilogo di assimilazione nel gruppo.
