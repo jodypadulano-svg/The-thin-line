@@ -32,10 +32,10 @@ label daniel_1_cena_aziendale:
             s "Mi ha conquistata trattandomi con rispetto. Cosa che a quanto pare non si impara in tutti i lavori."
             da "Touché. Vedi? Lei sì che ha carattere. Forse dovresti farti prestare un po' del suo, in ufficio."
             sp "L'ha ribaltata di nuovo. Come fa?"
-            $ affinita("daniel", 2, "A Daniel piace chi gli tiene testa.")
+            $ interest("daniel", 2, "A Daniel piace chi gli tiene testa.")
             $ retroscena("daniel", "Più Sara gli tiene testa, più Daniel si diverte.")
         "Prendere la mano di [nome_compagno] sotto il tavolo.":
-            $ legame(2, "[nome_compagno] sente la tua mano.")
+            $ interest("josh", 2, "[nome_compagno] sente la tua mano.")
             n "Sara non dice niente. Stringe la mano di [nome_compagno] sotto il tovagliolo."
             da "Che tenerezza. Lui ha bisogno di sostegno, eh?"
         "Cambiare discorso con eleganza.":
@@ -52,12 +52,11 @@ label daniel_1_cena_aziendale:
     menu:
         sp "Cosa gli dico?"
         "Consolarlo: «È lui il problema, non tu.»":
-            $ legame(3, "Sara sta dalla parte di [nome_compagno].")
+            $ interest("josh", 3, "Sara sta dalla parte di [nome_compagno].")
             s "È lui il problema. Non tu. È un pallone gonfiato."
             c "È il mio capo, Sara. Non posso permettermi di rispondergli."
         "Chiedergli perché non ha reagito.":
-            $ legame(-2)
-            $ curiosita(1)
+            $ interest("josh", -2, "Per la prima volta, lo vede debole.")
             s "Perché non gli hai detto niente? Neanche una parola."
             c "E cosa avrei dovuto dirgli? Lui firma il mio contratto."
             sp "Ha ragione. Eppure..."
@@ -111,13 +110,18 @@ label daniel_3_festa:
     menu:
         sp "Un editore. Un editore vero."
         "Raccontargli il romanzo con entusiasmo.":
-            $ affinita("editore", 4, "L'editore ha visto la tua passione.")
+            $ interest("editore", 4, "L'editore ha visto la tua passione.")
             s "Un romanzo su una donna che trova una porta nel suo appartamento... una porta che prima non c'era."
             ed "E cosa c'è dietro?"
             s "È quello che sto cercando di capire. Da tre capitoli."
             ed "È la risposta più onesta che abbia sentito da uno scrittore da anni."
+        "«Le mando le pagine domani stesso. Non se ne pentirà.»" (confidence=25):
+            $ interest("editore", 5, "L'editore ama chi crede in se stesso.")
+            $ confidence(2)
+            s "Le mando le prime cinquanta pagine domani stesso. Non se ne pentirà."
+            ed "Lo spero. Mi piace chi non chiede scusa per il proprio talento."
         "Restare sulle sue, per timidezza.":
-            $ affinita("editore", 2)
+            $ interest("editore", 2)
             s "Oh, niente di serio. Ci provo, nel tempo libero."
             ed "Tutti i romanzi seri cominciano come niente di serio."
 

@@ -27,12 +27,12 @@ label ep1_prologo:
 
     menu:
         sp "E stasera..."
-        "Chiudere il portatile e passare la serata con lui.":
-            $ legame(3, "Sara sceglie lui, stasera.")
+        "Chiudere il portatile e passare la serata con lui." (josh=30):
+            $ interest("josh", 3, "Sara sceglie lui, stasera.")
             s "Basta capitolo tre. Pasta e divano?"
             c "Ti sposerei solo per questa frase."
         "Scrivere ancora un'ora: l'ispirazione è arrivata.":
-            $ curiosita(1)
+            $ confidence(2, "Sara crede un po' di più nel suo romanzo.")
             $ segna("ep1_prologo_scrive")
             s "Dammi un'ora. Credo di aver capito cosa c'è dietro la porta."
             c "Vai. Io scaldo la pasta e ti porto un tè caldo."
@@ -71,8 +71,8 @@ label ep1_finale:
 
     menu:
         sp "Dovrei dirglielo."
-        "Raccontargli tutto dell'editore.":
-            $ legame(2, "Sara condivide il suo sogno con [nome_compagno].")
+        "Raccontargli tutto dell'editore." (josh=30):
+            $ interest("josh", 2, "Sara condivide il suo sogno con [nome_compagno].")
             s "Alla festa ho conosciuto un editore. Vuole leggere il mio romanzo."
             c "Cosa? Ma è fantastico! Visto? Te l'avevo detto."
             c "...E te l'ha presentato Daniel?"
@@ -80,7 +80,7 @@ label ep1_finale:
             n "Lui resta in silenzio un momento di troppo."
         "Tenerlo per sé, per ora.":
             $ segreto("ep1_editore", "Il biglietto dell'editore, e l'aiuto di Daniel.")
-            $ curiosita(2)
+            $ corruption(2, "Sara tiene per sé un regalo di Daniel.")
             s "Sì... pensavo alla festa. Dormi."
             sp "Gliene parlerò. Quando ci sarà qualcosa di vero da dire."
             sp "Non è un segreto. È solo... non ancora."

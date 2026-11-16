@@ -96,7 +96,7 @@ label fine_retroscena:
 ## ricorda quale CG va prodotta.  Uso:  $ cg("Sara entra in palestra, inquadratura larga")
 
 screen segnaposto_cg(descrizione):
-    zorder 40
+    zorder -1   # sotto i menu delle scelte
     frame:
         align (0.5, 0.35)
         xmaximum 1300

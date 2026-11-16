@@ -53,7 +53,7 @@ label simon_s2_correzioni:
         "Distogliere lo sguardo: non sono affari suoi.":
             sp "Sono affari di Joanie. Non miei."
         "Continuare a guardare.":
-            $ curiosita(2, "Sara si fa una domanda nuova.")
+            $ corruption(1, "Sara si fa una domanda nuova.")
             $ segna("ep1_guarda_chiara")
             sp "Una mano sul fianco. Un'altra sulla schiena. È così che si fa?"
             sp "E se fosse stata la mia, di schiena?"
@@ -82,7 +82,7 @@ label simon_s3_locale:
     sp "In palestra è tutto «petto in fuori» e «peso sui talloni». Qui sembra un altro."
     sp "Più... sciolto. Più simpatico."
     $ nota_sara("simon", "Fuori dalla palestra è spontaneo e divertente.")
-    $ affinita("simon", 2)
+    $ interest("simon", 2)
     si "Vi lascio, mi aspettano. Sara: martedì niente scuse!"
     return
 
@@ -99,13 +99,14 @@ label simon_s4_chiara_cancella:
         "Entrare lo stesso.":
             $ segna("ep1_palestra_da_sola")
             sp "Ho pagato l'abbonamento. Entro."
+            $ confidence(3, "Sara entra da sola.")
         "Tornare a casa.":
             sp "Un'altra volta. Stasera no."
             $ vai("casa", "Casa — sera")
             c "Già di ritorno?"
             s "Joanie mi ha dato buca. Ho deciso che il divano era un allenamento sufficiente."
             c "Il divano ti ringrazia."
-            $ legame(1)
+            $ interest("josh", 1)
     return
 
 
@@ -122,12 +123,19 @@ label simon_s5_allenamento:
 
     menu:
         "«Certo.»":
-            $ affinita("simon", 5, "Simon si ricorderà di questa serata.")
+            $ interest("simon", 5, "Simon si ricorderà di questa serata.")
             n "Le sue dita le spostano appena la spalla. Un tocco tecnico, rapido."
             sp "Joanie ha ragione su una cosa: ha le mani sicure."
             sp "Ma è il suo lavoro. Niente di più."
+        "«Mi sistemi anche l'altra?», con un sorriso." (corruption=15):
+            $ interest("simon", 6, "Simon ha notato il tuo sorriso.")
+            $ corruption(3, "Un gioco innocente. Quasi.")
+            s "Già che ci sei... mi sistemi anche l'altra?"
+            si "Agli ordini."
+            n "Questa volta le sue mani restano un secondo in più. Nessuno dei due lo fa notare."
+            sp "Che cosa sto facendo?"
         "«Faccio da sola, grazie. Dimmi tu come.»":
-            $ affinita("simon", 3, "Simon rispetta i tuoi spazi.")
+            $ interest("simon", 3, "Simon rispetta i tuoi spazi.")
             si "Nessun problema. Abbassa la spalla... ecco, perfetto."
             $ nota_sara("simon", "Ha capito al volo che preferiva non essere toccata.")
 

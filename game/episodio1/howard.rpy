@@ -19,7 +19,7 @@ label howard_1_pianerottolo:
     menu:
         sp "Ha voglia di chiacchierare. Come sempre."
         "Fermarsi un minuto con lui.":
-            $ affinita("howard", 2, "Howard ha apprezzato il tuo minuto.")
+            $ interest("howard", 2, "Howard ha apprezzato il tuo minuto.")
             s "Come va la schiena?"
             ho "Ti sei ricordata! Meglio, meglio. Sei sempre così gentile, tu."
             ho "Se ti serve qualcosa, qualsiasi cosa, io sono qui accanto. Lo sai."
@@ -60,7 +60,7 @@ label howard_2_spesa:
     n "Quella sera, piegando il bucato, Sara cerca una cosa che non trova."
     sp "Strano. Sarà rimasto in lavatrice. O l'ho messo da un'altra parte."
     sp "Pazienza."
-    $ affinita("howard", 1)
+    $ interest("howard", 1)
     return
 
 
@@ -115,11 +115,11 @@ label howard_3_chiusa_fuori:
     menu:
         sp "Cosa gli rispondo?"
         "«Certo, Howard. Un caffè ogni tanto.»":
-            $ affinita("howard", 5, "Howard non dimenticherà questa risposta.")
+            $ interest("howard", 5, "Howard non dimenticherà questa risposta.")
             $ segna("ep1_howard_caffe", "si")
             ho "Davvero? Oh... grazie. Grazie, Sara."
         "«Quando capita, volentieri.»":
-            $ affinita("howard", 2)
+            $ interest("howard", 2)
             $ segna("ep1_howard_caffe", "forse")
             ho "Quando capita. Certo. Io sono sempre qui."
         "«Scusami Howard, ho davvero poco tempo.»":

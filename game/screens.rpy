@@ -208,9 +208,24 @@ style input:
 screen choice(items):
     style_prefix "choice"
 
+    ## Il segnaposto [CG] coprirebbe le scelte: lo nascondiamo.
+    on "show" action Hide("segnaposto_cg")
+
     vbox:
         for i in items:
-            textbutton i.caption action i.action
+            ## Frasi con requisito (A3): es.  "Testo" (corruption=15):
+            ## Se il requisito manca, la frase resta visibile ma in grigio.
+            if i.kwargs and not requisiti_ok(i.kwargs):
+                button:
+                    action None
+                    xalign 0.5
+                    vbox:
+                        ## annulla la posizione di choice_vbox (style_prefix)
+                        xalign 0.5 ypos 0 yanchor 0.0
+                        text i.caption xalign 0.5 color "#ffffff55"
+                        text "Richiede " + testo_requisiti(i.kwargs) xalign 0.5 size 22 color "#ff5c7a"
+            else:
+                textbutton i.caption action i.action
 
 
 style choice_vbox is vbox
@@ -766,8 +781,8 @@ screen preferences():
                 vbox:
                     style_prefix "check"
                     label _("Scelte")
-                    textbutton _("Mostra effetti") action ToggleField(persistent, "mostra_effetti")
-                    textbutton _("Mostra numeri") action ToggleField(persistent, "mostra_numeri")
+                    textbutton _("Mostra effetti") action ToggleField(persistent, "effetti_visibili")
+                    textbutton _("Mostra numeri") action ToggleField(persistent, "numeri_visibili")
 
                 ## Vbox addizionali del tipo "radio_pref" o "check_pref" possono
                 ## venire aggiunti qui, per offrire ulteriori opzioni al

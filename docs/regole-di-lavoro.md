@@ -21,6 +21,7 @@ Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude
 ## 4. Prompt per le immagini
 - Quando sarà il momento, Claude scrive i prompt per generare le immagini di ogni scena (le didascalie `[CG]` nel codice sono la base).
 - Strumento: **Mage**. Stile: **render 3D** come i giochi di riferimento.
+- **Le immagini le genera Jody**: Claude scrive solo i prompt e non avvia generazioni su Mage.
 - Ogni prompt specifica:
   - **A. Gli attori** presenti nell'immagine (riferiti agli attori già generati, vedi punto 5);
   - **B. Il luogo** (riferito ai luoghi già generati, vedi punto 5).

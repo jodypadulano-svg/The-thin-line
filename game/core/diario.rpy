@@ -9,18 +9,29 @@
 default diario_pagina = "sara"
 
 init python:
-    def descrizione_legame(v):
+    def descrizione_josh(v):
         if v >= 80: return "Innamoratissima."
         if v >= 60: return "Innamorata, ma qualcosa la turba."
-        if v >= 40: return "Si sente lontana da lui."
-        if v >= 20: return "La coppia è in crisi."
-        return "Non sa più cosa prova."
+        if v >= SOGLIA_GENTILE_CON_JOSH: return "Si sente lontana da lui."
+        return "Non riesce più a essere dolce con lui."
 
-    def descrizione_curiosita(v):
-        if v >= 60: return "Ha voglia di scoprire chi può diventare."
-        if v >= 30: return "Si fa domande che prima non si faceva."
-        if v >= 10: return "Qualcosa ha acceso la sua curiosità."
-        return "La sua vita le basta così com'è."
+    def descrizione_corruption(v):
+        if v >= 75: return "Non riconosce più la donna che era."
+        if v >= 45: return "Ha superato confini che giurava di non toccare."
+        if v >= 15: return "Si concede cose che prima non si concedeva."
+        if v > 0: return "Qualche piccola crepa."
+        return "Fedele a se stessa e a lui."
+
+    def descrizione_suspicion(v):
+        if v >= 60: return "Ha capito che qualcosa non va."
+        if v >= 30: return "Fa domande. Troppe."
+        if v > 0: return "Ogni tanto la guarda in modo strano."
+        return "Si fida ciecamente."
+
+    def descrizione_confidence(v):
+        if v >= 70: return "Sa quanto vale e non ha paura di mostrarlo."
+        if v >= 40: return "Comincia a credere in se stessa."
+        return "Una sognatrice che non crede abbastanza in sé."
 
     def testo_tappa(p):
         lista = TAPPE.get(p.chiave, [])
@@ -56,10 +67,10 @@ screen diario_sara():
     vbox:
         spacing 14
         label "Sara"
-        text "Con [nome_compagno]: " + descrizione_legame(sara_legame)
-        text "Dentro di sé: " + descrizione_curiosita(sara_curiosita)
-        if persistent.mostra_numeri:
-            text "Legame [sara_legame]/100  ·  Curiosità [sara_curiosita]/100" color "#ffffff88"
+        use riga_variabile("Interest [nome_compagno]", interest_josh, "josh", descrizione_josh(interest_josh))
+        use riga_variabile("Corruption", sara_corruption, "corruption", descrizione_corruption(sara_corruption))
+        use riga_variabile("Confidence", sara_confidence, "confidence", descrizione_confidence(sara_confidence))
+        use riga_variabile("Suspicion di [nome_compagno]", josh_suspicion, "suspicion", descrizione_suspicion(josh_suspicion))
 
         null height 10
         label "Cosa nasconde a [nome_compagno]"
@@ -68,6 +79,22 @@ screen diario_sara():
                 text "• " + descrizione
         else:
             text "Niente. Per ora." color "#ffffff88"
+
+        null height 10
+        label "Guardaroba"
+        for a in abiti_sbloccati():
+            text "• " + a.nome + " — " + a.descrizione
+
+screen riga_variabile(nome, valore, chiave_colore, descrizione):
+    vbox:
+        spacing 4
+        hbox:
+            spacing 16
+            text nome color COLORI[chiave_colore] min_width 380
+            if persistent.numeri_visibili:
+                bar value StaticValue(valore, 100) xmaximum 400 yalign 0.5
+                text "[valore]/100" color "#ffffff88"
+        text descrizione size 24 color "#ffffffaa"
 
 screen diario_personaggio(p):
     vbox:
@@ -78,11 +105,17 @@ screen diario_personaggio(p):
             text "Sara ha chiuso questa porta." color "#c8385a"
         else:
             text testo_tappa(p)
-        if persistent.mostra_numeri:
+        if persistent.numeri_visibili:
             hbox:
                 spacing 16
-                bar value StaticValue(p.affinita, 100) xmaximum 500 yalign 0.5
-                text "Affinità [p.affinita]/100 · tappa [p.tappa]" color "#ffffff88"
+                text "Interest" color COLORI.get(p.chiave, "#ffffff") min_width 180
+                bar value StaticValue(p.interest, 100) xmaximum 400 yalign 0.5
+                text "[p.interest]/100" color "#ffffff88"
+            if p.soglia:
+                if sara_corruption >= p.soglia:
+                    text "Corruption sufficiente per andare oltre ([p.soglia])." color COLORI["corruption"]
+                else:
+                    text "Per andare oltre serve Corruption [p.soglia]." color "#ffffff88"
 
         null height 10
         label "Cosa sa Sara"

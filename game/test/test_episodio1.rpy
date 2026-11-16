@@ -12,6 +12,8 @@ init python:
         contatore = [0]
         def scegli(items, **kwargs):
             opzioni = [v for (t, v) in items if v is not None]
+            ## Come il giocatore: le frasi bloccate (A3) non si possono scegliere.
+            opzioni = [v for v in opzioni if not getattr(v, "kwargs", None) or requisiti_ok(v.kwargs)]
             contatore[0] += 1
             if strategia == "prima":
                 i = 0
@@ -62,3 +64,15 @@ testsuite foto:
         click "Howard"
         pause 0.5
         screenshot "diario_howard.png"
+
+testsuite foto_scelte:
+    enabled False
+    testcase bloccata:
+        $ store.menu = renpy.display_menu
+        run Jump("simon_s5_allenamento")
+        advance until screen "choice" timeout 30.0
+        pause 0.5
+        screenshot "scelta_bloccata.png"
+        click "«Certo.»"
+        pause 0.2
+        screenshot "notifica.png"

@@ -7,41 +7,51 @@ Come funziona la base del gioco in Ren'Py (cartella `game/`). Le ragioni delle s
 ## 1. Principi
 
 - **Storia prima di tutto, niente grind**: una trama lineare a giornate, con scene opzionali e bivi. Niente mappe da cliccare.
-- **Ogni percorso è a sé**: affinità e tappe per persona; Sara non diventa "corrotta" in generale.
+- **Ogni percorso è a sé**: Interest e soglie di Corruption per persona; Sara non diventa attratta da chiunque.
 - **Ironia drammatica**: i retroscena mostrano al giocatore ciò che Sara non sa.
-- **Trasparenza a scelta**: le Opzioni permettono di mostrare o nascondere gli effetti delle scelte e i numeri.
+- **Effetti visibili**: ogni variazione compare a schermo con il numero (A2); dalle Opzioni si può nascondere.
 - **Giocabile senza grafica**: colori al posto degli sfondi, didascalie `[CG]` al posto delle immagini.
 
-## 2. Statistiche
+## 2. Variabili
 
-| Cosa | Dove | Valori | Significato |
+| Cosa | Nome nel codice | Valori | Significato |
 |---|---|---|---|
-| `sara_legame` | Sara | 0-100, parte da 80 | Legame con il compagno |
-| `sara_curiosita` | Sara | 0-100, parte da 0 | Quanto Sara guarda oltre i propri confini |
-| `affinita` | ogni percorso | 0-100 | Quanto è cresciuto il rapporto (non è attrazione) |
-| `tappa` | ogni percorso | 0, 1, 2… | A che punto è lo slow burn; mai indietro |
-| `chiuso` | ogni percorso | sì/no | Sara ha chiuso la porta: niente più scene |
-| `segreti` | Sara | elenco | Cose che Sara nasconde al compagno |
-| `fatti` | gioco | chiave → valore | Scelte puntuali da ricordare (es. `ep1_palestra_da_sola`) |
+| **Corruption** | `sara_corruption` | 0-100, parte da 0 | Sale con ogni scelta «sbagliata» a favore di un percorso; apre le scene oltre la soglia del percorso |
+| **Interest toward XXX** | `percorsi[x].interest`, `interest_josh` | 0-100; Josh parte da 80 | 9 valori (8 percorsi + Josh); possono scendere. Sotto 30 verso Josh, Sara non riesce più a fare gesti carini (valore provvisorio) |
+| **Suspicion** | `josh_suspicion` | 0-100, parte da 0 | Il sospetto di Josh: bugie, segreti, rischi con lui vicino |
+| **Confidence** | `sara_confidence` | 0-100, parte da 20 | Fiducia in sé: sblocca frasi coraggiose e abiti |
+| Tappa | `percorsi[x].tappa` | 0, 1, 2… | Contatore interno dello slow burn; mai indietro |
+| Chiuso | `percorsi[x].chiuso` | sì/no | Sara ha chiuso la porta: niente più scene |
+| Segreti | `segreti` | elenco | Cose che Sara nasconde a Josh; ogni nuovo segreto alza la Suspicion di 3 |
+| Fatti | `fatti` | chiave → valore | Scelte puntuali da ricordare (es. `ep1_palestra_da_sola`) |
 
-Gli otto percorsi esistono già tutti nel codice (anche i quattro senza scheda), così i salvataggi restano compatibili quando arriveranno.
+**Soglie di Corruption** per le scene «spinte» (A7): Simon 15 · ex 25 · amico di Josh 35 · Daniel 45 · Joanie 55 · editore 65 · Howard 75 · capa 85.
+
+**Abiti** (A10): per ogni occasione (casa, palestra, ufficio, sera) Sara indossa da sola l'abito più avanzato che ha sbloccato. Quelli sicuri di sé chiedono Confidence, quelli provocanti anche Corruption. Per ora esistono solo i quattro abiti iniziali, sobri; gli altri si aggiungono scrivendo le scene.
 
 ## 3. Funzioni da usare negli script
 
 ```renpy
-$ incontra("simon")                      # primo incontro: pagina nel Diario
-$ affinita("simon", 5, "Simon se ne ricorderà.")
-$ tappa("simon", 2)                      # avanza lo slow burn
-$ chiudi("howard")                       # Sara chiude il percorso
-$ legame(3, "Sara sceglie lui, stasera.")
-$ curiosita(2)
-$ segreto("ep1_editore", "Il biglietto dell'editore.")
+$ interest("simon", 5, "Simon se ne ricorderà.")   # anche "josh"; valori negativi ok
+$ corruption(2, "Un gioco innocente. Quasi.")
+$ confidence(3, "Sara entra da sola.")
+$ suspicion(4, "Josh nota il messaggio.")
+if oltre_soglia("simon"):                  # Corruption >= soglia di Simon
+    ...
+if gentile_con_josh():                     # Interest verso Josh >= 30
+    ...
+$ vestito = abito("palestra")              # abito da usare nella scena
+call scena_nsfw("simon_doccia")            # scena generata con LM Studio o segnaposto
+$ incontra("simon")                        # primo incontro: pagina nel Diario
+$ tappa("simon", 2)
+$ chiudi("howard")
+$ segreto("ep1_editore", "Il biglietto dell'editore.")   # alza anche la Suspicion
 $ nota_sara("daniel", "Uno spaccone arrogante.")   # Diario: Cosa sa Sara
 $ retroscena("howard", "Ha rubato un capo...")      # Diario: Cosa sai tu
 $ segna("ep1_palestra_da_sola")
 if fatto("ep1_palestra_da_sola"):
     ...
-$ vai("palestra", "Palestra — sera")     # sfondo + cartello del luogo
+$ vai("palestra", "Palestra — sera")       # sfondo + cartello del luogo
 $ cg("descrizione dell'immagine da produrre")
 $ via_cg()
 call nuovo_giorno(3, "La cena aziendale")
@@ -50,18 +60,35 @@ rs "Testo che Sara non sa."
 call fine_retroscena
 ```
 
+**Frasi con requisito** (A3): si scrivono così nel menu, e se il requisito manca restano visibili in grigio con «Richiede …» sotto.
+
+```renpy
+menu:
+    "«Mi sistemi anche l'altra?», con un sorriso." (corruption=15):
+        ...
+    "«Le mando le pagine domani stesso.»" (confidence=25):
+        ...
+    "Raccontargli tutto." (josh=30):          # Interest verso Josh
+        ...
+    "Frase per chi è vicino a Simon" (simon=20, corruption=10):
+        ...
+```
+
 Personaggi: `s` Sara, `sp` pensieri di Sara, `c` il compagno (nome scelto dal giocatore, predefinito «Josh»), `ch` Joanie, `si` Simon, `da` Daniel, `ho` Howard, `ed` l'editore, `n` narratore, `rs` voce dei retroscena.
 
 ## 4. Diario
 
-Dal menu rapido (**Diario**): una pagina per Sara (legame, curiosità, segreti) e una per ogni personaggio incontrato, con la tappa raccontata a parole, "Cosa sa Sara" e "Cosa sai tu". Con "Mostra numeri" attivo compaiono anche affinità e tappa.
+Dal menu rapido (**Diario**): una pagina per Sara (Interest verso Josh, Corruption, Confidence, Suspicion, segreti, guardaroba) e una per ogni personaggio incontrato, con la tappa raccontata a parole, l'Interest, la soglia di Corruption, "Cosa sa Sara" e "Cosa sai tu". Con "Mostra numeri" spento restano solo le descrizioni a parole.
 
 ## 5. Struttura dei file
 
 ```
 game/
   script.rpy              avviso 18+, nome del compagno, istruzioni
-  core/stato.rpy          statistiche e funzioni
+  core/stato.rpy          variabili, soglie e funzioni
+  core/notifiche.rpy      notifiche a schermo delle variazioni
+  core/abiti.rpy          guardaroba di Sara
+  core/nsfw.rpy           aggancio delle scene generate con LM Studio
   core/personaggi.rpy     personaggi
   core/presentazione.rpy  sfondi provvisori, cartelli, retroscena, segnaposto CG
   core/diario.rpy         schermata Diario
