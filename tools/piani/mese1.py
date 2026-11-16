@@ -82,8 +82,8 @@ D.append(("9 Mar", [
    S(0, "Rispondere", ("Affettuosa", {"Josh": 1}), ("Infastidita", {"Josh": -1}))]),
  ("Sera", "Senza chiavi, ospite di Howard: Howard 3, retroscena del pianto finto", "Howard", [
    S(0, "Casa di Howard è sporca", ("Far finta di niente", {}), ("Offrirsi di aiutarlo a pulire un giorno", {"Howard": 2})),
-   S(0, "Howard piange", ("Parole gentili, a distanza", {"Howard": 1}), ("Abbracciarlo", {"Howard": 2})),
-   S(1, "«Possiamo vederci più spesso?»", ("«Certo, un caffè ogni tanto»", {"Howard": 5}), ("«Quando capita»", {"Howard": 2}), ("«Ho poco tempo»", {}))]),
+   S(0, "Howard piange", ("Parole gentili, a distanza", {"Howard": 1}), ("Abbracciarlo", {"Howard": 1})),
+   S(1, "«Possiamo vederci più spesso?»", ("«Certo, un caffè ogni tanto»", {"Howard": 3}), ("«Quando capita»", {"Howard": 2}), ("«Ho poco tempo»", {}))]),
 ]))
 D.append(("10 Mer", [
  ("Lavoro", "Barbara le assegna un pezzo extra fuori mansione", "Barbara", [
@@ -95,7 +95,7 @@ D.append(("11 Gio", [
  ("Lavoro", "Pranzo", "Jessica", [
    S(0, "Pausa pranzo", ("Con Jessica", {}), ("Da sola", {"Conf": 1}))]),
  ("Sera", "Howard «ritrova» le chiavi (I20), retroscena della copia", "Howard, Josh", [
-   S(0, "Ringraziarlo", ("Una stretta di mano", {"Howard": 1}), ("Un abbraccio", {"Howard": 2}))]),
+   S(0, "Ringraziarlo", ("Una stretta di mano", {"Howard": 1}), ("Un abbraccio", {"Howard": 1}))]),
 ]))
 D.append(("12 Ven", [
  ("Lavoro", "Esce il primo pezzo di Sara", "", [
@@ -142,7 +142,7 @@ D.append(("18 Gio", [
  ("Lavoro", "Barbara le chiede di restare mezz'ora in più", "Barbara", [
    S(0, "Restare?", ("Sì", {"Barbara": 1}), ("Rifiutare con garbo", {"Conf": 1}))]),
  ("Sera", "Josh fa straordinari (I14); caffè da Howard se al giorno 9 ha detto sì o «quando capita»", "Howard", [
-   S(0, "Andare da Howard?", ("Sì", {"Howard": 3}), ("Trovare una scusa", {})),
+   S(0, "Andare da Howard?", ("Sì", {"Howard": 2}), ("Trovare una scusa", {})),
    S(0, "Da Howard", ("Lavare i piatti mentre parlano", {"Howard": 2}), ("Solo chiacchierare", {}))]),
 ]))
 D.append(("19 Ven", [
@@ -188,7 +188,7 @@ D.append(("25 Gio", [
 D.append(("26 Ven", [
  ("Sera", "Howard ha visto Sara uscire elegante martedì (I19): se Interest Howard 5+, tace e lo fa capire a Sara; altrimenti lo dice a Josh «per caso»", "Howard, Josh", [
    S(0, "Esito (non sceglie il giocatore)", ("Howard tace", {"Howard": 2}), ("Howard parla a Josh", {"Susp": 3})),
-   S(0, "Dopo", ("Serata a casa", {}), ("Aiutare Howard a sistemare la cucina", {"Howard": 3}))]),
+   S(0, "Dopo", ("Serata a casa", {}), ("Aiutare Howard a sistemare la cucina", {"Howard": 2}))]),
 ]))
 D.append(("27 Sab", [
  ("Sera", "Uscita a quattro con Joanie e Mark; Mark tranquillizza Josh (I13)", "Joanie, Mark, Josh", [

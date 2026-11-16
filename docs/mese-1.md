@@ -47,11 +47,11 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 | **8 Lun** | Lavoro | Giornata normale | Joanie | **In ufficio:** Concentrata sul pezzo → Conf +1 · Chattare di nascosto con Joanie → Joanie +1 |
 |  | Sera | Palestra: Joanie dà buca (I8); Simon 4 e, se entra, Simon 5 | Simon, Joanie | ★ **Entrare da sola?:** Entrare → Conf +3 · Tornare a casa → Josh +1<br>**Simon le sistema la spalla:** «Certo» → Simon +5 · 🔒 Corr 15 «Mi sistemi anche l'altra?» → Simon +6, Corr +3 · «Faccio da sola» → Simon +3<br>**A casa:** Raccontare a Josh dell'allenamento con Simon → — · Non dirlo → Corr +1, Susp +1 |
 | **9 Mar** | Lavoro | Messaggio di Josh: «Daniel mi ha messo di turno fino alle 21» (I14) | Josh | **Rispondere:** Affettuosa → Josh +1 · Infastidita → Josh -1 |
-|  | Sera | Senza chiavi, ospite di Howard: Howard 3, retroscena del pianto finto | Howard | **Casa di Howard è sporca:** Far finta di niente → — · Offrirsi di aiutarlo a pulire un giorno → Howard +2<br>**Howard piange:** Parole gentili, a distanza → Howard +1 · Abbracciarlo → Howard +2<br>★ **«Possiamo vederci più spesso?»:** «Certo, un caffè ogni tanto» → Howard +5 · «Quando capita» → Howard +2 · «Ho poco tempo» → — |
+|  | Sera | Senza chiavi, ospite di Howard: Howard 3, retroscena del pianto finto | Howard | **Casa di Howard è sporca:** Far finta di niente → — · Offrirsi di aiutarlo a pulire un giorno → Howard +2<br>**Howard piange:** Parole gentili, a distanza → Howard +1 · Abbracciarlo → Howard +1<br>★ **«Possiamo vederci più spesso?»:** «Certo, un caffè ogni tanto» → Howard +3 · «Quando capita» → Howard +2 · «Ho poco tempo» → — |
 | **10 Mer** | Lavoro | Barbara le assegna un pezzo extra fuori mansione | Barbara | **Il pezzo extra:** Accettare senza fiatare → — · Far notare che non è compito suo → Conf +1 |
 |  | Sera | Ancora senza chiavi | Josh | **Con Josh:** Raccontargli tutto di Howard → Josh +1 · Minimizzare → — |
 | **11 Gio** | Lavoro | Pranzo | Jessica | **Pausa pranzo:** Con Jessica → — · Da sola → Conf +1 |
-|  | Sera | Howard «ritrova» le chiavi (I20), retroscena della copia | Howard, Josh | **Ringraziarlo:** Una stretta di mano → Howard +1 · Un abbraccio → Howard +2 |
+|  | Sera | Howard «ritrova» le chiavi (I20), retroscena della copia | Howard, Josh | **Ringraziarlo:** Una stretta di mano → Howard +1 · Un abbraccio → Howard +1 |
 | **12 Ven** | Lavoro | Esce il primo pezzo di Sara |  | **A chi mandarlo per primo:** A Josh → Josh +1 · A Joanie → Joanie +1 |
 |  | Sera | Telefonata con Joanie, che la spinge | Joanie | **Di chi parlare:** Di Simon → Simon +1, Joanie +1 · Di Daniel → Daniel +1, Joanie +1 · Solo di lavoro → —<br>**Il consiglio di Joanie:** Ascoltarlo → Corr +1, Joanie +1 · Riderne → — |
 | **13 Sab** | Mattina | Shopping con Joanie per la festa | Joanie | **Il vestito per la festa:** Sobrio → — · Elegante → Conf +1 · Audace, scelto da Joanie → Corr +2, Conf +1, Joanie +1 |
@@ -72,7 +72,7 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 | **17 Mer** | Lavoro | Giornata normale |  | — |
 |  | Sera | Serata tra amici: entrano Darius e Mark; Josh e Mark legano (I13); dopo, Josh e Darius soli e flashback di Jacob (I18) | Darius, Joanie, Mark, Josh | **Durante la serata:** Stare vicina a Josh → Josh +1 · Ridere con Darius → Darius +1 · Confidarsi con Joanie in cucina → Joanie +1 |
 | **18 Gio** | Lavoro | Barbara le chiede di restare mezz'ora in più | Barbara | **Restare?:** Sì → Barbara +1 · Rifiutare con garbo → Conf +1 |
-|  | Sera | Josh fa straordinari (I14); caffè da Howard se al giorno 9 ha detto sì o «quando capita» | Howard | **Andare da Howard?:** Sì → Howard +3 · Trovare una scusa → —<br>**Da Howard:** Lavare i piatti mentre parlano → Howard +2 · Solo chiacchierare → — |
+|  | Sera | Josh fa straordinari (I14); caffè da Howard se al giorno 9 ha detto sì o «quando capita» | Howard | **Andare da Howard?:** Sì → Howard +2 · Trovare una scusa → —<br>**Da Howard:** Lavare i piatti mentre parlano → Howard +2 · Solo chiacchierare → — |
 | **19 Ven** | Lavoro | Giornata normale |  | — |
 |  | Sera | Serata tra ragazze al locale di Jacob: il rincontro (I9), retroscena del messaggio di Joanie | Jacob, Joanie | ★ **Jacob la saluta:** Restare fredda → — · Ridere a un vecchio ricordo → Jacob +3, Corr +1<br>**Jacob offre da bere:** Rifiutare → — · Accettare → Jacob +1, Corr +1<br>**Il numero:** Darglielo → Jacob +2 · No (Joanie glielo darà comunque) → — |
 | **20 Sab** | Mattina | Casa editrice di Magnus (solo se ha mandato le pagine) | Magnus | **Con Magnus:** Ascoltarlo → Magnus +3, Conf +2 · Chiedergli consigli sul romanzo → Magnus +2, Conf +3 |
@@ -91,7 +91,7 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 |  | Sera | Josh torna a casa umiliato da Daniel | Josh, Daniel | ★ **Josh è a pezzi:** Consolarlo 🔒 Josh 30 → Josh +3 · Irritarsi per la sua debolezza → Josh -3, Daniel +1, Corr +1 |
 | **25 Gio** | Lavoro | Giornata normale |  | — |
 |  | Sera | Palestra | Simon | ★ **Dopo l'allenamento:** Andare a casa → Simon +2 · 🔒 Corr 15 Restare dopo la chiusura → Simon +5, Corr +3, Susp +1 |
-| **26 Ven** | Sera | Howard ha visto Sara uscire elegante martedì (I19): se Interest Howard 5+, tace e lo fa capire a Sara; altrimenti lo dice a Josh «per caso» | Howard, Josh | **Esito (non sceglie il giocatore):** Howard tace → Howard +2 · Howard parla a Josh → Susp +3<br>**Dopo:** Serata a casa → — · Aiutare Howard a sistemare la cucina → Howard +3 |
+| **26 Ven** | Sera | Howard ha visto Sara uscire elegante martedì (I19): se Interest Howard 5+, tace e lo fa capire a Sara; altrimenti lo dice a Josh «per caso» | Howard, Josh | **Esito (non sceglie il giocatore):** Howard tace → Howard +2 · Howard parla a Josh → Susp +3<br>**Dopo:** Serata a casa → — · Aiutare Howard a sistemare la cucina → Howard +2 |
 | **27 Sab** | Sera | Uscita a quattro con Joanie e Mark; Mark tranquillizza Josh (I13) | Joanie, Mark, Josh | **Effetto di Mark (automatico):** Josh si calma → Susp -3<br>**In bagno con Joanie:** Parlare d'altro → — · Raccontarle di Jacob → Joanie +2, Corr +1 |
 | **28 Dom** | Sera | Finale dell'Episodio 2: se Susp 8+, Josh le chiede del telefono; altrimenti Magnus la invita nella sua villa | Josh / Magnus | ★ **Se c'è il confronto:** Mentire bene → Corr +2 · Confessare una parte → Josh -2, Susp -5 |
 
@@ -106,7 +106,7 @@ Somma dei minimi e dei massimi di ogni scelta, come se fossero tutte disponibili
 | **Suspicion** | 0 | 13 |
 | **Interest Josh** | 68 | 100 |
 | Interest Simon | 5 | 23 |
-| Interest Howard | 3 | 25 |
+| Interest Howard | 3 | 19 |
 | Interest Daniel | 0 | 10 |
 | Interest Magnus | 4 | 9 |
 | Interest Jacob | 0 | 12 |
