@@ -4,6 +4,22 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Darius — migliore amico di Josh, percorso 7 (decisioni 16/11/2026)
+
+**Stato:** prima scheda narrativa raccolta in [darius.md](personaggi/darius.md), **da applicare** al gioco in un lotto futuro; non scrivere nuove scene o codice ora.
+
+- **Identità:** Darius è il migliore amico di Josh dai tempi delle superiori, giovane adulto (fascia indicativa 22–24 anni). Tranquillo, simpatico, apparentemente affidabile. Conosce Sara da anni, soprattutto attraverso Josh; inizialmente non ne è segretamente innamorato o attratto.
+- **Percorso solo a scelta:** parte **soltanto** se Sara ha Corruption sufficientemente alta **e il giocatore sceglie consapevolmente** di provocare Darius. Altrimenti rimane un amico leale e la relazione non si sviluppa.
+- **Apertura:** durante una normale serata fra amici, Josh si allontana; il giocatore può far provocare Darius a Sara con gesti seduttivi discreti. Darius capisce, è attratto, ma all'inizio resiste. Al ritorno di Josh Sara gli lascia uno sguardo malizioso. Nei giorni successivi Darius osserva Sara e spera in un'altra occasione; alla seconda occasione flirta con battute ambigue.
+- **Sviluppo psicologico:** Darius si giustifica dicendosi che la fedeltà è responsabilità soprattutto di Sara. Vuole impressionarla e comincia a mettere in evidenza **vantaggi reali in più ambiti** rispetto a Josh; gli ambiti concreti sono ancora aperti. Sara lo apprezza, lo sostiene davanti a Josh e partecipa ai confronti espliciti. Josh si difende; Sara argomenta abilmente e lo convince che sui singoli fatti ha ragione, anche se il suo disagio rimane comprensibile. Darius si diverte della complicità, prende coraggio e prova soddisfazione per il riconoscimento di Josh: tutte e tre le reazioni insieme.
+- **Intesa a due:** Sara e Darius, quando soli, condividono apertamente il gusto per la competizione e il loro gioco psicologico. **Obiettivo comune:** sostituire **molto gradualmente** Josh con Darius come compagno di Sara, finché Josh **si comporta spontaneamente come un semplice amico**, senza percepire un momento netto di passaggio.
+- **Progressione simultanea:** Darius diventa il riferimento quotidiano di Sara, passa sempre più tempo con lei e prende attenzioni/ruoli da compagno. Josh nota alcuni segnali, ma Sara li normalizza con spiegazioni plausibili, spesso basate su fatti veri selezionati.
+- **Gaslighting intenzionale:** Sara e Darius fanno progressivamente sentire Josh irragionevole quando si insospettisce. La manipolazione è un comportamento dei personaggi, non una conferma oggettiva che Josh si sbagli.
+- **Esempio domestico della logica:** Darius viene spesso a casa e dorme occasionalmente sul divano; Josh va a letto mentre Sara e Darius chiacchierano; in seguito Sara può addormentarsi sul divano accanto a lui. Ripetizioni e cambiamenti piccoli normalizzano fino al punto in cui Sara dorme abitualmente con Darius, mentre le normali aspettative romantiche di Josh vengono trattate come richieste strane. Sono **esempi di progressione**, non una scaletta di scene già approvata.
+- **Esito del percorso:** Josh non si considera più il fidanzato, ma **soltanto un amico**. Solo allora Sara e Darius gli fanno capire che sarebbe normale **lasciare la casa**, dato che gli amici non vivono con la coppia. Non vogliono una rottura o un'espulsione immediata. **Ancora aperta la reazione di Josh** alla richiesta di trasferirsi: nessuna delle alternative A/B/C proposte è stata scelta.
+- **Da definire:** età esatta, aspetto, mestiere, abilità specifiche, tempi e scene, soglie numeriche, possibilità di interrompere il percorso, reazione finale e questioni pratiche relative alla casa. Mantenere questo finale distinto da quelli di Magnus e Joanie.
+
+
 ### Jacob — ex di Sara, percorso 6 (decisioni 16/11/2026)
 
 **Stato:** canone narrativo approvato; da implementare in un lotto futuro, senza aggiungere scene ora. Le alternative elencate come scelte del giocatore non sono eventi obbligatori.
