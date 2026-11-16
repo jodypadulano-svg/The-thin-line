@@ -15,3 +15,4 @@ Scheda narrativa approvata il 16/11/2026. **Da applicare al gioco in un lotto su
 - **Possibile finale Jacob:** se Sara sceglie Jacob e ne accetta consapevolmente la non esclusività, diventa la sua **compagna principale**. Jacob continua ad avere altre avventure, ma **pretende fedeltà da Sara**: possessività e doppio standard sono tratti del personaggio, non giudizi morali del gioco. Il giocatore può anche rifiutare questo assetto e restare con Josh. Non approfondire ora dettagli quotidiani dell'epilogo: priorità al percorso giocabile.
 - **Ancora aperto:** esatti punti di inserimento, variabili e soglie, modalità del bacio se rifiutato, conseguenze dei bivi, intrecci con gli altri percorsi. Nessuna scena o codice da scrivere ora.
 
+**Aspetto (Jody, 16/11/2026):** **testa rasata**, **massiccio ma non grasso**, sicuro di sé, **pizzetto senza baffi**. Circa 35 anni.

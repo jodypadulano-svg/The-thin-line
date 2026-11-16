@@ -1,5 +1,9 @@
 # The Thin Line — Prompt degli attori (Mage · Mango 4)
 
+> **Aggiornamento 16/11/2026 — stile acquerello.** Lo stile del gioco è **acquerello e matita** (vedi regole, punto 4). Blocco di stile da usare in **tutti** i prompt, al posto di quello 3D:
+> `Watercolor and pencil illustration: visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain, warm soft palette. Clearly a hand-painted illustration, not photorealistic.`
+> Sara: capelli castani con riflessi ramati, ondulati, alle spalle; lentiggini. I prompt qui sotto restano come riferimento per i tratti dei personaggi.
+
 Bozza di lavoro | 16 novembre 2026 · Regole: [regole-di-lavoro.md](../regole-di-lavoro.md), punti 4 e 5.
 
 Le immagini le generi tu su Mage. Qui ci sono solo i prompt.
@@ -32,7 +36,7 @@ Full-body reference of @sara standing in a relaxed neutral pose, front view. Ver
 ```
 
 ## Josh — `@josh`
-La bibbia non lo descrive. Proposta **(P)**: un uomo comune, rassicurante, credibile come compagno innamorato. Meno muscoloso di Simon (la scheda di Simon lo richiede), meno affascinante di Daniel.
+**Approvato da Jody (16/11):** il Josh generato è **bello** (volto da modello), snello e non atletico; si tiene così. I prompt qui sotto sono quelli di partenza. Proposta originale **(P)**: un uomo comune, rassicurante, credibile come compagno innamorato. Meno muscoloso di Simon (la scheda di Simon lo richiede), meno affascinante di Daniel.
 
 **Ritratto 4:5**
 ```
@@ -109,3 +113,32 @@ Portrait of Magnus, a distinguished man aged 68, a wealthy book publisher, not c
 Full-body reference of @magnus standing at ease holding a whisky glass, front view. Medium height, slightly stocky. Refined understated outfit: dark-navy velvet blazer, black turtleneck, gray wool trousers, brown suede loafers. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
+---
+
+# Seconda serie (16/11/2026)
+
+Dopo il primo Josh lo **stile va messo all'inizio** del prompt, altrimenti Mango tende al fotografico. Josh è bello: Simon, Daniel e Jacob devono staccarsi da lui ancora di più.
+
+## Jacob — `@jacob`
+Dalla [scheda](../personaggi/jacob.md): circa 35 anni, bellissimo, atletico, fisicamente imponente, carismatico, dominante, donnaiolo. Dettagli **(P)**.
+
+**Ritratto 4:5** (stile all'inizio, come per Josh)
+```
+High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look. Portrait of Jacob, a strikingly handsome adult man around thirty-five, tall and physically imposing, broad powerful shoulders, chiseled jaw, short dark hair with a slight undercut, dark stubble, intense dark eyes, a confident cocky half-smile of a man who always gets what he wants, wearing a fitted black t-shirt that shows strong arms. Head-and-shoulders framing, looking at the camera. Realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+```
+
+## Darius — `@darius`
+Dalla [scheda](../personaggi/darius.md): 22-24 anni, migliore amico di Josh dalle superiori, tranquillo, simpatico, apparentemente affidabile. Dettagli **(P)**.
+
+**Ritratto 4:5** (stile all'inizio, come per Josh)
+```
+High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look. Portrait of Darius, an adult man aged 23, friendly and calm face, warm brown skin, short black curly hair, neat short beard, dark brown eyes, an easy relaxed smile that inspires trust, wearing a dark green casual overshirt over a white t-shirt. Head-and-shoulders framing, looking at the camera. Realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+```
+
+## Barbara — `@barbara`
+Dalla [scheda](../personaggi/barbara.md): circa 60 anni, molto corpulenta, vistosa, capelli rosso acceso tinti, trucco marcato, abiti animalier.
+
+**Ritratto 4:5** (stile all'inizio, come per Josh)
+```
+High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look. Portrait of Barbara, a flamboyant adult woman around sixty, very full-figured and voluptuous, bright dyed red hair styled in big volume, heavy dramatic makeup with bold red lips and winged eyeliner, large gold earrings, glasses on a gold chain, a theatrical, imperious and mischievous smile, wearing a low-cut leopard-print dress. Head-and-shoulders framing, looking at the camera. Realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+```

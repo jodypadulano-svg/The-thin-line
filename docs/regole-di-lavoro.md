@@ -20,7 +20,7 @@ Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude
 
 ## 4. Prompt per le immagini
 - Quando sarà il momento, Claude scrive i prompt per generare le immagini di ogni scena (le didascalie `[CG]` nel codice sono la base).
-- Strumento: **Mage**. Stile: **render 3D** come i giochi di riferimento.
+- Strumento: **Mage**. Stile: **acquerello e matita** (deciso il 16/11/2026, sostituisce il render 3D). Motivi: è chiaramente illustrato, quindi rispetta le regole di Patreon sull'AI (vietato l'iperrealismo per i contenuti 18+); e il contrasto tra l'acquerello dolcissimo e la corruzione di Sara è parte dell'identità del gioco.
 - **Le immagini le genera Jody**: Claude scrive solo i prompt e non avvia generazioni su Mage.
 - Ogni prompt specifica:
   - **A. Gli attori** presenti nell'immagine (riferiti agli attori già generati, vedi punto 5);
@@ -40,6 +40,7 @@ Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude
 ## 7. Parti NSFW con LM Studio
 - Le parti esplicite non le scrive Claude: si generano con un modello in **LM Studio** addestrato apposta.
 - Claude scrive tutto il resto: la struttura della scena, cosa succede prima e dopo, le scelte, le variabili, e un **brief** per ogni parte esplicita (chi, dove, a che punto del percorso, tono, limiti, cosa deve cambiare dopo).
+- **Regola fissa:** ogni scena erotica è pienamente consensuale e Sara la desidera e se la gode tantissimo: **sorride o ride**, nel testo e nelle immagini. Niente costrizione, niente disagio durante l'atto (vincolo anche di Patreon). I dubbi stanno prima o dopo, nei suoi pensieri.
 - Nel codice la parte esplicita resta un segnaposto riconoscibile, che poi si sostituisce con il testo generato.
 - Procedura e strumenti: [guida-lm-studio.md](guida-lm-studio.md) (brief in `docs/nsfw/brief/`, script `tools/nsfw/genera_scena.py`).
 - Attenzione: LM Studio con un modello grande occupa molta memoria; non tenerlo carico mentre si lavora con Unity o Premiere.

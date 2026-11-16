@@ -23,3 +23,5 @@ Questioni aperte: età esatta di Simon, attività e interessi fuori dal lavoro, 
 
 ## Finale del percorso (deciso da Jody il 16/11/2026)
 Sara diventa una «tipa da palestra»: le importa solo della palestra e del suo corpo, lascia Josh e si mette con Simon.
+
+**Aspetto (Jody, 16/11/2026):** capelli **castano scuro**, **mascella forte e larga**, **fisico super muscoloso**, giovane (metà dei vent'anni, viso adulto).

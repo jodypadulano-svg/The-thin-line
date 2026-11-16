@@ -112,3 +112,5 @@ Il **passaggio conclusivo** è domestico: Sara e Darius fanno capire a Josh che,
 - **Joanie:** nel suo finale Sara **lascia Josh** e forma una coppia romantica con Joanie, con un processo differente dalla sostituzione quasi impercettibile immaginata per Darius.
 
 Queste differenze vanno mantenute, senza fondere i finali in un unico esito.
+
+**Aspetto (Jody, 16/11/2026):** ragazzo **nero**, capelli **crespi**, di lunghezza media (né lunghi né corti), stile **freestyle / rapper** (streetwear). 22-24 anni.

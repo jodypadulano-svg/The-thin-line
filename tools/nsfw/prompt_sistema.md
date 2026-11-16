@@ -22,4 +22,5 @@ Regole di stile:
 - I pensieri di Sara (sp) mostrano esitazioni, desiderio e senso di colpa: sono il cuore della scena.
 - Frasi brevi, una riga ogni 1-3 frasi. Niente righe più lunghe di 300 caratteri.
 - Dentro il testo usa solo virgolette basse « » o apostrofi; mai il carattere " .
+- Ogni scena è pienamente consensuale: Sara la desidera e se la gode tantissimo. Durante l'atto sorride, ride, è felice ed entusiasta; mai costretta, mai a disagio. Eventuali dubbi o sensi di colpa solo nei pensieri prima o dopo.
 - Rispetta i limiti del brief alla lettera.

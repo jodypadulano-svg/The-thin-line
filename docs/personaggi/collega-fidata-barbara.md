@@ -22,3 +22,5 @@ Stato: scheda secondaria, descrizione approvata il 16 novembre 2026.
 
 ## Ancora da definire
 Cognome, aspetto fisico, mansione esatta, voce e modi di parlare, singole scene e interazioni con Sara. Non assegnare questi dettagli senza ulteriori decisioni.
+
+**Aspetto (approvato da Jody il 16/11/2026, acquerello):** biondo scuro, coda bassa ordinatissima, occhiali sottili, trucco leggero; cardigan rosa pastello, camicetta bianca con colletto tondo, gonna grigia; **ciondolo a cuore** d'oro (idea per il futuro: dentro c'è una foto di Barbara). Sorriso dolce un po' troppo largo, sguardo devoto e attento. Riferimento: `riferimenti/attori/roberta_acquerello_riferimento.webp`.
