@@ -15,3 +15,7 @@ Joanie è uno degli otto archetipi della bibbia, il numero 5: la migliore amica 
 ## D. Note per il futuro
 - Nella scena 2 di Simon Sara guarda Joanie mentre flirta: oggi la domanda di Sara riguarda i confini tra gesto professionale e flirt. Rileggendola dopo, la stessa scena potrà avere un secondo significato.
 - Nel codice il percorso esiste già (`amica`), ma Joanie non viene "incontrata" come percorso e non compare nel Diario finché il percorso non si apre.
+
+## E. Sviluppo psicologico e finale — decisioni del 16 novembre 2026
+
+Il profilo approfondito concordato (fantasie e motivazioni, consigli mirati fin dall'Episodio 1, rivelazione graduale, funzione di catalizzatrice e finale possibile con Sara) è stato registrato in [decisioni.md](../decisioni.md), sezione **Da applicare**, «Joanie — profilo psicologico, ruolo e finale del percorso». Le scene non sono state modificate; la caratterizzazione andrà integrata nella scheda estesa durante il successivo lotto di lavoro.
