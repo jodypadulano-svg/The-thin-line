@@ -7,7 +7,8 @@ Hugo è il padre di Josh e il marito di Samantha. È un personaggio secondario.
 Hugo è molto autoritario, severo e dominante **verso tutti**, senza eccezioni: familiari, conoscenti e altre persone. Incarna il modello del maschilista tradizionale, con una visione rigida dei ruoli di genere. Questi sono tratti del personaggio, non giudizi della narrazione.
 
 ## Rapporti familiari
-È il marito di Samantha e il padre di Josh. È autoritario anche nei confronti di Samantha e Josh. Le dinamiche specifiche con entrambi sono ancora da definire; non assumere che conosca il segreto di Samantha relativo alla collezione speciale dell'editore.
+- È l'amante segreto di Sally, la madre di Sara (intreccio I7, approvato il 16/11/2026); il segreto emerge solo nei percorsi di forte trasformazione.
+È il marito di Samantha e il padre di Josh. È autoritario anche nei confronti di Samantha e Josh. Le dinamiche specifiche con entrambi sono ancora da definire; **non conosce** il segreto di Samantha relativo alla collezione di Magnus (deciso il 16/11/2026).
 
 ## Dettagli ancora da definire
 Età, aspetto, professione, passato e comportamenti specifici nei confronti dei familiari non sono stati ancora stabiliti.

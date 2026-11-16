@@ -19,11 +19,11 @@ I tratti segnati **(P)** non sono nella bibbia: li ho proposti io, e sono annota
 ---
 
 ## Sara — `@sara`
-Dalla [scheda](../personaggi/sara.md): capelli castani leggermente mossi, occhi castani, molto snella, lineamenti dolci, seno molto sviluppato, abbigliamento sobrio. Età **(P)**: fine vent'anni.
+Dalla [scheda](../personaggi/sara.md): capelli castani leggermente mossi, occhi castani, molto snella, lineamenti dolci, seno molto sviluppato, abbigliamento sobrio. Età: 22-23 anni (deciso).
 
 **Ritratto 4:5**
 ```
-Portrait of Sara, an adult woman in her late twenties, soft gentle facial features with no sharp angles, warm brown eyes, shoulder-length brown hair with a slight natural wave, light natural makeup, a shy warm smile, wearing a plain cream knit sweater. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+Portrait of Sara, an adult woman aged 22-23, soft gentle facial features with no sharp angles, warm brown eyes, shoulder-length brown hair with a slight natural wave, light natural makeup, a shy warm smile, wearing a plain cream knit sweater. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
 **Figura intera 2:3**
@@ -36,7 +36,7 @@ La bibbia non lo descrive. Proposta **(P)**: un uomo comune, rassicurante, credi
 
 **Ritratto 4:5**
 ```
-Portrait of Josh, an adult man around thirty, kind and ordinary face, short tidy dark-blond hair, light stubble, hazel eyes, a warm slightly tired smile, wearing a light-blue button-down shirt with the collar open. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+Portrait of Josh, an adult man aged 22-23, kind and ordinary face, short tidy dark-blond hair, light stubble, hazel eyes, a warm slightly tired smile, wearing a light-blue button-down shirt with the collar open. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
 **Figura intera 2:3**
@@ -49,7 +49,7 @@ Dalla [scheda](../personaggi/joanie.md): intraprendente, più sfacciata di Sara.
 
 **Ritratto 4:5**
 ```
-Portrait of Joanie, an adult woman in her late twenties, confident playful expression with a mischievous grin, bright green eyes, long straight honey-blonde hair in a high ponytail, bold eyeliner, small gold hoop earrings, wearing a fitted black sports top. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+Portrait of Joanie, an adult woman in her early twenties, confident playful expression with a mischievous grin, bright green eyes, long straight honey-blonde hair in a high ponytail, bold eyeliner, small gold hoop earrings, wearing a fitted black sports top. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
 **Figura intera 2:3**
@@ -96,16 +96,16 @@ Portrait of Howard, an adult man around sixty, overweight with a round puffy fac
 Full-body reference of @howard standing slightly hunched, front view. Overweight with a large belly, rounded shoulders. Unkempt outfit: stained beige cardigan, wrinkled checked shirt half tucked in, baggy brown corduroy trousers, worn-out slippers. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
-## L'editore — `@editore`
-Dalla [scheda](../personaggi/editore.md): più anziano e meno attraente di Daniel, ma carismatico per cultura, raffinatezza, esperienza e ricchezza. Nome ed età da decidere. Dettagli **(P)**.
+## Magnus, l'editore — `@magnus`
+Dalla [scheda](../personaggi/editore.md): più anziano e meno attraente di Daniel, ma carismatico per cultura, raffinatezza, esperienza e ricchezza. Nome: **Magnus**, circa 68 anni (deciso). Dettagli **(P)**.
 
 **Ritratto 4:5**
 ```
-Portrait of a distinguished adult man in his late fifties, a wealthy book publisher, not conventionally handsome, lined intelligent face, neatly trimmed salt-and-pepper beard, receding silver hair, thin tortoiseshell glasses, attentive amused eyes, wearing a dark-navy velvet blazer over a black turtleneck. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+Portrait of Magnus, a distinguished man aged 68, a wealthy book publisher, not conventionally handsome, lined intelligent face, neatly trimmed salt-and-pepper beard, receding silver hair, thin tortoiseshell glasses, attentive amused eyes, wearing a dark-navy velvet blazer over a black turtleneck. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
 **Figura intera 2:3**
 ```
-Full-body reference of @editore standing at ease holding a whisky glass, front view. Medium height, slightly stocky. Refined understated outfit: dark-navy velvet blazer, black turtleneck, gray wool trousers, brown suede loafers. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+Full-body reference of @magnus standing at ease holding a whisky glass, front view. Medium height, slightly stocky. Refined understated outfit: dark-navy velvet blazer, black turtleneck, gray wool trousers, brown suede loafers. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 

@@ -9,7 +9,7 @@ Stato: scheda secondaria, caratterizzazione approvata il 16 novembre 2026.
 - Il giocatore deve poter intuire che l'educazione impartita da Sally abbia contribuito alle maniere educate, alla timidezza e al comportamento inizialmente riservato di Sara.
 
 ## Il segreto di Sally
-- Dietro la facciata rispettabile, Sally **tradisce abitualmente il padre di Sara**.
+- Dietro la facciata rispettabile, Sally **tradisce abitualmente il padre di Sara** con **Hugo, il padre di Josh** (intreccio I7, approvato il 16/11/2026).
 - Questa doppia vita non è immediatamente nota al giocatore e non va rivelata automaticamente.
 - **Solo in percorsi appropriati**, legati alla trasformazione di Sara e alle sue scelte, le interazioni con Sally possono portare alla scoperta del segreto.
 - Se Sara percorre una traiettoria di forte cambiamento, Sally può riconoscersi nella figlia e dirle che accettare quel lato di sé è positivo: secondo Sally, Sara sta finalmente accettando la propria vera natura. Questa è **la prospettiva di Sally**, non una verità imposta dalla narrazione.

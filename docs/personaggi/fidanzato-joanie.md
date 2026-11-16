@@ -12,6 +12,10 @@ Stato: caratterizzazione approvata il 16 novembre 2026. Nome confermato: Mark.
 - Ha una mentalità molto aperta, non giudica le fantasie o i desideri più trasgressivi di Joanie ed è **supportivo** nei suoi confronti.
 - La sua apertura non è soltanto teorica: può accettare anche che Joanie sviluppi una relazione sentimentale con Sara.
 
+## Amicizia con Josh (intreccio I13, approvato il 16/11/2026)
+- Diventa amico di Josh e ne è il confidente: in buona fede gli consiglia fiducia e di non essere possessivo, e così ne abbassa la Suspicion.
+- **Non sa niente** delle fantasie di Joanie su Sara e Josh.
+
 ## Possibile sviluppo narrativo
 - **Solo se le scelte del giocatore lo consentono**, può nascere una relazione consensuale a tre fra **Sara, Joanie e Mark**.
 - È una possibilità narrativa, non un esito automatico né un percorso obbligatorio.

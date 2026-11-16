@@ -19,3 +19,6 @@ Scheda spostata in [editore.md](editore.md).
 ## F. Punti narrativi e di progettazione da mantenere
 Progressione deliberata: cena aziendale → visita all'ufficio con patente dimenticata → festa privata con editore. Il giocatore sa più di Sara sulle intenzioni di Daniel. Sara difende il fidanzato, si irrita per le umiliazioni e non riconosce inizialmente la strategia. Solo alla festa nota che Daniel ha fatto qualcosa di davvero premuroso per lei, senza sapere che la situazione è stata predisposta. L'editore può divenire un rivale di Daniel e aprire il proprio percorso opzionale; nessun rapporto è obbligatorio.
 Da decidere in futuro: nome e carattere del compagno di Sara; nome, età precisa e personalità dell'editore; situazione professionale del compagno; indizio audiovisivo esatto con cui il giocatore scopre il piano di Daniel; dialoghi e scelte delle tre scene; sviluppi successivi e conseguenze dei due percorsi.
+
+## Finale del percorso (deciso da Jody il 16/11/2026)
+Sara capisce che il vero potere è quello di Daniel e ne diventa l'amante. La relazione è **nota a Josh**, e Sara e Daniel lo umiliano insieme sul lavoro, anche davanti ai colleghi. Josh non si opporrà mai.

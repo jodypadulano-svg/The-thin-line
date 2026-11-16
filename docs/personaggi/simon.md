@@ -20,3 +20,6 @@ Se il giocatore sceglie di entrare, Sara può trascorrere un po’ di tempo indi
 ## D. Implicazioni di gioco e punti aperti
 Variabile concettuale da definire in Ren’Py: affinità con Simon. La scena 4 contiene il bivio; la scena 5 è condizionata alla scelta di entrare. Per ora non sono fissati nomi tecnici, punteggi o soglie. L’avanzamento del coefficiente non deve implicare automaticamente attrazione romantica o disponibilità a tradire. Il ritmo previsto è volutamente lento.
 Questioni aperte: età esatta di Simon, attività e interessi fuori dal lavoro, dettagli del locale, dialoghi delle cinque scene, modalità di presentazione delle scelte, conseguenze a lungo termine del percorso e possibile coinvolgimento dell’amica.
+
+## Finale del percorso (deciso da Jody il 16/11/2026)
+Sara diventa una «tipa da palestra»: le importa solo della palestra e del suo corpo, lascia Josh e si mette con Simon.

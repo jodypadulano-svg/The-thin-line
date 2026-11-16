@@ -7,7 +7,7 @@ Stato: scheda narrativa concordata il 16 novembre 2026. Le scene esemplificative
 - Età: circa sessant'anni.
 - Donna molto corpulenta, vistosa, che non intende rinunciare a sentirsi attraente con l'età.
 - Capelli rosso acceso, evidentemente tinti; trucco marcato; abiti appariscenti, spesso animalier o leopardati.
-- Capa dell'ufficio dove lavora Sara, distinto da Daniel, che è il capo di Josh.
+- **Proprietaria del giornale** nella cui redazione Sara lavora come giornalista (deciso il 16/11/2026); è quindi la capa di Sara. Distinta da Daniel, che è il capo di Josh.
 
 ## Personalità e storia
 - Autoritaria, esuberante, chiassosa, teatrale, invadente e maliziosa; ama impartire ordini e pretende obbedienza.

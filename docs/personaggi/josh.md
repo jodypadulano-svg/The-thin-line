@@ -9,7 +9,7 @@ Compagno di Sara; personaggio centrale già presente nel canone.
 Da definire.
 
 ## Aspetto ed età
-Da definire.
+Età: **22-23 anni**, come Sara (deciso il 16/11/2026). Aspetto da definire (proposta provvisoria nei [prompt degli attori](../prompt-immagini/attori.md)).
 
 ## Personalità e passato
 Da definire.

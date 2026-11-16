@@ -16,7 +16,8 @@ Stato: scheda secondaria basata sulle informazioni concordate il 16 novembre 202
 - Samantha è **personalmente una delle donne presenti nella collezione speciale dell'editore**; non è soltanto a conoscenza della collezione.
 - Questo coinvolgimento costituisce un segreto importante del personaggio, da non anticipare gratuitamente al giocatore.
 - Circostanze, cronologia e modalità dell'eventuale scoperta non sono ancora definite.
-- Non è stabilito se Hugo conosca il segreto.
+- **Hugo non conosce il segreto** (deciso il 16/11/2026).
+- Samantha ha **solo ricordi positivi** del suo passato con Magnus: se Sara gliene parla, la incoraggia e la consiglia (intreccio I6).
 
 ## Rapporti
 - È la madre di Josh e la moglie di Hugo, uomo severo, dominante e autoritario con tutti, Samantha compresa.

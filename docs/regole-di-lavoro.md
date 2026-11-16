@@ -15,7 +15,7 @@ Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude
 
 ## 3. Cercare gli incastri narrativi
 - Ogni volta che Jody aggiunge trama o lore, Claude cerca gli incastri migliori con quello che c'è già e li **propone**: «questo lo mettiamo nella giornata XX», «questo lo colleghiamo al fatto XY».
-- Le proposte sono proposte: entrano nel registro solo quando Jody le approva.
+- Le proposte sono proposte: si scrivono in [intrecci-proposti.md](intrecci-proposti.md) ed entrano nel registro solo quando Jody le approva. Mai in Ren'Py prima dell'approvazione.
 - Esempi già fatti: le chiavi rubate da Howard il giorno della spesa (collega Howard 2 e Howard 3); l'editore presentato da Daniel (collega due percorsi).
 
 ## 4. Prompt per le immagini
