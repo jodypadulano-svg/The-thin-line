@@ -1,24 +1,21 @@
-# Fidanzato di Joanie
+# Fidanzato di Joanie — scheda secondaria
 
-Stato: scheda segnaposto approvata il 16 novembre 2026. Da sviluppare; non introdurre dettagli non concordati.
+Stato: caratterizzazione approvata il 16 novembre 2026. Nome ancora da scegliere.
 
-## Ruolo già stabilito
-Partner attuale di Joanie; nome e dettagli da definire.
+## Identità e aspetto
+- Giovane uomo piacevole e attraente.
+- Nome, età precisa e altri dettagli fisici da definire.
 
-## Identità
-Da definire.
+## Personalità e relazione con Joanie
+- È un **bravo ragazzo**, affettuoso e sinceramente innamorato di Joanie.
+- Ha una mentalità molto aperta, non giudica le fantasie o i desideri più trasgressivi di Joanie ed è **supportivo** nei suoi confronti.
+- La sua apertura non è soltanto teorica: può accettare anche che Joanie sviluppi una relazione sentimentale con Sara.
 
-## Aspetto ed età
-Da definire.
+## Possibile sviluppo narrativo
+- **Solo se le scelte del giocatore lo consentono**, può nascere una relazione consensuale a tre fra **Sara, Joanie e il fidanzato di Joanie**.
+- È una possibilità narrativa, non un esito automatico né un percorso obbligatorio.
+- Non deve essere trasformato necessariamente in antagonista o in un fidanzato geloso per giustificare il legame tra Sara e Joanie.
+- Le conseguenze sul rapporto di Sara con Josh devono rimanere coerenti con le scelte del giocatore e con la trama principale.
 
-## Personalità e passato
-Da definire.
-
-## Rapporti con gli altri personaggi
-Da definire.
-
-## Ruolo nelle scene e possibili sviluppi
-Da definire.
-
-## Decisioni aperte
-Da definire insieme al giocatore/autore.
+## Ancora da definire
+Nome, età, occupazione, aspetto dettagliato, circostanze e limiti dell'eventuale relazione a tre, scene specifiche.
