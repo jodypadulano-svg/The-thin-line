@@ -18,7 +18,7 @@ Figura affermata, che apre a Sara ambienti e possibilità diverse. Temi possibil
 Donna già presente nella vita della protagonista. Il possibile passaggio dall’amicizia a un coinvolgimento sentimentale può essere affrontato tramite confidenza, affetto e scoperta di desideri inattesi.
 6 — L’ex fidanzato
 Figura del passato che torna nella vita di Sara. Il percorso permette di esplorare ricordi, domande irrisolte e confronti tra ciò che lei era e ciò che è diventata.
-7 — Il migliore amico del fidanzato / marito
+7 — Darius, il migliore amico del fidanzato / marito
 Persona fidata della coppia e già inserita nella quotidianità. Temi possibili: amicizia, familiarità, lealtà e conseguenze della perdita di fiducia.
 8 — La capa di Sara
 La responsabile dell’ufficio è una donna e costituisce a tutti gli effetti l’ottavo percorso sentimentale. Temi possibili: stima professionale, intesa personale e confini fra ufficio e vita privata.
@@ -37,4 +37,6 @@ Le schede dei singoli personaggi sono nella cartella [personaggi](personaggi/):
 - [L'editore](personaggi/editore.md) — l'uomo molto ricco e di successo (archetipo 4), incrocio con il percorso di Daniel
 - [Howard](personaggi/howard.md) — il vicino di casa (archetipo 3): identità e tre incontri
 - [Joanie](personaggi/joanie.md) — la migliore amica (archetipo 5): il lato sentimentale emerge molto più avanti
-Archetipi senza scheda ancora: l'ex fidanzato (6), il migliore amico del compagno (7), la capa di Sara (8).
+- [Jacob](personaggi/jacob.md) — ex di Sara (archetipo 6): passato, ritorno e percorso opzionale
+- [Darius](personaggi/darius.md) — migliore amico di Josh (archetipo 7): percorso opzionale di sostituzione progressiva, solo su scelta del giocatore e con Corruption elevata
+Archetipo senza scheda ancora: la capa di Sara (8).
