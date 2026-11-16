@@ -1,24 +1,26 @@
-# Madre di Josh
+# Samantha — madre di Josh
 
-Stato: scheda segnaposto approvata il 16 novembre 2026. Da sviluppare; non introdurre dettagli non concordati.
+Stato: scheda secondaria basata sulle informazioni concordate il 16 novembre 2026.
 
-## Ruolo già stabilito
-Familiare di Josh; dettagli da definire.
+## Identità e ruolo
+- **Samantha** è la madre di Josh e la moglie di Hugo.
+- È una donna moderna e molto affettuosa.
+- Personaggio secondario, utilizzabile nelle scene appropriate della storia.
 
-## Identità
-Da definire.
+## Aspetto e somiglianza con Sara
+- Samantha somiglia moltissimo a Sara: sembra quasi un'immagine di come Sara potrebbe diventare fra qualche anno, con l'avanzare dell'età.
+- Una differenza fisica evidente è che Samantha non ha il seno particolarmente vistoso di Sara, che sotto questo aspetto resta un caso raro.
+- Età esatta e ulteriori dettagli fisici non sono ancora stabiliti.
 
-## Aspetto ed età
-Da definire.
+## Segreto narrativo
+- Samantha è **personalmente una delle donne presenti nella collezione speciale dell'editore**; non è soltanto a conoscenza della collezione.
+- Questo coinvolgimento costituisce un segreto importante del personaggio, da non anticipare gratuitamente al giocatore.
+- Circostanze, cronologia e modalità dell'eventuale scoperta non sono ancora definite.
+- Non è stabilito se Hugo conosca il segreto.
 
-## Personalità e passato
-Da definire.
+## Rapporti
+- È la madre di Josh e la moglie di Hugo, uomo severo, dominante e autoritario con tutti, Samantha compresa.
+- Le dinamiche dettagliate della loro vita familiare sono ancora da sviluppare.
 
-## Rapporti con gli altri personaggi
-Da definire.
-
-## Ruolo nelle scene e possibili sviluppi
-Da definire.
-
-## Decisioni aperte
-Da definire insieme al giocatore/autore.
+## Da definire
+Età, professione, storia personale, dettagli dell'inclusione nella collezione speciale dell'editore e possibili scene di rivelazione. Non inventare particolari non concordati.
