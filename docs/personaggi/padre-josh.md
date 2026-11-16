@@ -1,10 +1,10 @@
-# Ugo — padre di Josh
+# Hugo — padre di Josh
 
 ## Identità e ruolo
-Ugo è il padre di Josh e il marito di Samantha. È un personaggio secondario.
+Hugo è il padre di Josh e il marito di Samantha. È un personaggio secondario.
 
 ## Personalità
-Ugo è molto autoritario, severo e dominante. Incarna il modello del maschilista tradizionale, con una visione rigida dei ruoli di genere. Questi sono tratti del personaggio, non giudizi della narrazione.
+Hugo è molto autoritario, severo e dominante. Incarna il modello del maschilista tradizionale, con una visione rigida dei ruoli di genere. Questi sono tratti del personaggio, non giudizi della narrazione.
 
 ## Rapporti familiari
 È il marito di Samantha e il padre di Josh. Le dinamiche specifiche con entrambi sono ancora da definire; non assumere che conosca il segreto di Samantha relativo alla collezione speciale dell'editore.
