@@ -232,13 +232,13 @@ default percorsi = {
     "daniel":  Percorso("daniel", "Daniel", "Il capo del compagno"),
     "simon":   Percorso("simon", "Simon", "Il personal trainer"),
     "howard":  Percorso("howard", "Howard", "Il vicino di casa"),
-    "editore": Percorso("editore", "L'editore", "L'uomo ricco e di successo"),
+    "editore": Percorso("editore", "Magnus", "L'editore"),
     ## Joanie: percorso 5, il lato sentimentale emerge molto più avanti.
     ## Non chiamare incontra("amica") finché il percorso non si apre.
     "amica":   Percorso("amica", "Joanie", "La migliore amica"),
     "ex":      Percorso("ex", "L'ex", "L'ex fidanzato"),
     "amico":   Percorso("amico", "L'amico", "Il migliore amico del compagno"),
-    "capa":    Percorso("capa", "La capa", "La responsabile dell'ufficio"),
+    "capa":    Percorso("capa", "Barbara", "La proprietaria del giornale"),
 }
 
 ## Segreti di Sara: chiave -> descrizione.

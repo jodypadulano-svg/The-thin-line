@@ -8,6 +8,7 @@
 
 image bg nero = Solid("#000000")
 image bg casa = Solid("#2a2230")
+image bg redazione = Solid("#1e2530")
 image bg camera = Solid("#231c2b")
 image bg pianerottolo = Solid("#25262b")
 image bg casa_howard = Solid("#2b2a1f")
@@ -58,7 +59,7 @@ screen titolo_giorno(numero, titolo):
     vbox:
         align (0.5, 0.45)
         spacing 12
-        text "Giorno [numero]" size 64 xalign 0.5 color "#ffffff"
+        text "Day [numero]" size 64 xalign 0.5 color "#ffffff"
         text titolo size 34 xalign 0.5 color "#c8385a"
 
 
@@ -76,7 +77,7 @@ screen fascia_retroscena():
         xalign 0.5 ypos 30
         padding (30, 10)
         background Solid("#c8385acc")
-        text "RETROSCENA — Sara non lo sa" size 28 color "#ffffff" bold True
+        text "BEHIND THE SCENES — Sara doesn't know" size 28 color "#ffffff" bold True
 
 label inizio_retroscena:
     $ in_retroscena = True

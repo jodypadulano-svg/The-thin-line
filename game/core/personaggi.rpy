@@ -16,7 +16,10 @@ define ch = Character("Joanie", color="#f0c674")
 define si = Character("Simon", color="#7fd1a8")
 define da = Character("Daniel", color="#c9a0ff")
 define ho = Character("Howard", color="#b5a48a")
-define ed = Character("L'editore", color="#d4b483")
+define ed = Character("Magnus", color="#d4b483")
+define ba = Character("Barbara", color="#e07fb0")
+define ro = Character("Roberta", color="#d9a3c7")
+define je = Character("Jessica", color="#f2b5d4")
 
 ## Narratore delle didascalie e voce dei retroscena.
 define n = Character(None, what_italic=False)

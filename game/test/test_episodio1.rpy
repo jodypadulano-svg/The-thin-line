@@ -46,7 +46,8 @@ testsuite episodio1:
         click "Simon"
         click "Daniel"
         click "Howard"
-        click "L'editore"
+        click "Magnus"
+        click "Barbara"
         click "Sara"
 
 ## Foto del Diario per controllo a vista (non parte con la suite globale).

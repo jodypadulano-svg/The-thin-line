@@ -19,11 +19,11 @@ I tratti segnati **(P)** non sono nella bibbia: li ho proposti io, e sono annota
 ---
 
 ## Sara — `@sara`
-Dalla [scheda](../personaggi/sara.md): capelli castani leggermente mossi, occhi castani, molto snella, lineamenti dolci, seno molto sviluppato, abbigliamento sobrio. Età: 22-23 anni (deciso).
+Dalla [scheda](../personaggi/sara.md): capelli castani leggermente mossi, occhi castani, molto snella, lineamenti dolci, seno molto sviluppato, abbigliamento sobrio. Età: 22-23 anni (deciso). **Lentiggini leggere su naso e guance** (tratto fisso, dal primo ritratto approvato il 16/11). Ritratto approvato da Jody; figura intera da rigenerare in 2:3.
 
 **Ritratto 4:5**
 ```
-Portrait of Sara, an adult woman aged 22-23, soft gentle facial features with no sharp angles, warm brown eyes, shoulder-length brown hair with a slight natural wave, light natural makeup, a shy warm smile, wearing a plain cream knit sweater. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+Portrait of Sara, an adult woman aged 22-23, soft gentle facial features with no sharp angles, warm brown eyes, shoulder-length brown hair with a slight natural wave, light freckles across the nose and cheeks, light natural makeup, a shy warm smile, wearing a plain cream knit sweater. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
 **Figura intera 2:3**

@@ -228,7 +228,7 @@ def clamp(x): return max(0, min(100, x))
 out = []
 w = out.append
 w("# The Thin Line — Il primo mese di gioco\n")
-w("Bozza di lavoro | 16 novembre 2026 · **Proposta da approvare, versione 2 (molte più scelte).** Niente di questo file è canone finché Jody non lo approva; niente va in Ren'Py prima.\n")
+w("Bozza di lavoro | 16 novembre 2026 · **✅ Approvato da Jody il 16/11/2026** (versione 2, molte più scelte). È la base per la riscrittura degli Episodi 1 e 2.\n")
 w("## 1. Regole\n")
 w("- **Lunedì-venerdì:** Sara lavora in redazione **9-17**. Fasce: *prima del lavoro* (se serve), **Lavoro**, **Sera**. **Sabato e domenica:** **Mattina**, **Pomeriggio**, **Sera**.")
 w("- **Le fasce senza scene non si giocano:** una riga di passaggio.")
@@ -273,10 +273,10 @@ w("- **Jacob (soglia 25):** raggiungibile solo all'ultimo giorno, e solo con tut
 w("- **Darius (35) e gli altri:** irraggiungibili nel primo mese, come vuole lo slow burn.")
 w("- **Frasi 🔒 Josh 30:** sempre aperte nel primo mese; si chiuderanno solo se l'Interest verso Josh crolla più avanti.")
 w("- **Confidence:** chi scrive, entra da sola in palestra e si fa valere in redazione supera 25 presto e apre le frasi coraggiose (Daniel al giorno 5, Magnus al giorno 13).\n")
-w("## {}. Domande aperte\n".format(sec))
-w("1. Il ritmo dei numeri (piccole ±1, importanti ±2-3, fondamentali fino a ±5) ti convince?")
-w("2. L'Episodio 1 di due settimane va bene?")
-w("3. Il finale doppio dell'Episodio 2 (confronto con Josh se Susp alta, invito di Magnus se bassa) ti piace?")
+w("## {}. Decisioni approvate\n".format(sec))
+w("1. Ritmo dei numeri: piccole ±1, importanti ±2-3, fondamentali fino a ±5.")
+w("2. Episodio 1 di due settimane, con la festa di Daniel come finale.")
+w("3. Finale doppio dell'Episodio 2: confronto con Josh se Susp alta, invito di Magnus se bassa.")
 open(OUT, "w", encoding="utf-8", newline="").write("\n".join(out) + "\n")
 print("scelte", nchoice, "fondamentali", nfund)
 for k in ORD:

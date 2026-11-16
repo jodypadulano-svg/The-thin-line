@@ -112,6 +112,9 @@ Decisioni prese ma non ancora riportate nel codice. Si applicano tutte insieme q
 - **Regola imprescindibile dei percorsi** (Jody, 16/11/2026): in **tutti e 8** i percorsi Sara bacerà il personaggio, si farà toccare il seno, si farà vedere nuda e avrà relazioni erotiche di genere diverso. Ogni mappa a tappe deve contenere questi passaggi (le parti esplicite si generano con LM Studio). **Scala fisica comune approvata:** 6a bacio (Interest 50, soglia) · 6b seno (55, soglia +3) · 7a nuda (60, soglia +6) · 7b relazione erotica nel genere del personaggio (65, soglia +10) · 8 non ritorno (80, soglia +20).
 - **Mappa a tappe completa** (Jody, 16/11/2026): approvate le mappe di tutti e 8 i percorsi e del finale fedele, in [mappa-tappe.md](mappa-tappe.md). Finale fedele: solo resistenza; a fine stagione Corruption ≤ 10, Interest Josh ≥ 90, nessun percorso oltre la tappa 3, zero segreti, Suspicion ≤ 5.
 - **Howard più lento nel primo mese** (Jody, 16/11/2026, dopo il simulatore): abbassati cinque aumenti in [mese-1.md](mese-1.md) («Certo, un caffè» da +5 a +3, i due abbracci, la visita del giorno 18, la cucina del giorno 26); Interest massimo del mese 19, sotto la tappa 4. Da riportare nella riscrittura dell'Episodio 1 (oggi `howard.rpy` dà ancora +5).
+- **Mese 1, ritmo dei numeri** (Jody, 16/11/2026): approvato. Scelte piccole ±1, importanti ±2-3, fondamentali fino a ±5.
+- **Mese 1, durata dell'Episodio 1** (Jody, 16/11/2026): approvata. L'Episodio 1 copre due settimane (giorni 1-13) e finisce con la festa di Daniel; circa 40 scelte, circa un'ora di gioco.
+- **Mese 1, finale doppio dell'Episodio 2** (Jody, 16/11/2026): approvato. Se Suspicion ≥ 8 confronto con Josh (mentire bene o confessare una parte), altrimenti invito di Magnus nella villa. **Il calendario del primo mese ([mese-1.md](mese-1.md)) è approvato.**
 
 ## Provvisorie
 Scelte fatte da Claude per rendere il gioco giocabile, non ancora confermate da Jody.

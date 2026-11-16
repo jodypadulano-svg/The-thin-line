@@ -5,50 +5,6 @@
 ## (docs/bibbia-narrativa.md) resta la fonte: dove non decide, qui c'è un
 ## segnaposto da riscrivere.
 
-label ep1_prologo:
-    $ vai("casa", "Casa — sera")
-    $ cg("Sara al tavolo della cucina, portatile aperto, una tazza di tè ormai fredda")
-
-    sp "Capitolo tre. Ancora il capitolo tre."
-    sp "La protagonista deve aprire quella porta e io non so cosa ci sia dall'altra parte."
-    n "Sara cancella l'ultima riga. Poi la riscrive identica."
-
-    $ via_cg()
-    n "La chiave gira nella serratura."
-    c "Sono a casa! Dimmi che è avanzato qualcosa, sto morendo di fame."
-    s "C'è la pasta di ieri. E c'è anche una scrittrice in crisi, se ti interessa."
-    c "Mi interessa sempre la scrittrice."
-    n "Lui le bacia la testa e sbircia lo schermo."
-    c "Capitolo tre?"
-    s "Non dirlo con quel tono."
-    c "Quale tono? Io lo leggerò quando sarà finito. Prima copia autografata."
-
-    sp "È così da quando ci conosciamo. Lui crede in me più di quanto ci creda io."
-
-    menu:
-        sp "E stasera..."
-        "Chiudere il portatile e passare la serata con lui." (josh=30):
-            $ interest("josh", 3, "Sara sceglie lui, stasera.")
-            s "Basta capitolo tre. Pasta e divano?"
-            c "Ti sposerei solo per questa frase."
-        "Scrivere ancora un'ora: l'ispirazione è arrivata.":
-            $ confidence(2, "Sara crede un po' di più nel suo romanzo.")
-            $ segna("ep1_prologo_scrive")
-            s "Dammi un'ora. Credo di aver capito cosa c'è dietro la porta."
-            c "Vai. Io scaldo la pasta e ti porto un tè caldo."
-
-    $ vai("camera", "Casa — notte")
-    n "Il telefono di Sara vibra. Joanie."
-    ch "Domani. Palestra. Niente scuse."
-    s "Joanie, sono le undici."
-    ch "Appunto, è il momento giusto per prendere decisioni importanti. Ti ho già iscritta, la prima lezione l'hai gratis."
-    s "Mi hai iscritta senza chiedermelo?"
-    ch "Ti ho iscritta {i}per{/i} te. È diverso. Alle sei. Ti passo a prendere."
-    sp "Non sono mai entrata in una palestra in vita mia."
-    sp "Ma con Joanie dire di no non è mai stata un'opzione."
-    return
-
-
 label ep1_invito_cena:
     $ vai("casa", "Casa — sera")
     c "Allora, sopravvissuta alla palestra?"

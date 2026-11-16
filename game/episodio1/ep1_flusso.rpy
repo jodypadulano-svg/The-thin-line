@@ -7,8 +7,9 @@
 label ep1_inizio:
     $ episodio = 1
 
-    call nuovo_giorno(1, "Una vita normale")
-    call ep1_prologo
+    ## Riscrittura in inglese in corso, un giorno alla volta (docs/mese-1.md).
+    ## Giorno 1 riscritto; dal giorno 2 restano le scene vecchie in italiano.
+    call ep1_d1
 
     call nuovo_giorno(2, "Primo giorno di palestra")
     call simon_s1_prima_visita

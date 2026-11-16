@@ -7,11 +7,11 @@ label splashscreen:
     if not persistent.avviso_visto and not renpy.is_in_test():
         scene bg nero
         $ renpy.pause(0.5, hard=True)
-        n "{b}The Thin Line{/b} è un'opera di finzione per un pubblico adulto.\n\nTutti i personaggi sono maggiorenni. Nomi, luoghi ed eventi sono immaginari."
+        n "{b}The Thin Line{/b} is a work of fiction intended for adults.\n\nAll characters are 18 or older. Names, places and events are fictional."
         menu:
-            "Ho almeno 18 anni e voglio continuare.":
+            "I am 18 or older and want to continue.":
                 $ persistent.avviso_visto = True
-            "Esci.":
+            "Quit.":
                 $ renpy.quit()
     return
 
@@ -22,24 +22,24 @@ label start:
     scene bg nero
     $ luogo_corrente = ""
 
-    n "Prima di cominciare: Sara vive con il suo compagno."
-    $ nome = renpy.input("Come si chiama? (Invio per «Josh»)", default="Josh", length=20).strip()
+    n "Before we begin: Sara lives with her boyfriend."
+    $ nome = renpy.input("What is his name? (Press Enter for «Josh»)", default="Josh", length=20).strip()
     $ nome_compagno = nome if nome else "Josh"
 
     menu:
-        n "Da dove vuoi iniziare?"
-        "Dall'inizio.":
+        n "How do you want to start?"
+        "From the beginning.":
             pass
-        "Spiegami come funziona il gioco.":
+        "Explain how the game works.":
             call istruzioni
 
     jump ep1_inizio
 
 
 label istruzioni:
-    n "In {b}The Thin Line{/b} segui Sara, e le sue scelte sono le tue."
-    n "Lungo la storia Sara conosce persone diverse. Con ognuna si può costruire un percorso, lentamente, oppure si può ignorarlo. Puoi seguirne uno, più di uno o nessuno."
-    n "Quando vedi la fascia {color=#ff9fb0}RETROSCENA{/color}, stai guardando qualcosa che Sara non sa. Lei non lo ricorderà; tu sì."
-    n "Nel {b}Diario{/b} (menu rapido in basso) trovi, per ogni personaggio, cosa ne pensa Sara e cosa sai tu."
-    n "Dalle Opzioni puoi mostrare o nascondere gli effetti delle scelte, e i numeri."
+    n "In {b}The Thin Line{/b} you follow Sara, and her choices are yours."
+    n "Along the way Sara meets different people. With each of them a path can slowly grow, or be ignored. You can follow one, several, or none."
+    n "When you see the {color=#ff9fb0}BEHIND THE SCENES{/color} banner, you are watching something Sara doesn't know. She won't remember it; you will."
+    n "In the {b}Diary{/b} (quick menu at the bottom) you'll find, for each character, what Sara thinks of them and what you know."
+    n "In the Options you can show or hide the effects of your choices, and the numbers."
     return

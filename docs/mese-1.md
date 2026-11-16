@@ -1,6 +1,6 @@
 # The Thin Line — Il primo mese di gioco
 
-Bozza di lavoro | 16 novembre 2026 · **Proposta da approvare, versione 2 (molte più scelte).** Niente di questo file è canone finché Jody non lo approva; niente va in Ren'Py prima.
+Bozza di lavoro | 16 novembre 2026 · **✅ Approvato da Jody il 16/11/2026** (versione 2, molte più scelte). È la base per la riscrittura degli Episodi 1 e 2.
 
 ## 1. Regole
 
@@ -122,8 +122,8 @@ Somma dei minimi e dei massimi di ogni scelta, come se fossero tutte disponibili
 - **Frasi 🔒 Josh 30:** sempre aperte nel primo mese; si chiuderanno solo se l'Interest verso Josh crolla più avanti.
 - **Confidence:** chi scrive, entra da sola in palestra e si fa valere in redazione supera 25 presto e apre le frasi coraggiose (Daniel al giorno 5, Magnus al giorno 13).
 
-## 8. Domande aperte
+## 8. Decisioni approvate
 
-1. Il ritmo dei numeri (piccole ±1, importanti ±2-3, fondamentali fino a ±5) ti convince?
-2. L'Episodio 1 di due settimane va bene?
-3. Il finale doppio dell'Episodio 2 (confronto con Josh se Susp alta, invito di Magnus se bassa) ti piace?
+1. Ritmo dei numeri: piccole ±1, importanti ±2-3, fondamentali fino a ±5.
+2. Episodio 1 di due settimane, con la festa di Daniel come finale.
+3. Finale doppio dell'Episodio 2: confronto con Josh se Susp alta, invito di Magnus se bassa.
