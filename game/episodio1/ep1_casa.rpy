@@ -38,14 +38,14 @@ label ep1_prologo:
             c "Vai. Io scaldo la pasta e ti porto un tè caldo."
 
     $ vai("camera", "Casa — notte")
-    n "Il telefono di Sara vibra. Chiara."
+    n "Il telefono di Sara vibra. Joanie."
     ch "Domani. Palestra. Niente scuse."
-    s "Chiara, sono le undici."
+    s "Joanie, sono le undici."
     ch "Appunto, è il momento giusto per prendere decisioni importanti. Ti ho già iscritta, la prima lezione l'hai gratis."
     s "Mi hai iscritta senza chiedermelo?"
     ch "Ti ho iscritta {i}per{/i} te. È diverso. Alle sei. Ti passo a prendere."
     sp "Non sono mai entrata in una palestra in vita mia."
-    sp "Ma con Chiara dire di no non è mai stata un'opzione."
+    sp "Ma con Joanie dire di no non è mai stata un'opzione."
     return
 
 

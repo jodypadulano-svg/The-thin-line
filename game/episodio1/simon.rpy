@@ -6,14 +6,14 @@
 ## cresce NON è attrazione romantica di Sara, per ora.
 
 label simon_s1_prima_visita:
-    ## Scena 1 — Prima visita in palestra con Chiara.
+    ## Scena 1 — Prima visita in palestra con Joanie.
     $ vai("palestra", "Palestra — sera")
     $ cg("Sara sulla soglia, leggings nuovi e maglietta larga, si guarda intorno spaesata")
     ch "Respira. Nessuno ti morde."
-    s "Chiara, qui sono tutti... scolpiti."
+    s "Joanie, qui sono tutti... scolpiti."
     ch "E tra poco lo sarai anche tu. Più o meno."
     $ via_cg()
-    n "Chiara le dà una gomitata e indica con il mento il bancone degli istruttori."
+    n "Joanie le dà una gomitata e indica con il mento il bancone degli istruttori."
     ch "E quello è Simon. Il motivo per cui non salto mai un allenamento."
     $ cg("Simon spiega un esercizio a un cliente: non altissimo, spalle larghe, sorriso facile")
     $ incontra("simon")
@@ -36,22 +36,22 @@ label simon_s1_prima_visita:
 
 
 label simon_s2_correzioni:
-    ## Scena 2 — Chiara chiede a Simon di correggerle gli esercizi.
+    ## Scena 2 — Joanie chiede a Simon di correggerle gli esercizi.
     ## Stessa visita, momento diverso.
-    n "Mezz'ora dopo Sara ha il fiatone. Chiara, invece, ha un piano."
+    n "Mezz'ora dopo Sara ha il fiatone. Joanie, invece, ha un piano."
     ch "Simon? Scusa... mi controlli lo squat? Credo di sbagliare qualcosa con la schiena."
     si "Certo. Fammi vedere."
-    $ cg("Simon dietro Chiara: una mano sul fianco, l'altra tra le scapole, corregge la postura")
+    $ cg("Simon dietro Joanie: una mano sul fianco, l'altra tra le scapole, corregge la postura")
     si "Petto in fuori. Il peso sui talloni... così. Brava."
     ch "Così? Sei sicuro?"
-    n "Chiara ride un po' troppo. Si appoggia un po' troppo."
-    sp "Chiara è fidanzata. Da tre anni."
+    n "Joanie ride un po' troppo. Si appoggia un po' troppo."
+    sp "Joanie è fidanzata. Da tre anni."
     sp "Lui è professionale, si vede. Ma lei..."
 
     menu:
         sp "Dove finisce una correzione e dove comincia un flirt?"
         "Distogliere lo sguardo: non sono affari suoi.":
-            sp "Sono affari di Chiara. Non miei."
+            sp "Sono affari di Joanie. Non miei."
         "Continuare a guardare.":
             $ curiosita(2, "Sara si fa una domanda nuova.")
             $ segna("ep1_guarda_chiara")
@@ -62,14 +62,14 @@ label simon_s2_correzioni:
     si "Ottimo lavoro, ragazze. E tu sei nuova, vero? Se ti serve una mano chiedi pure."
     s "Grazie. Per ora sopravvivo."
     si "Sopravvivere è il primo passo."
-    $ nota_sara("simon", "Con Chiara è stato gentile, non ha approfittato.")
+    $ nota_sara("simon", "Con Joanie è stato gentile, non ha approfittato.")
     return
 
 
 label simon_s3_locale:
     ## Scena 3 — Incontro fuori dalla palestra, in un locale.
     $ vai("locale", "Locale — sabato sera")
-    n "Sara, [nome_compagno] e Chiara hanno appena preso da bere quando qualcuno chiama Chiara dal bancone."
+    n "Sara, [nome_compagno] e Joanie hanno appena preso da bere quando qualcuno chiama Joanie dal bancone."
     si "Ehi! Le mie atlete!"
     $ cg("Simon in camicia, birra in mano, completamente diverso dall'istruttore della palestra")
     ch "Simon! Lui è [nome_compagno], il compagno di Sara."
@@ -88,7 +88,7 @@ label simon_s3_locale:
 
 
 label simon_s4_chiara_cancella:
-    ## Scena 4 — Chiara cancella all'ultimo minuto. BIVIO.
+    ## Scena 4 — Joanie cancella all'ultimo minuto. BIVIO.
     $ vai("strada", "Davanti alla palestra — sera")
     n "Sara è davanti all'ingresso quando le arriva il messaggio."
     ch "{i}Scusascusascusa! Imprevisto con il mio ragazzo, non ce la faccio. Vai lo stesso!!{/i}"
@@ -103,7 +103,7 @@ label simon_s4_chiara_cancella:
             sp "Un'altra volta. Stasera no."
             $ vai("casa", "Casa — sera")
             c "Già di ritorno?"
-            s "Chiara mi ha dato buca. Ho deciso che il divano era un allenamento sufficiente."
+            s "Joanie mi ha dato buca. Ho deciso che il divano era un allenamento sufficiente."
             c "Il divano ti ringrazia."
             $ legame(1)
     return
@@ -113,7 +113,7 @@ label simon_s5_allenamento:
     ## Scena 5 — Allenamento con Simon (solo se Sara è entrata).
     $ vai("palestra", "Palestra — sera")
     si "Ehi, la mia atleta! Tutta sola stasera?"
-    s "Chiara mi ha abbandonata."
+    s "Joanie mi ha abbandonata."
     si "Allora ti adotto io per mezz'ora. Ti va? Ti preparo una scheda da principiante, così la prossima volta sai cosa fare."
     $ cg("Simon mostra a Sara come impugnare il manubrio, a distanza professionale")
     si "Gomito vicino al corpo. Senza fretta. Il movimento conta più del peso."
@@ -124,7 +124,7 @@ label simon_s5_allenamento:
         "«Certo.»":
             $ affinita("simon", 5, "Simon si ricorderà di questa serata.")
             n "Le sue dita le spostano appena la spalla. Un tocco tecnico, rapido."
-            sp "Chiara ha ragione su una cosa: ha le mani sicure."
+            sp "Joanie ha ragione su una cosa: ha le mani sicure."
             sp "Ma è il suo lavoro. Niente di più."
         "«Faccio da sola, grazie. Dimmi tu come.»":
             $ affinita("simon", 3, "Simon rispetta i tuoi spazi.")
@@ -132,7 +132,7 @@ label simon_s5_allenamento:
             $ nota_sara("simon", "Ha capito al volo che preferiva non essere toccata.")
 
     $ via_cg()
-    si "Brava. Davvero. Martedì ti aspetto, con o senza Chiara."
+    si "Brava. Davvero. Martedì ti aspetto, con o senza Joanie."
     $ nota_sara("simon", "Simpatico. Carino. Fine della storia.")
     $ tappa("simon", 2)
     return

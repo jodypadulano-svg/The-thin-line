@@ -133,7 +133,7 @@ default persistent.mostra_effetti = True
 default persistent.mostra_numeri = False
 
 ## Nome del compagno: lo sceglie il giocatore all'inizio.
-default nome_compagno = "Marco"
+default nome_compagno = "Josh"
 
 ## Sara.
 default sara_legame = 80      # parte da una coppia felice
@@ -146,7 +146,9 @@ default percorsi = {
     "simon":   Percorso("simon", "Simon", "Il personal trainer"),
     "howard":  Percorso("howard", "Howard", "Il vicino di casa"),
     "editore": Percorso("editore", "L'editore", "L'uomo ricco e di successo"),
-    "amica":   Percorso("amica", "Chiara", "La migliore amica"),
+    ## Joanie: percorso 5, il lato sentimentale emerge molto più avanti.
+    ## Non chiamare incontra("amica") finché il percorso non si apre.
+    "amica":   Percorso("amica", "Joanie", "La migliore amica"),
     "ex":      Percorso("ex", "L'ex", "L'ex fidanzato"),
     "amico":   Percorso("amico", "L'amico", "Il migliore amico del compagno"),
     "capa":    Percorso("capa", "La capa", "La responsabile dell'ufficio"),

@@ -40,16 +40,19 @@ label howard_2_spesa:
     s "Howard, non serve..."
     ho "Insisto. A cosa servono i vicini?"
     $ vai("casa", "Casa di Sara — mattina")
+    n "Sara lascia cadere il mazzo di chiavi nella ciotola accanto alla porta, come sempre."
     n "Howard posa le borse sul tavolo della cucina. Sara sistema la roba in frigo, voltandogli le spalle."
     s "Grazie davvero. Vuoi un caffè?"
     ho "No, no, ti ho già disturbata abbastanza."
 
     call inizio_retroscena
-    $ cg("Il cesto del bucato pulito sulla sedia accanto alla porta; la mano di Howard")
+    $ cg("Accanto alla porta: il cesto del bucato pulito, la ciotola delle chiavi; la mano di Howard")
     rs "Sara ha la testa nel frigo. Howard guarda il cesto del bucato accanto alla porta."
     rs "Un movimento rapido. Qualcosa di piccolo e di pizzo scompare nella tasca della sua giacca."
+    rs "Poi i suoi occhi scendono sulla ciotola. Il mazzo di Sara segue la stessa strada, senza un tintinnio."
     rs "Quando Sara si volta, lui è già sulla soglia, con il suo sorriso impacciato."
     $ retroscena("howard", "Ha rubato un capo di biancheria intima di Sara dal cesto del bucato.")
+    $ retroscena("howard", "Ha rubato anche le chiavi di casa di Sara dalla ciotola accanto alla porta.")
     $ via_cg()
     call fine_retroscena
 
@@ -63,22 +66,26 @@ label howard_2_spesa:
 
 label howard_3_chiusa_fuori:
     ## Howard ha preparato tutto. Il giocatore lo sa dall'inizio (decisione
-    ## definitiva della scheda); il meccanismo esatto è ancora da decidere.
+    ## definitiva della scheda). Meccanismo deciso da Jody il 16/11: le chiavi
+    ## rubate il giorno 5 (howard_2_spesa). Da allora Sara è sempre uscita e
+    ## rientrata con [nome_compagno], quindi non se n'è accorta.
     $ luogo_corrente = ""
     scene bg nero with fade
     call inizio_retroscena
-    rs "Mattina. [nome_compagno] esce per un turno lungo: non tornerà prima delle otto."
-    rs "Howard lo sa. Howard sa sempre a che ora escono e a che ora rientrano."
-    ## PROVVISORIO: il meccanismo è da decidere (scheda, sezione D).
-    rs "Dalla sua tasca spunta un piccolo attrezzo di metallo. La serratura di Sara non è mai stata un problema."
-    $ retroscena("howard", "Ha fatto in modo che Sara restasse chiusa fuori di casa. Conosce gli orari della coppia.")
+    rs "Mattina. Sara e [nome_compagno] escono insieme: lui ha un turno lungo, non tornerà prima delle otto. È lui a chiudere la porta."
+    rs "Howard li guarda scendere dallo spioncino. Sa sempre a che ora escono e a che ora rientrano."
+    rs "Nel cassetto del suo comodino, accanto al pizzo, c'è un mazzo di chiavi con un portachiavi a forma di penna stilografica."
+    $ retroscena("howard", "Conosce gli orari della coppia: sapeva che Sara sarebbe rientrata da sola, senza chiavi.")
     call fine_retroscena
 
     $ vai("pianerottolo", "Pianerottolo — pomeriggio")
-    n "La chiave entra. Ma non gira."
-    s "No, no, no... dai!"
-    sp "[nome_compagno] non torna prima delle otto. Ed è l'una."
-    ho "Problemi con la serratura? Oh, povera. Succede, in questo palazzo. È tutto vecchio."
+    n "Sara rientra da sola, fruga nella borsa. Poi la svuota sullo zerbino."
+    s "No, no, no... dove sono?"
+    sp "Le chiavi. Quando le ho usate l'ultima volta? Sabato? Da sabato è sempre stato [nome_compagno] ad aprire."
+    sp "Prima la biancheria, ora le chiavi. Che testa che ho."
+    n "Chiama [nome_compagno]. Lui è dall'altra parte della città, in mezzo a un turno: non può muoversi prima delle otto."
+    sp "Ed è l'una."
+    ho "Problemi? Oh... hai perso le chiavi? Povera. Capita, capita a tutti."
     ho "Vieni da me ad aspettarlo. Non puoi restare qui sul pianerottolo per sette ore."
     sp "Sette ore. Non ho alternative."
 

@@ -23,8 +23,8 @@ label start:
     $ luogo_corrente = ""
 
     n "Prima di cominciare: Sara vive con il suo compagno."
-    $ nome = renpy.input("Come si chiama? (Invio per «Marco»)", default="Marco", length=20).strip()
-    $ nome_compagno = nome if nome else "Marco"
+    $ nome = renpy.input("Come si chiama? (Invio per «Josh»)", default="Josh", length=20).strip()
+    $ nome_compagno = nome if nome else "Josh"
 
     menu:
         n "Da dove vuoi iniziare?"

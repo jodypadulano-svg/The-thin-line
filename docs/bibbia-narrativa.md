@@ -36,4 +36,5 @@ Le schede dei singoli personaggi sono nella cartella [personaggi](personaggi/):
 - [Daniel](personaggi/daniel.md) — il capo del compagno (archetipo 1): caratterizzazione e primi tre incontri
 - [L'editore](personaggi/editore.md) — l'uomo molto ricco e di successo (archetipo 4), incrocio con il percorso di Daniel
 - [Howard](personaggi/howard.md) — il vicino di casa (archetipo 3): identità e tre incontri
-Archetipi senza scheda ancora: la migliore amica di Sara (5), l'ex fidanzato (6), il migliore amico del compagno (7), la capa di Sara (8).
+- [Joanie](personaggi/joanie.md) — la migliore amica (archetipo 5): il lato sentimentale emerge molto più avanti
+Archetipi senza scheda ancora: l'ex fidanzato (6), il migliore amico del compagno (7), la capa di Sara (8).

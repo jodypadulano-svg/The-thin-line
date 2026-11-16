@@ -12,7 +12,7 @@ define sp = Character(None, what_italic=True, what_color="#d9c8d0", what_prefix=
 ## Il compagno: il nome lo sceglie il giocatore.
 define c = Character("[nome_compagno]", color="#8fb3e0")
 
-define ch = Character("Chiara", color="#f0c674")
+define ch = Character("Joanie", color="#f0c674")
 define si = Character("Simon", color="#7fd1a8")
 define da = Character("Daniel", color="#c9a0ff")
 define ho = Character("Howard", color="#b5a48a")

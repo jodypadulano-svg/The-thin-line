@@ -50,7 +50,7 @@ rs "Testo che Sara non sa."
 call fine_retroscena
 ```
 
-Personaggi: `s` Sara, `sp` pensieri di Sara, `c` il compagno (nome scelto dal giocatore, predefinito «Marco»), `ch` Chiara, `si` Simon, `da` Daniel, `ho` Howard, `ed` l'editore, `n` narratore, `rs` voce dei retroscena.
+Personaggi: `s` Sara, `sp` pensieri di Sara, `c` il compagno (nome scelto dal giocatore, predefinito «Josh»), `ch` Joanie, `si` Simon, `da` Daniel, `ho` Howard, `ed` l'editore, `n` narratore, `rs` voce dei retroscena.
 
 ## 4. Diario
 
@@ -71,16 +71,16 @@ game/
   test/test_episodio1.rpy   test automatici
 ```
 
-## 6. Scaletta dell'Episodio 1 (proposta)
+## 6. Scaletta dell'Episodio 1 (provvisoria, approvata)
 
 | Giorno | Scene | Bivi |
 |---|---|---|
-| 1 | Prologo a casa; Chiara la iscrive in palestra | Serata con lui o scrivere |
-| 2 | Simon 1 e 2 (prima visita); invito alla cena aziendale | Come risponde a Chiara; guardare o no |
+| 1 | Prologo a casa; Joanie la iscrive in palestra | Serata con lui o scrivere |
+| 2 | Simon 1 e 2 (prima visita); invito alla cena aziendale | Come risponde a Joanie; guardare o no |
 | 3 | Daniel 1 (cena aziendale) + retroscena | Come reagire a Daniel; cosa dire in macchina |
 | 4 | Howard 1 (pianerottolo); Daniel 2 (patente) | Fermarsi o no con Howard |
 | 5 | Howard 2 (spesa) + retroscena furto; Simon 3 (locale) | — |
-| 6 | Simon 4 (Chiara cancella); Simon 5 solo se entra | **Entrare o tornare a casa** |
+| 6 | Simon 4 (Joanie cancella); Simon 5 solo se entra | **Entrare o tornare a casa** |
 | 7 | Howard 3 (chiusa fuori) + retroscena e pianto finto | **Risposta a Howard (provvisoria)** |
 | 8 | Daniel 3 (festa, editore) + retroscena; finale a casa | Come parlare all'editore; **dirlo al compagno o tenerlo segreto** |
 
@@ -90,10 +90,10 @@ I dialoghi sono **bozze** per rendere il gioco giocabile; si riscrivono partendo
 
 Sono cose che la bibbia lascia aperte e che il codice ha dovuto riempire per funzionare:
 
-1. Nome predefinito del compagno: «Marco» (il giocatore può cambiarlo).
-2. Chiara è stata collegata all'archetipo 5 (la migliore amica).
-3. Ordine delle giornate della scaletta qui sopra.
-4. Howard 3: Sara resta chiusa fuori perché Howard manomette la serratura; opzioni ed effetti della domanda finale.
+1. ~~Nome predefinito del compagno~~ — deciso: «Josh» (il giocatore può cambiarlo).
+2. ~~Archetipo 5~~ — deciso: è Joanie; il lato sentimentale emerge molto più avanti ([scheda](personaggi/joanie.md)).
+3. ~~Ordine delle giornate~~ — approvato come provvisorio (16/11): con solo tre percorsi attivi; quando ce ne saranno di più si creeranno nuovi intrecci.
+4. ~~Meccanismo di Howard 3~~ — deciso: Howard ruba le chiavi di Sara il giorno della spesa, insieme alla biancheria ([scheda](personaggi/howard.md)). Restano aperte opzioni ed effetti della domanda finale.
 5. Il segreto finale (biglietto dell'editore) e le opzioni dei bivi non previsti dalle schede.
 
 ## 8. Compatibilità dei salvataggi tra episodi
