@@ -24,3 +24,4 @@ Generatore: **Mureka** (SKYWORK AI PTE. LTD.), piano con uso commerciale. Il cer
 | `game/audio/suoni/macchinetta_caffe.ogg` | Office coffee machin… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
 | `game/audio/suoni/chiave_serratura.ogg` | Key turning in an ap… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
 | `game/audio/suoni/sobbollire.ogg` | Risotto gently simme… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/suoni/notifica.ogg` | Soft pleasant phone… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
