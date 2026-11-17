@@ -17,7 +17,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | File | Dove suona | Stato |
 |---|---|---|
 | `tema_principale` | Menu iniziale | |
-| `casa` | Casa: mattina e sera con Josh | |
+| `casa` | Casa: mattina e sera con Josh | ✅ |
 | `redazione` | Redazione | |
 | `barbara` | Quando entra Barbara | |
 | `stranezza` | Roberta e Jessica | |
