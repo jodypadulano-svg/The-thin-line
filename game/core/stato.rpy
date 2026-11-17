@@ -158,11 +158,37 @@ init -10 python:
             return NOMI_VARIABILI[chiave]
         return "Interest " + nome_interest(chiave)
 
+    ## Argomenti delle scelte che NON sono requisiti (es. la scelta segreta).
+    CHIAVI_SPECIALI = ("segreto",)
+
+    def requisiti_di(kwargs):
+        """Solo i requisiti veri di una scelta, senza le chiavi speciali."""
+        return {k: v for k, v in (kwargs or {}).items() if k not in CHIAVI_SPECIALI}
+
     def requisiti_ok(requisiti):
-        return all(_valore_requisito(k) >= v for k, v in requisiti.items())
+        """Minimi: corruption=15 (almeno 15). Tetti: corruption_max=20 (al massimo 20)."""
+        for k, v in requisiti_di(requisiti).items():
+            if k.endswith("_max"):
+                if _valore_requisito(k[:-4]) > v:
+                    return False
+            elif _valore_requisito(k) < v:
+                return False
+        return True
 
     def testo_requisiti(requisiti):
-        return " · ".join("{} {}".format(_nome_requisito(k), v) for k, v in requisiti.items())
+        parti = []
+        for k, v in requisiti_di(requisiti).items():
+            if k.endswith("_max"):
+                parti.append("{} ≤ {}".format(_nome_requisito(k[:-4]), v))
+            else:
+                parti.append("{} {}".format(_nome_requisito(k), v))
+        return " · ".join(parti)
+
+    def segreto_trovato(descrizione):
+        """Segreto dei dev trovato dal giocatore: notifica e riga nel Diario."""
+        if descrizione not in store.segreti_trovati:
+            store.segreti_trovati.append(descrizione)
+            _annuncia_testo("Hai trovato un segreto!")
 
     ## --- Percorsi, Diario, segreti, fatti ---------------------------------------
 
@@ -246,6 +272,9 @@ default segreti = {}
 
 ## Fatti e scelte puntuali.
 default fatti = {}
+
+## Segreti dei dev trovati dal giocatore (es. la scelta segreta del giorno 2).
+default segreti_trovati = []
 
 ## Calendario della storia (lineare, niente grind).
 default giorno = 0

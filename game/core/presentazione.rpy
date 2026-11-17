@@ -116,6 +116,11 @@ init python:
         else:
             renpy.show_screen("segnaposto_cg", descrizione=descrizione)
 
+    def filmato(video):
+        """Filmato a schermo intero (WebM). Se il file manca ancora, si salta."""
+        if renpy.loadable(video):
+            renpy.movie_cutscene(video)
+
     def via_cg():
         renpy.hide_screen("segnaposto_cg")
         if renpy.showing("cg_corrente"):

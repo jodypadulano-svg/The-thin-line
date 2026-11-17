@@ -4,6 +4,25 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 2 — la scelta segreta: Sara fuma (decisione 17/11/2026)
+
+**Stato: confermata e scritta il 17/11/2026** (label `ep1_d2_segreto_fumo` e `ep1_d2_terrazzino_fumatrice`; scelte con tetto `corruption_max=`; sezione «Segreti trovati» nel Diario; test `segreto`). L'area cliccabile va ritoccata quando arriva la A8 vera. Modifica la decisione precedente sul terrazzino: «Sara non fuma» resta vero **salvo** questa scelta segreta.
+
+- Durante la scena del terrazzino c'è una **scelta segreta**, invisibile nel menu. Se il giocatore la trova, Jessica (o Roberta) le chiede esplicitamente se vuole fumare anche lei.
+- **No:** la scena prosegue esattamente come prima.
+- **Sì:** si attiva la flag permanente **`sara_fuma`**, parte un **breve filmato** (Sara che fuma con lo stesso gesto delle labbra arricciate, sorridendo), e la **Corruption va subito a 100**.
+- **Scopo:** sbloccare tutti i percorsi fin dall'inizio, per chi vuole i contenuti senza aspettare (una sorta di modalità «sbloccata» nascosta nella storia).
+- Coerenza con la lore: fumare così è il segno della cerchia di Barbara, quindi la scelta è anche un primo, inconsapevole passo verso Barbara.
+
+**Proposte provvisorie, da confermare con Jody:**
+1. ✅ *Dove si clicca (confermato da Jody):* punto nascosto sulla sigaretta che Jessica porge nella CG A8, mentre è aperto il menu «A cigarette.» (metodo «punto cliccabile nell'immagine», funziona anche su mobile). La A8 deve mostrare la sigaretta ben visibile in primo piano.
+2. ✅ *Avviso (confermato da Jody):* sì, notifica «Hai trovato un segreto» e voce nel Diario, **dopo** averlo trovato. Il punto cliccabile invece è **difficilissimo da vedere**: nessun effetto al passaggio del mouse, nessun suggerimento. È un **segreto dei dev** (da rivelare eventualmente ai sostenitori, es. su Patreon).
+3. ✅ *Effetto sul resto (confermato da Jody):* la Corruption 100 apre tutte le scelte bloccate da Corruption, ma le **tappe restano legate all'Interest** di ciascun percorso (non salta le relazioni). Il finale fedele diventa irraggiungibile.
+   - **Novità di sistema:** scelte con un **tetto massimo** di Corruption. Alcune scelte «buone» (tenere, fedeli, pudiche) diventano **grigie** quando la Corruption supera un valore: es. `"testo" (corruption_max=20):`, con la scritta «Richiede Corruption ≤ 20». Vale per tutti, non solo per il segreto: anche chi corrompe Sara giocando normalmente vede chiudersi pian piano le scelte da brava ragazza. Da applicare al codice (oggi il sistema gestisce solo i minimi) e da usare nelle scene future; soglie da decidere scena per scena.
+4. ✅ *Testi futuri (confermato da Jody):* con `sara_fuma` attiva, solo tocchi dove conta: Josh che sente l'odore di fumo (+ Suspicion), Jessica e Roberta che la trattano come «una di loro», ogni tanto un'immagine alternativa con Sara che fuma.
+   - **Lore:** alla fine della storia, in **molti percorsi Sara fumerà** (con il gesto delle labbra arricciate). Il segreto la porta lì semplicemente prima. Da tenere presente scrivendo finali e tappe alte.
+5. ✅ *Filmato (confermato da Jody):* immagine A9 (primo fotogramma: Sara tra Jessica e Roberta alla prima boccata) poi animazione di 5-8 secondi su Mage, fatta da Jody; Claude converte l'MP4 in WebM e lo inserisce. Prompt in inquadrature-giorno-02.md (A9, V1).
+
 ### Giorno 2 — la pausa sigaretta di Jessica e Roberta (decisione 17/11/2026)
 
 **Stato: approvata e scritta il 17/11/2026 (label `ep1_d2_terrazzino` in `ep1_giorno02.rpy`, dopo il pranzo); immagini da generare** (prompt in [inquadrature-giorno-02.md](prompt-immagini/inquadrature-giorno-02.md), sezione A bis).

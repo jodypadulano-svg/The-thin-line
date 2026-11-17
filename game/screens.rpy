@@ -211,11 +211,25 @@ screen choice(items):
     ## Il segnaposto [CG] coprirebbe le scelte: lo nascondiamo.
     on "show" action Hide("segnaposto_cg")
 
+    ## Scelta segreta: "..." (segreto=(x, y, larghezza, altezza)):
+    ## un'area invisibile sull'immagine, senza effetti al passaggio del mouse
+    ## e irraggiungibile da tastiera. Non compare nella lista.
+    for i in items:
+        if i.kwargs and i.kwargs.get("segreto"):
+            button:
+                area i.kwargs["segreto"]
+                background None
+                hover_background None
+                keyboard_focus False
+                action i.action
+
     vbox:
         for i in items:
-            ## Frasi con requisito (A3): es.  "Testo" (corruption=15):
-            ## Se il requisito manca, la frase resta visibile ma in grigio.
-            if i.kwargs and not requisiti_ok(i.kwargs):
+            if i.kwargs and i.kwargs.get("segreto"):
+                pass
+            ## Frasi con requisito (A3): es.  "Testo" (corruption=15), oppure
+            ## un tetto (corruption_max=20). Se manca, la frase resta in grigio.
+            elif requisiti_di(i.kwargs) and not requisiti_ok(i.kwargs):
                 button:
                     action None
                     xalign 0.5

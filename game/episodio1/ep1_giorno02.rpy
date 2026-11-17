@@ -107,6 +107,14 @@ label ep1_d2_terrazzino:
             n "Jessica tilts her head, honestly puzzled, as if Sara had asked her about someone else."
             je "I don't remember. It's just... nicer this way. You'll see."
             sp "\"You'll see.\" Why does everyone in this office keep telling me what I'll see?"
+        ## SCELTA SEGRETA (decisione 17/11): area invisibile sulla sigaretta che
+        ## Jessica porge, in basso a sinistra nella CG A8. Va ritoccata quando
+        ## arriva l'immagine vera. Non mostrata nella lista delle scelte.
+        "(secret)" (segreto=(0.0, 0.55, 0.34, 0.45)):
+            call ep1_d2_segreto_fumo
+
+    if fatto("sara_fuma"):
+        jump ep1_d2_terrazzino_fumatrice
 
     $ cg("Close-up of Roberta exhaling smoke with exactly the same puckered lips, eyes fixed on Sara", "images/cg/ep1/d2_21_fumo_roberta.webp")
     n "Roberta hasn't said a word. She brings her cigarette to her lips, and Sara watches her do it."
@@ -130,6 +138,7 @@ label ep1_d2_terrazzino:
             sp "It's ridiculous. It's just smoke."
             sp "So why does it look so... pleasant?"
 
+label ep1_d2_terrazzino_fine:
     $ cg("A small back terrace: Jessica and Roberta lean on the railing, smoking; Sara stops in the doorway", "images/cg/ep1/d2_19_terrazzino.webp")
     n "Jessica stubs out her cigarette in the standing ashtray and stretches like a cat."
     je "Break's over! Barbara's back at four and she likes us at our desks. All smiley."
@@ -139,6 +148,62 @@ label ep1_d2_terrazzino:
     sp "Two minutes of air. That's all I wanted."
     $ via_cg()
     return
+
+
+## --- Scelta segreta: Sara fuma (segreto dei dev, decisione 17/11) ------------------
+## Si arriva qui solo cliccando la sigaretta nascosta nella CG A8. «No»: la scena
+## prosegue come se Sara avesse rifiutato. «Sì»: flag sara_fuma, filmato,
+## Corruption a 100 (le tappe restano legate all'Interest).
+
+label ep1_d2_segreto_fumo:
+    n "Before she knows what she's doing, Sara's fingers close around the cigarette."
+    n "Jessica's eyes go wide. Then she smiles, slowly, like a cat watching a door open."
+    je "Oh! Oh, Sara."
+    ro "Do you want to try? Just one. With us."
+    sp "What am I doing? I don't smoke. I've never smoked."
+    sp "And yet it's right there, between my fingers. Light. Warm from her hand."
+
+    menu:
+        sp "Just one?"
+        "Pull your hand back.":
+            n "Sara lets go as if the cigarette had burned her."
+            s "No. No, sorry. I don't smoke."
+            je "Not {i}yet{/i}!"
+            n "Jessica sings it, as if it were the funniest thing in the world."
+            return
+        "Put it to your lips.":
+            pass
+
+    $ segna("sara_fuma")
+    n "Jessica lights it for her with a little pink lighter. Roberta leans in, close enough that Sara can smell her perfume."
+    ro "Slowly. Lips like this. Like a kiss you're not giving to anyone."
+    $ cg("Sara takes her first drag between Jessica and Roberta, lips puckered, a small pleased smile", "images/cg/ep1/d2_23_sara_fuma.webp")
+    $ filmato("images/video/ep1/d2_v1_sara_fuma.webm")
+    n "Sara draws. The smoke is warm and strange. She purses her lips, the way they do, and lets it out slowly, in a long thin stream that curls in the sunlight."
+    n "She doesn't cough. She doesn't know why she doesn't cough."
+    n "She opens her eyes and she's smiling. Almost laughing."
+    je "Look at her! Look at her, Roberta! She's a natural!"
+    ro "I knew it. I always know."
+    sp "It's just a cigarette. It's just one."
+    sp "So why do I feel so... light?"
+
+    $ corruption(100 - sara_corruption, "Sara smokes like them now.")
+    $ segreti["fumo"] = "Smokes on the office terrace with Jessica and Roberta."
+    $ segreto_trovato("Sara smokes, like Jessica and Roberta.")
+    return
+
+## Il seguito del terrazzino per chi ha appena fumato.
+label ep1_d2_terrazzino_fumatrice:
+    $ cg("Close-up of Roberta exhaling smoke with exactly the same puckered lips, eyes fixed on Sara", "images/cg/ep1/d2_21_fumo_roberta.webp")
+    n "Three of them now, at the railing. Three slow drags. Three tight little pouts. Three thin streams of smoke."
+    n "Roberta never takes her eyes off her."
+    ro "Barbara works us hard, doesn't she? But she'll be so pleased with you."
+    s "Pleased? Why would Barbara care if I smoke?"
+    ro "Mm. She cares about everything we do."
+    n "Roberta smiles. The same sweet smile from yesterday. A little too wide."
+    sp "I should be worried. I should be thinking about [nome_compagno], about the smell on my blouse."
+    sp "Instead I'm thinking that I'd like another one."
+    jump ep1_d2_terrazzino_fine
 
 
 ## --- Sera: la palestra (Simon 1 e 2) --------------------------------------------

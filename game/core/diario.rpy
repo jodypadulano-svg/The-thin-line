@@ -80,6 +80,12 @@ screen diario_sara():
         else:
             text "Niente. Per ora." color "#ffffff88"
 
+        if segreti_trovati:
+            null height 10
+            label "Segreti trovati"
+            for s in segreti_trovati:
+                text "• " + s
+
         null height 10
         label "Guardaroba"
         for a in abiti_sbloccati():

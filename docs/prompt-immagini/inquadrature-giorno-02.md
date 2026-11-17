@@ -53,7 +53,7 @@ Decisione in [decisioni.md](../decisioni.md) («la pausa sigaretta»). Il gesto 
 | A5 | `d2_19_terrazzino` | Jessica e Roberta fumano, Sara sulla porta | `02_pranzo_colleghe` (le tre), `redazione` | Sara esce a prendere aria |
 | A6 | `d2_20_fumo_jessica` | Primo piano di Jessica che esala | A5 | battute di Jessica |
 | A7 | `d2_21_fumo_roberta` | Primo piano di Roberta, stesso gesto, guarda Sara | A5 | battute di Roberta |
-| A8 | `d2_22_sara_rifiuta` | Primo piano di Sara che rifiuta, perplessa | A5, `04_messaggi_josh` | l'offerta e la scelta |
+| A8 | `d2_22_sara_rifiuta` | Primo piano di Sara che rifiuta, perplessa; **sigaretta di Jessica ben visibile in primo piano in basso a sinistra** (è il punto cliccabile della scelta segreta) | A5, `04_messaggi_josh` | l'offerta e la scelta |
 
 Alternanza: A5 → A6 → A8 → A7 → A8 → A5.
 
@@ -71,7 +71,23 @@ Close-up of @roberta_wc on the office terrace from the reference image, blonde, 
 ```
 **A8**
 ```
-Close-up of @sara_wc on the office terrace from the reference image, buttoned-up white blouse, politely raising one hand to decline an offered cigarette held out from off-frame, a faint wisp of smoke drifting past her face, a puzzled, slightly uneasy smile, eyebrows knitted. Same face, hair and bust size as in the reference images, natural unpainted nails, modest, no visible cleavage. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Close-up of @sara_wc on the office terrace from the reference image, buttoned-up white blouse, politely raising one hand to decline; in the lower left foreground, clearly visible and large, a woman's hand with long pink nails holds out a slim white cigarette toward her from off-frame, a faint wisp of smoke drifting past her face, a puzzled, slightly uneasy smile, eyebrows knitted. Same face, hair and bust size as in the reference images, natural unpainted nails, modest, no visible cleavage. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+
+**Scelta segreta — Sara fuma** (vedi decisioni: «la scelta segreta»). Solo per chi trova il punto nascosto sulla sigaretta della A8 e accetta.
+
+| ID | File | Inquadratura | Allega | Quando compare |
+|---|---|---|---|---|
+| A9 | `d2_23_sara_fuma` | Sara alla prima boccata tra Jessica e Roberta (primo fotogramma del filmato) | A5, A8 | dopo il «sì» |
+| V1 | `d2_v1_sara_fuma.webm` | Filmato 5-8 s animato dalla A9 | A9 | dopo il «sì», prima della notifica del segreto |
+
+**A9**
+```
+The small back terrace of the office from the reference image, early afternoon: @sara_wc in her buttoned-up white blouse stands between @jessica_wc and @roberta_wc at the railing, a slim white cigarette between her fingers, lips softly puckered as she exhales a thin stream of smoke for the first time, eyes half closed, a small surprised, pleased smile; Jessica claps her hands delighted, Roberta watches her with a sweet, slightly too-wide smile. Same face, hair and bust size as in the reference images, natural unpainted nails, modest, no visible cleavage. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+**V1** (animazione dalla A9)
+```
+Gentle, slow animation in the same watercolor style: Sara lifts the cigarette to her lips, takes a slow drag, purses her lips into a tight pout and slowly blows out a long thin stream of smoke that curls in the sunlight, then opens her eyes and smiles, almost laughing, pleased with herself. Jessica claps softly, Roberta smiles. Subtle camera push-in. No text.
 ```
 
 ---
