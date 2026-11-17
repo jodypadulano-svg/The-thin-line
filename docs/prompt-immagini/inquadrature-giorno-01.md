@@ -4,7 +4,7 @@ Bozza di lavoro | 17 novembre 2026 · Regola: un cambio d'immagine ogni 3-4 batt
 
 **Come si fanno le varianti:** su Mage parti dall'immagine indicata in «Da» (riferimento) e incolla la frase della colonna «Modifica». Tutte in 16:9, stesso stile. ✅ = già fatta.
 
-Totale: **28 immagini diverse**, 27 fatte ✅ e A5 da rifare 🔁 (mani di Josh), circa **38 cambi d'immagine** nel giorno.
+Totale: **28 immagini diverse, tutte fatte ✅** (completato il 17/11/2026), circa **38 cambi d'immagine** nel giorno.
 
 ---
 
@@ -16,7 +16,7 @@ Totale: **28 immagini diverse**, 27 fatte ✅ e A5 da rifare 🔁 (mani di Josh)
 | A2 ✅ | Primo piano allo specchio | A1 | *Close-up of Sara's reflection in the standing mirror, buttoning the plain white blouse, fingers stopped on the top button at the collar, thoughtful.* | «She picks the plain white blouse…» e la scelta del bottone |
 | A3 ✅ | Un bottone aperto (solo scelta B) | A2 | *Same mirror close-up, the top button left open, Sara smiling shyly at her own reflection, cheeks a little pink.* | «One button. That's all. Today I feel… nice.» |
 | A4 ✅ | Il bacio sulla tempia | — | — | «Josh appears in the doorway…» → «Page twenty-six is lucky…» |
-| A5 🔁 | «Love you!» dalle scale | A4 | *Josh halfway down the building stairs, turning back and shouting up with a grin; Sara leans out of the apartment door, laughing.* (allega `pianerottolo`) | «He's already halfway down the stairs…» → fine scena |
+| A5 ✅ | «Love you!» dalle scale | A4 | *Josh halfway down the building stairs, turning back and shouting up with a grin; Sara leans out of the apartment door, laughing.* (allega `pianerottolo`) | «He's already halfway down the stairs…» → fine scena |
 
 ## B. Redazione — Barbara
 
