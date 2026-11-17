@@ -4,6 +4,18 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Visione artistica autoriale (17/11/2026) — già documentata
+
+**Stato:** principi di scrittura registrati in [visione-artistica.md](visione-artistica.md), collegati a Bibbia narrativa e regole di lavoro. Non si aggiungono scene e non si modifica codice Ren'Py per questa decisione.
+
+- *The Thin Line* è un elogio della libertà individuale di Sara, non una parabola moralistica sulla «donna caduta». Lo stile pastello/acquerello è la sua lente iniziale, non la negazione dell'oscurità del mondo.
+- Ogni percorso, incluso quello fedele, può culminare in una **felicità autentica per Sara**, anche quando dall'esterno l'esito sembra oscuro, sottomesso, trasgressivo o provoca sofferenza a Josh. Le svolte devono essere scelte e costruite gradualmente.
+- Josh funge soprattutto da simbolo dell'ordine sociale e della vita prestabilita: **non svilupparne una biografia o una scheda psicologica approfondita**; conservare solo i dati canonici essenziali.
+- L'intimità, anche nelle fantasie BDSM con Magnus o Barbara, è consensuale, desiderata e giocosa, senza violenza fisica né dolore imposto. La libertà include la possibilità di dire no.
+- I dialoghi non devono colpevolizzare il corpo, la curiosità, l'omosessualità o la non esclusività di Sara; mantenere invece specificità emotiva per Daniel, Magnus, Joanie, Barbara, Darius e gli altri percorsi. L'immagine del seno distintivo di Sara muta da fonte di disagio a possibile fonte di fiducia e autonomia.
+- **Obbligo di consultazione:** usare il manifesto prima di scrivere dialoghi, scene, finali o prompt visivi. Le idee di micro-filler della stessa conversazione restano per ora brainstorming, non nuove scene approvate.
+
+
 ### Telefono Ren'Py e filler via chat (decisione 17/11/2026)
 
 **Stato: approvato da Jody, da applicare in un lotto successivo; nessun codice telefonico ancora integrato.**
