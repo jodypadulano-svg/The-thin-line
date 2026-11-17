@@ -22,6 +22,7 @@ Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude
 - Quando sarà il momento, Claude scrive i prompt per generare le immagini di ogni scena (le didascalie `[CG]` nel codice sono la base).
 - Strumento: **Mage**. Stile: **acquerello e matita** (deciso il 16/11/2026, sostituisce il render 3D). Motivi: è chiaramente illustrato, quindi rispetta le regole di Patreon sull'AI (vietato l'iperrealismo per i contenuti 18+); e il contrasto tra l'acquerello dolcissimo e la corruzione di Sara è parte dell'identità del gioco.
 - **Le immagini le genera Jody**: Claude scrive solo i prompt e non avvia generazioni su Mage.
+- **Solo immagini immersive** (niente sprite): ogni momento è una scena completa. Per ogni scena Claude indica la CG base e le varianti da ottenere modificandola.
 - Ogni prompt specifica:
   - **A. Gli attori** presenti nell'immagine (riferiti agli attori già generati, vedi punto 5);
   - **B. Il luogo** (riferito ai luoghi già generati, vedi punto 5).

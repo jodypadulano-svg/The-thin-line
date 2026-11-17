@@ -77,3 +77,12 @@ testsuite foto_scelte:
         click "«Certo.»"
         pause 0.2
         screenshot "notifica.png"
+
+testsuite foto_cg:
+    enabled False
+    testcase armadio:
+        $ store.menu = renpy.display_menu
+        run Jump("ep1_d1_mattina")
+        advance repeat 2
+        pause 1.0
+        screenshot "cg_armadio.png"

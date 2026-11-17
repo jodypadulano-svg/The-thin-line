@@ -106,11 +106,21 @@ screen segnaposto_cg(descrizione):
         text "[[CG] " + descrizione size 26 color "#ffffff88" italic True
 
 init python:
-    def cg(descrizione):
-        renpy.show_screen("segnaposto_cg", descrizione=descrizione)
+    def cg(descrizione, immagine=None):
+        """Mostra la CG della scena. Se il file esiste lo mostra a tutto
+        schermo; altrimenti mostra la didascalia [CG] come segnaposto.
+        Uso: $ cg("descrizione", "images/cg/ep1/d1_01_armadio.webp")"""
+        if immagine and renpy.loadable(immagine):
+            renpy.show("cg_corrente", what=Transform(immagine, fit="cover", xysize=(config.screen_width, config.screen_height)))
+            renpy.with_statement(dissolve)
+        else:
+            renpy.show_screen("segnaposto_cg", descrizione=descrizione)
 
     def via_cg():
         renpy.hide_screen("segnaposto_cg")
+        if renpy.showing("cg_corrente"):
+            renpy.hide("cg_corrente")
+            renpy.with_statement(dissolve)
 
 
 ## Le notifiche delle scelte vanno in alto a destra, così non coprono il

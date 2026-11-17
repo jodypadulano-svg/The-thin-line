@@ -16,7 +16,7 @@ label ep1_d1:
 
 label ep1_d1_mattina:
     $ vai("camera", "Home — 7:40 a.m.")
-    $ cg("Sara in front of the open wardrobe, hair still damp, holding two blouses")
+    $ cg("Sara in front of the open wardrobe, hair still damp, holding two blouses", "images/cg/ep1/d1_01_armadio.webp")
 
     n "The alarm went off twenty minutes ago. Sara has spent fifteen of them staring at the same two blouses."
     sp "The white one or the white one. Wow, Sara. Living on the edge."
@@ -40,6 +40,7 @@ label ep1_d1_mattina:
             sp "One button. That's all. Today I feel... nice."
             sp "Is that allowed on a Monday?"
 
+    $ cg("Josh in the doorway kisses Sara on the temple while she buttons her blouse", "images/cg/ep1/d1_02_bacio_tempia.webp")
     n "[nome_compagno] appears in the doorway, tie finally knotted, and kisses her on the temple."
     c "You look great. Go and conquer the world."
     s "The world. Or at least page twenty-six."
@@ -47,6 +48,7 @@ label ep1_d1_mattina:
     n "He's already halfway down the stairs when he shouts back:"
     c "Love you!"
     s "Love you more!"
+    $ via_cg()
     sp "Every single morning. He never forgets."
     return
 
@@ -55,17 +57,16 @@ label ep1_d1_mattina:
 
 label ep1_d1_redazione:
     $ vai("redazione", "The newsroom — 9:05 a.m.")
-    $ cg("An open-plan newsroom: rows of desks, monitors, a wall of framed front pages. Sara at a small desk near the window")
+    $ cg("An open-plan newsroom: rows of desks, monitors, a wall of framed front pages. Sara at a small desk near the window", "images/cg/ep1/d1_03_scrivania.webp")
 
     n "The newsroom smells like coffee and printer toner. Sara has worked here for eight months, and she still hasn't written a single article she'd show to her mother."
     sp "Restaurant reviews. Local fairs. «Ten ways to enjoy the autumn.»"
     sp "One day I'll write something real. One day."
 
-    $ via_cg()
     n "She has barely turned on her computer when a door bangs open at the end of the room."
     n "Every head in the newsroom drops a little lower over its keyboard."
 
-    $ cg("Barbara in the doorway of her glass office: sixty, generous curves, flaming red hair, a leopard-print dress, a pair of glasses on a gold chain")
+    $ cg("Barbara bursts out of her glass office pointing at Sara; the colleagues duck over their keyboards", "images/cg/ep1/d1_04_barbara_entra.webp")
     $ incontra("capa")
     ba "SARA!"
     n "Barbara. The owner of the newspaper. She doesn't walk through the newsroom: she sails through it, like a ship that never learned to brake."
@@ -73,7 +74,6 @@ label ep1_d1_redazione:
     s "Yes?"
     ba "«Grated with love.» You wrote «grated with love» in the subtitle."
     ba "We are a newspaper, sweetheart. Not a greeting card."
-    $ via_cg()
 
     menu:
         sp "Here we go."
@@ -89,10 +89,13 @@ label ep1_d1_redazione:
             $ confidence(1)
             $ interest("capa", 1, "Barbara likes a girl with a tongue.")
             s "Well, at least nobody's going to forget it."
-            n "For a moment the whole newsroom holds its breath. Then Barbara laughs: a big, theatrical laugh that makes the glass walls tremble."
+            n "For a moment the whole newsroom holds its breath."
+            $ cg("Barbara throws her head back laughing; the colleagues peek in disbelief", "images/cg/ep1/d1_04c_barbara_ride.webp")
+            n "Then Barbara laughs: a big, theatrical laugh that makes the glass walls tremble."
             ba "Cheeky! I like it. Change it anyway."
 
     n "Barbara is already turning away. Then she stops, and looks at Sara again. Slowly. From top to bottom."
+    $ cg("Barbara leans on Sara's desk and looks her over; Sara blushes, a colleague giggles", "images/cg/ep1/d1_04b_barbara_scollatura.webp")
     ba "And darling... one more thing."
     ba "With what you've been given, you could stop dressing like a nun at a funeral."
     ba "A little neckline never hurt anyone's career. Trust me."
@@ -111,9 +114,9 @@ label ep1_d1_redazione:
             ba "You're welcome, darling. I always think."
 
     $ vai("redazione", "The newsroom — 10:30 a.m.")
+    $ cg("Roberta brings Sara a cappuccino with cinnamon, smiling a little too wide", "images/cg/ep1/d1_05_roberta_cappuccino.webp")
     n "Half an hour later a cup of coffee appears next to her keyboard. Cappuccino, no sugar, a little cinnamon on top."
     n "Exactly how she likes it. She has never told anyone how she likes it."
-    $ cg("Roberta leaning on Sara's desk: late twenties, neat ponytail, cardigan, a smile a little too wide")
     ro "For you. Don't let Barbara scare you, she's a sweetheart, really. She just... notices people."
     s "Thank you, Roberta. How did you know about the cinnamon?"
     ro "Oh, I notice people too."
@@ -122,7 +125,7 @@ label ep1_d1_redazione:
     sp "Okay. That was sweet. And a little weird."
 
     $ vai("redazione", "The newsroom — 1:00 p.m.")
-    $ cg("Jessica at the coffee machine: early twenties, very short skirt, high heels, glossy lips, twirling a strand of hair")
+    $ cg("Jessica at the coffee machine taps Sara's nose; an old novel sticks out of her pink bag", "images/cg/ep1/d1_06_jessica_naso.webp")
     je "Saaaara! You look so cute today!"
     n "Jessica. Sara remembers her first week here, three months ago: a quiet girl with thick glasses and a battered copy of a Russian novel always in her bag."
     n "They had spent a whole lunch break arguing about whether Anna Karenina was a victim or a heroine. Jessica had won."
@@ -133,7 +136,6 @@ label ep1_d1_redazione:
     je "Mmh... I can't tell you. Not yet."
     n "She giggles and taps the tip of Sara's nose with a long pink nail."
     je "But you should try it too. You'd be so much happier. Everyone would be so happy for you."
-    $ via_cg()
     sp "Try {i}what{/i}?"
 
     je "Oh! Thursday after work we're having drinks, just us girls. You have to come. Pleeease?"

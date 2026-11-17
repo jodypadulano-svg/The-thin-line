@@ -120,6 +120,8 @@ Decisioni prese ma non ancora riportate nel codice. Si applicano tutte insieme q
 - **Da correggere nella mappa (prossimo lotto):** i passaggi fisici ambigui sul consenso (Howard 6b «per sbaglio», Howard 7a doccia, Simon 7a doccia) vanno riscritti con una scelta esplicita di Sara.
 - **Sara gode sempre** (Jody, 16/11/2026, regola fissa): Sara non fa mai cose sessuali che non le piacciono tantissimo. In **ogni scena di sesso sorride o ride**, nel testo e nelle immagini. Nessun rimpianto o disagio durante l'atto: i dubbi e i sensi di colpa, se ci sono, stanno prima o dopo, nei suoi pensieri.
 - **Generatore unico: Mage** (Jody, 16/11/2026): la prova ad acquerello su Mage è venuta meglio di GPT; si usa **solo Mage** per tutte le immagini, scene erotiche comprese, per garantire la coerenza.
+- **Solo immagini immersive** (Jody, 17/11/2026): niente sprite. Ogni momento del gioco è un'immagine completa con i personaggi dentro il luogo (CG). Stima: circa 250-350 immagini per il primo mese e 2.000-2.500 per la prima stagione. Per tenere i tempi: una CG base per scena e varianti ottenute modificandola (espressione, gesto), invece di rigenerare da zero.
+- **Ritmo e campo/controcampo** (Jody, 17/11/2026): si tiene il ritmo attuale (giornate brevi, calendario lungo), ma nei dialoghi si alternano 2-4 inquadrature e si **ripetono** (campo e controcampo, come Whispers of Desire: 10.682 cambi d'immagine con 5.984 immagini diverse). Obiettivo: un cambio d'immagine ogni 3-4 battute, con circa metà delle immagini riusate.
 
 ## Provvisorie
 Scelte fatte da Claude per rendere il gioco giocabile, non ancora confermate da Jody.
