@@ -23,7 +23,7 @@ Totale: **18 immagini nuove + 5 varianti `_top`** = 23 file, più **4** della sc
 |---|---|---|---|---|
 | A1 ✅ | `d2_01_scrivania` | Sara si stira alla scrivania, ufficio di Barbara chiuso | `03_scrivania` (B1 del giorno 1) | «A quiet morning…» → menu del pranzo |
 | A2 ✅ | `d2_02_pranzo_colleghe` | Pranzo con Jessica e Roberta | `06b_jessica_ricordo` (stesso tavolino), Character | scelta «colleghe» |
-| A3 | `d2_03_pranzo_scrive` | Sara da sola scrive mangiando un panino | `03_scrivania` | scelta «scrivere» |
+| A3 ✅ | `d2_03_pranzo_scrive` | Sara da sola scrive mangiando un panino | `03_scrivania` | scelta «scrivere» |
 | A4 ✅ | `d2_04_messaggi_josh` | Primo piano, Sara sorride al telefono | `03b_sara_imbarazzo` | scelta «messaggi a Josh» |
 | — | `d1_07_le_17` (riuso) | Le 17, Sara se ne va | — | messaggio di Joanie |
 
@@ -50,10 +50,10 @@ Decisione in [decisioni.md](../decisioni.md) («la pausa sigaretta»). Il gesto 
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| A5 | `d2_19_terrazzino` | Jessica e Roberta fumano, Sara sulla porta | `02_pranzo_colleghe` (le tre), `redazione` | Sara esce a prendere aria |
-| A6 | `d2_20_fumo_jessica` | Primo piano di Jessica che esala | A5 | battute di Jessica |
-| A7 | `d2_21_fumo_roberta` | Primo piano di Roberta, stesso gesto, guarda Sara | A5 | battute di Roberta |
-| A8 | `d2_22_sara_rifiuta` | Primo piano di Sara che rifiuta, perplessa; **sigaretta di Jessica ben visibile in primo piano in basso a sinistra** (è il punto cliccabile della scelta segreta) | A5, `04_messaggi_josh` | l'offerta e la scelta |
+| A5 ✅ | `d2_19_terrazzino` | Jessica e Roberta fumano, Sara sulla porta | `02_pranzo_colleghe` (le tre), `redazione` | Sara esce a prendere aria |
+| A6 ✅ | `d2_20_fumo_jessica` | Primo piano di Jessica che esala | A5 | battute di Jessica |
+| A7 ✅ | `d2_21_fumo_roberta` | Primo piano di Roberta, stesso gesto, guarda Sara | A5 | battute di Roberta |
+| A8 ✅ | `d2_22_sara_rifiuta` | Primo piano di Sara che rifiuta, perplessa; **sigaretta di Jessica ben visibile in primo piano in basso a sinistra** (è il punto cliccabile della scelta segreta) | A5, `04_messaggi_josh` | l'offerta e la scelta |
 
 Alternanza: A5 → A6 → A8 → A7 → A8 → A5.
 
@@ -78,16 +78,17 @@ Close-up of @sara_wc on the office terrace from the reference image, buttoned-up
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| A9 | `d2_23_sara_fuma` | Sara alla prima boccata tra Jessica e Roberta (primo fotogramma del filmato) | A5, A8 | dopo il «sì» |
-| V1 | `d2_v1_sara_fuma.webm` | Filmato 5-8 s animato dalla A9 | A9 | dopo il «sì», prima della notifica del segreto |
+| A9 ✅ | `d2_23_sara_prende` | Sara prende la sigaretta dalla mano di Jessica (stessa inquadratura della A8; primo fotogramma del filmato) | A8 | quando Sara clicca la sigaretta segreta |
+| V1 ✅ | `d2_v1_sara_fuma.webm` | Filmato **15 s** animato dalla A9: fuma e si capisce che è corrotta | A9 | dopo il «sì» |
+| A10 ✅ | `d2_24_sara_fuma` | Ultimo fotogramma del filmato (lo estraggo io dal video) | V1 | dopo il filmato, durante le battute |
 
-**A9**
+**A9** (modifica della A8: stessa inquadratura, così il passaggio dalla A8 è continuo)
 ```
-The small back terrace of the office from the reference image, early afternoon: @sara_wc in her buttoned-up white blouse stands between @jessica_wc and @roberta_wc at the railing, a slim white cigarette between her fingers, lips softly puckered as she exhales a thin stream of smoke for the first time, eyes half closed, a small surprised, pleased smile; Jessica claps her hands delighted, Roberta watches her with a sweet, slightly too-wide smile. Same face, hair and bust size as in the reference images, natural unpainted nails, modest, no visible cleavage. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Keep everything exactly the same: same framing, same terrace, same Sara, same pink-nailed hand holding the cigarette in the lower left. Only change the moment: Sara no longer raises her hand to refuse; instead her fingers reach out and close around the cigarette, taking it from Jessica's hand, her eyes fixed on it, lips slightly parted, a curious, tempted half-smile, cheeks faintly flushed. White blouse buttoned all the way up, natural unpainted nails, same bust size.
 ```
-**V1** (animazione dalla A9)
+**V1** (animazione dalla A9, 15 secondi)
 ```
-Gentle, slow animation in the same watercolor style: Sara lifts the cigarette to her lips, takes a slow drag, purses her lips into a tight pout and slowly blows out a long thin stream of smoke that curls in the sunlight, then opens her eyes and smiles, almost laughing, pleased with herself. Jessica claps softly, Roberta smiles. Subtle camera push-in. No text.
+Slow, sensual animation in the same watercolor and pencil style, 15 seconds. Sara takes the already lit cigarette from the pink-nailed hand and brings it to her lips. She takes a long, slow drag, eyes closing, then purses her lips into a tight pout and slowly blows out a long thin stream of smoke that curls in the sunlight. Her expression changes as she does it: the shy, puzzled girl melts away, her shoulders relax, her eyelids grow heavy, a slow, knowing, satisfied smile spreads on her lips. With her free hand she slowly undoes the top three buttons of her white blouse, one by one, letting it fall open to show deep cleavage and the edge of a white lace bra. She takes a second drag and exhales slowly, then looks straight into the camera with half-lidded eyes, slowly licks her lips, and gives a confident, mischievous, almost hungry smile, as if she has just discovered something about herself and likes it. Subtle slow camera push-in. Warm afternoon light. No text, no nudity.
 ```
 
 ---
@@ -186,9 +187,9 @@ Variante `_top` (da D5): *Same image, but Sara wears the small tight black sport
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| E1 | `d2_16_divano_dolori` | Sara crollata sul divano, Josh ride e le porge il ghiaccio | `casa_soggiorno_sera`, `10_divano_pasta` (giorno 1) | «So? Did you survive the gym?» → «I'm proud of you.» |
-| E2 | `d2_17_josh_invito` | Josh sul bracciolo, nervoso, gira il telefono | E1 | battute di Josh sull'invito e su Daniel |
-| E3 | `d2_18_sara_invito` | Sara sul divano col ghiaccio, curiosa e un po' sospettosa | E1 | battute di Sara, menu e risposta |
+| E1 ✅ | `d2_16_divano_dolori` | Sara crollata sul divano, Josh ride e le porge il ghiaccio | `casa_soggiorno_sera`, `10_divano_pasta` (giorno 1) | «So? Did you survive the gym?» → «I'm proud of you.» |
+| E2 ✅ | `d2_17_josh_invito` | Josh sul bracciolo, nervoso, gira il telefono | E1 | battute di Josh sull'invito e su Daniel |
+| E3 ✅ | `d2_18_sara_invito` | Sara sul divano col ghiaccio, curiosa e un po' sospettosa | E1 | battute di Sara, menu e risposta |
 
 Alternanza E: E1 → E2 → E3 → E2 → E3 (menu e scelte).
 

@@ -108,9 +108,9 @@ label ep1_d2_terrazzino:
             je "I don't remember. It's just... nicer this way. You'll see."
             sp "\"You'll see.\" Why does everyone in this office keep telling me what I'll see?"
         ## SCELTA SEGRETA (decisione 17/11): area invisibile sulla sigaretta che
-        ## Jessica porge, in basso a sinistra nella CG A8. Va ritoccata quando
-        ## arriva l'immagine vera. Non mostrata nella lista delle scelte.
-        "(secret)" (segreto=(0.0, 0.55, 0.34, 0.45)):
+        ## Jessica porge, in basso a sinistra nella CG A8 (mano + sigaretta,
+        ## misurata sull immagine vera). Non mostrata nella lista delle scelte.
+        "(secret)" (segreto=(0.0, 0.47, 0.30, 0.53)):
             call ep1_d2_segreto_fumo
 
     if fatto("sara_fuma"):
@@ -156,6 +156,7 @@ label ep1_d2_terrazzino_fine:
 ## Corruption a 100 (le tappe restano legate all'Interest).
 
 label ep1_d2_segreto_fumo:
+    $ cg("Sara's fingers close around the cigarette held out by Jessica's pink-nailed hand", "images/cg/ep1/d2_23_sara_prende.webp")
     n "Before she knows what she's doing, Sara's fingers close around the cigarette."
     n "Jessica's eyes go wide. Then she smiles, slowly, like a cat watching a door open."
     je "Oh! Oh, Sara."
@@ -175,13 +176,15 @@ label ep1_d2_segreto_fumo:
             pass
 
     $ segna("sara_fuma")
-    n "Jessica lights it for her with a little pink lighter. Roberta leans in, close enough that Sara can smell her perfume."
+    n "It's Jessica's own cigarette, already lit, still warm from her lips. Roberta leans in, close enough that Sara can smell her perfume."
     ro "Slowly. Lips like this. Like a kiss you're not giving to anyone."
-    $ cg("Sara takes her first drag between Jessica and Roberta, lips puckered, a small pleased smile", "images/cg/ep1/d2_23_sara_fuma.webp")
     $ filmato("images/video/ep1/d2_v1_sara_fuma.webm")
+    $ cg("Sara exhales through puckered lips, half-lidded, licking her lips with a slow, knowing smile; the top buttons of her blouse undone", "images/cg/ep1/d2_24_sara_fuma.webp")
     n "Sara draws. The smoke is warm and strange. She purses her lips, the way they do, and lets it out slowly, in a long thin stream that curls in the sunlight."
     n "She doesn't cough. She doesn't know why she doesn't cough."
     n "She opens her eyes and she's smiling. Almost laughing."
+    n "Without thinking, she undoes the top button of her blouse. Then the second. Then the third. It's warm out here. That's all. It's just warm."
+    n "She runs the tip of her tongue over her lips. They taste of smoke, and of something she doesn't have a name for yet."
     je "Look at her! Look at her, Roberta! She's a natural!"
     ro "I knew it. I always know."
     sp "It's just a cigarette. It's just one."

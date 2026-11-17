@@ -6,7 +6,7 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ### Giorno 2 — la scelta segreta: Sara fuma (decisione 17/11/2026)
 
-**Stato: confermata e scritta il 17/11/2026** (label `ep1_d2_segreto_fumo` e `ep1_d2_terrazzino_fumatrice`; scelte con tetto `corruption_max=`; sezione «Segreti trovati» nel Diario; test `segreto`). L'area cliccabile va ritoccata quando arriva la A8 vera. Modifica la decisione precedente sul terrazzino: «Sara non fuma» resta vero **salvo** questa scelta segreta.
+**Stato: confermata e scritta il 17/11/2026** (label `ep1_d2_segreto_fumo` e `ep1_d2_terrazzino_fumatrice`; scelte con tetto `corruption_max=`; sezione «Segreti trovati» nel Diario; test `segreto`). Area cliccabile misurata sulla A8 vera: (0.0, 0.47, 0.30, 0.53). Modifica la decisione precedente sul terrazzino: «Sara non fuma» resta vero **salvo** questa scelta segreta.
 
 - Durante la scena del terrazzino c'è una **scelta segreta**, invisibile nel menu. Se il giocatore la trova, Jessica (o Roberta) le chiede esplicitamente se vuole fumare anche lei.
 - **No:** la scena prosegue esattamente come prima.
