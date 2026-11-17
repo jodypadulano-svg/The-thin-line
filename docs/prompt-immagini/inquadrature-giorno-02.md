@@ -71,7 +71,7 @@ The women's locker room from the reference image, at the big mirror with warm bu
 | C1 ✅ | `d2_07_ingresso` (+ `_top`) | Sara spaesata sulla soglia, Joanie a suo agio | `palestra_sala` | «Breathe. Nobody bites.» → «…The reason I never skip a session.» |
 | C2 ✅ | `d2_08_simon` | Simon spiega un esercizio a un cliente | `palestra_sala`, `@simon_wc` | «He's not very tall…» |
 | C3 ✅ | `d2_09_joanie_ammicca` | Primo piano di Joanie con il sorriso furbo | B1 | «So? Tell me he's not hot.» e le sue battute |
-| C4 | `d2_10_simon_saluta` | Simon dal bancone alza la mano verso la camera | C2 | il saluto e la scelta |
+| C4 ✅ | `d2_10_simon_saluta` | Simon dal bancone alza la mano verso la camera | C2 | il saluto e la scelta |
 
 Alternanza C: C1 → C2 → C3 (menu) → C4 (menu) → C3.
 
