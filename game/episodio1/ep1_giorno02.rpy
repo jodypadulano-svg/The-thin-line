@@ -25,6 +25,8 @@ label ep1_d2:
 
 label ep1_d2_redazione:
     $ vai("redazione", "The newsroom — 12:30 p.m.")
+    $ musica("redazione")
+    $ ambiente("redazione")
     $ cg("Sara at her desk, stretching, a half-written review of a bakery on the screen", "images/cg/ep1/d2_01_scrivania.webp")
 
     n "A quiet morning. No doors banging, no one shouting her name across the room."
@@ -50,11 +52,13 @@ label ep1_d2_redazione:
             $ interest("josh", 1, "A few sweet words in the middle of the day.")
             $ cg("Sara smiling at her phone, chin in her hand", "images/cg/ep1/d2_04_messaggi_josh.webp")
             n "{i}Thinking about you. And about the risotto. Mostly about you.{/i}"
+            $ suono("notifica")
             n "The answer comes in less than a minute: a heart, a bowl of rice, and «Good luck at the gym tonight, champion»."
             sp "Champion. He has no idea what's waiting for me."
 
     $ vai("redazione", "The newsroom — 5:00 p.m.")
     $ cg("Golden late-afternoon light: Sara leaves her desk at five o'clock sharp", "images/cg/ep1/d1_07_le_17.webp")
+    $ suono("telefono_vibra")
     n "At five o'clock sharp, her phone buzzes. Joanie."
     n "{i}Downstairs. Don't make me come up there.{/i}"
     return
@@ -64,6 +68,9 @@ label ep1_d2_redazione:
 
 label ep1_d2_palestra:
     $ vai("palestra", "The gym — 6:00 p.m.")
+    $ ambiente(None)
+    $ musica("palestra")
+    $ suono("armadietto")
     $ cg("Women's locker room: Joanie holds up a tight sports top; Sara clutches her baggy t-shirt", "images/cg/ep1/d2_05_spogliatoio.webp")
 
     n "The locker room smells like deodorant and somebody else's ambition."
@@ -92,6 +99,7 @@ label ep1_d2_palestra:
             sp "[nome_compagno] has never seen me like this. Nobody has."
 
     $ vai("palestra", "The gym — 6:15 p.m.")
+    $ ambiente("palestra")
     $ cg("Sara at the edge of the weight room, lost; Joanie beside her, completely at home", tuta_d2("07_ingresso"))
     ch "Breathe. Nobody bites."
     s "Joanie, everyone here is... sculpted."
@@ -184,6 +192,8 @@ label ep1_d2_palestra:
 
 label ep1_d2_sera:
     $ vai("casa", "Home — evening")
+    $ ambiente(None)
+    $ musica("casa")
     $ cg("Sara collapsed on the sofa, gym bag on the floor; Josh laughing and handing her an ice pack", "images/cg/ep1/d2_16_divano_dolori.webp")
     c "So? Did you survive the gym?"
     s "I found muscles I didn't know I had. All of them hurt. Even the ones in my ears."

@@ -18,12 +18,16 @@ label ep1_d1:
 
 label ep1_d1_mattina:
     $ vai("camera", "Home — 7:40 a.m.")
+    $ ambiente(None)
+    $ musica("casa")
+    $ suono("sveglia")
     ## A1
     $ cg("Sara in front of the open wardrobe, hair still damp, holding two blouses", "images/cg/ep1/d1_01_armadio.webp")
 
     n "The alarm went off twenty minutes ago. Sara has spent fifteen of them staring at the same two blouses."
     sp "The white one or the white one. Wow, Sara. Living on the edge."
 
+    $ suono("rasoio")
     n "From the bathroom comes the sound of an electric razor, then a voice slightly muffled by foam."
     c "Babe, have you seen my blue tie?"
     s "Second drawer. Under the grey one you never wear."
@@ -65,6 +69,8 @@ label ep1_d1_mattina:
 
 label ep1_d1_redazione:
     $ vai("redazione", "The newsroom — 9:05 a.m.")
+    $ musica("redazione")
+    $ ambiente("redazione")
     ## B1
     $ cg("An open-plan newsroom: Sara at a small desk near the window", "images/cg/ep1/d1_03_scrivania.webp")
 
@@ -72,12 +78,14 @@ label ep1_d1_redazione:
     sp "Restaurant reviews. Local fairs. «Ten ways to enjoy the autumn.»"
     sp "One day I'll write something real. One day."
 
+    $ suono("porta_sbattuta")
     n "She has barely turned on her computer when a door bangs open at the end of the room."
     n "Every head in the newsroom drops a little lower over its keyboard."
 
     ## B2
     $ cg("Barbara bursts out of her glass office pointing at Sara; the colleagues duck over their keyboards", "images/cg/ep1/d1_04_barbara_entra.webp")
     $ incontra("capa")
+    $ musica("barbara")
     ba "SARA!"
     n "Barbara. The owner of the newspaper. She doesn't walk through the newsroom: she sails through it, like a ship that never learned to brake."
     ba "Darling. The piece on the cheese festival."
@@ -140,6 +148,8 @@ label ep1_d1_redazione:
             ba "You're welcome, darling. I always think."
 
     $ vai("redazione", "The newsroom — 10:30 a.m.")
+    $ musica("redazione")
+    $ suono("tazza")
     ## C1
     $ cg("Roberta brings Sara a cappuccino with cinnamon, smiling a little too wide", "images/cg/ep1/d1_05_roberta_cappuccino.webp")
     n "Half an hour later a cup of coffee appears next to her keyboard. Cappuccino, no sugar, a little cinnamon on top."
@@ -148,6 +158,7 @@ label ep1_d1_redazione:
     s "Thank you, Roberta. How did you know about the cinnamon?"
     ## C2
     $ cg("Close-up of Roberta, sweet smile a little too wide, staring", "images/cg/ep1/d1_05b_roberta_sguardo.webp")
+    $ musica("stranezza")
     ro "Oh, I notice people too."
     ## C3
     $ cg("Roberta back at her desk outside Barbara's office, looking back over her shoulder", "images/cg/ep1/d1_05c_roberta_al_suo_posto.webp")
@@ -155,6 +166,7 @@ label ep1_d1_redazione:
     sp "Okay. That was sweet. And a little weird."
 
     $ vai("redazione", "The newsroom — 1:00 p.m.")
+    $ suono("macchinetta_caffe")
     ## D1
     $ cg("Jessica at the coffee machine taps Sara's nose; an old novel sticks out of her pink bag", "images/cg/ep1/d1_06_jessica_naso.webp")
     je "Saaaara! You look so cute today!"
@@ -200,6 +212,7 @@ label ep1_d1_redazione:
             n "She says it like a promise."
 
     $ vai("redazione", "The newsroom — 4:55 p.m.")
+    $ musica("redazione")
     ## E1
     $ cg("Golden late-afternoon light: Sara leaves her desk at five o'clock sharp", "images/cg/ep1/d1_07_le_17.webp")
     n "The afternoon passes between a review of a new bakery and three different versions of a headline about the cheese festival."
@@ -211,6 +224,8 @@ label ep1_d1_redazione:
 
 label ep1_d1_sera:
     $ vai("casa", "Home — evening")
+    $ ambiente(None)
+    $ musica("casa")
     ## F1
     $ cg("Sara at the table by the window, laptop open, a cup of tea going cold beside her", "images/cg/ep1/d1_08_capitolo_tre.webp")
 
@@ -218,6 +233,7 @@ label ep1_d1_sera:
     sp "My heroine has to open that door, and I still don't know what's on the other side."
     n "Sara deletes the last sentence. Then types it again, word for word."
 
+    $ suono("chiave_serratura")
     n "A key turns in the lock."
     ## F2
     $ cg("Josh comes home and kisses the top of Sara's head; she laughs", "images/cg/ep1/d1_09_josh_rientra.webp")
@@ -259,6 +275,7 @@ label ep1_d1_sera:
             ## F6
             $ cg("Sara stirs a risotto; Josh hugs her from behind", "images/cg/ep1/d1_10c_risotto.webp")
             $ interest("josh", 1)
+            $ suono("sobbollire")
             n "Sara puts the pasta back in the fridge and makes the risotto he likes, the one that takes forty minutes of stirring."
             c "What did I do to deserve this?"
             s "You came home."
@@ -268,8 +285,10 @@ label ep1_d1_sera:
             n "Pizza on the couch, a bad movie, his feet on the coffee table. A perfect Monday."
 
     $ vai("camera", "Home — night")
+    $ musica("notte")
     ## G1
     $ cg("Night, bedside lamp: Sara on the bed on the phone, laughing; Josh asleep", "images/cg/ep1/d1_11_telefonata_joanie.webp")
+    $ suono("telefono_vibra")
     n "It's almost eleven when Sara's phone lights up. Joanie."
     ch "Tomorrow. Gym. No excuses."
     s "Joanie, it's eleven o'clock at night."
