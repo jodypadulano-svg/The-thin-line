@@ -1,6 +1,7 @@
 # The Thin Line — Regole di lavoro
 
 **Da leggere sempre, all'inizio di ogni sessione di lavoro su The Thin Line.**
+**Per dialoghi, monologhi, scene, scelte e prompt, leggere obbligatoriamente anche la [visione artistica](visione-artistica.md): autonomia di Sara, felicità soggettiva in tutti i finali, non moralismo, slow burn e specificità dei percorsi.**
 Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude.
 
 ## 1. Decisioni a lotti, codice dopo
@@ -47,7 +48,7 @@ Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude
 - Attenzione: LM Studio con un modello grande occupa molta memoria; non tenerlo carico mentre si lavora con Unity o Premiere.
 
 ## 8. Regole che valgono sempre
-- La [bibbia narrativa](bibbia-narrativa.md) e le [schede](personaggi/) sono la fonte. I dialoghi nel codice sono bozze finché Jody non li approva.
+- La [bibbia narrativa](bibbia-narrativa.md), la [visione artistica](visione-artistica.md) e le [schede](personaggi/) sono la fonte. **Il manifesto creativo è un vincolo di tono e interpretazione** anche quando si generano dialoghi. I dialoghi nel codice sono bozze finché Jody non li approva.
 - Tutti i personaggi sono adulti.
 - Non nominare mai i giochi di riferimento nel gioco e non copiarne i testi: gli script estratti stanno fuori dal repository (`C:\Users\Jody\renpy-ispirazione`).
 - Salvataggi compatibili tra episodi: vedi [sistema di gioco](sistema-di-gioco.md), sezione 8.
