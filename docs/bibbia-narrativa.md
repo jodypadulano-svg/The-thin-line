@@ -3,6 +3,8 @@ Sara, protagonisti e percorsi relazionali | Bozza di lavoro | 15 novembre 2026
 ## 1. Premessa narrativa
 The Thin Line è una visual novel narrativa per adulti, sviluppata con Ren’Py. Il progetto prevede una trama principale unica, prevalentemente dal punto di vista della protagonista femminile, e diversi percorsi relazionali opzionali di tipo slow burn NTR / “corruption”. Il cambiamento della protagonista dovrà essere graduale, credibile e legato alle sue decisioni: non parte da una relazione infelice né desidera già tradire il partner.
 Il giocatore potrà seguire un solo percorso, più percorsi contemporaneamente oppure ignorarne alcuni. Le scene specifiche si inseriscono nelle occasioni quotidiane — lavoro, palestra, casa, amicizie, visite al luogo di lavoro del compagno — senza dividere il gioco in otto storie indipendenti.
+**Principi artistici vincolanti per la scrittura (17/11/2026):** leggere il [Manifesto creativo / Visione artistica](visione-artistica.md). Il gioco è un elogio della libertà individuale di Sara; il narratore non deve giudicarne le trasformazioni come peccato o punizione. Ogni finale scelto deve esprimere una felicità soggettiva, pur lasciando spazio ad ambiguità e conseguenze per gli altri.
+
 ## 2. Protagonista — Sara
 Scheda completa: [personaggi/sara.md](personaggi/sara.md).
 ## 3. Otto archetipi relazionali scelti
