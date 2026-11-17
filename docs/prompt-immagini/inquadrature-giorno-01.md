@@ -25,7 +25,7 @@ Totale: **28 immagini diverse** (11 fatte o in corso + 17 nuove), circa **38 cam
 | B1 ✅ | Sara alla scrivania | — | — | «The newsroom smells like coffee…» → la porta che sbatte |
 | B2 ✅ | Barbara esce e la indica | — | — | «SARA!» → «The piece on the cheese festival.» |
 | B3 ✅ | Primo piano Barbara | B2 | *Close-up of Barbara at Sara's desk, waving a printed page, eyebrows raised, theatrical disdain, glasses on the tip of her nose.* | ««Grated with love.»…» e «Not a greeting card.» |
-| B4 | Primo piano Sara (reazione) | B1 | *Close-up of Sara at her desk looking up, embarrassed, biting her lip, buttoned-up blouse.* | «Yes?» · «Here we go.» · le risposte di Sara |
+| B4 ✅ | Primo piano Sara (reazione) | B1 | *Close-up of Sara at her desk looking up, embarrassed, biting her lip, buttoned-up blouse.* | «Yes?» · «Here we go.» · le risposte di Sara |
 | B5 ✅ | Barbara ride (solo scelta battuta) | — | — | «Then Barbara laughs…» → «Cheeky! I like it.» |
 | B6 ✅ | Barbara la squadra | — | — | «And darling… one more thing.» → «…someone giggles.» |
 | B7 | Sara arrossisce (scelta 1) | B6 | *Close-up of Sara blushing deeply, one hand clutching the collar of her blouse, eyes lowered, colleagues blurred behind.* | «Sara's hand goes to her collar…» |
