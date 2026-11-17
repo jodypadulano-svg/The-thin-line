@@ -8,3 +8,4 @@ Generatore: **Mureka** (SKYWORK AI PTE. LTD.), piano con uso commerciale. Il cer
 |---|---|---|---|---|
 | `game/audio/musica/casa.ogg` | Home Song | 172459062067201 | 17/11/2026 | ✅ Ownership Certificate |
 | `game/audio/musica/redazione.ogg` | Newsroom Song | 172459552735234 | 17/11/2026 | ✅ Ownership Certificate |
+| `game/audio/musica/barbara.ogg` | Barbara Song | 172460165103618 | 17/11/2026 | ✅ Ownership Certificate |
