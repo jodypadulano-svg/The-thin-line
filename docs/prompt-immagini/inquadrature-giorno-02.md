@@ -51,7 +51,7 @@ Close-up of @sara_wc at her newsroom desk, chin in her hand, smiling tenderly at
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
 | B1 ✅ | `d2_05_spogliatoio` | Joanie mostra il top, Sara stringe la maglietta | `palestra_spogliatoio` | «The locker room smells…» → menu |
-| B2 | `d2_06_top_specchio` | Sara con il top allo specchio, Joanie dietro | B1 | scelta «provare il top» |
+| B2 ✅ | `d2_06_top_specchio` | Sara con il top allo specchio, Joanie dietro | B1 | scelta «provare il top» |
 
 **B1**
 ```
