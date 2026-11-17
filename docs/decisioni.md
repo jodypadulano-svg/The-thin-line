@@ -4,6 +4,17 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 2 — la pausa sigaretta di Jessica e Roberta (decisione 17/11/2026)
+
+**Stato: approvata e scritta il 17/11/2026 (label `ep1_d2_terrazzino` in `ep1_giorno02.rpy`, dopo il pranzo); immagini da generare** (prompt in [inquadrature-giorno-02.md](prompt-immagini/inquadrature-giorno-02.md), sezione A bis).
+
+- **Scena aggiuntiva** nel giorno 2, dopo la pausa pranzo (qualunque scelta) e prima delle 17: Sara esce sul terrazzino del retro e trova **Jessica e Roberta che fumano**.
+- **Il gesto:** fumano con le **labbra molto arricciate** (*puckered*) ed esalano il fumo lentamente, in modo un po' teatrale. Lo fanno tutte e due **nello stesso identico modo**.
+- **Sara non fuma** (canone). Può rifiutare la sigaretta offerta; nessuna scelta la fa fumare in questa scena.
+- **Indizio:** la Jessica di tre mesi fa non fumava. Sara lo nota, ma non capisce.
+- **Lore (rivelazione tardiva):** quel modo di fumare è il **segno di riconoscimento di chi è stata plagiata da Barbara**. Si capirà solo più avanti; ora è solo un dettaglio strano. Vedi schede di Jessica, Roberta e Barbara.
+- **Da decidere più avanti:** se Barbara stessa fuma così; se e quando Sara potrebbe iniziare (sarebbe un segnale fortissimo del percorso di Barbara); se il gesto compare anche in altre donne della cerchia.
+
 ### Visione artistica autoriale (17/11/2026) — già documentata
 
 **Stato:** principi di scrittura registrati in [visione-artistica.md](visione-artistica.md), collegati a Bibbia narrativa e regole di lavoro. Non si aggiungono scene e non si modifica codice Ren'Py per questa decisione.

@@ -24,3 +24,6 @@ Stato: scheda secondaria, descrizione approvata il 16 novembre 2026.
 Cognome, aspetto fisico, mansione esatta, voce e modi di parlare, singole scene e interazioni con Sara. Non assegnare questi dettagli senza ulteriori decisioni.
 
 **Aspetto (approvato da Jody il 16/11/2026, acquerello):** biondo scuro, coda bassa ordinatissima, occhiali sottili, trucco leggero; cardigan rosa pastello, camicetta bianca con colletto tondo, gonna grigia; **ciondolo a cuore** d'oro (idea per il futuro: dentro c'è una foto di Barbara). Sorriso dolce un po' troppo largo, sguardo devoto e attento. Riferimento: `riferimenti/attori/roberta_acquerello_riferimento.webp`.
+
+## Segno di riconoscimento (lore, decisione 17/11/2026 — rivelazione tardiva)
+Fuma con le labbra molto arricciate (*puckered*) ed esala il fumo lentamente, nello stesso identico modo di Jessica. Quel modo di fumare identifica **chi è stata plagiata da Barbara**: Sara lo vede dal giorno 2, ma lo capirà solo molto più avanti.

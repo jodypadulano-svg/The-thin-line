@@ -13,7 +13,7 @@ Bozza di lavoro | 17 novembre 2026 · Dialoghi del giorno 2 approvati da Jody il
 Blocco di stile (in fondo a ogni prompt):
 `Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.`
 
-Totale: **18 immagini nuove + 5 varianti `_top`** = 23 file; 1 riuso dal giorno 1 (`d1_07_le_17` per il messaggio di Joanie alle 17).
+Totale: **18 immagini nuove + 5 varianti `_top`** = 23 file, più **4** della scena nuova A bis (27); 1 riuso dal giorno 1 (`d1_07_le_17` per il messaggio di Joanie alle 17).
 
 ---
 
@@ -21,10 +21,10 @@ Totale: **18 immagini nuove + 5 varianti `_top`** = 23 file; 1 riuso dal giorno 
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| A1 | `d2_01_scrivania` | Sara si stira alla scrivania, ufficio di Barbara chiuso | `03_scrivania` (B1 del giorno 1) | «A quiet morning…» → menu del pranzo |
-| A2 | `d2_02_pranzo_colleghe` | Pranzo con Jessica e Roberta | `06b_jessica_ricordo` (stesso tavolino), Character | scelta «colleghe» |
+| A1 ✅ | `d2_01_scrivania` | Sara si stira alla scrivania, ufficio di Barbara chiuso | `03_scrivania` (B1 del giorno 1) | «A quiet morning…» → menu del pranzo |
+| A2 ✅ | `d2_02_pranzo_colleghe` | Pranzo con Jessica e Roberta | `06b_jessica_ricordo` (stesso tavolino), Character | scelta «colleghe» |
 | A3 | `d2_03_pranzo_scrive` | Sara da sola scrive mangiando un panino | `03_scrivania` | scelta «scrivere» |
-| A4 | `d2_04_messaggi_josh` | Primo piano, Sara sorride al telefono | `03b_sara_imbarazzo` | scelta «messaggi a Josh» |
+| A4 ✅ | `d2_04_messaggi_josh` | Primo piano, Sara sorride al telefono | `03b_sara_imbarazzo` | scelta «messaggi a Josh» |
 | — | `d1_07_le_17` (riuso) | Le 17, Sara se ne va | — | messaggio di Joanie |
 
 **A1**
@@ -42,6 +42,36 @@ In the nearly empty newsroom from the reference image at lunchtime: @sara_wc alo
 **A4**
 ```
 Close-up of @sara_wc at her newsroom desk, chin in her hand, smiling tenderly at the phone in her other hand (screen not visible), soft midday light, colleagues blurred behind. Plain white blouse buttoned up, modest, no visible cleavage. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+
+## A bis. Il terrazzino — la sigaretta di Jessica e Roberta (scena nuova, testo da scrivere)
+
+Decisione in [decisioni.md](../decisioni.md) («la pausa sigaretta»). Il gesto è sempre lo stesso per tutte e due: **labbra molto arricciate (puckered), fumo esalato piano**. Sara non fuma. Nessuna scritta su pacchetti e accendini.
+
+| ID | File | Inquadratura | Allega | Quando compare |
+|---|---|---|---|---|
+| A5 | `d2_19_terrazzino` | Jessica e Roberta fumano, Sara sulla porta | `02_pranzo_colleghe` (le tre), `redazione` | Sara esce a prendere aria |
+| A6 | `d2_20_fumo_jessica` | Primo piano di Jessica che esala | A5 | battute di Jessica |
+| A7 | `d2_21_fumo_roberta` | Primo piano di Roberta, stesso gesto, guarda Sara | A5 | battute di Roberta |
+| A8 | `d2_22_sara_rifiuta` | Primo piano di Sara che rifiuta, perplessa | A5, `04_messaggi_josh` | l'offerta e la scelta |
+
+Alternanza: A5 → A6 → A8 → A7 → A8 → A5.
+
+**A5**
+```
+A small back terrace of the newspaper office building, early afternoon, a few potted plants, a metal railing, rooftops beyond, a standing ashtray: @jessica_wc, glamorous in pink, and @roberta_wc, blonde with glasses, pink cardigan and small gold heart pendant, lean side by side on the railing, each holding a slim cigarette, both exhaling a thin stream of smoke through very puckered lips in exactly the same slow, theatrical way, eyes half closed. In the doorway @sara_wc, in her buttoned-up white blouse, has just stepped out and stops, surprised. Sara keeps the same face, hair and bust size as in the reference images, modest, no visible cleavage. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+**A6**
+```
+Close-up of @jessica_wc on the office terrace from the reference image, glossy pink lips very puckered, slowly blowing a thin stream of smoke upward, eyes half closed with dreamy pleasure, slim cigarette between two long pink nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+**A7**
+```
+Close-up of @roberta_wc on the office terrace from the reference image, blonde, thin glasses, pink cardigan, gold heart pendant, lips very puckered in exactly the same way as Jessica, slowly exhaling a thin stream of smoke, but her eyes are wide open and fixed on the viewer with a sweet, slightly too-wide smile in her gaze. Slightly unsettling. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+**A8**
+```
+Close-up of @sara_wc on the office terrace from the reference image, buttoned-up white blouse, politely raising one hand to decline an offered cigarette held out from off-frame, a faint wisp of smoke drifting past her face, a puzzled, slightly uneasy smile, eyebrows knitted. Same face, hair and bust size as in the reference images, natural unpainted nails, modest, no visible cleavage. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 ---
@@ -101,10 +131,10 @@ The trainers' wooden desk of the gym from the reference image, sunset light: @si
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
 | D1 ✅ | `d2_11_fiatone` (+ `_top`) | Sara sfinita sul tappetino, Joanie fresca | `palestra_tappetini` | «Half an hour later…» |
-| D2 | `d2_12_squat_joanie` | Simon corregge lo squat di Joanie al rack | `palestra_sala` | «Simon? Sorry…» → menu |
-| D3 | `d2_13_sara_guarda` (+ `_top`) | Primo piano di Sara che guarda | D1 | scelta «continuare a guardare» |
-| D4 | `d2_14_simon_sorride` | Simon arriva ai tappetini con l'asciugamano | D2 | «Great job, both of you…» → «Surviving is step one…» |
-| D5 | `d2_15_joanie_sussurra` (+ `_top`) | Joanie sussurra a Sara, soddisfatta | D1 | «He remembered your name…» → fine scena |
+| D2 ✅ | `d2_12_squat_joanie` | Simon corregge lo squat di Joanie al rack | `palestra_sala` | «Simon? Sorry…» → menu |
+| D3 ✅ | `d2_13_sara_guarda` (+ `_top`) | Primo piano di Sara che guarda | D1 | scelta «continuare a guardare» |
+| D4 ✅ | `d2_14_simon_sorride` | Simon arriva ai tappetini con l'asciugamano | D2 | «Great job, both of you…» → «Surviving is step one…» |
+| D5 ✅ | `d2_15_joanie_sussurra` (+ `_top`) | Joanie sussurra a Sara, soddisfatta | D1 | «He remembered your name…» → fine scena |
 
 Alternanza D: D1 → D2 (menu) → D3 o D2 → D4 → D5.
 

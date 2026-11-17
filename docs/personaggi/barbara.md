@@ -40,5 +40,8 @@ Stato: scheda narrativa concordata il 16 novembre 2026. Le scene esemplificative
 - Epilogo speculare: Sara partecipa con entusiasmo alle riunioni delle colleghe per favorire la conquista della prossima giovane dipendente scelta da Barbara. È passata da bersaglio ignaro a complice del sistema.
 - La dinamica di pressione professionale e manipolazione deve restare riconoscibile nella narrazione; il giocatore può non intraprendere questo percorso.
 
+## Il segno della cerchia (lore, decisione 17/11/2026 — rivelazione tardiva)
+Le donne plagiate da Barbara fumano tutte nello stesso modo: labbra molto arricciate (*puckered*), fumo esalato lentamente. Jessica e Roberta lo mostrano già nel giorno 2. Da decidere: se Barbara stessa fuma così, e se il gesto può comparire in Sara lungo il percorso di Barbara.
+
 ## Ancora da definire
 Cognome, ruolo aziendale preciso, nomi e caratteri delle colleghe, eventi originali, progressione in scene, soglie numeriche, modalità di scoperta del complotto e diramazioni intermedie. Nessuna scena Ren'Py è autorizzata da questa scheda da sola.

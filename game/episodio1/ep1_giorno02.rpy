@@ -56,11 +56,88 @@ label ep1_d2_redazione:
             n "The answer comes in less than a minute: a heart, a bowl of rice, and «Good luck at the gym tonight, champion»."
             sp "Champion. He has no idea what's waiting for me."
 
+    call ep1_d2_terrazzino
+
     $ vai("redazione", "The newsroom — 5:00 p.m.")
     $ cg("Golden late-afternoon light: Sara leaves her desk at five o'clock sharp", "images/cg/ep1/d1_07_le_17.webp")
     $ suono("telefono_vibra")
     n "At five o'clock sharp, her phone buzzes. Joanie."
     n "{i}Downstairs. Don't make me come up there.{/i}"
+    return
+
+
+## --- La pausa sigaretta (decisione 17/11: il segno della cerchia di Barbara) -----
+## Jessica e Roberta fumano con le labbra arricciate, nello stesso identico modo.
+## Sara non fuma. Il significato (chi è stata plagiata da Barbara) si scopre molto
+## più avanti: qui è solo un dettaglio strano. Nessun retroscena, niente spoiler.
+
+label ep1_d2_terrazzino:
+    $ vai("redazione", "The back terrace — 2:10 p.m.")
+    $ ambiente(None)
+    $ cg("A small back terrace: Jessica and Roberta lean on the railing, smoking; Sara stops in the doorway", "images/cg/ep1/d2_19_terrazzino.webp")
+
+    n "After lunch the newsroom feels like a sauna with keyboards. Sara slips out through the fire door to the little terrace at the back, for two minutes of air."
+    n "She isn't the only one with the idea."
+    n "Jessica and Roberta are leaning side by side on the railing, each holding a slim white cigarette."
+    sp "Since when do they come out here together?"
+
+    $ cg("Close-up of Jessica blowing a thin stream of smoke through very puckered lips, eyes half closed", "images/cg/ep1/d2_20_fumo_jessica.webp")
+    n "Jessica lifts the cigarette to her glossy lips, draws slowly, and then blows the smoke out in a long, thin stream, her lips pursed into a tight little pout."
+    n "Slow. Careful. Almost as if someone had taught her how."
+    je "Saaara! Come, come! The sun is so nice out here."
+
+    $ cg("Close-up of Sara in the doorway, puzzled, a wisp of smoke drifting past", "images/cg/ep1/d2_22_sara_rifiuta.webp")
+    sp "Jessica. Smoking."
+    sp "The Jessica I met three months ago wouldn't even sit at the table next to a smoker. She said it made the pages of her books smell."
+    s "Hi. I just needed some air."
+    je "Air is good. Smoke is better."
+    n "She giggles at her own joke and holds out the pack."
+    je "Want one?"
+
+    menu:
+        sp "A cigarette."
+        "«No thanks, I don't smoke.»":
+            s "No, thanks. I don't smoke."
+            je "Not {i}yet{/i}!"
+            n "She says it in a sing-song voice, as if it were the funniest thing in the world."
+        "«No thanks... since when do you smoke, Jess?»":
+            $ segna("ep1_jessica_fuma_notato")
+            s "No, thanks. Since when do you smoke, Jess? You used to hate it."
+            je "Did I?"
+            n "Jessica tilts her head, honestly puzzled, as if Sara had asked her about someone else."
+            je "I don't remember. It's just... nicer this way. You'll see."
+            sp "\"You'll see.\" Why does everyone in this office keep telling me what I'll see?"
+
+    $ cg("Close-up of Roberta exhaling smoke with exactly the same puckered lips, eyes fixed on Sara", "images/cg/ep1/d2_21_fumo_roberta.webp")
+    n "Roberta hasn't said a word. She brings her cigarette to her lips, and Sara watches her do it."
+    n "The same slow drag. The same tight little pout. The same thin stream of smoke, let out a little at a time."
+    n "Exactly the same. Like two dancers who learned the same choreography."
+    n "Only Roberta doesn't close her eyes. She keeps them on Sara the whole time."
+    ro "You look tired, Sara. Barbara works us hard, doesn't she?"
+    s "It's just the cheese festival. It keeps coming back. Like a curse."
+    ro "Mm. She only works hard the people she likes."
+    n "Roberta smiles. The same sweet smile from yesterday. A little too wide."
+
+    menu:
+        sp "Something about the way they smoke..."
+        "Look away and think about something else.":
+            n "Sara looks at the rooftops, at a pigeon on the gutter, at anything else."
+            sp "People smoke. It's not a mystery. Stop being a journalist for five minutes."
+        "Keep watching them.":
+            $ corruption(1, "Something about the way they smoke stays with Sara.")
+            $ segna("ep1_guarda_fumo")
+            n "Sara can't take her eyes off their mouths. The pout. The patience. The way the smoke leaves them like a sigh."
+            sp "It's ridiculous. It's just smoke."
+            sp "So why does it look so... pleasant?"
+
+    $ cg("A small back terrace: Jessica and Roberta lean on the railing, smoking; Sara stops in the doorway", "images/cg/ep1/d2_19_terrazzino.webp")
+    n "Jessica stubs out her cigarette in the standing ashtray and stretches like a cat."
+    je "Break's over! Barbara's back at four and she likes us at our desks. All smiley."
+    ro "See you inside, Sara."
+    n "They walk back in together, in step. Sara stays out on the terrace a little longer."
+    n "The air still smells sweetly of smoke."
+    sp "Two minutes of air. That's all I wanted."
+    $ via_cg()
     return
 
 

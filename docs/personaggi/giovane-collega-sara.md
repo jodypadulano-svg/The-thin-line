@@ -14,3 +14,6 @@ Jessica rimane amichevole con Sara e la incoraggia, con entusiasmo ingenuo, a vi
 
 ## Dettagli non ancora stabiliti
 Età precisa, aspetto fisico dettagliato e circostanze esatte della trasformazione non sono ancora definiti. Evitare di inventarli come fatti canonici.
+
+## Segno di riconoscimento (lore, decisione 17/11/2026 — rivelazione tardiva)
+Fuma con le labbra molto arricciate (*puckered*) ed esala il fumo lentamente, nello stesso identico modo di Roberta. Quel modo di fumare identifica **chi è stata plagiata da Barbara**: Sara lo vede dal giorno 2, ma lo capirà solo molto più avanti. La Jessica di tre mesi fa non fumava.
