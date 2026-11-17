@@ -19,3 +19,8 @@ Generatore: **Mureka** (SKYWORK AI PTE. LTD.), piano con uso commerciale. Il cer
 | `game/audio/suoni/porta_sbattuta.ogg` | Glass office door sw… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
 | `game/audio/suoni/sveglia.ogg` | Smartphone alarm ge… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
 | `game/audio/suoni/rasoio.ogg` | Electric razor buzzi… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/suoni/armadietto.ogg` | Metal gym locker doo… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/suoni/tazza.ogg` | Ceramic coffee cup p… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/suoni/macchinetta_caffe.ogg` | Office coffee machin… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/suoni/chiave_serratura.ogg` | Key turning in an ap… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/suoni/sobbollire.ogg` | Risotto gently simme… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
