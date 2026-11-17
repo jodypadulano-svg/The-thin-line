@@ -55,7 +55,7 @@ Close-up of @sara_wc at her newsroom desk, chin in her hand, smiling tenderly at
 
 **B1**
 ```
-The women's locker room from the reference image, warm evening light: @joanie_wc, athletic, honey-blonde high ponytail, already in her gym clothes (fitted black sports top, burgundy leggings), holds up a small black sports top between two fingers with a mischievous, challenging grin; @sara_wc, sitting on the wooden bench in leggings, clutches an oversized faded gray t-shirt against her chest, half laughing, half horrified. Playful best-friend moment. Modest, no nudity. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The women's locker room from the reference image, warm evening light: @joanie_wc, athletic, long wavy dark-brown hair with bangs, small gold hoop earrings, already in her gym clothes (black tank top, burgundy leggings), holds up a small black sports top between two fingers with a mischievous, challenging grin; @sara_wc, sitting on the wooden bench in leggings, clutches an oversized faded gray t-shirt against her chest, half laughing, half horrified. Playful best-friend moment. Modest, no nudity. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **B2**
 ```
@@ -77,7 +77,7 @@ Alternanza C: C1 → C2 → C3 (menu) → C4 (menu) → C3.
 
 **C1** (base: maglietta; poi variante `_top`)
 ```
-The gym weight room from the reference image, early evening sunset light through the big windows: @sara_wc stands just inside the entrance in an oversized faded gray t-shirt and black leggings, hugging her water bottle, looking around wide-eyed and a little lost at the racks and the muscular people training; beside her @joanie_wc, totally at ease, honey-blonde ponytail, black sports top and burgundy leggings, nudges her with an elbow and points with her chin toward the trainers' desk. Other gym-goers are soft blurred shapes. Modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The gym weight room from the reference image, early evening sunset light through the big windows: @sara_wc stands just inside the entrance in an oversized faded gray t-shirt and black leggings, hugging her water bottle, looking around wide-eyed and a little lost at the racks and the muscular people training; beside her @joanie_wc, totally at ease, long wavy dark-brown hair with bangs, black tank top and burgundy leggings, nudges her with an elbow and points with her chin toward the trainers' desk. Other gym-goers are soft blurred shapes. Modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 Variante `_top` (da C1): *Same image, but Sara wears a small tight black sports top (fully covering) and black leggings, bare midriff, and looks even more self-conscious, one arm across her waist.*
 
@@ -87,7 +87,7 @@ The gym weight room from the reference image, sunset light: @simon_wc, mid-twent
 ```
 **C3**
 ```
-Close-up of @joanie_wc in the gym weight room from the reference image, honey-blonde high ponytail, green eyes, leaning sideways toward the viewer as if whispering to her friend, eyebrows raised, a sly, teasing grin, one finger subtly pointing toward the trainers' desk off-frame. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Close-up of @joanie_wc in the gym weight room from the reference image, long wavy dark-brown hair with bangs, brown eyes, gold hoop earrings, leaning sideways toward the viewer as if whispering to her friend, eyebrows raised, a sly, teasing grin, one finger subtly pointing toward the trainers' desk off-frame. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **C4**
 ```
