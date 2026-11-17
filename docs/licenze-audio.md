@@ -11,3 +11,4 @@ Generatore: **Mureka** (SKYWORK AI PTE. LTD.), piano con uso commerciale. Il cer
 | `game/audio/musica/barbara.ogg` | Barbara Song | 172460165103618 | 17/11/2026 | ✅ Ownership Certificate |
 | `game/audio/musica/stranezza.ogg` | Oddity Song | 172460676808705 | 17/11/2026 | ✅ Ownership Certificate |
 | `game/audio/musica/notte.ogg` | Nocturne | 172460987187202 | 17/11/2026 | ✅ Ownership Certificate |
+| `game/audio/musica/palestra.ogg` | Gym Song | 172461589200897 | 17/11/2026 | ✅ Ownership Certificate |
