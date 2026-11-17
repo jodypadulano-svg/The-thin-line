@@ -57,7 +57,7 @@ Alternanza D: D1 → D2 → D2 → D4 → D3 → D4 → D3 → D1 → D4 → (sc
 
 | ID | Inquadratura | Da | Modifica | Quando compare |
 |---|---|---|---|---|
-| E1 | Le 17 in punto | B1 | *Late afternoon golden light, Sara grabs her bag and coat and walks away from her desk without looking back, colleagues still typing.* | «The afternoon passes…» → «…doesn't look back.» |
+| E1 ✅ | Le 17 in punto | B1 | *Late afternoon golden light, Sara grabs her bag and coat and walks away from her desk without looking back, colleagues still typing.* | «The afternoon passes…» → «…doesn't look back.» |
 
 ## F. Sera — il prologo
 
