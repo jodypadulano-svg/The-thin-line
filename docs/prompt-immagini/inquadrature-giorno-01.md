@@ -37,7 +37,7 @@ Alternanza B: B2 → B3 → B4 → B3 → (scelta) B4/B5 → B6 → B7 o B6.
 | ID | Inquadratura | Da | Modifica | Quando compare |
 |---|---|---|---|---|
 | C1 ✅ | Roberta porta il cappuccino | — | — | «Half an hour later a cup of coffee…» → «For you…» |
-| C2 | Primo piano Roberta | C1 | *Close-up of Roberta smiling a sweet smile that is a little too wide, staring unblinking, the small gold heart pendant visible.* | «Oh, I notice people too.» |
+| C2 ✅ | Primo piano Roberta | C1 | *Close-up of Roberta smiling a sweet smile that is a little too wide, staring unblinking, the small gold heart pendant visible.* | «Oh, I notice people too.» |
 | C3 | Roberta torna al suo posto | C1 | *Roberta back at her own desk right outside Barbara's glass office, turning her head to look back at Sara over her shoulder, still smiling.* | «Roberta keeps smiling…» → «Okay. That was sweet. And a little weird.» |
 
 Alternanza C: C1 → C1 → C2 → C1 → C3.
