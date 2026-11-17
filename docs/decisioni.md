@@ -166,3 +166,4 @@ Scelte fatte da Claude per rendere il gioco giocabile, non ancora confermate da 
 | 16/11/2026 | **A8** Suspicion | `core/stato.rpy`, Diario |
 | 16/11/2026 | **A9** Confidence | `core/stato.rpy`, scene, Diario |
 | 16/11/2026 | **A10** Abiti scelti dalla storia, sbloccati da Confidence e Corruption | `core/abiti.rpy`, Diario |
+| 17/11/2026 | **Immagini del giorno 1 nel codice**: 28 CG (A1-G2) collegate alle battute in campo e controcampo, comprese le varianti delle scelte | `ep1_giorno01.rpy`, `images/cg/ep1/` |
