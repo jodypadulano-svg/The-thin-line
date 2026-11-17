@@ -21,7 +21,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `redazione` | Redazione | ✅ |
 | `barbara` | Quando entra Barbara | ✅ |
 | `stranezza` | Roberta e Jessica | ✅ |
-| `notte` | Notte, telefonata di Joanie | |
+| `notte` | Notte, telefonata di Joanie | ✅ |
 | `palestra` | Palestra (giorno 2) | |
 
 **tema_principale**
