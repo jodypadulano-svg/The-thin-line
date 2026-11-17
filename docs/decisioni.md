@@ -4,6 +4,17 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Telefono Ren'Py e filler via chat (decisione 17/11/2026)
+
+**Stato: approvato da Jody, da applicare in un lotto successivo; nessun codice telefonico ancora integrato.**
+
+- **Sistema scelto:** adottare e personalizzare **Yet Another Phone for Ren'Py** (Nighten, https://nighten.itch.io/yet-another-phone-renpy), anziché progettare da zero un'interfaccia telefonica. Utilizzarlo per le conversazioni testuali di Sara e per piccoli filler quotidiani, riusando poche grafiche e cambiando soprattutto i messaggi.
+- **Commercializzazione e licenze:** *The Thin Line* sarà distribuito commercialmente. Prima di integrare/distribuire il modello, verificare la licenza effettiva della versione scaricata e di **ogni asset** (incluse immagini, sfondi, icone, font e suoni); mantenere eventuali avvisi di copyright/licenza richiesti. Non assumere che cambiare la grafica elimini i diritti d'autore. Sostituire sfondi dimostrativi e suoni senza diritti commerciali chiaramente verificati con asset originali o correttamente licenziati. Tenere traccia delle licenze nel repository.
+- **Giorno 4 (giovedì, E1):** aggiungere un **breve filler telefonico**: Sara, durante una pausa in redazione, scambia messaggi scherzosi e affettuosi con Josh, per mostrare la complicità della coppia dopo la cena aziendale del giorno 3. Poi proseguono invariati Jessica, Barbara e l'aperitivo facoltativo già approvati.
+- **Regia e produzione:** le chat sono un'alternativa economica ai filler con nuove CG; riutilizzare l'interfaccia del telefono, senza introdurre nuove sottotrame obbligatorie. La scrittura dei singoli messaggi e i dettagli di regia sono delegati all'IA; Jody supervisiona principalmente eventi e arco narrativo generale.
+- **Regola metodologica:** prima di proporre modifiche, verificare se il tema è già stato discusso, approvato o implementato, e privilegiare le decisioni approvate più recenti per evitare lavoro duplicato.
+
+
 ### Darius — migliore amico di Josh, percorso 7 (decisioni 16/11/2026)
 
 **Stato:** prima scheda narrativa raccolta in [darius.md](personaggi/darius.md), **da applicare** al gioco in un lotto futuro; non scrivere nuove scene o codice ora.
