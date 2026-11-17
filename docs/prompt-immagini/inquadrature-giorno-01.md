@@ -47,7 +47,7 @@ Alternanza C: C1 → C1 → C2 → C1 → C3.
 | ID | Inquadratura | Da | Modifica | Quando compare |
 |---|---|---|---|---|
 | D1 ✅ | Il colpetto sul naso | — | — | «Saaaara!» e «She giggles and taps…» |
-| D2 | Ricordo: la Jessica di prima | D1 | *A soft, faded flashback vignette: the same young woman three months earlier, plain clothes, thick glasses, hair in a simple ponytail, passionately talking with Sara over a lunch table with an open thick novel between them.* | «Sara remembers her first week…» e «Anna Karenina…» |
+| D2 ✅ | Ricordo: la Jessica di prima | D1 | *A soft, faded flashback vignette: the same young woman three months earlier, plain clothes, thick glasses, hair in a simple ponytail, passionately talking with Sara over a lunch table with an open thick novel between them.* | «Sara remembers her first week…» e «Anna Karenina…» |
 | D3 | Primo piano Jessica | D1 | *Close-up of Jessica, glossy pink lips, dreamy vacant smile, eyes shining: "something happened to me".* | «I feel amazing…» · «I can't tell you. Not yet.» |
 | D4 | Primo piano Sara perplessa | D1 | *Close-up of Sara holding her paper cup, puzzled and slightly worried, eyebrows knitted.* | «Something like what?» · «Try what?» · la scelta |
 
