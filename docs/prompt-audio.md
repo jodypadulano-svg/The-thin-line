@@ -20,7 +20,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `casa` | Casa: mattina e sera con Josh | ✅ |
 | `redazione` | Redazione | ✅ |
 | `barbara` | Quando entra Barbara | ✅ |
-| `stranezza` | Roberta e Jessica | |
+| `stranezza` | Roberta e Jessica | ✅ |
 | `notte` | Notte, telefonata di Joanie | |
 | `palestra` | Palestra (giorno 2) | |
 
