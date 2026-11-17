@@ -100,7 +100,7 @@ The trainers' wooden desk of the gym from the reference image, sunset light: @si
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| D1 | `d2_11_fiatone` (+ `_top`) | Sara sfinita sul tappetino, Joanie fresca | `palestra_tappetini` | «Half an hour later…» |
+| D1 ✅ | `d2_11_fiatone` (+ `_top`) | Sara sfinita sul tappetino, Joanie fresca | `palestra_tappetini` | «Half an hour later…» |
 | D2 | `d2_12_squat_joanie` | Simon corregge lo squat di Joanie al rack | `palestra_sala` | «Simon? Sorry…» → menu |
 | D3 | `d2_13_sara_guarda` (+ `_top`) | Primo piano di Sara che guarda | D1 | scelta «continuare a guardare» |
 | D4 | `d2_14_simon_sorride` | Simon arriva ai tappetini con l'asciugamano | D2 | «Great job, both of you…» → «Surviving is step one…» |
