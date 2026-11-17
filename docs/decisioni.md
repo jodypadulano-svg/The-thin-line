@@ -134,6 +134,8 @@ Decisioni prese ma non ancora riportate nel codice. Si applicano tutte insieme q
 - **Solo immagini immersive** (Jody, 17/11/2026): niente sprite. Ogni momento del gioco è un'immagine completa con i personaggi dentro il luogo (CG). Stima: circa 250-350 immagini per il primo mese e 2.000-2.500 per la prima stagione. Per tenere i tempi: una CG base per scena e varianti ottenute modificandola (espressione, gesto), invece di rigenerare da zero.
 - **Ritmo e campo/controcampo** (Jody, 17/11/2026): si tiene il ritmo attuale (giornate brevi, calendario lungo), ma nei dialoghi si alternano 2-4 inquadrature e si **ripetono** (campo e controcampo, come Whispers of Desire: 10.682 cambi d'immagine con 5.984 immagini diverse). Obiettivo: un cambio d'immagine ogni 3-4 battute, con circa metà delle immagini riusate.
 
+- **Canzoni con testo** (Jody, 17/11/2026): le musiche possono avere anche il testo cantato, soprattutto nei momenti in cui Sara **cede** (tappe fisiche, punti di non ritorno). Da decidere caso per caso dove metterle perché la voce non copra la lettura (vedi proposta in chat del 17/11: scene con poco testo, chiusure di scena, fine episodio).
+
 ## Provvisorie
 Scelte fatte da Claude per rendere il gioco giocabile, non ancora confermate da Jody.
 
