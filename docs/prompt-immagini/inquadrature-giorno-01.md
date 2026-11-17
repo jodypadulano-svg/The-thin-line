@@ -77,6 +77,6 @@ Alternanza F: F1 → F2 → F3 → F2 → (scelta) F4/F5 → (cena) F6/F4.
 | ID | Inquadratura | Da | Modifica | Quando compare |
 |---|---|---|---|---|
 | G1 ✅ | Al telefono a letto | luogo `casa_camera_mattina` (di notte) | (prompt della scena 9) | «It's almost eleven…» → «I'll pick you up.» |
-| G2 | Primo piano al telefono | G1 | *Close-up of Sara in bed with the phone to her ear, rolling her eyes and laughing at the same time, lamp light on her face.* | «You signed me up without asking?» · la scelta · le ultime battute |
+| G2 ✅ | Primo piano al telefono | G1 | *Close-up of Sara in bed with the phone to her ear, rolling her eyes and laughing at the same time, lamp light on her face.* | «You signed me up without asking?» · la scelta · le ultime battute |
 
 Alternanza G: G1 → G2 → G1 → G2.
