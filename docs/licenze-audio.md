@@ -15,3 +15,7 @@ Generatore: **Mureka** (SKYWORK AI PTE. LTD.), piano con uso commerciale. Il cer
 | `game/audio/musica/tema_principale.ogg` | Main Theme | 172462127972353 | 17/11/2026 | ✅ Ownership Certificate |
 | `game/audio/ambienti/redazione.ogg` | Busy open-plan newsp… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
 | `game/audio/suoni/telefono_vibra.ogg` | Smartphone vibrating (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/ambienti/palestra.ogg` | Gym weight room ambi… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/suoni/porta_sbattuta.ogg` | Glass office door sw… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/suoni/sveglia.ogg` | Smartphone alarm ge… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
+| `game/audio/suoni/rasoio.ogg` | Electric razor buzzi… (effetto) | — | 17/11/2026 | ⏳ generatore e licenza da confermare |
