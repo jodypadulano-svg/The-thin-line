@@ -5,66 +5,8 @@
 ## Regola della scheda: Simon resta professionale in palestra; l'affinità che
 ## cresce NON è attrazione romantica di Sara, per ora.
 
-label simon_s1_prima_visita:
-    ## Scena 1 — Prima visita in palestra con Joanie.
-    $ vai("palestra", "Palestra — sera")
-    $ cg("Sara sulla soglia, leggings nuovi e maglietta larga, si guarda intorno spaesata")
-    ch "Respira. Nessuno ti morde."
-    s "Joanie, qui sono tutti... scolpiti."
-    ch "E tra poco lo sarai anche tu. Più o meno."
-    $ via_cg()
-    n "Joanie le dà una gomitata e indica con il mento il bancone degli istruttori."
-    ch "E quello è Simon. Il motivo per cui non salto mai un allenamento."
-    $ cg("Simon spiega un esercizio a un cliente: non altissimo, spalle larghe, sorriso facile")
-    $ incontra("simon")
-    sp "Non è altissimo. Ma le braccia..."
-    sp "È decisamente più muscoloso di [nome_compagno]."
-    $ via_cg()
-
-    menu:
-        ch "Allora? Dimmi che non è bello."
-        "«È un bel ragazzo, sì.»":
-            $ nota_sara("simon", "Un bel ragazzo. Lo ammette senza problemi.")
-            ch "Visto? Sapevo che avevi ancora gli occhi."
-        "«Sono qui per allenarmi, non per guardare.»":
-            $ nota_sara("simon", "Bello, ma non le interessa. O così dice.")
-            ch "Certo. E io ci vengo per il tapis roulant."
-            sp "Non lo nego. Ma non è una cosa che mi riguarda."
-
-    $ tappa("simon", 1)
-    return
-
-
-label simon_s2_correzioni:
-    ## Scena 2 — Joanie chiede a Simon di correggerle gli esercizi.
-    ## Stessa visita, momento diverso.
-    n "Mezz'ora dopo Sara ha il fiatone. Joanie, invece, ha un piano."
-    ch "Simon? Scusa... mi controlli lo squat? Credo di sbagliare qualcosa con la schiena."
-    si "Certo. Fammi vedere."
-    $ cg("Simon dietro Joanie: una mano sul fianco, l'altra tra le scapole, corregge la postura")
-    si "Petto in fuori. Il peso sui talloni... così. Brava."
-    ch "Così? Sei sicuro?"
-    n "Joanie ride un po' troppo. Si appoggia un po' troppo."
-    sp "Joanie è fidanzata. Da tre anni."
-    sp "Lui è professionale, si vede. Ma lei..."
-
-    menu:
-        sp "Dove finisce una correzione e dove comincia un flirt?"
-        "Distogliere lo sguardo: non sono affari suoi.":
-            sp "Sono affari di Joanie. Non miei."
-        "Continuare a guardare.":
-            $ corruption(1, "Sara si fa una domanda nuova.")
-            $ segna("ep1_guarda_chiara")
-            sp "Una mano sul fianco. Un'altra sulla schiena. È così che si fa?"
-            sp "E se fosse stata la mia, di schiena?"
-
-    $ via_cg()
-    si "Ottimo lavoro, ragazze. E tu sei nuova, vero? Se ti serve una mano chiedi pure."
-    s "Grazie. Per ora sopravvivo."
-    si "Sopravvivere è il primo passo."
-    $ nota_sara("simon", "Con Joanie è stato gentile, non ha approfittato.")
-    return
-
+## Scene 1-2 (prima visita, correzioni a Joanie): ora nel giorno 2,
+## episodio1/ep1_giorno02.rpy.
 
 label simon_s3_locale:
     ## Scena 3 — Incontro fuori dalla palestra, in un locale.

@@ -167,3 +167,4 @@ Scelte fatte da Claude per rendere il gioco giocabile, non ancora confermate da 
 | 16/11/2026 | **A9** Confidence | `core/stato.rpy`, scene, Diario |
 | 16/11/2026 | **A10** Abiti scelti dalla storia, sbloccati da Confidence e Corruption | `core/abiti.rpy`, Diario |
 | 17/11/2026 | **Immagini del giorno 1 nel codice**: 28 CG (A1-G2) collegate alle battute in campo e controcampo, comprese le varianti delle scelte | `ep1_giorno01.rpy`, `images/cg/ep1/` |
+| 17/11/2026 | **Giorno 2 riscritto in inglese** con tutte le scelte di [mese-1.md](mese-1.md): pausa pranzo, top di Joanie, saluto di Simon, reazione all'invito; cena aziendale spostata a «domani» (giorno 3). Tolte le vecchie scene italiane Simon 1-2 e l'invito | `ep1_giorno02.rpy`, `simon.rpy`, `ep1_casa.rpy`, [grafo.md](grafo.md) |

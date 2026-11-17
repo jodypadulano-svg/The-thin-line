@@ -5,16 +5,7 @@
 ## (docs/bibbia-narrativa.md) resta la fonte: dove non decide, qui c'è un
 ## segnaposto da riscrivere.
 
-label ep1_invito_cena:
-    $ vai("casa", "Casa — sera")
-    c "Allora, sopravvissuta alla palestra?"
-    s "Ho scoperto di avere muscoli di cui ignoravo l'esistenza. Mi fanno male tutti."
-    c "Ho una notizia che ti farà dimenticare il dolore. Venerdì c'è la cena aziendale, e quest'anno sono invitati anche i compagni."
-    s "Quindi conoscerò finalmente il famoso capo?"
-    c "Daniel. È... un tipo. Difficile, ma è uno che conta. Se gli faccio una buona impressione, per me è importante."
-    sp "Non l'ho mai sentito parlare di lavoro con quella faccia."
-    s "Allora faremo un'ottima impressione. Tutti e due."
-    return
+## L'invito alla cena aziendale ora è nel giorno 2 (ep1_giorno02.rpy).
 
 
 label ep1_finale:

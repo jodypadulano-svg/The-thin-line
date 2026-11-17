@@ -1,6 +1,6 @@
 # The Thin Line — Grafo del gioco
 
-Aggiornato al 16 novembre 2026, dopo il lotto A1-A10 · Episodio 1 (versione 0.1.0-dev). Si aggiorna a ogni lotto di decisioni applicato ([regole](regole-di-lavoro.md), punto 2).
+Aggiornato al 17 novembre 2026 (giorni 1-2 riscritti in inglese; il resto dopo il lotto A1-A10) · Episodio 1 (versione 0.1.0-dev). Si aggiorna a ogni lotto di decisioni applicato ([regole](regole-di-lavoro.md), punto 2).
 
 **Legenda**
 - Rettangolo: scena · Rombo: bivio del giocatore · Esagono: retroscena (il giocatore lo vede, Sara no) · Rettangolo tratteggiato: scena condizionata
@@ -22,18 +22,31 @@ flowchart TD
 
     START([Avviso 18+ · nome di Josh]):::main
 
-    subgraph G1 [Giorno 1 · Una vita normale]
+    subgraph G1 [Giorno 1 · Lunedì · riscritto in inglese]
+        A1[Mattina: l'armadio e lo specchio]:::main
+        A1C{Un bottone aperto? sì: Conf+1}:::scelta
+        R1[Redazione: Barbara, Roberta, Jessica · I21 I22]:::main
+        R1C{Rimprovero di Barbara<br/>spiegare: Conf+1 · battuta: Conf+1 Barbara+1}:::scelta
+        R1S{Commento sulla scollatura<br/>«Grazie... credo»: Barbara+1}:::scelta
+        R1J{★ Aperitivo di giovedì con le colleghe?}:::scelta
         P1[Prologo a casa: Sara scrive, arriva Josh]:::main
-        P1C{Serata con Josh 🔒Josh 30: Josh+3<br/>o scrivere: Conf+2? P}:::scelta
+        P1C{★ Serata con Josh 🔒Josh 30: Josh+3<br/>o scrivere: Conf+2}:::scelta
+        P1D{Cena: risotto Josh+1 · pizza}:::scelta
         P1T[Joanie la iscrive in palestra]:::main
+        P1TC{Entusiasta: Joanie+1 · sbuffando}:::scelta
     end
 
-    subgraph G2 [Giorno 2 · Primo giorno di palestra]
+    subgraph G2 [Giorno 2 · Martedì · riscritto in inglese]
+        R2[Redazione: giornata normale]:::main
+        R2C{Pausa pranzo<br/>colleghe · scrivere: Conf+1 · messaggi a Josh: Josh+1}:::scelta
+        S0{Cosa indossare<br/>maglietta larga · top di Joanie: Conf+1 Corr+1}:::scelta
         S1[Simon 1 · prima visita con Joanie]:::simon
-        S1C{È bello? P}:::scelta
+        S1C{È bello?}:::scelta
+        S1S{Simon la saluta<br/>sorridere: Simon+1 · cenno}:::scelta
         S2[Simon 2 · Joanie flirta mentre lui la corregge]:::simon
-        S2C{Guardare o no? P<br/>guardare: Corr+1}:::scelta
-        INV[Josh: invito alla cena aziendale]:::main
+        S2C{Guardare o no?<br/>guardare: Corr+1}:::scelta
+        INV[Josh: invito alla cena aziendale di domani]:::main
+        INVC{Entusiasta: Josh+1 · preoccupata per Daniel}:::scelta
     end
 
     subgraph G3 [Giorno 3 · La cena aziendale]
@@ -80,7 +93,8 @@ flowchart TD
         FINR{{Messaggio dell'editore a Daniel}}:::retro
     end
 
-    START --> P1 --> P1C --> P1T --> S1 --> S1C --> S2 --> S2C --> INV --> D1
+    START --> A1 --> A1C --> R1 --> R1C --> R1S --> R1J --> P1 --> P1C --> P1D --> P1T --> P1TC
+    P1TC --> R2 --> R2C --> S0 --> S1 --> S1C --> S1S --> S2 --> S2C --> INV --> INVC --> D1
     D1 --> D1R --> D1C --> D1A --> H1 --> H1C --> D2 --> H2 --> H2R --> S3 --> S4 --> S4C
     S4C -- entra: Conf+3 --> S5 --> H3R
     S4C -- torna --> CASA6 --> H3R
