@@ -80,7 +80,15 @@ Queste non sono nuove tappe né eventi obbligatori: sono **chiavi di interpretaz
 
 Per gli altri percorsi si applica lo stesso **principio di libertà e felicità soggettiva**, senza appiattire le differenze già stabilite nelle rispettive schede.
 
-## 10. Regole pratiche quando si scrive
+## 10. Sguardo femminile e identità dell'opera
+
+- L'autore vuole che il gioco sia **percepito come una storia narrata dall'interno della soggettività femminile**, non come un prodotto che guarda Sara dall'esterno e giudica il suo desiderio.
+- Il genere NTR e le situazioni trasgressive sono parte dell'identità commerciale e del patto con il pubblico, **non una scusa per rinunciare a libertà, desiderio e felicità di Sara**. Non attenuare sistematicamente i conflitti o le dinamiche forti per timore di risultare «scorretti»: raccontarli con coerenza, agency e scelte credibili.
+- Dare spazio allo sguardo interiore di Sara: cosa le piace, cosa la incuriosisce, quali condizioni la fanno sentire desiderata o autonoma, quando vuole avvicinarsi e quando invece dice no. La sua vita sessuale non è un giudizio sul valore delle donne.
+- **Empowerment come esperienza, non predica:** niente dialoghi scritti per spiegare una morale al lettore. L'emancipazione si vede nei piccoli gesti, nei mutamenti psicologici e nei bivi, anche in un percorso dove Sara sceglie una relazione o un ruolo non convenzionale.
+- L'opera può essere pubblicata con **pseudonimo artistico**. La credibilità dello sguardo femminile va cercata soprattutto nella qualità della scrittura e, quando utile, nel confronto con lettrici/tester: non richiede inventare dichiarazioni biografiche sull'identità privata di chi firma.
+
+## 11. Regole pratiche quando si scrive
 
 Prima di approvare una scena, un dialogo, un monologo o una CG, controllare:
 
