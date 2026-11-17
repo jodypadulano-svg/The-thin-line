@@ -136,6 +136,8 @@ Decisioni prese ma non ancora riportate nel codice. Si applicano tutte insieme q
 
 - **Canzoni con testo** (Jody, 17/11/2026): le musiche possono avere anche il testo cantato, soprattutto nei momenti in cui Sara **cede** (tappe fisiche, punti di non ritorno). Da decidere caso per caso dove metterle perché la voce non copra la lettura (vedi proposta in chat del 17/11: scene con poco testo, chiusure di scena, fine episodio).
 
+- **Video nei momenti erotici** (Jody, 17/11/2026): baci, tocchi del seno e tutti i momenti erotici partono da un'immagine (CG) a cui è associato un **video** generato da quell'immagine. Le **canzoni con testo** accompagnano soprattutto questi video, quando Sara cede. Valgono le stesse regole delle immagini: consenso pieno, Sara sorride o ride, stile acquerello. Da definire: generatore dei video, durata, formato per Ren'Py (proposta: WebM VP9, con l'immagine base come ripiego se il video manca).
+
 ## Provvisorie
 Scelte fatte da Claude per rendere il gioco giocabile, non ancora confermate da Jody.
 
