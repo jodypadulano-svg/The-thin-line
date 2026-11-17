@@ -68,7 +68,7 @@ Alternanza D: D1 → D2 → D2 → D4 → D3 → D4 → D3 → D1 → D4 → (sc
 | F3 ✅ | Josh legge lo schermo | F2 | *Josh leaning over Sara's shoulder reading the laptop screen with a teasing smile; Sara covers the screen with one hand, pretending to be offended.* | «Chapter three?» → «First signed copy, remember?» |
 | F4 ✅ | Divano e pasta (scelta A) | F1 | *Sara and Josh curled up together on the sofa under the knitted throw, bowls of pasta, laughing, laptop closed on the table.* | «Enough chapter three…» e la cena «pizza» |
 | F5 ✅ | Lei scrive, lui porta il tè (scelta B) | F1 | *Sara typing fast and focused at the laptop, eyes bright; Josh quietly places a steaming cup of tea beside her, smiling.* | «Give me an hour…» |
-| F6 | Il risotto (scelta cena) | F1 | *Sara at the small stove stirring a pot of risotto, Josh hugging her from behind, warm kitchen light.* | «…the risotto he likes…» |
+| F6 ✅ | Il risotto (scelta cena) | F1 | *Sara at the small stove stirring a pot of risotto, Josh hugging her from behind, warm kitchen light.* | «…the risotto he likes…» |
 
 Alternanza F: F1 → F2 → F3 → F2 → (scelta) F4/F5 → (cena) F6/F4.
 
