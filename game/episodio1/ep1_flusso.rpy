@@ -8,12 +8,10 @@ label ep1_inizio:
     $ episodio = 1
 
     ## Riscrittura in inglese in corso, un giorno alla volta (docs/mese-1.md).
-    ## Giorni 1-2 riscritti; dal giorno 3 restano le scene vecchie in italiano.
+    ## Giorni 1-3 riscritti; dal giorno 4 restano le scene vecchie in italiano.
     call ep1_d1
     call ep1_d2
-
-    call nuovo_giorno(3, "La cena aziendale")
-    call daniel_1_cena_aziendale
+    call ep1_d3
 
     call nuovo_giorno(4, "Una mattina di corsa")
     call howard_1_pianerottolo

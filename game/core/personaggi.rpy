@@ -20,6 +20,8 @@ define ed = Character("Magnus", color="#d4b483")
 define ba = Character("Barbara", color="#e07fb0")
 define ro = Character("Roberta", color="#d9a3c7")
 define je = Character("Jessica", color="#f2b5d4")
+## Personaggio funzionale (giorno 3): moglie di un collega del compagno.
+define em = Character("Emma", color="#b8c9a3")
 
 ## Narratore delle didascalie e voce dei retroscena.
 define n = Character(None, what_italic=False)

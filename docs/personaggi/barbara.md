@@ -43,5 +43,8 @@ Stato: scheda narrativa concordata il 16 novembre 2026. Le scene esemplificative
 ## Il segno della cerchia (lore, decisione 17/11/2026 — rivelazione tardiva)
 Le donne plagiate da Barbara fumano tutte nello stesso modo: labbra molto arricciate (*puckered*), fumo esalato lentamente. Jessica e Roberta lo mostrano già nel giorno 2. Da decidere: se Barbara stessa fuma così, e se il gesto può comparire in Sara lungo il percorso di Barbara.
 
+## La redazione di sole donne (lore, decisione 17/11/2026)
+Il giornale di Barbara ha una redazione tutta femminile. Non si spiega mai apertamente: è un indizio sulla sua cerchia, come il modo di fumare a labbra arricciate.
+
 ## Ancora da definire
 Cognome, ruolo aziendale preciso, nomi e caratteri delle colleghe, eventi originali, progressione in scene, soglie numeriche, modalità di scoperta del complotto e diramazioni intermedie. Nessuna scena Ren'Py è autorizzata da questa scheda da sola.

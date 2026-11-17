@@ -121,6 +121,22 @@ init python:
         if renpy.loadable(video):
             renpy.movie_cutscene(video)
 
+    def zoom_cg(descrizione, immagine, area, durata=3.0):
+        """Zoom lento su un dettaglio di una CG già fatta (lo «sguardo» di un personaggio).
+        area = (x, y, larghezza, altezza) in pixel dell'immagine originale, in 16:9."""
+        if immagine and renpy.loadable(immagine):
+            W, H = renpy.image_size(immagine)
+            x, y, w, h = area
+            ## Si parte da un'inquadratura 1,6 volte più larga, centrata sul dettaglio
+            ## (non dall'immagine intera: così non si vede il resto della scena).
+            sw, sh = min(W, w * 1.6), min(H, h * 1.6)
+            sx = max(0, min(W - sw, x + w / 2.0 - sw / 2.0))
+            sy = max(0, min(H - sh, y + h / 2.0 - sh / 2.0))
+            renpy.show("cg_corrente", what=At(immagine, zoom_sguardo(sx, sy, sw, sh, x, y, w, h, durata)))
+            renpy.with_statement(dissolve)
+        else:
+            renpy.show_screen("segnaposto_cg", descrizione=descrizione)
+
     def via_cg():
         renpy.hide_screen("segnaposto_cg")
         if renpy.showing("cg_corrente"):
@@ -133,3 +149,10 @@ init python:
 style notify_frame:
     xalign 1.0
     xoffset -30
+
+
+## Zoom lento: dall'immagine intera al dettaglio (usato da zoom_cg) ---------------
+transform zoom_sguardo(sx, sy, sw, sh, x, y, w, h, durata):
+    crop (sx, sy, sw, sh)
+    xysize (config.screen_width, config.screen_height)
+    easein durata crop (x, y, w, h)

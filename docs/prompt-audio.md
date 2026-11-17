@@ -23,6 +23,8 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `stranezza` | Roberta e Jessica | ✅ |
 | `notte` | Notte, telefonata di Joanie | ✅ |
 | `palestra` | Palestra (giorno 2) | ✅ |
+| `ristorante` | Ristorante elegante, cena aziendale (giorno 3) | ✅ |
+| `daniel` | Tema di Daniel: punzecchiature e brindisi (giorno 3) | ✅ |
 
 **tema_principale**
 ```
@@ -59,6 +61,16 @@ Instrumental soft late-night piano, intimate and warm, a bedside lamp in a quiet
 Instrumental upbeat modern pop workout music for a bright neighborhood gym. Punchy electronic drums, groovy bass, bright synth stabs, motivating and fun, a little flirty, not aggressive. Feel-good energy. Tempo around 120 BPM. No vocals. Background music for dialogue, mixed not too loud. Seamless loop.
 ```
 
+**ristorante**
+```
+Instrumental elegant restaurant background music: a soft jazz piano trio with brushed drums and warm upright bass, discreet and refined, candlelit fine dining, a touch of expensive glamour. Calm, polished, a little intimidating. Slow-medium tempo, around 80 BPM. No vocals. Background music for dialogue, quiet and unobtrusive. Seamless loop.
+```
+
+**daniel**
+```
+Instrumental theme for a charming, arrogant, seductive powerful man: smooth slow jazz with a sly walking upright bass, muted trumpet, low velvety saxophone, a few sharp piano chords, finger snaps. Confident, playful, a little predatory, elegant and dangerous. Slow tempo, around 75 BPM. No vocals. Background music for dialogue. Seamless loop.
+```
+
 ---
 
 ## Ambienti in loop (`game/audio/ambienti/`)
@@ -66,6 +78,8 @@ Instrumental upbeat modern pop workout music for a bright neighborhood gym. Punc
 | File | Prompt |
 |---|---|
 | `redazione` | *Busy open-plan newspaper office ambience: many keyboards typing, distant muffled conversations, a phone ringing far away, papers shuffling, a printer working. No clear words. Seamless loop, 45 seconds.* |
+| `ristorante` | *Elegant restaurant ambience: soft murmur of many conversations, cutlery on porcelain plates, glasses touching, a waiter's quiet steps, a cork popping far away. No clear words. Seamless loop, 45 seconds.* |
+| `pioggia_auto` | *Inside a small car at night in the rain: steady rain drumming on the roof and windshield, windshield wipers swishing slowly, low engine hum, tires on a wet road. Seamless loop, 45 seconds.* |
 | `palestra` | *Gym weight room ambience: weights clanking on racks, a treadmill running, people breathing and exercising, muffled upbeat music far away, a dumbbell set down on rubber floor. No clear words. Seamless loop, 45 seconds.* |
 
 ## Effetti (`game/audio/suoni/`)
@@ -82,3 +96,6 @@ Instrumental upbeat modern pop workout music for a bright neighborhood gym. Punc
 | `telefono_vibra` | G1 notte, G2 alle 17 | *Smartphone vibrating twice on a wooden surface.* |
 | `notifica` | G2, messaggio di Josh | *Soft, pleasant phone message notification chime, single short tone.* |
 | `armadietto` | G2, spogliatoio | *Metal gym locker door opened and closed, in a tiled locker room.* |
+| `rossetto` | G3, bagno con Emma | *Lipstick tube cap pulled off with a soft click, then closed again, in a quiet marble bathroom.* |
+| `calici` | G3, il brindisi | *Several crystal champagne glasses clinking together in a toast at a dinner table, light applause.* |
+| `portiera_auto` | G3, in auto | *Car door closing with a soft thud, seatbelt clicking, engine starting, in the rain.* |

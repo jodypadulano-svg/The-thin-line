@@ -4,6 +4,14 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### La redazione è tutta femminile (decisione 17/11/2026)
+
+**Stato: approvata da Jody; vale per testi e immagini da ora in poi.**
+
+- In redazione lavorano **solo donne**, quasi tutte giovani. Barbara, proprietaria del giornale, si circonda di donne.
+- **Lore:** non viene mai spiegato apertamente. È un indizio in più sulla cerchia di Barbara (insieme al modo di fumare): alcune colleghe portano già il suo «segno», altre no.
+- Nelle scene della redazione niente colleghi uomini. I testi dei giorni 1-3 sono già compatibili (il «copy desk» del giorno 1 resta un reparto senza volti).
+
 ### Giorno 2 — la scelta segreta: Sara fuma (decisione 17/11/2026)
 
 **Stato: confermata e scritta il 17/11/2026** (label `ep1_d2_segreto_fumo` e `ep1_d2_terrazzino_fumatrice`; scelte con tetto `corruption_max=`; sezione «Segreti trovati» nel Diario; test `segreto`). Area cliccabile misurata sulla A8 vera: (0.0, 0.47, 0.30, 0.53). Modifica la decisione precedente sul terrazzino: «Sara non fuma» resta vero **salvo** questa scelta segreta.
@@ -213,6 +221,7 @@ Scelte fatte da Claude per rendere il gioco giocabile, non ancora confermate da 
 | 16/11/2026 | **A9** Confidence | `core/stato.rpy`, scene, Diario |
 | 16/11/2026 | **A10** Abiti scelti dalla storia, sbloccati da Confidence e Corruption | `core/abiti.rpy`, Diario |
 | 17/11/2026 | **Immagini del giorno 1 nel codice**: 28 CG (A1-G2) collegate alle battute in campo e controcampo, comprese le varianti delle scelte | `ep1_giorno01.rpy`, `images/cg/ep1/` |
+| 17/11/2026 | **Giorno 3 riscritto in inglese** con tutte le scelte di [mese-1.md](mese-1.md): riunione (pezzo assegnato / proposta del cinema), tre vestiti (sobrio e nero = stessa immagine, audace = variante `_audace`), cena con Daniel 1 (retroscena dello sguardo, umiliazione di Josh, brindisi), in auto la riga di Josh su suo padre detta da Josh (I1). Tolta la vecchia scena italiana `daniel_1_cena_aziendale`. Piano immagini in [inquadrature-giorno-03.md](prompt-immagini/inquadrature-giorno-03.md) | `ep1_giorno03.rpy`, `ep1_flusso.rpy`, `daniel.rpy` |
 | 17/11/2026 | **Giorno 2 riscritto in inglese** con tutte le scelte di [mese-1.md](mese-1.md): pausa pranzo, top di Joanie, saluto di Simon, reazione all'invito; cena aziendale spostata a «domani» (giorno 3). Tolte le vecchie scene italiane Simon 1-2 e l'invito | `ep1_giorno02.rpy`, `simon.rpy`, `ep1_casa.rpy`, [grafo.md](grafo.md) |
 | 17/11/2026 | **Giorno 2 approvato da Jody**; lo squat di Joanie si sposta al rack della sala pesi; varianti CG «_top» se Sara indossa il top di Joanie; piano delle inquadrature del giorno 2 | `ep1_giorno02.rpy`, [inquadrature-giorno-02.md](prompt-immagini/inquadrature-giorno-02.md) |
 | 17/11/2026 | **Audio**: musiche ed effetti con Mureka (uso commerciale); comandi `musica()`, `ambiente()`, `suono()` che restano in silenzio se il file manca; inseriti nei giorni 1-2; prompt in [prompt-audio.md](prompt-audio.md) | `core/audio.rpy`, `ep1_giorno01.rpy`, `ep1_giorno02.rpy` |

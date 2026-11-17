@@ -5,63 +5,7 @@
 ## Tre incontri della scheda. BOZZA: dialoghi provvisori.
 ## Regola della scheda: il giocatore capisce il piano di Daniel, Sara no.
 
-label daniel_1_cena_aziendale:
-    $ vai("ristorante", "Ristorante — cena aziendale")
-    c "Daniel, ti presento Sara."
-    $ cg("Daniel si alza: completo scuro, sorriso da copertina, stretta di mano lunga un istante di troppo")
-    da "Sara. Finalmente. Lui parla poco di te, adesso capisco perché: ti tiene nascosta."
-    $ incontra("daniel")
-    s "Piacere mio."
-    $ via_cg()
-
-    call inizio_retroscena
-    $ cg("Lo sguardo di Daniel scivola sul vestito di Sara mentre lei si siede")
-    rs "Daniel la guarda sedersi. Non ascolta quello che dice il dipendente al suo fianco."
-    $ retroscena("daniel", "Alla cena Daniel ha notato Sara, e non come la moglie di un dipendente.")
-    $ via_cg()
-    call fine_retroscena
-
-    n "La serata comincia bene. Poi, tra l'antipasto e il primo, Daniel comincia a punzecchiare."
-    da "Il nostro [nome_compagno] è il più puntuale dell'ufficio. Peccato che arrivi puntuale anche con i problemi."
-    n "Qualche risata. [nome_compagno] sorride a fatica."
-    da "No, sul serio, Sara. Come hai fatto? Una donna come te con... un uomo così prudente. Ti avrà conquistata con un foglio Excel."
-
-    menu:
-        sp "Basta. Non posso lasciarlo passare."
-        "Rispondergli a tono.":
-            s "Mi ha conquistata trattandomi con rispetto. Cosa che a quanto pare non si impara in tutti i lavori."
-            da "Touché. Vedi? Lei sì che ha carattere. Forse dovresti farti prestare un po' del suo, in ufficio."
-            sp "L'ha ribaltata di nuovo. Come fa?"
-            $ interest("daniel", 2, "A Daniel piace chi gli tiene testa.")
-            $ retroscena("daniel", "Più Sara gli tiene testa, più Daniel si diverte.")
-        "Prendere la mano di [nome_compagno] sotto il tavolo.":
-            $ interest("josh", 2, "[nome_compagno] sente la tua mano.")
-            n "Sara non dice niente. Stringe la mano di [nome_compagno] sotto il tovagliolo."
-            da "Che tenerezza. Lui ha bisogno di sostegno, eh?"
-        "Cambiare discorso con eleganza.":
-            s "Parliamo d'altro? Il vino è ottimo, chi l'ha scelto?"
-            da "Io. Ovviamente."
-            sp "Ovviamente."
-
-    n "Il resto della cena va avanti così. Ogni battuta di Daniel sembra quasi ragionevole. Ogni volta [nome_compagno] incassa in silenzio."
-    sp "Non l'ho mai visto così. Lui, che mi ha sempre fatta sentire protetta."
-    $ nota_sara("daniel", "Uno spaccone arrogante. Ha umiliato [nome_compagno] tutta la sera.")
-
-    $ vai("strada", "In macchina — notte")
-    n "In macchina, il silenzio pesa."
-    menu:
-        sp "Cosa gli dico?"
-        "Consolarlo: «È lui il problema, non tu.»":
-            $ interest("josh", 3, "Sara sta dalla parte di [nome_compagno].")
-            s "È lui il problema. Non tu. È un pallone gonfiato."
-            c "È il mio capo, Sara. Non posso permettermi di rispondergli."
-        "Chiedergli perché non ha reagito.":
-            $ interest("josh", -2, "Per la prima volta, lo vede debole.")
-            s "Perché non gli hai detto niente? Neanche una parola."
-            c "E cosa avrei dovuto dirgli? Lui firma il mio contratto."
-            sp "Ha ragione. Eppure..."
-    $ tappa("daniel", 1)
-    return
+## Daniel 1 (la cena aziendale) è nel giorno 3: ep1_giorno03.rpy.
 
 
 label daniel_2_patente:
