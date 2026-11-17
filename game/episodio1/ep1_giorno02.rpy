@@ -7,6 +7,12 @@
 ## Le CG indicate (images/cg/ep1/d2_*.webp) non esistono ancora: finché mancano
 ## compare la didascalia [CG].
 
+init python:
+    def tuta_d2(nome):
+        """CG della palestra con Sara in vista: variante «_top» se ha accettato il top di Joanie."""
+        return "images/cg/ep1/d2_%s%s.webp" % (nome, "_top" if fatto("ep1_top_joanie") else "")
+
+
 label ep1_d2:
     call nuovo_giorno(2, "Tuesday")
     call ep1_d2_redazione
@@ -48,6 +54,7 @@ label ep1_d2_redazione:
             sp "Champion. He has no idea what's waiting for me."
 
     $ vai("redazione", "The newsroom — 5:00 p.m.")
+    $ cg("Golden late-afternoon light: Sara leaves her desk at five o'clock sharp", "images/cg/ep1/d1_07_le_17.webp")
     n "At five o'clock sharp, her phone buzzes. Joanie."
     n "{i}Downstairs. Don't make me come up there.{/i}"
     return
@@ -85,7 +92,7 @@ label ep1_d2_palestra:
             sp "[nome_compagno] has never seen me like this. Nobody has."
 
     $ vai("palestra", "The gym — 6:15 p.m.")
-    $ cg("Sara at the edge of the weight room, lost; Joanie beside her, completely at home", "images/cg/ep1/d2_07_ingresso.webp")
+    $ cg("Sara at the edge of the weight room, lost; Joanie beside her, completely at home", tuta_d2("07_ingresso"))
     ch "Breathe. Nobody bites."
     s "Joanie, everyone here is... sculpted."
     ch "And soon you will be too. More or less."
@@ -122,21 +129,24 @@ label ep1_d2_palestra:
         "Smile back at him.":
             $ interest("simon", 1, "Sara smiles back at him.")
             n "Sara smiles. Simon smiles back: a quick, open smile, like it costs him nothing."
+            $ cg("Joanie leaning towards Sara with a sly grin", "images/cg/ep1/d2_09_joanie_ammicca.webp")
             ch "Ooh. Look at you."
             s "It's called being polite, Joanie."
         "Give him a quick nod.":
             n "Sara gives him a small nod and looks away, suddenly very interested in her shoelaces."
+            $ cg("Joanie leaning towards Sara with a sly grin", "images/cg/ep1/d2_09_joanie_ammicca.webp")
             ch "Wow. Ice queen."
 
     $ tappa("simon", 1)
 
     ## Simon 2 — Joanie chiede a Simon di correggerle lo squat.
     $ vai("palestra", "The gym — 6:45 p.m.")
-    $ cg("Sara red-faced and out of breath on a mat; Joanie fresh and smiling", "images/cg/ep1/d2_11_fiatone.webp")
+    $ cg("Stretching corner: Sara red-faced and out of breath on a mat; Joanie fresh and smiling", tuta_d2("11_fiatone"))
     n "Half an hour later Sara can barely breathe. Joanie, on the other hand, has a plan."
+    n "She walks over to the squat rack and waves at the trainers' desk."
     ch "Simon? Sorry... could you check my squat? I think I'm doing something wrong with my back."
     si "Sure. Show me."
-    $ cg("Simon behind Joanie: one hand on her hip, the other between her shoulder blades, correcting her posture", "images/cg/ep1/d2_12_squat_joanie.webp")
+    $ cg("Weight room, squat rack: Simon behind Joanie: one hand on her hip, the other between her shoulder blades, correcting her posture", "images/cg/ep1/d2_12_squat_joanie.webp")
     si "Chest up. Weight on your heels... like that. Good."
     ch "Like this? Are you sure?"
     n "Joanie laughs a little too much. Leans back a little too much."
@@ -151,11 +161,11 @@ label ep1_d2_palestra:
         "Keep watching.":
             $ corruption(1, "Sara asks herself a new question.")
             $ segna("ep1_guarda_joanie")
-            $ cg("Close-up of Sara on the mat, watching, lips parted, cheeks flushed from the workout", "images/cg/ep1/d2_13_sara_guarda.webp")
+            $ cg("Close-up of Sara on the mat, watching, lips parted, cheeks flushed from the workout", tuta_d2("13_sara_guarda"))
             sp "One hand on her hip. One on her back. Is that how it's done?"
             sp "And what if it were my back?"
 
-    $ cg("Simon turns to Sara and Joanie with a friendly smile, towel over his shoulder", "images/cg/ep1/d2_14_simon_sorride.webp")
+    $ cg("Simon walks over to the mats, towel over his shoulder, friendly smile", "images/cg/ep1/d2_14_simon_sorride.webp")
     si "Great job, both of you. And you're new, right? Sara?"
     s "Sara. Yes. New and dying."
     si "If you need a hand with anything, just ask. That's what I'm here for."
@@ -163,7 +173,7 @@ label ep1_d2_palestra:
     si "Surviving is step one. Everything else comes later."
     $ nota_sara("simon", "He was kind with Joanie, and he didn't take advantage.")
 
-    $ cg("Joanie, out of Simon's earshot, whispering to Sara with a satisfied smile", "images/cg/ep1/d2_15_joanie_sussurra.webp")
+    $ cg("Joanie, out of Simon's earshot, whispering to Sara with a satisfied smile", tuta_d2("15_joanie_sussurra"))
     ch "He remembered your name. After one hello. Just saying."
     s "He's a trainer, Joanie. Remembering names is his job."
     ch "Mm-hm."
@@ -181,8 +191,11 @@ label ep1_d2_sera:
     n "He sits on the arm of the sofa. He's smiling, but he keeps turning his phone over in his hands."
     $ cg("Josh sitting on the arm of the sofa, nervous, turning his phone in his hands", "images/cg/ep1/d2_17_josh_invito.webp")
     c "I've got news that will make you forget the pain. Tomorrow night there's the company dinner. And this year partners are invited too."
+    $ cg("Sara on the sofa with the ice pack, curious and a little wary", "images/cg/ep1/d2_18_sara_invito.webp")
     s "So I'm finally meeting the famous boss?"
+    $ cg("Josh sitting on the arm of the sofa, nervous, turning his phone in his hands", "images/cg/ep1/d2_17_josh_invito.webp")
     c "Daniel. He's... a type. Difficult. But he's the one who matters. If I make a good impression, it's important for me."
+    $ cg("Sara on the sofa with the ice pack, curious and a little wary", "images/cg/ep1/d2_18_sara_invito.webp")
     sp "I've never heard him talk about work with that face."
 
     menu:
