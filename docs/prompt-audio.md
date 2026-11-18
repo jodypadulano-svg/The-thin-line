@@ -25,6 +25,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `palestra` | Palestra (giorno 2) | ✅ |
 | `ristorante` | Ristorante elegante, cena aziendale (giorno 3) | ✅ |
 | `daniel` | Tema di Daniel: punzecchiature e brindisi (giorno 3) | ✅ |
+| `aperitivo` | Cocktail bar, aperitivo con le colleghe (giorno 4) | da fare |
 
 **tema_principale**
 ```
@@ -71,6 +72,11 @@ Instrumental elegant restaurant background music: a soft jazz piano trio with br
 Instrumental theme for a charming, arrogant, seductive powerful man: smooth slow jazz with a sly walking upright bass, muted trumpet, low velvety saxophone, a few sharp piano chords, finger snaps. Confident, playful, a little predatory, elegant and dangerous. Slow tempo, around 75 BPM. No vocals. Background music for dialogue. Seamless loop.
 ```
 
+**aperitivo**
+```
+Instrumental lounge music for a cosy, slightly glamorous cocktail bar at golden hour: warm Rhodes electric piano, soft bossa-nova guitar, light brushed percussion, a sensual muted trumpet now and then. Relaxed, chic, a little seductive, with an undercurrent of intrigue. Tempo around 90 BPM. No vocals. Background music for dialogue, quiet and unobtrusive. Seamless loop.
+```
+
 ---
 
 ## Ambienti in loop (`game/audio/ambienti/`)
@@ -79,6 +85,7 @@ Instrumental theme for a charming, arrogant, seductive powerful man: smooth slow
 |---|---|
 | `redazione` | *Busy open-plan newspaper office ambience: many keyboards typing, distant muffled conversations, a phone ringing far away, papers shuffling, a printer working. No clear words. Seamless loop, 45 seconds.* |
 | `ristorante` | *Elegant restaurant ambience: soft murmur of many conversations, cutlery on porcelain plates, glasses touching, a waiter's quiet steps, a cork popping far away. No clear words. Seamless loop, 45 seconds.* |
+| `bar` | *Cosy cocktail bar ambience: a small group of women laughing and chatting, ice in shaker, glasses clinking, a bartender working, soft background murmur. No clear words. Seamless loop, 45 seconds.* |
 | `pioggia_auto` | *Inside a small car at night in the rain: steady rain drumming on the roof and windshield, windshield wipers swishing slowly, low engine hum, tires on a wet road. Seamless loop, 45 seconds.* |
 | `palestra` | *Gym weight room ambience: weights clanking on racks, a treadmill running, people breathing and exercising, muffled upbeat music far away, a dumbbell set down on rubber floor. No clear words. Seamless loop, 45 seconds.* |
 
@@ -99,3 +106,4 @@ Instrumental theme for a charming, arrogant, seductive powerful man: smooth slow
 | `rossetto` | G3, bagno con Emma | *Lipstick tube cap pulled off with a soft click, then closed again, in a quiet marble bathroom.* |
 | `calici` | G3, il brindisi | *Several crystal champagne glasses clinking together in a toast at a dinner table, light applause.* |
 | `portiera_auto` | G3, in auto | *Car door closing with a soft thud, seatbelt clicking, engine starting, in the rain.* |
+| `accendino` | G4, il fumo fuori dal bar | *A lighter flicked twice outdoors at night, the second time it catches, a soft first inhale.* |

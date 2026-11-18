@@ -573,7 +573,7 @@ screen telefono_chat(k):
         background Solid("#1b1117f2")
         vbox:
             spacing 14
-            text nome_percorso(percorso(k)) style "tel_testo" size 38 color "#ffb3c1" xalign 0.5
+            text nome_mittente(k) style "tel_testo" size 38 color "#ffb3c1" xalign 0.5
             viewport:
                 ysize 800
                 yinitial 1.0
@@ -596,7 +596,7 @@ screen telefono_chat(k):
                                 padding (18, 10)
                                 background Solid("#352a31")
                                 vbox:
-                                    if chi == "josh":
+                                    if chi == "josh" and k != "josh":
                                         text nome_mittente(chi) style "tel_testo" size 20 color "#8fb3e0"
                                     text testo style "tel_testo" size 28
             $ attesa = coda_chat.get(k)

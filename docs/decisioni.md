@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 4 scritto in inglese (bozza, 18/11/2026)
+
+**Stato: bozza da rivedere con Jody** (`game/episodio1/ep1_giorno04.rpy`, inquadrature in [inquadrature-giorno-04.md](prompt-immagini/inquadrature-giorno-04.md)). Segue il calendario: Barbara passa senza guardarla; il vestito nuovo di Jessica (scelta «stai benissimo» / «eri più bella prima»); a pranzo il filler in chat con Josh (decisione 17/11), che richiama la cena del giorno 3 e chiude col rituale «Love you!» / «Love you more!»; la sera l'aperitivo (se accettato al giorno 1) con Barbara che offre il drink e le due scelte del calendario, oppure la serata libera (scrivere / Josh). Semi dei finali: **il ciondolo a cuore d'oro** di Jessica e Roberta («you get one when you belong»), il cappuccino alla cannella, il fumo a labbra arricciate visto dalla vetrina, **la porta del capitolo tre** («the handle is warm»), la battuta del foglio Excel (scelta facoltativa in chat). Il bar si chiama **The Copper Room**. Nel flusso le vecchie scene italiane sono state rimesse nei giorni del calendario (Howard 1 e Daniel 2 al giorno 5, ecc.).
+
 ### Telefono: la tabella dei 152 argomenti (decisione 18/11/2026, quinta parte)
 
 **Stato: approvato da Jody.** Gli argomenti di tutti gli otto personaggi (introduzione, 8 A, 5 B, 3 C, 2 D) sono in **[argomenti-telefono.md](argomenti-telefono.md)**, con le condizioni di trama. Chiarimenti: Simon D2 = fantasie di Sara e Simon; Darius D1 = la loro complicità e cosa vogliono da Josh; Daniel C1 senza condizioni; Magnus con due introduttive alternative (pagine mandate / «sto ancora aspettando quelle pagine»); Joanie B4 solo dopo il ritorno di Jacob (giorno 19). Si scrivono per gradi (prima introduzione + 3 A per personaggio) e nel gioco si registra un discorso solo quando è scritto.
