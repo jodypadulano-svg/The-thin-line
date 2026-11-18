@@ -4,6 +4,28 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Telefono: sblocco, numeri, soglie, risposte asincrone e serate (decisioni 18/11/2026, seconda parte)
+
+**Stato: approvato da Jody; chiude le questioni aperte della specifica [Telefono e percorsi dinamici](telefono-e-percorsi-dinamici.md) (sezione 10). Solo documentazione: codice in un lotto futuro, al via di Jody.**
+
+- **Sblocco (A + B):** il telefono libero si accende al **giorno 14**, durante il pranzo delle due famiglie: Sally e Sara restano sole in cucina a lavare i piatti e Sally, severa, le dice che una donna ha bisogno di una vita sua fuori casa e di conoscere gente. Doppia lettura: Hugo, suo amante, è a tavola di là (I7). Prima del 14 il telefono esiste solo per i messaggi di trama. Il filtro per persona resta: in rubrica solo chi ha dato il numero.
+- **I numeri:** Joanie e Darius da subito; Simon giorno 8 («se hai dubbi sugli esercizi, scrivimi», scelta); Howard giorno 11 (con le chiavi); Daniel giorno 13 (si fa dare il numero «per il romanzo» e scrive per primo); Magnus giorno 13 (contatto per le 50 pagine); Barbara giorno 18 (solo se Sara resta la mezz'ora in più); Jacob giorni 19-21 (come già previsto).
+- **Il rapporto si misura con l'Interest** (nessuna variabile nuova di «conoscenza»): ogni step di chat dà Interest +1 (+2 con la risposta più calda). Quattro soglie per personaggio, cinque gradini: sotto A estranei · A conoscenti · B in confidenza · C complici · D intimi. Il fisico resta bloccato dalla soglia di Corruption del percorso.
+
+  | Personaggio | A | B | C | D |
+  |---|---|---|---|---|
+  | Simon | 5 | 10 | 16 | 22 |
+  | Howard | 4 | 9 | 14 | 20 |
+  | Daniel, Magnus, Jacob, Joanie, Darius | 3 | 7 | 12 | 18 |
+  | Barbara | 3 | 7 | 15 | 25 |
+
+- **Scene fisse:** sotto B restano come sono scritte; da B una o due frasi in più; da **C e D l'incontro cambia** (tono, porzioni nuove, bivi). Ogni scena controlla solo le soglie che le servono. L'Episodio 1 (giorni 1-13) non ha varianti, salvo verificare Simon e Howard.
+- **Messaggi non scelti dal giocatore:** quelli di trama e quelli in entrata **non consumano lo slot**. In entrata: da B in su, al massimo uno ogni 3-4 giorni per personaggio, mai due lo stesso giorno; rispondere +1 Interest, ignorare nessun effetto. Daniel scrive per primo già dal giorno 13. Josh può scrivere mentre Sara chatta con un altro: rispondere Josh +1, lasciarlo in sospeso Corr +1 solo se l'altra chat è a C. Lo slot si può non usare.
+- **Risposte asincrone («client/server»):** inviare consuma lo slot; la risposta arriva in una fascia successiva (mattina, lavoro, pausa pranzo, sera, notte), calcolata all'invio e salvata. Lo step si completa quando Sara risponde alla risposta; nel frattempo con quel contatto non si apre un nuovo step. Spunte: consegnato, letto, sta scrivendo. **Tutti prima o poi rispondono.** Ritardi base: Joanie e Howard subito; Simon la sera stessa; Darius in fretta ma breve; Jacob di notte; Daniel da una fascia a un giorno e legge subito; Magnus 1-2 giorni, risposte lunghe; Barbara solo in orario di lavoro. Modificatori: sopra C una fascia prima, sopra D quasi subito; fasce impossibili slittano; ±1 fascia casuale. Se la risposta arriva mentre Sara è con Josh: leggerla subito Susp +1 (e Corr +1 se il contatto è a C), oppure dopo senza effetti.
+- **Solleciti:** mentre aspetta, Sara può riscrivere usando lo slot. Joanie e Howard: nessun effetto. Simon, Jacob, Darius: risposta una fascia prima e Interest +1. Daniel: nessun anticipo, Corr +1 e Conf −1. Magnus: nessun effetto, lo dice con garbo. Barbara: Barbara −1 e Conf −1.
+- **Serate alternative:** nel primo mese solo il **giorno 22** è sostituibile. Si può uscire con chi è almeno a C; da D, entro la soglia di Corruption, l'uscita può prendere una piega romantica con scelta esplicita. Con Josh: dirglielo (Susp +1, Josh +1 se innocente) o una scusa (Corr +1 e segreto «uscita con X»). Restare con Josh è sempre possibile.
+- **Metodo di scrittura:** dal giorno 14 in poi si alternano **codice della giornata** (calendario e scene fisse con le loro varianti) e **codice del percorso** (step di chat, messaggi in entrata, uscite di un personaggio), in file separati per percorso.
+
 ### Telefono libero, progressione dinamica e serate alternative (decisione 18/11/2026)
 
 **Stato: sistema progettuale approvato da Jody; registrato, da implementare in un lotto futuro, senza modifiche al codice in questa fase.** Specifica completa: **[Telefono e percorsi dinamici](telefono-e-percorsi-dinamici.md)**. Questa decisione **estende** (non revoca) la scelta del 17/11 di utilizzare e personalizzare *Yet Another Phone for Ren'Py*, con verifica preventiva di licenza e asset commerciali.
@@ -15,7 +37,7 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 - **Serate alternative:** alcune serate libere o inizialmente pensate per Josh possono offrire **appuntamenti opzionali** con i contatti che hanno raggiunto la propria soglia di conoscenza/interesse. Il giocatore sceglie chi vedere oppure Josh; appuntamento ≠ tradimento automatico. **Slot telefonico e serata sono distinti**. Dove pertinente Sara può rivelare o nascondere l'uscita a Josh, con conseguenze legate ai fatti e a Suspicion/segreti.
 - **Regola essenziale per tutte le scene fisse:** ogni interazione personale successiva allo sblocco del numero deve **leggere lo stato già maturato** con quella persona: messaggi, confidenze, interesse, tappe, appuntamenti precedenti, cosa sa Josh. Usare **microvarianti**, brevi scene condizionali e diramazioni importanti solo dove servono, non otto riscritture complete della stessa giornata. La mattina non può fare riferimento a eventi scelti per la sera futura.
 - **Vincoli speciali invariati:** Darius rimane opt-in con scelta esplicita e Corruption; Joanie sviluppa il lato romantico più avanti; Barbara ha ritmo lento; la trama canonica e i finali rimangono coerenti. Conservare `percorsi[x].interest`, `percorsi[x].tappa` e le altre statistiche già previste.
-- **Da definire:** acquisizione dei numeri, numero e contenuto delle chat, progressi numerici, soglie personalizzate per le date, serate sostituibili, priorità con le scene della trama, trattamento delle chat obbligatorie fuori dallo slot. Non fissare oggi parametri o scene non approvati.
+- **Da definire (risolto il 18/11, vedi «seconda parte» sopra):** acquisizione dei numeri, numero e contenuto delle chat, progressi numerici, soglie personalizzate per le date, serate sostituibili, priorità con le scene della trama, trattamento delle chat obbligatorie fuori dallo slot. Non fissare oggi parametri o scene non approvati.
 
 ### Giorni 15–17 — palestra lunedì e mercoledì, serata con amici martedì (decisione 18/11/2026)
 

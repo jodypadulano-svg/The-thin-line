@@ -76,6 +76,8 @@ Usare e preservare le variabili già previste nel gioco:
 
 ## 9. Questioni aperte da decidere, non ipotesi approvate
 
+> **Chiuse il 18/11/2026: vedi la sezione 10.**
+
 - Evento esatto di **attivazione del telefono libero**, da quale giorno, e acquisizione del numero per ciascuno degli otto.
 - Numero, contenuto, prerequisiti e possibili limiti degli step di chat per ogni personaggio; quali confidenze e attività anticipano realmente le scene fisiche.
 - Come calibrare numericamente `conoscenza` rispetto a `Interest` e alle tappe già approvate; ritmo e tetto dei progressi.
@@ -83,3 +85,91 @@ Usare e preservare le variabili già previste nel gioco:
 - Trattamento definitivo delle comunicazioni automatiche di trama rispetto allo slot quotidiano, eventuali messaggi in entrata, disponibilità oraria e contatti che possono essere bloccati.
 
 **Sintesi vincolante:** un solo calendario principale, **otto percorsi indipendenti e opzionali**, un contatto elettivo al giorno con chi è in rubrica, conoscenza che può avanzare via chat e cambiare anche gli incontri futuri, date opzionali sbloccate per soglie individuali, e **tutte le scene personali successive sensibili allo stato della relazione**.
+
+## 10. Decisioni del 18/11/2026 (seconda parte): le questioni aperte chiuse
+
+Approvate da Jody in conversazione; il riepilogo sta anche nel [registro](decisioni.md). Dove contraddicono le sezioni 1-9, **prevale questa sezione**.
+
+### 10.1 Sblocco
+- **Telefono libero al giorno 14**, pranzo delle due famiglie: Sally e Sara sole in cucina, Sally le dice di farsi una vita sua fuori casa e di conoscere gente (doppia lettura col segreto di Sally e Hugo, I7). Flag `telefono_libero` e notifica del tipo *«Sara's phone feels different tonight.»*
+- Prima del 14 il telefono serve solo ai messaggi di trama (giorni 4, 9, 12...). Rubrica: solo chi ha dato il numero.
+
+### 10.2 I numeri
+| Percorso | Quando | Come |
+|---|---|---|
+| Joanie | da subito | migliore amica |
+| Darius | da subito | migliore amico di Josh; il numero apre solo il canale, il percorso resta opt-in |
+| Simon | giorno 8 | «se hai dubbi sugli esercizi, scrivimi» (scelta) |
+| Howard | giorno 11 | quando restituisce le chiavi |
+| Daniel | giorno 13 | si fa dare il numero «per il romanzo» e scrive per primo |
+| Magnus | giorno 13 | contatto per le 50 pagine |
+| Barbara | giorno 18 | solo se Sara resta la mezz'ora in più |
+| Jacob | giorni 19-21 | numero al locale (o da Joanie), messaggio del 21; se Sara risponde entra in rubrica |
+
+### 10.3 Il rapporto = Interest con quattro soglie
+Non serve una variabile `conoscenza`: le scene leggono `percorsi[x].interest`. Ogni step di chat dà +1 (+2 con la risposta più calda).
+
+| Personaggio | A conoscenti | B in confidenza | C complici | D intimi |
+|---|---|---|---|---|
+| Simon | 5 | 10 | 16 | 22 |
+| Howard | 4 | 9 | 14 | 20 |
+| Daniel, Magnus, Jacob, Joanie, Darius | 3 | 7 | 12 | 18 |
+| Barbara | 3 | 7 | 15 | 25 |
+
+Il fisico resta sempre dietro la soglia di Corruption del percorso (mappa a tappe).
+
+### 10.4 Scene fisse
+| Gradino | Nella scena fissa |
+|---|---|
+| sotto B | resta com'è scritta |
+| B | una o due frasi in più |
+| C | l'incontro cambia: tono, porzione nuova, bivio |
+| D | cambia ancora di più, entro la soglia di Corruption |
+
+Ogni scena controlla solo le soglie che le servono. Episodio 1 (giorni 1-13): niente varianti, salvo verificare se Simon o Howard toccano B prima del 14.
+
+### 10.5 Messaggi non scelti
+- Trama e messaggi in entrata **non consumano lo slot**. Lo slot si può non usare (*«Sara leaves her phone face-down on the table.»*).
+- In entrata: da B in su, massimo uno ogni 3-4 giorni per personaggio, mai due nello stesso giorno. Rispondere +1 Interest; ignorare nessun effetto. Daniel scrive per primo già dal 13.
+- Josh può scrivere durante una chat con un altro: rispondere Josh +1; lasciarlo in sospeso Corr +1 solo se l'altra chat è a C.
+
+### 10.6 Risposte asincrone («client/server»)
+- Inviare consuma lo slot. Il messaggio entra in una coda con la **fascia di risposta calcolata all'invio e salvata** (`renpy.random`; ricaricare dopo l'invio non cambia nulla).
+- Fasce: mattina, lavoro, pausa pranzo, sera, notte. A ogni inizio fascia si controlla la coda e arrivano le notifiche (*«Daniel replied.»*).
+- Lo step si completa quando Sara risponde alla risposta; finché è in attesa, con quel contatto non si apre un nuovo step (gli altri sì).
+- Spunte: consegnato, letto, sta scrivendo. **Tutti prima o poi rispondono.**
+
+| Chi | Ritardo base |
+|---|---|
+| Joanie | subito, stessa fascia |
+| Howard | subito, sempre (appiccicoso, inquietante) |
+| Simon | la sera stessa |
+| Darius | in fretta, risposte brevi |
+| Jacob | di notte |
+| Daniel | da una fascia a un giorno; legge subito |
+| Magnus | 1-2 giorni, risposte lunghe |
+| Barbara | solo in orario di lavoro, giorno lavorativo dopo |
+
+Modificatori: sopra C una fascia prima; sopra D quasi subito (anche Daniel); fasce impossibili slittano alla prima utile; ±1 fascia casuale.
+Risposta che arriva mentre Sara è con Josh: leggerla subito Susp +1 (e Corr +1 se il contatto è a C), oppure dopo senza effetti.
+
+### 10.7 Solleciti
+Sara può riscrivere a chi non ha ancora risposto; il sollecito usa lo slot.
+| Chi | Effetto |
+|---|---|
+| Joanie, Howard | nessuno |
+| Simon, Jacob, Darius | risposta una fascia prima, Interest +1 |
+| Daniel | nessun anticipo; Corr +1, Conf −1 |
+| Magnus | nessuno, lo dice con garbo |
+| Barbara | Barbara −1, Conf −1 |
+
+### 10.8 Serate alternative
+- Primo mese: solo il **giorno 22** è sostituibile; le altre dal secondo mese, segnate nel calendario.
+- Si può uscire con chi è almeno a C; da D, entro la soglia di Corruption, l'uscita può prendere una piega romantica con scelta esplicita.
+- Josh: dirglielo (Susp +1, Josh +1 se innocente) o una scusa (Corr +1, segreto «uscita con X», scopribile da chi può vederla, es. Howard). Restare con Josh è sempre possibile.
+- Ogni uscita = un set di immagini nuovo: poche per episodio.
+
+### 10.9 Costi e metodo
+- Costo di calcolo trascurabile per Ren'Py (pochi valori per 8 contatti, una coda breve). I costi veri: scrittura (circa 6 step × 8 personaggi nel primo mese), immagini delle uscite, test.
+- Test: estendere l'autoplay con strategie «sempre lo stesso contatto» e «sparpagliata», seme casuale fisso.
+- **Metodo:** dal giorno 14 si alternano **codice della giornata** (calendario e scene fisse con varianti) e **codice del percorso** (step di chat, messaggi in entrata, uscite di un personaggio), in file separati per percorso.

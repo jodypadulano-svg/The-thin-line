@@ -66,7 +66,7 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 
 | Giorno | Fascia | Scena | Chi | Scelte → effetti |
 |---|---|---|---|---|
-| **14 Dom** | Pranzo | Le due famiglie a tavola (I3, I1, I2, I16, I7) | Hugo, Samantha, Sally, Andrew, Josh | ★ **Hugo sminuisce Josh:** Difenderlo → Josh +3, Conf +1 · Tacere → — · Sorridere alla battuta → Josh -2<br>**Sally la riprende per il vestito:** Abbassare gli occhi → — · Rispondere a tono → Conf +1<br>**Samantha la invita a fare shopping insieme:** Accettare → — · Declinare → — |
+| **14 Dom** | Pranzo | Le due famiglie a tavola (I3, I1, I2, I16, I7) | Hugo, Samantha, Sally, Andrew, Josh | ★ **Hugo sminuisce Josh:** Difenderlo → Josh +3, Conf +1 · Tacere → — · Sorridere alla battuta → Josh -2<br>**Sally la riprende per il vestito:** Abbassare gli occhi → — · Rispondere a tono → Conf +1<br>**Samantha la invita a fare shopping insieme:** Accettare → — · Declinare → —<br>**In cucina con Sally (18/11/2026):** Sally le consiglia di farsi una vita sua e conoscere gente → si sblocca il telefono libero ([telefono](telefono-e-percorsi-dinamici.md#10-decisioni-del-18112026-seconda-parte-le-questioni-aperte-chiuse)) |
 | **15 Lun** | Lavoro | Riunione di redazione |  | **In riunione:** Silenziosa → — · Difendere una sua idea → Conf +1 |
 |  | Dopo il lavoro | Palestra con Joanie e Simon: allenamento sociale e scherzoso. Simon si avvicina per correggere un esercizio; Joanie prende bonariamente in giro Sara per le attenzioni di Simon | Sara, Joanie, Simon | **Reazione di Sara:** Timida · Stare al gioco di Joanie · Concentrarsi sull'allenamento. Le tre risposte caratterizzano Sara, senza flirt automatico o nuove variazioni numeriche già concordate. Breve scena da scrivere. |
 |  | Tarda sera | A casa, le 50 pagine per Magnus | Sara, Magnus (contatto) | ★ **Mandarle?:** Sì → Conf +2, Magnus +1 · Rimandare → — |
@@ -87,7 +87,7 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 | Giorno | Fascia | Scena | Chi | Scelte → effetti |
 |---|---|---|---|---|
 | **22 Lun** | Lavoro | Barbara commenta l'abbigliamento di Sara | Barbara | **Il giorno dopo:** Vestirsi come sempre → — · Una scollatura in più → Barbara +1, Corr +1 |
-|  | Sera | Passaggio |  | — |
+|  | Sera | **Serata sostituibile (18/11/2026):** uscita con un contatto almeno a C, oppure a casa con Josh | contatto scelto / Josh | **Con chi?:** Josh → — · un contatto a C o più → vedi [telefono](telefono-e-percorsi-dinamici.md), sezione 10.8<br>**Dirlo a Josh?:** Sì → Susp +1 · Una scusa → Corr +1, segreto |
 | **23 Mar** | Lavoro | Giornata normale |  | — |
 |  | Sera | Primo incontro a due con Jacob, da vecchi amici (se ha risposto) | Jacob, Josh | ★ **Cosa dire a Josh:** La verità: vede l'ex → — · «Esco con una collega» → Corr +2, Susp +3<br>**All'incontro:** Parlare dei ricordi → Jacob +2 · Parlare di Josh → Josh +1 · 🔒 Corr 10 Lasciarlo avvicinare → Jacob +4, Corr +2 |
 | **24 Mer** | Lavoro | Giornata normale |  | — |
