@@ -121,7 +121,7 @@ init python:
         if renpy.loadable(video):
             renpy.movie_cutscene(video)
 
-    def zoom_cg(descrizione, immagine, area, durata=3.0):
+    def zoom_cg(descrizione, immagine, area, durata=4.5):
         """Zoom lento su un dettaglio di una CG già fatta (lo «sguardo» di un personaggio).
         area = (x, y, larghezza, altezza) in pixel dell'immagine originale, in 16:9."""
         if immagine and renpy.loadable(immagine):
@@ -132,7 +132,14 @@ init python:
             sw, sh = min(W, w * 1.6), min(H, h * 1.6)
             sx = max(0, min(W - sw, x + w / 2.0 - sw / 2.0))
             sy = max(0, min(H - sh, y + h / 2.0 - sh / 2.0))
-            renpy.show("cg_corrente", what=At(immagine, zoom_sguardo(sx, sy, sw, sh, x, y, w, h, durata)))
+            ## Prima si toglie la CG: se il tag restasse lo stesso, l'animazione
+            ## partirebbe dal tempo dell'immagine precedente e finirebbe subito.
+            renpy.hide("cg_corrente")
+            ## Crop in frazioni dell'immagine (0-1): durante l'animazione Ren'Py
+            ## calcola valori con la virgola, che leggerebbe comunque come frazioni.
+            fW, fH = float(W), float(H)
+            renpy.show("cg_corrente", what=At(immagine, zoom_sguardo(
+                sx / fW, sy / fH, sw / fW, sh / fH, x / fW, y / fH, w / fW, h / fH, durata)))
             renpy.with_statement(dissolve)
         else:
             renpy.show_screen("segnaposto_cg", descrizione=descrizione)
@@ -155,4 +162,4 @@ style notify_frame:
 transform zoom_sguardo(sx, sy, sw, sh, x, y, w, h, durata):
     crop (sx, sy, sw, sh)
     xysize (config.screen_width, config.screen_height)
-    easein durata crop (x, y, w, h)
+    ease durata crop (x, y, w, h)

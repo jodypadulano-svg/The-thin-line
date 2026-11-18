@@ -111,3 +111,25 @@ testsuite segreto:
         advance until screen "choice" timeout 30.0
         click "Put it to your lips."
         advance until eval fatto("sara_fuma") and sara_corruption == 100 and len(segreti_trovati) == 1 timeout 30.0
+
+
+## Verifica a vista dello zoom: ... test foto_zoom --enable-all --overwrite-screenshots
+label test_zoom_sguardo:
+    $ cg("prova", "images/cg/ep1/d3_08_sguardo_daniel.webp")
+    "uno"
+    $ zoom_cg("prova", "images/cg/ep1/d3_08_sguardo_daniel.webp", (965, 280, 560, 315))
+    "due"
+    return
+
+testsuite foto_zoom:
+    enabled False
+    testcase velocita:
+        run Jump("test_zoom_sguardo")
+        pause 3.0
+        click
+        pause 0.8
+        screenshot "zoom_inizio.png"
+        pause 2.0
+        screenshot "zoom_meta.png"
+        pause 3.0
+        screenshot "zoom_fine.png"
