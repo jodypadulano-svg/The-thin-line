@@ -201,3 +201,27 @@ testsuite telefono:
         ## Nessun discorso si ripete.
         assert eval len(_foto_telefono["fatti"]) == len(set(_foto_telefono["fatti"]))
         $ print("TELEFONO", strategia, scelte, _foto_telefono)
+
+
+## Partenza di debug: i giorni prima del 4 si giocano da soli col preset, poi
+## si verifica lo stato all'arrivo e si gioca il resto dell'episodio.
+## Lancia con:  ... test debug_salta
+testsuite debug_salta:
+    testcase giorno_4:
+        description "Salto al giorno 4 con ogni preset: stato coerente, poi fino alla fine."
+        parameter preset = ["brava", "barbara", "daniel", "mista"]
+        $ _foto_debug.clear()
+        $ _test_esito["fine"] = False
+        $ debug_prepara(4, preset)
+        run Jump("ep1_inizio")
+        advance until eval _foto_debug.get("preset") == preset timeout 120.0
+        assert eval _foto_debug["giorno"] >= 3
+        ## Ogni scelta dei giorni 1-3 ha trovato la sua preferenza (se no, il testo è cambiato).
+        assert eval preset == "mista" or not _foto_debug["senza_preferenza"]
+        assert eval preset != "brava" or not (_foto_debug["fatti"].get("ep1_aperitivo_accettato") or _foto_debug["fatti"].get("sara_fuma"))
+        assert eval preset != "brava" or _foto_debug["fatti"].get("ep1_d3_sobrio")
+        $ print("DEBUG", preset, _foto_debug)
+        assert eval preset != "barbara" or (_foto_debug["fatti"].get("ep1_aperitivo_accettato") and _foto_debug["fatti"].get("ep1_guarda_fumo") and _foto_debug["fatti"].get("ep1_d3_audace"))
+        assert eval preset != "daniel" or (_foto_debug["fatti"].get("ep1_d3_proposta_cinema") and _foto_debug["fatti"].get("ep1_d3_audace") and not _foto_debug["fatti"].get("ep1_aperitivo_accettato"))
+        $ _test_scelte("alternata")
+        advance until eval _test_esito["fine"] timeout 300.0

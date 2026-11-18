@@ -32,6 +32,8 @@ label start:
             pass
         "Explain how the game works.":
             call istruzioni
+        "(Debug) Start from a later day." if config.developer:
+            call debug_partenza
 
     jump ep1_inizio
 
