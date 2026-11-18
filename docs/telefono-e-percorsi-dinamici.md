@@ -190,6 +190,7 @@ Approvate da Jody. **Sostituiscono gli «step numerati»** delle sezioni 3 e 10 
 ### 11.3 Imbuto verso l'intimità
 | Gradino | Discorsi | Di cosa |
 |---|---|---|
+| Estranei | **1** | la chat introduttiva, legata a come Sara ha avuto il numero; finirla senza frenare porta l'Interest almeno ad A |
 | Conoscenti | 6-8 | vita quotidiana, lavoro, curiosità |
 | In confidenza | 4-5 | confidenze, cose personali, primi complimenti |
 | Complici | 3 | flirt, doppi sensi, segreti |

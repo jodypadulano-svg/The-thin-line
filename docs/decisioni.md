@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Telefono: una sola chat da estranei (decisione 18/11/2026, quarta parte)
+
+**Stato: approvato da Jody, applicato al codice.** Da estranei (sotto A) esiste **una sola chat, quella introduttiva**, di solito legata a come Sara ha avuto il numero. **Finirla porta l'Interest almeno alla soglia A** (conoscenti); chi è già sopra A per le scene prende il normale +1/+2. Se Sara **frena** la chat introduttiva, niente salto: resta estranea finché non succede qualcosa dal vivo. Serve a non bloccare i percorsi che vivono soprattutto di chat (Darius, Barbara, Magnus).
+
 ### Telefono: discorsi a pesca, scambi e interruzioni (decisioni 18/11/2026, terza parte)
 
 **Stato: approvato da Jody; specifica in [Telefono e percorsi dinamici](telefono-e-percorsi-dinamici.md), sezione 11. Sostituisce gli «step numerati» del codice del 18/11 (commit 1410e52): il motore va adeguato.**

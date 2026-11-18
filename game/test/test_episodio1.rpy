@@ -196,6 +196,8 @@ testsuite telefono:
         ## Chi non scrive mai finisce solo i discorsi aperti dagli altri (al massimo Daniel, che scrive per primo).
         assert eval strategia != "nessuno" or set(_foto_telefono["passi"]) <= {"daniel"}
         assert eval strategia not in ("daniel", "simon") or _foto_telefono["passi"].get(strategia, 0) >= 2
+        ## Chi ha finito la chat introduttiva senza frenare è almeno conoscente (A).
+        assert eval strategia != "daniel" or _foto_telefono["interest"]["daniel"] >= 3
         ## Nessun discorso si ripete.
         assert eval len(_foto_telefono["fatti"]) == len(set(_foto_telefono["fatti"]))
         $ print("TELEFONO", strategia, scelte, _foto_telefono)

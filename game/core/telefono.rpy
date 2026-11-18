@@ -93,7 +93,7 @@ init -5 python:
         DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova)
 
     ## Discorsi segnaposto per la prova degli sviluppatori (non escono nel gioco vero).
-    _SEGNAPOSTO = {ESTRANEI: 2, CONOSCENTI: 3, CONFIDENZA: 2, COMPLICI: 2, INTIMI: 1}
+    _SEGNAPOSTO = {ESTRANEI: 1, CONOSCENTI: 3, CONFIDENZA: 2, COMPLICI: 2, INTIMI: 1}
     for _k in SOGLIE_RAPPORTO:
         for _g, _n in _SEGNAPOSTO.items():
             for _i in range(1, _n + 1):
@@ -389,7 +389,13 @@ label telefono_fine_discorso(k):
     if _a["frenato"]:
         $ freno[k] = giorno + GIORNI_FRENO
     else:
-        $ interest(k, 2 if _a["caldo"] else 1)
+        python:
+            _delta = 2 if _a["caldo"] else 1
+            ## La chat introduttiva (l'unica da estranei) rompe il ghiaccio:
+            ## dopo, Sara e l'altro sono almeno conoscenti (decisione 18/11/2026).
+            if _d.gradino == ESTRANEI:
+                _delta = max(_delta, SOGLIE_RAPPORTO[k][0] - percorso(k).interest)
+            interest(k, _delta)
     ## Le chat compromettenti: cancellarle o lasciarle (11.5).
     if _d.gradino >= COMPLICI and not _a["frenato"]:
         menu (screen="scelta_telefono"):

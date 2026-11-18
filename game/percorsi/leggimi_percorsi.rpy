@@ -8,7 +8,11 @@
 ##
 ## 1) Registrare il discorso (gradino minimo, condizione, flirt):
 ##
+##   Da estranei esiste UNA sola chat, quella introduttiva (di solito legata a come
+##   Sara ha avuto il numero). Finirla porta l'Interest almeno alla soglia A.
+##
 ##   init python:
+##       discorso("simon_esercizi", "simon", ESTRANEI)      # l'introduttiva
 ##       discorso("simon_dieta", "simon", CONOSCENTI)
 ##       discorso("simon_festa", "simon", CONFIDENZA, se="fatto('ep1_festa_simon')")
 ##       discorso("simon_foto", "simon", COMPLICI, flirt=True)
