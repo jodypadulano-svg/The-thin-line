@@ -37,6 +37,7 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 | **6 Sab** | Mattina | La spesa: Howard 2, retroscena del furto | Howard | **Howard ha portato le borse:** Ringraziarlo → Howard +1 · Insistere per offrirgli un caffè → Howard +2 |
 |  | Pomeriggio | Prepararsi per la sera |  | **Il vestito per il locale:** Sobrio → — · Il vestito corto che le consiglia Joanie → Corr +1, Conf +1 |
 |  | Sera | Locale con Joanie e Josh: Simon 3 | Simon, Joanie, Josh | **Al locale:** Ballare con Josh → Josh +2 · Chiacchierare con Simon → Simon +2 · Ridere troppo alle battute di Simon → Simon +3, Corr +1, Susp +1 |
+| **7 Dom** | Mattina | Darius passa a trovare Sara e Josh per una breve visita informale (primo ingresso in scena) | Darius, Sara, Josh | **Cameo introduttivo, nessuna scelta o statistica nuova:** battute spontanee e familiarità con Josh, suo migliore amico dalle superiori; Sara lo conosce già. Nessun flirt o tensione romantica: Darius non è inizialmente attratto da lei e il suo percorso resta opt-in in una fase successiva. Scena da scrivere. |
 | **7 Dom** | Pomeriggio | Domenica tranquilla | Josh | **Il pomeriggio:** Scrivere → Conf +2 · Gita con Josh → Josh +2 |
 |  | Sera | A letto | Josh | **Con Josh:** Prendere l'iniziativa 🔒 Josh 30 → Josh +2, Conf +1 · Stanca, dormire → — |
 
@@ -70,7 +71,7 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 | **16 Mar** | Lavoro | Jessica le riparla di «quella cosa» (I22) | Jessica | **Con Jessica:** Chiederle cosa le è successo → — · Lasciar perdere → — |
 |  | Sera | Palestra | Simon | **Cosa indossare:** La maglietta larga → — · Un top aderente → Corr +1, Simon +1<br>**L'allenamento:** Con Simon → Simon +3 · Da sola → Conf +1 |
 | **17 Mer** | Lavoro | Giornata normale |  | — |
-|  | Sera | Serata tra amici: entrano Darius e Mark; Josh e Mark legano (I13); dopo, Josh e Darius soli e flashback di Jacob (I18) | Darius, Joanie, Mark, Josh | **Durante la serata:** Stare vicina a Josh → Josh +1 · Ridere con Darius → Darius +1 · Confidarsi con Joanie in cucina → Joanie +1 |
+|  | Sera | Serata tra amici: Darius torna (già apparso brevemente al giorno 7), entra Mark; Josh e Mark legano (I13); dopo, Josh e Darius soli e flashback di Jacob (I18) | Darius, Joanie, Mark, Josh | **Durante la serata:** Stare vicina a Josh → Josh +1 · Ridere con Darius → Darius +1 · Confidarsi con Joanie in cucina → Joanie +1 |
 | **18 Gio** | Lavoro | Barbara le chiede di restare mezz'ora in più | Barbara | **Restare?:** Sì → Barbara +1 · Rifiutare con garbo → Conf +1 |
 |  | Sera | Josh fa straordinari (I14); caffè da Howard se al giorno 9 ha detto sì o «quando capita» | Howard | **Andare da Howard?:** Sì → Howard +2 · Trovare una scusa → —<br>**Da Howard:** Lavare i piatti mentre parlano → Howard +2 · Solo chiacchierare → — |
 | **19 Ven** | Lavoro | Giornata normale |  | — |
