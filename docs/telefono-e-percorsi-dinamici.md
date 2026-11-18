@@ -173,3 +173,49 @@ Sara può riscrivere a chi non ha ancora risposto; il sollecito usa lo slot.
 - Costo di calcolo trascurabile per Ren'Py (pochi valori per 8 contatti, una coda breve). I costi veri: scrittura (circa 6 step × 8 personaggi nel primo mese), immagini delle uscite, test.
 - Test: estendere l'autoplay con strategie «sempre lo stesso contatto» e «sparpagliata», seme casuale fisso.
 - **Metodo:** dal giorno 14 si alternano **codice della giornata** (calendario e scene fisse con varianti) e **codice del percorso** (step di chat, messaggi in entrata, uscite di un personaggio), in file separati per percorso.
+
+## 11. Discorsi, scambi e interruzioni (decisioni 18/11/2026, terza parte)
+
+Approvate da Jody. **Sostituiscono gli «step numerati»** delle sezioni 3 e 10 e del primo codice (commit 1410e52): lo slot del giorno resta, ma quello che si gioca è un **discorso**.
+
+### 11.1 Struttura
+- **Gradino → discorsi → scambi.** Ogni personaggio ha un elenco di discorsi; ogni discorso è una conversazione di più scambi (Sara scrive, l'altro risponde, Sara ribatte...).
+- Ogni discorso ha: un **gradino minimo**; eventuali **condizioni** (flag di trama, Corruption, Confidence); i **punti di interruzione** segnati da chi lo scrive; un **flag di fine** (es. `chat_simon_dieta`).
+- Due tipi: **legati alla storia** (si aprono con i fatti vissuti, es. «dopo la festa», «se ha mandato le pagine a Magnus») e **generici** (un set nostro per personaggio: Simon allenamento, cibo, weekend; Magnus libri e scrittura; Howard la casa e la solitudine...).
+
+### 11.2 Pesca
+- Quando Sara usa lo slot con un contatto: se c'è un discorso **lasciato a metà**, si riprende da lì; altrimenti il gioco **pesca a caso** fra quelli disponibili (gradino e condizioni ok) e non ancora fatti. La pesca si decide al momento e resta salvata.
+- Se non c'è niente di disponibile il contatto è **grigio**: *«Sara has nothing new to say to him… yet.»* Si riapre salendo di gradino o vivendo un fatto che apre un discorso legato alla storia. I segnaposto «da scrivere» compaiono solo nella prova degli sviluppatori.
+
+### 11.3 Imbuto verso l'intimità
+| Gradino | Discorsi | Di cosa |
+|---|---|---|
+| Conoscenti | 6-8 | vita quotidiana, lavoro, curiosità |
+| In confidenza | 4-5 | confidenze, cose personali, primi complimenti |
+| Complici | 3 | flirt, doppi sensi, segreti |
+| Intimi | 1-2 | piccante, dietro la soglia di Corruption del percorso; adulti e consensuali |
+
+### 11.4 Interruzioni (a caso: ogni partita è diversa)
+A ogni punto di interruzione:
+- **Sara** può mettere giù il telefono: il discorso resta aperto e si riprende con lo slot di un altro giorno. Reazioni: Howard le riscrive il giorno dopo (messaggio in entrata), Daniel fa finta di niente, Joanie manda «??», gli altri aspettano.
+- **L'altro** può fermarsi, con una probabilità che dipende dal carattere; la ripresa entra nella coda delle risposte (10.6) con i suoi ritardi e riparte dallo scambio interrotto.
+
+| Chi | Quanto spesso si ferma |
+|---|---|
+| Daniel | spesso, apposta: la lascia a metà |
+| Magnus | dopo i messaggi lunghi («ne riparliamo») |
+| Barbara | a fine orario di lavoro |
+| Simon, Jacob | ogni tanto |
+| Joanie, Darius | quasi mai |
+| Howard | mai |
+
+### 11.5 Effetti
+- **Interest:** +1 a fine discorso, +2 se Sara ha scelto le risposte calde; nulla per i singoli scambi; le risposte fredde possono togliere. (Sostituisce il +1/+2 per step del 10.3.)
+- **Freno:** in ogni discorso di flirt c'è sempre una risposta per smorzare («Ok, stop. Goodnight.»): il discorso si chiude come fatto, senza Interest, e il personaggio per un po' non riapre discorsi di quel tipo. Le risposte coraggiose o piccanti hanno requisiti di Corruption/Confidence come nelle scene.
+- **La chat resta sul telefono:** dopo un discorso «complici» o «intimi» il giocatore sceglie se **cancellarla** (Corr +1, Susp −1, come al giorno 21) o **lasciarla** (con Suspicion alta Josh può trovarla; si lega al finale del giorno 28).
+- **Memoria nelle scene fisse:** il flag di fine discorso permette alle micro-varianti da B in su di citare proprio quella chat (in palestra Simon: «hai provato la colazione che ti dicevo?»).
+
+### 11.6 Da dettagliare più avanti
+- **Foto:** poche per personaggio, riusabili, quasi tutte ai gradini alti; le prime chat solo testo.
+- **Quando si apre lo slot:** lo decide il codice della giornata (di solito la sera, a volte la pausa pranzo); Barbara risponde solo in orario di lavoro.
+- **Metodo:** il «codice del percorso» (10.9) diventa scrivere discorsi: almeno 4 per personaggio per cominciare (32 in tutto), poi si allarga l'imbuto.

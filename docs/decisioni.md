@@ -4,6 +4,20 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Telefono: discorsi a pesca, scambi e interruzioni (decisioni 18/11/2026, terza parte)
+
+**Stato: approvato da Jody; specifica in [Telefono e percorsi dinamici](telefono-e-percorsi-dinamici.md), sezione 11. Sostituisce gli «step numerati» del codice del 18/11 (commit 1410e52): il motore va adeguato.**
+
+- **Discorsi, non step:** ogni personaggio ha dei **discorsi**, ciascuno con un gradino minimo ed eventuali condizioni (flag, Corruption, Confidence). Due tipi: **legati alla storia** (si aprono con i fatti vissuti) e **generici** (un set nostro per personaggio). Quando Sara scrive, il gioco **pesca a caso** fra quelli disponibili e non fatti; un discorso lasciato a metà ha la precedenza.
+- **Scambi e interruzioni casuali:** un discorso è una conversazione di più scambi. Ai punti di interruzione segnati dall'autore può fermarsi **Sara** (il giocatore mette giù il telefono; si riprende con lo slot di un altro giorno) o **lui/lei**, a caso secondo il carattere (Daniel spesso e apposta; Magnus dopo i messaggi lunghi; Barbara a fine orario; Simon e Jacob ogni tanto; Joanie e Darius quasi mai; Howard mai). La ripresa entra nella coda delle risposte con i ritardi del personaggio e riparte dallo scambio interrotto. Se smette Sara, ognuno reagisce a modo suo (Howard le riscrive il giorno dopo, Daniel fa finta di niente, Joanie manda «??»).
+- **Imbuto verso l'intimità:** conoscenti 6-8 discorsi (quotidiano, lavoro, curiosità); in confidenza 4-5 (confidenze, primi complimenti); complici 3 (flirt, doppi sensi, segreti); intimi 1-2 (piccante, dietro la soglia di Corruption del percorso, adulti e consensuali).
+- **Discorsi finiti:** se al gradino attuale non resta niente, il contatto è grigio (*«Sara has nothing new to say to him… yet.»*) finché non sale di gradino o vive qualcosa che apre un discorso legato alla storia. I segnaposto restano solo nella prova degli sviluppatori.
+- **Interest:** +1 a fine discorso, +2 se Sara ha scelto le risposte calde; niente per i singoli scambi; le risposte fredde possono togliere.
+- **Sara può frenare:** in ogni discorso di flirt c'è sempre una risposta per smorzare; il discorso si chiude senza Interest e il personaggio per un po' non riapre quel tipo di discorso. Le risposte coraggiose o piccanti hanno requisiti di Corruption/Confidence.
+- **Le chat restano sul telefono:** dopo un discorso «complici» o «intimi», cancellarla (Corr +1, Susp −1) o lasciarla (rischio: con Suspicion alta Josh può trovarla; si lega al finale del giorno 28).
+- **Le scene fisse ricordano le chat:** ogni discorso finito lascia un flag (es. `chat_simon_dieta`) che le micro-varianti da B in su possono citare.
+- **Linee da dettagliare più avanti:** foto nelle chat poche e riusabili per personaggio, quasi tutte ai gradini alti (le prime chat solo testo); il momento del giorno in cui si apre lo slot lo decide il codice della giornata (di solito la sera; Barbara risponde solo in orario di lavoro).
+
 ### Telefono: sblocco, numeri, soglie, risposte asincrone e serate (decisioni 18/11/2026, seconda parte)
 
 **Stato: approvato da Jody; chiude le questioni aperte della specifica [Telefono e percorsi dinamici](telefono-e-percorsi-dinamici.md) (sezione 10). Solo documentazione: codice in un lotto futuro, al via di Jody.**
