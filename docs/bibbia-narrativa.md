@@ -25,6 +25,8 @@ Persona fidata della coppia e già inserita nella quotidianità. Temi possibili:
 8 — La capa di Sara
 La responsabile dell’ufficio è una donna e costituisce a tutti gli effetti l’ottavo percorso sentimentale. Temi possibili: stima professionale, intesa personale e confini fra ufficio e vita privata.
 Composizione dei percorsi: sei uomini e due donne. Tutti i personaggi coinvolti nelle relazioni saranno adulti. I tratti sopra sono spunti iniziali e non definiscono ancora biografie, nomi o eventi obbligatori.
+**Evoluzione approvata (18/11/2026):** oltre alle occasioni fisse del calendario, Sara può approfondire i rapporti attraverso un solo contatto elettivo al giorno con chi è già presente nella rubrica; gli incontri successivi e alcune serate alternative reagiscono alla conoscenza accumulata. Lo stato del rapporto influenza anche le scene canoniche. Dettagli e condizioni in [Telefono e percorsi dinamici](telefono-e-percorsi-dinamici.md); struttura da implementare, non scene aggiunte automaticamente.
+
 ## 4. Struttura e ritmo
 Una trama principale racconta la progressione di Sara. Durante le sue attività possono comparire scene opzionali legate ai personaggi incontrati. Le scelte del giocatore attivano o escludono eventi e possono influenzare più relazioni in parallelo; i percorsi non sono necessariamente esclusivi.
 Il tono desiderato è slow burn: cambiamenti piccoli e progressivi, dialoghi e conseguenze convincenti, un ritmo che alimenti la curiosità. L’idea iniziale è un primo episodio di circa un’ora, abbastanza ricco da fidelizzare il pubblico, con una soddisfazione narrativa locale e questioni centrali ancora aperte.
