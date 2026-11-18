@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 12 — valorizzare la pubblicazione del primo articolo di Sara (decisione 18/11/2026)
+
+**Stato: approvato da Jody; da scrivere/implementare.** Venerdì, giorno 12, la pubblicazione del primo pezzo di Sara sul giornale non va liquidata in una battuta: inserire un breve momento emotivo in redazione in cui Sara vede l'articolo pubblicato, ne prova soddisfazione, sollievo e orgoglio e si concede di festeggiare interiormente un traguardo guadagnato con il suo lavoro. Può esserci un dettaglio intimo e concreto, per esempio rileggere la firma sotto al titolo o sorridere davanti allo schermo. Poi il giocatore decide **a chi mandarlo per primo**, come nella scaletta originale: Josh → Josh +1; Joanie → Joanie +1. Il momento di gioia è presente in ogni partita e non aggiunge nuove statistiche o scelte. Rimane invariata la telefonata serale di Joanie su Simon, Daniel e i suoi consigli. Scopo: preservare l'autonomia e l'ambizione professionale di Sara e dare peso alla sua conquista senza introdurre nuove CG obbligatorie.
+
 ### Giorno 11 — pranzo con Roberta invece di Jessica (decisione 18/11/2026)
 
 **Stato: approvato da Jody; da scrivere e implementare.** Durante la pausa pranzo del giovedì, giorno 11, sostituire Jessica con **Roberta** nell'opzione «Pranzare con una collega». In questo modo si evita di avere Jessica come interlocutrice principale anche il giorno dopo la scena del libro abbandonato (giorno 10), e si dà spazio alla personalità premurosa e discreta di Roberta, con eventuali dettagli lievemente insoliti ma senza anticipare la rivelazione su Barbara. **Con Roberta → nessun effetto**, **da sola → Confidence +1**, come nella scelta preesistente. Invariata la scena serale in cui Howard restituisce le chiavi. La scena è da scrivere: la sostituzione è in scaletta, non ancora implementata nel codice.
