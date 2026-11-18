@@ -12,6 +12,12 @@ Come funziona la base del gioco in Ren'Py (cartella `game/`). Le ragioni delle s
 - **Effetti visibili**: ogni variazione compare a schermo con il numero (A2); dalle Opzioni si può nascondere.
 - **Giocabile senza grafica**: colori al posto degli sfondi, didascalie `[CG]` al posto delle immagini.
 
+### Nuova architettura approvata il 18/11/2026 (ancora da implementare)
+
+Alla trama a giornate si aggiungono **rubrica con numeri sbloccabili, uno slot telefonico elettivo al giorno, conversazioni a step individuali indipendenti dal calendario, incontri che reagiscono alla familiarità acquisita e possibili appuntamenti nelle serate libere**. Le scene fisse successive devono reagire anche ai messaggi e agli appuntamenti precedenti. Lo scopo non è imporre nuove relazioni, ma rendere gli otto percorsi facoltativi e dinamici.
+
+**Fonte tecnica/narrativa dettagliata e vincolante:** [Telefono e percorsi dinamici](telefono-e-percorsi-dinamici.md). Le parti del presente documento che descrivono la *base giocabile attuale*, comprese la scaletta provvisoria di 8 giornate e i nomi delle funzioni già presenti, **non documentano ancora l'implementazione** del nuovo sistema. I nuovi nomi delle variabili verranno fissati al momento del codice, preservando i salvataggi.
+
 ## 2. Variabili
 
 | Cosa | Nome nel codice | Valori | Significato |
