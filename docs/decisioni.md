@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 11 — pranzo con Roberta invece di Jessica (decisione 18/11/2026)
+
+**Stato: approvato da Jody; da scrivere e implementare.** Durante la pausa pranzo del giovedì, giorno 11, sostituire Jessica con **Roberta** nell'opzione «Pranzare con una collega». In questo modo si evita di avere Jessica come interlocutrice principale anche il giorno dopo la scena del libro abbandonato (giorno 10), e si dà spazio alla personalità premurosa e discreta di Roberta, con eventuali dettagli lievemente insoliti ma senza anticipare la rivelazione su Barbara. **Con Roberta → nessun effetto**, **da sola → Confidence +1**, come nella scelta preesistente. Invariata la scena serale in cui Howard restituisce le chiavi. La scena è da scrivere: la sostituzione è in scaletta, non ancora implementata nel codice.
+
 ### Giorno 10 — Jessica e il libro abbandonato (decisione 18/11/2026)
 
 **Stato: approvato da Jody, da scrivere e implementare.** Durante la pausa pranzo di mercoledì (giorno 10), dopo il momento in cui Barbara assegna a Sara un articolo fuori mansione, Sara vede Jessica mettere da parte alcuni vecchi libri. Riconosce uno dei romanzi che Jessica le aveva consigliato con entusiasmo mesi prima e le domanda se non fosse uno dei suoi preferiti. Jessica, serena e sinceramente felice, risponde che quello era prima: ora è cambiata e si sente molto meglio. Il giocatore sceglie se Sara insiste per sapere che cosa sia successo o lascia perdere. La scena alimenta il mistero del cambiamento di Jessica e semina discretamente la trama di Barbara, ma non esplicita il collegamento e non accelera il percorso romantico di Barbara. Durata indicativa 2–3 minuti, nella redazione già esistente, senza nuovi sfondi obbligatori. Nessun nuovo effetto numerico approvato. Restano invariate le scene già previste con Barbara (al lavoro) e Josh (la sera, dopo gli eventi con Howard), e le successive scene di Jessica nei giorni 11 e 16.
