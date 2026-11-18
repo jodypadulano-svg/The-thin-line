@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 10 — Jessica e il libro abbandonato (decisione 18/11/2026)
+
+**Stato: approvato da Jody, da scrivere e implementare.** Durante la pausa pranzo di mercoledì (giorno 10), dopo il momento in cui Barbara assegna a Sara un articolo fuori mansione, Sara vede Jessica mettere da parte alcuni vecchi libri. Riconosce uno dei romanzi che Jessica le aveva consigliato con entusiasmo mesi prima e le domanda se non fosse uno dei suoi preferiti. Jessica, serena e sinceramente felice, risponde che quello era prima: ora è cambiata e si sente molto meglio. Il giocatore sceglie se Sara insiste per sapere che cosa sia successo o lascia perdere. La scena alimenta il mistero del cambiamento di Jessica e semina discretamente la trama di Barbara, ma non esplicita il collegamento e non accelera il percorso romantico di Barbara. Durata indicativa 2–3 minuti, nella redazione già esistente, senza nuovi sfondi obbligatori. Nessun nuovo effetto numerico approvato. Restano invariate le scene già previste con Barbara (al lavoro) e Josh (la sera, dopo gli eventi con Howard), e le successive scene di Jessica nei giorni 11 e 16.
+
 ### Giorno 7 — prima comparsa di Darius la domenica (decisione 18/11/2026)
 
 **Stato: approvato da Jody; da scrivere e implementare.** Aggiungere domenica mattina una breve apparizione di Darius, migliore amico di Josh dalle superiori: passa a trovare la coppia a casa, con clima informale e spontaneo. Sara lo conosce già. Serve a farlo conoscere al giocatore come parte della loro quotidianità, non ad aprire subito il percorso 7. Nessuna seduzione, attrazione preesistente, segreto, nuova scelta o nuova variazione delle statistiche; restano intatte le scelte già previste per pomeriggio e sera (romanzo/gita con Josh, intimità con Josh/riposo). Al giorno 17 resta la serata fra amici più approfondita e il flashback di Jacob; lì Darius non viene più presentato come un nuovo arrivo, ma torna in scena. Il percorso Darius resta esclusivamente opt-in con requisiti di Corruption e scelta esplicita del giocatore, da progettare.
