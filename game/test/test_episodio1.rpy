@@ -146,3 +146,16 @@ testsuite foto_ui:
         run ShowMenu("diario")
         pause 1.5
         screenshot "ui_diario.png"
+
+testsuite foto_testo:
+    enabled False
+    testcase nome:
+        run Jump("ep1_d1_mattina")
+        pause 2.0
+        click
+        pause 0.5
+        click
+        pause 0.5
+        click
+        pause 0.5
+        screenshot "ui_nome.png"

@@ -103,7 +103,7 @@ define gui.game_menu_background = "gui/game_menu.png"
 ## linea alla volta.
 
 ## L'altezza del textbox contenente il dialogo.
-define gui.textbox_height = 278
+define gui.textbox_height = 350
 
 ## La posizione verticale del textbox sullo schermo. 0.0 è in alto, 0.5 è al
 ## centro, e 1.0 è in basso.
@@ -113,7 +113,7 @@ define gui.textbox_yalign = 1.0
 ## La posizione del nome del personaggio, relativa al textbox. Può essere un
 ## numero esatto di pixel da sinistra o da sopra, oppure 0.5 per centrare.
 define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_ypos = 72
 
 ## L'allineamento orizzontale del nome del personaggio. Può essere 0.0 per
 ## allinearlo a sinistra, 0.5 al centro e 1.0 a destra.
@@ -137,7 +137,7 @@ define gui.namebox_tile = False
 ## di pixel relativo ai bordi sinistro o superiore del textbox, oppure 0.5 per
 ## centrare.
 define gui.dialogue_xpos = 402
-define gui.dialogue_ypos = 75
+define gui.dialogue_ypos = 147
 
 ## La larghezza massima del testo di dialogo, in pixel.
 define gui.dialogue_width = 1116
