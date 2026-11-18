@@ -1,41 +1,29 @@
 ## =============================================================================
-## TELEFONO — rubrica, slot del giorno, risposte asincrone, serate alternative
+## TELEFONO — rubrica, discorsi a pesca, scambi, interruzioni, serate alternative
 ## =============================================================================
-## Specifica: docs/telefono-e-percorsi-dinamici.md, sezione 10 (decisioni 18/11/2026).
+## Specifica: docs/telefono-e-percorsi-dinamici.md, sezioni 10 e 11 (18/11/2026).
 ##
-## Come si usa nel codice delle giornate:
+## Nel codice delle giornate:
 ##   $ da_numero("simon")                  Sara ottiene il numero (entra in rubrica)
 ##   $ sblocca_telefono()                  giorno 14, la cucina con Sally
-##   call telefono_fascia("sera")          inizio di una fascia: arrivano risposte
+##   call telefono_fascia("sera")          inizio di una fascia: arrivano le risposte
 ##   call telefono_fascia("sera", con_josh=True)   ...mentre Sara è con Josh
 ##   call telefono_slot                    Sara può prendere il telefono (lo slot del giorno)
 ##   call serata_sostituibile              giorno 22: uscita con un contatto a C+ o Josh
-##   if gradino("daniel") >= C:            varianti delle scene fisse
+##   if gradino("simon") >= CONFIDENZA:    varianti delle scene fisse
+##   if fatto("chat_simon_dieta"):         la scena ricorda una chat finita
 ##
-## Come si scrive un percorso (un file per percorso, es. game/percorsi/chat_daniel.rpy):
-##   label chat_daniel_1:            il messaggio di Sara (step 1)
-##   label chat_daniel_1_risposta:   la risposta di lui + la risposta di Sara,
-##                                   che finisce con $ chat_fine("daniel", caldo=True/False)
-##   label chat_daniel_entrata:      un messaggio in entrata (scrive lui per primo)
-##   label uscita_daniel:            la serata alternativa
-## Dentro le chat:  $ msg("sara", "...")  /  $ msg("daniel", "...")
-## Se un label manca, il gioco usa un segnaposto: si può giocare tutto anche prima
-## che i testi siano scritti.
+## Nel codice dei percorsi (game/percorsi/, un file per personaggio): vedi
+## game/percorsi/leggimi_percorsi.rpy per il modello di un discorso.
 
-## Gradini del rapporto (Interest con quattro soglie per personaggio).
-define ESTRANEI = 0
-define CONOSCENTI = 1
-define CONFIDENZA = 2
-define COMPLICI = 3
-define INTIMI = 4
+init -6 python:
+    ## Gradini del rapporto (Interest con quattro soglie per personaggio, 10.3).
+    ESTRANEI, CONOSCENTI, CONFIDENZA, COMPLICI, INTIMI = 0, 1, 2, 3, 4
 
 init -5 python:
 
     FASCE = ["mattina", "lavoro", "pranzo", "sera", "notte"]
-    NOMI_FASCE = {"mattina": "Morning", "lavoro": "Work", "pranzo": "Lunch break",
-                  "sera": "Evening", "notte": "Night"}
 
-    ## Soglie A, B, C, D per percorso (10.3).
     SOGLIE_RAPPORTO = {
         "simon":   (5, 10, 16, 22),
         "howard":  (4, 9, 14, 20),
@@ -50,14 +38,14 @@ init -5 python:
     ## Ritardo delle risposte (10.6): (minimo, massimo) in fasce, fasce in cui
     ## risponde, solo nei giorni lavorativi.
     RITARDI = {
-        "amica":   (0, 0, None, False),            # subito
-        "howard":  (0, 0, None, False),            # subito, sempre
-        "simon":   (0, 1, ("sera", "notte"), False),  # la sera stessa
-        "amico":   (0, 1, None, False),            # in fretta
-        "ex":      (0, 1, ("notte",), False),      # di notte
-        "daniel":  (1, 5, None, False),            # da una fascia a un giorno
-        "editore": (5, 10, None, False),           # 1-2 giorni
-        "capa":    (1, 5, ("lavoro", "pranzo"), True),  # solo in orario di lavoro
+        "amica":   (0, 0, None, False),
+        "howard":  (0, 0, None, False),
+        "simon":   (0, 1, ("sera", "notte"), False),
+        "amico":   (0, 1, None, False),
+        "ex":      (0, 1, ("notte",), False),
+        "daniel":  (1, 5, None, False),
+        "editore": (5, 10, None, False),
+        "capa":    (1, 5, ("lavoro", "pranzo"), True),
     }
 
     ## Solleciti (10.7): anticipo in fasce, Interest, Corruption, Confidence.
@@ -72,23 +60,91 @@ init -5 python:
         "capa":    (0, -1, 0, -1),
     }
 
-    ## Ogni quanto qualcuno può scrivere per primo, e con che probabilità a fascia.
+    ## Probabilità che l'altro si fermi a un punto di interruzione (11.4).
+    PAUSA = {
+        "daniel": 0.5, "editore": 0.4, "capa": 0.3,
+        "simon": 0.25, "ex": 0.25,
+        "amica": 0.05, "amico": 0.05,
+        "howard": 0.0,
+    }
+
+    GIORNI_FRENO = 5            # dopo un freno, niente flirt per qualche giorno
     GIORNI_TRA_ENTRATE = 3
     PROBABILITA_ENTRATA = 0.35
-    ## Probabilità che Josh scriva mentre Sara chatta con un altro.
     PROBABILITA_JOSH = 0.25
+
+    ## --- Discorsi ------------------------------------------------------------------
+
+    class Discorso(object):
+        """Una conversazione a più scambi (11.1). Vive nel registro DISCORSI,
+        costruito all'avvio: nei salvataggi ci finiscono solo gli id."""
+        def __init__(self, id, chiave, gradino, se, flirt, prova):
+            self.id = id
+            self.chiave = chiave
+            self.gradino = gradino
+            self.se = se
+            self.flirt = flirt
+            self.prova = prova
+
+    DISCORSI = {}
+
+    def discorso(id, chiave, gradino=CONOSCENTI, se=None, flirt=False, prova=False):
+        """Registra un discorso. se = condizione come testo, es. "fatto('ep1_festa')"."""
+        DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova)
+
+    ## Discorsi segnaposto per la prova degli sviluppatori (non escono nel gioco vero).
+    _SEGNAPOSTO = {ESTRANEI: 2, CONOSCENTI: 3, CONFIDENZA: 2, COMPLICI: 2, INTIMI: 1}
+    for _k in SOGLIE_RAPPORTO:
+        for _g, _n in _SEGNAPOSTO.items():
+            for _i in range(1, _n + 1):
+                discorso("%s_prova_%d_%d" % (_k, _g, _i), _k, _g,
+                         se=("oltre_soglia('%s')" % _k) if _g == INTIMI else None,
+                         flirt=_g >= COMPLICI, prova=True)
 
     def gradino(chiave):
         """0 estranei · 1 conoscenti · 2 in confidenza · 3 complici · 4 intimi."""
         valore = percorso(chiave).interest
         return sum(1 for s in SOGLIE_RAPPORTO[chiave] if valore >= s)
 
+    def discorso_disponibile(d):
+        k = d.chiave
+        if d.id in store.discorsi_fatti:
+            return False
+        if d.prova and not store.telefono_segnaposto:
+            return False
+        if gradino(k) < d.gradino:
+            return False
+        if d.flirt and store.freno.get(k, -99) > store.giorno:
+            return False
+        if d.se and not eval(d.se):
+            return False
+        return True
+
+    def discorsi_disponibili(chiave):
+        return [d for _, d in sorted(DISCORSI.items()) if d.chiave == chiave and discorso_disponibile(d)]
+
+    def _parte(id, n):
+        nome = "chat_%s_%d" % (id, n)
+        return nome if renpy.has_label(nome) else None
+
+    def _ha_parte(id, n):
+        return _parte(id, n) is not None or (DISCORSI[id].prova and n <= 2)
+
+    def caldo():
+        """Nel discorso Sara ha scelto una risposta calda: +2 Interest alla fine."""
+        store.discorso_aperto[store.chat_aperta]["caldo"] = True
+
+    def frena():
+        """Sara smorza: il discorso finisce senza Interest e per un po' niente flirt."""
+        store.discorso_aperto[store.chat_aperta]["frenato"] = True
+
+    ## --- Tempo ----------------------------------------------------------------------
+
     def adesso():
         return store.giorno * len(FASCE) + store.fascia_corrente
 
     def _giorno_lavorativo(istante):
-        g = istante // len(FASCE)
-        return (g - 1) % 7 < 5
+        return (istante // len(FASCE) - 1) % 7 < 5
 
     def _fascia_ok(chiave, istante):
         _, _, fasce, lavorativi = RITARDI[chiave]
@@ -98,8 +154,8 @@ init -5 python:
             return False
         return True
 
-    def _calcola_arrivo(chiave):
-        """Quando arriva la risposta: deciso all'invio e salvato (niente ricarica e riprova)."""
+    def _calcola_arrivo(chiave, minimo_ritardo=0):
+        """Quando arriva la risposta: deciso subito e salvato (niente ricarica e riprova)."""
         minimo, massimo, _, _ = RITARDI[chiave]
         ritardo = renpy.random.randint(minimo, massimo)
         g = gradino(chiave)
@@ -107,12 +163,17 @@ init -5 python:
             ritardo = 0
         elif g >= COMPLICI:
             ritardo = max(0, ritardo - 1)
-        arrivo = adesso() + ritardo
+        arrivo = adesso() + max(ritardo, minimo_ritardo)
         while not _fascia_ok(chiave, arrivo):
             arrivo += 1
         return arrivo
 
-    ## --- Rubrica e sblocco ----------------------------------------------------
+    def _prob_pausa(chiave):
+        if chiave == "capa" and FASCE[store.fascia_corrente] not in ("lavoro", "pranzo"):
+            return 1.0
+        return PAUSA[chiave]
+
+    ## --- Rubrica --------------------------------------------------------------------
 
     def sblocca_telefono():
         if not store.telefono_libero:
@@ -128,12 +189,20 @@ init -5 python:
         return chiave in store.rubrica
 
     def contatti():
-        """Contatti in rubrica con cui si può ancora parlare."""
         return [k for k in store.rubrica if not percorso(k).chiuso]
 
-    def step_chat(chiave):
-        """Ultimo step completato con quel contatto (0 = mai scritto)."""
-        return store.passi_chat.get(chiave, 0)
+    def stato_contatto(k):
+        """attesa: tocca all'altro · aperto: Sara ha messo giù · nuovo: c'è un discorso · vuoto."""
+        if k in store.coda_chat:
+            return "attesa"
+        if k in store.discorso_aperto:
+            return "aperto"
+        if discorsi_disponibili(k):
+            return "nuovo"
+        return "vuoto"
+
+    def contatti_attivi():
+        return [k for k in contatti() if stato_contatto(k) != "vuoto"]
 
     def in_attesa(chiave):
         return chiave in store.coda_chat
@@ -141,15 +210,15 @@ init -5 python:
     def slot_libero():
         return store.telefono_libero and store.giorno_slot != store.giorno
 
-    def _usa_slot():
-        store.giorno_slot = store.giorno
+    def chat_compromettenti():
+        """Discorsi «complici» o «intimi» lasciati sul telefono: Josh può trovarli."""
+        return list(store.chat_lasciate)
 
-    ## --- Messaggi a schermo ------------------------------------------------------
+    ## --- Messaggi a schermo ---------------------------------------------------------
 
     def msg(chi, testo):
         """Un messaggio nella chat aperta. chi = "sara", "josh" o la chiave del contatto."""
-        chiave = store.chat_aperta
-        store.chat_log.setdefault(chiave, []).append((chi, testo))
+        store.chat_log.setdefault(store.chat_aperta, []).append((chi, testo))
         renpy.restart_interaction()
         renpy.pause()
 
@@ -160,30 +229,25 @@ init -5 python:
             return store.nome_compagno
         return nome_percorso(percorso(chi))
 
-    ## --- Fine di uno step --------------------------------------------------------
-
-    def chat_fine(chiave, caldo=False):
-        """Sara ha risposto alla risposta: lo step è completo."""
-        store.passi_chat[chiave] = step_chat(chiave) + 1
-        store.coda_chat.pop(chiave, None)
-        interest(chiave, 2 if caldo else 1)
-
-    def _label_o_none(nome):
-        return nome if renpy.has_label(nome) else None
-
 
 ## Stato del telefono (tutto con default: i vecchi salvataggi restano validi).
 default telefono_libero = False
+default telefono_segnaposto = False    # True solo nella prova degli sviluppatori
 default rubrica = ["amica", "amico"]   # Joanie e Darius da subito (10.2)
-default passi_chat = {}                # chiave -> ultimo step completato
-default coda_chat = {}                 # chiave -> {"arrivo", "inviato", "letto", "rimandata"}
+default passi_chat = {}                # chiave -> discorsi finiti con quel contatto
+default discorsi_fatti = []            # id dei discorsi finiti
+default discorso_aperto = {}           # chiave -> {"id", "parte", "caldo", "frenato"}
+default coda_chat = {}                 # chiave -> {"arrivo", "letto", "rimandata", "insiste"}
+default freno = {}                     # chiave -> giorno fino al quale niente flirt
+default chat_lasciate = []             # id dei discorsi compromettenti non cancellati
 default chat_log = {}                  # chiave -> [(mittente, testo)]
 default chat_aperta = None
-default giorno_slot = -1               # il giorno in cui Sara ha usato lo slot
+default giorno_slot = -1
 default fascia_corrente = 0
-default ultima_entrata = {}            # chiave -> giorno dell'ultimo messaggio in entrata
-default giorno_entrata = -1            # mai due messaggi in entrata nello stesso giorno
+default ultima_entrata = {}
+default giorno_entrata = -1
 default uscite = []                    # [(giorno, chiave, detto_a_josh)]
+
 
 ## =============================================================================
 ## FLUSSO
@@ -200,7 +264,7 @@ label telefono_fascia(nome, con_josh=False):
         if con_josh and not coda_chat[_k].get("rimandata"):
             $ suono("telefono_vibra")
             $ _nome = nome_percorso(percorso(_k))
-            n "Sara's phone lights up on the table. [_nome] has replied."
+            n "Sara's phone lights up on the table. [_nome]."
             menu:
                 "Read it now.":
                     $ suspicion(1)
@@ -214,69 +278,127 @@ label telefono_fascia(nome, con_josh=False):
             $ suono("telefono_vibra")
             call telefono_risposta(_k)
     if telefono_libero:
-        call telefono_entrata(con_josh)
+        call telefono_entrata
     return
 
-## Lo slot del giorno: Sara può prendere il telefono e scrivere a qualcuno.
+## Lo slot del giorno: Sara prende il telefono e scrive a qualcuno.
 label telefono_slot:
-    if not slot_libero() or not contatti():
+    if not slot_libero() or not contatti_attivi():
         return
     $ _scelta = renpy.call_screen("telefono") if not renpy.is_in_test() else _test_contatto()
     if _scelta is None:
         n "Sara leaves her phone face-down on the table."
         return
     $ _azione, _k = _scelta
-    $ _usa_slot()
+    $ giorno_slot = giorno
     if _azione == "sollecita":
         call telefono_sollecito(_k)
     else:
         call telefono_invia(_k)
     return
 
+## Sara scrive: riprende il discorso lasciato a metà o ne pesca uno nuovo.
 label telefono_invia(k):
     $ chat_aperta = k
     show screen telefono_chat(k)
-    $ _l = _label_o_none("chat_%s_%d" % (k, step_chat(k) + 1))
-    if _l:
-        call expression _l
+    if k in discorso_aperto:
+        ## Aveva messo giù lei: il messaggio di lui è lì che aspetta.
+        call telefono_continua(k)
     else:
-        $ msg("sara", "(Step %d with %s: Sara's message, to be written)" % (step_chat(k) + 1, nome_percorso(percorso(k))))
-    $ coda_chat[k] = {"arrivo": _calcola_arrivo(k), "inviato": adesso(), "letto": False, "rimandata": False}
-    ## Daniel legge subito e la fa aspettare: si vede la doppia spunta.
-    if k == "daniel":
-        $ coda_chat[k]["letto"] = True
-    if coda_chat[k]["arrivo"] <= adesso():
-        call telefono_risposta(k)
-    else:
-        $ renpy.pause(1.0)
+        $ _d = renpy.random.choice(discorsi_disponibili(k))
+        $ discorso_aperto[k] = {"id": _d.id, "parte": 0, "caldo": False, "frenato": False}
+        if renpy.has_label("chat_%s" % _d.id):
+            call expression "chat_%s" % _d.id
+        else:
+            $ msg("sara", "(Sara opens a conversation: %s. To be written.)" % _d.id)
+        $ coda_chat[k] = {"arrivo": _calcola_arrivo(k), "letto": k == "daniel", "rimandata": False, "insiste": None}
+        if coda_chat[k]["arrivo"] <= adesso():
+            call telefono_risposta(k)
+        else:
+            $ renpy.pause(1.0)
     hide screen telefono_chat
     $ chat_aperta = None
     return
 
+## Tocca all'altro: la sua risposta è arrivata.
 label telefono_risposta(k):
     $ chat_aperta = k
     show screen telefono_chat(k)
-    $ coda_chat[k]["letto"] = True
-    ## Josh può scrivere mentre Sara chatta con un altro (10.5).
+    $ _insiste = coda_chat.pop(k, {}).get("insiste")
+    if _insiste:
+        $ msg(k, _insiste)
     if renpy.random.random() < PROBABILITA_JOSH:
         call telefono_josh_interrompe(k)
-    $ _l = _label_o_none("chat_%s_%d_risposta" % (k, step_chat(k) + 1))
-    if _l:
-        call expression _l
-    else:
-        $ msg(k, "(Step %d: %s's reply, to be written)" % (step_chat(k) + 1, nome_percorso(percorso(k))))
-        menu (screen="scelta_telefono"):
-            "[[Warm reply]":
-                $ msg("sara", "(Sara's warm reply)")
-                $ chat_fine(k, caldo=True)
-            "[[Neutral reply]":
-                $ msg("sara", "(Sara's neutral reply)")
-                $ chat_fine(k)
-    ## Se il label scritto a mano ha dimenticato chat_fine, chiudiamo noi lo step.
-    if k in coda_chat:
-        $ chat_fine(k)
+    if k in discorso_aperto:
+        call telefono_continua(k)
     hide screen telefono_chat
     $ chat_aperta = None
+    return
+
+## Gli scambi di un discorso, fino alla fine o a un'interruzione (11.4).
+label telefono_continua(k):
+    while True:
+        $ discorso_aperto[k]["parte"] += 1
+        $ _id = discorso_aperto[k]["id"]
+        $ _l = _parte(_id, discorso_aperto[k]["parte"])
+        if _l:
+            call expression _l
+        else:
+            $ msg(k, "(%s, exchange %d: to be written.)" % (_id, discorso_aperto[k]["parte"]))
+            menu (screen="scelta_telefono"):
+                "(Warm reply)":
+                    $ msg("sara", "(Sara's warm reply)")
+                    $ caldo()
+                "(Neutral reply)":
+                    $ msg("sara", "(Sara's neutral reply)")
+                "(Cool it down)" if DISCORSI[_id].flirt:
+                    $ msg("sara", "(Ok, stop. Goodnight.)")
+                    $ frena()
+        if discorso_aperto[k]["frenato"] or not _ha_parte(_id, discorso_aperto[k]["parte"] + 1):
+            call telefono_fine_discorso(k)
+            return
+        ## Si ferma lui o lei?
+        if renpy.random.random() < _prob_pausa(k):
+            $ _nome = nome_percorso(percorso(k))
+            n "[_nome] doesn't answer."
+            $ coda_chat[k] = {"arrivo": _calcola_arrivo(k, minimo_ritardo=1), "letto": True, "rimandata": False, "insiste": None}
+            return
+        ## Oppure si ferma Sara.
+        menu (screen="scelta_telefono"):
+            "Keep chatting.":
+                pass
+            "Put the phone down.":
+                call telefono_sara_smette(k)
+                return
+
+## Sara mette giù: ognuno reagisce a modo suo (11.4).
+label telefono_sara_smette(k):
+    if k == "howard":
+        ## Howard le riscrive il giorno dopo, sempre.
+        $ coda_chat[k] = {"arrivo": (giorno + 1) * len(FASCE), "letto": True, "rimandata": False, "insiste": "Sara? Did I say something wrong?"}
+    elif k == "amica":
+        $ coda_chat[k] = {"arrivo": adesso() + 1, "letto": True, "rimandata": False, "insiste": "??"}
+    return
+
+label telefono_fine_discorso(k):
+    $ _a = discorso_aperto.pop(k)
+    $ _d = DISCORSI[_a["id"]]
+    $ discorsi_fatti.append(_d.id)
+    $ segna("chat_" + _d.id)
+    $ passi_chat[k] = passi_chat.get(k, 0) + 1
+    if _a["frenato"]:
+        $ freno[k] = giorno + GIORNI_FRENO
+    else:
+        $ interest(k, 2 if _a["caldo"] else 1)
+    ## Le chat compromettenti: cancellarle o lasciarle (11.5).
+    if _d.gradino >= COMPLICI and not _a["frenato"]:
+        menu (screen="scelta_telefono"):
+            "Delete the chat.":
+                $ corruption(1)
+                $ suspicion(-1)
+                $ chat_log[k] = []
+            "Keep it.":
+                $ chat_lasciate.append(_d.id)
     return
 
 label telefono_josh_interrompe(k):
@@ -310,14 +432,13 @@ label telefono_sollecito(k):
     $ chat_aperta = None
     return
 
-## Messaggi in entrata: da B in su, uno ogni 3-4 giorni per contatto, mai due nello
-## stesso giorno; Daniel scrive per primo già dal numero (10.5). Non usano lo slot.
-label telefono_entrata(con_josh=False):
+## Messaggi in entrata (10.5): lui o lei apre un discorso. Non usano lo slot.
+label telefono_entrata:
     if giorno_entrata == giorno:
         return
     python:
         _candidati = [k for k in contatti()
-                      if not in_attesa(k)
+                      if stato_contatto(k) == "nuovo"
                       and (gradino(k) >= CONFIDENZA or (k == "daniel" and "daniel" not in ultima_entrata))
                       and giorno - ultima_entrata.get(k, -99) >= GIORNI_TRA_ENTRATE]
         _k = renpy.random.choice(_candidati) if _candidati and renpy.random.random() < PROBABILITA_ENTRATA else None
@@ -332,13 +453,11 @@ label telefono_entrata(con_josh=False):
         "Answer.":
             $ chat_aperta = _k
             show screen telefono_chat(_k)
-            $ _l = _label_o_none("chat_%s_entrata" % _k)
-            if _l:
-                call expression _l
-            else:
-                $ msg(_k, "(%s writes first, to be written)" % nome_percorso(percorso(_k)))
-                $ msg("sara", "(Sara answers)")
-            $ interest(_k, 1)
+            $ _d = renpy.random.choice(discorsi_disponibili(_k))
+            $ discorso_aperto[_k] = {"id": _d.id, "parte": 0, "caldo": False, "frenato": False}
+            if renpy.has_label("chat_%s_entrata" % _d.id):
+                call expression "chat_%s_entrata" % _d.id
+            call telefono_continua(_k)
             hide screen telefono_chat
             $ chat_aperta = None
         "Ignore it.":
@@ -362,9 +481,8 @@ label serata_sostituibile:
             $ segreto("uscita_%s_g%d" % (_k, giorno), "An evening out with %s." % nome_percorso(percorso(_k)), sospetto=0)
             $ _detto = False
     $ uscite.append((giorno, _k, _detto))
-    $ _l = _label_o_none("uscita_%s" % _k)
-    if _l:
-        call expression _l
+    if renpy.has_label("uscita_%s" % _k):
+        call expression "uscita_%s" % _k
     else:
         $ _nome = nome_percorso(percorso(_k))
         n "[[Evening out with [_nome] — to be written]"
@@ -382,7 +500,7 @@ style tel_testo is default:
     size 30
     color "#f3e6ea"
 
-## La rubrica: chi c'è, chi deve rispondere, chi ha letto.
+## La rubrica.
 screen telefono():
     modal True
     zorder 150
@@ -404,24 +522,27 @@ screen telefono():
                 vbox:
                     spacing 12
                     for k in contatti():
+                        $ stato = stato_contatto(k)
                         $ attesa = coda_chat.get(k)
                         frame:
                             xfill True
                             padding (20, 14)
-                            background Solid("#2b1d25")
+                            background Solid("#2b1d25" if stato != "vuoto" else "#1f171c")
                             hbox:
                                 xfill True
                                 vbox:
-                                    text nome_percorso(percorso(k)) style "tel_testo" size 34
-                                    if attesa and attesa["letto"]:
+                                    text nome_percorso(percorso(k)) style "tel_testo" size 34 color ("#f3e6ea" if stato != "vuoto" else "#7d6870")
+                                    if stato == "attesa" and attesa["letto"]:
                                         text "Read. No reply yet." style "tel_testo" size 24 color "#c9a3a0"
-                                    elif attesa:
+                                    elif stato == "attesa":
                                         text "Delivered." style "tel_testo" size 24 color "#c9a3a0"
-                                    elif step_chat(k) == 0:
-                                        text "No messages yet." style "tel_testo" size 24 color "#c9a3a0"
-                                if attesa:
+                                    elif stato == "aperto":
+                                        text "You left the conversation hanging." style "tel_testo" size 24 color "#c9a3a0"
+                                    elif stato == "vuoto":
+                                        text "Nothing new to say... yet." style "tel_testo" size 24 color "#7d6870"
+                                if stato == "attesa":
                                     textbutton "Nudge" xalign 1.0 yalign 0.5 action Return(("sollecita", k))
-                                else:
+                                elif stato != "vuoto":
                                     textbutton "Write" xalign 1.0 yalign 0.5 action Return(("scrivi", k))
             textbutton "Put the phone down" xalign 0.5 action Return(None)
 
@@ -486,15 +607,18 @@ screen scelta_telefono(items):
 ## =============================================================================
 ## PROVA DEL TELEFONO (solo per gli sviluppatori e per i test)
 ## =============================================================================
-## Simula i giorni 14-22: sblocco, numeri, una fascia di lavoro e una sera con
-## Josh al giorno, lo slot, e la serata sostituibile del 22.
+## Simula i giorni 14-22 con i discorsi segnaposto. Dalla console: jump telefono_prova
 label telefono_prova:
-    ## Si riparte da zero ogni volta (i casi di test condividono lo stato).
     python:
         telefono_libero = False
+        telefono_segnaposto = True
         rubrica = ["amica", "amico"]
         passi_chat = {}
+        discorsi_fatti = []
+        discorso_aperto = {}
         coda_chat = {}
+        freno = {}
+        chat_lasciate = []
         chat_log = {}
         giorno_slot = -1
         ultima_entrata = {}
@@ -518,10 +642,13 @@ label telefono_prova:
         if giorno == 22:
             call serata_sostituibile
         $ giorno += 1
-    ## Fotografia dello stato per i test (letta dopo che il gioco torna al menu).
-    $ telefono_ultima_prova = {"libero": telefono_libero, "rubrica": list(rubrica), "passi": dict(passi_chat), "interest": {k: percorsi[k].interest for k in rubrica}, "coda": dict(coda_chat), "uscite": list(uscite)}
-    $ renpy.store._foto_telefono.clear()
-    $ renpy.store._foto_telefono.update(telefono_ultima_prova)
+    python:
+        _foto_telefono.clear()
+        _foto_telefono.update({"libero": telefono_libero, "rubrica": list(rubrica), "passi": dict(passi_chat),
+            "fatti": list(discorsi_fatti), "aperti": dict(discorso_aperto),
+            "interest": {k: percorsi[k].interest for k in rubrica}, "coda": dict(coda_chat),
+            "lasciate": list(chat_lasciate), "uscite": list(uscite)})
+    $ telefono_segnaposto = False
     jump telefono_prova_fine
 
 label telefono_prova_fine:

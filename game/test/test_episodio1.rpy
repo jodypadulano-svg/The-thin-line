@@ -171,7 +171,7 @@ init python:
     def _test_contatto():
         """Lo slot nei test: sempre lo stesso contatto, sparpagliato, o mai."""
         s = _test_strategia_tel[0]
-        disponibili = contatti()
+        disponibili = contatti_attivi()
         if s == "nessuno" or not disponibili:
             return None
         if s == "sparpagliata":
@@ -184,15 +184,18 @@ testsuite telefono:
     testcase giorni_14_22:
         description "Rubrica, slot, risposte asincrone, solleciti, entrate e serata del 22."
         parameter strategia = ["daniel", "simon", "sparpagliata", "nessuno"]
+        parameter scelte = ["prima", "alternata"]
         $ renpy.random.seed(7)
-        $ _test_scelte("prima")
+        $ _test_scelte(scelte)
         $ _test_strategia_tel[0] = strategia
         $ _test_esito_telefono["fine"] = False
         run Jump("telefono_prova")
         advance until eval _test_esito_telefono["fine"] timeout 120.0
         ## Il telefono si è acceso e i numeri ci sono.
         assert eval _foto_telefono["libero"] and "daniel" in _foto_telefono["rubrica"] and "amica" in _foto_telefono["rubrica"]
-        ## Chi non scrive mai non completa step; gli altri sì.
-        assert eval (sum(_foto_telefono["passi"].values()) == 0) == (strategia == "nessuno")
+        ## Chi non scrive mai finisce solo i discorsi aperti dagli altri (al massimo Daniel, che scrive per primo).
+        assert eval strategia != "nessuno" or set(_foto_telefono["passi"]) <= {"daniel"}
         assert eval strategia not in ("daniel", "simon") or _foto_telefono["passi"].get(strategia, 0) >= 2
-        $ print("TELEFONO", strategia, _foto_telefono)
+        ## Nessun discorso si ripete.
+        assert eval len(_foto_telefono["fatti"]) == len(set(_foto_telefono["fatti"]))
+        $ print("TELEFONO", strategia, scelte, _foto_telefono)
