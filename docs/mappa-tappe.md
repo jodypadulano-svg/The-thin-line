@@ -2,6 +2,8 @@
 
 Bozza di lavoro | 16 novembre 2026 · In costruzione con Jody, una domanda alla volta.
 
+**Nota di compatibilità (18/11/2026):** le tappe qui descritte restano i traguardi e i vincoli dei percorsi, ma **gli incontri di calendario successivi allo sblocco del telefono possono mostrare una variante più avanzata** se Sara ha già maturato la familiarità necessaria tramite chat e interazioni. Gli step puramente introduttivi possono essere saltati; fatti decisivi, soglie, consensi e scelte esplicite non possono esserlo. Consultare [Telefono e percorsi dinamici](telefono-e-percorsi-dinamici.md) prima di assegnare una tappa a un giorno fisso.
+
 Schema comune approvato (vedi [registro](decisioni.md)), **rivisto il 16/11**: 8 tappe base più spazi di espansione. Tappe 1-3 (Incontro, Conoscenza, Complicità) aperte dalla storia · 4 La crepa: **Interest 20** · 5 Il segreto: **Interest 35** · 6 Il confine: **Interest 50 + Corruption alla soglia** + scelta del giocatore · 7 L'abitudine: **Interest 65 + soglia +10** · 8 Il punto di non ritorno: **Interest 80 + soglia +20** + scelta del giocatore (finale della prima stagione). **Scala fisica comune (16/11):** dentro le tappe 6-7 ogni percorso ha 6a Il bacio (Interest 50, soglia) · 6b Il seno (55, soglia +3) · 7a Nuda (60, soglia +6) · 7b La relazione erotica nel genere proprio del personaggio (65, soglia +10). Imprescindibile in tutti e 8 i percorsi. Fino alla tappa 5 il percorso avanza solo con l'Interest; la Corruption conta dal confine fisico in poi.
 
 > **Finali probabili (18/11/2026):** per ogni percorso, il momento più crudele per Josh e la prova della trasformazione sono nel [registro](decisioni.md) («Gli 8 finali»). Le storie devono convergere lì.
