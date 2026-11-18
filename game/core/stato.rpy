@@ -198,7 +198,7 @@ init -10 python:
         parti = []
         for k, v in requisiti_di(requisiti).items():
             if k.endswith("_max"):
-                parti.append("{} ≤ {}".format(_nome_requisito(k[:-4]), v))
+                parti.append("{} {{font=DejaVuSans.ttf}}≤{{/font}} {}".format(_nome_requisito(k[:-4]), v))
             else:
                 parti.append("{} {}".format(_nome_requisito(k), v))
         return " · ".join(parti)

@@ -63,31 +63,31 @@ define gui.interface_text_color = '#ffffff'
 ## Font e Dimensioni ###########################################################
 
 ## Il font usato per il testo interno al gioco.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "fonts/CormorantGaramond.ttf"
 
 ## Il font usato per i nomi dei personaggi.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "fonts/CormorantGaramond-Italic.ttf"
 
 ## Il font usato per il testo esterno al gioco.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "fonts/CormorantGaramond.ttf"
 
 ## La dimensione del normale testo di dialogo.
-define gui.text_size = 33
+define gui.text_size = 38
 
 ## La dimensione dei nomi dei personaggi.
-define gui.name_text_size = 45
+define gui.name_text_size = 50
 
 ## Le dimensioni del testo nell'interfaccia di gioco.
-define gui.interface_text_size = 33
+define gui.interface_text_size = 36
 
 ## Le dimensioni delle etichette nell'interfaccia di gioco.
-define gui.label_text_size = 36
+define gui.label_text_size = 40
 
 ## La dimensione del testo delle notifiche (notify screen).
-define gui.notify_text_size = 24
+define gui.notify_text_size = 26
 
 ## Le dimensioni del titolo del gioco.
-define gui.title_text_size = 75
+define gui.title_text_size = 84
 
 
 ## Menu - Main e Game ##########################################################
@@ -491,3 +491,9 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
+
+
+## Cormorant Garamond è un font variabile: di serie è sottile (Light).
+## Per leggibilità usiamo il peso Medium per testi e interfaccia.
+style default:
+    instance "Medium"

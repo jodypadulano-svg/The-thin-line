@@ -19,7 +19,7 @@ define config.name = _("The Thin Line")
 ## Determina se il titolo fornito più sopra è mostrato nel main menu. Imposta su
 ## 'False' per nascondere il titolo.
 
-define gui.show_name = True
+define gui.show_name = False  # il titolo è disegnato in gui/main_menu.png
 
 
 ## La versione del gioco.

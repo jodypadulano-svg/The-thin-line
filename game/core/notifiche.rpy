@@ -35,7 +35,7 @@ init python:
         if persistent.numeri_visibili:
             valore = "{:+d}".format(delta)
         else:
-            valore = "▲" if delta > 0 else "▼"
+            valore = "{font=DejaVuSans.ttf}▲{/font}" if delta > 0 else "{font=DejaVuSans.ttf}▼{/font}"
         _aggiungi_notifica("{}  {}".format(nome, valore), colore, motivo)
 
     def _annuncia_testo(testo):
