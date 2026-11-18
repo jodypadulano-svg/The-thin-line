@@ -68,11 +68,12 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 |---|---|---|---|---|
 | **14 Dom** | Pranzo | Le due famiglie a tavola (I3, I1, I2, I16, I7) | Hugo, Samantha, Sally, Andrew, Josh | ★ **Hugo sminuisce Josh:** Difenderlo → Josh +3, Conf +1 · Tacere → — · Sorridere alla battuta → Josh -2<br>**Sally la riprende per il vestito:** Abbassare gli occhi → — · Rispondere a tono → Conf +1<br>**Samantha la invita a fare shopping insieme:** Accettare → — · Declinare → — |
 | **15 Lun** | Lavoro | Riunione di redazione |  | **In riunione:** Silenziosa → — · Difendere una sua idea → Conf +1 |
-|  | Sera | Le 50 pagine per Magnus | Magnus | ★ **Mandarle?:** Sì → Conf +2, Magnus +1 · Rimandare → — |
+|  | Dopo il lavoro | Palestra con Joanie e Simon: allenamento sociale e scherzoso. Simon si avvicina per correggere un esercizio; Joanie prende bonariamente in giro Sara per le attenzioni di Simon | Sara, Joanie, Simon | **Reazione di Sara:** Timida · Stare al gioco di Joanie · Concentrarsi sull'allenamento. Le tre risposte caratterizzano Sara, senza flirt automatico o nuove variazioni numeriche già concordate. Breve scena da scrivere. |
+|  | Tarda sera | A casa, le 50 pagine per Magnus | Sara, Magnus (contatto) | ★ **Mandarle?:** Sì → Conf +2, Magnus +1 · Rimandare → — |
 | **16 Mar** | Lavoro | Jessica le riparla di «quella cosa» (I22) | Jessica | **Con Jessica:** Chiederle cosa le è successo → — · Lasciar perdere → — |
-|  | Sera | Palestra | Simon | **Cosa indossare:** La maglietta larga → — · Un top aderente → Corr +1, Simon +1<br>**L'allenamento:** Con Simon → Simon +3 · Da sola → Conf +1 |
+|  | Sera | Serata tra amici: Darius torna (già apparso brevemente al giorno 7), entra Mark; Josh e Mark legano (I13); dopo, Josh e Darius soli e flashback di Jacob (I18). **Spostata dal giorno 17 al 16.** | Darius, Joanie, Mark, Josh | **Durante la serata:** Stare vicina a Josh → Josh +1 · Ridere con Darius → Darius +1 · Confidarsi con Joanie in cucina → Joanie +1 |
 | **17 Mer** | Lavoro | Giornata normale |  | — |
-|  | Sera | Serata tra amici: Darius torna (già apparso brevemente al giorno 7), entra Mark; Josh e Mark legano (I13); dopo, Josh e Darius soli e flashback di Jacob (I18) | Darius, Joanie, Mark, Josh | **Durante la serata:** Stare vicina a Josh → Josh +1 · Ridere con Darius → Darius +1 · Confidarsi con Joanie in cucina → Joanie +1 |
+|  | Sera | Palestra con Simon, più focalizzata sul rapporto diretto con lui. **Spostata dal giorno 16 al 17.** | Simon | **Cosa indossare:** La maglietta larga → — · Un top aderente → Corr +1, Simon +1<br>**L'allenamento:** Con Simon → Simon +3 · Da sola → Conf +1 |
 | **18 Gio** | Lavoro | Barbara le chiede di restare mezz'ora in più | Barbara | **Restare?:** Sì → Barbara +1 · Rifiutare con garbo → Conf +1 |
 |  | Sera | Josh fa straordinari (I14); caffè da Howard se al giorno 9 ha detto sì o «quando capita» | Howard | **Andare da Howard?:** Sì → Howard +2 · Trovare una scusa → —<br>**Da Howard:** Lavare i piatti mentre parlano → Howard +2 · Solo chiacchierare → — |
 | **19 Ven** | Lavoro | Giornata normale |  | — |
