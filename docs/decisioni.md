@@ -12,6 +12,23 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 - **Lore:** non viene mai spiegato apertamente. È un indizio in più sulla cerchia di Barbara (insieme al modo di fumare): alcune colleghe portano già il suo «segno», altre no.
 - Nelle scene della redazione niente colleghi uomini. I testi dei giorni 1-3 sono già compatibili (il «copy desk» del giorno 1 resta un reparto senza volti).
 
+### Gli 8 finali: il momento più crudele per Josh e la prova della trasformazione (decisione 18/11/2026)
+
+**Stato: approvati da Jody come finali PROBABILI** (non certi, ma molto probabili): le storie devono **convergere verso queste direzioni**. Si possono affinare scrivendo, senza stravolgerle. Rispettano il manifesto: per Sara sono gesti naturali, felici e scelti; è il giocatore a riconoscerli come la Sara di prima riscritta. Il plagio in senso letterale vale solo per Barbara (canone della cerchia).
+
+**Regola di scrittura:** quasi tutte le prove richiamano dettagli dei primi giorni. Vanno **seminati con cura** nei giorni che si riscrivono (capitolo tre e romanzo, il bottone, «Love you!» dalle scale, il cappuccino alla cannella, la battuta del foglio Excel, il fumo a labbra arricciate, l'armadio delle due camicette, il top nero di Joanie, Anna Karenina).
+
+| Percorso | Il momento più crudele per Josh | La prova della trasformazione |
+|---|---|---|
+| **Simon** | Sara lo lascia tra una serie e l'altra, sudata, telefono in mano: «Ti scrivo dopo il defaticamento». | Il romanzo è sparito sotto gli integratori: «Quale romanzo?». Il quaderno della pausa pranzo ora contiene macro e ripetizioni. |
+| **Daniel** | La cena aziendale si ripete come al giorno 3, ma è Sara a fare la battuta del foglio Excel davanti a tutti e a ridere per prima (la C5 rovesciata). | Usa le frasi di Daniel come sue («Thorough. That's what we say about people who will never be promoted»), le stesse che al giorno 3 l'avevano indignata. |
+| **Howard** | Josh, ormai vicino, incontra Sara in vestaglia che esce da casa di Howard col sacco dell'immondizia: «Buongiorno! Tutto bene di là?». | Ritrova nel cassetto il suo pizzo rubato e le chiavi e li ripone lei stessa, con cura: il furto non le fa più effetto, è solo «casa». |
+| **Magnus** | La «prima copia autografata» promessa a Josh: un romanzo erotico firmato con lo pseudonimo che omaggia Magnus, con scene che Josh riconosce come vere, dedicato a Magnus. | Nel libro la porta del capitolo tre finalmente si apre, e dietro c'è Magnus: «la scena che mi ha liberata». |
+| **Jacob** | Gli spiega con calma che Jacob ha altre donne e a lei va bene così, ma a Josh non permetterebbe nemmeno un messaggio. | Difende da Jacob ciò che con Josh avrebbe chiamato tradimento: «Lui è fatto così. Io no». La fedeltà vale solo per lei. |
+| **Darius** | Il rituale del giorno 1: Josh urla «Love you!», dalla camera arriva «Love you more!»... rivolto a Darius che esce dalla loro camera. Josh dorme sul divano da settimane senza sapere da quando. | Non c'è un momento in cui Sara ha deciso: se le si chiede quando è cambiato non sa rispondere, le sembra sia sempre stato così. |
+| **Joanie** | Glielo dice Joanie, con la frase del giorno 1: «I signed her up *for* her. That's different». Poi Sara gli chiede di aiutarle a scegliere l'uomo della settimana, «tu la conosci bene». | L'armadio: la Sara delle due camicette identiche non lo apre più da sola, è Joanie a scegliere i vestiti; il top nero del giorno 2 è il suo capo preferito. |
+| **Barbara** | La festa di I23: Josh, unico uomo, sente Sara dire alla nuova dipendente le parole di Jessica («Something happened to me... You should try it too»), poi presentarlo: «Lui è Josh. Era mio marito, prima». | Fuma a labbra arricciate senza ricordare di non aver mai fumato; porta il ciondolo a cuore; porta alla nuova arrivata il cappuccino alla cannella senza che nessuno le abbia detto come lo prende: «Oh, I notice people too». La lettrice di Anna Karenina non esiste più. |
+
 ### Giorno 2 — la scelta segreta: Sara fuma (decisione 17/11/2026)
 
 **Stato: confermata e scritta il 17/11/2026** (label `ep1_d2_segreto_fumo` e `ep1_d2_terrazzino_fumatrice`; scelte con tetto `corruption_max=`; sezione «Segreti trovati» nel Diario; test `segreto`). Area cliccabile misurata sulla A8 vera: (0.0, 0.47, 0.30, 0.53). Modifica la decisione precedente sul terrazzino: «Sara non fuma» resta vero **salvo** questa scelta segreta.
