@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 5 — uscita serale con Joanie e conversazione su Daniel (decisione 18/11/2026)
+
+**Stato: approvato da Jody; scena da scrivere.** Se venerdì sera Sara sceglie di uscire con Joanie invece di guardare un film con Josh, le due amiche parlano della cena aziendale del mercoledì. Joanie domanda come sia andata e, quando emerge Daniel, comincia a stuzzicare Sara sul suo conto. Il tono deve essere leggero, confidenziale e un po' pungente: un primo seme dell'influenza di Joanie, senza forzare il cambiamento di Sara né inventare già una svolta sentimentale. Rimane la scelta esistente «Uscire con Joanie» con effetto Joanie +1; non sono state approvate altre scelte o modifiche alle statistiche. Il ramo alternativo del film con Josh resta invariato.
+
 ### La redazione è tutta femminile (decisione 17/11/2026)
 
 **Stato: approvata da Jody; vale per testi e immagini da ora in poi.**
