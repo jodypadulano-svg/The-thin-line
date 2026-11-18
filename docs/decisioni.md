@@ -4,6 +4,15 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorni 15–17 — palestra lunedì e mercoledì, serata con amici martedì (decisione 18/11/2026)
+
+**Stato: approvato da Jody; scaletta aggiornata, scene da scrivere/implementare.** Per evitare due allenamenti consecutivi e rendere meno vuoto il giorno 15:
+- **Lunedì 15:** dopo il lavoro, Sara va in palestra **con Joanie** e incontra Simon. Scena sociale e scherzosa: Simon la aiuta con un esercizio e Joanie commenta giocosamente le sue attenzioni. Sara può reagire con timidezza, stare allo scherzo o concentrarsi sull'allenamento; **nessun nuovo punteggio approvato** per queste risposte. Più tardi, a casa, resta invariata la scelta fondamentale di inviare o rimandare le 50 pagine a Magnus (Conf +2 e Magnus +1 se invia). Restano invariate anche le scelte della riunione in redazione.
+- **Martedì 16:** durante il lavoro resta la scena con Jessica. Alla sera si tiene **la serata tra amici inizialmente programmata per mercoledì 17**, con Josh, Darius, Joanie e Mark, l'amicizia tra Josh e Mark (I13) e la conversazione privata Josh–Darius seguita dal flashback di Jacob (I18). Tutte le scelte e i punti della serata restano invariati.
+- **Mercoledì 17:** lavoro normale; alla sera si tiene **la palestra originariamente fissata per martedì 16**, più focalizzata su Simon e Sara, con scelta dell'abbigliamento e se allenarsi con Simon o da sola. Stessi punteggi e opzioni originali.
+
+Questa decisione modifica solo la collocazione delle due serate e aggiunge la breve scena sociale del lunedì; non crea una nuova tappa romantica forzata. Eventuali rinvii nel codice o nei diagrammi precedenti vanno allineati quando si riscrivono queste giornate.
+
 ### Giorno 12 — valorizzare la pubblicazione del primo articolo di Sara (decisione 18/11/2026)
 
 **Stato: approvato da Jody; da scrivere/implementare.** Venerdì, giorno 12, la pubblicazione del primo pezzo di Sara sul giornale non va liquidata in una battuta: inserire un breve momento emotivo in redazione in cui Sara vede l'articolo pubblicato, ne prova soddisfazione, sollievo e orgoglio e si concede di festeggiare interiormente un traguardo guadagnato con il suo lavoro. Può esserci un dettaglio intimo e concreto, per esempio rileggere la firma sotto al titolo o sorridere davanti allo schermo. Poi il giocatore decide **a chi mandarlo per primo**, come nella scaletta originale: Josh → Josh +1; Joanie → Joanie +1. Il momento di gioia è presente in ogni partita e non aggiunge nuove statistiche o scelte. Rimane invariata la telefonata serale di Joanie su Simon, Daniel e i suoi consigli. Scopo: preservare l'autonomia e l'ambizione professionale di Sara e dare peso alla sua conquista senza introdurre nuove CG obbligatorie.
