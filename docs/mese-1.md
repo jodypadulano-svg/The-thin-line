@@ -54,7 +54,7 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 |  | Sera | Ancora senza chiavi | Josh | **Con Josh:** Raccontargli tutto di Howard → Josh +1 · Minimizzare → — |
 | **11 Gio** | Lavoro | Pranzo | Roberta | **Pausa pranzo:** Con Roberta → — · Da sola → Conf +1 |
 |  | Sera | Howard «ritrova» le chiavi (I20), retroscena della copia | Howard, Josh | **Ringraziarlo:** Una stretta di mano → Howard +1 · Un abbraccio → Howard +1 |
-| **12 Ven** | Lavoro | Esce il primo pezzo di Sara |  | **A chi mandarlo per primo:** A Josh → Josh +1 · A Joanie → Joanie +1 |
+| **12 Ven** | Lavoro | Esce il primo pezzo di Sara: breve momento di gioia, orgoglio e sollievo davanti all'articolo pubblicato; Sara si concede di assaporare la conquista professionale prima di condividerla | Sara | **A chi mandarlo per primo:** A Josh → Josh +1 · A Joanie → Joanie +1. Il momento celebrativo è comune a entrambe le opzioni, senza nuovi punti né bivi. Scena da scrivere. |
 |  | Sera | Telefonata con Joanie, che la spinge | Joanie | **Di chi parlare:** Di Simon → Simon +1, Joanie +1 · Di Daniel → Daniel +1, Joanie +1 · Solo di lavoro → —<br>**Il consiglio di Joanie:** Ascoltarlo → Corr +1, Joanie +1 · Riderne → — |
 | **13 Sab** | Mattina | Shopping con Joanie per la festa | Joanie | **Il vestito per la festa:** Sobrio → — · Elegante → Conf +1 · Audace, scelto da Joanie → Corr +2, Conf +1, Joanie +1 |
 |  | Pomeriggio | Palestra libera (facoltativa) | Simon | **Andare?:** Sì → Simon +2 · No → — |
