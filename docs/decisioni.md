@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 7 — prima comparsa di Darius la domenica (decisione 18/11/2026)
+
+**Stato: approvato da Jody; da scrivere e implementare.** Aggiungere domenica mattina una breve apparizione di Darius, migliore amico di Josh dalle superiori: passa a trovare la coppia a casa, con clima informale e spontaneo. Sara lo conosce già. Serve a farlo conoscere al giocatore come parte della loro quotidianità, non ad aprire subito il percorso 7. Nessuna seduzione, attrazione preesistente, segreto, nuova scelta o nuova variazione delle statistiche; restano intatte le scelte già previste per pomeriggio e sera (romanzo/gita con Josh, intimità con Josh/riposo). Al giorno 17 resta la serata fra amici più approfondita e il flashback di Jacob; lì Darius non viene più presentato come un nuovo arrivo, ma torna in scena. Il percorso Darius resta esclusivamente opt-in con requisiti di Corruption e scelta esplicita del giocatore, da progettare.
+
 ### Giorno 5 — uscita serale con Joanie e conversazione su Daniel (decisione 18/11/2026)
 
 **Stato: approvato da Jody; scena da scrivere.** Se venerdì sera Sara sceglie di uscire con Joanie invece di guardare un film con Josh, le due amiche parlano della cena aziendale del mercoledì. Joanie domanda come sia andata e, quando emerge Daniel, comincia a stuzzicare Sara sul suo conto. Il tono deve essere leggero, confidenziale e un po' pungente: un primo seme dell'influenza di Joanie, senza forzare il cambiamento di Sara né inventare già una svolta sentimentale. Rimane la scelta esistente «Uscire con Joanie» con effetto Joanie +1; non sono state approvate altre scelte o modifiche alle statistiche. Il ramo alternativo del film con Josh resta invariato.
