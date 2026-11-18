@@ -28,12 +28,15 @@ init python:
         store.menu = scegli
 
     _test_esito = {"fine": False, "label": []}
+    _test_esito_telefono = {"fine": False}
 
     def _test_traccia(nome, abnormal):
         if renpy.is_in_test():
             _test_esito["label"].append(nome)
             if nome == "ep1_fine":
                 _test_esito["fine"] = True
+            if nome == "telefono_prova_fine":
+                _test_esito_telefono["fine"] = True
     config.label_callbacks.append(_test_traccia)
 
 testsuite episodio1:
@@ -159,3 +162,37 @@ testsuite foto_testo:
         click
         pause 0.5
         screenshot "ui_nome.png"
+
+
+## Telefono: giorni 14-22 simulati, con tre strategie per lo slot (10.6-10.9).
+init python:
+    _test_strategia_tel = ["daniel"]
+
+    def _test_contatto():
+        """Lo slot nei test: sempre lo stesso contatto, sparpagliato, o mai."""
+        s = _test_strategia_tel[0]
+        disponibili = contatti()
+        if s == "nessuno" or not disponibili:
+            return None
+        if s == "sparpagliata":
+            k = disponibili[giorno % len(disponibili)]
+        else:
+            k = s if s in disponibili else disponibili[0]
+        return ("sollecita" if in_attesa(k) else "scrivi", k)
+
+testsuite telefono:
+    testcase giorni_14_22:
+        description "Rubrica, slot, risposte asincrone, solleciti, entrate e serata del 22."
+        parameter strategia = ["daniel", "simon", "sparpagliata", "nessuno"]
+        $ renpy.random.seed(7)
+        $ _test_scelte("prima")
+        $ _test_strategia_tel[0] = strategia
+        $ _test_esito_telefono["fine"] = False
+        run Jump("telefono_prova")
+        advance until eval _test_esito_telefono["fine"] timeout 120.0
+        ## Il telefono si è acceso e i numeri ci sono.
+        assert eval _foto_telefono["libero"] and "daniel" in _foto_telefono["rubrica"] and "amica" in _foto_telefono["rubrica"]
+        ## Chi non scrive mai non completa step; gli altri sì.
+        assert eval (sum(_foto_telefono["passi"].values()) == 0) == (strategia == "nessuno")
+        assert eval strategia not in ("daniel", "simon") or _foto_telefono["passi"].get(strategia, 0) >= 2
+        $ print("TELEFONO", strategia, _foto_telefono)
