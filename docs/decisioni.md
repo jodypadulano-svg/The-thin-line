@@ -4,6 +4,19 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Telefono libero, progressione dinamica e serate alternative (decisione 18/11/2026)
+
+**Stato: sistema progettuale approvato da Jody; registrato, da implementare in un lotto futuro, senza modifiche al codice in questa fase.** Specifica completa: **[Telefono e percorsi dinamici](telefono-e-percorsi-dinamici.md)**. Questa decisione **estende** (non revoca) la scelta del 17/11 di utilizzare e personalizzare *Yet Another Phone for Ren'Py*, con verifica preventiva di licenza e asset commerciali.
+
+- **Evento scatenante e rubrica:** il telefono libero si attiva dopo un evento da fissare. Per ciascuno degli **otto** percorsi Sara può scegliere di contattare un personaggio **solo se possiede il suo numero** (booleano indipendente; conoscere il personaggio non basta).
+- **Un solo slot elettivo al giorno:** scegliere **al massimo un contatto**; ciascuno possiede i propri **step di chat** indipendenti dal calendario. Se Daniel non è mai stato contattato, anche al giorno 20 si comincia da **Daniel chat step 1**; un giorno Darius, un altro Daniel, senza perdita dei progressi precedenti.
+- **Conoscenza + incontri:** chat e interazioni di persona alimentano familiarità e progressione. Quando ricompare un personaggio in un incontro previsto dalla trama, le parti introduttive ormai superate possono **saltare direttamente allo step successivo appropriato**; non si recuperano inutilmente gli step saltati. Le scene imprescindibili, i fatti non vissuti, le soglie Interest/Corruption, i consensi e i bivi espliciti restano vincolanti: scriversi non significa automaticamente iniziare una relazione.
+- **Dopo le prime due settimane** devono cominciare ad apparire i primi incontri con varianti e bivi che dipendono dal rapporto; il giorno preciso, le soglie numeriche e le singole sequenze sono ancora da definire.
+- **Serate alternative:** alcune serate libere o inizialmente pensate per Josh possono offrire **appuntamenti opzionali** con i contatti che hanno raggiunto la propria soglia di conoscenza/interesse. Il giocatore sceglie chi vedere oppure Josh; appuntamento ≠ tradimento automatico. **Slot telefonico e serata sono distinti**. Dove pertinente Sara può rivelare o nascondere l'uscita a Josh, con conseguenze legate ai fatti e a Suspicion/segreti.
+- **Regola essenziale per tutte le scene fisse:** ogni interazione personale successiva allo sblocco del numero deve **leggere lo stato già maturato** con quella persona: messaggi, confidenze, interesse, tappe, appuntamenti precedenti, cosa sa Josh. Usare **microvarianti**, brevi scene condizionali e diramazioni importanti solo dove servono, non otto riscritture complete della stessa giornata. La mattina non può fare riferimento a eventi scelti per la sera futura.
+- **Vincoli speciali invariati:** Darius rimane opt-in con scelta esplicita e Corruption; Joanie sviluppa il lato romantico più avanti; Barbara ha ritmo lento; la trama canonica e i finali rimangono coerenti. Conservare `percorsi[x].interest`, `percorsi[x].tappa` e le altre statistiche già previste.
+- **Da definire:** acquisizione dei numeri, numero e contenuto delle chat, progressi numerici, soglie personalizzate per le date, serate sostituibili, priorità con le scene della trama, trattamento delle chat obbligatorie fuori dallo slot. Non fissare oggi parametri o scene non approvati.
+
 ### Giorni 15–17 — palestra lunedì e mercoledì, serata con amici martedì (decisione 18/11/2026)
 
 **Stato: approvato da Jody; scaletta aggiornata, scene da scrivere/implementare.** Per evitare due allenamenti consecutivi e rendere meno vuoto il giorno 15:
