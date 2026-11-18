@@ -103,3 +103,41 @@ Totale: 8 personaggi × 19 discorsi = **152 discorsi**. Si scrivono per gradi: p
 - **Daniel C1:** nessuna condizione di trama.
 - **Magnus:** due introduttive alternative, se ne gioca una sola.
 - **Joanie B4:** solo dopo il ritorno di Jacob.
+
+## Toni dei livelli A e B (Q&A con Jody, 18/11/2026)
+
+Riferimento di stile: la bozza approvata di Simon A1 «Dolori muscolari» (inglese, messaggi corti, pensieri di Sara fra i messaggi, 2-3 pezzi, ~10 messaggi, risposte neutra/calda/coraggiosa con Confidence 25, un seme di trama, un flag per le scene fisse, emoticon :) ;) ).
+
+- **Simon:** in B complimenti **solo sui progressi** («sei migliorata tantissimo»); il personale resta fuori, il flirt vero comincia in C.
+- **Howard:** il disagio si vede **sempre dal modo di scrivere** (troppi messaggi, troppo presto, sa cose che non dovrebbe sapere, battute fuori luogo); in circa **una chat su tre**, le più manipolatorie, un breve **retroscena** testuale dal suo lato. Sara non nota niente.
+- **Daniel:** **piccole frecciate su Josh già da A**. Difenderlo: Josh +1; lasciar correre: niente; riderci su: risposta calda per Daniel e Corruption +1.
+- **Magnus:** **esercizi di scrittura già da A**; Sara sceglie fra versione pudica (niente), sensoriale (Confidence +1) e audace (requisito di Confidence, calda). In B gli esercizi diventano più sensuali. Messaggi lunghi ed eleganti, niente emoticon, firma «M.».
+- **Barbara:** **piccoli ordini personali già da A** (abiti, trucco): obbedire (Barbara +1 e flag per la scena del giorno dopo), ironizzare (niente), rifiutare (Confidence +1; lei sembra accettare ma ci riprova). **Al massimo 2-3 ordini** fra A e B. Non nomina mai il modo di fumare.
+- **Jacob:** in A **solo nostalgia**; **allusioni al passato fisico da B** (ricordare con un sorriso = calda, lasciar cadere = neutra, chiudere = «Jacob. Don't.»). Sul tradimento **non chiede mai scusa davvero**.
+- **Joanie:** **la tifosa**: chiede di Simon, Daniel, poi Jacob a seconda di come vanno quei percorsi; da B rari **indizi ambigui** che coglie solo il giocatore («Josh is lucky. Someone is, anyway.»).
+- **Darius:** **completamente leale a Josh fino a C**: in A e B è l'amico di sempre, la svolta arriva come sorpresa. Senza le risposte calde di Sara le sue chat restano fra amici (percorso opt-in).
+
+## Flag di trama usati dai discorsi (da impostare nelle giornate)
+
+| Flag | Dove va impostato | Usato da |
+|---|---|---|
+| `ep2_pagine_magnus` | giorno 15, se Sara manda le 50 pagine | Magnus, introduzione (versione «Le cinquanta pagine») |
+| `jacob_tornato` | giorno 19, il rincontro al locale | Joanie B4 |
+
+## Flag lasciati dalle chat A e B (per le varianti delle scene fisse)
+
+Oltre al flag automatico di fine discorso `chat_<id>`. **Gli ordini di Barbara** chiedono una variante nella scena del giorno dopo (Sara vestita così, qualcuno lo nota).
+
+| Flag | Discorso | Cosa può ricordare la scena |
+|---|---|---|
+| `barbara_ordine_camicetta` | Barbara A3 | Sara arriva con la camicetta verde scollata |
+| `barbara_ordine_rossetto` | Barbara A4 | rossetto bordeaux, quello di Barbara |
+| `barbara_ordine_scollatura` | Barbara B3 | vestito nero scollato, niente cardigan; Barbara alla porta a controllare |
+| `simon_stretching`, `simon_colazione`, `simon_obiettivo_pushup`, `simon_squat`, `simon_playlist`, `simon_insicurezza`, `simon_notata` | Simon | in palestra Simon chiede degli esercizi, della colazione, dei dieci piegamenti... |
+| `howard_rubinetto`, `howard_lasagna`, `howard_pacco_tea`, `howard_caffe_domenica`, `howard_contatto_emergenza`, `howard_luce_corridoio` | Howard | visite, piatti lasciati alla porta, il caffè della domenica |
+| `daniel_prima_pagina`, `daniel_jazz`, `daniel_lezione`, `daniel_domanda_desiderio` | Daniel | riferimenti in ufficio o alle feste |
+| `magnus_capitolo_tre`, `magnus_promessa_pagine`, `magnus_libro_regalo`, `magnus_collezione_foto`, `magnus_prima_riga`, `magnus_cerchia_accenno`, `magnus_bacio_scritto` | Magnus | il libro regalato, la «prima riga», l'archivio di foto |
+| `barbara_jessica_accenno`, `barbara_gala_invito`, `barbara_confidenza_invisibile` | Barbara | il gala, la confidenza |
+| `jacob_jukebox`, `jacob_lago`, `jacob_le_manca_qualcosa` | Jacob | il jukebox al locale, il lago |
+| `joanie_sceglie_vestito`, `joanie_serie_giardiniere`, `joanie_sa_della_noia` | Joanie | lo shopping, la serie, Joanie che sa |
+| `darius_compleanno_josh`, `darius_cena_sabato`, `darius_padre` | Darius | il compleanno di Josh, la cena, il padre |

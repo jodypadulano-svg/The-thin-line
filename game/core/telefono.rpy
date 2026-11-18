@@ -78,7 +78,8 @@ init -5 python:
     class Discorso(object):
         """Una conversazione a più scambi (11.1). Vive nel registro DISCORSI,
         costruito all'avvio: nei salvataggi ci finiscono solo gli id."""
-        def __init__(self, id, chiave, gradino, se, flirt, prova):
+        def __init__(self, id, chiave, gradino, se, flirt, prova, scrive_lui=False):
+            self.scrive_lui = scrive_lui
             self.id = id
             self.chiave = chiave
             self.gradino = gradino
@@ -88,9 +89,11 @@ init -5 python:
 
     DISCORSI = {}
 
-    def discorso(id, chiave, gradino=CONOSCENTI, se=None, flirt=False, prova=False):
-        """Registra un discorso. se = condizione come testo, es. "fatto('ep1_festa')"."""
-        DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova)
+    def discorso(id, chiave, gradino=CONOSCENTI, se=None, flirt=False, prova=False, scrive_lui=False):
+        """Registra un discorso. se = condizione come testo, es. "fatto('ep1_festa')".
+        scrive_lui=True: può aprirlo lui con un messaggio in entrata anche sotto B
+        (es. Daniel dopo la festa, Magnus che aspetta le pagine)."""
+        DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova, scrive_lui)
 
     ## Discorsi segnaposto per la prova degli sviluppatori (non escono nel gioco vero).
     _SEGNAPOSTO = {ESTRANEI: 1, CONOSCENTI: 3, CONFIDENZA: 2, COMPLICI: 2, INTIMI: 1}
@@ -122,6 +125,14 @@ init -5 python:
 
     def discorsi_disponibili(chiave):
         return [d for _, d in sorted(DISCORSI.items()) if d.chiave == chiave and discorso_disponibile(d)]
+
+    def discorsi_in_entrata(chiave):
+        """I discorsi che lui o lei può aprire scrivendo per primo: tutti da B in su,
+        sotto B solo quelli segnati scrive_lui."""
+        tutti = discorsi_disponibili(chiave)
+        if gradino(chiave) >= CONFIDENZA:
+            return tutti
+        return [d for d in tutti if getattr(d, "scrive_lui", False)]
 
     def _parte(id, n):
         nome = "chat_%s_%d" % (id, n)
@@ -218,7 +229,7 @@ init -5 python:
 
     def msg(chi, testo):
         """Un messaggio nella chat aperta. chi = "sara", "josh" o la chiave del contatto."""
-        store.chat_log.setdefault(store.chat_aperta, []).append((chi, testo))
+        store.chat_log.setdefault(store.chat_aperta, []).append((chi, renpy.substitute(testo)))
         renpy.restart_interaction()
         renpy.pause()
 
@@ -445,7 +456,7 @@ label telefono_entrata:
     python:
         _candidati = [k for k in contatti()
                       if stato_contatto(k) == "nuovo"
-                      and (gradino(k) >= CONFIDENZA or (k == "daniel" and "daniel" not in ultima_entrata))
+                      and discorsi_in_entrata(k)
                       and giorno - ultima_entrata.get(k, -99) >= GIORNI_TRA_ENTRATE]
         _k = renpy.random.choice(_candidati) if _candidati and renpy.random.random() < PROBABILITA_ENTRATA else None
     if _k is None:
@@ -459,7 +470,7 @@ label telefono_entrata:
         "Answer.":
             $ chat_aperta = _k
             show screen telefono_chat(_k)
-            $ _d = renpy.random.choice(discorsi_disponibili(_k))
+            $ _d = renpy.random.choice(discorsi_in_entrata(_k))
             $ discorso_aperto[_k] = {"id": _d.id, "parte": 0, "caldo": False, "frenato": False}
             if renpy.has_label("chat_%s_entrata" % _d.id):
                 call expression "chat_%s_entrata" % _d.id
@@ -601,13 +612,23 @@ screen scelta_telefono(items):
         xpos 1300 xanchor 1.0 yalign 0.7
         spacing 14
         for i in items:
-            textbutton i.caption:
-                action i.action
-                background Solid("#2b1d25ee")
-                hover_background Solid("#7a2e45ee")
-                padding (26, 14)
-                xminimum 520
-                text_style "tel_testo"
+            ## Risposte con requisito: in grigio, con il requisito sotto (come nelle scene).
+            if requisiti_di(i.kwargs) and not requisiti_ok(i.kwargs):
+                frame:
+                    background Solid("#1f171cee")
+                    padding (26, 14)
+                    xminimum 520
+                    vbox:
+                        text i.caption style "tel_testo" color "#f3e6ea55"
+                        text "Requires " + testo_requisiti(i.kwargs) style "tel_testo" size 22 color "#ff5c7a"
+            else:
+                textbutton i.caption:
+                    action i.action
+                    background Solid("#2b1d25ee")
+                    hover_background Solid("#7a2e45ee")
+                    padding (26, 14)
+                    xminimum 520
+                    text_style "tel_testo"
 
 
 ## =============================================================================
