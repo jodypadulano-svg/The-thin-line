@@ -52,7 +52,7 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 | **10 Mer** | Lavoro | Barbara le assegna un pezzo extra fuori mansione | Barbara | **Il pezzo extra:** Accettare senza fiatare → — · Far notare che non è compito suo → Conf +1 |
 |  | Pausa pranzo | Jessica mette da parte vecchi libri in redazione; Sara riconosce un romanzo che Jessica un tempo adorava e le chiede perché non lo tenga più | Jessica | **La risposta di Jessica:** dice serenamente che quella era la Jessica di prima, che è cambiata e ora sta meglio. **Sara può:** chiedere cosa sia successo · lasciar perdere. Nessuna variazione di statistiche ancora approvata; tono enigmatico, senza rivelare il legame con Barbara. Breve scena da scrivere, riutilizzando la redazione. |
 |  | Sera | Ancora senza chiavi | Josh | **Con Josh:** Raccontargli tutto di Howard → Josh +1 · Minimizzare → — |
-| **11 Gio** | Lavoro | Pranzo | Jessica | **Pausa pranzo:** Con Jessica → — · Da sola → Conf +1 |
+| **11 Gio** | Lavoro | Pranzo | Roberta | **Pausa pranzo:** Con Roberta → — · Da sola → Conf +1 |
 |  | Sera | Howard «ritrova» le chiavi (I20), retroscena della copia | Howard, Josh | **Ringraziarlo:** Una stretta di mano → Howard +1 · Un abbraccio → Howard +1 |
 | **12 Ven** | Lavoro | Esce il primo pezzo di Sara |  | **A chi mandarlo per primo:** A Josh → Josh +1 · A Joanie → Joanie +1 |
 |  | Sera | Telefonata con Joanie, che la spinge | Joanie | **Di chi parlare:** Di Simon → Simon +1, Joanie +1 · Di Daniel → Daniel +1, Joanie +1 · Solo di lavoro → —<br>**Il consiglio di Joanie:** Ascoltarlo → Corr +1, Joanie +1 · Riderne → — |
