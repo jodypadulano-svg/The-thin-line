@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Telefono: la tabella dei 152 argomenti (decisione 18/11/2026, quinta parte)
+
+**Stato: approvato da Jody.** Gli argomenti di tutti gli otto personaggi (introduzione, 8 A, 5 B, 3 C, 2 D) sono in **[argomenti-telefono.md](argomenti-telefono.md)**, con le condizioni di trama. Chiarimenti: Simon D2 = fantasie di Sara e Simon; Darius D1 = la loro complicità e cosa vogliono da Josh; Daniel C1 senza condizioni; Magnus con due introduttive alternative (pagine mandate / «sto ancora aspettando quelle pagine»); Joanie B4 solo dopo il ritorno di Jacob (giorno 19). Si scrivono per gradi (prima introduzione + 3 A per personaggio) e nel gioco si registra un discorso solo quando è scritto.
+
 ### Telefono: una sola chat da estranei (decisione 18/11/2026, quarta parte)
 
 **Stato: approvato da Jody, applicato al codice.** Da estranei (sotto A) esiste **una sola chat, quella introduttiva**, di solito legata a come Sara ha avuto il numero. **Finirla porta l'Interest almeno alla soglia A** (conoscenti); chi è già sopra A per le scene prende il normale +1/+2. Se Sara **frena** la chat introduttiva, niente salto: resta estranea finché non succede qualcosa dal vivo. Serve a non bloccare i percorsi che vivono soprattutto di chat (Darius, Barbara, Magnus).
