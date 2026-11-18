@@ -8,6 +8,7 @@ Stato: **base giocabile dell'Episodio 1, senza grafica** (versione 0.1.0-dev).
 
 - [Bibbia narrativa](docs/bibbia-narrativa.md) e [schede personaggio](docs/personaggi/)
 - [Sistema di gioco](docs/sistema-di-gioco.md): statistiche, Diario, funzioni, scaletta dell'Episodio 1
+- [Telefono e percorsi dinamici](docs/telefono-e-percorsi-dinamici.md): rubrica, chat a slot giornaliero, salti di step, appuntamenti, dialoghi condizionali (specifica approvata, codice da implementare)
 - [Regole di lavoro](docs/regole-di-lavoro.md) e [registro delle decisioni](docs/decisioni.md)
 - [Grafo del gioco](docs/grafo.md)
 - [Guida alle scene NSFW con LM Studio](docs/guida-lm-studio.md)
