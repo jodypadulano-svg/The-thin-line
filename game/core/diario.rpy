@@ -10,28 +10,28 @@ default diario_pagina = "sara"
 
 init python:
     def descrizione_josh(v):
-        if v >= 80: return "Innamoratissima."
-        if v >= 60: return "Innamorata, ma qualcosa la turba."
-        if v >= SOGLIA_GENTILE_CON_JOSH: return "Si sente lontana da lui."
-        return "Non riesce più a essere dolce con lui."
+        if v >= 80: return "Head over heels."
+        if v >= 60: return "In love, but something is bothering her."
+        if v >= SOGLIA_GENTILE_CON_JOSH: return "She feels distant from him."
+        return "She can't be sweet with him anymore."
 
     def descrizione_corruption(v):
-        if v >= 75: return "Non riconosce più la donna che era."
-        if v >= 45: return "Ha superato confini che giurava di non toccare."
-        if v >= 15: return "Si concede cose che prima non si concedeva."
-        if v > 0: return "Qualche piccola crepa."
-        return "Fedele a se stessa e a lui."
+        if v >= 75: return "She no longer recognises the woman she was."
+        if v >= 45: return "She has crossed lines she swore she'd never touch."
+        if v >= 15: return "She allows herself things she never used to."
+        if v > 0: return "A few small cracks."
+        return "True to herself and to him."
 
     def descrizione_suspicion(v):
-        if v >= 60: return "Ha capito che qualcosa non va."
-        if v >= 30: return "Fa domande. Troppe."
-        if v > 0: return "Ogni tanto la guarda in modo strano."
-        return "Si fida ciecamente."
+        if v >= 60: return "He knows something is wrong."
+        if v >= 30: return "He asks questions. Too many."
+        if v > 0: return "Sometimes he looks at her strangely."
+        return "He trusts her blindly."
 
     def descrizione_confidence(v):
-        if v >= 70: return "Sa quanto vale e non ha paura di mostrarlo."
-        if v >= 40: return "Comincia a credere in se stessa."
-        return "Una sognatrice che non crede abbastanza in sé."
+        if v >= 70: return "She knows her worth and isn't afraid to show it."
+        if v >= 40: return "She's starting to believe in herself."
+        return "A dreamer who doesn't believe in herself enough."
 
     def testo_tappa(p):
         lista = TAPPE.get(p.chiave, [])
@@ -42,7 +42,7 @@ init python:
 screen diario():
     tag menu
 
-    use game_menu(_("Diario"), scroll="viewport"):
+    use game_menu(_("Diary"), scroll="viewport"):
 
         style_prefix "diario"
 
@@ -54,9 +54,9 @@ screen diario():
                 spacing 18
                 box_wrap True
                 textbutton "Sara" action SetVariable("diario_pagina", "sara")
-                for chiave, p in sorted(percorsi.items(), key=lambda kv: kv[1].nome):
+                for chiave, p in sorted(percorsi.items(), key=lambda kv: nome_percorso(kv[1])):
                     if p.incontrato:
-                        textbutton p.nome action SetVariable("diario_pagina", chiave)
+                        textbutton nome_percorso(p) action SetVariable("diario_pagina", chiave)
 
             if diario_pagina == "sara":
                 use diario_sara
@@ -70,24 +70,24 @@ screen diario_sara():
         use riga_variabile("Interest [nome_compagno]", interest_josh, "josh", descrizione_josh(interest_josh))
         use riga_variabile("Corruption", sara_corruption, "corruption", descrizione_corruption(sara_corruption))
         use riga_variabile("Confidence", sara_confidence, "confidence", descrizione_confidence(sara_confidence))
-        use riga_variabile("Suspicion di [nome_compagno]", josh_suspicion, "suspicion", descrizione_suspicion(josh_suspicion))
+        use riga_variabile("[nome_compagno]'s Suspicion", josh_suspicion, "suspicion", descrizione_suspicion(josh_suspicion))
 
         null height 10
-        label "Cosa nasconde a [nome_compagno]"
+        label "What she hides from [nome_compagno]"
         if segreti:
             for chiave, descrizione in segreti.items():
                 text "• " + descrizione
         else:
-            text "Niente. Per ora." color "#ffffff88"
+            text "Nothing. For now." color "#ffffff88"
 
         if segreti_trovati:
             null height 10
-            label "Segreti trovati"
+            label "Secrets found"
             for s in segreti_trovati:
                 text "• " + s
 
         null height 10
-        label "Guardaroba"
+        label "Wardrobe"
         for a in abiti_sbloccati():
             text "• " + a.nome + " — " + a.descrizione
 
@@ -105,10 +105,10 @@ screen riga_variabile(nome, valore, chiave_colore, descrizione):
 screen diario_personaggio(p):
     vbox:
         spacing 14
-        label p.nome
-        text p.ruolo color "#ffffff99"
+        label nome_percorso(p)
+        text ruolo_percorso(p) color "#ffffff99"
         if p.chiuso:
-            text "Sara ha chiuso questa porta." color "#c8385a"
+            text "Sara closed this door." color "#c8385a"
         else:
             text testo_tappa(p)
         if persistent.numeri_visibili:
@@ -119,25 +119,25 @@ screen diario_personaggio(p):
                 text "[p.interest]/100" color "#ffffff88"
             if p.soglia:
                 if sara_corruption >= p.soglia:
-                    text "Corruption sufficiente per andare oltre ([p.soglia])." color COLORI["corruption"]
+                    text "Enough Corruption to go further ([p.soglia])." color COLORI["corruption"]
                 else:
-                    text "Per andare oltre serve Corruption [p.soglia]." color "#ffffff88"
+                    text "To go further she needs Corruption [p.soglia]." color "#ffffff88"
 
         null height 10
-        label "Cosa sa Sara"
+        label "What Sara knows"
         if p.sa_sara:
             for riga in p.sa_sara:
                 text "• " + riga
         else:
-            text "Non ci ha ancora pensato." color "#ffffff88"
+            text "She hasn't thought about it yet." color "#ffffff88"
 
         null height 10
-        label "Cosa sai tu"
+        label "What you know"
         if p.sai_tu:
             for riga in p.sai_tu:
                 text "• " + riga color "#ff9fb0"
         else:
-            text "Niente che Sara non sappia." color "#ffffff88"
+            text "Nothing Sara doesn't know." color "#ffffff88"
 
 style diario_label_text:
     color "#c8385a"

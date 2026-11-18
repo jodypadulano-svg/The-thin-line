@@ -13,23 +13,23 @@ label ep1_inizio:
     call ep1_d2
     call ep1_d3
 
-    call nuovo_giorno(4, "Una mattina di corsa")
+    call nuovo_giorno(4, "Thursday")
     call howard_1_pianerottolo
     call daniel_2_patente
 
-    call nuovo_giorno(5, "Sabato")
+    call nuovo_giorno(5, "Friday")
     call howard_2_spesa
     call simon_s3_locale
 
-    call nuovo_giorno(6, "Da sola")
+    call nuovo_giorno(6, "Saturday")
     call simon_s4_chiara_cancella
     if fatto("ep1_palestra_da_sola"):
         call simon_s5_allenamento
 
-    call nuovo_giorno(7, "Chiusa fuori")
+    call nuovo_giorno(7, "Sunday")
     call howard_3_chiusa_fuori
 
-    call nuovo_giorno(8, "La festa")
+    call nuovo_giorno(8, "Monday")
     call daniel_3_festa
     call ep1_finale
 

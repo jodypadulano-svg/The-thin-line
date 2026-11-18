@@ -67,10 +67,10 @@ init -10 python:
 
     # Testi delle tappe mostrati nel Diario.
     TAPPE = {
-        "simon":  ["Ancora uno sconosciuto.", "Il personal trainer della palestra.", "Un istruttore gentile che si ricorda di lei."],
-        "daniel": ["Ancora uno sconosciuto.", "Il capo arrogante del compagno.", "Forse non è solo arroganza."],
-        "howard": ["Ancora uno sconosciuto.", "Il vicino un po' strano.", "Un uomo solo che le fa tenerezza."],
-        "editore": ["Ancora uno sconosciuto.", "Un editore che ha ascoltato il suo sogno."],
+        "simon":  ["Still a stranger.", "The personal trainer at the gym.", "A kind trainer who remembers her name."],
+        "daniel": ["Still a stranger.", "Her partner's arrogant boss.", "Maybe it's not just arrogance."],
+        "howard": ["Still a stranger.", "The slightly odd neighbour.", "A lonely man she feels sorry for."],
+        "editore": ["Still a stranger.", "A publisher who listened to her dream."],
     }
 
     NOMI_VARIABILI = {
@@ -90,10 +90,29 @@ init -10 python:
     def percorso(chiave):
         return store.percorsi[chiave]
 
+    ## Nomi e ruoli mostrati a schermo, per chiave: così anche i salvataggi
+    ## fatti prima della traduzione mostrano l'inglese.
+    NOMI_PERCORSI = {
+        "daniel": "Daniel", "simon": "Simon", "howard": "Howard", "editore": "Magnus",
+        "amica": "Joanie", "ex": "Jacob", "amico": "Darius", "capa": "Barbara",
+    }
+    RUOLI_PERCORSI = {
+        "daniel": "Your partner's boss", "simon": "The personal trainer",
+        "howard": "The neighbour", "editore": "The publisher",
+        "amica": "Your best friend", "ex": "Your ex-boyfriend",
+        "amico": "Your partner's best friend", "capa": "The newspaper's owner",
+    }
+
+    def nome_percorso(p):
+        return NOMI_PERCORSI.get(p.chiave, p.nome)
+
+    def ruolo_percorso(p):
+        return RUOLI_PERCORSI.get(p.chiave, p.ruolo)
+
     def nome_interest(chiave):
         if chiave == "josh":
             return store.nome_compagno
-        return percorso(chiave).nome
+        return nome_percorso(percorso(chiave))
 
     ## --- Interest -----------------------------------------------------------
 
@@ -188,7 +207,7 @@ init -10 python:
         """Segreto dei dev trovato dal giocatore: notifica e riga nel Diario."""
         if descrizione not in store.segreti_trovati:
             store.segreti_trovati.append(descrizione)
-            _annuncia_testo("Hai trovato un segreto!")
+            _annuncia_testo("You found a secret!")
 
     ## --- Percorsi, Diario, segreti, fatti ---------------------------------------
 
@@ -197,7 +216,7 @@ init -10 python:
         p = percorso(chiave)
         if not p.incontrato:
             p.incontrato = True
-            _annuncia_testo("Diario: nuova pagina — {}".format(p.nome))
+            _annuncia_testo("Diary: new page — {}".format(nome_percorso(p)))
 
     def tappa(chiave, nuova):
         """Porta un percorso alla tappa indicata (mai indietro)."""
@@ -209,7 +228,7 @@ init -10 python:
         p = percorso(chiave)
         if not p.chiuso:
             p.chiuso = True
-            _annuncia_testo("Sara ha chiuso la porta a {}.".format(p.nome))
+            _annuncia_testo("Sara closed the door on {}.".format(nome_percorso(p)))
 
     def nota_sara(chiave, testo):
         """Ciò che Sara pensa o crede: pagina 'Cosa sa Sara' del Diario."""
@@ -222,13 +241,13 @@ init -10 python:
         p = percorso(chiave)
         if testo not in p.sai_tu:
             p.sai_tu.append(testo)
-            _annuncia_testo("Diario: retroscena su {}".format(p.nome))
+            _annuncia_testo("Diary: behind the scenes — {}".format(nome_percorso(p)))
 
     def segreto(chiave, descrizione, sospetto=3):
         """Qualcosa che Sara tiene nascosto a Josh. Nasconderlo alza la Suspicion."""
         if chiave not in store.segreti:
             store.segreti[chiave] = descrizione
-            _annuncia_testo("Sara ha un segreto.")
+            _annuncia_testo("Sara has a secret.")
             suspicion(sospetto)
 
     def segna(chiave, valore=True):
@@ -255,16 +274,16 @@ default interest_josh = 80    # parte da una coppia felice
 
 ## Percorsi. I quattro senza scheda esistono già per non rompere i salvataggi.
 default percorsi = {
-    "daniel":  Percorso("daniel", "Daniel", "Il capo del compagno"),
-    "simon":   Percorso("simon", "Simon", "Il personal trainer"),
-    "howard":  Percorso("howard", "Howard", "Il vicino di casa"),
-    "editore": Percorso("editore", "Magnus", "L'editore"),
+    "daniel":  Percorso("daniel", "Daniel", "Your partner's boss"),
+    "simon":   Percorso("simon", "Simon", "The personal trainer"),
+    "howard":  Percorso("howard", "Howard", "The neighbour"),
+    "editore": Percorso("editore", "Magnus", "The publisher"),
     ## Joanie: percorso 5, il lato sentimentale emerge molto più avanti.
     ## Non chiamare incontra("amica") finché il percorso non si apre.
-    "amica":   Percorso("amica", "Joanie", "La migliore amica"),
-    "ex":      Percorso("ex", "L'ex", "L'ex fidanzato"),
-    "amico":   Percorso("amico", "L'amico", "Il migliore amico del compagno"),
-    "capa":    Percorso("capa", "Barbara", "La proprietaria del giornale"),
+    "amica":   Percorso("amica", "Joanie", "Your best friend"),
+    "ex":      Percorso("ex", "Jacob", "Your ex-boyfriend"),
+    "amico":   Percorso("amico", "Darius", "Your partner's best friend"),
+    "capa":    Percorso("capa", "Barbara", "The newspaper's owner"),
 }
 
 ## Segreti di Sara: chiave -> descrizione.

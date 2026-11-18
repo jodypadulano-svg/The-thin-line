@@ -32,10 +32,10 @@ init -5 python:
     ## Abiti iniziali, sobri come prevede la bibbia. Gli altri li propone Claude
     ## scrivendo le scene, e li approva Jody.
     ABITI = [
-        Abito("casa_base", "casa", "Comoda", "un maglione morbido e dei pantaloni della tuta"),
-        Abito("palestra_base", "palestra", "Prima volta", "una maglietta larga e dei leggings neri"),
-        Abito("ufficio_base", "ufficio", "Da ufficio", "una camicetta bianca e pantaloni grigi"),
-        Abito("sera_base", "sera", "Elegante sobrio", "un vestito nero semplice, al ginocchio"),
+        Abito("casa_base", "casa", "Comfy", "a soft sweater and sweatpants"),
+        Abito("palestra_base", "palestra", "First time", "a baggy t-shirt and black leggings"),
+        Abito("ufficio_base", "ufficio", "Office", "a white blouse and grey trousers"),
+        Abito("sera_base", "sera", "Simply elegant", "a simple black knee-length dress"),
     ]
 
     def abito(occasione):
@@ -45,7 +45,7 @@ init -5 python:
         if a.id not in store.abiti_visti:
             store.abiti_visti.add(a.id)
             if not a.id.endswith("_base"):
-                _annuncia_testo("Nuovo abito: " + a.nome)
+                _annuncia_testo("New outfit: " + a.nome)
         return a
 
     def abiti_sbloccati():
