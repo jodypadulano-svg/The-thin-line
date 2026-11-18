@@ -24,6 +24,8 @@ Se il giocatore non sceglie di aprire la strada a Darius, la loro relazione rest
 
 Soglie numeriche, condizioni di blocco e interazioni con gli altri percorsi sono **da progettare**, non ancora approvate.
 
+**Prima apparizione anticipata — approvata il 18/11/2026:** Darius appare brevemente domenica, giorno 7, passando a trovare Sara e Josh a casa. È un amico di vecchia data già conosciuto da entrambi, non si presenta come uno sconosciuto. La scena serve a inserirlo nel quotidiano della coppia; nessun flirt, nessuna apertura automatica del percorso e nessuna modifica alle statistiche prevista. La serata con amici del giorno 17 resta l'occasione successiva più articolata, con Josh e Darius soli e il flashback di Jacob. Dialoghi e codice da scrivere.
+
 ## 3. Prima scintilla: serata fra amici
 
 1. Durante una **normale serata tra amici** Josh si allontana per un po'. Sara e Darius rimangono da soli: la circostanza è ordinaria e non è stata costruita come un appuntamento clandestino.
