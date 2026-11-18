@@ -77,7 +77,7 @@ label ep1_d4_redazione:
             je "Before? Oh, Sara. Before I was so tired all the time."
             je "This is me. This is the real me. Barbara helped me find her."
 
-    $ zoom_cg("Close-up of the little gold heart pendant at Jessica's throat", "images/cg/ep1/d4_03_jessica_vestito.webp", (820, 300, 480, 270))
+    $ zoom_cg("Close-up of the little gold heart pendant at Jessica's throat", "images/cg/ep1/d4_03_jessica_vestito.webp", (943, 113, 400, 225))
     s "That's a pretty necklace. Roberta has the same one."
     je "Oh, this?"
     n "Jessica touches the little heart with two fingers, the way some people touch a cross."
@@ -200,12 +200,16 @@ label ep1_d4_aperitivo:
             ba "Something you've never tried. That's all you need to know, darling."
             n "It's sweet, then bitter, then sweet again. Sara can't decide if she likes it. She takes a second sip to find out."
         "Decline with a smile.":
-            s "That's very kind. I'll stick to my wine, if you don't mind."
+            s "That's very kind. Just water for me, if you don't mind."
             n "For a moment Barbara's smile doesn't move at all. Then it widens."
             ba "A woman who knows what she wants. How rare. How annoying."
             n "She hands the pink glass to Jessica without looking. Jessica takes it as if it were a prize."
 
-    $ cg("Close-up of Sara at the bar table, glass in hand, cheeks a little flushed, caught between laughter and caution", "images/cg/ep1/d4_09_sara_bar.webp")
+    ## Col drink rosa se l'ha accettato, con un bicchiere d'acqua se l'ha rifiutato.
+    if fatto("ep1_d4_drink_barbara"):
+        $ cg("Close-up of Sara at the bar table, the pink cocktail in hand, cheeks a little flushed, caught between laughter and caution", "images/cg/ep1/d4_09_sara_bar.webp")
+    else:
+        $ cg("Close-up of Sara at the bar table, a glass of water in hand, cheeks a little flushed, caught between laughter and caution", "images/cg/ep1/d4_09_sara_bar_acqua.webp")
     n "The evening goes on. Barbara tells a story about a minister and a hotel bathtub that may or may not be true. The girls laugh at exactly the right moments."
     n "Sara notices that they all look at Barbara before they laugh. Just for a second. As if they were checking."
 

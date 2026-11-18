@@ -8,7 +8,7 @@ Bozza di lavoro | 18 novembre 2026 · Testo del giorno 4 in `game/episodio1/ep1_
 **Redazione tutta femminile:** sullo sfondo solo *female colleagues*.
 
 **Abiti del giorno 4**
-- **Sara al lavoro e all'aperitivo:** *a pale blue blouse buttoned to the collarbone, a grey pencil skirt, low heels*.
+- **Sara al lavoro e all'aperitivo:** *a white blouse buttoned to the collarbone, dark slim trousers, low heels*.
 - **Sara a casa la sera (serata libera):** *an oversized cream knit sweater, hair in a loose bun*.
 - **Jessica:** *a new fitted red dress, knee length, red lipstick, high heels* (il contrasto col suo vecchio stile da cardigan è il punto della scena).
 - **Il seme dei finali: il ciondolo.** Jessica e Roberta portano **lo stesso ciondolo**: *a thin gold chain with a small gold heart pendant*. Deve vedersi bene in A2 e A3: servirà nel finale di Barbara.
@@ -24,18 +24,18 @@ Totale: **13 immagini nuove + 1 variante** (`d4_09b`). Luogo nuovo: **il bar del
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| A1 | `d4_01_barbara_passa` | Barbara passa davanti alla scrivania senza guardarla, Sara mezza alzata con il foglio | redazione (giorno 1), `@barbara_wc` | inizio giornata |
-| A2 | `d4_02_roberta_cappuccino` | Roberta posa il cappuccino alla cannella, il ciondolo che dondola | A1, `d1_05_roberta_cappuccino` (giorno 1) | «Don't take it personally» |
-| A3 | `d4_03_jessica_vestito` | Jessica fa una giravolta col vestito rosso nuovo, ciondolo al collo | A1, `@jessica_wc` | il vestito, la scelta, lo zoom sul ciondolo |
-| A4 | `d4_04_sara_scrivania` | Primo piano di Sara alla scrivania che guarda in su, sorriso educato e un dubbio | A1 | controcampo di A3 |
+| A1 ✅ | `d4_01_barbara_passa` | Barbara passa davanti alla scrivania senza guardarla, Sara mezza alzata con il foglio | redazione (giorno 1), `@barbara_wc` | inizio giornata |
+| A2 ✅ | `d4_02_roberta_cappuccino` | Roberta posa il cappuccino alla cannella, il ciondolo che dondola | A1, `d1_05_roberta_cappuccino` (giorno 1) | «Don't take it personally» |
+| A3 ✅ | `d4_03_jessica_vestito` | Jessica fa una giravolta col vestito rosso nuovo, ciondolo al collo | A1, `@jessica_wc` | il vestito, la scelta, lo zoom sul ciondolo |
+| A4 ✅ | `d4_04_sara_scrivania` | Primo piano di Sara alla scrivania che guarda in su, sorriso educato e un dubbio | A1 | controcampo di A3 |
 
 **A1**
 ```
-The newsroom from the reference image, morning light through tall windows: @barbara_wc sweeps along the aisle between the desks in a leopard-print jacket, red hair, chin up, eyes straight ahead, ignoring everyone; at her desk in the foreground @sara_wc in a pale blue blouse buttoned to the collarbone half-rises from her chair holding a printed draft, hopeful and then deflated, watching Barbara walk past without a glance. Female colleagues in the background. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The newsroom from the reference image, morning light through tall windows: @barbara_wc sweeps along the aisle between the desks in a leopard-print jacket, red hair, chin up, eyes straight ahead, ignoring everyone; at her desk in the foreground @sara_wc in a white blouse buttoned to the collarbone half-rises from her chair holding a printed draft, hopeful and then deflated, watching Barbara walk past without a glance. Female colleagues in the background. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **A2**
 ```
-The newsroom from the reference image: @roberta_wc, dark blonde low ponytail, thin glasses, pastel pink cardigan over a white round-collar blouse, leans over Sara's desk with a wide, patient smile and sets down a cappuccino with a dusting of cinnamon next to the keyboard; a thin gold chain with a small gold heart pendant swings forward from her throat, catching the light. @sara_wc at the desk, pale blue blouse, looks up surprised. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The newsroom from the reference image: @roberta_wc, dark blonde low ponytail, thin glasses, pastel pink cardigan over a white round-collar blouse, leans over Sara's desk with a wide, patient smile and sets down a cappuccino with a dusting of cinnamon next to the keyboard; a thin gold chain with a small gold heart pendant swings forward from her throat, catching the light. @sara_wc at the desk, white blouse, looks up surprised. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **A3**
 ```
@@ -43,7 +43,7 @@ The newsroom from the reference image: @jessica_wc twirls beside Sara's desk in 
 ```
 **A4**
 ```
-Close-up of @sara_wc at her newsroom desk from the reference image, pale blue blouse buttoned to the collarbone, looking up at someone standing beside her (off-frame), a polite smile on her lips and a flicker of doubt in her eyes; a cappuccino with cinnamon on the desk. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Close-up of @sara_wc at her newsroom desk from the reference image, white blouse buttoned to the collarbone, looking up at someone standing beside her (off-frame), a polite smile on her lips and a flicker of doubt in her eyes; a cappuccino with cinnamon on the desk. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 ---
@@ -54,11 +54,11 @@ La chat si vede nel telefono del gioco (bolle a destra): basta una sola immagine
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| B1 | `d4_05_pausa_telefono` | Sara sola alla scrivania a pranzo, panino mezzo mangiato, sorride al telefono | A1, `04_messaggi_josh` (giorno 2) | la chat con Josh |
+| B1 ✅ | `d4_05_pausa_telefono` | Sara sola alla scrivania a pranzo, panino mezzo mangiato, sorride al telefono | A1, `04_messaggi_josh` (giorno 2) | la chat con Josh |
 
 **B1**
 ```
-The newsroom from the reference image at lunchtime, almost empty, soft midday light: @sara_wc alone at her desk in a pale blue blouse, a half-eaten sandwich on a paper napkin beside the keyboard, chin in her hand, smiling tenderly at her phone screen (screen not visible). Empty chairs around her. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The newsroom from the reference image at lunchtime, almost empty, soft midday light: @sara_wc alone at her desk in a white blouse, a half-eaten sandwich on a paper napkin beside the keyboard, chin in her hand, smiling tenderly at her phone screen (screen not visible). Empty chairs around her. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 ---
@@ -67,17 +67,18 @@ The newsroom from the reference image at lunchtime, almost empty, soft midday li
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| C1 | `d4_06_bar_colleghe` | Il tavolo d'angolo del bar, le colleghe coi cocktail, Sara un po' rigida | `bar_aperitivo`, `@jessica_wc`, `@roberta_wc` | arrivo; ritorno alla fine |
-| C2 | `d4_07_barbara_arriva` | Barbara entra nel bar, cappotto leopardato, tutte si girano | `bar_aperitivo`, `@barbara_wc` | l'ingresso |
-| C3 | `d4_08_barbara_drink` | Barbara china su Sara, le porge un cocktail rosa, la mano sulla spalla | C1, C2 | il drink, la scelta |
-| C4 | `d4_09_sara_bar` | Primo piano di Sara al tavolo, bicchiere in mano, guance un po' rosse, fra risata e prudenza | C1 | controcampo, la seconda scelta |
-| C4b | `d4_09b_sara_ride` | **Variante di C4**: Sara ride di gusto con la testa all'indietro (solo «lasciarsi andare») | C4 | «There she is» |
-| C5 | `d4_10_fumo_vetrina` | Attraverso la vetrina: Jessica e Roberta fumano fuori, labbra arricciate, fumo identico | `bar_aperitivo`, `20_fumo_jessica` (giorno 2) | il fumo |
-| C6 | `d4_11_barbara_sguardo` | Retroscena: Barbara al tavolo guarda Sara; fuori Jessica guarda Barbara e annuisce | C1, C5 | «Not yet» |
+| C1 ✅ | `d4_06_bar_colleghe` | Il tavolo d'angolo del bar, le colleghe coi cocktail, Sara un po' rigida | `bar_aperitivo`, `@jessica_wc`, `@roberta_wc` | arrivo; ritorno alla fine |
+| C2 ✅ | `d4_07_barbara_arriva` | Barbara entra nel bar, cappotto leopardato, tutte si girano | `bar_aperitivo`, `@barbara_wc` | l'ingresso |
+| C3 ✅ | `d4_08_barbara_drink` | Barbara china su Sara, le porge un cocktail rosa, la mano sulla spalla | C1, C2 | il drink, la scelta |
+| C4 ✅ | `d4_09_sara_bar` | Primo piano di Sara al tavolo, bicchiere in mano, guance un po' rosse, fra risata e prudenza | C1 | controcampo, la seconda scelta |
+| C4v ✅ | `d4_09_sara_bar_acqua` | **Variante di C4** con un bicchiere d'acqua (solo se ha rifiutato il drink di Barbara) | C4 | controcampo, ramo del rifiuto |
+| C4b ✅ | `d4_09b_sara_ride` | **Variante di C4**: Sara ride di gusto con la testa all'indietro (solo «lasciarsi andare») | C4 | «There she is» |
+| C5 ✅ | `d4_10_fumo_vetrina` | Attraverso la vetrina: Jessica e Roberta fumano fuori, labbra arricciate, fumo identico | `bar_aperitivo`, `20_fumo_jessica` (giorno 2) | il fumo |
+| C6 ✅ | `d4_11_barbara_sguardo` | Retroscena: Barbara al tavolo guarda Sara; fuori Jessica guarda Barbara e annuisce | C1, C5 | «Not yet» |
 
 **C1**
 ```
-The cocktail bar from the reference image at golden hour: a low corner table crowded with colourful cocktails in different glasses; around it the young women from the newsroom laughing and talking, @jessica_wc in a fitted red dress and @roberta_wc in a pastel pink cardigan, both wearing a small gold heart pendant; @sara_wc among them in a pale blue blouse, holding a glass of white wine, smiling a little stiffly, slightly apart from the group. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The cocktail bar from the reference image at golden hour: in the corner by the large window, two or three small round tables pushed together, crowded with colourful cocktails in different glasses; around it the young women from the newsroom laughing and talking, @jessica_wc in a fitted red dress and @roberta_wc in a pastel pink cardigan, both wearing a small gold heart pendant; @sara_wc among them in a white blouse, holding a glass of white wine, smiling a little stiffly, slightly apart from the group. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **C2**
 ```
@@ -85,15 +86,19 @@ The cocktail bar from the reference image, evening: @barbara_wc makes an entranc
 ```
 **C3**
 ```
-Two-shot at the low table of the cocktail bar from the reference image: @barbara_wc, leopard coat open, leans over @sara_wc and holds out a pink cocktail in a wide coupe glass, her red-nailed hand resting lightly on Sara's shoulder, smiling with sharp amusement; Sara, pale blue blouse, looks up at her, surprised, not sure whether to take the glass. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Two-shot at the low table of the cocktail bar from the reference image: @barbara_wc, leopard coat open, leans over @sara_wc and holds out a pink cocktail in a wide coupe glass, her red-nailed hand resting lightly on Sara's shoulder, smiling with sharp amusement; Sara, white blouse, looks up at her, surprised, not sure whether to take the glass. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **C4**
 ```
-Close-up of @sara_wc at the cocktail bar table from the reference image, pale blue blouse, a glass in her hand, cheeks a little flushed, caught between laughter and caution, eyes glancing sideways at someone off-frame. Warm amber bar light, blurred bottles behind her. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Close-up of @sara_wc at the cocktail bar table from the reference image, white blouse, a glass in her hand, cheeks a little flushed, caught between laughter and caution, eyes glancing sideways at someone off-frame. Warm amber bar light, blurred bottles behind her. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **C4b** (modifica di C4)
 ```
 Same image: @sara_wc now laughing freely with her head tilted back, eyes closed, cheeks flushed, a second glass in her hand, one strand of hair come loose. Everything else unchanged.
+```
+**C4v** (modifica di C4, ramo «rifiuta il drink»: file `d4_09_sara_bar_acqua`; Jody l'ha fatta con l'acqua, meglio del vino)
+```
+Same image, change nothing except the glass in Sara's hand: replace the pink cocktail with a plain glass of water, held the same way. Keep everything else identical. Same art style.
 ```
 **C5**
 ```
@@ -110,8 +115,8 @@ Inside the cocktail bar from the reference image: @barbara_wc sits alone at the 
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| D1 | `d4_12_sara_scrive` | Notte, cucina: Sara sola col portatile, tè freddo, scrive concentrata | `casa_soggiorno_sera` | scelta «Write» (il capitolo tre) |
-| D2 | `d4_13_divano_josh` | Notte, divano: Josh addormentato sulla spalla di Sara, cartone della pizza, luce della TV | `casa_soggiorno_sera`, `@josh_wc` | scelta «An evening with Josh» |
+| D1 ✅ | `d4_12_sara_scrive` | Notte, cucina: Sara sola col portatile, tè freddo, scrive concentrata | `casa_soggiorno_sera` | scelta «Write» (il capitolo tre) |
+| D2 ✅ | `d4_13_divano_josh` | Notte, divano: Josh addormentato sulla spalla di Sara, cartone della pizza, luce della TV | `casa_soggiorno_sera`, `@josh_wc` | scelta «An evening with Josh» |
 
 **D1**
 ```

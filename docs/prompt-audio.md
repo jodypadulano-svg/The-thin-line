@@ -25,7 +25,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `palestra` | Palestra (giorno 2) | ✅ |
 | `ristorante` | Ristorante elegante, cena aziendale (giorno 3) | ✅ |
 | `daniel` | Tema di Daniel: punzecchiature e brindisi (giorno 3) | ✅ |
-| `aperitivo` | Cocktail bar, aperitivo con le colleghe (giorno 4) | da fare |
+| `aperitivo` | Cocktail bar, aperitivo con le colleghe (giorno 4) | ✅ |
 
 **tema_principale**
 ```
