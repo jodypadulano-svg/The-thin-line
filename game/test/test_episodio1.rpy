@@ -133,3 +133,16 @@ testsuite foto_zoom:
         screenshot "zoom_meta.png"
         pause 3.0
         screenshot "zoom_fine.png"
+
+testsuite foto_ui:
+    enabled False
+    testcase ui:
+        run Jump("ep1_d3_cena")
+        pause 2.0
+        screenshot "ui_testo.png"
+        run ShowMenu("preferences")
+        pause 1.5
+        screenshot "ui_opzioni.png"
+        run ShowMenu("diario")
+        pause 1.5
+        screenshot "ui_diario.png"

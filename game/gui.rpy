@@ -28,18 +28,18 @@ define config.check_conflicting_properties = True
 
 ## Un colore di risalto usato nell'interfaccia per le etichette e il testo in
 ## evidenza.
-define gui.accent_color = '#c8385a'
+define gui.accent_color = '#f4c2b0'
 
 ## Il colore usato per il testo di un pulsante quando non è nè selezionato nè
 ## sotto il puntatore.
-define gui.idle_color = '#888888'
+define gui.idle_color = '#c9a3a0'
 
 ## Il colore small è usato per testo piccolo, che richiede di essere più chiaro
 ## o più scuro per ottenere lo stesso effetto.
-define gui.idle_small_color = '#aaaaaa'
+define gui.idle_small_color = '#d8bcb8'
 
 ## Il colore usato per pulsanti e barre che si trovano sotto il puntatore.
-define gui.hover_color = '#de879c'
+define gui.hover_color = '#ff9fb5'
 
 ## Il colore usato per il testo di un pulsante che è selezionato ma non
 ## evidenziato. Un pulsante è selezionato se indica l'attuale schermata o valore
@@ -47,7 +47,7 @@ define gui.hover_color = '#de879c'
 define gui.selected_color = '#ffffff'
 
 ## Il colore del testo per un pulsante che non può venire selezionato.
-define gui.insensitive_color = '#8888887f'
+define gui.insensitive_color = '#c9a3a07f'
 
 ## Colori usati per le frazioni di barre che non sono riempite. Non vengono
 ## usati direttamente, ma lo sono quando si ri-generano i file immagine della

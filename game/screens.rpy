@@ -318,13 +318,19 @@ style quick_button_text:
 ## Questa schermata è inclusa nei menu principale e di gioco, e consente di
 ## navigare verso altri menu o di iniziare il gioco.
 
-screen navigation():
+screen navigation(principale=False):
 
     vbox:
-        style_prefix "navigation"
-
-        xpos gui.navigation_xpos
-        yalign 0.5
+        ## Nel menu iniziale i pulsanti stanno a destra, nella nebbia
+        ## dell'immagine (gui/main_menu.png); nei menu di gioco a sinistra.
+        if principale:
+            style_prefix "mm_navigation"
+            xalign 0.95
+            yalign 0.93
+        else:
+            style_prefix "navigation"
+            xpos gui.navigation_xpos
+            yalign 0.5
 
         spacing gui.navigation_spacing
 
@@ -389,14 +395,12 @@ screen main_menu():
 
     add gui.main_menu_background
 
-    ## Questo frame vuoto oscura il main menu.
-    frame:
-        style "main_menu_frame"
+    ## (La fascia scura a sinistra è tolta: i pulsanti stanno nella nebbia a destra.)
 
     ## Il comando 'use' include un'altra schermata all'interno della corrente.
     ## I contenuti effettivi del menu principale sono nella schermata di
     ## navigazione.
-    use navigation
+    use navigation(principale=True)
 
     if gui.show_name:
 
@@ -423,20 +427,40 @@ style main_menu_frame:
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
+    xalign 0.95
     xmaximum 1200
-    yalign 1.0
-    yoffset -30
+    ypos 0.56
+
+## Pulsanti del menu iniziale: scuri sulla nebbia chiara, con un bordo morbido.
+style mm_navigation_vbox is navigation_vbox
+style mm_navigation_button is navigation_button
+style mm_navigation_button_text is navigation_button_text
+style mm_navigation_vbox:
+    spacing 6
+style mm_navigation_button:
+    xalign 1.0
+style mm_navigation_button_text:
+    xalign 1.0
+    size 34
+    idle_color "#3b1830"
+    hover_color "#c8385a"
+    selected_color "#c8385a"
+    insensitive_color "#3b183088"
+    outlines [(2, "#ffffffaa", 0, 0)]
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
 
 style main_menu_title:
     properties gui.text_properties("title")
+    color "#c8385a"
+    xalign 1.0
+    outlines [(3, "#ffffffcc", 0, 0)]
 
 style main_menu_version:
     properties gui.text_properties("version")
+    color "#3b1830aa"
+    xalign 1.0
 
 
 ## Schermata del Menu di Gioco #################################################
@@ -453,10 +477,8 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     style_prefix "game_menu"
 
-    if main_menu:
-        add gui.main_menu_background
-    else:
-        add gui.game_menu_background
+    ## Lo stesso sfondo (acquerello color vino) sia dal menu iniziale sia in gioco.
+    add gui.game_menu_background
 
     frame:
         style "game_menu_outer_frame"

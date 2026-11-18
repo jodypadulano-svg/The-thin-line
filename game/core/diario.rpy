@@ -140,7 +140,7 @@ screen diario_personaggio(p):
             text "Nothing Sara doesn't know." color "#ffffff88"
 
 style diario_label_text:
-    color "#c8385a"
+    color "#ffb3c1"
     size 36
 
 style diario_text:
