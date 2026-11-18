@@ -225,3 +225,33 @@ testsuite debug_salta:
         assert eval preset != "daniel" or (_foto_debug["fatti"].get("ep1_d3_proposta_cinema") and _foto_debug["fatti"].get("ep1_d3_audace") and not _foto_debug["fatti"].get("ep1_aperitivo_accettato"))
         $ _test_scelte("alternata")
         advance until eval _test_esito["fine"] timeout 300.0
+
+
+## Verifica a vista dello scorrimento della chat: con tanti messaggi deve
+## restare sull'ultimo anche quando ne arrivano altri.
+## Lancia con:  ... test foto_chat --enable-all --overwrite-screenshots
+label test_chat_lunga:
+    python:
+        chat_aperta = "simon"
+        chat_log["simon"] = []
+        for _i in range(12):
+            chat_log["simon"].append(("simon", "Message number %d from Simon, long enough to wrap onto two lines." % (_i + 1)))
+            chat_log["simon"].append(("sara", "Reply %d." % (_i + 1)))
+    show screen telefono_chat("simon")
+    "uno"
+    $ msg("simon", "LAST MESSAGE: this one must be visible at the bottom.")
+    hide screen telefono_chat
+    $ chat_aperta = None
+    return
+
+testsuite foto_chat:
+    enabled False
+    testcase scorrimento:
+        run Start("test_chat_lunga")
+        advance until screen "telefono_chat" timeout 20.0
+        pause 1.5
+        screenshot "chat_prima.png"
+        click
+        pause 1.5
+        assert eval tel_scorrimento.range > 0 and tel_scorrimento.value == tel_scorrimento.range
+        screenshot "chat_scorrimento.png"

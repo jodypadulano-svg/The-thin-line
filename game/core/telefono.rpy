@@ -564,6 +564,13 @@ screen telefono():
             textbutton "Put the phone down" xalign 0.5 action Return(None)
 
 ## La chat aperta: bolle di Sara a destra, dell'altro a sinistra.
+## Quando arriva un messaggio e la chat si allunga, scorre da sola all'ultimo
+## (yinitial vale solo all'apertura: lo schermo resta mostrato mentre cresce).
+init python:
+    def _chat_in_fondo(adj):
+        adj.value = adj.range
+    tel_scorrimento = ui.adjustment(ranged=_chat_in_fondo)
+
 screen telefono_chat(k):
     zorder 40
     frame:
@@ -577,6 +584,7 @@ screen telefono_chat(k):
             viewport:
                 ysize 800
                 yinitial 1.0
+                yadjustment tel_scorrimento
                 mousewheel True
                 vbox:
                     spacing 10
