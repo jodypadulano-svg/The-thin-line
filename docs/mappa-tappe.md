@@ -161,6 +161,9 @@ Con Simon, il percorso più veloce.
 
 ## Darius — soglia di Corruption 35
 
+**Cronologia fisica approvata il 19/11/2026 (prevale sulle vecchie date indicative nella tabella):** primo bacio **giorni 70–80**; primo contatto con il seno **giorni 80–85**, in un incontro successivo; prima nudità completa **giorni 85–90**; primo rapporto sessuale **giorni 85–90, nella stessa scena della prima nudità**. Sara prende consapevolmente l'iniziativa; Darius inizialmente resiste per lealtà verso Josh, ma dopo il bacio la relazione accelera. Le finestre sono orientative e subordinate a scelte, soglie e consenso; non anticipare automaticamente le tappe per il solo calendario.
+
+
 Regola della scheda, più forte dello schema comune: il percorso parte **solo** con Corruption alta **e** una scelta consapevole del giocatore di provocare Darius. Altrimenti resta per sempre l'amico leale di Josh.
 
 **Decisioni di Jody:**
