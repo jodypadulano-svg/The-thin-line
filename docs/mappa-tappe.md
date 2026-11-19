@@ -74,6 +74,9 @@ Prima stagione: circa 6 mesi di storia, pubblicata a rate; percorsi espandibili 
 
 ## Howard — soglia di Corruption 75
 
+**Cronologia fisica approvata il 19/11/2026 (prevale sulle vecchie date indicative della tabella):** primo bacio **giorni 130–140**; primo contatto intimo con il seno **giorni 140–145**, in una visita successiva; prima nudità completa **giorni 150–160**, quando Sara usa il bagno di Howard; primo rapporto sessuale **giorni 160–170**, in un incontro successivo. Il percorso rimane lento e costruito sulla familiarità domestica; le date sono finestre orientative subordinate alle soglie e alle scelte del giocatore. La privacy e il consenso di Sara restano condizioni essenziali, anche dove la trama precedente prevedeva situazioni orchestrate da Howard.
+
+
 Il percorso più lento: il finale nasce da un'abitudine, non da una passione. Con soglie così alte cade quasi sicuramente **dopo** la prima stagione.
 
 **Decisioni di Jody:**
