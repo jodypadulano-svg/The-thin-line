@@ -225,6 +225,9 @@ Già amica di Sara dalla prima scena; il lato sentimentale emerge molto più ava
 
 ## Barbara — soglia di Corruption 85
 
+**Cronologia fisica approvata il 19/11/2026 (prevale sulle vecchie date indicative della tabella):** primo bacio **giorni 145–155**, dopo una lunga evoluzione professionale e personale, nell'ufficio di Barbara dopo l'orario di lavoro. **Primo contatto intimo con il seno, prima nudità completa e primo rapporto sessuale avvengono tutti nello stesso incontro del primo bacio (giorni 145–155)**. La progressione è lenta fino al bacio, poi concentrata in una sola serata; mantenere consenso e scelte consapevoli di Sara, nonostante il carattere dominante di Barbara. Finestre orientative, subordinate alle soglie di Interest/Corruption e alle scelte.
+
+
 Il percorso più lento. Tappa 8 a Corruption **100** (lo schema darebbe 105, oltre il massimo): il finale richiede il massimo della trasformazione.
 
 **Decisioni di Jody:**
