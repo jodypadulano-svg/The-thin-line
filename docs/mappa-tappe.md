@@ -103,6 +103,10 @@ Il percorso più lento: il finale nasce da un'abitudine, non da una passione. Co
 
 ## Magnus — soglia di Corruption 65
 
+**Aggiornamento approvato il 19/11/2026:** consultare [decisioni dettagliate di Magnus](personaggi/magnus-aggiornamento-2026-11-19.md), che prevalgono sulla vecchia tabella quando in conflitto. **Nudità artistica e nella cerchia prima del bacio**; primo bacio iniziato da Magnus verso i giorni **115–120**; primo racconto erotico accettato per pubblicazione circa giorni **95–100**; Sara cambia genere per suggerimento di Magnus ma scopre che le piace davvero. La cerchia è accogliente, Sara è membro alla pari; la relazione con Magnus non è esclusiva. Con Josh niente più intimità, segretezza sulla villa, distacco e convivenza formale; stanza personale alla villa. Finale in due scene: Sara torna brevemente a prendere oggetti e tratta Josh con serena indifferenza; montaggio parallelo festa alla villa/Josh solo, che continua a sperare. La prosecuzione oltre il primo libro è rimandata a un'eventuale espansione. **La vecchia scala comune delle tappe richiede una specifica eccezione per Magnus** (nudità prima del bacio, senza saltare scelte e consenso).
+
+
+
 **Decisioni di Jody:**
 - **Genere erotico (16/11):** prima **esibizione** (Magnus la mostra ai suoi ospiti come il pezzo più bello della collezione: il piacere è essere guardata), poi **servizio** quando entra davvero nella cerchia (nudità, servizio e devozione con le altre donne: il piacere è essere scelta). Segue l'ordine della trasformazione: prima ammirata, poi devota.
 
