@@ -25,6 +25,7 @@ label ep1_d5:
 
 label ep1_d5_mattina:
     $ vai("casa", "Home — 8:25 a.m.")
+    $ ambiente(None)
     $ musica("casa")
     $ cg("The hall of the flat: a small cabinet by the front door, a ceramic bowl full of keys, and a driving licence left beside it", "images/cg/ep1/d5_01_patente.webp")
     n "[nome_compagno] left at seven, a slice of toast in his mouth and his tie in his pocket."
@@ -35,6 +36,7 @@ label ep1_d5_mattina:
     c "NO."
     c "You are an angel. A saint. Lunch? My office is ten minutes from yours. I'll buy you the bad coffee from the machine."
     s "Deal. The bad coffee had better be good."
+    $ suono("chiavi_ciotola")
     n "She slips the licence into her bag, takes her keys from the bowl, and opens the door."
     return
 
@@ -43,6 +45,7 @@ label ep1_d5_mattina:
 
 label ep1_d5_howard:
     $ vai("pianerottolo", "The landing — 8:30 a.m.")
+    $ musica("howard")
     $ cg("The landing: Howard in a faded dressing gown at his half-open door, a folded newspaper in his hand, smiling awkwardly at Sara as she locks her door", "images/cg/ep1/d5_02_howard_pianerottolo.webp")
     $ incontra("howard")
     n "The door next to theirs is already open. It usually is, at this hour."
@@ -91,13 +94,15 @@ label ep1_d5_howard:
 
 label ep1_d5_ufficio:
     $ vai("ufficio_compagno", "[nome_compagno]'s office — 1:05 p.m.")
-    $ musica("redazione")
+    $ musica("casa")
+    $ ambiente("ufficio")
     $ cg("An open-plan corporate office with glass walls: Josh at his desk among spreadsheets, jumping up with relief as Sara arrives holding up the driving licence", "images/cg/ep1/d5_05_josh_patente.webp")
     n "[nome_compagno]'s floor smells of carpet and printer toner. Rows of desks, glass walls, a coffee machine that has been broken since spring."
     c "My hero."
     s "Your licence. And you owe me a coffee."
     c "The machine's broken. I owe you a coffee in a place with a machine that works. Tonight, maybe? I'll be..."
     $ cg("Daniel leaning against the frame of a glass door, a paper coffee cup in hand, amused, watching the two of them", "images/cg/ep1/d5_06_daniel_stipite.webp")
+    $ musica("daniel")
     da "He'll be here until seven, I'm afraid. Good afternoon, Sara."
     n "Nobody heard him arrive. He's leaning against the frame of the glass door, a coffee in his hand. A coffee from somewhere else."
     da "Did you come all this way to bring him his licence? That's devotion."
@@ -149,6 +154,7 @@ label ep1_d5_ufficio:
 
 label ep1_d5_sera:
     $ vai("casa", "Home — 7:40 p.m.")
+    $ ambiente(None)
     $ musica("casa")
     $ cg("Josh slumped on the sofa still in his work shirt, tie loosened, eyes closed, a remote in his hand; Sara in the doorway with her phone", "images/cg/ep1/d5_10_josh_stanco.webp")
     n "[nome_compagno] comes home at a quarter past seven and drops onto the sofa as if someone had cut his strings."
@@ -188,7 +194,8 @@ label ep1_d5_joanie:
     s "Go, I'll be quick. Promise. One glass."
     c "Have fun. Say hi to Joanie. I'll be here. Horizontal."
     $ vai("enoteca", "A wine bar — 9:00 p.m.")
-    $ musica("aperitivo")
+    $ ambiente("enoteca")
+    $ musica("enoteca")
     $ cg("A small, crowded wine bar: Sara and Joanie at a tiny table by the wall, two glasses of red, Joanie leaning forward, chin on her hands, eager for gossip", "images/cg/ep1/d5_12_enoteca_joanie.webp")
     ch "So. The famous company dinner. Talk."
     s "There's nothing to talk about. It was a dinner. Risotto. Speeches."
@@ -254,6 +261,7 @@ label ep1_d5_joanie:
     ch "Mm-hm."
 
     $ vai("casa", "Home — 11:20 p.m.")
+    $ ambiente(None)
     $ musica("notte")
     n "When Sara gets home, the television is talking to nobody. [nome_compagno] is asleep on the sofa, a cushion over his face, still in his work shirt."
     n "She covers him with the blanket and turns off the TV."

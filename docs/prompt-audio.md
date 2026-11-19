@@ -26,6 +26,8 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `ristorante` | Ristorante elegante, cena aziendale (giorno 3) | ✅ |
 | `daniel` | Tema di Daniel: punzecchiature e brindisi (giorno 3) | ✅ |
 | `aperitivo` | Cocktail bar, aperitivo con le colleghe (giorno 4) | ✅ |
+| `howard` | Tema di Howard: il pianerottolo (giorni 5, 6, 9) | ✅ |
+| `enoteca` | Wine bar con Joanie (giorno 5) | ✅ |
 
 **tema_principale**
 ```
@@ -77,6 +79,16 @@ Instrumental theme for a charming, arrogant, seductive powerful man: smooth slow
 Instrumental lounge music for a cosy, slightly glamorous cocktail bar at golden hour: warm Rhodes electric piano, soft bossa-nova guitar, light brushed percussion, a sensual muted trumpet now and then. Relaxed, chic, a little seductive, with an undercurrent of intrigue. Tempo around 90 BPM. No vocals. Background music for dialogue, quiet and unobtrusive. Seamless loop.
 ```
 
+**howard**
+```
+Instrumental theme for an awkward, lonely, slightly off neighbour: a slow, gentle waltz on an old upright piano that is a little out of tune, a soft clarinet carrying a sweet, innocent melody, and underneath a faint music-box figure with one note that keeps landing in the wrong place. Tender, clumsy, a little sad, quietly unsettling. Tempo around 80 BPM. No vocals. Background music for dialogue. Seamless loop.
+```
+
+**enoteca**
+```
+Instrumental background music for a small, warm, crowded neighbourhood wine bar at night: easy acoustic guitar, upright bass, light brushed drums, a little accordion now and then. Friendly, intimate, a bit playful, like two best friends gossiping over red wine. Tempo around 95 BPM. No vocals. Quiet and unobtrusive under dialogue. Seamless loop.
+```
+
 ---
 
 ## Ambienti in loop (`game/audio/ambienti/`)
@@ -87,6 +99,8 @@ Instrumental lounge music for a cosy, slightly glamorous cocktail bar at golden 
 | `ristorante` | *Elegant restaurant ambience: soft murmur of many conversations, cutlery on porcelain plates, glasses touching, a waiter's quiet steps, a cork popping far away. No clear words. Seamless loop, 45 seconds.* |
 | `bar` | *Cosy cocktail bar ambience: a small group of women laughing and chatting, ice in shaker, glasses clinking, a bartender working, soft background murmur. No clear words. Seamless loop, 45 seconds.* |
 | `pioggia_auto` | *Inside a small car at night in the rain: steady rain drumming on the roof and windshield, windshield wipers swishing slowly, low engine hum, tires on a wet road. Seamless loop, 45 seconds.* |
+| `ufficio` | *Quiet corporate open-plan office ambience: air conditioning hum, a few keyboards typing, a printer starting up far away, a phone ringing once in another room, muffled footsteps on carpet. No clear words. Seamless loop, 45 seconds.* |
+| `enoteca` | *Small crowded wine bar ambience at night: lively murmur of friends talking and laughing, wine glasses clinking, a cork pulled, cutlery on small plates, soft acoustic music very far away. No clear words. Seamless loop, 45 seconds.* |
 | `palestra` | *Gym weight room ambience: weights clanking on racks, a treadmill running, people breathing and exercising, muffled upbeat music far away, a dumbbell set down on rubber floor. No clear words. Seamless loop, 45 seconds.* |
 
 ## Effetti (`game/audio/suoni/`)
@@ -106,4 +120,5 @@ Instrumental lounge music for a cosy, slightly glamorous cocktail bar at golden 
 | `rossetto` | G3, bagno con Emma | *Lipstick tube cap pulled off with a soft click, then closed again, in a quiet marble bathroom.* |
 | `calici` | G3, il brindisi | *Several crystal champagne glasses clinking together in a toast at a dinner table, light applause.* |
 | `portiera_auto` | G3, in auto | *Car door closing with a soft thud, seatbelt clicking, engine starting, in the rain.* |
+| `chiavi_ciotola` | G5, Sara prende le chiavi dalla ciotola | *A bunch of house keys picked up from a ceramic bowl on a wooden cabinet, a short jingle, quiet hallway.* |
 | `accendino` | G4, il fumo fuori dal bar | *A lighter flicked twice outdoors at night, the second time it catches, a soft first inhale.* |

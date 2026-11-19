@@ -131,4 +131,4 @@ Watercolor and pencil illustration of a small, crowded, friendly neighbourhood w
 
 ## Audio
 
-Nessun audio nuovo: il giorno 5 usa musiche ed effetti già fatti (`casa`, `redazione`, `aperitivo`, `notte`, `telefono_vibra`, `notifica`).
+In [prompt-audio.md](../prompt-audio.md): musiche `howard` ed `enoteca`, ambienti `ufficio` ed `enoteca`, effetto `chiavi_ciotola`. Il resto è già fatto (`casa`, `daniel`, `notte`, `telefono_vibra`, `notifica`).

@@ -269,6 +269,7 @@ label ep1_d4_aperitivo:
 
 label ep1_d4_serata_libera:
     $ vai("casa", "Home — evening")
+    $ ambiente(None)
     $ musica("casa")
     n "No drinks with the girls tonight. Pizza on the way, [nome_compagno] in the shower, two free hours that belong to nobody."
     sp "Two hours. What do I do with two hours?"
@@ -304,6 +305,7 @@ label ep1_d4_serata_libera:
 
 label ep1_d4_notte:
     $ vai("casa", "Home — night")
+    $ ambiente(None)
     $ musica("notte")
     if fatto("ep1_aperitivo_accettato"):
         n "When Sara gets home [nome_compagno] is already in bed, the bedside lamp still on, a work report open on his chest."
