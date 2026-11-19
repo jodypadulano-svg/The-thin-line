@@ -1,0 +1,31 @@
+# Magnus — decisioni narrative del 19 novembre 2026
+
+Documento di aggiornamento: prevale sulle vecchie indicazioni della mappa quando in conflitto. Le date sono orientative e subordinate alle scelte del giocatore e al bilanciamento delle soglie.
+
+## Personalità e cerchia
+Magnus, editore facoltoso di circa 68 anni, non è innamorato di Sara: la desidera come nuova presenza preziosa nella sua cerchia esclusiva. Riconosce però sinceramente il suo talento letterario e prende decisioni editoriali per merito, non come compenso per favori intimi. Ha relazioni non esclusive con altre donne della cerchia, apertamente e senza gelosie. Josh gli è indifferente: non cerca di umiliarlo né di interferire nella loro coppia.
+
+Le donne della cerchia accolgono Sara con calore, senza rivalità o gerarchie competitive. Alcune sono indipendenti e affermate, altre hanno ricevuto sostegno economico o professionale da Magnus. Sara può stringere amicizie autentiche e, secondo le scelte del giocatore, anche legami romantici o fisici con una donna della cerchia. Magnus ne è sinceramente felice e non pretende di partecipare. Sara è membro alla pari delle altre, non assistente o servitrice permanente; i gesti di attenzione a Magnus sono volontari.
+
+## Progressione intima invertita
+L'ordine peculiare di Magnus è: frequentazione e piccoli servizi volontari → esperienza artistica/esibizione → nudità → bacio → relazione sessuale. Sara può essere già stata nuda in sua presenza più volte prima del primo bacio: inizialmente posa in incontri artistici privati, poi partecipa anche alle riunioni della cerchia, dove la nudità è una consuetudine condivisa. All'inizio la vive come esperienza estetica; col tempo la gratificazione deriva sempre più dall'approvazione di Magnus. Ogni esperienza richiede la scelta consapevole di Sara.
+
+Finestre provvisorie: frequentazione della villa e servizi circa giorni 65–80; prima nudità circa 80–90; ulteriori occasioni circa 90–115; **primo bacio giorni 115–120** nella biblioteca. Magnus prende l'iniziativa del bacio come segno di riconoscimento; Sara lo accoglie volontariamente. Adeguare la scala comune delle tappe fisiche e le soglie in modo esplicito per questa eccezione: la nudità precede il bacio senza saltare consenso o scelte.
+
+## Scrittura e pubblicazione
+Magnus legge Sara e ne apprezza il talento, ma la ritiene più adatta alla narrativa erotica. Le suggerisce il cambio di genere; Sara inizialmente prova soprattutto per essere pubblicata, poi scopre un piacere artistico autentico e diventa convinta della propria scelta. Scrivere narrativa erotica la rende più curiosa e disinibita; alcuni racconti possono attingere, senza rivelarlo a Josh, alle esperienze della villa. Magnus comunica che pubblicherà il primo racconto erotico circa nei giorni 95–100, dopo le prime esperienze artistiche e prima del bacio; la valutazione resta professionale.
+
+Sara dice a Josh serenamente e fin dall'inizio che cambierà genere. Josh mostra esitazione ma la incoraggia, pur soffrendo per l'influenza di Magnus. Quando legge il racconto è sinceramente orgoglioso, ma turbato da ciò che Sara descrive e geloso, chiedendosi cosa sia fantasia e cosa esperienza. Sara trova divertente provocarlo e risponde in modo misterioso; considera Josh in parte corresponsabile della sua precedente scarsa crescita erotica e Magnus l'artefice della nuova scoperta e della pubblicazione. La provocazione si allarga ad altri aspetti dell'intimità, da gioco a comportamento sempre più consapevole e pungente.
+
+## Josh e la distanza
+Sara interrompe l'intimità sessuale con Josh e adduce ragioni plausibili (lavoro, scadenze, stanchezza); non pensa di dovergli prestazioni sessuali e ritiene che, se lui tiene a lei, debba accettarlo. Non contempla che Josh possa lasciarla; lo dà per scontato. Non rivela **nulla** delle attività private nella villa: «con tutto rispetto, non sono affari tuoi». Sostiene che raccontargli tutto provocherebbe discussioni dannose alla coppia, presentando la riservatezza come tutela della relazione. Josh, temendo di perderla, si arrende e non insiste.
+
+Con l'avvio della relazione sessuale con Magnus, Sara diventa più distante, autorevole e disinteressata ai bisogni di Josh, senza necessariamente essere aggressiva. Se Josh frequentasse un'altra donna, Sara sarebbe sorpresa ma sostanzialmente indifferente. Continua inizialmente a convivere con Josh, poi trascorre sempre più notti alla villa. Magnus le assegna una camera personale elegante per dormire, scrivere e lasciare le sue cose; Sara lo comunica a Josh con assoluta naturalezza ma **non lo invita mai** a visitare la villa o la stanza. Non rompe ufficialmente con Josh, anche quando la convivenza è quasi solo formale. Continua a chiamarlo «amore» e «tesoro» per abitudine, senza attribuire alle parole il significato che vi attribuisce lui.
+
+## Finale di prima stagione — due scene consecutive
+**Scena C, appartamento:** Sara rientra brevemente per recuperare abiti e un manoscritto. Josh propone una cena insieme, poi altre date. Sara, serenamente distratta, è impegnata con la festa per il libro, Magnus e la scrittura; non coglie come importante la «scocciatura» di Josh. «Ci siamo visti adesso, no?» Gli chiede di ritirare un pacco con copie del libro, lo saluta con un rapido gesto affettuoso e riparte. Non è cattiva: Josh non occupa più uno spazio reale nelle sue priorità.
+
+**Scena B, montaggio parallelo:** Josh cena da solo nell'appartamento; Sara festeggia radiosa alla villa con Magnus e la cerchia il successo del libro. Josh le scrive «Congratulazioni, amore. Sono davvero orgoglioso di te». Sara risponde brevemente «Grazie ❤️» e torna alla festa senza pensarci più. **Chiusura B:** Josh non capisce che la relazione è finita nella sostanza e continua a sperare che sia solo un periodo impegnativo; immagina che Sara tornerà quando avrà finito il prossimo libro. Il giocatore vede invece che Sara è felice e non intende tornare indietro.
+
+## Ambito
+Non progettare per ora un secondo libro o una prosecuzione della carriera oltre questo finale: possibile espansione futura soltanto se il gioco avrà successo. Howard è stato temporaneamente saltato nella revisione dei personaggi.
