@@ -18,8 +18,10 @@ Effetti e ambienti: **ElevenLabs** (Sound Effects). L'uso commerciale richiede u
 | `game/audio/musica/daniel.ogg` | Daniel Theme | 172552362328065 | 17/11/2026 | ✅ Ownership Certificate |
 | `game/audio/musica/howard.ogg` | Next Door Waltz | 172756226473985 | 19/11/2026 | ✅ Ownership Certificate |
 | `game/audio/musica/enoteca.ogg` | Corner Table | 172756599570433 | 19/11/2026 | ✅ Ownership Certificate |
+| `game/audio/musica/locale.ogg` | The Club | 172882741297156 | 19/11/2026 | ✅ Ownership Certificate |
 | `game/audio/ambienti/ufficio.ogg` | Open Plan | 172759739269121 | 19/11/2026 | ✅ Ownership Certificate (Mureka) |
 | `game/audio/ambienti/enoteca.ogg` | Bar NIght | 172760078811137 | 19/11/2026 | ✅ Ownership Certificate (Mureka) |
+| `game/audio/ambienti/locale.ogg` | Busy city bar on a S… (effetto) | — | 19/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/suoni/chiavi_ciotola.ogg` | A bunch of house key… (effetto) | — | 19/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/ambienti/redazione.ogg` | Busy open-plan newsp… (effetto) | — | 17/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/suoni/telefono_vibra.ogg` | Smartphone vibrating (effetto) | — | 17/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |

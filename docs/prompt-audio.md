@@ -28,7 +28,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `aperitivo` | Cocktail bar, aperitivo con le colleghe (giorno 4) | ✅ |
 | `howard` | Tema di Howard: il pianerottolo (giorni 5, 6, 9) | ✅ |
 | `enoteca` | Wine bar con Joanie (giorno 5) | ✅ |
-| `locale` | Il locale «The Lantern» il sabato sera, con Simon (giorno 6) | |
+| `locale` | Il locale «The Lantern» il sabato sera, con Simon (giorno 6) | ✅ |
 
 **tema_principale**
 ```
