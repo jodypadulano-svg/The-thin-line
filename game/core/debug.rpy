@@ -44,6 +44,8 @@ init python:
                 "A film on the sofa with [nome_compagno].",
                 ## Giorno 6
                 "Thank him.", "The grey dress.", "Dance with [nome_compagno].",
+                ## Giorno 7
+                "A walk by the river with [nome_compagno].", "Take the initiative.",
             ],
         },
         "barbara": {
@@ -77,6 +79,8 @@ init python:
                 ## Giorno 6
                 "Thank him.", "The short dress Joanie picked.",
                 "Laugh a little too much at Simon's jokes.",
+                ## Giorno 7
+                "Write.", "She's tired: sleep.",
             ],
         },
         "daniel": {
@@ -109,6 +113,8 @@ init python:
                 ## Giorno 6
                 "Insist on making him a coffee.", "The short dress Joanie picked.",
                 "Stay and talk with Simon.",
+                ## Giorno 7
+                "Write.", "Take the initiative.",
             ],
         },
         "mista": {

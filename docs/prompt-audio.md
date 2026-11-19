@@ -109,6 +109,7 @@ Instrumental upbeat dance-pop track for a busy city bar on a Saturday night, hea
 | `enoteca` | *Small crowded wine bar ambience at night: lively murmur of friends talking and laughing, wine glasses clinking, a cork pulled, cutlery on small plates, soft acoustic music very far away. No clear words. Seamless loop, 45 seconds.* |
 | `locale` | *Busy city bar on a Saturday night, without music: loud crowd murmur and laughter, people shouting their orders over the noise, glasses clinking, ice in a shaker, bottles opened, a cheer from a group of friends. No clear words, no music. Seamless loop, 45 seconds.* |
 | `palestra` | *Gym weight room ambience: weights clanking on racks, a treadmill running, people breathing and exercising, muffled upbeat music far away, a dumbbell set down on rubber floor. No clear words. Seamless loop, 45 seconds.* |
+| `fiume` | *Riverside park path on a sunny autumn afternoon: gentle flowing water, ducks quacking now and then, leaves rustling in a light breeze, distant children playing and a dog barking far away, footsteps on gravel. No clear words, no music. Seamless loop, 45 seconds.* |
 
 ## Effetti (`game/audio/suoni/`)
 
@@ -129,3 +130,4 @@ Instrumental upbeat dance-pop track for a busy city bar on a Saturday night, hea
 | `portiera_auto` | G3, in auto | *Car door closing with a soft thud, seatbelt clicking, engine starting, in the rain.* |
 | `chiavi_ciotola` | G5, Sara prende le chiavi dalla ciotola | *A bunch of house keys picked up from a ceramic bowl on a wooden cabinet, a short jingle, quiet hallway.* |
 | `accendino` | G4, il fumo fuori dal bar | *A lighter flicked twice outdoors at night, the second time it catches, a soft first inhale.* |
+| `citofono` | G7, arriva Darius | *Old apartment intercom buzzer pressed twice, then once more for a long time, heard from inside the flat.* |
