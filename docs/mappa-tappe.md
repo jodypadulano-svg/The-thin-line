@@ -193,6 +193,9 @@ Regola della scheda, più forte dello schema comune: il percorso parte **solo** 
 
 ## Joanie — soglia di Corruption 55
 
+**Cronologia fisica approvata il 19/11/2026 (prevale sulle vecchie date indicative nella tabella):** primo bacio **giorni 110–120**, su iniziativa di Sara; primo contatto intimo con il seno **giorni 110–120, nella stessa scena del bacio**; prima nudità completa **giorni 120–125**, in privato a casa di Joanie; primo rapporto sessuale **giorni 120–125, nella stessa scena della prima nudità**. La fiducia preesistente accelera la progressione dopo il primo bacio. Date indicative, subordinate a scelte, soglie e consenso.
+
+
 Già amica di Sara dalla prima scena; il lato sentimentale emerge molto più avanti. Nella prima parte è la regista dei percorsi altrui (I8, I9, I12).
 
 **Decisioni di Jody:**
