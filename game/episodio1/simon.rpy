@@ -8,25 +8,7 @@
 ## Scene 1-2 (prima visita, correzioni a Joanie): ora nel giorno 2,
 ## episodio1/ep1_giorno02.rpy.
 
-label simon_s3_locale:
-    ## Scena 3 — Incontro fuori dalla palestra, in un locale.
-    $ vai("locale", "Locale — sabato sera")
-    n "Sara, [nome_compagno] e Joanie hanno appena preso da bere quando qualcuno chiama Joanie dal bancone."
-    si "Ehi! Le mie atlete!"
-    $ cg("Simon in camicia, birra in mano, completamente diverso dall'istruttore della palestra")
-    ch "Simon! Lui è [nome_compagno], il compagno di Sara."
-    si "Piacere! Tienila d'occhio, eh: in palestra ha un potenziale spaventoso."
-    c "Ah sì? Non me l'ha detto."
-    s "Perché non è vero."
-    si "Fidati di un professionista."
-    $ via_cg()
-    n "Simon resta con loro per un giro. Racconta aneddoti assurdi sui clienti, prende in giro se stesso, fa ridere perfino [nome_compagno]."
-    sp "In palestra è tutto «petto in fuori» e «peso sui talloni». Qui sembra un altro."
-    sp "Più... sciolto. Più simpatico."
-    $ nota_sara("simon", "Fuori dalla palestra è spontaneo e divertente.")
-    $ interest("simon", 2)
-    si "Vi lascio, mi aspettano. Sara: martedì niente scuse!"
-    return
+## Scena 3 (il locale): ora nel giorno 6, episodio1/ep1_giorno06.rpy.
 
 
 label simon_s4_chiara_cancella:

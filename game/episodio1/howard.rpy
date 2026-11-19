@@ -5,41 +5,10 @@
 ## Regola della scheda: per Sara è un vicino strano ma innocuo; il giocatore
 ## deve capire sempre di più, senza scene esplicite.
 
-label howard_2_spesa:
-    $ vai("pianerottolo", "Pianerottolo — mattina")
-    n "Quattro borse della spesa, tre piani di scale, nessun ascensore."
-    ho "Lascia, lascia! Ci penso io."
-    s "Howard, non serve..."
-    ho "Insisto. A cosa servono i vicini?"
-    $ vai("casa", "Casa di Sara — mattina")
-    n "Sara lascia cadere il mazzo di chiavi nella ciotola accanto alla porta, come sempre."
-    n "Howard posa le borse sul tavolo della cucina. Sara sistema la roba in frigo, voltandogli le spalle."
-    s "Grazie davvero. Vuoi un caffè?"
-    ho "No, no, ti ho già disturbata abbastanza."
-
-    call inizio_retroscena
-    $ cg("Accanto alla porta: il cesto del bucato pulito, la ciotola delle chiavi; la mano di Howard")
-    rs "Sara ha la testa nel frigo. Howard guarda il cesto del bucato accanto alla porta."
-    rs "Un movimento rapido. Qualcosa di piccolo e di pizzo scompare nella tasca della sua giacca."
-    rs "Poi i suoi occhi scendono sulla ciotola. Il mazzo di Sara segue la stessa strada, senza un tintinnio."
-    rs "Quando Sara si volta, lui è già sulla soglia, con il suo sorriso impacciato."
-    $ retroscena("howard", "Ha rubato un capo di biancheria intima di Sara dal cesto del bucato.")
-    $ retroscena("howard", "Ha rubato anche le chiavi di casa di Sara dalla ciotola accanto alla porta.")
-    $ via_cg()
-    call fine_retroscena
-
-    ho "Buona giornata, Sara. Davvero... buona giornata."
-    n "Quella sera, piegando il bucato, Sara cerca una cosa che non trova."
-    sp "Strano. Sarà rimasto in lavatrice. O l'ho messo da un'altra parte."
-    sp "Pazienza."
-    $ interest("howard", 1)
-    return
-
-
 label howard_3_chiusa_fuori:
     ## Howard ha preparato tutto. Il giocatore lo sa dall'inizio (decisione
     ## definitiva della scheda). Meccanismo deciso da Jody il 16/11: le chiavi
-    ## rubate il giorno 5 (howard_2_spesa). Da allora Sara è sempre uscita e
+    ## rubate il giorno 6 (ep1_d6_spesa). Da allora Sara è sempre uscita e
     ## rientrata con [nome_compagno], quindi non se n'è accorta.
     $ luogo_corrente = ""
     scene bg nero with fade

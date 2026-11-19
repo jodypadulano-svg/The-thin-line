@@ -28,6 +28,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `aperitivo` | Cocktail bar, aperitivo con le colleghe (giorno 4) | ✅ |
 | `howard` | Tema di Howard: il pianerottolo (giorni 5, 6, 9) | ✅ |
 | `enoteca` | Wine bar con Joanie (giorno 5) | ✅ |
+| `locale` | Il locale «The Lantern» il sabato sera, con Simon (giorno 6) | |
 
 **tema_principale**
 ```
@@ -89,6 +90,11 @@ Instrumental theme for an awkward, lonely, slightly off neighbour: a slow, gentl
 Instrumental background music for a small, warm, crowded neighbourhood wine bar at night: easy acoustic guitar, upright bass, light brushed drums, a little accordion now and then. Friendly, intimate, a bit playful, like two best friends gossiping over red wine. Tempo around 95 BPM. No vocals. Quiet and unobtrusive under dialogue. Seamless loop.
 ```
 
+**locale**
+```
+Instrumental upbeat dance-pop track for a busy city bar on a Saturday night, heard from inside the room: punchy four-on-the-floor kick, warm funky bass, bright synth chords, handclaps, a catchy plucked synth hook, a little disco guitar. Fun, warm, carefree, makes you want to dance badly with your friends. Tempo around 118 BPM. No vocals. Mixed slightly muffled, as if from the bar's speakers, so dialogue stays clear. Seamless loop.
+```
+
 ---
 
 ## Ambienti in loop (`game/audio/ambienti/`)
@@ -101,6 +107,7 @@ Instrumental background music for a small, warm, crowded neighbourhood wine bar 
 | `pioggia_auto` | *Inside a small car at night in the rain: steady rain drumming on the roof and windshield, windshield wipers swishing slowly, low engine hum, tires on a wet road. Seamless loop, 45 seconds.* |
 | `ufficio` | *Quiet corporate open-plan office ambience: air conditioning hum, a few keyboards typing, a printer starting up far away, a phone ringing once in another room, muffled footsteps on carpet. No clear words. Seamless loop, 45 seconds.* |
 | `enoteca` | *Small crowded wine bar ambience at night: lively murmur of friends talking and laughing, wine glasses clinking, a cork pulled, cutlery on small plates, soft acoustic music very far away. No clear words. Seamless loop, 45 seconds.* |
+| `locale` | *Busy city bar on a Saturday night, without music: loud crowd murmur and laughter, people shouting their orders over the noise, glasses clinking, ice in a shaker, bottles opened, a cheer from a group of friends. No clear words, no music. Seamless loop, 45 seconds.* |
 | `palestra` | *Gym weight room ambience: weights clanking on racks, a treadmill running, people breathing and exercising, muffled upbeat music far away, a dumbbell set down on rubber floor. No clear words. Seamless loop, 45 seconds.* |
 
 ## Effetti (`game/audio/suoni/`)

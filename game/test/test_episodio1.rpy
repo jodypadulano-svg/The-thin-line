@@ -208,9 +208,9 @@ testsuite telefono:
 ## Lancia con:  ... test debug_salta
 testsuite debug_salta:
     testcase salto:
-        description "Salto al giorno 4 e al 5 con ogni preset: stato coerente, poi fino alla fine."
+        description "Salto ai giorni 4, 5 e 6 con ogni preset: stato coerente, poi fino alla fine."
         parameter preset = ["brava", "barbara", "daniel", "mista"]
-        parameter arrivo = [4, 5]
+        parameter arrivo = [4, 5, 6]
         $ _foto_debug.clear()
         $ _test_esito["fine"] = False
         $ debug_prepara(arrivo, preset)

@@ -42,6 +42,8 @@ init python:
                 ## Giorno 5
                 "Stop for a minute.", "Ignore him.",
                 "A film on the sofa with [nome_compagno].",
+                ## Giorno 6
+                "Thank him.", "The grey dress.", "Dance with [nome_compagno].",
             ],
         },
         "barbara": {
@@ -72,6 +74,9 @@ init python:
                 "Accept the drink.", "Let herself go.", "Write.",
                 ## Giorno 5
                 "Cut it short: she's late.", "Ignore him.", "Go out with Joanie.",
+                ## Giorno 6
+                "Thank him.", "The short dress Joanie picked.",
+                "Laugh a little too much at Simon's jokes.",
             ],
         },
         "daniel": {
@@ -101,6 +106,9 @@ init python:
                 ## Giorno 5
                 "Cut it short: she's late.", "«At least he doesn't forget people.»",
                 "Ignore him.", "Go out with Joanie.",
+                ## Giorno 6
+                "Insist on making him a coffee.", "The short dress Joanie picked.",
+                "Stay and talk with Simon.",
             ],
         },
         "mista": {
