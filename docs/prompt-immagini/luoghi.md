@@ -24,6 +24,7 @@ Watercolor and pencil illustration of a small, warm bedroom of a young couple: a
 ```
 
 ### 3. Il pianerottolo del condominio
+**Canone (dal giorno 1):** la porta marrone di legno, a sinistra, è di Sara e Josh; la porta verde, a destra, è di Howard.
 ```
 Watercolor and pencil illustration of an old apartment building landing: worn stone stairs with an iron railing going up and down, two facing apartment doors, one tidy with a small plant and a doormat, the other shabby with peeling paint and a door that is slightly ajar into darkness, a narrow window with dusty light, an old ceiling lamp. Quiet, slightly melancholic, a little uneasy. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain, muted palette. No people, no readable text, no logos. Same art style as the reference image. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```

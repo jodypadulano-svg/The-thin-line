@@ -3,10 +3,11 @@
 Bozza di lavoro | 19 novembre 2026 · Testo del giorno 5 in `game/episodio1/ep1_giorno05.rpy` (da rivedere con Jody). Stesse regole dei giorni 1-4: un cambio d'immagine ogni 3-4 battute, inquadrature che si alternano e si ripetono. Formato **16:9, 2K**, stesso stile. ✅ = fatta.
 
 **Character:** `@sara_wc`, `@josh_wc`, `@daniel_wc`, `@joanie_wc`. **Howard non ha ancora un character ad acquerello:** allega `riferimenti/attori/howard_acquerello_candidato.webp` e, se ti va, crealo come `@howard_wc` (servirà anche nei giorni 6 e 9).
+**Le porte del pianerottolo (canone, dal giorno 1):** quella di **Sara e Josh** è la **marrone di legno, a sinistra**; quella di **Howard** è la **verde, a destra**.
 **Per il viso di Sara** allega sempre anche `riferimenti/scene/giorno04/04_sara_scrivania.webp` (o un'altra Sara recente). Nei prompt: *same face, hair and bust size as in the reference images, natural unpainted nails*.
 
 **Abiti del giorno 5 (venerdì)**
-- **Sara di giorno:** *a soft camel knit sweater with a round neckline, dark jeans, white sneakers, hair down*.
+- **Sara di giorno:** *a white blouse, grey wide-leg trousers, a brown leather shoulder bag, hair down* (come nella A2, decisione di Jody).
 - **Sara la sera a casa (film):** *an old oversized grey T-shirt and black leggings, hair in a loose ponytail*.
 - **Sara la sera fuori (Joanie):** *a dark green wrap blouse, dark jeans, ankle boots, hair down, small gold earrings*.
 - **Josh:** *a light blue work shirt, loosened dark tie* (la sera, sul divano, ancora così).
@@ -24,10 +25,10 @@ Totale: **14 immagini nuove**, più **2 luoghi nuovi** da fare prima delle scene
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| A1 | `d5_01_patente` | L'ingresso di casa: il mobiletto, la ciotola delle chiavi, la patente dimenticata | `casa_soggiorno_sera` | inizio giornata |
-| A2 | `d5_02_howard_pianerottolo` | Howard in vestaglia sulla porta socchiusa, il giornale in mano; Sara che chiude a chiave | `pianerottolo`, Howard, Sara | «You're late today» |
-| A3 | `d5_03_howard_felice` | Primo piano di Howard felice, il giornale stretto al petto | A2 | scelta «Stop for a minute» |
-| A4 | `d5_04_howard_scale` | Dall'alto: Sara che corre giù per le scale, Howard ancora fermo sul pianerottolo | A2 | scelta «Cut it short» |
+| A1 ✅ | `d5_01_patente` | L'ingresso di casa: il mobiletto, la ciotola delle chiavi, la patente dimenticata | `casa_soggiorno_sera` | inizio giornata |
+| A2 ✅ | `d5_02_howard_pianerottolo` | Howard in vestaglia sulla porta socchiusa, il giornale in mano; Sara che chiude a chiave | `pianerottolo`, Howard, Sara | «You're late today» |
+| A3 ✅ | `d5_03_howard_felice` | Primo piano di Howard felice, il giornale stretto al petto | A2 | scelta «Stop for a minute» |
+| A4 ✅ | `d5_04_howard_scale` | Dall'alto: Sara che corre giù per le scale, Howard ancora fermo sul pianerottolo | A2 | scelta «Cut it short» |
 
 **A1**
 ```
@@ -35,7 +36,7 @@ Close-up of the small entrance hall of the apartment from the reference image, m
 ```
 **A2**
 ```
-The apartment building landing from the reference image, morning: Howard, an overweight man around sixty with thinning grey hair combed over, smudged wire-rimmed glasses and grey stubble, stands in the doorway of his shabby half-open door in a faded brown dressing gown over striped pyjamas and worn slippers, a folded newspaper in his hand, smiling at Sara with eager, awkward warmth; @sara_wc in a soft camel knit sweater and dark jeans, a handbag on her shoulder, is locking her own tidy door, turning her head toward him with a polite, hurried smile. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The apartment building landing from the reference image, morning: Howard, an overweight man around sixty with thinning grey hair combed over, smudged wire-rimmed glasses and grey stubble, stands in the doorway of his green door on the right in a faded brown dressing gown over striped pyjamas and worn slippers, a folded newspaper in his hand, smiling at Sara with eager, awkward warmth; @sara_wc in a white blouse and grey wide-leg trousers, a handbag on her shoulder, is locking her own brown wooden door on the left, turning her head toward him with a polite, hurried smile. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **A3**
 ```
@@ -43,7 +44,7 @@ Close-up of Howard from the reference image on the landing, in his faded brown d
 ```
 **A4**
 ```
-High-angle view down the stairwell of the apartment building from the reference image: @sara_wc in a camel sweater, handbag bouncing, runs down the worn stone stairs, seen small from above; on the landing at the top of the frame Howard in his faded dressing gown stands motionless at his half-open door, the newspaper closed in his hand, watching her go. Long shadows, dusty window light, a quietly uneasy mood. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+High-angle view down the stairwell of the apartment building from the reference image: @sara_wc in a white blouse, handbag bouncing, runs down the worn stone stairs, seen small from above; on the landing at the top of the frame Howard in his faded dressing gown stands motionless at his half-open green door, the newspaper closed in his hand, watching her go. Long shadows, dusty window light, a quietly uneasy mood. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 ---
@@ -52,15 +53,15 @@ High-angle view down the stairwell of the apartment building from the reference 
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| B1 | `d5_05_josh_patente` | Josh alla scrivania si alza sollevato, Sara alza la patente | `ufficio_josh`, `@josh_wc`, Sara | arrivo |
-| B2 | `d5_06_daniel_stipite` | Daniel appoggiato allo stipite della porta di vetro, caffè in mano, divertito | `ufficio_josh`, `@daniel_wc`, d3 di Daniel | «He'll be here until seven» |
-| B3 | `d5_07_sara_daniel` | Primo piano di Sara che stringe il braccio di Josh e guarda Daniel, la mascella tesa | B1 | la scelta |
-| B4 | `d5_08_josh_imbarazzo` | Primo piano di Josh, metà orgoglioso metà terrorizzato | B1 | solo se risponde («At least he doesn't forget people») |
-| B5 | `d5_09_daniel_finestra` | Retroscena: Daniel alla finestra del suo ufficio d'angolo guarda Sara uscire in strada | `ufficio_josh`, B2 | retroscena |
+| B1 ✅ | `d5_05_josh_patente` | Josh alla scrivania si alza sollevato, Sara alza la patente | `ufficio_josh`, `@josh_wc`, Sara | arrivo |
+| B2 ✅ | `d5_06_daniel_stipite` | Daniel appoggiato allo stipite della porta di vetro, caffè in mano, divertito | `ufficio_josh`, `@daniel_wc`, d3 di Daniel | «He'll be here until seven» |
+| B3 ✅ | `d5_07_sara_daniel` | Primo piano di Sara che stringe il braccio di Josh e guarda Daniel, la mascella tesa | B1 | la scelta |
+| B4 ✅ | `d5_08_josh_imbarazzo` | Primo piano di Josh, metà orgoglioso metà terrorizzato | B1 | solo se risponde («At least he doesn't forget people») |
+| B5 ✅ | `d5_09_daniel_finestra` | Retroscena: Daniel alla finestra del suo ufficio d'angolo guarda Sara uscire in strada | `ufficio_josh`, B2 | retroscena |
 
 **B1**
 ```
-The open-plan corporate office from the reference image at lunchtime: @josh_wc in a light blue work shirt and loosened dark tie jumps up from his desk among printed spreadsheets, arms half open with relief and gratitude; @sara_wc in a soft camel sweater and dark jeans stands beside the desk holding up a driving licence card between two fingers (no readable text), smiling, teasing. Colleagues in the background at their screens. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The open-plan corporate office from the reference image at lunchtime: @josh_wc in a light blue work shirt and loosened dark tie jumps up from his desk among printed spreadsheets, arms half open with relief and gratitude; @sara_wc in a white blouse and grey wide-leg trousers stands beside the desk holding up a driving licence card between two fingers (no readable text), smiling, teasing. Colleagues in the background at their screens. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **B2**
 ```
@@ -68,7 +69,7 @@ The corporate office from the reference image: @daniel_wc in a tailored charcoal
 ```
 **B3**
 ```
-Close-up of @sara_wc in the corporate office from the reference image, camel sweater, one hand holding Josh's arm protectively (only his sleeve visible at the edge of the frame), her jaw tight, cheeks flushed with anger, looking straight at someone off-frame with a cold, steady gaze. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Close-up of @sara_wc in the corporate office from the reference image, white blouse, one hand holding Josh's arm protectively (only his sleeve visible at the edge of the frame), her jaw tight, cheeks flushed with anger, looking straight at someone off-frame with a cold, steady gaze. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **B4**
 ```
@@ -76,7 +77,7 @@ Close-up of @josh_wc at his desk in the corporate office from the reference imag
 ```
 **B5**
 ```
-Behind the scenes: a glass-walled corner office high above the street, sleek and minimal, a big desk and a city view; @daniel_wc in a charcoal suit stands at the floor-to-ceiling window with his paper coffee cup, watching with a calm, possessive half-smile a small figure of a woman in a camel sweater crossing the street far below. Cool light with a slight reddish tint for a behind-the-scenes feel. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Behind the scenes: a glass-walled corner office high above the street, sleek and minimal, a big desk and a city view; @daniel_wc in a charcoal suit stands at the floor-to-ceiling window with his paper coffee cup, watching with a calm, possessive half-smile a small figure of a woman in a white blouse and grey trousers crossing the street far below. Cool light with a slight reddish tint for a behind-the-scenes feel. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 ---
@@ -85,11 +86,11 @@ Behind the scenes: a glass-walled corner office high above the street, sleek and
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| C1 | `d5_10_josh_stanco` | Josh crollato sul divano in camicia, cravatta allentata; Sara sulla porta col telefono | `casa_soggiorno_sera`, `@josh_wc`, Sara | inizio sera, la scelta |
-| C2 | `d5_11_film_divano` | Sara e Josh sotto una coperta, popcorn, ridono davanti alla TV | `casa_soggiorno_sera`, C1, `d4_13_divano_josh` | scelta «A film» |
-| C3 | `d5_12_enoteca_joanie` | Al wine bar: Sara e Joanie a un tavolino, due calici di rosso, Joanie protesa col mento sulle mani | `enoteca`, `@joanie_wc`, Sara | scelta «Go out with Joanie» |
-| C4 | `d5_13_joanie_ride` | Primo piano di Joanie che ride di gusto, la mano sul polso di Sara | C3 | solo se Sara ha risposto a Daniel |
-| C5 | `d5_14_sara_enoteca` | Primo piano di Sara, guance rosa, ride e scuote la testa, il bicchiere ancora mezzo pieno | C3 | «It's half a glass, Sara» |
+| C1 ✅ | `d5_10_josh_stanco` | Josh crollato sul divano in camicia, cravatta allentata; Sara sulla porta col telefono | `casa_soggiorno_sera`, `@josh_wc`, Sara | inizio sera, la scelta |
+| C2 ✅ | `d5_11_film_divano` | Sara e Josh sotto una coperta, popcorn, ridono davanti alla TV | `casa_soggiorno_sera`, C1, `d4_13_divano_josh` | scelta «A film» |
+| C3 ✅ | `d5_12_enoteca_joanie` | Al wine bar: Sara e Joanie a un tavolino, due calici di rosso, Joanie protesa col mento sulle mani | `enoteca`, `@joanie_wc`, Sara | scelta «Go out with Joanie» |
+| C4 ✅ | `d5_13_joanie_ride` | Primo piano di Joanie che ride di gusto, la mano sul polso di Sara | C3 | solo se Sara ha risposto a Daniel |
+| C5 ✅ | `d5_14_sara_enoteca` | Primo piano di Sara, guance rosa, ride e scuote la testa, il bicchiere ancora mezzo pieno | C3 | «It's half a glass, Sara» |
 
 **C1**
 ```
