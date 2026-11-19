@@ -33,6 +33,15 @@ init python:
                 "Order something else, just for herself.", "Laugh it off",
                 "Squeeze [nome_compagno]'s hand under the table.",
                 "Smile and go back to the table.", "Smile politely.", "Comfort him",
+                ## Giorno 4
+                "«You look amazing.»", "«You have nothing to be sorry for.»",
+                "«I was harsh in the car. Sorry.»",
+                "«Make it the most beautiful spreadsheet ever.»",
+                "Decline with a smile.", "One drink is enough.",
+                "An evening with [nome_compagno].",
+                ## Giorno 5
+                "Stop for a minute.", "Ignore him.",
+                "A film on the sofa with [nome_compagno].",
             ],
         },
         "barbara": {
@@ -56,6 +65,13 @@ init python:
                 "Tell him about it, with passion.", "Change the subject, gracefully.",
                 "Smile and go back to the table.", "Answer coldly.",
                 "Ask him why he didn't react.",
+                ## Giorno 4
+                "«You look amazing.»", "«Tell me about your dad, one day.»",
+                "«Next time, answer him back.»",
+                "«After all, that's how you conquered me.»",
+                "Accept the drink.", "Let herself go.", "Write.",
+                ## Giorno 5
+                "Cut it short: she's late.", "Ignore him.", "Go out with Joanie.",
             ],
         },
         "daniel": {
@@ -77,6 +93,14 @@ init python:
                 "Let him choose.", "Tell him about it, with passion.",
                 "Answer him back.", "Ask her what Daniel is really like.",
                 "Smile politely.", "Ask him why he didn't react.",
+                ## Giorno 4
+                "«I liked you better before.»", "«Tell me about your dad, one day.»",
+                "«Next time, answer him back.»",
+                "«After all, that's how you conquered me.»",
+                "Decline with a smile.", "One drink is enough.", "Write.",
+                ## Giorno 5
+                "Cut it short: she's late.", "«At least he doesn't forget people.»",
+                "Ignore him.", "Go out with Joanie.",
             ],
         },
         "mista": {

@@ -8,24 +8,6 @@
 ## Daniel 1 (la cena aziendale) è nel giorno 3: ep1_giorno03.rpy.
 
 
-label daniel_2_patente:
-    ## La patente dimenticata (oggetto provvisorio, vedi scheda).
-    $ vai("ufficio_compagno", "Ufficio di [nome_compagno] — mattina")
-    n "[nome_compagno] ha dimenticato la patente sul mobile dell'ingresso. Sara gliela porta prima che debba usare l'auto aziendale."
-    c "Sei un angelo. Non so come avrei fatto..."
-    da "Io lo so: avrebbe chiamato un taxi e messo la ricevuta in nota spese. Buongiorno, Sara."
-    $ cg("Daniel appoggiato allo stipite, caffè in mano, sguardo divertito")
-    da "Ci tieni a sapere quanto è affidabile il tuo uomo? Ha dimenticato la patente. Lui, che guida per lavoro."
-    c "È capitato una volta, Daniel..."
-    da "Una volta è il primo indizio. Fortuna che a casa c'è qualcuno che pensa per due."
-    $ via_cg()
-    sp "Quanto è arrogante oggi."
-    s "Buona giornata a tutti e due."
-    $ nota_sara("daniel", "Arrogante anche di giorno. Non perde un'occasione.")
-    $ retroscena("daniel", "Daniel umilia [nome_compagno] soprattutto quando Sara è presente.")
-    return
-
-
 label daniel_3_festa:
     ## La festa privata organizzata da Daniel. Prima di entrare: l'indizio
     ## per il giocatore (scheda, sezione D).

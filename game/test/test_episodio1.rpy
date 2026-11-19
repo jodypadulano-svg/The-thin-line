@@ -207,15 +207,16 @@ testsuite telefono:
 ## si verifica lo stato all'arrivo e si gioca il resto dell'episodio.
 ## Lancia con:  ... test debug_salta
 testsuite debug_salta:
-    testcase giorno_4:
-        description "Salto al giorno 4 con ogni preset: stato coerente, poi fino alla fine."
+    testcase salto:
+        description "Salto al giorno 4 e al 5 con ogni preset: stato coerente, poi fino alla fine."
         parameter preset = ["brava", "barbara", "daniel", "mista"]
+        parameter arrivo = [4, 5]
         $ _foto_debug.clear()
         $ _test_esito["fine"] = False
-        $ debug_prepara(4, preset)
+        $ debug_prepara(arrivo, preset)
         run Jump("ep1_inizio")
         advance until eval _foto_debug.get("preset") == preset timeout 120.0
-        assert eval _foto_debug["giorno"] >= 3
+        assert eval _foto_debug["giorno"] == arrivo - 1
         ## Ogni scelta dei giorni 1-3 ha trovato la sua preferenza (se no, il testo è cambiato).
         assert eval preset == "mista" or not _foto_debug["senza_preferenza"]
         assert eval preset != "brava" or not (_foto_debug["fatti"].get("ep1_aperitivo_accettato") or _foto_debug["fatti"].get("sara_fuma"))

@@ -5,34 +5,6 @@
 ## Regola della scheda: per Sara è un vicino strano ma innocuo; il giocatore
 ## deve capire sempre di più, senza scene esplicite.
 
-label howard_1_pianerottolo:
-    $ vai("pianerottolo", "Pianerottolo — mattina")
-    n "Sara chiude la porta di casa, la patente di [nome_compagno] nella borsa, e quasi inciampa nel vicino."
-    $ cg("Howard in vestaglia sul pianerottolo, il giornale in mano, la porta di casa sua socchiusa")
-    $ incontra("howard")
-    ho "Oh! Buongiorno, Sara. Scusa, scusa... ti ho spaventata?"
-    s "Buongiorno, Howard. No, sono io che vado di corsa."
-    ho "Sempre di corsa, voi giovani. Io invece... be', io ho tutto il tempo del mondo."
-    n "Ride da solo, un po' troppo a lungo."
-    $ via_cg()
-
-    menu:
-        sp "Ha voglia di chiacchierare. Come sempre."
-        "Fermarsi un minuto con lui.":
-            $ interest("howard", 2, "Howard ha apprezzato il tuo minuto.")
-            s "Come va la schiena?"
-            ho "Ti sei ricordata! Meglio, meglio. Sei sempre così gentile, tu."
-            ho "Se ti serve qualcosa, qualsiasi cosa, io sono qui accanto. Lo sai."
-        "Tagliare corto: è in ritardo.":
-            s "Scusa Howard, devo proprio scappare!"
-            ho "Certo, certo... vai pure."
-            n "Quando Sara si volta all'angolo delle scale, lui è ancora lì sul pianerottolo, il giornale chiuso in mano."
-
-    $ nota_sara("howard", "Il vicino un po' strano. Solo, ma gentile.")
-    $ tappa("howard", 1)
-    return
-
-
 label howard_2_spesa:
     $ vai("pianerottolo", "Pianerottolo — mattina")
     n "Quattro borse della spesa, tre piani di scale, nessun ascensore."

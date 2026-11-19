@@ -19,6 +19,7 @@ image bg ufficio_compagno = Solid("#1f2430")
 image bg villa_daniel = Solid("#1c1a28")
 image bg strada = Solid("#1f1f24")
 image bg bar_aperitivo = Solid("#2a1f1c")
+image bg enoteca = Solid("#2b1a1f")
 
 
 ## Cartello del luogo (in alto a sinistra) -------------------------------------
