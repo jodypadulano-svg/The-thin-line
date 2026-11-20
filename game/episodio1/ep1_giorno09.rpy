@@ -187,7 +187,7 @@ label ep1_d9_da_howard:
                 else:
                     n "{b}WARNING: This decision will have permanent consequences.{/b}"
                     n "Continuing will activate Sara's Savior Complex toward Howard. From this point on, refusal options when Howard makes a proposal will be greyed out for the rest of the game."
-                    n "{b}Continue at your own risk. There is no undo within this playthrough.{/b}"
+                    n "{b}Continue at your own risk. This lasts for the rest of the playthrough unless you roll back or reload an earlier save.{/b}"
 
                 menu:
                     "Pull away from the hug.":
