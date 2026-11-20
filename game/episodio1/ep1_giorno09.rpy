@@ -163,18 +163,60 @@ label ep1_d9_da_howard:
             s "You can knock whenever you want. I mean it."
             n "Howard nods behind his hands, slowly. After a while, he wipes his eyes with the back of his wrist, though there's nothing to wipe."
         "Hug him.":
-            $ interest("howard", 1, "Sara hugged him.")
+            $ interest("howard", 1, "Sara hugged Howard to comfort him.")
             $ segna("ep1_d9_abbraccio")
+            $ howard_abbraccio_prolungamenti = 0
+            $ cg("Sara crouches beside Howard's worn armchair and embraces him tenderly; he presses his face into her hair.", "images/cg/ep1/d9_10_abbraccio.webp")
             n "Sara gets up, crouches by the armchair and puts her arms around him, the way she'd hug a child who's fallen off a bike."
             s "Shh. It's all right. It's all right, Howard."
-            n "He smells of old wool and instant coffee. He's bigger and softer than she expected under the cardigan, and he's trembling."
+            n "He smells of old wool and instant coffee. He's bigger and softer than she expected, and he's trembling."
             call inizio_retroscena
-            rs "Howard doesn't move. His face is in her hair. He breathes in, slowly, very slowly, with his eyes closed."
-            rs "When she pulls away, he's already looking down again, broken and grateful."
-            $ retroscena("howard", "In her arms, he breathed in her hair, eyes closed. She noticed nothing.")
+            rs "Howard closes his eyes, buries his face in her hair, and slowly breathes her in. Sara cannot see him."
+            $ retroscena("howard", "Howard lingered in her arms and breathed in her hair without her noticing.")
             call fine_retroscena
             sp "He's shaking. Like a big, frightened child."
 
+            ## Ogni scelta di restare aggiunge un punto a Howard. Dopo la terza,
+            ## il tratto Crocerossina è permanente: le proposte di Howard
+            ## marcate rifiuto_howard=True non potranno più essere rifiutate.
+            while howard_abbraccio_prolungamenti < 3:
+                if howard_abbraccio_prolungamenti == 0:
+                    n "Howard makes no move to release her. Perhaps she should be the one to end the hug."
+                elif howard_abbraccio_prolungamenti == 1:
+                    n "It's going on rather long. His hand rests lower on her back than before. She can still pull away."
+                else:
+                    n "{b}WARNING: This decision will have permanent consequences.{/b}"
+                    n "Continuing will activate Sara's Savior Complex toward Howard. From this point on, refusal options when Howard makes a proposal will be greyed out for the rest of the game."
+                    n "{b}Continue at your own risk. There is no undo within this playthrough.{/b}"
+
+                menu:
+                    "Pull away from the hug.":
+                        n "Sara gently straightens up. Howard doesn't release her until she moves away."
+                        s "There. See? You're not on your own."
+                        jump ep1_d9_abbraccio_finito
+                    "Keep holding him a little longer.":
+                        $ howard_abbraccio_prolungamenti += 1
+                        $ interest("howard", 1, "Sara chose to prolong the comforting hug.")
+                        if howard_abbraccio_prolungamenti == 1:
+                            n "Howard stays very still, as though afraid the moment might end."
+                            sp "He must have needed someone to hold him for such a long time."
+                        elif howard_abbraccio_prolungamenti == 2:
+                            $ cg("Howard's thick hand has slipped down the back of Sara's green jumper; Sara still holds him tenderly, unaware of his expression.", "images/cg/ep1/d9_11_mani.webp")
+                            sp "Wait... are his hands moving lower?"
+                            sp "No, Sara. What a dreadful thing to think. He's just upset."
+                        else:
+                            $ complesso_crocerossina = True
+                            $ segna("ep1_d9_crocerossina_attivata")
+                            n "{b}Trait activated: Savior Complex — Howard.{/b}"
+                            $ cg("Close-up of Howard's face over Sara's shoulder: eyes half-closed and a small, greedy, satisfied smile that Sara cannot see.", "images/cg/ep1/d9_12_howard_sorriso.webp")
+                            call inizio_retroscena
+                            rs "Sara's face is against his chest. She cannot see Howard's expression: his eyes are half-closed, and a small, greedy smile curls his lips. He does not intend to let go first."
+                            $ retroscena("howard", "After three choices to continue the hug, Howard showed a private, satisfied smile. Sara never saw it.")
+                            call fine_retroscena
+                            sp "Poor Howard. No one should feel so alone."
+                            n "Eventually Sara rises, gently disentangling herself. Howard would have stayed like that indefinitely."
+
+label ep1_d9_abbraccio_finito:
     $ nota_sara("howard", "A lonely man. She feels enormously tender towards him.")
     n "The rest of the evening passes slowly, and not unpleasantly. Howard shows her photos of his mother. He makes her a cheese sandwich that she eats out of politeness, and then out of hunger."
     sp "He's sweet, in his way. A little sad. A little strange. But sweet."
@@ -203,7 +245,7 @@ label ep1_d9_sera:
             $ interest("howard", 2, "A door left ajar.")
             $ segna("ep1_howard_caffe", "forse")
             ho "When it happens. Of course. I'm always here."
-        "«I'm sorry, Howard, I really don't have much time.»":
+        "«I'm sorry, Howard, I really don't have much time.»" (rifiuto_howard=True):
             $ segna("ep1_howard_caffe", "no")
             ho "I understand. I understand perfectly."
             call inizio_retroscena
