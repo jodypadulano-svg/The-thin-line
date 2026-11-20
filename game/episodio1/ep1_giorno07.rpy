@@ -167,11 +167,35 @@ label ep1_d7_sera:
             c "Who's Daniel?"
             $ cg("Darkness, only the streetlight through the curtains: Sara leaning over Josh and kissing him, smiling against his mouth, his hands in her hair", "images/cg/ep1/d7_09_iniziativa.webp")
             n "She kisses him, and she's smiling while she does it, because he's laughing softly against her mouth, surprised and grateful at the same time."
-            n "It's not new. It's theirs. Sometimes that's the best thing about it."
+            ## Decisione del 19/11 con Jody: la scena non sfuma sul nero. Sara si
+            ## spoglia, e Josh, per la prima volta (lo stress di Daniel), finisce
+            ## appena si sfiorano. Sensuale, non esplicita: niente LM Studio.
+            n "Then she sits up, astride him, the duvet sliding off her shoulders."
+            $ cg("Darkness, cool streetlight through the curtains: Sara astride Josh on the bed, pulling her white T-shirt off over her head, topless, her red curls falling down her back, smiling down at him; Josh beneath her, glasses off, looking up at her in awe", "images/cg/ep1/d7_11_maglietta.webp")
+            n "She pulls the T-shirt over her head and lets it fall somewhere on the floor. The streetlight draws a pale line along her ribs."
+            n "[nome_compagno] looks at her the way he did the first time, years ago, as if he can't quite believe he's allowed."
+            c "God. Sara."
+            s "Shh. Stop thinking."
+            n "She leans down over him, slowly, enjoying it: the warmth of his skin against hers, his breath catching, his hands on her hips."
+            n "And then, before anything has really begun, he goes rigid beneath her. A sharp breath. A sound that isn't pleasure so much as surprise."
+            n "Then nothing. Just his heart, hammering under her palm."
+            c "...Oh no."
+            c "Oh no, no. Sara, I'm sorry. That's never... that's never happened. I don't know what..."
+            $ cg("Darkness, cool streetlight: Josh lying back with his forearm over his eyes, mortified; Sara beside him, the duvet held to her chest, smiling gently at him and stroking his curls", "images/cg/ep1/d7_12_scusa.webp")
+            n "Sara looks at him for a moment. Then she smiles, because he looks so stricken, and because it's [nome_compagno]."
+            s "Hey. It's fine. It happens."
+            s "It's Daniel. It's this week. Come here."
+            n "She pulls him against her, his head on her chest, and runs her fingers through his curls until his breathing slows."
+            c "I'll make it up to you. I promise."
+            s "I know. Sleep."
+            $ segna("ep1_d7_josh_precoce")
             scene bg nero with fade
-            n "Later, he falls asleep with his arm across her, heavy and warm. Sara stays awake a little longer, listening to him breathe."
+            n "In a few minutes he's asleep, heavy and warm, one arm across her."
+            n "Sara stays awake, staring at the ceiling in the dark."
             sp "I started it. I don't usually start it."
-            sp "I should do that more often."
+            sp "It's nothing. It's stress. It happens to everyone, the internet says so, and the internet knows everything."
+            n "And yet there's something under her skin that won't settle: a warmth with nowhere to go, and a small, strange feeling she doesn't have a name for."
+            sp "It's nothing."
         "She's tired: sleep.":
             $ segna("ep1_d7_dorme")
             s "Come here. Sleep. Monday can wait until Monday."

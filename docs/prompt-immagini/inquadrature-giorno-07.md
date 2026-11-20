@@ -14,12 +14,12 @@ Bozza di lavoro | 19 novembre 2026 · Testo del giorno 7 in `game/episodio1/ep1_
 - **Sara il pomeriggio a casa:** come la mattina, senza cardigan, capelli raccolti con una matita.
 - **Sara al fiume:** *light blue jeans, a mustard knitted jumper, a short tan suede jacket, a striped scarf, white sneakers, hair loose*.
 - **Josh al fiume:** *a grey hoodie under a navy bomber jacket, dark jeans, glasses*.
-- **La notte:** Sara in *an oversized white T-shirt*, Josh in *a grey T-shirt*. Niente di esplicito: è un bacio al buio.
+- **La notte:** Sara in *an oversized white T-shirt*, Josh in *a grey T-shirt*. Con «Take the initiative» Sara resta a seno nudo (C2b), poi Josh finisce subito: sensuale, non esplicito.
 
 Blocco di stile (in fondo a ogni prompt):
 `Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.`
 
-Totale: **10 immagini nuove**, più **1 luogo nuovo** da fare prima: il sentiero lungo il fiume (prompt in fondo). Le immagini dei rami si vedono solo con certe scelte (colonna «Quando compare»).
+Totale: **12 immagini nuove** (10 + C2b e C2c aggiunte il 19/11), più **1 luogo nuovo** da fare prima: il sentiero lungo il fiume (prompt in fondo). Le immagini dei rami si vedono solo con certe scelte (colonna «Quando compare»).
 
 ---
 
@@ -80,6 +80,8 @@ A wooden bench on the riverside path from the reference image at golden hour, th
 |---|---|---|---|---|
 | C1 | `d7_08_letto` | Camera, abat-jour accesa: Josh supino guarda il soffitto, Sara su un fianco appoggiata al gomito lo ascolta | `casa_camera_mattina` (di notte), Sara, Josh | sempre |
 | C2 | `d7_09_iniziativa` | Al buio, solo la luce del lampione dalle tende: Sara si china su Josh e lo bacia sorridendo, le mani di lui nei suoi capelli | C1 | scelta «Take the initiative» |
+| C2b | `d7_11_maglietta` | Al buio: Sara a cavalcioni su Josh si sfila la maglietta bianca, a seno nudo, controluce, sorride; Josh la guarda incantato | C2, Sara | scelta «Take the initiative» (decisione 19/11) |
+| C2c | `d7_12_scusa` | Al buio: Josh supino con l'avambraccio sugli occhi, mortificato; Sara accanto, il piumone stretto al petto, gli accarezza i ricci sorridendo | C2b | scelta «Take the initiative» |
 | C3 | `d7_10_dormono` | Al buio: dormono abbracciati a cucchiaio, il viso di lui nei capelli di lei; una striscia di luce sul piumone | C1 | scelta «She's tired: sleep» |
 
 **C1**
@@ -89,6 +91,14 @@ The bedroom of the apartment from the reference image at night, only the warm be
 **C2**
 ```
 The same bedroom as in the reference image, now dark, the lamp off, only the cool light of a streetlamp through the curtains: @sara_wc in her oversized white T-shirt leans over Josh and kisses him, smiling against his mouth, her red curls falling around both their faces; @josh_wc, glasses off on the bedside table, laughs softly into the kiss, his hands in her hair. Tender, playful, loving, non-explicit, both under the duvet. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+**C2b** (decisione del 19/11: la scena non sfuma sul nero; Josh finisce appena si sfiorano, per la prima volta)
+```
+The same dark bedroom as in the reference image, the lamp off, only the cool bluish streetlight through the curtains: @sara_wc sits astride @josh_wc on the bed, pulling her oversized white T-shirt off over her head, topless, her long red curls spilling down her back, the streetlight drawing a pale line along her ribs; she smiles down at him, playful and tender; Josh lies beneath her in his grey T-shirt, curly brown hair, glasses off on the bedside table, his hands on her hips, looking up at her in awe. Sensual and loving, the floral duvet bunched around them. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+**C2c**
+```
+The same dark bedroom as in the reference image, cool streetlight through the curtains: @josh_wc lies on his back with his forearm over his eyes, mortified and embarrassed; @sara_wc lies on her side next to him, the floral duvet held up to her chest, bare shoulders, red curls loose, smiling gently at him and stroking his curly hair with her other hand, reassuring. Tender, a little sad, intimate. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **C3**
 ```
