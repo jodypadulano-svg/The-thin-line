@@ -155,7 +155,7 @@ init python:
             if v is None:
                 continue
             kw = getattr(v, "kwargs", None) or {}
-            if kw and not requisiti_ok(kw):
+            if rifiuto_howard_bloccato(kw) or (kw and not requisiti_ok(kw)):
                 continue
             if kw.get("segreto"):
                 continue
