@@ -35,3 +35,12 @@ Col passare del tempo Sara si abitua a Howard, quasi senza capire perché. Va a 
 **Evoluzione dopo la conquista:** Howard può abbandonare gradualmente la maschera del vicino impacciato e rivelare una personalità più sicura, sfacciata e dominante. Sara può apprezzare sinceramente questa sua ruvidità. Il giocatore conosce l'inganno iniziale; Sara non lo riconoscerà mai.
 
 **Da sviluppare:** che cosa prova Howard durante la scena in cui Sara comincia ad assecondarlo; dialoghi definitivi, varianti di reazione, condizioni e progressione del percorso.
+
+
+## H. Giorno 9 — meccanica dell'abbraccio (decisione del 20/11/2026)
+
+Specifica dettagliata: [Howard — giorno 9 e Complesso della Crocerossina](../narrative/howard-giorno09-complesso-crocerossina-2026-11-20.md).
+
+Dopo il pianto simulato Sara può consolarlo con un abbraccio. **Howard non scioglie mai l'abbraccio per primo**. Il giocatore può staccarsi in ogni momento oppure continuare fino a tre conferme. Ogni prosecuzione dà **Howard Interest +1**; le mani di lui si spostano progressivamente verso il sedere di Sara. Sara intuisce vagamente qualcosa e subito si rimprovera: considera l'idea ingenerosa nei confronti di un uomo che sta soffrendo. Il giocatore invece conosce l'inganno. Il **primo piano dell'espressione compiaciuta e avida di Howard** compare **solo dopo la terza conferma**; Sara, col volto contro il petto di lui, non lo vede.
+
+Gli avvertimenti al giocatore sono graduali, fino alla terza conferma esplicita delle **conseguenze permanenti**, con la formula «a tuo rischio e pericolo». Tre conferme attivano la booleana `complesso_crocerossina` e rendono **grigie e non cliccabili tutte le opzioni di rifiuto nelle successive proposte di Howard**. Si tratta di una convenzione ludica che rappresenta il bisogno di Sara di prendersene cura, non di consenso automatico o colpa della protagonista. Le opzioni di rifiuto di Howard vanno contrassegnate `(rifiuto_howard=True)` in ogni menu Ren'Py futuro.
