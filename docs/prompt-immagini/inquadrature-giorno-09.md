@@ -6,7 +6,7 @@ Bozza di lavoro | 20 novembre 2026 · Testo del giorno 9 in `game/episodio1/ep1_
 **Josh:** `@josh_wc` e una scena recente (es. `d8_08_cena_josh`), **non** `josh_figura_intera`.
 **Per il viso di Sara** allega sempre `riferimenti/attori/sara_acquerello_riferimento.webp` (approvato) e `d1_03_scrivania` o `d4_04_sara_scrivania`, **mai** una Sara recente: copiando dalle copie i capelli sono andati alla deriva (castani mossi → rossi ricci, segnalato da Jody il 20/11). Nei prompt scrivi sempre *shoulder-length chestnut-brown wavy hair with subtle copper highlights*. Nei prompt: *same face, hair and bust size as in the reference images, natural unpainted nails*. **Seno:** mai parole che lo riducano (*moderate*, *not enlarged*…): li fa piccoli e Jody deve ritoccare a mano. Solo *same bust size as in the reference images*.
 **Le porte del pianerottolo (canone):** Sara e Josh = **marrone di legno, a sinistra**; Howard = **verde, a destra**. **Il portachiavi:** una piccola **penna stilografica d'argento**.
-**Doppie immagini:** non servono: nessuna scena cambia con le scelte precedenti.
+**Doppie immagini:** non servono per le scelte precedenti. **Nuovo ramo condizionale del giorno 9:** tre CG per l'abbraccio di Sara a Howard; il primo piano compare solo dopo il terzo prolungamento.
 
 **Abiti del giorno 9 (martedì, autunno)**
 - **Sara:** *a dark green knitted jumper, a grey wool skirt, black tights, ankle boots, a camel coat (kept on at Howard's at first), shoulder-length chestnut-brown wavy hair with subtle copper highlights, loose*.
@@ -16,7 +16,7 @@ Bozza di lavoro | 20 novembre 2026 · Testo del giorno 9 in `game/episodio1/ep1_
 Blocco di stile (in fondo a ogni prompt):
 `Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.`
 
-Totale: **9 immagini**, più **1 luogo nuovo** da fare prima: **la casa di Howard** (prompt in fondo).
+Totale: **12 immagini** (9 originali + 3 nuove condizionali per l'abbraccio), più **1 luogo nuovo** da fare prima: **la casa di Howard** (prompt in fondo).
 
 ---
 
@@ -31,6 +31,9 @@ Totale: **9 immagini**, più **1 luogo nuovo** da fare prima: **la casa di Howar
 | C3 | `d9_07_pianto` | Howard nella poltrona col viso tra le mani, le spalle che tremano; Sara sul bordo della sedia, protesa verso di lui, commossa | `casa_howard`, C1 | sempre |
 | C4 | `d9_08_soglia` | La porta di Howard: lui le tiene aperta la porta e la guarda dal basso con occhi lucidi e speranzosi; dall'altra parte del pianerottolo la porta marrone è aperta e ne esce luce | `pianerottolo`, C3 | sempre |
 | D1 | `d9_09_josh_abbraccio` | L'ingresso di casa: Josh in camicia e cravatta allentata stringe forte Sara; la borsa caduta a terra | `d6_03_chiavi_ciotola` (l'ingresso), Josh, Sara | sempre |
+| C5 | `d9_10_abbraccio` | Sara accovacciata abbraccia Howard sulla poltrona: il contatto iniziale è tenero per lei, molto diverso per lui | `casa_howard`, Sara, Howard | solo se Sara sceglie l'abbraccio |
+| C6 | `d9_11_mani` | Mani di Howard più in basso sulla schiena di Sara, che ancora lo consola senza sospettare | C5 | dopo la **seconda** scelta di prolungare |
+| C7 | `d9_12_howard_sorriso` | Primo piano del viso di Howard con sorrisetto avido e soddisfatto, nascosto a Sara che ha il viso al suo petto | C5, Howard | **soltanto dopo la terza** scelta di prolungare |
 
 **A1** (retroscena)
 ```
@@ -83,3 +86,23 @@ Watercolor and pencil illustration of a small, old apartment living room with an
 ## Audio
 
 Niente di nuovo: `redazione`, `casa`, `telefono_vibra`, `notifica`, `chiave_serratura` ci sono già. Da valutare più avanti un ambiente per la casa di Howard (TV in sottofondo, orologio a muro).
+
+
+## Estensione 20/11: tre CG per l'abbraccio e il Complesso della Crocerossina
+
+**C5 — `d9_10_abbraccio` (solo se il giocatore sceglie «Hug him»):**
+```
+Howard's dim living room from the reference image, television blue and lamp warm: @sara_wc in her dark green knitted jumper, grey wool skirt and black tights, shoulder-length chestnut-brown wavy hair with subtle copper highlights, loose, crouches beside Howard's old armchair and hugs him gently to comfort him, her face full of sincere tenderness. Howard from the reference image, heavy and untidy in his beige cardigan and checked shirt, presses his face into her hair, not ready to let go. Different emotional meanings of the hug for each person; not sexualized from Sara's point of view. Same face, hair and bust size as in Sara's reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+
+**C6 — `d9_11_mani` (dopo 2 prolungamenti):**
+```
+Same Howard living room and identical hug composition as C5, medium shot: Sara is still comforting Howard, trustingly and gently, her face close to his shoulder. Howard's thick hand is now visibly resting lower along the back of Sara's dark green knitted jumper, near her waist, subtly descending; his intention is unsettling but she does not look alarmed. Preserve character faces, clothes and body proportions across images. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+
+**C7 — `d9_12_howard_sorriso` (solo dopo la TERZA conferma):**
+```
+Close-up on Howard's face during the hug in his dim living room from the reference image. Sara's chestnut-brown wavy hair and dark green jumper are visible in the foreground as she rests her face against his chest, unable to see his expression. Howard's eyes are half closed, nostrils subtly flared, lips curled into a small greedy, satisfied, furtive smile. Quietly creepy, not a broad cartoon sneer. His beige cardigan and checked shirt visible. Warm lamplight and blue television glow. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+
+**Nota di produzione:** i nuovi file grafici sono richiesti dal codice ma non ancora creati. Il sistema `cg()` mostra il fallback testuale finché mancano. Il valore `complesso_crocerossina` è una **booleana di gameplay**, non un elemento da raffigurare.
