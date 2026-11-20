@@ -178,7 +178,7 @@ init -10 python:
         return "Interest " + nome_interest(chiave)
 
     ## Argomenti delle scelte che NON sono requisiti (es. la scelta segreta).
-    CHIAVI_SPECIALI = ("segreto",)
+    CHIAVI_SPECIALI = ("segreto", "rifiuto_howard")
 
     def requisiti_di(kwargs):
         """Solo i requisiti veri di una scelta, senza le chiavi speciali."""
@@ -202,6 +202,10 @@ init -10 python:
             else:
                 parti.append("{} {}".format(_nome_requisito(k), v))
         return " · ".join(parti)
+
+    def rifiuto_howard_bloccato(kwargs):
+        """Opzione di rifiuto disabilitata dal tratto Crocerossina (solo Howard)."""
+        return bool((kwargs or {}).get("rifiuto_howard") and store.complesso_crocerossina)
 
     def segreto_trovato(descrizione):
         """Segreto dei dev trovato dal giocatore: notifica e riga nel Diario."""
@@ -271,6 +275,12 @@ default sara_corruption = 0
 default sara_confidence = 20       # una sognatrice che non crede abbastanza in sé
 default josh_suspicion = 0
 default interest_josh = 80    # parte da una coppia felice
+
+## Howard, giorno 9: ogni prolungamento dell'abbraccio vale Interest Howard +1.
+## Dopo tre conferme Sara attiva permanentemente il Complesso della Crocerossina.
+## Le scelte future di rifiuto marcate (rifiuto_howard=True) restano visibili ma grigie.
+default howard_abbraccio_prolungamenti = 0
+default complesso_crocerossina = False
 
 ## Percorsi. I quattro senza scheda esistono già per non rompere i salvataggi.
 default percorsi = {
