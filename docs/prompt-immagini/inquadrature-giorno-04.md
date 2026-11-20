@@ -31,7 +31,7 @@ Totale: **13 immagini nuove + 1 variante** (`d4_09b`). Luogo nuovo: **il bar del
 
 **A1**
 ```
-The newsroom from the reference image, morning light through tall windows: @barbara_wc sweeps along the aisle between the desks in a leopard-print jacket, red hair, chin up, eyes straight ahead, ignoring everyone; at her desk in the foreground @sara_wc in a white blouse buttoned to the collarbone half-rises from her chair holding a printed draft, hopeful and then deflated, watching Barbara walk past without a glance. Female colleagues in the background. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The newsroom from the reference image, morning light through tall windows: @barbara_wc sweeps along the aisle between the desks in a leopard-print jacket, red hair, chin up, eyes straight ahead, ignoring everyone; at her desk in the foreground @sara_wc in a white blouse buttoned to the collarbone half-rises from her chair holding a printed draft, hopeful and then deflated, watching Barbara walk past without a glance. Female colleagues in the background. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **A2**
 ```
@@ -43,7 +43,7 @@ The newsroom from the reference image: @jessica_wc twirls beside Sara's desk in 
 ```
 **A4**
 ```
-Close-up of @sara_wc at her newsroom desk from the reference image, white blouse buttoned to the collarbone, looking up at someone standing beside her (off-frame), a polite smile on her lips and a flicker of doubt in her eyes; a cappuccino with cinnamon on the desk. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Close-up of @sara_wc at her newsroom desk from the reference image, white blouse buttoned to the collarbone, looking up at someone standing beside her (off-frame), a polite smile on her lips and a flicker of doubt in her eyes; a cappuccino with cinnamon on the desk. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 ---
@@ -58,7 +58,7 @@ La chat si vede nel telefono del gioco (bolle a destra): basta una sola immagine
 
 **B1**
 ```
-The newsroom from the reference image at lunchtime, almost empty, soft midday light: @sara_wc alone at her desk in a white blouse, a half-eaten sandwich on a paper napkin beside the keyboard, chin in her hand, smiling tenderly at her phone screen (screen not visible). Empty chairs around her. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The newsroom from the reference image at lunchtime, almost empty, soft midday light: @sara_wc alone at her desk in a white blouse, a half-eaten sandwich on a paper napkin beside the keyboard, chin in her hand, smiling tenderly at her phone screen (screen not visible). Empty chairs around her. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 ---
@@ -78,7 +78,7 @@ The newsroom from the reference image at lunchtime, almost empty, soft midday li
 
 **C1**
 ```
-The cocktail bar from the reference image at golden hour: in the corner by the large window, two or three small round tables pushed together, crowded with colourful cocktails in different glasses; around it the young women from the newsroom laughing and talking, @jessica_wc in a fitted red dress and @roberta_wc in a pastel pink cardigan, both wearing a small gold heart pendant; @sara_wc among them in a white blouse, holding a glass of white wine, smiling a little stiffly, slightly apart from the group. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The cocktail bar from the reference image at golden hour: in the corner by the large window, two or three small round tables pushed together, crowded with colourful cocktails in different glasses; around it the young women from the newsroom laughing and talking, @jessica_wc in a fitted red dress and @roberta_wc in a pastel pink cardigan, both wearing a small gold heart pendant; @sara_wc among them in a white blouse, holding a glass of white wine, smiling a little stiffly, slightly apart from the group. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **C2**
 ```
@@ -86,11 +86,11 @@ The cocktail bar from the reference image, evening: @barbara_wc makes an entranc
 ```
 **C3**
 ```
-Two-shot at the low table of the cocktail bar from the reference image: @barbara_wc, leopard coat open, leans over @sara_wc and holds out a pink cocktail in a wide coupe glass, her red-nailed hand resting lightly on Sara's shoulder, smiling with sharp amusement; Sara, white blouse, looks up at her, surprised, not sure whether to take the glass. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Two-shot at the low table of the cocktail bar from the reference image: @barbara_wc, leopard coat open, leans over @sara_wc and holds out a pink cocktail in a wide coupe glass, her red-nailed hand resting lightly on Sara's shoulder, smiling with sharp amusement; Sara, white blouse, looks up at her, surprised, not sure whether to take the glass. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **C4**
 ```
-Close-up of @sara_wc at the cocktail bar table from the reference image, white blouse, a glass in her hand, cheeks a little flushed, caught between laughter and caution, eyes glancing sideways at someone off-frame. Warm amber bar light, blurred bottles behind her. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Close-up of @sara_wc at the cocktail bar table from the reference image, white blouse, a glass in her hand, cheeks a little flushed, caught between laughter and caution, eyes glancing sideways at someone off-frame. Warm amber bar light, blurred bottles behind her. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **C4b** (modifica di C4)
 ```
@@ -120,11 +120,11 @@ Inside the cocktail bar from the reference image: @barbara_wc sits alone at the 
 
 **D1**
 ```
-The apartment from the reference image at night, the small kitchen corner: @sara_wc in an oversized cream knit sweater, hair in a loose bun, sits alone at the kitchen table with an open laptop (screen not readable), a cold cup of tea beside it, typing with total concentration, lit only by the laptop glow and a small lamp; the window behind her is dark; at the end of a dim corridor in the background, a closed door. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The apartment from the reference image at night, the small kitchen corner: @sara_wc in an oversized cream knit sweater, hair in a loose bun, sits alone at the kitchen table with an open laptop (screen not readable), a cold cup of tea beside it, typing with total concentration, lit only by the laptop glow and a small lamp; the window behind her is dark; at the end of a dim corridor in the background, a closed door. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **D2**
 ```
-The living room from the reference image at night: on the sofa @josh_wc in a T-shirt is asleep against @sara_wc's shoulder, mouth slightly open, a pizza crust still in his hand; Sara, in an oversized cream knit sweater, is awake, gently stroking his hair, her face tender and thoughtful in the blue glow of the TV (screen not visible); an empty pizza box on the coffee table. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The living room from the reference image at night: on the sofa @josh_wc in a T-shirt is asleep against @sara_wc's shoulder, mouth slightly open, a pizza crust still in his hand; Sara, in an oversized cream knit sweater, is awake, gently stroking his hair, her face tender and thoughtful in the blue glow of the TV (screen not visible); an empty pizza box on the coffee table. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 ---

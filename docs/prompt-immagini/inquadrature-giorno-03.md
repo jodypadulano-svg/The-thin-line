@@ -31,11 +31,11 @@ Totale: **20 immagini nuove + 7 varianti `_audace` + 7 varianti `_nero`** = 34 f
 
 **A1**
 ```
-The newsroom from the reference image, a crowded meeting table with twelve chairs squeezed around it, morning light: @barbara_wc at the head of the table, leopard-print jacket, red hair, glasses on the tip of her nose, reading assignments from a sheet like a queen at a banquet; journalists around her, some bored, some nervous; at the far end @sara_wc in her buttoned-up white blouse holds a notebook and a pen. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The newsroom from the reference image, a crowded meeting table with twelve chairs squeezed around it, morning light: @barbara_wc at the head of the table, leopard-print jacket, red hair, glasses on the tip of her nose, reading assignments from a sheet like a queen at a banquet; journalists around her, some bored, some nervous; at the far end @sara_wc in her buttoned-up white blouse holds a notebook and a pen. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **A2**
 ```
-Close-up of @sara_wc at the meeting table from the reference image, buttoned-up white blouse, pen frozen over an open notebook full of crossed-out notes (no readable text), biting her lip, eyes raised toward the head of the table, torn between fear and courage. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Close-up of @sara_wc at the meeting table from the reference image, buttoned-up white blouse, pen frozen over an open notebook full of crossed-out notes (no readable text), biting her lip, eyes raised toward the head of the table, torn between fear and courage. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **A3**
 ```
@@ -55,13 +55,13 @@ Close-up of @barbara_wc at the head of the meeting table from the reference imag
 
 **B1**
 ```
-The bedroom from the reference image in the early evening, warm lamp light: @sara_wc in a soft white bathrobe, hair still damp, stands at the foot of the bed looking at three dresses laid out side by side on the quilt: a modest navy dress, a simple black dress, and a fitted red dress; her expression is comically undecided, one hand on her cheek. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The bedroom from the reference image in the early evening, warm lamp light: @sara_wc in a soft white bathrobe, hair still damp, stands at the foot of the bed looking at three dresses laid out side by side on the quilt: a modest navy dress, a simple black dress, and a fitted red dress; her expression is comically undecided, one hand on her cheek. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **I tre vestiti (fissati sulla B1 definitiva, 17/11):** blu scuro con maniche corte e scollo modesto, al ginocchio · nero semplice senza maniche, scollo rotondo, appena sopra il ginocchio · rosso corto con spalline sottili e scollo incrociato.
 
 **B3**
 ```
-The same bedroom from the reference image, evening lamp light: @sara_wc stands in front of the tall mirror wearing the dark navy knee-length dress with short sleeves and a modest neckline from the reference image, smoothing the skirt with both hands, a calm, satisfied little smile, hair now dry and brushed. Same face, hair and bust size as in the reference images, natural unpainted nails, modest. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The same bedroom from the reference image, evening lamp light: @sara_wc stands in front of the tall mirror wearing the dark navy knee-length dress with short sleeves and a modest neckline from the reference image, smoothing the skirt with both hands, a calm, satisfied little smile, hair now dry and brushed. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 **B4**
 ```
