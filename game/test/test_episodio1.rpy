@@ -75,11 +75,11 @@ testsuite foto_scelte:
     enabled False
     testcase bloccata:
         $ store.menu = renpy.display_menu
-        run Jump("simon_s5_allenamento")
+        run Jump("ep1_d8_simon")
         advance until screen "choice" timeout 30.0
         pause 0.5
         screenshot "scelta_bloccata.png"
-        click "«Certo.»"
+        click "«Sure.»"
         pause 0.2
         screenshot "notifica.png"
 
@@ -210,7 +210,7 @@ testsuite debug_salta:
     testcase salto:
         description "Salto ai giorni 4, 5 e 6 con ogni preset: stato coerente, poi fino alla fine."
         parameter preset = ["brava", "barbara", "daniel", "mista"]
-        parameter arrivo = [4, 5, 6, 7]
+        parameter arrivo = [4, 5, 6, 7, 8]
         $ _foto_debug.clear()
         $ _test_esito["fine"] = False
         $ debug_prepara(arrivo, preset)

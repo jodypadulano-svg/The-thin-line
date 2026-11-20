@@ -46,6 +46,8 @@ init python:
                 "Thank him.", "The grey dress.", "Dance with [nome_compagno].",
                 ## Giorno 7
                 "A walk by the river with [nome_compagno].", "Take the initiative.",
+                ## Giorno 8
+                "Focus on the piece.", "Go home.",
             ],
         },
         "barbara": {
@@ -81,6 +83,9 @@ init python:
                 "Laugh a little too much at Simon's jokes.",
                 ## Giorno 7
                 "Write.", "She's tired: sleep.",
+                ## Giorno 8
+                "Chat with Joanie under the desk.", "Go in anyway.", "«Fix the other one too?",
+                "«Sure.»", "Save it.", "Don't mention it.",
             ],
         },
         "daniel": {
@@ -115,6 +120,9 @@ init python:
                 "Stay and talk with Simon.",
                 ## Giorno 7
                 "Write.", "Take the initiative.",
+                ## Giorno 8
+                "Focus on the piece.", "Go in anyway.", "«I'll do it myself",
+                "«Thanks. I'll ask Joanie.»", "Tell [nome_compagno] about the session",
             ],
         },
         "mista": {
