@@ -22,6 +22,8 @@ Effetti e ambienti: **ElevenLabs** (Sound Effects). L'uso commerciale richiede u
 | `game/audio/ambienti/ufficio.ogg` | Open Plan | 172759739269121 | 19/11/2026 | ✅ Ownership Certificate (Mureka) |
 | `game/audio/ambienti/enoteca.ogg` | Bar NIght | 172760078811137 | 19/11/2026 | ✅ Ownership Certificate (Mureka) |
 | `game/audio/ambienti/locale.ogg` | Busy city bar on a S… (effetto) | — | 19/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
+| `game/audio/ambienti/fiume.ogg` | Riverside park path… (effetto) | — | 20/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
+| `game/audio/suoni/citofono.ogg` | Old apartment interc… (effetto) | — | 20/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/suoni/chiavi_ciotola.ogg` | A bunch of house key… (effetto) | — | 19/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/ambienti/redazione.ogg` | Busy open-plan newsp… (effetto) | — | 17/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/suoni/telefono_vibra.ogg` | Smartphone vibrating (effetto) | — | 17/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
