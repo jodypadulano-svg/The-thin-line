@@ -48,6 +48,9 @@ init python:
                 "A walk by the river with [nome_compagno].", "Take the initiative.",
                 ## Giorno 8
                 "Focus on the piece.", "Go home.",
+                ## Giorno 9
+                "Something sweet.", "Pretend not to notice.", "Kind words, from her chair.",
+                "«I'm sorry, Howard, I really don't have much time.»",
             ],
         },
         "barbara": {
@@ -86,6 +89,9 @@ init python:
                 ## Giorno 8
                 "Chat with Joanie under the desk.", "Go in anyway.", "«Fix the other one too?",
                 "«Sure.»", "Save it.", "Don't mention it.",
+                ## Giorno 9
+                "Let him know she's annoyed.", "Pretend not to notice.", "Hug him.",
+                "«When it happens, gladly.»",
             ],
         },
         "daniel": {
@@ -123,6 +129,9 @@ init python:
                 ## Giorno 8
                 "Focus on the piece.", "Go in anyway.", "«I'll do it myself",
                 "«Thanks. I'll ask Joanie.»", "Tell [nome_compagno] about the session",
+                ## Giorno 9
+                "Something sweet.", "Offer to help him tidy up", "Hug him.",
+                "«Of course, Howard. A coffee now and then.»",
             ],
         },
         "mista": {
