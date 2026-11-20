@@ -229,6 +229,14 @@ screen choice(items):
                 pass
             ## Frasi con requisito (A3): es.  "Testo" (corruption=15), oppure
             ## un tetto (corruption_max=20). Se manca, la frase resta in grigio.
+            elif rifiuto_howard_bloccato(i.kwargs):
+                button:
+                    action None
+                    xalign 0.5
+                    vbox:
+                        xalign 0.5 ypos 0 yanchor 0.0
+                        text i.caption xalign 0.5 color "#ffffff55"
+                        text "Locked: Savior complex (Howard)" xalign 0.5 size 22 color "#ff5c7a"
             elif requisiti_di(i.kwargs) and not requisiti_ok(i.kwargs):
                 button:
                     action None
