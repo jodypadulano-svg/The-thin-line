@@ -31,9 +31,12 @@ Totale: **12 immagini** (9 originali + 3 nuove condizionali per l'abbraccio), pi
 | C3 | `d9_07_pianto` | Howard nella poltrona col viso tra le mani, le spalle che tremano; Sara sul bordo della sedia, protesa verso di lui, commossa | `casa_howard`, C1 | sempre |
 | C4 | `d9_08_soglia` | La porta di Howard: lui le tiene aperta la porta e la guarda dal basso con occhi lucidi e speranzosi; dall'altra parte del pianerottolo la porta marrone è aperta e ne esce luce | `pianerottolo`, C3 | sempre |
 | D1 | `d9_09_josh_abbraccio` | L'ingresso di casa: Josh in camicia e cravatta allentata stringe forte Sara; la borsa caduta a terra | `d6_03_chiavi_ciotola` (l'ingresso), Josh, Sara | sempre |
-| C5 | `d9_10_abbraccio` | Sara accovacciata abbraccia Howard sulla poltrona: il contatto iniziale è tenero per lei, molto diverso per lui | `casa_howard`, Sara, Howard | solo se Sara sceglie l'abbraccio |
-| C6 | `d9_11_mani` | Mani di Howard più in basso sulla schiena di Sara, che ancora lo consola senza sospettare | C5 | dopo la **seconda** scelta di prolungare |
-| C7 | `d9_12_howard_sorriso` | Primo piano del viso di Howard con sorrisetto avido e soddisfatto, nascosto a Sara che ha il viso al suo petto | C5, Howard | **soltanto dopo la terza** scelta di prolungare |
+| C5 | `d9_10_abbraccio` | Sara accovacciata abbraccia Howard sulla poltrona: il contatto iniziale è tenero per lei, molto diverso per lui | `casa_howard`, Sara, Howard | solo se Sara sceglie l'abbraccio (fatta, 20/11) |
+| C6 | `d9_11_mani` | La mano di Howard scesa sul lato del fianco, al bordo del sedere; Sara ancora lo consola senza sospettare | C5 | dopo la **seconda** scelta di prolungare (fatta, 20/11) |
+| C5b | `d9_10b_vita` | Stesso abbraccio, la mano di Howard sul fianco all'altezza della gonna | C5 | prima scelta di prolungare (fatta, 20/11) |
+| C6b | `d9_11b_mano` | La mano di Howard piena sul sedere di Sara, lui a occhi chiusi che sorride | C5 | terza scelta di prolungare, prima immagine (fatta, 20/11) |
+| C6c | `d9_11c_sara_volto` | Primo piano del viso di Sara contro la spalla di Howard: occhi spalancati un attimo, il dubbio, poi la vergogna di averlo pensato | C5, Sara | terza scelta, seconda immagine (fatta, 20/11) |
+| C7 | `d9_12_howard_sorriso` | Primo piano del viso di Howard con sorrisetto avido e soddisfatto, nascosto a Sara che ha il viso al suo petto | C5, Howard | **soltanto dopo la terza** scelta di prolungare (fatta, 20/11: due riquadri, il viso e la mano) |
 
 **A1** (retroscena)
 ```
@@ -69,7 +72,7 @@ The apartment building landing from the reference image at night: Howard, in his
 ```
 **D1**
 ```
-The small entrance hall of the apartment from the reference image at night: @josh_wc in a white shirt with a loosened dark tie, slim, curly brown hair, glasses, hugs @sara_wc tightly, eyes closed, relieved and guilty; Sara in her dark green jumper rests her cheek on his shoulder, smiling tiredly; her handbag has been dropped on the floor. The bowl on the cabinet by the door is empty. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The small entrance hall of the apartment from the reference image at night: @josh_wc in a white shirt with a loosened dark tie, slim, curly brown hair, glasses, hugs @sara_wc tightly, eyes closed, relieved and guilty; Sara in her dark green jumper, shoulder-length chestnut-brown wavy hair with subtle copper highlights, loose, rests her cheek on his shoulder, smiling tiredly; her handbag has been dropped on the floor. The bowl on the cabinet by the door is empty. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 ---
@@ -98,6 +101,11 @@ Howard's dim living room from the reference image, television blue and lamp warm
 **C6 — `d9_11_mani` (dopo 2 prolungamenti):**
 ```
 Same Howard living room and identical hug composition as C5, medium shot: Sara is still comforting Howard, trustingly and gently, her face close to his shoulder. Howard's thick hand is now visibly resting lower along the back of Sara's dark green knitted jumper, near her waist, subtly descending; his intention is unsettling but she does not look alarmed. Preserve character faces, clothes and body proportions across images. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+
+**C6c — `d9_11c_sara_volto` (terza scelta, dopo la mano):**
+```
+Close-up of @sara_wc's face resting against Howard's shoulder during the hug, in his dim living room from the reference image, warm lamplight and blue television glow: her eyes have just opened wide for an instant, a flicker of doubt and surprise, her eyebrows slightly raised, lips parted; already a hint of guilt for what she just thought. Shoulder-length chestnut-brown wavy hair with subtle copper highlights, loose, slightly mussed; freckles; dark green knitted jumper. Howard's beige cardigan fills the foreground, his face out of frame. Same face, hair and bust size as in Sara's reference images. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 **C7 — `d9_12_howard_sorriso` (solo dopo la TERZA conferma):**

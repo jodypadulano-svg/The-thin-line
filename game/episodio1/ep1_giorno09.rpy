@@ -198,21 +198,33 @@ label ep1_d9_da_howard:
                         $ howard_abbraccio_prolungamenti += 1
                         $ interest("howard", 1, "Sara chose to prolong the comforting hug.")
                         if howard_abbraccio_prolungamenti == 1:
+                            $ cg("The same hug: Howard's lower hand has slid down to Sara's waist, at the waistband of her skirt", "images/cg/ep1/d9_10b_vita.webp")
                             n "Howard stays very still, as though afraid the moment might end."
                             sp "He must have needed someone to hold him for such a long time."
                         elif howard_abbraccio_prolungamenti == 2:
-                            $ cg("Howard's thick hand has slipped down the back of Sara's green jumper; Sara still holds him tenderly, unaware of his expression.", "images/cg/ep1/d9_11_mani.webp")
-                            sp "Wait... are his hands moving lower?"
-                            sp "No, Sara. What a dreadful thing to think. He's just upset."
+                            $ cg("The same hug: Howard's hand has slipped further down, onto the side of Sara's hip, the edge of her bottom; Sara still holds him tenderly.", "images/cg/ep1/d9_11_mani.webp")
+                            sp "His hand is lower than before."
+                            sp "He's just holding on. Like someone who's drowning."
                         else:
+                            ## Terza volta (Jody, 20/11): la mano sul sedere, il volto di
+                            ## Sara che si rimprovera, il volto soddisfatto di Howard,
+                            ## poi l'avviso del tratto.
+                            $ cg("The same hug: Howard's hand is now squarely on Sara's bottom; his eyes closed, smiling", "images/cg/ep1/d9_11b_mano.webp")
+                            n "And then his hand isn't on her back any more."
+                            $ cg("Close-up of Sara's face against Howard's shoulder: her eyes open wide for a moment, a flicker of doubt, then guilt", "images/cg/ep1/d9_11c_sara_volto.webp")
+                            sp "Wait. Is that... his hand on my...?"
+                            sp "No. What are you even thinking, Sara? He's a heartbroken old man. He doesn't know where his hands are."
+                            sp "Shame on you."
+                            $ cg("Two panels: Howard's face, eyes closed, a greedy, satisfied smile over Sara's head; his hand spread on her bottom", "images/cg/ep1/d9_12_howard_sorriso.webp")
+                            call inizio_retroscena
+                            rs "Sara's face is against his shoulder. She cannot see Howard's expression: his eyes are half-closed, and a small, greedy smile curls his lips."
+                            rs "He knows exactly where his hand is. And he does not intend to let go first."
+                            $ retroscena("howard", "After three choices to continue the hug, his hand reached her bottom. Sara blamed herself for even thinking it. She never saw his smile.")
+                            call fine_retroscena
                             $ complesso_crocerossina = True
                             $ segna("ep1_d9_crocerossina_attivata")
                             n "{b}Trait activated: Savior Complex — Howard.{/b}"
-                            $ cg("Close-up of Howard's face over Sara's shoulder: eyes half-closed and a small, greedy, satisfied smile that Sara cannot see.", "images/cg/ep1/d9_12_howard_sorriso.webp")
-                            call inizio_retroscena
-                            rs "Sara's face is against his chest. She cannot see Howard's expression: his eyes are half-closed, and a small, greedy smile curls his lips. He does not intend to let go first."
-                            $ retroscena("howard", "After three choices to continue the hug, Howard showed a private, satisfied smile. Sara never saw it.")
-                            call fine_retroscena
+                            n "{b}From now on, choices that go against Howard are disabled: they will stay visible, in grey, for the rest of the playthrough.{/b}"
                             sp "Poor Howard. No one should feel so alone."
                             n "Eventually Sara rises, gently disentangling herself. Howard would have stayed like that indefinitely."
 

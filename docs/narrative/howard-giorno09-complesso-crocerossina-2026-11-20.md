@@ -59,3 +59,6 @@ Si aggiungono tre CG condizionali nella lista di `docs/prompt-immagini/inquadrat
 ## Stato
 
 **Realizzato nel codice**: stato, contatore, loop decisionale, avvertimenti, primo piano richiesto (CG referenziata con fallback fino alla creazione del file), booleana e comportamento grigio del primo rifiuto e dei futuri rifiuti marcati. **Da completare**: produrre le tre immagini e applicare il marcatore di rifiuto ai menu di Howard non ancora scritti. Il testo inglese della scena resta una bozza narrativa da rileggere.
+
+## Aggiornamento (Jody, 20/11, sera): la terza volta
+Ordine della terza scelta di restare: **1)** CG della mano piena sul sedere di Sara (`d9_11b_mano`, fatta); **2)** primo piano del volto di Sara (`d9_11c_sara_volto`) che si rimprovera: «No. What are you even thinking, Sara?»; **3)** primo piano di Howard soddisfatto (`d9_12_howard_sorriso`, retroscena); **4)** l'avviso: tratto attivato e scelte contrarie a Howard disattivate (in grigio) fino alla fine della partita. Alla seconda volta Sara nota solo che la mano è più in basso.
