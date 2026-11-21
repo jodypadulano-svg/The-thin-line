@@ -1,5 +1,7 @@
 # Daniel — primo bacio con Sara alla festa
 
+> **Precisazione di Jody (21/11/2026):** non è la festa d'autunno del giorno 13 (Episodio 1). È un'altra festa a casa di Daniel, molto più avanti nel percorso; quando, da decidere.
+
 ## Contesto e preparazione
 - Daniel organizza una festa a casa propria, anche nella speranza di avvicinarsi a Sara. Non programma però il bacio né si aspetta quanto accadrà.
 - Ci sono altri invitati, luci soffuse, conversazioni e musica sensuale. Sara e Daniel si ritrovano molto vicini per una circostanza da definire; non sono in un luogo davvero appartato e potrebbero essere visti.

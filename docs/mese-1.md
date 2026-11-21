@@ -119,7 +119,7 @@ Somma dei minimi e dei massimi di ogni scelta, come se fossero tutte disponibili
 
 ## 7. Cosa si apre con queste variabili
 
-- **Simon (soglia 15):** il giocatore che sceglie sempre l'opzione più spinta la raggiunge verso il giorno 19 (fine settimana 3) e apre la scena 🔒 del giorno 25. La frase 🔒 del giorno 8 resta chiusa per tutti: è un assaggio di cosa si perde. Il giocatore prudente non arriva a 15.
+- **Simon (soglia 15):** il giocatore che sceglie sempre l'opzione più spinta la raggiunge verso il giorno 19 (fine settimana 3) e apre la scena 🔒 del giorno 25. La frase 🔒 del giorno 8 (soglia abbassata a 7 il 21/11) si apre a chi ha fatto quasi tutte le scelte più spinte dei giorni 2-7. Il giocatore prudente non arriva a 15.
 - **Jacob (soglia 25):** raggiungibile solo all'ultimo giorno, e solo con tutte le scelte più spinte: pronta per l'Episodio 3.
 - **Darius (35) e gli altri:** irraggiungibili nel primo mese, come vuole lo slow burn.
 - **Frasi 🔒 Josh 30:** sempre aperte nel primo mese; si chiuderanno solo se l'Interest verso Josh crolla più avanti.
