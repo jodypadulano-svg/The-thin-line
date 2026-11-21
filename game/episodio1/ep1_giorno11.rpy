@@ -16,7 +16,9 @@
 ##   say no to everyday requests (slippers, texting Josh) and it feels like a dream.
 ## - Day 10: Sara wrote in the Taurus horoscope that something lost would come
 ##   back «and not alone».
-## Draft for Jody's review. Game text in English; comments in Italian.
+## Reviewed with Jody on 21/11/2026 (invented details and Barbara's folder kept;
+## stats kept, ladder gates raised; Howard's line after a refusal softened).
+## Game text in English; comments in Italian.
 ## CG: docs/prompt-immagini/inquadrature-giorno-11.md. Finché mancano,
 ## compare la didascalia [CG].
 
@@ -177,7 +179,7 @@ label ep1_d11_chiavi:
             n "She drops them into the bowl by the door. The little silver pen clinks against the ceramic, the way it always did."
             call inizio_retroscena
             rs "Behind the green door, Howard puts the two new cups back in the cupboard, side by side, very carefully."
-            rs "He isn't disappointed. A no today is a yes another day. She's kind. Kind girls always say yes in the end."
+            rs "He isn't disappointed. A no today is a yes another day. He has all the time in the world. And she has such a kind heart."
             $ retroscena("howard", "Sara turned down his invitation. He didn't mind: he can wait.")
             call fine_retroscena
 
@@ -260,6 +262,8 @@ label ep1_d11_visita:
         n "She takes out her phone. She types. {i}I'm at Howard's, he found my keys!! Having a coffee, see you in a bit.{/i}"
         sp "Why am I telling him what Howard told me to tell him?"
         sp "It's the truth, anyway. It's nothing."
+    else:
+        n "She sends [nome_compagno] a quick message, so he won't find the landing empty: {i}Howard found my keys!! Having a coffee next door.{/i}"
 
     menu:
         sp "Another coffee?"
