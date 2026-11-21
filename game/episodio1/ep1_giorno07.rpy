@@ -204,5 +204,5 @@ label ep1_d7_sera:
             sp "Tomorrow: work. Then the gym. Simon said no excuses."
             sp "Joanie will drag me. Joanie always drags me."
 
-    n "Across the landing, behind a green door, a light stays on long after theirs goes out."
+    n "Next door, behind a green door, a light stays on long after theirs goes out."
     return

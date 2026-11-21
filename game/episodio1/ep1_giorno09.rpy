@@ -14,7 +14,9 @@
 ##   «they always turn up, and a locksmith costs a fortune»; he opens for now.
 ## - Howard notes 19/11: he plans everything, never threatens, never sabotages
 ##   [nome_compagno]; the game makes clear to the player that he set this up.
-## Draft for Jody's review. Game text in English; comments in Italian.
+## Reviewed with Jody on 20/11/2026 (4 points: «second time this month» kept,
+## Howard's age/factory/mother confirmed, Howard next door with a shared wall,
+## Howard interest up to +9 kept). Game text in English; comments in Italian.
 ## CG: docs/prompt-immagini/inquadrature-giorno-09.md. Finché mancano,
 ## compare la didascalia [CG].
 
@@ -94,7 +96,7 @@ label ep1_d9_chiusa_fuori:
     n "She calls [nome_compagno]. He answers on the fifth ring, in a whisper, from the middle of a meeting."
     c "I can't leave, love. Daniel's right here. Nine o'clock, I swear, I'll run."
     sp "Nine. It's quarter to six."
-    n "She's still sitting on the doormat, gathering her things, when the green door across the landing opens."
+    n "She's still sitting on the doormat, gathering her things, when the green door next to hers opens."
 
     $ cg("Howard in the doorway of his green flat in his old cardigan, looking down at Sara on the doormat with an expression of exaggerated concern", "images/cg/ep1/d9_04_howard_porta.webp")
     ho "Sara? Oh, dear. Oh, dear, dear. Problems?"
@@ -159,7 +161,7 @@ label ep1_d9_da_howard:
         sp "What do I do?"
         "Kind words, from her chair.":
             $ interest("howard", 1, "Sara's kind words.")
-            s "Hey. Howard. It's all right. You're not alone. We're right across the landing, [nome_compagno] and me."
+            s "Hey. Howard. It's all right. You're not alone. We're right next door, [nome_compagno] and me. Just the other side of the wall."
             s "You can knock whenever you want. I mean it."
             n "Howard nods behind his hands, slowly. After a while, he wipes his eyes with the back of his wrist, though there's nothing to wipe."
         "Hug him.":
@@ -240,8 +242,8 @@ label ep1_d9_abbraccio_finito:
 label ep1_d9_sera:
     $ vai("casa_howard", "Howard's flat — 9:10 p.m.")
     $ suono("chiave_serratura")
-    n "At ten past nine, footsteps run up the stairs and a key turns in the lock across the landing. [nome_compagno]."
-    $ cg("Howard's doorway: Howard holding the door for Sara as she leaves, looking up at her with hopeful, wet eyes; across the landing Josh's door is open with light pouring out", "images/cg/ep1/d9_08_soglia.webp")
+    n "At ten past nine, footsteps run up the stairs and a key turns in the lock next door. [nome_compagno]."
+    $ cg("Howard's doorway: Howard holding the door for Sara as she leaves, looking up at her with hopeful, wet eyes; next door, Josh's door is open with light pouring out", "images/cg/ep1/d9_08_soglia.webp")
     ho "Sara..."
     ho "It was nice, today. Talking to someone. Really talking."
     ho "Could we... see each other now and then? Just a coffee. A little chat. Nothing more."
@@ -280,5 +282,5 @@ label ep1_d9_sera:
     c "Till then I'll open. I'm your doorman. Very cheap, very handsome."
     sp "He's right. They'll turn up."
     sp "Where could they possibly be?"
-    n "Across the landing, behind the green door, the light stays on for a long time."
+    n "On the other side of the wall, behind the green door, the light stays on for a long time."
     return

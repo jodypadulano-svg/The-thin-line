@@ -219,7 +219,7 @@ label ep1_d8_casa:
         if fatto("ep1_d7_josh_precoce"):
             n "He doesn't ask anything else. He just keeps filling her glass, and watching her like he's checking she's still there."
 
-    n "Across the landing, Howard's television murmurs through the wall. Sara doesn't notice that she hasn't touched her keys in three days."
+    n "Next door, Howard's television murmurs through the wall. Sara doesn't notice that she hasn't touched her keys in three days."
     return
 
 
