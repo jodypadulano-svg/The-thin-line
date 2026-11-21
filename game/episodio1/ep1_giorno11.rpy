@@ -291,15 +291,22 @@ label ep1_d11_visita:
                     "Pretend not to notice." (rifiuto_howard=True):
                         n "She pretends not to notice. She asks what happened to Lorna."
                 n "A little later, while he's pouring the last of the coffee, it happens again. His eyes, the same place, slower this time."
-                $ cg("Howard's sofa: Howard pouring coffee, his eyes lingering on Sara's open collar; Sara holding his gaze, cheeks pink, a small smile", "images/cg/ep1/d11_09b_sguardo.webp")
                 menu:
                     sp "Again."
-                    "Undo another button.":
+                    "Undo another button." if fatto("ep1_d11_bottoni"):
+                        jump ep1_d11_secondo_bottone
+                    "Undo a button of her blouse." if not fatto("ep1_d11_bottoni"):
+                        jump ep1_d11_secondo_bottone
+                    "Pretend not to notice." (rifiuto_howard=True):
+                        n "Once again she pretends not to notice. It's getting harder."
+                        jump ep1_d11_dopo_sguardi
+                label ep1_d11_secondo_bottone:
                         $ corruption(1, "Sara undoes another button for Howard.")
                         $ interest("josh", -1, "Sara undoes a button for another man.")
                         $ interest("howard", 1, "Sara undid another button for him.")
                         $ segna("ep1_d11_bottoni", (fatto("ep1_d11_bottoni") or 0) + 1)
                         n "Another button. She does it slowly this time, and she watches his face while she does it."
+                        $ cg("Howard's sofa: Howard pouring coffee, his eyes lingering on Sara's open collar; Sara holding his gaze, cheeks pink, a small smile", "images/cg/ep1/d11_09b_sguardo.webp")
                         if fatto("ep1_d11_bottoni") == 2:
                             sp "Two buttons. Sara, what on earth... in Howard's living room, with [nome_compagno] on his way home..."
                         else:
@@ -307,8 +314,8 @@ label ep1_d11_visita:
                         sp "But look at him. Nobody has ever looked at me like that. As if I were a miracle."
                         sp "It's just a blouse. I'll do it up before I go. It doesn't count."
                         n "Howard puts the coffee pot down very carefully, as if it might break. He doesn't say a word. He doesn't need to."
-                    "Pretend not to notice." (rifiuto_howard=True):
-                        n "Once again she pretends not to notice. It's getting harder."
+                label ep1_d11_dopo_sguardi:
+                    pass
         "«I should go, really.»" (rifiuto_howard=True):
             $ interest("howard", 1, "A coffee at Howard's.")
             ho "Of course. Of course. You've had a long day."

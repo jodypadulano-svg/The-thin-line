@@ -15,23 +15,23 @@ Bozza di lavoro | 21 novembre 2026 · Testo del giorno 11 in `game/episodio1/ep1
 Blocco di stile (in fondo a ogni prompt):
 `Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.`
 
-Totale: **11 immagini**, nessun luogo nuovo (redazione, pianerottolo, casa di Howard).
+Totale: **11 immagini** (la variante con le pantofole è stata tolta il 21/11: nella B3 i piedi di Sara sono nascosti dalla ringhiera), nessun luogo nuovo (redazione, pianerottolo, casa di Howard).
 
 ---
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| A1 | `d11_01_roberta_invito` | Roberta al bordo della scrivania di Sara, due sacchetti del deli in mano, sorriso troppo largo | `redazione`, Sara, Roberta | sempre |
-| A2 | `d11_02_pranzo_roberta` | La cucinetta della redazione: Sara e Roberta a un tavolino coi panini, Roberta protesa, mento sulla mano, il cuoricino | `redazione`, A1 | se pranza con Roberta |
-| A3 | `d11_03_panchina` | Una panchina in una piazzetta: Sara col quaderno sulle ginocchia, il sacchetto accanto, foglie d'autunno | Sara | se pranza da sola |
-| B1 | `d11_04_howard_chiavi` | Il pianerottolo al tramonto: Howard sulla porta verde, raggiante, solleva il mazzo con la penna d'argento appeso a un dito | `pianerottolo`, Howard, Sara | sempre |
-| B2 | `d11_05_abbraccio` | Sara abbraccia Howard per gratitudine; lui la trattiene troppo, il viso vicino ai suoi capelli, sorrisetto compiaciuto; Sara a occhi spalancati oltre la sua spalla, guance rosse, sul punto di ridere | B1 | se lo abbraccia |
-| B2b | `d11_05b_stretta` | Howard le tiene la mano fra le sue due, troppo a lungo, sorridendo dal basso; Sara sorride educata, le chiavi nell'altra mano | B1 | se gli dà la mano |
-| B3 | `d11_06_josh_howard` | Josh senza fiato in abiti da lavoro stringe la mano a Howard con entusiasmo; Sara in mezzo con le chiavi in mano; le due porte una accanto all'altra | `pianerottolo`, B1, Josh | sempre |
-| B4 | `d11_08_tazze_nuove` | Il soggiorno di Howard un po' più in ordine: giornali impilati in un angolo, due tazze bianche nuove sul tavolo; Howard versa il caffè, Sara sul divano senza cappotto | `casa_howard`, `d9_06_caffe`, Sara | se accetta il caffè (step 2) |
-| B5 | `d11_09_sguardo` | Sul divano: Howard parla e la guarda sul petto invece che in faccia; Sara, tazza in mano, se ne accorge | B4 | se ha capito (abbraccio) e resta per il secondo caffè |
-| B5b | `d11_09b_sguardo` | Howard versa il caffè, gli occhi fermi sul colletto aperto di Sara; lei regge lo sguardo, guance rosa, piccolo sorriso | B4 | secondo sguardo |
-| C1 | `d11_07_copia` | Retroscena: il comodino di Howard di notte sotto una lampada gialla; una sola chiave nuova di ottone su un pezzetto di pizzo rosa; il cassetto socchiuso | `casa_howard` | retroscena (sempre) |
+| A1 ✅ | `d11_01_roberta_invito` | Roberta al bordo della scrivania di Sara, due sacchetti del deli in mano, sorriso troppo largo | `redazione`, Sara, Roberta | sempre |
+| A2 ✅ | `d11_02_pranzo_roberta` | La cucinetta della redazione: Sara e Roberta a un tavolino coi panini, Roberta protesa, mento sulla mano, il cuoricino | `redazione`, A1 | se pranza con Roberta |
+| A3 ✅ | `d11_03_panchina` | Una panchina in una piazzetta: Sara col quaderno sulle ginocchia, il sacchetto accanto, foglie d'autunno | Sara | se pranza da sola |
+| B1 ✅ | `d11_04_howard_chiavi` | Il pianerottolo al tramonto: Howard sulla porta verde, raggiante, solleva il mazzo con la penna d'argento appeso a un dito | `pianerottolo`, Howard, Sara | sempre |
+| B2 ✅ | `d11_05_abbraccio` | Sara abbraccia Howard per gratitudine; lui la trattiene troppo, il viso vicino ai suoi capelli, sorrisetto compiaciuto; Sara a occhi spalancati oltre la sua spalla, guance rosse, sul punto di ridere | B1 | se lo abbraccia |
+| B2b ✅ | `d11_05b_stretta` | Howard le tiene la mano fra le sue due, troppo a lungo, sorridendo dal basso; Sara sorride educata, le chiavi nell'altra mano | B1 | se gli dà la mano |
+| B3 ✅ | `d11_06_josh_howard` | Josh senza fiato in abiti da lavoro stringe la mano a Howard con entusiasmo; Sara in mezzo con le chiavi in mano; le due porte una accanto all'altra | `pianerottolo`, B1, Josh | sempre |
+| B4 ✅ | `d11_08_tazze_nuove` | Il soggiorno di Howard un po' più in ordine: giornali impilati in un angolo, due tazze bianche nuove sul tavolo; Howard versa il caffè, Sara sul divano senza cappotto | `casa_howard`, `d9_06_caffe`, Sara | se accetta il caffè (step 2) |
+| B5 ✅ | `d11_09_sguardo` | Sul divano: Howard parla e la guarda sul petto invece che in faccia; Sara, tazza in mano, se ne accorge | B4 | se ha capito (abbraccio) e resta per il secondo caffè |
+| B5b ✅ | `d11_09b_sguardo` | Howard versa il caffè, gli occhi fermi sul colletto aperto di Sara; lei regge lo sguardo, guance rosa, piccolo sorriso | B4 | secondo sguardo |
+| C1 ✅ | `d11_07_copia` | Retroscena: il comodino di Howard di notte sotto una lampada gialla; una sola chiave nuova di ottone su un pezzetto di pizzo rosa; il cassetto socchiuso | `casa_howard` | retroscena (sempre) |
 
 **A1 — `d11_01_roberta_invito`**
 ```
@@ -75,7 +75,7 @@ Close-up at night of an old, cluttered bedside table in Howard's dim bedroom fro
 
 **B4 — `d11_08_tazze_nuove`** (allega `casa_howard` e `d9_06_caffe`)
 ```
-Howard's living room from the reference images in the early evening, a little tidier than before: the old newspapers stacked in one corner, the dirty plates gone, a window open a crack, warm lamplight and the bluish glow of the television. On the low table two brand-new white cups. Howard from the reference images, in his beige cardigan buttoned wrong, bends to pour coffee with shy, eager pride. @sara_wc sits on the worn sofa without her coat, in a rust-coloured silk blouse and dark grey skirt, holding her phone, smiling, a little surprised by the change; shoulder-length darker chestnut-brown wavy hair with only faint copper highlights, no orange, not red, freckles. On the floor by the sofa a pair of fluffy pink slippers, new, with the label still on. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+Howard's living room from the reference images in the early evening, a little tidier than before: the old newspapers stacked in one corner, the dirty plates gone, a window open a crack, warm lamplight and the bluish glow of the television. On the low table two brand-new white cups. Howard from the reference images, in his beige cardigan buttoned wrong, bends to pour coffee with shy, eager pride. @sara_wc sits on the worn sofa without her coat, in a rust-coloured silk blouse and dark grey skirt, holding her phone, smiling, a little surprised by the change; shoulder-length darker chestnut-brown wavy hair with only faint copper highlights, no orange, not red, freckles. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 **B5 — `d11_09_sguardo`** (allega B4)
@@ -86,4 +86,9 @@ The same living room and sofa as in the reference image: Howard sits close, talk
 **B5b — `d11_09b_sguardo`** (allega B5)
 ```
 The same scene as in the reference image, a little later: Howard leans forward pouring the last of the coffee from a moka pot, his eyes lingering on @sara_wc's blouse, now open at the collar with the top buttons undone, showing a little cleavage. Sara holds his gaze, cheeks pink, a small, secret smile, one hand resting near the open buttons. Tension, warmth, no nudity. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+
+**B3b — `d11_06_josh_howard_pantofole`** (modifica B3, allegala da sola)
+```
+Edit the image: change only the young woman's feet: instead of her ankle boots she is wearing a pair of fluffy pink slippers, brand new, a size too big. Keep everything else exactly the same: all faces, poses, clothes, the keys, the doors, the light and the watercolor and pencil style.
 ```
