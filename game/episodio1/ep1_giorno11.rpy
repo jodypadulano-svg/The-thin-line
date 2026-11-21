@@ -285,6 +285,7 @@ label ep1_d11_visita:
                         $ interest("howard", 1, "Sara undid a button for him.")
                         $ segna("ep1_d11_bottoni", 1)
                         n "Her fingers find the top button of her blouse, as if they'd decided on their own. It slips open."
+                        $ cg("Howard's sofa: Sara with the top button of her blouse undone, a shy half-smile, cheeks pink; Howard stopped mid-gesture, his eyes on her open collar", "images/cg/ep1/d11_09a_un_bottone.webp")
                         sp "What am I doing? It's warm in here. It's the coffee. It's..."
                         sp "No. It's that he's looking. And I want him to keep looking. It's one button. It's nothing."
                         n "Howard's sentence stops in the middle. Then it starts again, a little hoarse."
@@ -306,7 +307,11 @@ label ep1_d11_visita:
                         $ interest("howard", 1, "Sara undid another button for him.")
                         $ segna("ep1_d11_bottoni", (fatto("ep1_d11_bottoni") or 0) + 1)
                         n "Another button. She does it slowly this time, and she watches his face while she does it."
-                        $ cg("Howard's sofa: Howard pouring coffee, his eyes lingering on Sara's open collar; Sara holding his gaze, cheeks pink, a small smile", "images/cg/ep1/d11_09b_sguardo.webp")
+                        ## Un bottone: 09a; due bottoni: 09b.
+                        if fatto("ep1_d11_bottoni") == 2:
+                            $ cg("Howard's sofa: Howard pouring coffee, his eyes lingering on Sara's open blouse; Sara holding his gaze, cheeks pink, a small smile", "images/cg/ep1/d11_09b_sguardo.webp")
+                        else:
+                            $ cg("Howard's sofa: Sara with the top button of her blouse undone, a shy half-smile, cheeks pink; Howard stopped mid-gesture, his eyes on her open collar", "images/cg/ep1/d11_09a_un_bottone.webp")
                         if fatto("ep1_d11_bottoni") == 2:
                             sp "Two buttons. Sara, what on earth... in Howard's living room, with [nome_compagno] on his way home..."
                         else:

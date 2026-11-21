@@ -15,7 +15,7 @@ Bozza di lavoro | 21 novembre 2026 · Testo del giorno 11 in `game/episodio1/ep1
 Blocco di stile (in fondo a ogni prompt):
 `Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.`
 
-Totale: **11 immagini** (la variante con le pantofole è stata tolta il 21/11: nella B3 i piedi di Sara sono nascosti dalla ringhiera), nessun luogo nuovo (redazione, pianerottolo, casa di Howard).
+Totale: **12 immagini** (la variante con le pantofole è stata tolta il 21/11: nella B3 i piedi di Sara sono nascosti dalla ringhiera), nessun luogo nuovo (redazione, pianerottolo, casa di Howard).
 
 ---
 
@@ -30,6 +30,7 @@ Totale: **11 immagini** (la variante con le pantofole è stata tolta il 21/11: n
 | B3 ✅ | `d11_06_josh_howard` | Josh senza fiato in abiti da lavoro stringe la mano a Howard con entusiasmo; Sara in mezzo con le chiavi in mano; le due porte una accanto all'altra | `pianerottolo`, B1, Josh | sempre |
 | B4 ✅ | `d11_08_tazze_nuove` | Il soggiorno di Howard un po' più in ordine: giornali impilati in un angolo, due tazze bianche nuove sul tavolo; Howard versa il caffè, Sara sul divano senza cappotto | `casa_howard`, `d9_06_caffe`, Sara | se accetta il caffè (step 2) |
 | B5 ✅ | `d11_09_sguardo` | Sul divano: Howard parla e la guarda sul petto invece che in faccia; Sara, tazza in mano, se ne accorge | B4 | se ha capito (abbraccio) e resta per il secondo caffè |
+| B5a ✅ | `d11_09a_un_bottone` | Come B5, un solo bottone aperto: il colletto e appena l'inizio della scollatura; lei mezzo sorriso imbarazzato, lui fermo a metà gesto | modifica di B5 | quando Sara ha aperto un bottone (fatta 21/11) |
 | B5b ✅ | `d11_09b_sguardo` | Howard versa il caffè, gli occhi fermi sul colletto aperto di Sara; lei regge lo sguardo, guance rosa, piccolo sorriso | B4 | secondo sguardo |
 | C1 ✅ | `d11_07_copia` | Retroscena: il comodino di Howard di notte sotto una lampada gialla; una sola chiave nuova di ottone su un pezzetto di pizzo rosa; il cassetto socchiuso | `casa_howard` | retroscena (sempre) |
 
