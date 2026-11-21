@@ -66,7 +66,7 @@ Pochi e chiari, al massimo tre:
 
 ## 7. Privacy
 
-- **Nome d'arte** (da decidere) per tutto il progetto.
+- **Nome d'arte: Laura Fatal** (firma nel gioco). **DeviantArt: Fatal Conversion** (già attivo). Usare lo stesso nome, o la stessa coppia, su tutti i canali, così il pubblico la ritrova.
 - **Email separata** usata solo per The Thin Line (Patreon, F95, Discord, itch, SubscribeStar).
 - Nessun collegamento con gli account personali, il canale YouTube o il progetto Unity.
 - Verificare quali dati personali Patreon e i pagamenti mostrano pubblicamente, e impostare tutto prima di andare online.
@@ -87,7 +87,7 @@ Pochi e chiari, al massimo tre:
 
 | Fase | Cosa |
 |---|---|
-| **Adesso** | Aprire nome d'arte, email, Patreon (gratuito), Discord, account F95; link nei profili DeviantArt. Primo post: Sara + due righe sul gioco. |
+| **Adesso** | Email separata; Patreon (gratuito), Discord, account F95 col nome **Fatal Conversion / Laura Fatal**; link Patreon nel profilo DeviantArt. Primo post: Sara + due righe sul gioco. |
 | **Fino alla fine dell'Episodio 1** | Un'immagine a settimana; diario di sviluppo. |
 | **Episodio 1 finito** | Trailer; pagina itch «in sviluppo»; livelli a pagamento attivi su Patreon. |
 | **Episodio 2 al giorno 20** | Teaser montato nell'Episodio 1, controlli finali, **lancio dell'Episodio 1**. |
@@ -96,7 +96,7 @@ Pochi e chiari, al massimo tre:
 
 ## 10. Da decidere (Jody)
 
-- Nome d'arte e nome dello studio.
+- Nome dello studio, se diverso da «Fatal Conversion», e nome uguale su tutti i canali (proposta: Patreon, F95, itch e Discord come **Fatal Conversion**, firma **Laura Fatal**).
 - Prezzi dei livelli Patreon e cosa offre esattamente il livello alto.
 - Quanto anticipo hanno i patron sull'Episodio 2 rispetto al pubblico.
 - Se aprire subito anche SubscribeStar o tenerlo di riserva.

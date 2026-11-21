@@ -31,6 +31,11 @@ define config.version = "0.1.0-dev"
 ## testo tra triple virgolette e lascia una riga vuota tra i paragrafi.
 
 define gui.about = _p("""
+{b}The Thin Line{/b} — a visual novel by {b}Laura Fatal{/b} (Fatal Conversion).
+
+For adults only. All characters are over 18.
+
+Made with Ren'Py. Illustrations created with AI tools and refined by hand. Music generated with Mureka.
 """)
 
 
