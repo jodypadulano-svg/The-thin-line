@@ -40,6 +40,20 @@ Dopo il finale del giorno 13 e prima della schermata «Fine dell'Episodio 1».
 | **SubscribeStar** | Riserva se Patreon crea problemi | Al lancio o quando serve | Stessi livelli di Patreon. |
 | **X / Bluesky** | Immagini e annunci | Facoltativo | Solo se si ha tempo di seguirli. |
 
+## 3b. F95zone: le regole vere (lette il 21/11/2026, account di Jody)
+
+- **Niente discussione del gioco senza build.** Una discussione nei Games esiste per i download: servono almeno **3 link** su host approvati. Le regole delle richieste vietano di chiedere giochi «non ancora usciti». Quindi su F95 si entra con la **0.1 (Episodio 1)**.
+- **Prima della 0.1, il teasing si fa con la firma (signature):** «links to Patreon, official game sites/discords… are welcomed». Massimo 2 immagini da 450×125, alte 200 px in tutto, caricate sul server di F95. E si partecipa alla community (niente pubblicità nelle discussioni degli altri giochi: è vietata).
+- **Per postare link servono 3 messaggi**, e i primi 3 vengono approvati da un moderatore: farli presto, in modo naturale.
+- **Come pubblicare il proprio gioco e averne la proprietà:** seguire le *Game Uploading Rules* e il loro modello; postare nella sezione **Game Requests**; segnalare la propria discussione come «Game update» chiedendo di spostarla. Gli aggiornamenti futuri si mandano segnalando la discussione con i nuovi link.
+- **Badge «Developer»: solo su richiesta con un Ticket.**
+- **Titolo:** `The Thin Line [Ep. 1] [Fatal Conversion]` (formati ammessi: [v0.1], [Ep. 1], [Day 13]…). Prefissi: motore **Ren'Py** e **VN**.
+- **Etichette:** almeno 3, solo ciò che è **già nel gioco**; i contenuti futuri vanno nel Genre come «Planned Tags». Esiste l'etichetta **AI CG**: va usata. Le immagini AI non realistiche sono ammesse nei giochi; vietato tutto ciò che sembra minorenne.
+- **Pagina:** banner obbligatorio (max 500 KB; versione 390×105 per «Latest Updates»), screenshot in miniatura (meno di 20), testo solo in inglese.
+- **Visibilità:** un aggiornamento ogni 2 settimane può tornare in cima a «Latest Updates»; le sole correzioni di bug no.
+- **Prefisso «Abandoned»** se il Patreon/SubscribeStar resta fermo più di 3 mesi o se non esce un aggiornamento per 18 mesi: tenere vivi i post.
+- **Ciò che viene caricato su F95 non viene più tolto** («games and links shared on the site will not be removed under any circumstances»): le build per i patron finiranno lì. Il vantaggio per i patron è l'anticipo, non l'esclusiva.
+
 ## 4. Livelli Patreon (proposta, prezzi da decidere)
 
 Pochi e chiari, al massimo tre:
