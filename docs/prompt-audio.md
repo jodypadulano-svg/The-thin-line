@@ -26,7 +26,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `ristorante` | Ristorante elegante, cena aziendale (giorno 3) | ✅ |
 | `daniel` | Tema di Daniel: punzecchiature e brindisi (giorno 3) | ✅ |
 | `aperitivo` | Cocktail bar, aperitivo con le colleghe (giorno 4) | ✅ |
-| `howard` | Tema di Howard: il pianerottolo (giorni 5, 6, 9) | ✅ |
+| `howard` | Tema di Howard: il pianerottolo e la sua casa (giorni 5, 6, 9) | ✅ |
 | `enoteca` | Wine bar con Joanie (giorno 5) | ✅ |
 | `locale` | Il locale «The Lantern» il sabato sera, con Simon (giorno 6) | ✅ |
 
@@ -110,6 +110,7 @@ Instrumental upbeat dance-pop track for a busy city bar on a Saturday night, hea
 | `locale` | *Busy city bar on a Saturday night, without music: loud crowd murmur and laughter, people shouting their orders over the noise, glasses clinking, ice in a shaker, bottles opened, a cheer from a group of friends. No clear words, no music. Seamless loop, 45 seconds.* |
 | `palestra` | *Gym weight room ambience: weights clanking on racks, a treadmill running, people breathing and exercising, muffled upbeat music far away, a dumbbell set down on rubber floor. No clear words. Seamless loop, 45 seconds.* |
 | `fiume` | *Riverside park path on a sunny autumn afternoon: gentle flowing water, ducks quacking now and then, leaves rustling in a light breeze, distant children playing and a dog barking far away, footsteps on gravel. No clear words, no music. Seamless loop, 45 seconds.* |
+| `tv_howard` | *An old television playing at low volume in a small, stuffy, closed living room: a muffled evening quiz show or news murmur, no clear words, faint canned laughter now and then, the hum of an old fridge, a clock ticking. Heard from across the room, dull and oppressive. No music. Seamless loop, 45 seconds.* (G9, casa di Howard) ✅ |
 
 ## Effetti (`game/audio/suoni/`)
 

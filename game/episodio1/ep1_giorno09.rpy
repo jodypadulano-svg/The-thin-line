@@ -98,6 +98,7 @@ label ep1_d9_chiusa_fuori:
     sp "Nine. It's quarter to six."
     n "She's still sitting on the doormat, gathering her things, when the green door next to hers opens."
 
+    $ musica("howard")
     $ cg("Howard in the doorway of his green flat in his old cardigan, looking down at Sara on the doormat with an expression of exaggerated concern", "images/cg/ep1/d9_04_howard_porta.webp")
     ho "Sara? Oh, dear. Oh, dear, dear. Problems?"
     s "I've lost my keys. And [nome_compagno] is stuck at work until nine."
@@ -114,6 +115,8 @@ label ep1_d9_chiusa_fuori:
 
 label ep1_d9_da_howard:
     $ vai("casa_howard", "Howard's flat — 6:00 p.m.")
+    $ musica("howard")
+    $ ambiente("tv_howard")
     $ cg("Howard's living room: dark and stuffy, curtains drawn, piles of old newspapers, dirty plates on the table, an armchair moulded by years of the same body, the television murmuring", "images/cg/ep1/d9_05_casa_howard.webp")
     n "The flat is the mirror image of theirs, and the opposite in every other way."
     n "The curtains are drawn. Newspapers are stacked on the chairs, on the floor, on the radiator. There are plates on the table with something dried on them. The air is thick, old, closed."
@@ -139,6 +142,7 @@ label ep1_d9_da_howard:
             call fine_retroscena
 
     $ cg("Howard's kitchen table: Howard pouring coffee into two chipped mugs, Sara sitting with her coat still on, politely holding her cup", "images/cg/ep1/d9_06_caffe.webp")
+    $ suono("tazza")
     n "Howard makes coffee in chipped mugs and doesn't ask her anything. He talks."
     n "About the factory where he worked for thirty-one years. About his mother, whom he looked after until the end. About dinners in front of the television."
     ho "At my age you stop hoping, you know. You get up, you eat, you watch the telly, you go to bed. And tomorrow, the same."
@@ -271,6 +275,7 @@ label ep1_d9_sera:
     $ tappa("howard", 3)
 
     $ vai("casa", "Home — 9:20 p.m.")
+    $ ambiente(None)
     $ musica("casa")
     $ cg("The entrance hall of the flat: Josh still in his work clothes, tie loosened, hugging Sara tight; her bag dropped on the floor", "images/cg/ep1/d9_09_josh_abbraccio.webp")
     c "I'm so sorry. I'm so, so sorry. Three hours at Howard's. Are you alive?"
@@ -282,5 +287,6 @@ label ep1_d9_sera:
     c "Till then I'll open. I'm your doorman. Very cheap, very handsome."
     sp "He's right. They'll turn up."
     sp "Where could they possibly be?"
+    $ musica("notte")
     n "On the other side of the wall, behind the green door, the light stays on for a long time."
     return
