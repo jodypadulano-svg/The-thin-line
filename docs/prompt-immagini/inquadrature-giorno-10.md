@@ -16,13 +16,14 @@ Bozza di lavoro | 21 novembre 2026 · Testo del giorno 10 in `game/episodio1/ep1
 Blocco di stile (in fondo a ogni prompt):
 `Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.`
 
-Totale: **6 immagini**, nessun luogo nuovo (redazione, cucina di casa, camera).
+Totale: **7 immagini**, nessun luogo nuovo (redazione, cucina di casa, camera).
 
 ---
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
 | A1 | `d10_01_barbara_cartella` | Barbara si china sulla scrivania di Sara e le butta davanti una cartella gonfia; Sara alza gli occhi dal caffè, presa alla sprovvista | `redazione`, Sara, `@barbara_wc` | sempre |
+| A1b | `d10_01b_bottone` | Primo piano: la mano di Barbara, unghie rosse lunghe, al colletto di Sara; due dita sbottonano il primo bottone, un'unghia le sfiora la clavicola; Sara immobile, labbra socchiuse | A1, Sara, `@barbara_wc` | sempre (aggiunta 21/11) |
 | A2 | `d10_02_oroscopi` | Pomeriggio: Sara alla scrivania, mento sulla mano, scrive gli oroscopi con un sorriso mezzo colpevole e mezzo divertito | `redazione`, Sara | sempre |
 | B1 | `d10_03_jessica_libri` | Pausa pranzo, redazione semivuota: Jessica in ginocchio accanto a uno scatolone butta dentro vecchi libri; in cima un grosso romanzo russo consumato; Sara in piedi che la guarda | `redazione`, Sara, `@jessica_wc` | sempre |
 | B2 | `d10_04_note_margine` | Primo piano: il vecchio romanzo aperto tra le mani di Sara, i margini pieni di piccole note a matita | B1 | solo se Sara «lascia perdere» |
@@ -34,9 +35,14 @@ Totale: **6 immagini**, nessun luogo nuovo (redazione, cucina di casa, camera).
 The newsroom from the reference image, morning light through tall windows: @barbara_wc in a leopard-print silk blouse, gold bangles, bright red dyed hair and heavy make-up leans over Sara's desk and drops a thick, overstuffed cardboard folder between the coffee cup and the keyboard, one long red nail still pointing at it, a theatrical, amused smile. At the desk @sara_wc in a cream blouse buttoned to the collarbone looks up from her coffee, caught off guard, eyebrows raised; shoulder-length chestnut-brown wavy hair with subtle copper highlights, centre parting, no bangs, freckles. Female colleagues glancing from the background. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
+**A1b — `d10_01b_bottone`** (allega A1)
+```
+Intimate close-up at Sara's desk in the newsroom from the reference image: the hand of @barbara_wc, heavy gold bangles and long glossy red nails, at the collar of @sara_wc's cream blouse; two fingers slip the top button open, the tip of one red nail lightly grazing her collarbone. Sara's face at the top of the frame: frozen, lips slightly parted, eyes lowered to the hand, a faint flush on her freckled cheeks; shoulder-length chestnut-brown wavy hair with subtle copper highlights, centre parting, no bangs. A glimpse of Barbara's leopard-print sleeve and amused red-lipped smile at the edge of the frame. Charged, slow, ambiguous. Same face, hair and bust size as in the reference images for Sara, natural unpainted nails for Sara. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```
+
 **A2 — `d10_02_oroscopi`**
 ```
-The newsroom from the reference image in the late afternoon, warm low sun: @sara_wc sits at her desk with her chin in her hand, writing on the keyboard with a half-guilty, half-amused little smile, as if she were enjoying something she shouldn't; beside her an open folder spilling printouts with small star and zodiac doodles, a cold coffee cup. Cream blouse buttoned to the collarbone, shoulder-length chestnut-brown wavy hair with subtle copper highlights, centre parting, no bangs, freckles. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+The newsroom from the reference image in the late afternoon, warm low sun: @sara_wc sits at her desk with her chin in her hand, writing on the keyboard with a half-guilty, half-amused little smile, as if she were enjoying something she shouldn't; beside her an open folder spilling printouts with small star and zodiac doodles, a cold coffee cup. Cream blouse, shoulder-length chestnut-brown wavy hair with subtle copper highlights, centre parting, no bangs, freckles. Same face, hair and bust size as in the reference images, natural unpainted nails. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
 ```
 
 **B1 — `d10_03_jessica_libri`**

@@ -42,6 +42,14 @@ label ep1_d10_barbara:
     s "The horoscopes? Barbara, I'm... I write news."
     ba "You write words, sweetheart. These are words. With stars on them."
 
+    ## Barbara la tocca per la prima volta (decisione 21/11): niente Interest,
+    ## la scelta di dopo è solo di Sara (Corr +1).
+    $ cg("Close-up: Barbara's hand with long red nails at the collar of Sara's cream blouse, two fingers slipping the top button open, a nail grazing her collarbone; Sara frozen, lips parted", "images/cg/ep1/d10_01b_bottone.webp")
+    n "Then, before Sara can answer, Barbara leans over the desk and reaches for her collar."
+    n "Two fingers. The top button of the blouse slips open. A long red nail grazes her collarbone on the way out, slow, as if by accident."
+    ba "There. Now you can breathe, darling. Horoscopes need air."
+    n "Sara doesn't move. For one second too long, she doesn't move at all."
+
     menu:
         sp "Twelve horoscopes. By four."
         "Accept without a word.":
@@ -61,6 +69,20 @@ label ep1_d10_barbara:
             n "She sweeps away. The folder stays where it is."
             sp "I said no. And I still have twelve horoscopes."
             sp "But I said no."
+
+    menu:
+        sp "The button."
+        "Do it up again the moment Barbara turns away.":
+            n "As soon as the leopard print disappears behind the glass door, Sara buttons the blouse back up to the collarbone. Her fingers are not quite steady."
+            sp "Unbelievable. You can't just... do that to people."
+        "Leave it open. All day.":
+            $ corruption(1, "Sara leaves her blouse the way Barbara wanted it.")
+            $ segna("ep1_d10_bottone_aperto")
+            n "Her hand goes up to the collar. And stops there. And comes back down."
+            n "She feels it all morning: a little more air at her throat, a little more skin than she'd have chosen."
+            n "Twice Barbara walks past the desk. Twice her eyes drop to the open collar, and twice she smiles, pleased, as if at a plant that has finally been watered."
+            sp "It's one button. It's hot in here anyway."
+            sp "...It isn't hot in here."
 
     $ musica("redazione")
     $ cg("Sara at her desk in the afternoon, chin in her hand, writing horoscopes with a half-guilty, half-amused smile, the open folder beside her", "images/cg/ep1/d10_02_oroscopi.webp")
