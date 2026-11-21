@@ -234,6 +234,13 @@ label ep1_d12_scaletta:
     n "She climbs. Three steps aren't much, but the ladder wobbles, and Howard's hands close on it at once, firm, just under her knees."
     n "She stretches up. The old bulb is stiff. She has to reach, on her toes, arms over her head."
     n "Below her, Howard has gone very quiet."
+
+    ## Bonus (Jody, 21/11): il punto di vista di Howard dal fondo della scala, coi suoi
+    ## pensieri. Solo per chi ha investito molto su Howard: Interest Howard 15 o più
+    ## (massimo possibile qui: 18). Vale come segreto trovato.
+    if valore_interest("howard") >= 15:
+        call ep1_d12_bonus_pov
+
     ho "Careful, careful. I've got you."
     n "The old bulb comes out. The new one goes in. Light floods the corridor, yellow and sudden."
     n "And in the light, Sara looks down, and sees exactly where Howard is looking. It isn't the bulb."
@@ -254,7 +261,11 @@ label ep1_d12_scaletta:
             $ corruption(1, "Sara laughs at Howard's joke, and gives it back.")
             $ interest("howard", 1, "Sara laughed at his joke.")
             $ segna("ep1_d12_ride_battuta")
-            $ cg("Howard's corridor in yellow light: Sara on the stepladder laughing, one hand on Howard's shoulder for balance, cheeks pink; Howard looking up at her, delighted", "images/cg/ep1/d12_05_ride.webp")
+            ## Col Complesso Sara è scalza: variante coi tacchi per terra.
+            if fatto("ep1_d12_scalza"):
+                $ cg("Howard's corridor in yellow light: Sara on the stepladder laughing, one hand on Howard's shoulder for balance, cheeks pink; Howard looking up at her, delighted; Sara barefoot in her tights, her heels on the floor", "images/cg/ep1/d12_05_ride_scalza.webp")
+            else:
+                $ cg("Howard's corridor in yellow light: Sara on the stepladder laughing, one hand on Howard's shoulder for balance, cheeks pink; Howard looking up at her, delighted", "images/cg/ep1/d12_05_ride.webp")
             n "And Sara laughs. Again. Like yesterday, like a hiccup, out of nowhere."
             s "Then you'd better hold the ladder tighter, Howard. If I fall, I'm falling on you."
             ho "Oh, my dear. Promises, promises."
@@ -265,7 +276,11 @@ label ep1_d12_scaletta:
         "Climb down and change the subject.":
             $ interest("howard", 1, "Sara changed his light bulb.")
             $ segna("ep1_d12_cambia_discorso")
-            $ cg("Howard's corridor in yellow light: Sara stepping down from the stepladder with a polite, slightly stiff smile, holding the old bulb; Howard stepping back, contrite", "images/cg/ep1/d12_05b_scende.webp")
+            ## Col Complesso Sara è scalza: variante coi tacchi per terra.
+            if fatto("ep1_d12_scalza"):
+                $ cg("Howard's corridor in yellow light: Sara stepping down from the stepladder with a polite, slightly stiff smile, holding the old bulb; Howard stepping back, contrite; Sara barefoot in her tights, her heels on the floor", "images/cg/ep1/d12_05b_scende_scalza.webp")
+            else:
+                $ cg("Howard's corridor in yellow light: Sara stepping down from the stepladder with a polite, slightly stiff smile, holding the old bulb; Howard stepping back, contrite", "images/cg/ep1/d12_05b_scende.webp")
             n "Sara climbs down, quickly, and hands him the old bulb."
             s "There. Let there be light. Now, where's this famous bottle?"
             n "Howard blinks. Then, at once, he's the old Howard again: a little bent, a little shy, apologetic in every line."
@@ -285,6 +300,30 @@ label ep1_d12_scaletta:
     $ nota_sara("howard", "I changed his light bulb. From the bottom of the ladder he made a joke about my... about me. Out loud.")
     call ep1_d12_ritaglio
     call ep1_d12_ritorno
+    return
+
+
+## --- Bonus: dal fondo della scala, gli occhi di Howard (Jody, 21/11) --------------------------
+
+label ep1_d12_bonus_pov:
+    $ segna("ep1_d12_bonus_pov")
+    call inizio_retroscena
+    $ cg("Bonus, Howard's point of view from the foot of the ladder: looking up at Sara's chest in her grey-lilac blouse, buttoned, stretched tight as she reaches up, a faint outline of her nipples through the thin cotton with both arms, her chin and the ceiling lamp above; his own hands on the ladder at the bottom of the frame", "images/cg/ep1/d12_04c_pov_howard.webp")
+    rs "From the bottom of the ladder, the world is very simple. Two hands on cold metal. And above him, her."
+    rs "Thirty-one years at the factory. Forty years of looking at women from the other side of the street."
+    rs "And now God changes a light bulb for him, in his own corridor, on his mother's ladder."
+    rs "The buttons are holding. Brave little buttons. Every time she reaches up, they think about it."
+    if fatto("ep1_d11_bottoni") == 2:
+        rs "Yesterday she undid two of them. For him. Looking him in the eye."
+    elif fatto("ep1_d11_bottoni"):
+        rs "Yesterday she undid one of them. For him. Nobody asked her to."
+    if complesso_crocerossina:
+        rs "Barefoot, too. He only had to say «safer». She'll always do what's safer, if he's the one who says it."
+    rs "He could stay like this all evening. He could buy a new bulb every day."
+    rs "Patience, Howard. One bulb at a time."
+    $ retroscena("howard", "From the bottom of the ladder, he wasn't looking at the bulb. «One bulb at a time.»")
+    $ segreto_trovato("Howard's view from the bottom of the ladder.")
+    call fine_retroscena
     return
 
 
