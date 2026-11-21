@@ -24,6 +24,7 @@ Totale: **12 immagini** (9 originali + 3 nuove condizionali per l'abbraccio), pi
 |---|---|---|---|---|
 | A1 | `d9_01_spioncino` | Retroscena: dallo spioncino (fish-eye), Sara e Josh scendono le scale la mattina, Josh chiude la porta marrone | `pianerottolo`, Sara, Josh | retroscena (sempre) |
 | A2 | `d9_02_messaggio_josh` | Redazione, pomeriggio: Sara alla scrivania legge un messaggio, una piccola ruga tra le sopracciglia | `redazione`, Sara | sempre |
+| A2b | `d9_02b_foto_simon` | Lo schermo del telefono in mano a Sara: la foto social della palestra, Simon a metà sollevamento, la maglietta aderente scura di sudore | `palestra_sala`, `@simon_wc` | sempre (scelta Corr +1 del 21/11) |
 | B1 | `d9_03_senza_chiavi` | Pianerottolo all'imbrunire: Sara accovacciata sullo zerbino davanti alla porta marrone, la borsa svuotata tutto intorno | `pianerottolo`, Sara | sempre |
 | B2 | `d9_04_howard_porta` | Howard sulla soglia della porta verde, in cardigan, guarda giù verso Sara con una preoccupazione esagerata | `pianerottolo`, Howard, B1 | sempre |
 | C1 | `d9_05_casa_howard` | Il soggiorno di Howard: buio, tende tirate, pile di giornali, piatti sporchi, la poltrona sformata, la TV accesa; Sara sulla soglia col cappotto, Howard che sposta giornali | `casa_howard`, Sara, Howard | sempre |
@@ -114,3 +115,9 @@ Close-up on Howard's face during the hug in his dim living room from the referen
 ```
 
 **Nota di produzione:** i nuovi file grafici sono richiesti dal codice ma non ancora creati. Il sistema `cg()` mostra il fallback testuale finché mancano. Il valore `complesso_crocerossina` è una **booleana di gameplay**, non un elemento da raffigurare.
+
+
+**A2b — `d9_02b_foto_simon`** (aggiunta il 21/11)
+```
+Close-up of a smartphone held in a young woman's hand, natural unpainted nails, the green knitted sleeve of her jumper at the edge of the frame, a newsroom desk blurred behind: on the screen a gym social-media photo of @simon_wc mid-lift in the weight room from the reference image, a barbell at shoulder height, his tight grey t-shirt dark with sweat down the chest, arms and shoulders straining, focused expression. The screen shows only the photo, no readable text, no icons, no logos. Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.
+```

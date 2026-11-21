@@ -51,6 +51,10 @@ init python:
                 ## Giorno 9
                 "Something sweet.", "Pretend not to notice.", "Kind words, from her chair.",
                 "«I'm sorry, Howard, I really don't have much time.»",
+                ## Giorno 10
+                "Accept without a word.", "Let it go.", "Tell him everything about Howard.",
+                ## Scelte Corr +1 aggiunte il 21/11 (giorni 5, 7, 9)
+                "«There won't be a next time.»", "She asks him who he is.", "Send back an eye-roll.",
             ],
         },
         "barbara": {
@@ -90,8 +94,12 @@ init python:
                 "Chat with Joanie under the desk.", "Go in anyway.", "«Fix the other one too?",
                 "«Sure.»", "Save it.", "Don't mention it.",
                 ## Giorno 9
-                "Let him know she's annoyed.", "Pretend not to notice.", "Hug him.",
+                "Let him know she's annoyed.", "Pretend not to notice.", "Hug him.", "Pull away from the hug.",
                 "«When it happens, gladly.»",
+                ## Giorno 10
+                "Accept without a word.", "Ask her what happened.", "Play it down.",
+                ## Scelte Corr +1 aggiunte il 21/11 (giorni 5, 7, 9)
+                "«...He's not ugly.", "She lets him come closer", "Zoom in.",
             ],
         },
         "daniel": {
@@ -130,8 +138,12 @@ init python:
                 "Focus on the piece.", "Go in anyway.", "«I'll do it myself",
                 "«Thanks. I'll ask Joanie.»", "Tell [nome_compagno] about the session",
                 ## Giorno 9
-                "Something sweet.", "Offer to help him tidy up", "Hug him.",
+                "Something sweet.", "Offer to help him tidy up", "Hug him.", "Keep holding him a little longer.",
                 "«Of course, Howard. A coffee now and then.»",
+                ## Giorno 10
+                "Point out it isn't her job.", "Ask her what happened.", "Play it down.",
+                ## Scelte Corr +1 aggiunte il 21/11 (giorni 5, 7, 9)
+                "«...He's not ugly.", "She asks him who he is.", "Send back an eye-roll.",
             ],
         },
         "mista": {

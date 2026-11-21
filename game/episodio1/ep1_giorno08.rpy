@@ -119,7 +119,7 @@ label ep1_d8_simon:
             n "His fingers move her shoulder down, barely. A quick, technical touch."
             sp "Joanie's right about one thing: he has sure hands."
             sp "But it's his job. Nothing more."
-        "«Fix the other one too?», with a smile." (corruption=15):
+        "«Fix the other one too?», with a smile." (corruption=7):
             $ interest("simon", 6, "Simon noticed your smile.")
             $ corruption(3, "An innocent game. Almost.")
             $ cg("Simon's hand lightly correcting Sara's shoulder as she lifts the dumbbell", tuta_d8("06_spalla"))

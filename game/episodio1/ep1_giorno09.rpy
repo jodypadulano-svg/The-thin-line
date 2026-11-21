@@ -76,6 +76,28 @@ label ep1_d9_lavoro:
             $ suono("notifica")
             n "The answer takes twenty minutes to arrive: {i}I know. I'm sorry. It's not up to me.{/i}"
             sp "I know it isn't. That's what annoys me."
+
+    ## Corr +1 aggiunta il 21/11 (Jody): Joanie e la foto di Simon.
+    $ suono("telefono_vibra")
+    n "Five minutes later the phone buzzes again. Joanie this time, with a photo and no context."
+    n "{i}The gym posted this. For science. You're welcome.{/i}"
+    $ cg("A phone screen held in Sara's hand: a gym social-media photo of Simon mid-lift, his tight t-shirt dark with sweat, arms straining", "images/cg/ep1/d9_02b_foto_simon.webp")
+    n "Simon, mid-lift, in a t-shirt that has given up any pretence of being the right size."
+
+    menu:
+        sp "Joanie. I'm at work."
+        "Zoom in. For science.":
+            $ corruption(1, "Sara zooms in. For science.")
+            $ segna("ep1_d9_zoom_simon")
+            n "Two fingers on the screen. The arms. The shoulders. The line of sweat down the middle of the shirt."
+            n "Sara looks up. Nobody is watching. She looks down again, a little longer than science requires."
+            n "{i}Well??{/i}"
+            n "{i}I'm WORKING, Jo.{/i}"
+            sp "I'm also not deleting it."
+        "Send back an eye-roll.":
+            n "An eye-roll emoji. Then: {i}Some of us have jobs.{/i}"
+            n "{i}Some of us have no imagination.{/i}"
+            sp "I have plenty of imagination. That's exactly the problem."
     return
 
 

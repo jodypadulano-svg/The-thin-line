@@ -210,7 +210,7 @@ testsuite debug_salta:
     testcase salto:
         description "Salto ai giorni 4, 5 e 6 con ogni preset: stato coerente, poi fino alla fine."
         parameter preset = ["brava", "barbara", "daniel", "mista"]
-        parameter arrivo = [4, 5, 6, 7, 8, 9]
+        parameter arrivo = [4, 5, 6, 7, 8, 9, 10]
         $ _foto_debug.clear()
         $ _test_esito["fine"] = False
         $ debug_prepara(arrivo, preset)

@@ -108,6 +108,20 @@ label ep1_d7_pomeriggio:
             n "She writes for three hours without looking up. Her heroine opens the door at a quarter past four."
             n "On the other side there's a room Sara didn't know she'd imagined: warm, full of someone else's things, and with no way to tell how long she's been standing there."
             sp "Oh. That's it. That's what was behind the door."
+            n "And in the room, by the window, someone is waiting for her heroine. A man. He hasn't turned round yet."
+
+            ## Corr +1 aggiunta il 21/11 (Jody): rende raggiungibile la soglia del giorno 8.
+            menu:
+                sp "What does she do?"
+                "She asks him who he is.":
+                    n "Her heroine asks his name, and he tells her, and the scene becomes a conversation. A good one. Careful, clever, safe."
+                "She lets him come closer, without asking his name.":
+                    $ corruption(1, "Sara writes a scene she wouldn't read aloud.")
+                    $ segna("ep1_d7_scena_audace")
+                    n "Her heroine doesn't ask. She lets him cross the room. She lets him stand close enough to feel the warmth of him, and the scene doesn't need a name."
+                    n "Sara writes it in one breath. When she reads it back her cheeks are burning, and she glances at the sofa as if she'd been caught."
+                    sp "It's fiction. It's {i}her{/i}, not me."
+                    sp "...I'm not reading this one to anybody."
             if fatto("ep1_d6_parla_simon"):
                 sp "Page fifty-one. I'm well past it now."
                 sp "Not that I'm going to bring it to anyone. Obviously."

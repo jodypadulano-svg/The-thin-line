@@ -257,8 +257,22 @@ label ep1_d5_joanie:
     sp "Daniel is an arrogant man who humiliates [nome_compagno]. That's all."
     sp "...That's all."
     ch "Next time he says something, I want a full report. Word for word."
-    s "There won't be a next time."
-    ch "Mm-hm."
+
+    ## Corr +1 aggiunta il 21/11 (Jody): rende raggiungibile la soglia del giorno 8.
+    menu:
+        sp "A full report. On Daniel."
+        "«There won't be a next time.»":
+            s "There won't be a next time."
+            ch "Mm-hm."
+        "«...He's not ugly. I'll give you that much.»":
+            $ corruption(1, "Sara admits, out loud, that Daniel is attractive.")
+            $ segna("ep1_d5_daniel_bello")
+            s "...Fine. He's not ugly. I'll give you that much."
+            ch "THERE she is."
+            n "Joanie slaps the table hard enough to make the glasses jump. Two people at the bar turn round."
+            s "It's an observation. A journalist observes."
+            ch "Observe all you like, babe. Looking is free."
+            sp "I said it out loud. Half a glass of wine and I said it out loud."
 
     $ vai("casa", "Home — 11:20 p.m.")
     $ ambiente(None)
