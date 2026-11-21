@@ -57,6 +57,8 @@ init python:
                 "«There won't be a next time.»", "She asks him who he is.", "Send back an eye-roll.",
                 ## Giorno 11
                 "Eat with Roberta.", "A handshake.", "«I'll just knock, Howard.", "«Another time, Howard.",
+                ## Giorno 12
+                "Send it to [nome_compagno] first.", "«Not tonight, Howard.", "Only work.", "Laugh at her.",
             ],
         },
         "barbara": {
@@ -104,6 +106,9 @@ init python:
                 "«...He's not ugly.", "She lets him come closer", "Zoom in.",
                 ## Giorno 11
                 "Eat with Roberta.", "A hug.", "Save it.", "Go in for a coffee.", "Stay for a second coffee.", "Undo a button", "Undo another button.",
+                ## Giorno 12
+                "Send it to Joanie first.", "Go in and celebrate.", "Laugh, and give it back", "Another glass.",
+                "Tell her about Simon.", "Take her advice.",
             ],
         },
         "daniel": {
@@ -150,6 +155,9 @@ init python:
                 "«...He's not ugly.", "She asks him who he is.", "Send back an eye-roll.",
                 ## Giorno 11
                 "Eat alone, and write.", "A hug.", "Save it.", "Go in for a coffee.", "Stay for a second coffee.", "Undo a button", "Undo another button.",
+                ## Giorno 12
+                "Send it to [nome_compagno] first.", "Go in and celebrate.", "Climb down", "«I'd better go.»",
+                "Tell her about Daniel.", "Take her advice.",
             ],
         },
         "mista": {

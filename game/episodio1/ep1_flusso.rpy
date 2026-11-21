@@ -8,7 +8,7 @@ label ep1_inizio:
     $ episodio = 1
 
     ## Riscrittura in inglese in corso, un giorno alla volta (docs/mese-1.md).
-    ## Giorni 1-11 riscritti; dal giorno 12 restano le scene vecchie in italiano,
+    ## Giorni 1-12 riscritti; dal giorno 13 restano le scene vecchie in italiano,
     ## rimesse nei giorni del calendario (i giorni non ancora scritti si saltano).
     call ep1_d1
     call ep1_d2
@@ -21,6 +21,7 @@ label ep1_inizio:
     call ep1_d9
     call ep1_d10
     call ep1_d11
+    call ep1_d12
 
     call nuovo_giorno(13, "Saturday")
     call daniel_3_festa

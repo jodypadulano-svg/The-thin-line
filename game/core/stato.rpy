@@ -287,6 +287,9 @@ default complesso_crocerossina = False
 ## cambia niente. Vedi docs/narrative/howard-scala-visite.md.
 default howard_visite = 0
 
+## Giorno 12: la pagina del primo pezzo di Sara («7» il cinema, «11» il parcheggio).
+default pagina_articolo = ""
+
 ## Percorsi. I quattro senza scheda esistono già per non rompere i salvataggi.
 default percorsi = {
     "daniel":  Percorso("daniel", "Daniel", "Your partner's boss"),
