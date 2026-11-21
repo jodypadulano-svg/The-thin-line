@@ -10,9 +10,9 @@
 ## Decisions with Jody:
 ## - 19/11 Q&A: no locksmith, the keys turn up on day 11 (Howard, I20).
 ## - 20/11: Howard lives next door, a shared wall with the bedroom.
-## Draft for Jody's review. Game text in English; comments in Italian.
-## Invented by Claude, to be confirmed: the extra piece is the horoscope page
-## (the astrologer is ill); Sara is a Taurus; the margin note in Jessica's old Anna Karenina.
+## Reviewed with Jody on 21/11/2026: horoscopes, Madame Celeste and Sara a Taurus
+## confirmed; Jessica arrived after Sara; margin note kept; bedspring ending kept.
+## Game text in English; comments in Italian.
 ## CG: docs/prompt-immagini/inquadrature-giorno-10.md. Finché mancano,
 ## compare la didascalia [CG].
 
@@ -104,7 +104,7 @@ label ep1_d10_jessica:
     n "On the top of the pile, Sara recognises a cover. She'd know it anywhere."
     s "Jess... is that your Anna Karenina?"
     je "Hm? Oh, that. Yes! It's going to the charity shop. All of them."
-    s "You lent it to me my first week. You made me promise I'd read it in a month. You {i}fought{/i} me over that book."
+    s "You lent it to me your first week here. You made me promise I'd read it in a month. You {i}fought{/i} me over that book."
     s "It was your favourite."
     n "Jessica smiles up at her. A bright, calm, completely happy smile."
     je "It was. Before."

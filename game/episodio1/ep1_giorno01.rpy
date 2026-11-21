@@ -172,7 +172,7 @@ label ep1_d1_redazione:
     je "Saaaara! You look so cute today!"
     ## D2
     $ cg("Flashback: the shy, bookish Jessica of three months ago talking with Sara over a novel", "images/cg/ep1/d1_06b_jessica_ricordo.webp")
-    n "Jessica. Sara remembers her first week here, three months ago: a quiet girl with thick glasses and a battered copy of a Russian novel always in her bag."
+    n "Jessica. Sara remembers Jessica's first week here, three months ago: a quiet girl with thick glasses and a battered copy of a Russian novel always in her bag."
     n "They had spent a whole lunch break arguing about whether Anna Karenina was a victim or a heroine. Jessica had won."
     ## D4
     $ cg("Sara holding her paper cup, puzzled", "images/cg/ep1/d1_06d_sara_perplessa.webp")

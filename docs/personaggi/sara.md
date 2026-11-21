@@ -1,7 +1,7 @@
 # Sara — Protagonista
 Scheda personaggio | Estratta da [The Thin Line — Bibbia narrativa](../bibbia-narrativa.md) | Bozza di lavoro | 15 novembre 2026
 ## Identità e situazione iniziale
-Nome: Sara. Età: giovane adulta già inserita nel mondo del lavoro, **22-23 anni** (deciso il 16/11/2026). Situazione sentimentale: sposata o convivente con il compagno (da decidere). All’inizio è sinceramente felice e innamorata, e non manifesta insoddisfazioni preesistenti. Gli eventi che cambieranno gli equilibri devono apparire come un fulmine a ciel sereno.
+Nome: Sara. Età: giovane adulta già inserita nel mondo del lavoro, **22-23 anni** (deciso il 16/11/2026). Segno zodiacale: **Toro** (deciso il 21/11/2026, giorno 10). Situazione sentimentale: sposata o convivente con il compagno (da decidere). All’inizio è sinceramente felice e innamorata, e non manifesta insoddisfazioni preesistenti. Gli eventi che cambieranno gli equilibri devono apparire come un fulmine a ciel sereno.
 ## Personalità, lavoro e ambizioni
 Sara è una sognatrice. Lavora come **giornalista nella redazione di un giornale** di proprietà di Barbara (deciso il 16/11/2026), con incarichi poco prestigiosi o impegnativi. Lo considera soprattutto un modo per pagare affitto e bollette. Il suo vero sogno è scrivere romanzi, e nel tempo libero prova a dedicarsi alla scrittura.
 ## Aspetto fisico e stile
