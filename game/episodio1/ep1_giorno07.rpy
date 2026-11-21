@@ -8,7 +8,8 @@
 ## (Sara still hasn't noticed her keys are gone); «next week is going to be bad,
 ## Daniel wants me on the late shift» prepares day 9 (I14). Darius and
 ## [nome_compagno] talk about «a proper night with everyone» (day 16).
-## Draft for Jody's review. Game text in English; comments in Italian.
+## Reviewed with Jody on 21/11/2026 (invented details confirmed).
+## Game text in English; comments in Italian.
 ## CG: docs/prompt-immagini/inquadrature-giorno-07.md. Finché mancano,
 ## compare la didascalia [CG].
 

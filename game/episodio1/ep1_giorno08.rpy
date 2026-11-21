@@ -13,7 +13,9 @@
 ##   «Gym squad» group);
 ## - if ep1_d7_josh_precoce: [nome_compagno] has cooked her favourite dinner and
 ##   is a little too attentive; nobody mentions Sunday night. No stats.
-## Draft for Jody's review. Game text in English; comments in Italian.
+## Reviewed with Jody on 21/11/2026 (invented details confirmed; Simon's invite
+## moved from Wednesday to Saturday, the open gym of day 13).
+## Game text in English; comments in Italian.
 ## CG: docs/prompt-immagini/inquadrature-giorno-08.md. Finché mancano,
 ## compare la didascalia [CG].
 
@@ -154,7 +156,7 @@ label ep1_d8_simon:
             si "Joanie knows a lot. Not everything."
             n "He says it with a grin, and lets it go."
 
-    si "Wednesday? I'll be here. With or without Joanie."
+    si "Saturday morning? Open gym. No Joanie required."
     $ nota_sara("simon", "Funny. Kind. Remembers everything. End of story.")
     $ tappa("simon", 3)
     return

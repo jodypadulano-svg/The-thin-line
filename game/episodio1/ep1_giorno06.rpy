@@ -8,7 +8,8 @@
 ## with Joanie and [nome_compagno], Simon 3 (Simon is different outside the gym).
 ## Seeds: from tonight it's always [nome_compagno] who opens the door, so Sara
 ## doesn't notice the missing keys until day 9.
-## Draft for Jody's review. Game text in English; comments in Italian.
+## Reviewed with Jody on 21/11/2026 (invented details confirmed).
+## Game text in English; comments in Italian.
 ## CG: docs/prompt-immagini/inquadrature-giorno-06.md. Finché mancano,
 ## compare la didascalia [CG].
 

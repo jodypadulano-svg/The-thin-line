@@ -116,3 +116,6 @@ Il **passaggio conclusivo** è domestico: Sara e Darius fanno capire a Josh che,
 Queste differenze vanno mantenute, senza fondere i finali in un unico esito.
 
 **Aspetto (Jody, 16/11/2026):** ragazzo **nero**, capelli **crespi**, di lunghezza media (né lunghi né corti), stile **freestyle / rapper** (streetwear). 22-24 anni.
+
+## Dettagli confermati il 21/11/2026 (giorno 7)
+Ha una **sorella** (al giorno 7 deve aiutarla a spostare un armadio). Con Josh dalle superiori: la battuta storica del **laboratorio di chimica**, quando Josh restò un mese senza sopracciglia e se le disegnava con la matita della madre.
