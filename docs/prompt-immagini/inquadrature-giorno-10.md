@@ -22,13 +22,15 @@ Totale: **7 immagini**, nessun luogo nuovo (redazione, cucina di casa, camera).
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
-| A1 | `d10_01_barbara_cartella` | Barbara si china sulla scrivania di Sara e le butta davanti una cartella gonfia; Sara alza gli occhi dal caffè, presa alla sprovvista | `redazione`, Sara, `@barbara_wc` | sempre |
-| A1b | `d10_01b_bottone` | Primo piano: la mano di Barbara, unghie rosse lunghe, al colletto di Sara; due dita sbottonano il primo bottone, un'unghia le sfiora la clavicola; Sara immobile, labbra socchiuse | A1, Sara, `@barbara_wc` | sempre (aggiunta 21/11) |
-| A2 | `d10_02_oroscopi` | Pomeriggio: Sara alla scrivania, mento sulla mano, scrive gli oroscopi con un sorriso mezzo colpevole e mezzo divertito | `redazione`, Sara | sempre |
-| B1 | `d10_03_jessica_libri` | Pausa pranzo, redazione semivuota: Jessica in ginocchio accanto a uno scatolone butta dentro vecchi libri; in cima un grosso romanzo russo consumato; Sara in piedi che la guarda | `redazione`, Sara, `@jessica_wc` | sempre |
-| B2 | `d10_04_note_margine` | Primo piano: il vecchio romanzo aperto tra le mani di Sara, i margini pieni di piccole note a matita | B1 | solo se Sara «lascia perdere» |
-| C1 | `d10_05_cena` | La cucina la sera: Sara e Josh al tavolino con due piatti di pasta, lui proteso verso di lei con un sorriso curioso e canzonatorio, lei che ride | `casa_cucina`, Sara, Josh | sempre |
-| C2 | `d10_06_letto_muro` | La camera al buio: Josh addormentato su un fianco, Sara sveglia sulla schiena, occhi aperti, guarda il muro accanto al letto | `casa_camera_mattina` (di notte), Sara, Josh | sempre |
+| A1 ✅ | `d10_01_barbara_cartella` | Barbara si china sulla scrivania di Sara e le butta davanti una cartella gonfia; Sara alza gli occhi dal caffè, presa alla sprovvista | `redazione`, Sara, `@barbara_wc` | sempre |
+| A1b ✅ | `d10_01b_bottone` | Primo piano: la mano di Barbara, unghie rosse lunghe, al colletto di Sara; due dita sbottonano il primo bottone, un'unghia le sfiora la clavicola; Sara immobile, labbra socchiuse | A1, Sara, `@barbara_wc` | sempre (aggiunta 21/11) |
+| A2 ✅ | `d10_02_oroscopi` | Pomeriggio: Sara alla scrivania, mento sulla mano, scrive gli oroscopi con un sorriso mezzo colpevole e mezzo divertito | `redazione`, Sara | sempre |
+| A2 ✅ | `d10_02_oroscopi_aperto` | Come A2, ma la camicetta aperta sul seno (bottone lasciato aperto) | — | se `ep1_d10_bottone_aperto` (fatta 21/11) |
+| B1 ✅ | `d10_03_jessica_libri` | Pausa pranzo, redazione semivuota: Jessica in ginocchio accanto a uno scatolone butta dentro vecchi libri; in cima un grosso romanzo russo consumato; Sara in piedi che la guarda | `redazione`, Sara, `@jessica_wc` | sempre |
+| B1 ✅ | `d10_03_jessica_libri_aperto` | Come B1, Sara con la camicetta aperta (bottone lasciato aperto) | — | se `ep1_d10_bottone_aperto` (fatta 21/11) |
+| B2 ✅ | `d10_04_note_margine` | Primo piano: il vecchio romanzo aperto tra le mani di Sara, i margini pieni di piccole note a matita | B1 | solo se Sara «lascia perdere» |
+| C1 ✅ | `d10_05_cena` | La cucina la sera: Sara e Josh al tavolino con due piatti di pasta, lui proteso verso di lei con un sorriso curioso e canzonatorio, lei che ride | `casa_cucina`, Sara, Josh | sempre |
+| C2 ✅ | `d10_06_letto_muro` | La camera al buio: Josh addormentato su un fianco, Sara sveglia sulla schiena, occhi aperti, guarda il muro accanto al letto | `casa_camera_mattina` (di notte), Sara, Josh | sempre |
 
 **A1 — `d10_01_barbara_cartella`**
 ```

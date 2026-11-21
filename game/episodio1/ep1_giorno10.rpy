@@ -85,7 +85,11 @@ label ep1_d10_barbara:
             sp "...It isn't hot in here."
 
     $ musica("redazione")
-    $ cg("Sara at her desk in the afternoon, chin in her hand, writing horoscopes with a half-guilty, half-amused smile, the open folder beside her", "images/cg/ep1/d10_02_oroscopi.webp")
+    ## Doppia immagine: la camicetta come l'ha lasciata Sara (bottone aperto o richiuso).
+    if fatto("ep1_d10_bottone_aperto"):
+        $ cg("Sara at her desk in the afternoon, blouse open at the collar, chin in her hand, writing horoscopes with a half-guilty, half-amused smile, the open folder beside her", "images/cg/ep1/d10_02_oroscopi_aperto.webp")
+    else:
+        $ cg("Sara at her desk in the afternoon, blouse buttoned to the collarbone, chin in her hand, writing horoscopes with a half-guilty, half-amused smile, the open folder beside her", "images/cg/ep1/d10_02_oroscopi.webp")
     n "Aries gets a promotion. Gemini gets an unexpected phone call. Leo, for no reason at all, should beware of pigeons."
     n "By the time she reaches Taurus, her own sign, she's almost enjoying herself."
     n "{i}Taurus. Something you thought you had lost is closer than you think. It will come back to you sooner than you expect, and it will not come alone.{/i}"
@@ -98,10 +102,13 @@ label ep1_d10_barbara:
 
 label ep1_d10_jessica:
     $ vai("redazione", "The newsroom — 1:10 p.m.")
-    $ cg("Lunch break in the half-empty newsroom: Jessica kneeling by a cardboard box, dropping old paperbacks into it; on top, a battered copy of a thick Russian novel", "images/cg/ep1/d10_03_jessica_libri.webp")
+    if fatto("ep1_d10_bottone_aperto"):
+        $ cg("Lunch break in the half-empty newsroom: Jessica kneeling by a cardboard box, a battered copy of a thick Russian novel in her hand; Sara, blouse open at the collar, bending over to look", "images/cg/ep1/d10_03_jessica_libri_aperto.webp")
+    else:
+        $ cg("Lunch break in the half-empty newsroom: Jessica kneeling by a cardboard box, a battered copy of a thick Russian novel in her hand; Sara, blouse buttoned up, bending over to look", "images/cg/ep1/d10_03_jessica_libri.webp")
     n "At lunch the newsroom empties out. Only Jessica stays, kneeling on the carpet next to a cardboard box, emptying the bottom drawer of her desk."
     n "Paperbacks. Dozens of them. Thick ones, with cracked spines and coffee rings, going into the box one after another without a second look."
-    n "On the top of the pile, Sara recognises a cover. She'd know it anywhere."
+    n "The next one is already in her hand, on its way to the box. Sara recognises the cover. She'd know it anywhere."
     s "Jess... is that your Anna Karenina?"
     je "Hm? Oh, that. Yes! It's going to the charity shop. All of them."
     s "You lent it to me your first week here. You made me promise I'd read it in a month. You {i}fought{/i} me over that book."
