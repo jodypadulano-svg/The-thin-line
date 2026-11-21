@@ -282,6 +282,11 @@ default interest_josh = 80    # parte da una coppia felice
 default howard_abbraccio_prolungamenti = 0
 default complesso_crocerossina = False
 
+## Howard, la scala delle visite (21/11): visite accettate a casa sua. Il giorno 9
+## è lo step 1; ogni «sì» a un invito porta allo step successivo, ogni «no» non
+## cambia niente. Vedi docs/narrative/howard-scala-visite.md.
+default howard_visite = 0
+
 ## Percorsi. I quattro senza scheda esistono già per non rompere i salvataggi.
 default percorsi = {
     "daniel":  Percorso("daniel", "Daniel", "Your partner's boss"),

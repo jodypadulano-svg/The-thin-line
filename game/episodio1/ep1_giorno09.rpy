@@ -137,6 +137,7 @@ label ep1_d9_chiusa_fuori:
 
 label ep1_d9_da_howard:
     $ vai("casa_howard", "Howard's flat — 6:00 p.m.")
+    $ howard_visite = 1    ## step 1 della scala delle visite (21/11)
     $ musica("howard")
     $ ambiente("tv_howard")
     $ cg("Howard's living room: dark and stuffy, curtains drawn, piles of old newspapers, dirty plates on the table, an armchair moulded by years of the same body, the television murmuring", "images/cg/ep1/d9_05_casa_howard.webp")

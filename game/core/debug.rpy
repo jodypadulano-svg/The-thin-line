@@ -55,6 +55,8 @@ init python:
                 "Accept without a word.", "Do it up again", "Let it go.", "Tell him everything about Howard.",
                 ## Scelte Corr +1 aggiunte il 21/11 (giorni 5, 7, 9)
                 "«There won't be a next time.»", "She asks him who he is.", "Send back an eye-roll.",
+                ## Giorno 11
+                "Eat with Roberta.", "A handshake.", "«I'll just knock, Howard.", "«Another time, Howard.",
             ],
         },
         "barbara": {
@@ -100,6 +102,8 @@ init python:
                 "Accept without a word.", "Leave it open.", "Ask her what happened.", "Play it down.",
                 ## Scelte Corr +1 aggiunte il 21/11 (giorni 5, 7, 9)
                 "«...He's not ugly.", "She lets him come closer", "Zoom in.",
+                ## Giorno 11
+                "Eat with Roberta.", "A hug.", "Save it.", "Go in for a coffee.", "Stay for a second coffee.", "Undo a button", "Undo another button.",
             ],
         },
         "daniel": {
@@ -144,6 +148,8 @@ init python:
                 "Point out it isn't her job.", "Leave it open.", "Ask her what happened.", "Play it down.",
                 ## Scelte Corr +1 aggiunte il 21/11 (giorni 5, 7, 9)
                 "«...He's not ugly.", "She asks him who he is.", "Send back an eye-roll.",
+                ## Giorno 11
+                "Eat alone, and write.", "A hug.", "Save it.", "Go in for a coffee.", "Stay for a second coffee.", "Undo a button", "Undo another button.",
             ],
         },
         "mista": {
