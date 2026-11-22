@@ -77,6 +77,7 @@ label ep1_d3_riunione:
 
     $ vai("redazione", "The newsroom — 5:00 p.m.")
     $ musica("redazione")
+    $ cg("Late afternoon in the newsroom", "images/cg/ep1/d1_07_le_17.webp")
     n "The afternoon goes by in a blur. At five o'clock sharp Sara is out of the door: tonight there's a company dinner, and she still has no idea what to wear."
     return
 

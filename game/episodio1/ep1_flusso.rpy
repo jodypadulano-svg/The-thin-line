@@ -8,8 +8,8 @@ label ep1_inizio:
     $ episodio = 1
 
     ## Riscrittura in inglese, un giorno alla volta (docs/mese-1.md): giorni 1-13
-    ## riscritti. Dopo il giorno 13, il teaser «Nella prossima puntata» e il montaggio
-    ## dei personaggi con la canzone (la scena dopo i titoli).
+    ## riscritti. Dopo il giorno 13, il montaggio dei personaggi con la canzone
+    ## precede il teaser «Nella prossima puntata».
     call ep1_d1
     call ep1_d2
     call ep1_d3
@@ -24,8 +24,8 @@ label ep1_inizio:
     call ep1_d12
 
     call ep1_d13
-    call ep1_teaser
     call ep1_d13_montaggio
+    call ep1_teaser
 
     jump ep1_fine
 

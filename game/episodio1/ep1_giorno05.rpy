@@ -277,6 +277,7 @@ label ep1_d5_joanie:
     $ vai("casa", "Home — 11:20 p.m.")
     $ ambiente(None)
     $ musica("notte")
+    $ cg("Sara gently covers Josh, asleep on the sofa in his work clothes", "images/cg/ep1/d5_josh_aspetta_divano.webp")
     n "When Sara gets home, the television is talking to nobody. [nome_compagno] is asleep on the sofa, a cushion over his face, still in his work shirt."
     n "She covers him with the blanket and turns off the TV."
     sp "Men like that are bored to death. Then one day someone says no."

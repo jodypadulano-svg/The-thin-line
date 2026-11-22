@@ -30,6 +30,7 @@ label ep1_d10_barbara:
     $ vai("redazione", "The newsroom — 9:35 a.m.")
     $ musica("redazione")
     $ ambiente("redazione")
+    $ cg("The newsroom in the morning", "images/cg/ep1/redazione_base.webp")
     n "Wednesday. [nome_compagno] locked the door behind them again this morning, and made a little bow. «Your doorman, madam.»"
     n "Sara has barely sat down when the glass door at the end of the room swings open."
     $ suono("porta_sbattuta")
@@ -153,6 +154,7 @@ label ep1_d10_sera:
     $ vai("casa", "Home — 7:30 p.m.")
     $ ambiente(None)
     $ musica("casa")
+    $ cg("The landing at dusk, with light under Sara and Josh's brown door", "images/cg/ep1/d8_rientro_citofono.webp")
     n "She climbs the stairs, glances at the green door without meaning to, and rings at her own."
     $ suono("citofono")
     c "It's open! Your doorman is on duty!"

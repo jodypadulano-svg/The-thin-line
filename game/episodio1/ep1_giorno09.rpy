@@ -269,8 +269,8 @@ label ep1_d9_abbraccio_finito:
 label ep1_d9_sera:
     $ vai("casa_howard", "Howard's flat — 9:10 p.m.")
     $ suono("chiave_serratura")
-    n "At ten past nine, footsteps run up the stairs and a key turns in the lock next door. [nome_compagno]."
     $ cg("Howard's doorway: Howard holding the door for Sara as she leaves, looking up at her with hopeful, wet eyes; next door, Josh's door is open with light pouring out", "images/cg/ep1/d9_08_soglia.webp")
+    n "At ten past nine, footsteps run up the stairs and a key turns in the lock next door. [nome_compagno]."
     ho "Sara..."
     ho "It was nice, today. Talking to someone. Really talking."
     ho "Could we... see each other now and then? Just a coffee. A little chat. Nothing more."

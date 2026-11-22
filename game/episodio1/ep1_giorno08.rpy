@@ -92,8 +92,10 @@ label ep1_d8_simon:
     $ ambiente("palestra")
     $ suono("armadietto")
     if fatto("ep1_top_joanie"):
+        $ cg("Sara in the locker room mirror wearing Joanie's black top", "images/cg/ep1/d2_06_top_specchio.webp")
         n "In the locker room she pulls out the black top. It never went back to Joanie, somehow. She puts it on before she can change her mind."
     else:
+        $ cg("The gym locker room", "images/cg/ep1/d8_spogliatoio.webp")
         n "In the locker room she pulls out her old t-shirt, looks at it for a long moment, and puts it on anyway. Baby steps."
     $ cg("The weight room: Simon turning from the trainers' desk with a wide smile as Sara walks in alone, bag in hand", "images/cg/ep1/d8_04_simon_saluta.webp")
     si "Hey! My athlete! All on your own tonight?"
@@ -168,6 +170,7 @@ label ep1_d8_casa:
     $ vai("casa", "Home — 7:40 p.m.")
     $ ambiente(None)
     $ musica("casa")
+    $ cg("Dusk on the landing: warm light under Sara and Josh's brown door", "images/cg/ep1/d8_rientro_citofono.webp")
     if fatto("ep1_palestra_da_sola"):
         n "She climbs the stairs with legs like jelly and doesn't even look for her keys: the light is on behind the door, [nome_compagno] is home."
     else:

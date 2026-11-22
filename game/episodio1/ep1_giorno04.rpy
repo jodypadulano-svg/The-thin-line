@@ -271,6 +271,7 @@ label ep1_d4_serata_libera:
     $ vai("casa", "Home — evening")
     $ ambiente(None)
     $ musica("casa")
+    $ cg("The living room at home in the evening", "images/cg/ep1/d4_soggiorno_sera.webp")
     n "No drinks with the girls tonight. Pizza on the way, [nome_compagno] in the shower, two free hours that belong to nobody."
     sp "Two hours. What do I do with two hours?"
 
@@ -308,6 +309,7 @@ label ep1_d4_notte:
     $ ambiente(None)
     $ musica("notte")
     if fatto("ep1_aperitivo_accettato"):
+        $ cg("Sara at the bedroom door after the aperitif, Josh in bed with his work report", "images/cg/ep1/d4_notte_rientro_aperitivo.webp")
         n "When Sara gets home [nome_compagno] is already in bed, the bedside lamp still on, a work report open on his chest."
         if fatto("ep1_d4_lasciarsi_andare"):
             n "She takes her shoes off in the corridor so she won't wake him, and laughs at herself for no reason at all."
@@ -317,6 +319,7 @@ label ep1_d4_notte:
         if fatto("ep1_d4_drink_barbara"):
             s "Pink."
             c "Worse."
+    $ cg("Bedside light: Sara touches the base of her throat, thinking of Jessica's gold heart", "images/cg/ep1/d4_notte_gesto_gola.webp")
     n "Before she switches off the light, she touches her own throat. Where Jessica wears the little gold heart."
     sp "When you belong."
     sp "Belong to what?"

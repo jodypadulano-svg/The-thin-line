@@ -92,8 +92,10 @@ label ep1_d6_spesa:
     call fine_retroscena
 
     if fatto("ep1_d6_caffe_howard"):
+        $ cg("Sara's kitchen: Howard at the table while Sara finishes making coffee", "images/cg/ep1/d6_04_moka.webp")
         n "Howard drinks his coffee in three sips, burns his tongue, and says it's the best coffee he's had in years."
         ho "You'll make someone very happy, you know. Well. You already do. Of course."
+    $ cg("Daylight on the landing outside Sara's brown door and Howard's green door", "images/cg/ep1/d6_pianerottolo_giorno.webp")
     ho "Have a good Saturday, Sara. Really... a good Saturday."
     n "The door closes. On the landing, Howard's slippers don't move for a while. Then his green door closes too."
     $ nota_sara("howard", "He helped with the shopping. Lonely, a bit clumsy, a good heart.")
@@ -153,9 +155,9 @@ label ep1_d6_pomeriggio:
 
 label ep1_d6_locale:
     $ vai("casa", "Home — 9:15 p.m.")
+    $ cg("Close-up of the ceramic key bowl on the hall cabinet: only one set of keys left inside, Josh's hand lifting it out", "images/cg/ep1/d6_10_ciotola.webp")
     n "At the door, out of habit, Sara's hand reaches for the bowl."
     c "Leave it, I've got mine. Come on, Joanie's already downstairs shouting."
-    $ cg("Close-up of the ceramic key bowl on the hall cabinet: only one set of keys left inside, Josh's hand lifting it out", "images/cg/ep1/d6_10_ciotola.webp")
     n "[nome_compagno] scoops his keys out of the bowl and locks the door behind them. Sara doesn't look down."
 
     $ vai("locale", "The Lantern — 10:00 p.m.")
@@ -253,6 +255,7 @@ label ep1_d6_locale:
     $ vai("pianerottolo", "The landing — 1:40 a.m.")
     $ ambiente(None)
     $ musica("notte")
+    $ cg("The empty landing at night: Sara's brown door ajar, a line of light under Howard's closed green door", "images/cg/ep1/d6_rientro_notte_pianerottolo.webp")
     n "They climb the stairs in silence, giggling, her shoes in her hand. [nome_compagno] opens the door with his keys."
     n "On the landing, the line of light under Howard's green door goes out as they pass."
     sp "He's still awake. At this hour. Poor man, he can't sleep either."

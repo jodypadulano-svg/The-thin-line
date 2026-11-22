@@ -37,8 +37,10 @@ label ep1_d12_articolo:
     $ vai("redazione", "The newsroom — 8:40 a.m.")
     $ musica("redazione")
     $ ambiente("redazione")
+    $ cg("The newsroom early on Friday morning", "images/cg/ep1/redazione_base.webp")
     n "Friday. Sara is in twenty minutes early, which has never happened in eight months."
     n "She tells herself it's because of the traffic. There was no traffic."
+    $ cg("The folded newspaper and Barbara's yellow note on Sara's desk", "images/cg/ep1/d12_giornale_piegato_postit.webp")
     n "On her desk, folded in half, today's paper. Someone has put it there before her. A yellow sticky note on the front page, in thick red felt-tip."
     if fatto("ep1_d3_proposta_cinema"):
         n "{i}Page 7. Delicious. Don't let it go to your head. — B.{/i}"
@@ -100,8 +102,10 @@ label ep1_d12_articolo:
     $ nota_sara("capa", "My first real piece came out. Barbara left a note on it: she liked it, and she'll never say so out loud.")
 
     $ vai("redazione", "The newsroom — 11:30 a.m.")
+    $ cg("Roberta brings Sara a cappuccino with a cinnamon heart, the newspaper open on her desk", "images/cg/ep1/d12_roberta_cappuccino_articolo.webp")
     n "The rest of the morning, people stop at her desk. Not many. Enough."
     n "Jessica claps with little quick hands. Roberta brings a cappuccino with a heart drawn in the cinnamon and says nothing at all, only smiles."
+    $ cg("Through the glass of her office, Barbara quietly rereads the newspaper", "images/cg/ep1/d12_barbara_rilegge_dietro_vetro.webp")
     n "Barbara doesn't come out of her office. But at eleven-thirty, through the glass door, Sara sees her holding the paper open at page [pagina_articolo], reading, a red nail tapping slowly on the margin."
     sp "She's reading it again."
     sp "Don't let it go to your head, Sara."
@@ -116,6 +120,8 @@ label ep1_d12_howard:
     $ ambiente(None)
     $ musica(None)
     $ suono("telefono_vibra")
+    show expression Transform("images/cg/ep1/d8_rientro_citofono.webp", crop=(980, 150, 1664, 936), xysize=(config.screen_width, config.screen_height)) as cg_corrente
+    with dissolve
     n "On the stairs, a message from [nome_compagno]: {i}Daniel wants the big contract signed before his party tomorrow. Eight o'clock. Then I'm ALL yours, Miss Front Page.{/i}"
     sp "Page [pagina_articolo]. But I'll take Front Page."
     n "She's taking out her keys, her own keys, when the green door opens."
@@ -208,9 +214,11 @@ label ep1_d12_scaletta:
     $ vai("casa_howard", "Howard's flat — 6:40 p.m.")
     $ ambiente("tv_howard")
     if fatto("ep1_d11_pantofole"):
+        $ cg("The pink slippers beside the paper bag in Howard's hall", "images/cg/ep1/d12_pantofole_restituite.webp")
         n "She has brought back his pink slippers, in a paper bag. Howard won't take them."
         ho "No, no. They live here now. By the door. For when you come."
         n "He puts them by his door, side by side, toes pointing in. As if they were waiting for someone."
+    $ cg("Howard's dark corridor with the stepladder already open beneath the dead bulb", "images/cg/ep1/d12_corridoio_lampadina_spenta.webp")
     n "The corridor of Howard's flat is darker than usual. Pitch dark, in fact."
     ho "Ah. Yes. The bulb. It went on Wednesday. I've been living like a mole."
     ho "At my age, the ladder... my knees, my balance. My mother always did it. Then nobody."
@@ -345,6 +353,10 @@ label ep1_d12_ritaglio:
 label ep1_d12_ritorno:
     $ vai("casa", "Home — 7:45 p.m.")
     $ musica("casa")
+    if fatto("ep1_d12_scalza"):
+        $ cg("Sara looks down at her stockinged feet, carrying her heels in the hallway", "images/cg/ep1/d12_rientro_scarpe_in_mano.webp")
+    else:
+        $ cg("Sara's keys back in the ceramic bowl by the door", "images/cg/ep1/d11_chiavi_ritrovate_ciotola.webp")
     n "She opens her own door with her own keys at a quarter to eight. The flat is quiet and smells of nothing at all after Howard's."
     if fatto("ep1_d12_scalza"):
         n "It's only in the hallway that she realises she's holding her shoes in her hand. She walked out of his flat, and across the landing, barefoot."
@@ -361,6 +373,7 @@ label ep1_d12_josh:
     if not fatto("ep1_d12_visita"):
         $ vai("casa", "Home — 6:35 p.m.")
         $ musica("casa")
+        $ cg("The kitchen table where Sara leaves the newspaper open for Josh", "images/cg/ep1/casa_cucina_base.webp")
         n "She puts the paper Howard gave her on the kitchen table, open at page [pagina_articolo], where [nome_compagno] will see it as soon as he walks in."
     $ vai("casa", "Home — 8:10 p.m.")
     $ musica("casa")
@@ -389,9 +402,9 @@ label ep1_d12_josh:
 label ep1_d12_telefonata:
     $ vai("casa", "Home — 10:40 p.m.")
     $ musica("notte")
+    $ cg("The living room at night, one lamp on: Sara curled up on the sofa under a blanket in her pyjamas, on the phone, the newspaper on the cushion beside her", "images/cg/ep1/d12_11_telefonata.webp")
     n "By half past ten [nome_compagno] is asleep, done in by the contract and the curry. Sara takes the phone and the blanket to the sofa."
     $ suono("telefono_vibra")
-    $ cg("The living room at night, one lamp on: Sara curled up on the sofa under a blanket in her pyjamas, on the phone, the newspaper on the cushion beside her", "images/cg/ep1/d12_11_telefonata.webp")
     n "Joanie, of course. Joanie never texts after ten. She calls."
     ch "Is the famous journalist still awake, or does she need her beauty sleep now?"
     s "The famous journalist is on the sofa in her pyjamas."

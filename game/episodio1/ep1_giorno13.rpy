@@ -55,11 +55,11 @@ label ep1_d13:
 label ep1_d13_shopping:
     $ vai("negozio", "A boutique in the centre — 10:40 a.m.")
     $ musica("aperitivo")
+    $ cg("A small, elegant boutique: Joanie holding three dresses up against Sara at once, grinning; Sara laughing, half-protesting, in front of a tall mirror", "images/cg/ep1/d13_01_boutique.webp")
     n "Joanie picks her up at ten on the dot, honks twice, and doesn't let her finish her coffee."
     ch "Villa of the year. Bosses, clients, money. You are not going in that navy thing from the company dinner."
     s "What's wrong with the navy thing?"
     ch "Nothing. That's what's wrong with it."
-    $ cg("A small, elegant boutique: Joanie holding three dresses up against Sara at once, grinning; Sara laughing, half-protesting, in front of a tall mirror", "images/cg/ep1/d13_01_boutique.webp")
     n "The boutique is the kind of place Sara walks past and never walks into. Joanie walks into it as if she owned the lease."
     n "Ten minutes later Sara is in the changing room with six dresses, and Joanie is on the other side of the curtain, narrating."
     if fatto("ep1_d12_consiglio_joanie"):
@@ -123,6 +123,7 @@ label ep1_d13_shopping:
 label ep1_d13_palestra:
     $ vai("casa", "Home — 2:30 p.m.")
     $ musica("casa")
+    $ cg("Josh carefully irons his white shirt for Daniel's party", "images/cg/ep1/d13_josh_stira_camicia.webp")
     n "Back home, [nome_compagno] is ironing his shirt for tonight for the third time, and practising his handshake on the coat rack."
     if fatto("ep1_palestra_da_sola"):
         sp "«Saturday morning? Open gym. No Joanie required.» He said morning. Joanie ate the morning."
@@ -137,6 +138,8 @@ label ep1_d13_palestra:
             call ep1_d13_simon
         "Skip it: she needs a nap before tonight.":
             $ segna("ep1_d13_niente_palestra")
+            show expression Transform("images/cg/ep1/d13_josh_stira_camicia.webp", crop=(25, 440, 1280, 720), xysize=(config.screen_width, config.screen_height)) as cg_corrente
+            with dissolve
             n "She lies down for twenty minutes and spends all twenty of them thinking about the dress in its bag."
     return
 
@@ -210,6 +213,7 @@ label ep1_d13_festa:
     $ vai("villa_daniel", "Daniel's villa — 8:15 p.m.")
     $ musica("daniel_villa")    ## musica sexy della festa (Jody, 21/11)
     $ ambiente("bar")
+    $ cg("The hilltop villa glowing above the drive and the parked cars", "images/cg/ep1/d13_villa_esterno.webp")
     n "The villa is up in the hills, all glass and stone and warm light, with cars parked along the drive that cost more than Sara's flat."
     n "[nome_compagno] holds her hand in the car park, too tight."
     c "Best people in the company. Clients. Investors. Two years ago I wasn't even on the list."
@@ -264,11 +268,13 @@ label ep1_d13_festa:
 
     $ vai("villa_daniel", "Daniel's villa — 9:50 p.m.")
     $ musica("daniel")
+    $ cg("Daniel puts a nervous Josh on the spot in front of his clients", "images/cg/ep1/d13_daniel_josh_clienti.webp")
     n "Later, Daniel crosses the room with three men in expensive suits and stops right next to them."
     da "Gentlemen, [nome_compagno]. [nome_compagno] was on Harrow too. Weren't you, [nome_compagno]?"
     c "Yes. I... yes, the whole time."
     da "The whole time. Photocopies, mostly. Somebody has to love paper. Every team needs one."
     n "The clients laugh. Somebody's wife laughs. [nome_compagno] laughs too, because he promised he would, and that's the worst part."
+    $ cg("Sara weighs whether to answer Daniel in front of the clients", "images/cg/ep1/d13_sara_pensa_rispondere.webp")
     sp "Say something. Say something, Sara."
 
     menu:
@@ -279,9 +285,11 @@ label ep1_d13_festa:
             $ segna("ep1_d13_difende_josh")
             s "He was there every night until eight. I know, because I ate dinner alone. Every night."
             n "It comes out smaller than she wanted. Her voice shakes on «alone»."
+            $ cg("Daniel smiles after Sara defends Josh; the clients listen", "images/cg/ep1/d13_daniel_josh_clienti.webp")
             n "A silence. Then Daniel smiles at her, slow and pleased, the way you smile at a puppy that has growled."
             da "Loyal. Charming."
             da "Hold on to her, [nome_compagno]. She's the only one here who'd fight for you."
+            $ cg("Sara absorbs Daniel's reply in silence", "images/cg/ep1/d13_sara_pensa_rispondere.webp")
             sp "He turned it round. I defended him and he turned it round, and now it's even worse."
         "Say nothing.":
             $ segna("ep1_d13_tace")
@@ -296,6 +304,7 @@ label ep1_d13_festa:
             $ interest("daniel", 2, "Sara smiled at his joke.")
             $ corruption(1, "Sara smiles while Daniel humiliates [nome_compagno].")
             $ segna("ep1_d13_sorride")
+            $ cg("Sara's involuntary half-smile at Daniel's joke", "images/cg/ep1/d13_sara_sorriso_trattenuto.webp")
             n "It's only a small smile. The corner of her mouth. It escapes her before she can stop it."
             n "Daniel sees it. Of course he sees it. His eyes glitter for a second, like a man who has just been dealt the card he wanted."
             n "[nome_compagno] sees it too. He looks at her, and then at his shoes."
@@ -305,6 +314,7 @@ label ep1_d13_festa:
     ## Magnus (Q&A 19/11, punto 6): solo l'editore. Daniel lo presenta.
     $ vai("villa_daniel", "Daniel's villa — the library, 10:15 p.m.")
     $ musica("ristorante")
+    $ cg("Daniel finds Sara by the bookshelves before introducing her to Magnus", "images/cg/ep1/d13_daniel_scaffali.webp")
     n "Half an hour later, Daniel finds her by the bookshelves, where she has gone to stop thinking."
     da "There you are. Come. There's someone you should meet. [nome_compagno] tells me you write."
     s "[nome_compagno] tells you...?"
@@ -407,10 +417,13 @@ label ep1_d13_terrazza:
     $ vai("villa_daniel", "Daniel's villa — the terrace, 11:20 p.m.")
     $ musica("daniel_seduzione")    ## la terrazza e la cerniera (Jody, 21/11)
     $ ambiente(None)
+    show expression Transform("images/cg/ep1/d13_salone_base.webp", crop=(720, 25, 864, 486), xysize=(config.screen_width, config.screen_height)) as cg_corrente
+    with dissolve
     $ suono("telefono_vibra")
     n "Another message from Joanie."
     ch "{i}Bathroom. Lipstick. Then walk past him slowly. SLOWLY. Not to do anything. Just to see his face.{/i}"
     sp "Absolutely not."
+    $ cg13("The villa's stone terrace at night, the lights of the town far below: Daniel leaning on the railing, turning his head as Sara steps out of the French windows, the party glowing behind her", "d13_10_terrazza")
     n "She goes out on the terrace instead, to breathe. The valley is black, with the lights of the town far below like spilled sugar."
     n "There's someone at the railing already. Alone, without a glass, his jacket open."
     ## Il videoclip a tempo di musica (Jody, 22/11): solo col corsetto, si può saltare.
@@ -422,7 +435,6 @@ label ep1_d13_terrazza:
                 jump ep1_d13_terrazza_pranzo
             "Skip the scene.":
                 pass
-    $ cg13("The villa's stone terrace at night, the lights of the town far below: Daniel leaning on the railing, turning his head as Sara steps out of the French windows, the party glowing behind her", "d13_10_terrazza")
     da "Escaping?"
     s "Breathing. It's allowed, I think. Even in your house."
     da "In my house almost everything is allowed. That's why people come."
@@ -582,8 +594,8 @@ label ep1_d13_ritorno:
 
     $ vai("camera", "The bedroom — 12:55 a.m.")
     $ musica("notte")
-    n "At home [nome_compagno] undresses without turning on the light. Sara sits on the edge of the bed with Magnus's card in her hand."
     $ cg13("The bedroom at night by the bedside lamp: Sara sitting on the edge of the bed in her party dress, turning a cream business card over in her fingers; Josh behind her, already under the covers, facing the wall", "d13_14_biglietto_letto")
+    n "At home [nome_compagno] undresses without turning on the light. Sara sits on the edge of the bed with Magnus's card in her hand."
     n "{i}Fifty pages. No more, no less.{/i}"
     c "You still up?"
 
@@ -621,15 +633,31 @@ label ep1_d13_notte:
 
     $ vai("camera", "The bedroom — 1:12 a.m.")
     $ musica("notte")
+    $ cg("Sara lies awake with her phone in hand, Josh asleep beside her with his back turned", "images/cg/ep1/d13_18_messaggio_daniel.webp")
     n "Sara can't sleep. [nome_compagno] is breathing slowly beside her, turned towards the wall."
     $ suono("telefono_vibra")
-    n "Her phone lights up on the bedside table. Joanie."
-    ch "{i}REPORT. NOW.{/i}"
-    n "Sara looks at it. She doesn't answer. For the first time in her life, she doesn't know what she'd write."
+    n "The phone vibrates in her hand. Joanie."
+    $ chat_aperta = "amica"
+    show screen telefono_chat("amica")
+    $ msg("amica", "REPORT. NOW.")
+    if fatto("ep1_d13_cerniera"):
+        $ msg("sara", "I ran into Daniel on the terrace. My zip had slipped. I let him do it up and he kissed my ear.")
+        $ msg("amica", "Your EAR. Okay, but how did it feel?")
+        $ msg("sara", "I went all warm. I tilted my head without thinking. I think I wanted him to do it again.")
+    else:
+        $ msg("sara", "I ran into Daniel on the terrace. He offered to do up my zip. I told him I could do it myself.")
+        $ msg("amica", "You and your extremely capable hands. Go on.")
+    if fatto("ep1_d13_pranzo_forse"):
+        $ msg("sara", "He asked me to lunch to talk about the novel. He said [nome_compagno] didn't need to know. I said maybe.")
+        $ msg("amica", "Maybe. Okay. Are you still saying maybe now that you're home?")
+    else:
+        $ msg("sara", "Then he asked me to lunch. He wanted it to be our secret. I told him [nome_compagno] would know.")
+        $ msg("amica", "You said that to his face? Oh, I wish I'd seen it.")
+    hide screen telefono_chat
+    $ chat_aperta = None
     $ suono("telefono_vibra")
     $ musica("daniel_notte")    ## il messaggio dell'1:12 (Jody, 21/11)
-    n "Then the phone lights up again. A number saved four hours ago."
-    $ cg("The dark bedroom at night: Sara lying awake, her face lit only by the cold glow of her phone screen, lips parted; Josh asleep beside her, his back turned", "images/cg/ep1/d13_18_messaggio_daniel.webp")
+    n "Then a new message appears. A number saved four hours ago."
     if fatto("ep1_d13_cerniera") and fatto("ep1_d13_pranzo_forse"):
         n "{i}Daniel: «You tilted your head. And you said maybe. Both of those were yes, Sara.»{/i}"
     elif fatto("ep1_d13_cerniera"):
@@ -688,9 +716,8 @@ label ep1_teaser:
     return
 
 
-## --- Il montaggio dopo i titoli: un ritratto per ogni strada (Jody, 21/11) ----------------
-## Dopo il teaser: undici immagini che scorrono con una panoramica laterale, una per
-## Sara e per ognuno degli otto percorsi, mentre passa una canzone malinconica e sexy
+## --- Montaggio prima del teaser: un ritratto per ogni strada (Jody, 22/11) ----------------
+## Dieci immagini scorrono con una panoramica laterale, mentre passa una canzone malinconica e sexy
 ## cantata da una voce femminile (`chiusura_ep1`, docs/prompt-audio.md). Il giocatore
 ## vede quello che Sara non sa. Jacob e Darius non si nominano: si capisce più avanti.
 
@@ -714,46 +741,52 @@ init python:
             renpy.hide("cg_corrente")
             renpy.show_screen("segnaposto_cg", descrizione=descrizione)
 
+    def battuta_montaggio(testo, durata, chi=None, colore="#ffffff"):
+        """Mostra la battuta per il tempo di lettura previsto, senza clic."""
+        renpy.show_screen("battuta_tempo", chi=chi, testo=testo, colore=colore, pensiero=False)
+        renpy.pause(durata, hard=True)
+        renpy.hide_screen("battuta_tempo")
+
 label ep1_d13_montaggio:
     $ luogo_corrente = ""
     scene bg nero with fade
     $ musica("chiusura_ep1")
     call inizio_retroscena
     $ quadro("Sara in bed in the dark, her phone on her chest, smiling to herself, Josh asleep beside her", "images/cg/ep1/d13_m01_sara.webp", "destra")
-    $ renpy.pause(8.0)
+    $ renpy.pause(8.0, hard=True)
     $ quadro("Howard's hand in the yellow lamplight, holding a pair of pale pink lace panties, the drawer open, the brass key beside it", "images/cg/ep1/d13_m02_howard.webp", "sinistra")
-    $ renpy.pause(8.0)
+    $ renpy.pause(8.0, hard=True)
     $ quadro("Simon alone in the empty gym at night, training hard under a single light, sweat on his back", "images/cg/ep1/d13_m03_simon.webp", "destra")
-    $ renpy.pause(8.0)
+    $ renpy.pause(8.0, hard=True)
     $ quadro("Joanie curled on her sofa at night, typing on her phone with a wicked little smile, her boyfriend asleep behind her", "images/cg/ep1/d13_m04_joanie.webp", "sinistra")
-    $ renpy.pause(7.0)
+    $ renpy.pause(7.0, hard=True)
     $ quadro("A man's hand only, strong, a heavy ring, holding a phone with a new message on the screen; a dim bar behind", "images/cg/ep1/d13_m05_jacob.webp", "destra")
-    rs "{i}Joanie: «Same bar. Friday. I'll bring her.»{/i}"
+    $ battuta_montaggio("{i}Joanie: «Same bar. Friday. I'll bring her.»{/i}", 7.0)
     $ quadro("Darius alone at a kitchen table at night, looking at a photograph we cannot see, a beer going warm beside him", "images/cg/ep1/d13_m06_darius.webp", "sinistra")
-    $ renpy.pause(8.0)
+    $ renpy.pause(8.0, hard=True)
     $ quadro("Low close-up at the foot of a bed in shadow, too close to see who is in it: on the floor a leopard-print blouse and skirt tangled with a fitted red dress, red heels, a gold heart pendant", "images/cg/ep1/d13_m07_barbara.webp", "destra")
-    $ renpy.pause(8.0)
+    $ renpy.pause(8.0, hard=True)
     $ quadro("The back seat of a dark car at night, city lights sliding past: Magnus looking out of the window, the woman with the silver bob beside him, her hand on his arm", "images/cg/ep1/d13_m08_magnus_auto.webp", "sinistra")
-    rs "In the back of a black car going down the hill, the woman with the silver bob rests her hand on Magnus's arm."
-    rs "{i}«Is it her?»{/i}"
-    rs "Magnus doesn't answer. He looks at the lights of the town, and smiles very slightly."
+    $ battuta_montaggio("In the back of a black car going down the hill, the woman with the silver bob rests her hand on Magnus's arm.", 7.0)
+    $ battuta_montaggio("{i}«Is it her?»{/i}", 3.0)
+    $ battuta_montaggio("Magnus doesn't answer. He looks at the lights of the town, and smiles very slightly.", 5.5)
     $ quadro("Magnus's hand holding an old, faded photograph of a young woman with wavy hair, laughing; a leather album under a green lamp", "images/cg/ep1/d13_m09_foto.webp", "destra")
-    rs "Later, in his study, he opens an old album, and stops at a photograph from a long time ago."
-    rs "A young woman, laughing at whoever held the camera. Wavy hair. That same way of laughing with her whole face."
+    $ battuta_montaggio("Later, in his study, he opens an old album, and stops at a photograph from a long time ago.", 6.0)
+    $ battuta_montaggio("A young woman, laughing at whoever held the camera. Wavy hair. That same way of laughing with her whole face.", 6.5)
     $ retroscena("editore", "Magnus keeps an old photo of a young woman who looks a lot like Sara.")
     $ retroscena("editore", "The woman with the silver bob asked him: «Is it her?»")
     $ quadro("The villa's great room after the party, candles burning low: Daniel and Magnus alone by the dying fire, two glasses of whisky", "images/cg/ep1/d13_m10_daniel_magnus.webp", "sinistra", 10.0)
-    ed "Interesting, your friend."
-    da "Isn't she."
-    ed "Very."
-    rs "Daniel smiles, pleased with himself. He thinks it's a compliment to his taste."
-    rs "It doesn't occur to him, not even for a second, that it might not be about him at all."
+    $ battuta_montaggio("Interesting, your friend.", 3.5, "Magnus", "#d4b483")
+    $ battuta_montaggio("Isn't she.", 2.5, "Daniel", VC_DANIEL)
+    $ battuta_montaggio("Very.", 3.0, "Magnus", "#d4b483")
+    $ battuta_montaggio("Daniel smiles, pleased with himself. He thinks it's a compliment to his taste.", 5.0)
+    $ battuta_montaggio("It doesn't occur to him, not even for a second, that it might not be about him at all.", 6.5)
     $ retroscena("daniel", "He thinks Magnus was complimenting him. He doesn't see his old friend as a rival.")
     call fine_retroscena
     $ via_cg()
     $ luogo_corrente = ""
     scene bg nero with fade
-    ## La canzone non si ferma: continua sotto «Fine dell'Episodio 1».
+    ## La canzone continua quando entra il teaser.
     return
 
 
@@ -850,6 +883,7 @@ define VC_DANIEL = "#c9a0ff"
 define VC_SARA = "#e8a3b8"
 define VC_PP_DANIEL = "images/cg/ep1/d13_10c_daniel_pp.webp"
 define VC_PP_SARA = "images/cg/ep1/d13_10d_sara_pp.webp"
+define VC_PP_SARA_SENZA_GIACCA = "images/cg/ep1/d13_10d_sara_pp_senza_giacca.webp"
 
 label ep1_d13_videoclip:
     $ segna("ep1_d13_videoclip")
@@ -859,9 +893,9 @@ label ep1_d13_videoclip:
     ## Strofa 1 (0:00-0:49): campo e controcampo.
     $ vc_a(0); vc_quadro("images/cg/ep1/d13_10_terrazza_audace.webp")
     $ vc_a(2); vc_riga("Daniel", "Escaping?", VC_DANIEL)
-    $ vc_a(6); vc_quadro(VC_PP_SARA, "Close-up of Sara on the terrace in the corset dress, listening, tempted"); vc_riga("Sara", "Breathing. It's allowed, I think.", VC_SARA)
+    $ vc_a(6); vc_quadro(VC_PP_SARA_SENZA_GIACCA, "Close-up of Sara on the terrace in the corset dress, listening, tempted"); vc_riga("Sara", "Breathing. It's allowed, I think.", VC_SARA)
     $ vc_a(10); vc_quadro(VC_PP_DANIEL, "Close-up of Daniel on the terrace, white shirt, a half smile"); vc_riga("Daniel", "In my house almost everything is allowed.", VC_DANIEL)
-    $ vc_a(15); vc_quadro(VC_PP_SARA); vc_riga("Sara", "You humiliated him. Twice.", VC_SARA)
+    $ vc_a(15); vc_quadro(VC_PP_SARA_SENZA_GIACCA); vc_riga("Sara", "You humiliated him. Twice.", VC_SARA)
     $ vc_a(20); vc_quadro(VC_PP_DANIEL); vc_riga("Daniel", "I told the truth in a nice suit.", VC_DANIEL)
     if fatto("ep1_d13_difende_josh"):
         $ vc_a(25); vc_riga("Daniel", "You answered for him. Your voice shook.", VC_DANIEL)
@@ -870,9 +904,9 @@ label ep1_d13_videoclip:
     else:
         $ vc_a(25); vc_riga("Daniel", "And you said nothing. The most honest thing anyone said all night.", VC_DANIEL)
     $ vc_a(31); vc_riga("Daniel", "And you wore {i}that{/i}. For whom, Sara?", VC_DANIEL)
-    $ vc_a(37); vc_quadro(VC_PP_SARA); vc_riga("Sara", "For myself.", VC_SARA)
+    $ vc_a(37); vc_quadro(VC_PP_SARA_SENZA_GIACCA); vc_riga("Sara", "For myself.", VC_SARA)
     $ vc_a(41); vc_quadro(VC_PP_DANIEL); vc_riga("Daniel", "Liar.", VC_DANIEL)
-    $ vc_a(45); vc_quadro(VC_PP_SARA); vc_riga(None, "He's arrogant. Full stop.", pensiero=True)
+    $ vc_a(45); vc_quadro(VC_PP_SARA_SENZA_GIACCA); vc_riga(None, "He's arrogant. Full stop.", pensiero=True)
     ## Ritornello 1 (0:49): video A, la giacca e l'anellino.
     $ vc_a(49); vc_video("images/video/ep1/d13_va_giacca.webm", "images/cg/ep1/d13_10b_giacca_spalle.webp")
     $ vc_a(64); vc_quadro(VC_PP_DANIEL); vc_riga("Daniel", "Cold?", VC_DANIEL)

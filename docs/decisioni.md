@@ -4,6 +4,12 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 13: Sara risponde a Joanie prima del messaggio di Daniel (22/11/2026)
+**Stato: applicato nel codice, battute in bozza.** All'1:12 Sara legge «REPORT. NOW.» nella chat e racconta la terrazza. I messaggi di Sara e Joanie seguono le scelte già fatte sulla cerniera e sul pranzo, con quattro combinazioni. Se Daniel le ha chiuso la cerniera e baciato l'orecchio, Joanie le chiede cosa ha provato e Sara le risponde prima di raccontare del pranzo. La chat di trama lascia invariate le statistiche. Dopo la replica di Joanie arriva il messaggio di Daniel.
+
+### Giorno 13: montaggio finale prima del teaser (22/11/2026)
+**Stato: applicato nel codice.** Jody ha deciso l'ordine finale dopo la partita completa. Dopo il messaggio dell'1:12 parte il montaggio lungo con la canzone, poi «Next time, on The Thin Line...» e infine la schermata di fine episodio. Nel montaggio le immagini e le battute avanzano automaticamente. Le battute restano visibili da 2,5 a 7 secondi, in base alla lunghezza. Questa decisione aggiorna l'ordine del 21/11.
+
 ### Giorno 13: il videoclip della terrazza col corsetto (decisione 22/11/2026)
 **Stato: nel codice (bozza); video A, B, C e due primi piani da fare.** Jody: solo col vestito audace, la terrazza diventa una sequenza a tempo sulla canzone `daniel_seduzione` (tempi: ritornello 1 0:49, strofa 2 1:18, ritornello 2 2:00, ponte 2:29). Prima un avviso e la scelta «Watch the scene / Skip the scene» (chi salta vede la versione a clic). Senza clic: campo e controcampo Daniel/Sara con battute che compaiono da sole fra un video e l'altro; video A (la giacca, l'anellino) sul ritornello 1, B (lui le gira intorno, Josh ride dietro il vetro) sulla strofa 2, C (le mani sui fianchi, oscillano) sul ritornello 2; la scelta della cerniera ferma la canzone; il video della cerniera cade sul ponte («right below my ear»). Battute nuove (da confermare): «And you wore that. For whom, Sara?» «For myself.» «Liar.» · «Cold?» «Not any more.» · «He's laughing in there. Hear him?» «Don't.» «Don't what?» («Don't stop.») · «Your zip.» Label `ep1_d13_videoclip`; file video `d13_va_giacca`, `d13_vb_vetro`, `d13_vc_fianchi` (WebM, muti); primi piani `d13_10c_daniel_pp`, `d13_10d_sara_pp`.
 

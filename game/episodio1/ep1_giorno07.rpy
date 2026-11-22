@@ -94,6 +94,7 @@ label ep1_d7_darius:
 
 label ep1_d7_pomeriggio:
     $ vai("casa", "Home — 2:30 p.m.")
+    $ cg("Sunday sunlight in the living room: Sara turns from her laptop as Josh suggests a walk by the river", "images/cg/ep1/d7_pomeriggio_scelta.webp")
     n "After lunch the sun comes out, unexpected, as if it had changed its mind."
     c "It's nice out. We could walk down to the river. Ice cream. Ducks. Old people on benches. The full Sunday."
     sp "Or I could finally sit down and open that door."
@@ -205,6 +206,7 @@ label ep1_d7_sera:
             s "I know. Sleep."
             $ segna("ep1_d7_josh_precoce")
             scene bg nero with fade
+            $ cg("Sara lies awake in the cool streetlight while Josh sleeps beside her", "images/cg/ep1/d7_notte_sara_sveglia.webp")
             n "In a few minutes he's asleep, heavy and warm, one arm across her."
             n "Sara stays awake, staring at the ceiling in the dark."
             sp "I started it. I don't usually start it."
@@ -219,5 +221,7 @@ label ep1_d7_sera:
             sp "Tomorrow: work. Then the gym. Simon said no excuses."
             sp "Joanie will drag me. Joanie always drags me."
 
+    show expression Transform("images/cg/ep1/d6_rientro_notte_pianerottolo.webp", crop=(380, 105, 400, 225), xysize=(config.screen_width, config.screen_height)) as cg_corrente
+    with dissolve
     n "Next door, behind a green door, a light stays on long after theirs goes out."
     return

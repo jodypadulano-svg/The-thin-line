@@ -36,9 +36,10 @@ label ep1_d11_pranzo:
     $ vai("redazione", "The newsroom — 12:55 p.m.")
     $ musica("redazione")
     $ ambiente("redazione")
+    $ cg("The newsroom just before lunch", "images/cg/ep1/redazione_base.webp")
     n "Thursday. The horoscopes came out this morning. Nobody has said anything about them, which Sara chooses to take as a compliment."
-    n "At five to one, a pastel-pink cardigan appears at the edge of her desk."
     $ cg("Roberta at the edge of Sara's desk at lunchtime, pastel cardigan, gold heart pendant, holding two paper bags from the deli and smiling a little too wide", "images/cg/ep1/d11_01_roberta_invito.webp")
+    n "At five to one, a pastel-pink cardigan appears at the edge of her desk."
     ro "Lunch? I got you one already. Tuna, no onions, extra lemon."
     s "That's... exactly what I always get."
     ro "I know. I notice people."
@@ -87,6 +88,8 @@ label ep1_d11_chiavi:
     $ vai("pianerottolo", "The landing — 6:20 p.m.")
     $ ambiente(None)
     $ musica(None)
+    show expression Transform("images/cg/ep1/d8_rientro_citofono.webp", crop=(980, 150, 1664, 936), xysize=(config.screen_width, config.screen_height)) as cg_corrente
+    with dissolve
     $ suono("telefono_vibra")
     n "On the stairs, a message from [nome_compagno]: {i}Daniel strikes again. An hour late, maybe more. Sorry sorry sorry. Your doorman owes you.{/i}"
     sp "An hour on the doormat. Again."
@@ -175,9 +178,11 @@ label ep1_d11_chiavi:
             n "He smiles, nods twice, and closes the green door very gently, as if not to disturb her."
             $ vai("casa", "Home — 6:35 p.m.")
             $ musica("casa")
+            $ cg("Sara's two house keys and the small silver pen back in the ceramic bowl", "images/cg/ep1/d11_chiavi_ritrovate_ciotola.webp")
             n "For the first time in five days, Sara opens her own door with her own keys. It feels absurdly good."
             n "She drops them into the bowl by the door. The little silver pen clinks against the ceramic, the way it always did."
             call inizio_retroscena
+            $ cg("Howard returns two unused white cups to the cupboard with a patient smile", "images/cg/ep1/d11_howard_tazze_credenza.webp")
             rs "Behind the green door, Howard puts the two new cups back in the cupboard, side by side, very carefully."
             rs "He isn't disappointed. A no today is a yes another day. He has all the time in the world. And she has such a kind heart."
             $ retroscena("howard", "Sara turned down his invitation. He didn't mind: he can wait.")
@@ -187,8 +192,8 @@ label ep1_d11_chiavi:
     $ vai("pianerottolo", "The landing — 7:30 p.m.")
     $ musica("howard")
     $ suono("chiave_serratura")
+    $ cg("The landing: Josh, out of breath in his work clothes, shaking Howard's hand enthusiastically; Sara stands between them holding up her keys", "images/cg/ep1/d11_06_josh_howard.webp")
     n "At half past seven [nome_compagno] runs up the stairs, out of breath, tie loosened."
-    $ cg("The landing: Josh, out of breath in his work clothes, shaking Howard's hand enthusiastically; Sara between them holding up her keys; the brown and the green doors side by side", "images/cg/ep1/d11_06_josh_howard.webp")
     if fatto("ep1_d11_visita"):
         n "He knocks on the green door to collect her."
         if fatto("ep1_d11_bottoni"):
@@ -207,15 +212,19 @@ label ep1_d11_chiavi:
     $ vai("casa", "Home — 7:40 p.m.")
     $ musica("casa")
     if fatto("ep1_d11_pantofole"):
+        $ cg("Sara looks down at the oversized pink slippers she wore home, her own boots by the door", "images/cg/ep1/d11_sara_pantofole_rosa.webp")
         n "It's only in their own hallway, while [nome_compagno] hangs up his jacket, that Sara looks down."
         n "She's still wearing Howard's slippers. Pink. Brand new. A size too big. She walked out in them and didn't notice."
         c "Nice slippers."
         s "They're... Howard's. I'll give them back tomorrow."
         n "She puts them neatly by the door, next to her own shoes, and doesn't think about them again."
         sp "Strange evening. Like a dream you can't quite remember the middle of."
-    if fatto("ep1_d11_bottoni") and not fatto("ep1_d11_pantofole"):
+    elif fatto("ep1_d11_bottoni"):
+        $ cg("In the hallway mirror Sara notices that her rust-coloured blouse is crooked", "images/cg/ep1/d11_camicetta_specchio.webp")
         n "In the hallway mirror she sees her blouse buttoned one hole off, crooked. She fixes it without thinking."
         sp "Strange evening. Like a dream you can't quite remember the middle of."
+    else:
+        $ cg("Sara's recovered keys in the ceramic bowl by the door", "images/cg/ep1/d11_chiavi_ritrovate_ciotola.webp")
     sp "Something lost comes back. And not alone."
     sp "Madame Celeste would be proud of me."
     return
