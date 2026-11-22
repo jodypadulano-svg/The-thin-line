@@ -33,6 +33,6 @@ label ep1_inizio:
 label ep1_fine:
     $ luogo_corrente = ""
     scene bg nero with fade
-    n "{size=+20}Fine dell'Episodio 1{/size}"
-    n "Grazie per aver giocato. Le tue scelte sono salvate: il prossimo episodio partirà da qui."
+    n "{size=+20}End of Episode 1{/size}"
+    n "Thank you for playing. Keep your save to carry your choices into Episode 2."
     return
