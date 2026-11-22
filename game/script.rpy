@@ -7,7 +7,7 @@ label splashscreen:
     if not persistent.avviso_visto and not renpy.is_in_test():
         scene bg nero
         $ renpy.pause(0.5, hard=True)
-        n "{b}The Thin Line{/b} is a work of fiction intended for adults.\n\nAll characters are 18 or older. Names, places and events are fictional."
+        n "{b}Content Notice · 18+{/b}\n\n{b}The Thin Line{/b} is a work of fiction intended for adults. All characters are 18 or older. The game contains sexual themes, infidelity, manipulation, and uncomfortable relationship dynamics."
         menu:
             "I am 18 or older and want to continue.":
                 $ persistent.avviso_visto = True
@@ -21,6 +21,8 @@ default persistent.avviso_visto = False
 label start:
     scene bg nero
     $ luogo_corrente = ""
+
+    call nota_autrice
 
     n "Before we begin: Sara lives with her boyfriend."
     $ nome = renpy.input("What is his name? (Press Enter for «Josh»)", default="Josh", length=20).strip()
@@ -36,6 +38,13 @@ label start:
             call debug_partenza
 
     jump ep1_inizio
+
+
+label nota_autrice:
+    n "{b}A note from the creator{/b}\n\nI'm Laura Fatal, the woman behind {i}The Thin Line{/i}. After playing so many visual novels, I wanted to make one of my own, with a rhythm and choices that felt different from the games I'd played. Sara's story is a slow burn. I hope you enjoy spending time in her world."
+    n "The phone is one of the parts I'm most excited about. You'll see it in story scenes from the start. From Episode 2, you'll be able to choose who Sara texts and when. Those conversations can deepen specific relationships and open scenes along the routes you choose to follow."
+    n "I'd love to hear what you think as the story grows. Tell me which moments stayed with you, which choices you wished you'd had, and what you'd like to try. Your feedback could help shape parts of the story and give me ideas for new ways to make it interactive. Thanks for giving my game a try.\n\n— Laura Fatal"
+    return
 
 
 label istruzioni:

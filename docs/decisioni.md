@@ -4,6 +4,9 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Avvio: avviso 18+ e nota dell'autrice (22/11/2026)
+**Stato: applicato nel codice, testo in bozza.** L'avviso iniziale elenca i temi per adulti. A ogni nuova partita, prima di chiedere il nome di Josh, una nota firmata da Laura Fatal presenta il ritmo slow burn, il telefono come modo di far progredire i percorsi dall'Episodio 2 e il ruolo che i riscontri della community potranno avere nella storia e nelle future interazioni.
+
 ### Giorno 13: Sara risponde a Joanie prima del messaggio di Daniel (22/11/2026)
 **Stato: applicato nel codice, battute in bozza.** All'1:12 Sara legge «REPORT. NOW.» nella chat e racconta la terrazza. I messaggi di Sara e Joanie seguono le scelte già fatte sulla cerniera e sul pranzo, con quattro combinazioni. Se Daniel le ha chiuso la cerniera e baciato l'orecchio, Joanie le chiede cosa ha provato e Sara le risponde prima di raccontare del pranzo. La chat di trama lascia invariate le statistiche. Dopo la replica di Joanie arriva il messaggio di Daniel.
 
