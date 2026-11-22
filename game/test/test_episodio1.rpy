@@ -47,6 +47,8 @@ testsuite episodio1:
         $ _test_esito["fine"] = False
         run Jump("ep1_inizio")
         advance until eval _test_esito["fine"] timeout 300.0
+        ## Le notifiche delle ultime scelte del giorno 13 coprirebbero le linguette.
+        pause 3.5
         run ShowMenu("diario")
         click "Simon"
         click "Daniel"
@@ -64,6 +66,7 @@ testsuite foto:
         $ _test_esito["fine"] = False
         run Jump("ep1_inizio")
         advance until eval _test_esito["fine"] timeout 300.0
+        pause 3.5
         run ShowMenu("diario")
         pause 0.5
         screenshot "diario_sara.png"
@@ -210,7 +213,7 @@ testsuite debug_salta:
     testcase salto:
         description "Salto ai giorni 4, 5 e 6 con ogni preset: stato coerente, poi fino alla fine."
         parameter preset = ["brava", "barbara", "daniel", "mista"]
-        parameter arrivo = [4, 5, 6, 7, 8, 9, 10, 11, 12]
+        parameter arrivo = [4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
         $ _foto_debug.clear()
         $ _test_esito["fine"] = False
         $ debug_prepara(arrivo, preset)

@@ -7,8 +7,12 @@ Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude
 ## 1. Decisioni a lotti, codice dopo
 - **Non** si riscrive il gioco a ogni singola decisione: costa troppi token e troppo tempo.
 - Ogni decisione presa con Jody va annotata subito, in poche righe, nel [registro delle decisioni](decisioni.md), nella sezione **Da applicare**.
-- Il codice si aggiorna solo quando le decisioni sono tante e Jody dà il via (es. «scrivi il gioco», «applica le decisioni»). Allora si applicano tutte insieme, con un solo giro di lint e test, e si spostano in **Applicate**.
+- Il codice si aggiorna solo quando le decisioni sono tante e Jody dà il via (es. «scrivi il gioco», «applica le decisioni»). Allora si applicano tutte insieme e si spostano in **Applicate**.
 - Le schede in `docs/` possono essere aggiornate subito solo se la modifica è piccola; altrimenti anche loro vanno nel lotto.
+
+### Lint e test
+- Concordare con Jody quali verifiche automatiche eseguire e quando, anche se si tratta solo del lint o di una singola suite.
+- Quando Jody chiude una giornata e la sua versione finale non è stata verificata con i test, avvisarlo esplicitamente nel riepilogo di chiusura.
 
 ## 2. Grafo del gioco sempre aggiornato
 - Il grafo è in [grafo.md](grafo.md), come diagramma Mermaid (GitHub lo disegna da solo). Contiene: giornate, scene, bivi, condizioni, retroscena, segreti, e i collegamenti tra percorsi.

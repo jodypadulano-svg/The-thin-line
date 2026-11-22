@@ -21,6 +21,7 @@ image bg strada = Solid("#1f1f24")
 image bg bar_aperitivo = Solid("#2a1f1c")
 image bg enoteca = Solid("#2b1a1f")
 image bg fiume = Solid("#1d2a24")
+image bg negozio = Solid("#2b2428")
 
 
 ## Cartello del luogo (in alto a sinistra) -------------------------------------

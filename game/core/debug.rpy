@@ -59,6 +59,10 @@ init python:
                 "Eat with Roberta.", "A handshake.", "«I'll just knock, Howard.", "«Another time, Howard.",
                 ## Giorno 12
                 "Send it to [nome_compagno] first.", "«Not tonight, Howard.", "Only work.", "Laugh at her.",
+                ## Giorno 13
+                "Keep it simple", "Skip it", "Defend [nome_compagno].", "Downplay it, shyly.",
+                "Stay cool with him.", "«I can do it myself.»", "«[nome_compagno] will know.»",
+                "Tell [nome_compagno] about Magnus.",
             ],
         },
         "barbara": {
@@ -109,6 +113,10 @@ init python:
                 ## Giorno 12
                 "Send it to Joanie first.", "Go in and celebrate.", "Laugh, and give it back", "Another glass.",
                 "Tell her about Simon.", "Take her advice.",
+                ## Giorno 13
+                "Let Joanie choose.", "Watch the scene.", "Go to the open gym.", "«Show me. Hands on.»", "«Just tell me.",
+                "Smile at the joke.", "Tell him about the novel", "Thank Daniel, sincerely.",
+                "Let him do it.", "«Maybe.»", "Keep the card to herself",
             ],
         },
         "daniel": {
@@ -158,6 +166,10 @@ init python:
                 ## Giorno 12
                 "Send it to [nome_compagno] first.", "Go in and celebrate.", "Climb down", "«I'd better go.»",
                 "Tell her about Daniel.", "Take her advice.",
+                ## Giorno 13
+                "Something elegant.", "Skip it", "Say nothing.", "«I'll send you the first fifty pages",
+                "Tell him about the novel", "Thank Daniel, sincerely.", "Let him do it.", "«Maybe.»",
+                "Keep the card to herself",
             ],
         },
         "mista": {

@@ -29,6 +29,10 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `howard` | Tema di Howard: il pianerottolo e la sua casa (giorni 5, 6, 9) | ✅ |
 | `enoteca` | Wine bar con Joanie (giorno 5) | ✅ |
 | `locale` | Il locale «The Lantern» il sabato sera, con Simon (giorno 6) | ✅ |
+| `daniel_villa` | La festa nella villa di Daniel: sexy, lussuosa (giorno 13) | ✅ |
+| `daniel_seduzione` | Daniel e Sara soli: la terrazza e la cerniera (giorno 13). **Canzone con voce femminile** | ✅ |
+| `daniel_notte` | Il messaggio di Daniel all'1:12, chiusura dell'Episodio 1 (giorno 13) | ✅ |
+| `chiusura_ep1` | Il montaggio dopo i titoli: un ritratto per ogni strada (giorno 13). **Canzone con voce femminile** | ✅ |
 
 **tema_principale**
 ```
@@ -93,6 +97,106 @@ Instrumental background music for a small, warm, crowded neighbourhood wine bar 
 **locale**
 ```
 Instrumental upbeat dance-pop track for a busy city bar on a Saturday night, heard from inside the room: punchy four-on-the-floor kick, warm funky bass, bright synth chords, handclaps, a catchy plucked synth hook, a little disco guitar. Fun, warm, carefree, makes you want to dance badly with your friends. Tempo around 118 BPM. No vocals. Mixed slightly muffled, as if from the bar's speakers, so dialogue stays clear. Seamless loop.
+```
+
+**daniel_villa** (Jody, 21/11: musiche molto sexy quando c'è Daniel)
+```
+Instrumental sultry, luxurious lounge music for an exclusive private party in a hillside villa at night: deep, slow house groove with a soft four-on-the-floor kick, a warm round bassline, breathy analog synth pads, a smoky tenor saxophone phrase now and then, sparse Rhodes chords, a hint of shimmering percussion. Sensual, rich, confident, seductive, a little dangerous: the sound of money and desire. Tempo around 100 BPM. No vocals. Background music for dialogue, warm and not too loud. Seamless loop.
+```
+
+**Tempi di `daniel_seduzione` (Jody, 22/11):** primo ritornello 0:49 · seconda strofa 1:18 · secondo ritornello 2:00 · ponte 2:29 · fine 3:39. Servono per il videoclip della terrazza col corsetto (video A, B, C e la cerniera).
+
+**daniel_seduzione** — **canzone con voce** (Jody, 21/11: una ragazza dalla voce sexy che canta; non solo musica di sottofondo). Su Mureka modalità **Song** (non Instrumental), con il testo qui sotto nel campo dei testi. Durata 2:30-3:00. Mixare la voce un po' indietro: sotto ci sono i dialoghi.
+
+Stile:
+```
+Slow, sultry neo-soul and late-night R&B ballad sung by a young woman with a low, breathy, husky, intimate voice, sung close to the microphone almost like a whisper, smoky and teasing. Deep slow heartbeat-like kick, velvety electric bass, warm Rhodes electric piano, a breathy low saxophone answering the voice, soft swelling strings in the chorus. Seductive, slow-burning, desire held back, almost unbearable closeness. Around 68 BPM. Ends softly so it can loop.
+```
+
+Testo (originale, scritto per il gioco):
+```
+[Verse 1]
+Cold air on the terrace, city lights below
+You said don't move, and I didn't, no
+Your voice so close I can feel it on my skin
+One more inch, and I let you in
+
+[Chorus]
+Slow, slow, take it slow
+Every little tooth of the zipper you close
+I should walk away, I should let you go
+But slow, slow... I don't want you to know
+
+[Verse 2]
+He's inside laughing, I can hear him through the glass
+I'm a good girl, baby, but this won't pass
+You don't even touch me, and I'm already gone
+Tell me how you knew it all along
+
+[Chorus]
+Slow, slow, take it slow
+Every little tooth of the zipper you close
+I should walk away, I should let you go
+But slow, slow... I don't want you to know
+
+[Bridge]
+Just a whisper, just a kiss
+Right below my ear, like this
+And I tilt my head, I don't say a word
+Some yeses never need to be heard
+
+[Outro]
+Slow... slow...
+I don't want you to know
+```
+
+**daniel_notte**
+```
+Instrumental dark, minimal, seductive late-night music for a forbidden message arriving at 1 a.m.: a slow pulsing low synth bass like a heartbeat, soft muted piano notes in a minor key, a distant breathy saxophone, cold glassy pads, long silences between phrases. Intimate, tense, tempting, a little guilty, a cliffhanger feeling that keeps rising and never resolves. Slow tempo, around 60 BPM. No vocals. Seamless loop.
+```
+
+**chiusura_ep1** — **canzone con voce** (Jody, 21/11: voce femminile sexy e malinconica, sul montaggio finale dell'Episodio 1). Su Mureka modalità **Song**, durata 2:00-2:30. Qui non ci sono dialoghi sotto (solo poche righe): la voce può stare in primo piano.
+
+Stile:
+```
+Slow, melancholic and sensual trip-hop ballad sung by a young woman with a low, breathy, smoky, bittersweet voice, intimate and a little haunted. Slow brushed drums with a deep, lazy beat, a warm round bass, a lonely piano motif, vinyl crackle, soft swelling strings and a distant muted trumpet in the bridge. Night, rain on the window, a city full of lit windows, every one of them a different life. Seductive and sad at the same time. Around 72 BPM. Ends on a long fading note.
+```
+
+Testo (originale, scritto per il gioco):
+```
+[Verse 1]
+Lights on in every window
+Somebody's waiting up for me
+A key I never gave away
+A name I swore I'd never see
+
+[Chorus]
+One life, so many doors
+And every one of them says yours
+I close my eyes, I smile, I lie
+Good girl tonight... and not for long
+
+[Verse 2]
+Someone's counting out the hours
+Someone's keeping all my things
+Someone's laughing in the dark
+Like he already knows the ending
+
+[Chorus]
+One life, so many doors
+And every one of them says yours
+I close my eyes, I smile, I lie
+Good girl tonight... and not for long
+
+[Bridge]
+Don't wake me, don't wake me
+I'm still deciding who I am
+Don't save me, don't save me
+I'm not lost... I'm just beginning
+
+[Outro]
+One life...
+So many doors...
 ```
 
 ---
