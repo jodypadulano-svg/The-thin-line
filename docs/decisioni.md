@@ -4,6 +4,12 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorni 14–18: pranzo con Daniel e maglione «interattivo» di Joanie (22/11/2026)
+**Stato: decisione narrativa approvata, non ancora implementata in Ren'Py.** Il pranzo a due proposto da Daniel sulla terrazza del giorno 13 è fissato a **giovedì 18, pausa pranzo**. Un messaggio nei giorni precedenti potrà confermare l'appuntamento, secondo la scelta del giocatore.
+**Domenica 14:** Sara e Joanie ne parlano per messaggi. Sara immagina che Joanie le consigli di indossare una scollatura, ma l'amica la sorprende: un maglione bianco aderente a girocollo, con **due grandi pulsanti rossi dall'effetto tridimensionale, uno su ciascun seno**, allusione visiva a due pulsanti da premere senza scritte esplicite. Joanie lo soprannomina «maglione interattivo» e **lo ordina online il 14**.
+**Mercoledì 17:** arriva il pacco. **Giovedì 18:** Sara può scegliere se indossare il maglione al pranzo con Daniel; non è obbligata.
+**Continuità:** rispettare ep1_d13_pranzo_forse (possibilità di segreto) ed ep1_d13_pranzo_no (Sara ha affermato che Josh saprà del pranzo). Il pranzo non è automatico e sono da prevedere alternative per chi non lo vuole. Conservare gli eventi già previsti del 18 con Barbara e Howard. Dialoghi, conferma, condizioni, CG e bonus numerici ancora da definire; non attribuire statistiche arbitrarie.
+
 ### Avvio: avviso 18+ e nota dell'autrice (22/11/2026)
 **Stato: applicato nel codice, testo in bozza.** L'avviso iniziale elenca i temi per adulti. A ogni nuova partita, prima di chiedere il nome di Josh, una nota firmata da Laura Fatal presenta il ritmo slow burn, il telefono come modo di far progredire i percorsi dall'Episodio 2 e il ruolo che i riscontri della community potranno avere nella storia e nelle future interazioni.
 
