@@ -116,6 +116,11 @@ Sally si chiama **Sally Spencer**, ha **49 anni**, è nata l'**8 ottobre** ed è
 ### M1 — Identità e dati anagrafici
 Magnus si chiama **Magnus Larssen**, ha **71 anni**, è nato il **29 gennaio** ed è alto **179 cm**.
 
+## N — Samantha
+
+### N1 — Identità e dati anagrafici
+Samantha si chiama **Samantha Green**, ha **50 anni**, è nata il **14 luglio** ed è alta **171 cm**.
+
 ## Regole successive
 
 Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
