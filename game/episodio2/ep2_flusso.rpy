@@ -6,4 +6,5 @@ label ep2_inizio:
     scene bg nero with fade
     n "{size=+20}Episode 2{/size}"
     call ep2_d14
+    call ep2_d15
     return

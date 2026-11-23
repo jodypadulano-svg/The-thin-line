@@ -156,3 +156,22 @@ flowchart TD
     A --> N
     N --> G([Fine del giorno 14])
 ```
+
+## Episodio 2 · Giorno 15
+
+```mermaid
+flowchart TD
+    D14([Fine del giorno 14]) --> R{Riunione di redazione}
+    R -->|Ascolta| P["Allenamento con Joanie e Simon"]
+    R -->|Difende la sua idea · Confidence +1| P
+    P --> C{Si fa mostrare i pettorali?}
+    C -->|Declina| G["Gym squad · Simon in rubrica"]
+    C -->|Accetta · Simon +2, Corruption +1| E{Ripetizione extra?}
+    E -->|Posa le maniglie| G
+    E -->|Si mostra di più · Corruption +1| G
+    G --> J{"Josh ha letto il manoscritto senza permesso"}
+    J -->|Lo affronta · Josh -7| D["Conferma il pranzo con Daniel del 18"]
+    J -->|Lascia correre · Josh -3, Confidence -10| M["Sara riscrive il finale"]
+    D --> M
+    M --> I["Invia le 50 pagine a Magnus · Confidence +2, Magnus +1"]
+```

@@ -240,7 +240,7 @@ init -5 python:
 
     ## --- Messaggi a schermo ---------------------------------------------------------
 
-    def msg(chi, testo, immagine=None):
+    def msg(chi, testo, immagine=None, premia_avvio=True):
         """Un messaggio nella chat aperta. chi = "sara", "josh" o la chiave del contatto."""
         renpy.stop_skipping()
         messaggio = (chi, renpy.substitute(testo))
@@ -249,7 +249,7 @@ init -5 python:
         k = store.chat_aperta
         store.chat_log.setdefault(k, []).append(messaggio)
         aperto = store.discorso_aperto.get(k)
-        if chi == "sara" and aperto and aperto.pop("premio_avvio", False):
+        if premia_avvio and chi == "sara" and aperto and aperto.pop("premio_avvio", False):
             interest(k, 1, "Sara started a new conversation.")
         renpy.restart_interaction()
         renpy.pause()

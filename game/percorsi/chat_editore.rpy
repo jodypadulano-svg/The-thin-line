@@ -40,7 +40,7 @@ label chat_editore_intro_pagine_entrata:
     label tel_chat_editore_intro_pagine_entrata_1:
     if telefono_minuti_blocco("tel_chat_editore_intro_pagine_entrata_1", "ricevi", 1):
         return
-    $ msg("editore", "Dear Sara, I read your fifty pages last night, in one sitting, which has not happened to me in some years. M.")
+    $ msg("editore", "Dear Sara, I read your fifty pages in one sitting, which has not happened to me in some years. M.")
     label tel_chat_editore_intro_pagine_entrata_2:
     if telefono_minuti_blocco("tel_chat_editore_intro_pagine_entrata_2", "invia", 1):
         return
@@ -131,11 +131,11 @@ label chat_editore_intro_attesa_entrata:
     label tel_chat_editore_intro_attesa_entrata_1:
     if telefono_minuti_blocco("tel_chat_editore_intro_attesa_entrata_1", "ricevi", 1):
         return
-    $ msg("editore", "Dear Sara, I am still waiting for those pages. I am a patient man, but I am not a young one. M.")
+    $ msg("editore", "Dear Sara, your pages have arrived. I look forward to reading them. M." if fatto("ep2_pagine_magnus") else "Dear Sara, I am still waiting for those pages. I am a patient man, but I am not a young one. M.")
     label tel_chat_editore_intro_attesa_entrata_2:
     if telefono_minuti_blocco("tel_chat_editore_intro_attesa_entrata_2", "invia", 1):
         return
-    $ msg("sara", "I'm sorry. I wasn't sure they were good enough.")
+    $ msg("sara", "Thank you for letting me know." if fatto("ep2_pagine_magnus") else "I'm sorry. I wasn't sure they were good enough.")
     return
 
 label chat_editore_intro_attesa_1:
@@ -143,7 +143,7 @@ label chat_editore_intro_attesa_1:
     if telefono_minuti_blocco("tel_chat_editore_intro_attesa_1_1", "ricevi", 2):
         return
     $ msg("editore", "I remember you. You talked about your novel the way people talk about a lover they are ashamed of.")
-    $ msg("editore", "I am still waiting for those pages. Whether they are good is my problem, not yours. M.")
+    $ msg("editore", "I have your pages now. Whether they are good is my problem, not yours. M." if fatto("ep2_pagine_magnus") else "I am still waiting for those pages. Whether they are good is my problem, not yours. M.")
     label tel_chat_editore_intro_attesa_1_2:
     if telefono_minuti_blocco("tel_chat_editore_intro_attesa_1_2", "scelta"):
         return
@@ -157,16 +157,16 @@ label chat_editore_intro_attesa_1:
             if telefono_minuti_blocco("tel_chat_editore_intro_attesa_1_4", "ricevi", 1):
                 return
             $ msg("editore", "Then I will tell you why, and you will write better ones. That is the whole profession. M.")
-        "«I'll send them this week. I promise.»":
+        "«I'll send them this week. I promise.»" if not fatto("ep2_pagine_magnus"):
             label tel_chat_editore_intro_attesa_1_5:
             if telefono_minuti_blocco("tel_chat_editore_intro_attesa_1_5", "invia", 1):
                 return
-            $ msg("sara", "I'll send them this week. I promise.")
+            $ msg("sara", "I sent them on Monday, as promised." if fatto("ep2_pagine_magnus") else "I'll send them this week. I promise.")
             $ caldo()
             label tel_chat_editore_intro_attesa_1_6:
             if telefono_minuti_blocco("tel_chat_editore_intro_attesa_1_6", "ricevi", 1):
                 return
-            $ msg("editore", "A promise to an old man is a serious thing. I will hold you to it. M.")
+            $ msg("editore", "I have them. Thank you for keeping your promise. M." if fatto("ep2_pagine_magnus") else "A promise to an old man is a serious thing. I will hold you to it. M.")
             $ segna("magnus_promessa_pagine")
         "Back to messages." if telefono_minuti_attivo():
             $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_intro_attesa_1_2"

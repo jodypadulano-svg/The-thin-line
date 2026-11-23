@@ -40,7 +40,7 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ### Giorno 15 · Josh legge il manoscritto di nascosto, Sara lo riscrive e decide sul pranzo (23/11/2026)
 
-**Stato: decisione approvata, da scrivere/implementare nell'Episodio 2.** Sara sta scrivendo per inviare entro sera cinquanta pagine a Magnus; Josh, che ha **letto senza permesso** le pagine già scritte, la affronta perché la protagonista fidanzata del suo romanzo viene sedotta da un altro uomo. Il romanzo richiama Daniel al giorno 13; inizialmente il giocatore scopre il contenuto nel **confronto con Josh**, non tramite un lungo flashback esplicativo. Sara è ferita anzitutto dalla **violazione della privacy** e dal fatto di essere giudicata. La versione che Josh ha letto **faceva tornare la protagonista dal fidanzato**: Sara glielo dice espressamente durante il litigio, ma gli ricorda che neppure una storia diversa gli avrebbe dato diritto di leggerla o giudicarla.
+**Stato: implementato nell'Episodio 2.** Sara sta scrivendo per inviare entro sera cinquanta pagine a Magnus; Josh, che ha **letto senza permesso** le pagine già scritte, la affronta perché la protagonista fidanzata del suo romanzo viene sedotta da un altro uomo. Il romanzo richiama Daniel al giorno 13; inizialmente il giocatore scopre il contenuto nel **confronto con Josh**, non tramite un lungo flashback esplicativo. Sara è ferita anzitutto dalla **violazione della privacy** e dal fatto di essere giudicata. La versione che Josh ha letto **faceva tornare la protagonista dal fidanzato**: Sara glielo dice espressamente durante il litigio, ma gli ricorda che neppure una storia diversa gli avrebbe dato diritto di leggerla o giudicarla.
 
 **Bivio fondamentale:**
 - **Affrontare Josh e litigare:** **Interest Josh −7**; **nessun −10 Confidence**; Sara **conferma d'impulso e sotto gli occhi del giocatore il pranzo con Daniel del giorno 18**, senza intermediazione di Joanie; la risposta di Daniel «gira il coltello nella piaga» perché sembra incoraggiarla a seguire i propri desideri senza sapere del litigio.
@@ -473,6 +473,10 @@ Scelte fatte da Claude per rendere il gioco giocabile, non ancora confermate da 
 - **P5 — Valori scelti applicando il lotto A1-A10**: Confidence iniziale 20; soglia «gesti carini verso Josh» a Interest 30; quattro abiti iniziali sobri; Corruption +1 per guardare Joanie con Simon e +2 per tenere il segreto dell'editore; Confidence +2 scrivere, +3 entrare in palestra da sola; Suspicion +3 per ogni segreto; due frasi 🔒 di prova (Simon 5 con Corruption 15, editore con Confidence 25).
 
 ## Applicate
+
+### Giorno 15 · Riunione, palestra, manoscritto e conferma a Daniel
+
+Il flusso dell'Episodio 2 prosegue dal giorno 14 al [giorno 15](../game/episodio2/ep2_giorno15.rpy). In palestra Joanie propone a Simon di mostrare a Sara degli esercizi per i pettorali. Accettare dà **Interest Simon +2 e Corruption +1**. La ripetizione extra, in cui Sara si scopre deliberatamente di più, dà **Corruption +1** aggiuntiva. Durante il litigio con Josh Sara conferma il pranzo a Daniel in una chat di trama, con una CG distinta alla risposta. In entrambi i rami Sara rivede e invia le pagine a Magnus.
 
 | Data | Decisione | Dove |
 |---|---|---|
