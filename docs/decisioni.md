@@ -4,6 +4,11 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Finale fedele con Josh — matrimonio proposto da Sara (23/11/2026)
+
+**Stato: approvato da Jody come finale provvisorio, da sviluppare; non implementato.** Nono finale accanto agli otto percorsi alternativi: Sara, dopo aver conosciuto le altre possibilità e scelto consapevolmente di restare con Josh, **gli chiede lei di sposarla**. Il finale è romantico e tenero, visualizzato nell'**acquerello** che rappresenta la Sara iniziale: chiusura circolare, ma scelta consapevole e non semplice ingenuità. La scena, il giorno e le condizioni specifiche restano da progettare. Scheda aggiornata: [eventi conclusivi dei nove finali](narrative/finali-otto-percorsi-2026-11-23.md).
+
+
 ### Finali degli otto percorsi — approvazione temporanea (23/11/2026)
 
 **Stato: tutti e otto accettati PROVVISORIAMENTE da Jody, da sviluppare; non implementati.** Destinazioni: **Howard** matrimonio con Sara; **Simon** aprono una palestra insieme; **Joanie** matrimonio con Sara; **Darius** Sara ha già un bambino piccolo ed è incinta del secondo; **Jacob** finale tragico, Sara resta single e non trova un nuovo rapporto soddisfacente; **Magnus** Sara è una scrittrice famosa e donna di carriera (può perfino restare con Josh, eventualmente suo marito, ma non è requisito); **Daniel** trasferimento all'estero insieme e rottura con la vecchia vita; **Barbara** Sara assume un'immagine e un carattere da cougar simile a Barbara, abiti glamour/rosa, fumo e atteggiamento da seduttrice. **Non tutti i finali richiedono matrimonio.** La conclusione di Jacob è in potenziale tensione con la regola di felicità soggettiva del manifesto creativo: non risolverla senza revisione con Jody. Tempistiche, condizioni e scene finali da stabilire. **[Documento permanente con le otto proposte e le questioni aperte](narrative/finali-otto-percorsi-2026-11-23.md).**
