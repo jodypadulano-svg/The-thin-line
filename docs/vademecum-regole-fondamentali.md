@@ -68,6 +68,9 @@ Sara è **magra** e ha **seni molto grandi**. Il suo seno è una caratteristica 
 ### A5 — Prima relazione sentimentale con Jacob
 Prima di Josh, Sara Collins ha avuto **una sola relazione sentimentale**, con **Jacob Trevor**. Jacob è stato **il suo primo ragazzo**; la relazione è durata **quattro anni**. È stata **Sara a lasciarlo, perché Jacob la tradiva**. Questi eventi costituiscono il passato sentimentale canonico di Sara.
 
+### A6 — Obbedienza agli ordini perentori di Hugo (scelta del giocatore)
+Quando **Hugo Barnett impartisce a Sara Collins un ordine perentorio** e **il giocatore sceglie di obbedire**, Sara deve **(1) eseguire ciò che Hugo ha chiesto** e **(2) pronunciare esattamente la frase in inglese «Yes, Hugo.»**. Entrambe le conseguenze sono obbligatorie nel ramo narrativo in cui il giocatore sceglie l'obbedienza. Questa regola **non impone l'obbedienza nei rami in cui il giocatore sceglie diversamente**.
+
 ## B — Barbara
 
 ### B1 — Identità e dati anagrafici
