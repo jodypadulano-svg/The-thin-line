@@ -96,6 +96,11 @@ Hugo si chiama **Hugo Barnett**, ha **56 anni**, è nato il **19 settembre** ed 
 ### I1 — Identità e dati anagrafici
 Darius si chiama **Darius Zedman**, ha **25 anni**, è nato il **25 dicembre** ed è alto **178 cm**.
 
+## J — Jacob
+
+### J1 — Identità e dati anagrafici
+Jacob si chiama **Jacob Trevor**, ha **27 anni**, è nato il **19 novembre** ed è alto **192 cm**.
+
 ## Regole successive
 
 Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
