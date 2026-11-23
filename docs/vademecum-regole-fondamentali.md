@@ -121,6 +121,11 @@ Magnus si chiama **Magnus Larssen**, ha **71 anni**, è nato il **29 gennaio** e
 ### N1 — Identità e dati anagrafici
 Samantha si chiama **Samantha Green**, ha **50 anni**, è nata il **14 luglio** ed è alta **171 cm**.
 
+## O — Howard
+
+### O1 — Identità e dati anagrafici
+Howard si chiama **Howard White**, ha **64 anni**, è nato il **1° agosto** ed è alto **165 cm**.
+
 ## Regole successive
 
 Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
