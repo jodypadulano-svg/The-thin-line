@@ -101,6 +101,11 @@ Darius si chiama **Darius Zedman**, ha **25 anni**, è nato il **25 dicembre** e
 ### J1 — Identità e dati anagrafici
 Jacob si chiama **Jacob Trevor**, ha **27 anni**, è nato il **19 novembre** ed è alto **192 cm**.
 
+## K — Mark
+
+### K1 — Identità e dati anagrafici
+Mark si chiama **Mark Andersson**, ha **24 anni**, è nato il **14 marzo** ed è alto **177 cm**.
+
 ## Regole successive
 
 Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
