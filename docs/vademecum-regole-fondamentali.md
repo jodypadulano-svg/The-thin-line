@@ -76,6 +76,11 @@ Daniel si chiama **Daniel Blake**, ha **43 anni**, è nato il **7 novembre** ed 
 ### E1 — Identità e dati anagrafici
 Emma si chiama **Emma Dona**, ha **33 anni**, è nata il **1° gennaio** ed è alta **157 cm**.
 
+## F — Josh
+
+### F1 — Identità e dati anagrafici
+Josh si chiama **Josh Barnett**, ha **25 anni**, è nato il **2 febbraio** ed è alto **174 cm**.
+
 ## Regole successive
 
 Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
