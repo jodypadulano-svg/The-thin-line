@@ -66,6 +66,11 @@ Barbara si chiama **Barbara Dupont**, ha **63 anni**, è nata il **1° luglio** 
 ### C1 — Identità e dati anagrafici
 Jessica si chiama **Jessica Hummels**, ha **21 anni**, è nata il **19 giugno** ed è alta **167 cm**.
 
+## D — Daniel
+
+### D1 — Identità e dati anagrafici
+Daniel si chiama **Daniel Blake**, ha **43 anni**, è nato il **7 novembre** ed è alto **182 cm**.
+
 ## Regole successive
 
 Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
