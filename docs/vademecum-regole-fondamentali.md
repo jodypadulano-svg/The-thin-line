@@ -62,6 +62,9 @@ Sara **ama gli animali** ed è **molto empatica e socievole con le persone**. Qu
 ### A3 — Vocazione e talento per la scrittura
 Sara **sogna da sempre di diventare scrittrice** ed è **molto brava a scrivere**. La sua aspirazione e il suo talento sono caratteristiche canoniche del personaggio e devono essere rispettate nella narrazione.
 
+### A4 — Corporatura e fascino del seno
+Sara è **magra** e ha **seni molto grandi**. Il suo seno è una caratteristica fisica estremamente evidente: **tutti lo notano** e, nell'universo narrativo di *The Thin Line*, **nessuno, comprese le donne, direbbe di aver visto seni più affascinanti**. Questi elementi sono vincoli canonici per le descrizioni e la rappresentazione del personaggio.
+
 ## B — Barbara
 
 ### B1 — Identità e dati anagrafici
