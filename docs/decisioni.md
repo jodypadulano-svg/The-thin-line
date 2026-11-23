@@ -4,6 +4,11 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Sara: vitalità come nucleo del personaggio e possibile eccezione Jacob (23/11/2026)
+
+**Da preservare come principio narrativo; nessun codice da cambiare ora.** La caratteristica principale di Sara è la **freschezza e vitalità**: è una ragazza dinamica, energica, «viva», non apatica o spenta. Questa scintilla deve restare riconoscibile nelle diverse evoluzioni del personaggio. **Possibile eccezione ancora aperta:** il finale di **Jacob** potrebbe essere l'unico in cui tale scintilla **si spegne o quantomeno si smorza**. Intensità e rappresentazione dell'effetto non sono state definite: non renderlo un esito obbligatorio né inventarne ora le cause.
+
+
 ### Finale fedele con Josh — matrimonio proposto da Sara (23/11/2026)
 
 **Stato: approvato da Jody come finale provvisorio, da sviluppare; non implementato.** Nono finale accanto agli otto percorsi alternativi: Sara, dopo aver conosciuto le altre possibilità e scelto consapevolmente di restare con Josh, **gli chiede lei di sposarla**. Il finale è romantico e tenero, visualizzato nell'**acquerello** che rappresenta la Sara iniziale: chiusura circolare, ma scelta consapevole e non semplice ingenuità. La scena, il giorno e le condizioni specifiche restano da progettare. Scheda aggiornata: [eventi conclusivi dei nove finali](narrative/finali-otto-percorsi-2026-11-23.md).
