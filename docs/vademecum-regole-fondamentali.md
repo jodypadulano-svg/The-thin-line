@@ -56,6 +56,9 @@ Le lettere identificano stabilmente i personaggi. Le regole anagrafiche approvat
 ### A1 — Identità e dati anagrafici
 Sara si chiama **Sara Collins**, ha **22 anni**, è nata l'**11 novembre** ed è alta **165 cm**.
 
+### A2 — Amore per gli animali ed empatia sociale
+Sara **ama gli animali** ed è **molto empatica e socievole con le persone**. Questi tratti fanno parte stabilmente del suo carattere e devono essere rispettati nella sua rappresentazione narrativa.
+
 ## B — Barbara
 
 ### B1 — Identità e dati anagrafici
