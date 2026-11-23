@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Decimo finale segreto — Hugo (23/11/2026)
+
+**Stato: decisione autoriale interna approvata, non implementata.** Il gioco prevede **dieci finali in totale**: otto percorsi alternativi, il finale fedele con Josh e il **decimo finale nascosto di Hugo**. La sua esistenza **non compare né viene contata nelle liste di finali o percorsi visibili al giocatore**. In questo finale Hugo **non lascia Sally** (madre di Sara, con cui ha già una relazione segreta): **pretende di mantenere contemporaneamente la relazione con Sally e quella con Sara**. È un finale autonomo, ma non un percorso ordinario mostrato al giocatore. Modalità di accesso, reazioni di Sara e Sally, rapporto con Samantha e sceneggiatura restano da definire; non inventarli. **Solo documentazione di design, nessuna modifica al codice.** Scheda canonica: [dieci finali, incluso quello segreto](narrative/finali-otto-percorsi-2026-11-23.md).
+
 ### Sara: vitalità come nucleo del personaggio e possibile eccezione Jacob (23/11/2026)
 
 **Da preservare come principio narrativo; nessun codice da cambiare ora.** La caratteristica principale di Sara è la **freschezza e vitalità**: è una ragazza dinamica, energica, «viva», non apatica o spenta. Questa scintilla deve restare riconoscibile nelle diverse evoluzioni del personaggio. **Possibile eccezione ancora aperta:** il finale di **Jacob** potrebbe essere l'unico in cui tale scintilla **si spegne o quantomeno si smorza**. Intensità e rappresentazione dell'effetto non sono state definite: non renderlo un esito obbligatorio né inventarne ora le cause.
