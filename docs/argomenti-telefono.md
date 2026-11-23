@@ -64,7 +64,7 @@ Fonti: [chat di Daniel](../game/percorsi/chat_daniel.rpy), [giorno 13](../game/e
 
 | Livello | Discorsi |
 |---|---|
-| Introduzione | Due versioni, se ne gioca una: «Le cinquanta pagine del manoscritto» (se Sara le ha mandate) oppure «Sto ancora aspettando quelle pagine» (se non le ha mandate: insiste lui, il percorso resta aperto) |
+| Introduzione | Due versioni previste nel sistema: «Le cinquanta pagine del manoscritto» (dopo l'invio) oppure «Sto ancora aspettando quelle pagine» (solo se la chat avviene **prima della sera del giorno 15**). Dal giorno 15 Sara invia sempre le pagine, quindi dopo quella sera si usa soltanto la prima versione. |
 | A — Conoscenti (8) | 1. Scrittori preferiti · 2. Libri controversi · 3. Scrivere ogni giorno · 4. Cinema e letteratura · 5. Viaggi culturali · 6. Collezionismo · 7. La vita editoriale · 8. Il talento di Sara |
 | B — Confidenza (5) | 1. Le sue esperienze passate · 2. La paura di non essere all'altezza · 3. Bellezza e maturità · 4. Il potere delle parole · 5. Il bisogno di essere compresi |
 | C — Complicità (3) | 1. Una musa per uno scrittore · 2. La seduzione intellettuale · 3. Un incontro privato |
@@ -134,7 +134,7 @@ Fonti: [chat di Joanie](../game/percorsi/chat_amica.rpy), [giorno 13](../game/ep
 | Darius A4, Serate in compagnia | Il giorno dopo la serata con gli amici, registrata in `ep2_serata_amici_giorno` | filtro nel codice, evento da collegare |
 | Barbara, Introduzione e A1 | Il pezzo extra è stato inviato (`ep2_pezzo_extra_inviato_barbara`); per A1 deve esserci una scadenza effettiva di venerdì (`ep2_scadenza_redazione_venerdi`). A2, sul giornalismo, resta disponibile anche a Estranei | filtro nel codice, eventi da collegare |
 | Barbara A3, A4 e B3 | Vigilia della riunione con sponsor (`ep2_riunione_sponsor_vigilia`), sessione foto riprogrammata (`ep2_sessione_foto_riprogrammata`) e vigilia dell'intervista col consigliere (`ep2_intervista_consigliere_vigilia`) | filtro nel codice, eventi da collegare |
-| Magnus, introduzione | «Le cinquanta pagine» se Sara le ha mandate (giorno 15), altrimenti «Sto ancora aspettando quelle pagine» | approvato |
+| Magnus, introduzione | «Le cinquanta pagine» dopo l'invio **obbligatorio** della sera del giorno 15; «Sto ancora aspettando» solo se la chat è giocata **prima dell'invio** | aggiornato 23/11 |
 | Joanie B4, Consigli su Jacob | Jacob è tornato (giorno 19): il ritorno al locale resta una sorpresa | approvato |
 | Daniel C1, Provocazioni su Josh | nessuna condizione di trama: basta il livello C (provoca su Josh già dalla cena del giorno 3) | approvato |
 | Tutto Jacob | Sara ha il suo numero (giorni 19-21) | già garantito dalla rubrica |
@@ -147,7 +147,7 @@ Ricognizione del 23/11. Le 113 registrazioni dei percorsi sono state controllate
 - **Simon D2:** le fantasie sono di Sara e Simon come coppia.
 - **Darius D1:** riformulato sulla complicità e su cosa vogliono da Josh (coerente con la scheda: la sostituzione di Josh, non una storia romantica classica).
 - **Daniel C1:** nessuna condizione di trama.
-- **Magnus:** due introduttive alternative, se ne gioca una sola.
+- **Magnus:** due introduttive alternative a seconda del momento della chat; da dopo l'invio obbligatorio del giorno 15 si usa sempre «Le cinquanta pagine». Se ne gioca una sola.
 - **Joanie B4:** solo dopo il ritorno di Jacob.
 
 ## Toni dei livelli A e B (Q&A con Jody, 18/11/2026)
