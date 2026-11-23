@@ -83,6 +83,9 @@ Daniel si chiama **Daniel Blake**, ha **43 anni**, è nato il **7 novembre** ed 
 ### D2 — Sara come donna ideale di Daniel
 Per Daniel Blake, **Sara Collins è la donna più bella che abbia mai visto** e **rappresenta esattamente la sua donna ideale**. Questo è un tratto canonico della percezione e dell'attrazione di Daniel verso Sara, da rispettare nella caratterizzazione del personaggio.
 
+### D3 — Assenza di soggezione e percezione di controllo assoluto
+Daniel Blake **non prova soggezione nei confronti di nessuno**. **Si sente sempre in completo controllo di tutto e di tutti**, in ogni circostanza. Questa sicurezza e percezione di controllo sono caratteristiche canoniche e vincolanti della sua personalità.
+
 ## E — Emma
 
 ### E1 — Identità e dati anagrafici
