@@ -1,14 +1,14 @@
-# Thin Line — Eventi conclusivi degli otto percorsi
+# Thin Line — Eventi conclusivi degli otto percorsi e del finale fedele con Josh
 
 **Decisione di Jody:** 23 novembre 2026  
-**Stato:** tutti e otto i finali **accettati provvisoriamente** da Jody; **non sono definitivi**, possono essere rivisti e sviluppati in seguito.  
+**Stato:** gli otto finali alternativi **accettati provvisoriamente** da Jody il 23/11/2026; il finale fedele con **Josh** è stato approvato nella stessa data. Tutti restano proposte narrative rivedibili, da sviluppare e non implementate.  
 **Branch:** `main`  
 **Ambito:** destinazioni narrative dei percorsi, **non** sceneggiature o condizioni di sblocco già implementate.
 
 ## Principio concordato
 Ogni percorso deve poter arrivare a un **evento conclusivo riconoscibile**: il matrimonio è adatto ad alcuni personaggi, ma **non è obbligatorio per tutti**. La conclusione riguarda l'arco narrativo della vita di Sara, non la fine della sua esistenza. Un breve salto temporale o epilogo può mostrare la nuova quotidianità. La collocazione negli episodi, i tempi esatti, le soglie e le scelte conclusive **non sono stati stabiliti**.
 
-## Otto finali, approvati temporaneamente
+## Otto percorsi alternativi e il nono finale con Josh, approvati temporaneamente
 
 | Percorso | Evento / immagine conclusiva | Precisioni emerse nella conversazione |
 | --- | --- | --- |
@@ -20,6 +20,7 @@ Ogni percorso deve poter arrivare a un **evento conclusivo riconoscibile**: il m
 | **Magnus** | **Sara diventa una scrittrice famosa e una donna di carriera.** | Il fulcro è la sua affermazione professionale, non la coppia. Può perfino restare con Josh, che potrebbe essere diventato suo marito e occupare un ruolo marginale nella sua vita; è una **possibilità**, non una condizione canonica. La relazione con Magnus o con Josh non definisce il raggiungimento del finale. |
 | **Daniel** | **Sara e Daniel lasciano la vecchia vita e si trasferiscono insieme all'estero.** | Finale di rottura e nuovo inizio, con vita condivisa fuori dal paese. Destinazione, motivazioni precise e futuro lavorativo da scegliere. |
 | **Barbara** | **Sara assume uno stile e un atteggiamento da «cougar» sul modello di Barbara.** | Una Sara più matura, sfacciata e sicura di sé, con abiti anche rosa/glamour, fumo come tratto iconografico immaginato da Jody e una vita sentimentale da seduttrice/mangiatrice di uomini. È un finale di trasformazione identitaria, **non un matrimonio**. Precisare in sceneggiatura come si collega alla relazione con Barbara e alle altre regole del suo percorso. |
+| **Josh (finale fedele)** | **Matrimonio tra Sara e Josh, con proposta fatta da Sara.** | Sara ha conosciuto alternative e tentazioni ma sceglie consapevolmente Josh. Non è rimasta ingenuamente identica alla ragazza dell'inizio: è una scelta matura e voluta. Chiusura tenera e romantica, nell'**acquerello** originale, a completare idealmente il cerchio della storia. L'evento conclusivo resta da collocare e sceneggiare. |
 
 ## Decisioni da riprendere in futuro
 - **Tutto è temporaneo.** Jody ha detto «accetto tutti i finali temporaneamente» e ha chiesto di salvarli su `main` prima di uscire. La prossima revisione può modificare qualsiasi esito.
