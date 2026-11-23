@@ -136,6 +136,11 @@ Andrew si chiama **Andrew Collins**, ha **50 anni**, è nato il **31 dicembre** 
 ### R1 — Identità e dati anagrafici
 Roberta si chiama **Roberta Newton**, ha **27 anni**, è nata il **9 maggio** ed è alta **162 cm**.
 
+## S — Simon
+
+### S1 — Identità e dati anagrafici
+Simon si chiama **Simon Piacentini**, ha **30 anni**, è nato il **3 giugno** ed è alto **184 cm**.
+
 ## Regole successive
 
 Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
