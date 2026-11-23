@@ -59,6 +59,9 @@ Sara si chiama **Sara Collins**, ha **22 anni**, è nata l'**11 novembre** ed è
 ### A2 — Amore per gli animali ed empatia sociale
 Sara **ama gli animali** ed è **molto empatica e socievole con le persone**. Questi tratti fanno parte stabilmente del suo carattere e devono essere rispettati nella sua rappresentazione narrativa.
 
+### A3 — Vocazione e talento per la scrittura
+Sara **sogna da sempre di diventare scrittrice** ed è **molto brava a scrivere**. La sua aspirazione e il suo talento sono caratteristiche canoniche del personaggio e devono essere rispettate nella narrazione.
+
 ## B — Barbara
 
 ### B1 — Identità e dati anagrafici
