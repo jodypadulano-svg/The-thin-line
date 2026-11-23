@@ -107,6 +107,9 @@ Josh Barnett è **completamente succube e sottomesso a Daniel Blake**. **Non sa 
 ### G1 — Identità e dati anagrafici
 Joanie si chiama **Joanie O'Naughfrey**, ha **22 anni**, è nata il **4 luglio** ed è alta **165 cm**.
 
+### G2 — Eccitazione erotica legata al tradimento
+Joanie O'Naughfrey **trova eroticamente eccitante il tradimento**, sia quando riguarda lei stessa sia quando coinvolge altre persone. **Trova erotico che Sara si avvicini ad altre persone** in modo potenzialmente sentimentale o sessuale al di fuori della relazione con Josh. **Questa è la motivazione per cui Joanie vuole aiutare Sara** ad avvicinarsi ad altri. Il tratto è canonico e va rispettato nella caratterizzazione, senza dedurre automaticamente azioni specifiche non ancora approvate.
+
 ## H — Hugo
 
 ### H1 — Identità e dati anagrafici
