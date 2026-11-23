@@ -90,6 +90,9 @@ Emma si chiama **Emma Dona**, ha **33 anni**, è nata il **1° gennaio** ed è a
 ### F1 — Identità e dati anagrafici
 Josh si chiama **Josh Barnett**, ha **25 anni**, è nato il **2 febbraio** ed è alto **174 cm**.
 
+### F2 — Sottomissione assoluta a Daniel
+Josh Barnett è **completamente succube e sottomesso a Daniel Blake**. **Non sa opporsi alla volontà di Daniel in nessuna circostanza** e **eseguirebbe qualsiasi cosa Daniel gli chiedesse**, senza rifiutare le sue richieste. Questa sottomissione è un tratto fondamentale e vincolante del personaggio.
+
 ## G — Joanie
 
 ### G1 — Identità e dati anagrafici
