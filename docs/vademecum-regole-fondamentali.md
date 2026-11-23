@@ -76,6 +76,9 @@ Quando **Hugo Barnett impartisce a Sara Collins un ordine perentorio** e **il gi
 ### B1 — Identità e dati anagrafici
 Barbara si chiama **Barbara Dupont**, ha **63 anni**, è nata il **1° luglio** ed è alta **172 cm**.
 
+### B2 — Fascino delle donne che fumano
+Barbara Dupont **è affascinata dalle donne che fumano**. Questo tratto è canonico della sua personalità e deve essere rispettato nella rappresentazione dei suoi interessi, delle sue reazioni e dei suoi dialoghi, senza presupporre ulteriori motivazioni o comportamenti non stabiliti.
+
 ## C — Jessica
 
 ### C1 — Identità e dati anagrafici
