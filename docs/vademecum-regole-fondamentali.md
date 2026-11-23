@@ -111,6 +111,11 @@ Mark si chiama **Mark Andersson**, ha **24 anni**, è nato il **14 marzo** ed è
 ### L1 — Identità e dati anagrafici
 Sally si chiama **Sally Spencer**, ha **49 anni**, è nata l'**8 ottobre** ed è alta **164 cm**.
 
+## M — Magnus
+
+### M1 — Identità e dati anagrafici
+Magnus si chiama **Magnus Larssen**, ha **71 anni**, è nato il **29 gennaio** ed è alto **179 cm**.
+
 ## Regole successive
 
 Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
