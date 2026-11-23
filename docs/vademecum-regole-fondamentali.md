@@ -102,6 +102,9 @@ Josh si chiama **Josh Barnett**, ha **25 anni**, è nato il **2 febbraio** ed è
 ### F2 — Sottomissione assoluta a Daniel
 Josh Barnett è **completamente succube e sottomesso a Daniel Blake**. **Non sa opporsi alla volontà di Daniel in nessuna circostanza** e **eseguirebbe qualsiasi cosa Daniel gli chiedesse**, senza rifiutare le sue richieste. Questa sottomissione è un tratto fondamentale e vincolante del personaggio.
 
+### F3 — Prestanza fisica e anatomia
+Josh Barnett **non è molto prestante** e **ha il pene molto piccolo**. Queste caratteristiche sono canoniche e devono essere rispettate nella sua rappresentazione fisica e narrativa, senza dedurre ulteriori dettagli non approvati.
+
 ## G — Joanie
 
 ### G1 — Identità e dati anagrafici
