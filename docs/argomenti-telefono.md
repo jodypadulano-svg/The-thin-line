@@ -6,6 +6,12 @@ Totale: 8 personaggi × 19 discorsi = **152 discorsi**. Si scrivono per gradi: p
 
 **Id dei discorsi:** `<personaggio>_<livello><numero>`, es. `simon_intro`, `simon_a2`, `daniel_c1` (chiavi: simon, howard, daniel, editore = Magnus, capa = Barbara, ex = Jacob, amica = Joanie, amico = Darius). Il flag di fine è `chat_<id>`.
 
+### Apertura del telefono libero al giorno 14
+
+Sono scritti **113 discorsi** tra introduzioni, Conoscenti e Confidenza. Sally sblocca il telefono in cucina. La sera, la chat di trama con Joanie precede lo slot libero quando scatta il suo ramo e non consuma il turno. Il [controller](../game/core/telefono.rpy) estrae fra i discorsi disponibili per il contatto in rubrica. Man mano che l’Interest sale, restano estraibili anche quelli dei livelli inferiori ancora da completare. «Introduzione» e «A1» indicano il livello minimo e il numero in catalogo. In entrata, sotto Confidenza, sono estraibili solo i discorsi con `scrive_lui=True`, fra questi l’introduzione di Daniel.
+
+**Continuità da completare.** Daniel A1 richiede `chat_daniel_intro` perché riprende una battuta dell’introduzione. Eventuali richiami al caffè, alla lampadina, al maglione o alle confidenze della terrazza richiedono battute condizionali. Per riprendere la risposta precisa di Sara sulle proprie sensazioni servirebbe anche registrare quella scelta.
+
 ## Simon
 
 | Livello | Discorsi |
@@ -26,15 +32,33 @@ Totale: 8 personaggi × 19 discorsi = **152 discorsi**. Si scrivono per gradi: p
 | C — Complicità (3) | 1. Quanto gli manca Sara · 2. Le abitudini domestiche condivise · 3. Sentirsi a casa insieme |
 | D — Intimità (2) | 1. Essere importanti l'uno per l'altra · 2. Immaginare una quotidianità comune |
 
+**Introduzione · Estranei (`howard_intro`).** Sara lo ringrazia di nuovo per aver ritrovato le chiavi. Howard dice di averle trovate sotto le scale, le offre il suo aiuto e le chiede se Josh è rientrato bene la sera prima, perché ha sentito la porta. Il retroscena finale mostra al giocatore la copia della chiave.
+
+**A1 · Conoscenti (`howard_a1`).** Sara chiede chi sposta i mobili a mezzanotte. Howard conosce gli orari dei vicini e sa che Sara esce alle 8:20. Lei può chiedergli come lo sa o ringraziarlo per l’avvertimento sul gatto. Lo scambio parte dalla familiarità fra vicini e funziona anche prima dell’introduzione.
+
+**Continuità comune.** Il numero entra in rubrica solo con «Save it.» al giorno 11 (`ep1_d11_numero_howard` e `da_numero("howard")`), indipendentemente dall’invito a entrare. Nel ramo dell’abbraccio (`ep1_d11_abbraccio`, `ep1_d11_capisce_howard`) Sara coglie l’interesse di Howard e ride della battuta. Con la stretta di mano resta nel dubbio. Se entra al giorno 11 (`ep1_d11_visita`), prende un caffè nelle tazze nuove e gli legge un brano del romanzo. Il secondo caffè è facoltativo e, con `ep1_d11_capisce_howard`, può portare agli sguardi e alla scelta sui bottoni.
+
+Al giorno 12 Howard ha letto due volte l’articolo e comprato tre copie in ogni ramo. Se Sara rifiuta (`ep1_d12_rifiuta_invito`), le dà il giornale sul pianerottolo. Se entra, entrambi i rami segnano `ep1_d12_visita` e incrementano `howard_visite`. Il contatore parte dalla visita del giorno 9. Sotto 2 prima di entrare, Sara legge l’articolo ad alta voce e beve sherry nelle tazze nuove. Da 2 in su, cambia la lampadina e sente la battuta di Howard sulla scaletta. Solo se sceglie di riderci su scatta `ep1_d12_ride_battuta`. Un richiamo deve rispettare il ramo, compresa la differenza fra la battuta sentita e la reazione scelta. La copia della chiave e il calendario che si vede dopo due rifiuti sono informazioni riservate al giocatore.
+
+Fonti: [chat di Howard](../game/percorsi/chat_howard.rpy), [giorno 11](../game/episodio1/ep1_giorno11.rpy), [giorno 12](../game/episodio1/ep1_giorno12.rpy).
+
 ## Daniel
 
 | Livello | Discorsi |
 |---|---|
-| Introduzione | Il romanzo e il primo messaggio |
+| Introduzione | Il romanzo e Magnus dopo il messaggio dell’1:12 |
 | A — Conoscenti (8) | 1. Il libro di Sara · 2. Ambizione professionale · 3. Ristoranti eleganti · 4. Automobili · 5. Viaggi di lusso · 6. Gusti musicali · 7. Il valore del successo · 8. Battute sul lavoro |
 | B — Confidenza (5) | 1. Cosa rende attraente un uomo · 2. La sicurezza in sé · 3. Le insoddisfazioni nascoste · 4. Le donne che lo hanno colpito · 5. La differenza tra amore e desiderio |
 | C — Complicità (3) | 1. Provocazioni su Josh · 2. Il piacere delle sfide · 3. Un invito riservato |
 | D — Intimità (2) | 1. Confessare l'attrazione · 2. Esplorare i limiti di una relazione segreta |
+
+**Introduzione · Estranei (`daniel_intro`).** Se scrive Sara, dice di aver visto il messaggio dopo la festa e sposta il discorso sul romanzo. Se scrive Daniel, dice di aver promesso a Magnus di chiedere del manoscritto e domanda quante pagine ci siano. Seguono le centoventi pagine, la battuta sul talento e la domanda su cosa abbia letto Josh.
+
+**A1 · Conoscenti (`daniel_a1`).** Sara contesta il giudizio di Daniel sul suo talento. Lui ricorda come le è cambiata la voce alla festa e le chiede una pagina. Sara può rifiutare o mandarla (`daniel_prima_pagina`). Con Confidence 25 può anche chiedergli di indovinare il tema. L’apertura «You said talent hides» riecheggia l’introduzione, quindi A1 si sblocca dopo `chat_daniel_intro`.
+
+**Continuità comune.** Sara conosce già Daniel e Magnus. Daniel si è fatto uno squillo dal telefono di Sara alla festa (`da_numero("daniel")`) e le ha scritto all’1:12 senza ricevere risposta. I quattro messaggi incrociano `ep1_d13_cerniera` e `ep1_d13_pranzo_forse`. Daniel richiama il collo inclinato e il «maybe» se sono avvenuti entrambi, la cerniera se c’è stato solo quel gesto, le cinquanta pagine e il pranzo se c’è stato solo il «maybe», altrimenti «Brave girl». Al mattino del 14 rimane quel messaggio e i tre puntini sono spariti. Il ramo `ep1_d13_pranzo_no` indica «Josh will know». Se Sara confermerà il pranzo il 18, dovrà informare Josh prima di andarci. In entrambi i rami serve ancora una conferma. Introduzione e A1 possono sviluppare il discorso sul romanzo senza impegnare Sara a incontrarlo.
+
+Fonti: [chat di Daniel](../game/percorsi/chat_daniel.rpy), [giorno 13](../game/episodio1/ep1_giorno13.rpy), [giorno 14](../game/episodio2/ep2_giorno14.rpy), [decisioni sui giorni 17–18](decisioni.md#giorni-1718--consegna-del-maglione-e-pranzo-con-daniel-22112026).
 
 ## Magnus
 
@@ -71,10 +95,18 @@ Totale: 8 personaggi × 19 discorsi = **152 discorsi**. Si scrivono per gradi: p
 | Livello | Discorsi |
 |---|---|
 | Introduzione | La consueta chiacchierata fra amiche |
-| A — Conoscenti (8) | 1. Palestra · 2. Shopping · 3. Il fidanzato di Joanie · 4. Gossip · 5. Serie televisive · 6. Abbigliamento · 7. Programmi del weekend · 8. Piccoli problemi quotidiani |
+| A — Conoscenti (8) | 1. Palestra e Simon · 2. Shopping · 3. Il fidanzato di Joanie · 4. Gossip · 5. Serie televisive · 6. Abbigliamento · 7. Programmi del weekend · 8. Piccoli problemi quotidiani |
 | B — Confidenza (5) | 1. Confidenze sulla coppia · 2. Le insicurezze di Sara · 3. Il desiderio di sentirsi belle · 4. Consigli su Jacob · 5. La paura di cambiare vita |
 | C — Complicità (3) | 1. Amicizie che diventano indispensabili · 2. Segreti confidati soltanto a Joanie · 3. La paura di perdere la migliore amica |
 | D — Intimità (2) | 1. Sentimenti oltre l'amicizia · 2. Immaginare una vita insieme |
+
+**Introduzione · Estranei (`amica_intro`).** Sara scrive «Are you awake? I'm bored.» oppure Joanie apre in entrata con «BORED. ENTERTAIN ME.» quando il livello consente la pesca in entrata. Mark sta guardando il calcio. Joanie chiede gossip e Sara può menzionare Barbara e la scollatura oppure svicolare. La chat si chiude con un saluto affettuoso fra amiche.
+
+**A1 · Conoscenti (`amica_a1`).** Sara apre lamentandosi delle gambe dopo la palestra. Con Interest Simon almeno 5, Joanie riferisce il complimento sullo squat. Sotto 5, dice che Simon ha chiesto dove fosse Sara l’ultima volta. Sara può liquidare la battuta o mostrare curiosità (`caldo()` e Simon +1). Joanie propone la palestra insieme giovedì e i leggings neri. La soglia di Interest non indica che Sara abbia scelto la correzione con le mani sui fianchi al giorno 13 (`ep1_d13_mani_simon`), né che l’abbia raccontata a Joanie.
+
+**Continuità comune.** Joanie è già in rubrica. All’1:12 del giorno 13 chiede il resoconto della terrazza prima che scriva Daniel. Se scatta `ep1_d13_cerniera`, Sara racconta la cerniera e il bacio all’orecchio. Solo in quel ramo Joanie le chiede cosa ha provato e Sara sceglie se dire che avrebbe voluto ripeterlo, raccontare quanto l’abbia colta di sorpresa o tenersi la risposta. Altrimenti racconta che ha preferito occuparsi da sola della cerniera. Joanie sa quale risposta Sara ha dato sul pranzo. La sera del 14, con `ep1_d13_pranzo_forse` o `ep1_d13_pranzo_no`, `ep2_d14_maglione` riprende quella risposta e registra l’ordine del maglione (`ep2_d14_maglione_ordinato`). Un richiamo allo scambio può usare l’ordine se avvenuto e il pranzo come possibilità. Il flag della cerniera da solo non dice che cosa Sara abbia confidato sulle proprie sensazioni.
+
+Fonti: [chat di Joanie](../game/percorsi/chat_amica.rpy), [giorno 13](../game/episodio1/ep1_giorno13.rpy), [giorno 14](../game/episodio2/ep2_giorno14.rpy).
 
 ## Darius
 
@@ -90,11 +122,25 @@ Totale: 8 personaggi × 19 discorsi = **152 discorsi**. Si scrivono per gradi: p
 
 | Discorso | Si apre solo se | Stato |
 |---|---|---|
+| Howard A3, Lasagne | Dalle 17:00 alle 20:29, quando ha senso offrire un piatto caldo | filtro nel codice |
+| Howard A6, Pacco del corriere | Dal giorno 17, solo dopo la consegna effettiva del pacco di Joanie a Howard | filtro nel codice, evento da scrivere |
+| Howard B3, Insonnia | Dalle 22:00 alle 01:59 | filtro nel codice |
+| Howard B5, Corriere atteso | Dal giorno 17, soltanto nel giorno in cui Sara aspetta un corriere e ha un turno serale | filtro nel codice, evento da scrivere |
+| Daniel A1, Il libro di Sara | Dopo `chat_daniel_intro`, che contiene la battuta sul talento richiamata in apertura | filtro nel codice |
+| Daniel A8, Battute sul lavoro | Nel giorno registrato in `ep2_relazione_trimestrale_josh`, dopo che Josh ha presentato il rapporto | filtro nel codice, evento da collegare |
+| Simon A1, Dolori muscolari | Il giorno dopo una seduta effettiva. Il 14 usa `ep1_d13_palestra`; le sedute successive registrano la data in `ep2_ultimo_allenamento_simon` | filtro nel codice |
+| Joanie A2, Shopping | Alla vigilia dell'uscita prevista, registrata in `ep2_shopping_joanie_vigilia` | filtro nel codice, evento da collegare |
+| Darius, Introduzione sul compleanno | Quando sono aperti i preparativi di Josh (`ep2_preparativi_compleanno_josh`). Il discorso sugli amici comuni A1 rimane disponibile anche a Estranei | filtro nel codice, evento da collegare |
+| Darius A4, Serate in compagnia | Il giorno dopo la serata con gli amici, registrata in `ep2_serata_amici_giorno` | filtro nel codice, evento da collegare |
+| Barbara, Introduzione e A1 | Il pezzo extra è stato inviato (`ep2_pezzo_extra_inviato_barbara`); per A1 deve esserci una scadenza effettiva di venerdì (`ep2_scadenza_redazione_venerdi`). A2, sul giornalismo, resta disponibile anche a Estranei | filtro nel codice, eventi da collegare |
+| Barbara A3, A4 e B3 | Vigilia della riunione con sponsor (`ep2_riunione_sponsor_vigilia`), sessione foto riprogrammata (`ep2_sessione_foto_riprogrammata`) e vigilia dell'intervista col consigliere (`ep2_intervista_consigliere_vigilia`) | filtro nel codice, eventi da collegare |
 | Magnus, introduzione | «Le cinquanta pagine» se Sara le ha mandate (giorno 15), altrimenti «Sto ancora aspettando quelle pagine» | approvato |
 | Joanie B4, Consigli su Jacob | Jacob è tornato (giorno 19): il ritorno al locale resta una sorpresa | approvato |
 | Daniel C1, Provocazioni su Josh | nessuna condizione di trama: basta il livello C (provoca su Josh già dalla cena del giorno 3) | approvato |
 | Tutto Jacob | Sara ha il suo numero (giorni 19-21) | già garantito dalla rubrica |
 | Livello D di tutti | oltre la soglia di Corruption del percorso | regola generale |
+
+Ricognizione del 23/11. Le 113 registrazioni dei percorsi sono state controllate sul testo giocabile. Le abitudini ricorrenti, i ricordi e gli inviti che nascono nello scambio possono essere pescati quando il rapporto lo permette. Le righe sopra richiedono un evento già avvenuto o esplicitamente in programma. Le condizioni relative al giorno registrano il numero della giornata e limitano l’apertura del discorso alla data prevista. Magnus A7 parla delle cinquanta pagine di Sara solo se le ha ricevute. Jacob resta legato alla consegna del numero dopo il rincontro.
 
 ## Chiarimenti approvati da Jody (18/11/2026)
 
@@ -121,6 +167,8 @@ Riferimento di stile: la bozza approvata di Simon A1 «Dolori muscolari» (ingle
 
 | Flag | Dove va impostato | Usato da |
 |---|---|---|
+| `ep2_pacco_joanie_da_howard` | giorno 17 o dopo, solo se il corriere lascia effettivamente a Howard il pacco ordinato da Joanie. Togliere il flag quando il pacco viene ritirato. | Howard A6 |
+| `ep2_corriere_atteso_turno_sara` | salvare il numero della giornata in cui Sara si aspetta un corriere e fa il turno serale | Howard B5 |
 | `ep2_pagine_magnus` | giorno 15, se Sara manda le 50 pagine | Magnus, introduzione (versione «Le cinquanta pagine») |
 | `jacob_tornato` | giorno 19, il rincontro al locale | Joanie B4 |
 

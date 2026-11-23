@@ -28,15 +28,6 @@ label start:
     $ nome = renpy.input("What is his name? (Press Enter for «Josh»)", default="Josh", length=20).strip()
     $ nome_compagno = nome if nome else "Josh"
 
-    menu:
-        n "How do you want to start?"
-        "From the beginning.":
-            pass
-        "Explain how the game works.":
-            call istruzioni
-        "(Debug) Start from a later day." if config.developer:
-            call debug_partenza
-
     jump ep1_inizio
 
 

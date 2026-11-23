@@ -15,7 +15,7 @@ Bozza di lavoro | 20 novembre 2026 · Testo del giorno 8 in `game/episodio1/ep1_
 Blocco di stile (in fondo a ogni prompt):
 `Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.`
 
-Totale: **9 inquadrature**, di cui 3 doppie (palestra) = **12 immagini**. Nessun luogo nuovo: la scena fuori dalla palestra si fa direttamente nel prompt.
+Totale: **10 inquadrature**, di cui 4 doppie (palestra) = **14 immagini**. Nessun luogo nuovo: la scena fuori dalla palestra si fa direttamente nel prompt.
 
 ---
 
@@ -54,9 +54,11 @@ Outside a small city gym at dusk, a glowing neon sign above the glass entrance (
 
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
+| C0 ✅ | `d8_03b_spogliatoio_top` | Sara sola davanti allo specchio con il top nero e i capelli in coda alta. Sul lato sinistro si vedono gli armadietti e la panca vuota: Joanie le ha dato buca. | `d2_06_top_specchio` (ambiente, posa e top), `d8_06b_seconda_spalla_top` (capelli) | entrando da sola in palestra, se ha già il top di Joanie |
 | C1 | `d8_04_simon_saluta` | Sala pesi: Simon si gira dal bancone degli istruttori con un gran sorriso mentre Sara entra da sola, borsa in mano (ancora vestita da fuori) | `palestra_sala`, `d2_10_simon_saluta`, Sara | «Go in anyway» |
 | D2 | `d8_05_manubrio` (+ `_top`) | Simon le mostra come impugnare il manubrio, a distanza professionale | `palestra_sala`, `d2_11_fiatone` / `_top`, Simon | «Go in anyway» |
-| D3 | `d8_06_spalla` (+ `_top`) | La mano di Simon le corregge appena la spalla mentre solleva il manubrio | D2 | scelte «Sure» o «Fix the other one too» |
+| D3 | `d8_06_spalla` (+ `_top`) | La mano di Simon le corregge appena la spalla mentre solleva il manubrio | D2 | scelta «Sure» |
+| D3b ✅ | `d8_06b_seconda_spalla` (+ `_top`) | Sara abbassa il manubrio e incrocia lo sguardo di Simon con un mezzo sorriso, mentre lui tiene le mani sulle sue spalle | D3 | scelta «Fix the other one too», dopo «Yes, ma'am» |
 | D4 | `d8_07_scheda` (+ `_top`) | Al bancone a fine allenamento: Simon le porge la scheda scritta a mano, Sara rossa e col fiatone, la borraccia in mano | D2, `palestra_sala` | «Go in anyway» |
 
 **C1**

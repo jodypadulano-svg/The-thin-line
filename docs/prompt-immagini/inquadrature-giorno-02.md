@@ -54,8 +54,9 @@ Decisione in [decisioni.md](../decisioni.md) («la pausa sigaretta»). Il gesto 
 | A6 ✅ | `d2_20_fumo_jessica` | Primo piano di Jessica che esala | A5 | battute di Jessica |
 | A7 ✅ | `d2_21_fumo_roberta` | Primo piano di Roberta, stesso gesto, guarda Sara | A5 | battute di Roberta |
 | A8 ✅ | `d2_22_sara_rifiuta` | Primo piano di Sara che rifiuta, perplessa; **sigaretta di Jessica ben visibile in primo piano in basso a sinistra** (è il punto cliccabile della scelta segreta) | A5, `04_messaggi_josh` | l'offerta e la scelta |
+| A8b ✅ | `d2_22b_sara_guarda_fumo` | Controcampo dalla ringhiera: Sara sulla soglia continua a guardare, mentre un filo di fumo passa in basso | A5 | scelta «Keep watching them.» |
 
-Alternanza: A5 → A6 → A8 → A7 → A8 → A5.
+Alternanza: A5 → A6 → A8 → A7 → A5. Con «Keep watching them.» interviene A8b tra A7 e A5.
 
 **A5**
 ```

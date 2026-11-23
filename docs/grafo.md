@@ -127,3 +127,32 @@ flowchart TD
 | Confidence | 27 (parte da 20: scrivere, entrare da sola, coraggio con l'editore) |
 | Suspicion | 3 (il segreto dell'editore) |
 | Interest verso Josh | parte da 80, finisce tra 78 e 91 |
+
+## Episodio 2 · Giorno 14
+
+```mermaid
+flowchart TD
+    E1([Fine Episodio 1]) --> M["Domenica mattina · messaggio di Daniel e ricordo della terrazza"]
+    M --> P["Pranzo · Hugo elogia Daniel e sminuisce Josh"]
+    P --> Q{Reazione di Sara}
+    Q -->|Lo difende · Josh +3, Confidence +1| V["Sally critica il vestito"]
+    Q -->|Tace| V
+    Q -->|Sorride · Josh -2| V
+    V --> R{Risposta a Sally}
+    R -->|Abbassa gli occhi| S["Samantha propone di fare shopping insieme"]
+    R -->|Risponde · Confidence +1| S
+    S -->|Accetta · registra l'invito accettato| H["Retroscena · Sally e Hugo si scambiano uno sguardo"]
+    S -->|Declina| H
+    H --> C["In cucina · Sally consiglia a Sara di farsi una vita propria"]
+    C --> T["Si sblocca il telefono libero"]
+    T --> J{"Sera · risposta all'invito di Daniel del giorno 13"}
+    J -->|Forse o Josh lo saprà| O["Chat di trama · Joanie ordina il maglione"]
+    J -->|Nessuna risposta registrata| F{"Slot facoltativo con la rubrica effettiva"}
+    O --> F
+    O -.-> K["Giorno 17 · consegna prevista"]
+    K -.-> L["Giorno 18 · se il pranzo è confermato, scelta dell'abito"]
+    F -->|Scrive a un contatto| A["Il controller gestisce il dialogo e le risposte"]
+    F -->|Salta| N["Notte · eventuali risposte in arrivo"]
+    A --> N
+    N --> G([Fine del giorno 14])
+```

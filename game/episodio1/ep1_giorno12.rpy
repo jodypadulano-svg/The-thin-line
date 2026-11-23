@@ -482,8 +482,12 @@ label ep1_d12_parla_simon:
     ch "Muscles."
     s "Don't call him that."
     ch "You didn't say «who». You went straight to «don't call him that». Babe."
-    if fatto("ep1_palestra_da_sola"):
-        s "Monday, when you stood me up... he was nice. He fixed my shoulder. He's very... careful. With his hands."
+    if fatto("ep1_d8_seconda_spalla"):
+        s "Monday, when you stood me up... he fixed my shoulder. Then I asked him to do the other one."
+        ch "Was there something wrong with the other one?"
+        s "No. I just wanted his hand there a little longer."
+    elif fatto("ep1_palestra_da_sola"):
+        s "Monday, when you stood me up... he was nice. He showed me what I was doing wrong with my shoulder. He's very... careful."
     else:
         s "He's just... nice. At the gym. He remembers things. What I said, what I lift."
     if fatto("simon_numero"):

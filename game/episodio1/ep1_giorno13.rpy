@@ -370,6 +370,9 @@ label ep1_d13_festa:
     $ segna("ep1_d13_biglietto")
     ed "No more because I'm old. No less because you're not allowed to hide."
     n "The woman with the silver bob touches Magnus's arm, and they move away. At the door she turns, and smiles at Sara once more."
+    if fatto("ep1_d7_scena_audace"):
+        sp "Where does page fifty end? Before she lets him come closer, or after?"
+        sp "If it's in there... do I leave it in?"
 
     ## Daniel torna: la scelta del calendario.
     n "Ten minutes later Daniel is back at her side, a fresh glass in his hand for her. He doesn't ask if she wants it."
@@ -643,7 +646,16 @@ label ep1_d13_notte:
     if fatto("ep1_d13_cerniera"):
         $ msg("sara", "I ran into Daniel on the terrace. My zip had slipped. I let him do it up and he kissed my ear.")
         $ msg("amica", "Your EAR. Okay, but how did it feel?")
-        $ msg("sara", "I went all warm. I tilted my head without thinking. I think I wanted him to do it again.")
+        menu (screen="scelta_telefono"):
+            "Admit she wanted him to do it again.":
+                $ msg("sara", "I went all warm. I tilted my head without thinking. I think I wanted him to do it again.")
+                $ msg("amica", "Oh, Sara. Is that the first time you've said that to yourself, too?")
+            "Tell her how much it caught her off guard.":
+                $ msg("sara", "I tilted my head before I'd even thought about it. That was the part that threw me. I keep thinking about it.")
+                $ msg("amica", "I get it. You can sit with that for a bit. You don't have to figure it out tonight.")
+            "Keep how she felt to herself.":
+                $ msg("sara", "I don't know how to talk about that yet. Can I just tell you what happened next?")
+                $ msg("amica", "Of course. I'm here.")
     else:
         $ msg("sara", "I ran into Daniel on the terrace. He offered to do up my zip. I told him I could do it myself.")
         $ msg("amica", "You and your extremely capable hands. Go on.")
@@ -679,40 +691,58 @@ label ep1_d13_notte:
 
 
 ## --- Nella prossima puntata (piano di pubblicazione, sezione 2) ---------------------------
-## Le CG sono dell'Episodio 2 e si faranno quando quei giorni sono pronti: per ora
-## compare la didascalia [CG]. Una parte comune e una o due anteprime personalizzate.
+## Bozzetti del prossimo episodio: parte comune e una o due anteprime personalizzate.
 
 label ep1_teaser:
     $ luogo_corrente = ""
     scene bg nero with fade
     n "{size=+12}Next time, on The Thin Line...{/size}"
-    $ cg("Episode 2 preview: Sunday lunch with the two families, a long table, Hugo at the head of it, Josh small in his chair, Sara between the two mothers", "images/cg/ep2/teaser_pranzo_famiglie.webp")
+    $ cg("Episode 2 preview: a sketch of two families at a long Sunday lunch table, Hugo at its head, a hand beside an empty plate in the foreground", "images/cg/ep2/teaser_pranzo_famiglie.webp")
     n "Sunday lunch. Two families at one table. And a man at its head who has never once said a kind word to his son."
     python:
         _anteprime = []
-        if fatto("ep1_d13_biglietto"):
-            _anteprime.append(("Episode 2 preview: the entrance of an old publishing house, brass plaque, Sara on the steps holding a thick envelope", "The fifty pages. And the door of a publishing house that doesn't open for just anyone."))
         if valore_interest("simon") >= max(valore_interest("daniel"), valore_interest("howard"), valore_interest("capa")) and fatto("ep1_palestra_da_sola"):
-            _anteprime.append(("Episode 2 preview: the gym after hours, a light on in the back room", "The gym, after closing time. Sara arrives early. Too early."))
+            _anteprime.append((
+                "Episode 2 preview: a sketch of the empty gym after hours, warm light spilling through an open door",
+                "The gym, after closing time. Sara arrives early. Too early.",
+                "images/cg/ep2/teaser_simon.webp",
+            ))
         if fatto("ep1_howard_caffe") in ("si", "forse") or howard_visite >= 2:
-            _anteprime.append(("Episode 2 preview: the green door ajar on the landing, two cups on a tray", "Josh works late again. And next door, the coffee is already on."))
+            _anteprime.append((
+                "Episode 2 preview: a sketch of the green door ajar on the landing, two cups on a tray",
+                "Josh works late again. And next door, the coffee is already on.",
+                "images/cg/ep2/teaser_howard.webp",
+            ))
         if fatto("ep1_d10_bottone_aperto") or fatto("ep1_aperitivo_accettato"):
-            _anteprime.append(("Episode 2 preview: Barbara's office at dusk, the blinds half closed, Barbara smiling behind her desk", "«Stay half an hour, darling. Just half an hour.»"))
+            _anteprime.append((
+                "Episode 2 preview: a sketch of Barbara's office, her red nails resting beside a folder on the desk",
+                "«Stay half an hour, darling. Just half an hour.»",
+                "images/cg/ep2/teaser_barbara.webp",
+            ))
         if not _anteprime:
-            _anteprime.append(("Episode 2 preview: Josh and Sara at a candlelit table in a small restaurant, Josh nervous, a small box in his pocket", "Josh has booked a table. He's been planning something."))
+            _anteprime.append((
+                "Episode 2 preview: a sketch of a candlelit table for two, a hand near a small box in a jacket pocket",
+                "Josh has booked a table. He's been planning something.",
+                "images/cg/ep2/teaser_josh.webp",
+            ))
+        if fatto("ep1_d13_biglietto"):
+            _anteprime.insert(0, (
+                "Episode 2 preview: a sketch of a thick envelope held up to a wooden door with a brass plaque",
+                "The fifty pages. And the door of a publishing house that doesn't open for just anyone.",
+                "images/cg/ep2/teaser_editore.webp",
+            ))
         _anteprime = _anteprime[:2]
-    $ cg(_anteprime[0][0])
+    $ cg(_anteprime[0][0], _anteprime[0][2] if len(_anteprime[0]) > 2 else None)
     $ renpy.say(n, _anteprime[0][1])
     if len(_anteprime) > 1:
-        $ cg(_anteprime[1][0])
+        $ cg(_anteprime[1][0], _anteprime[1][2] if len(_anteprime[1]) > 2 else None)
         $ renpy.say(n, _anteprime[1][1])
-    $ cg("Episode 2 preview: a small bar at night, a tall man behind the counter looking up, Sara frozen in the doorway", "images/cg/ep2/teaser_jacob.webp")
+    $ cg("Episode 2 preview: a sketch of a man in shadow at a bar, his ring catching the light on the counter", "images/cg/ep2/teaser_jacob.webp")
     n "And on a Friday night, in a little bar across town, a man Sara left four years ago. And has never quite forgotten."
     n "{i}«Some doors you close. Some doors you only think you closed.»{/i}"
     $ via_cg()
     $ luogo_corrente = ""
     scene bg nero with fade
-    n "{size=+8}Episode 2: soon.{/size}"
     return
 
 

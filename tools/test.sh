@@ -4,15 +4,22 @@
 ## qui si legge l'output e si chiude il processo appena compare «Status:».
 ##
 ## Uso (dalla cartella del gioco):
-##   tools/test.sh                      lint + episodio1 + debug_salta + telefono
-##   tools/test.sh episodio1 telefono   solo queste suite (niente lint)
+##   tools/test.sh                      mostra l'uso, non lancia test
+##   tools/test.sh segreto              solo il bivio del giorno 2
+##   tools/test.sh --completo           lint + episodio1 + debug_salta + telefono
 ##   tools/test.sh lint                 solo il lint
 ## Variabile RENPY per un SDK diverso. Esce con 1 se qualcosa fallisce.
 
 RENPY="${RENPY:-/c/Users/Jody/RenPy/renpy-8.5.3-sdk/renpy.exe}"
 cd "$(dirname "$0")/.." || exit 1
 
-if [ $# -eq 0 ]; then
+if [ $# -eq 0 ] || [ "$1" = "--help" ]; then
+    echo "Uso: tools/test.sh <suite> [altre suite] | lint | --completo"
+    echo "Esempio di verifica mirata: tools/test.sh segreto"
+    exit 0
+fi
+
+if [ "$1" = "--completo" ] && [ $# -eq 1 ]; then
     set -- lint episodio1 debug_salta telefono
 fi
 

@@ -211,7 +211,7 @@ A ogni punto di interruzione:
 | Howard | mai |
 
 ### 11.5 Effetti
-- **Interest:** +1 a fine discorso, +2 se Sara ha scelto le risposte calde; nulla per i singoli scambi; le risposte fredde possono togliere. (Sostituisce il +1/+2 per step del 10.3.)
+- **Interest:** +1 alla prima bolla che Sara invia per iniziare un nuovo discorso e +1 ogni volta che sceglie una reazione calorosa già marcata nella chat. Riprendere un discorso o rispondere a un'apertura in entrata non dà il premio d'inizio. Alla fine restano +1 per il discorso completato o +2 se Sara ha scelto almeno una risposta calorosa. Le risposte fredde possono togliere punti.
 - **Freno:** in ogni discorso di flirt c'è sempre una risposta per smorzare («Ok, stop. Goodnight.»): il discorso si chiude come fatto, senza Interest, e il personaggio per un po' non riapre discorsi di quel tipo. Le risposte coraggiose o piccanti hanno requisiti di Corruption/Confidence come nelle scene.
 - **La chat resta sul telefono:** dopo un discorso «complici» o «intimi» il giocatore sceglie se **cancellarla** (Corr +1, Susp −1, come al giorno 21) o **lasciarla** (con Suspicion alta Josh può trovarla; si lega al finale del giorno 28).
 - **Memoria nelle scene fisse:** il flag di fine discorso permette alle micro-varianti da B in su di citare proprio quella chat (in palestra Simon: «hai provato la colazione che ti dicevo?»).
@@ -220,3 +220,13 @@ A ogni punto di interruzione:
 - **Foto:** poche per personaggio, riusabili, quasi tutte ai gradini alti; le prime chat solo testo.
 - **Quando si apre lo slot:** lo decide il codice della giornata (di solito la sera, a volte la pausa pranzo); Barbara risponde solo in orario di lavoro.
 - **Metodo:** il «codice del percorso» (10.9) diventa scrivere discorsi: almeno 4 per personaggio per cominciare (32 in tutto), poi si allarga l'imbuto.
+
+## 12. Sessioni libere a minuti
+
+Ogni sessione libera ha un orario di inizio e di fine deciso dalla scena. Il giorno 14 va dalle **22:00 alle 23:00**, dopo la chat di trama del maglione, che resta fuori dal conteggio. Sara può cambiare contatto, attendere la prossima risposta o chiudere in anticipo. Allo scadere o scegliendo «Go to bed», passa alla CG della buonanotte. Lo stato di ciascuna chat è conservato per le sessioni successive.
+
+- Ogni bolla inviata da Sara costa un minuto. Le bolle ricevute costano un minuto ciascuna quando Sara legge il blocco. Una notifica non costa tempo. Un blocco che eccede il tempo residuo resta interamente non letto.
+- Il ritardo viene sorteggiato e salvato per ogni blocco. Howard risponde subito, Joanie in 1–4 minuti e Darius in 1–8. Simon può rispondere la sera, Jacob durante la notte, Barbara nei giorni e orari di lavoro. Daniel può arrivare dopo pochi minuti o diverse ore. Magnus normalmente aspetta da uno a due giorni. Il gradino di complicità può ridurre l’attesa.
+- «Wait» avanza fino alla prossima risposta in viaggio o alla fine della sessione se nessuna può arrivare in tempo. Durante la lettura o l’invio in una chat, le altre possono generare notifiche e rimangono aperte in rubrica.
+- I blocchi nelle chat di percorso hanno un punto di ripresa prima delle bolle in entrata, prima dell’invio e prima delle scelte. Le label salvate permettono di riprendere senza ripetere messaggi o effetti. Le scene di trama continuano a usare il flusso preesistente.
+- La pesca controlla nello stesso modo i discorsi avviati da Sara e quelli in entrata. Oltre a Interest e rubrica, un argomento può richiedere un fatto di trama, una finestra oraria o entrambi. Una conversazione iniziata in un contesto valido conserva i messaggi e il punto di ripresa. Le condizioni dei singoli discorsi sono nella [tabella degli argomenti](argomenti-telefono.md#condizioni-di-trama-oltre-al-livello).

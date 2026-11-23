@@ -33,6 +33,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `daniel_seduzione` | Daniel e Sara soli: la terrazza e la cerniera (giorno 13). **Canzone con voce femminile** | ✅ |
 | `daniel_notte` | Il messaggio di Daniel all'1:12, chiusura dell'Episodio 1 (giorno 13) | ✅ |
 | `chiusura_ep1` | Il montaggio dopo i titoli: un ritratto per ogni strada (giorno 13). **Canzone con voce femminile** | ✅ |
+| `darius_caffe` | Giorno 14, caffè con Darius. Entra quando Darius si ricorda della porta del romanzo di Sara. | ✅ |
 
 **tema_principale**
 ```
@@ -205,6 +206,7 @@ So many doors...
 
 | File | Prompt |
 |---|---|
+| `supermercato.mp3` | *Quiet neighbourhood supermarket on a Sunday afternoon, heard from the biscuit aisle. Low refrigeration hum, occasional soft footsteps and faint packaging rustle. No music, announcements or clear speech.* (G14, traccia inserita, 30 secondi) ✅ |
 | `redazione` | *Busy open-plan newspaper office ambience: many keyboards typing, distant muffled conversations, a phone ringing far away, papers shuffling, a printer working. No clear words. Seamless loop, 45 seconds.* |
 | `ristorante` | *Elegant restaurant ambience: soft murmur of many conversations, cutlery on porcelain plates, glasses touching, a waiter's quiet steps, a cork popping far away. No clear words. Seamless loop, 45 seconds.* |
 | `bar` | *Cosy cocktail bar ambience: a small group of women laughing and chatting, ice in shaker, glasses clinking, a bartender working, soft background murmur. No clear words. Seamless loop, 45 seconds.* |

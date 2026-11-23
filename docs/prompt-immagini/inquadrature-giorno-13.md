@@ -26,7 +26,19 @@ Blocco di stile (in fondo a ogni prompt):
 
 **Luoghi nuovi** (prima delle scene, senza personaggi, da salvare in `riferimenti/luoghi/`): `boutique.webp`, `villa_daniel_esterno.webp`, `villa_daniel_salone.webp`, `villa_daniel_terrazza.webp`. La biblioteca, lo studio e l'auto di Magnus si fanno direttamente nelle scene.
 
-Totale: **43 immagini**: 4 luoghi, 29 di scena (con le varianti di vestito, la D4 audace e la giacca E1b) e 10 del montaggio finale; più 1 video. Le immagini del teaser sono dell'Episodio 2 e si fanno più avanti.
+Totale: **43 immagini**: 4 luoghi, 29 di scena (con le varianti di vestito, la D4 audace e la giacca E1b) e 10 del montaggio finale; più 1 video. Le **7 tavole del teaser** «Next time» sono bozzetti separati a matita e acquerello leggero, con molta carta a vista. Suggeriscono dettagli dell'Episodio 2 senza fissare le inquadrature delle scene future.
+
+| Tavola del teaser | File |
+|---|---|
+| Pranzo delle famiglie | `teaser_pranzo_famiglie.webp` |
+| Le cinquanta pagine | `teaser_editore.webp` |
+| Palestra dopo la chiusura | `teaser_simon.webp` |
+| Caffè da Howard | `teaser_howard.webp` |
+| Ufficio di Barbara | `teaser_barbara.webp` |
+| Tavolo prenotato da Josh | `teaser_josh.webp` |
+| Bar di venerdì | `teaser_jacob.webp` |
+
+Il pranzo apre il teaser e il bar lo chiude. In mezzo si vedono al massimo due tavole. Le cinquanta pagine vengono prima, se Sara ha ricevuto il biglietto di Magnus. Il tavolo di Josh compare quando non è selezionata nessuna delle anteprime di Simon, Howard o Barbara.
 
 ---
 

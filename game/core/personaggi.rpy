@@ -21,6 +21,10 @@ define ed = Character("Magnus", color="#d4b483")
 define ba = Character("Barbara", color="#e07fb0")
 define ro = Character("Roberta", color="#d9a3c7")
 define je = Character("Jessica", color="#f2b5d4")
+define hugo = Character("Hugo", color="#c1a692")
+define samantha = Character("Samantha", color="#e6b6a0")
+define sally = Character("Sally", color="#d5a6b8")
+define andrew = Character("Andrew", color="#aab9c3")
 ## Personaggio funzionale (giorno 3): moglie di un collega del compagno.
 define em = Character("Emma", color="#b8c9a3")
 

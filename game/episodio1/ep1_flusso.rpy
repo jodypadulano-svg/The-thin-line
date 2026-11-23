@@ -35,4 +35,4 @@ label ep1_fine:
     scene bg nero with fade
     n "{size=+20}End of Episode 1{/size}"
     n "Thank you for playing. Keep your save to carry your choices into Episode 2."
-    return
+    jump ep2_inizio

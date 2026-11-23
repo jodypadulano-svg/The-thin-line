@@ -1,11 +1,8 @@
 ## =============================================================================
-## DEBUG — partire da un giorno qualsiasi (solo per gli sviluppatori)
+## DEBUG — simulare i giorni precedenti nei test automatici
 ## =============================================================================
-## Dal menu iniziale, solo con config.developer attivo: si sceglie il giorno e
-## una configurazione. I giorni precedenti NON si impostano a mano: si giocano
-## da soli, saltando i dialoghi, con le scelte della configurazione. Così lo stato
-## di partenza è sempre uno che il gioco può davvero produrre, e quando si scrive
-## un giorno nuovo (label "ep1_dN") diventa subito raggiungibile.
+## Il test debug_salta sceglie il giorno e la configurazione, quindi ripercorre
+## i giorni precedenti con le scelte previste per ottenere uno stato realistico.
 ##
 ## Ogni configurazione è una lista di inizi di frase delle scelte, in ordine di
 ## preferenza; se nessuna corrisponde si usa la «riserva» (prima/ultima/alternata).
@@ -178,8 +175,6 @@ init python:
             "scelte": [],
         },
     }
-    ORDINE_PRESET_DEBUG = ["brava", "barbara", "daniel", "mista"]
-
     ## Stato del salto: None quando non si sta saltando.
     _debug_salto = None
     _foto_debug = {}
@@ -224,10 +219,6 @@ init python:
             return getattr(scelta, "value", scelta)
         return scegli
 
-    def giorni_debug():
-        """I giorni da cui si può partire: quelli con un label ep1_dN, dal 2 in poi."""
-        return [n for n in range(2, 31) if renpy.has_label("ep1_d%d" % n)]
-
     def debug_azzera_stato():
         """Rimette ogni variabile dichiarata con `default` al valore d'inizio partita
         (il nome del compagno resta). Serve anche ai test, che non ripartono da zero."""
@@ -241,6 +232,8 @@ init python:
     def debug_prepara(giorno_arrivo, chiave):
         """Fa giocare da soli i giorni prima di giorno_arrivo con il preset scelto."""
         global _debug_salto, _debug_menu_originale, _debug_skip_unseen
+        if not renpy.is_in_test():
+            return
         debug_azzera_stato()
         _debug_salto = {"arrivo": "ep1_d%d" % giorno_arrivo, "preset": chiave,
                         "arrivato": False, "senza_preferenza": []}
@@ -270,18 +263,3 @@ init python:
             renpy.notify("DEBUG: preset «%s»%s" % (_debug_salto["preset"],
                          (", %d scelte senza preferenza" % mancate) if mancate else ""))
     config.label_callbacks.append(_debug_traccia)
-
-
-## Chiamato dal menu iniziale (script.rpy) solo se config.developer.
-label debug_partenza:
-    python:
-        _scelte_giorno = [("Day %d" % n, n) for n in giorni_debug()]
-        _scelte_giorno.append(("Back", None))
-        _giorno_debug = renpy.display_menu([("DEBUG: start from which day?", None)] + _scelte_giorno)
-    if _giorno_debug is None:
-        return
-    python:
-        _scelte_preset = [(PRESET_DEBUG[k]["nome"], k) for k in ORDINE_PRESET_DEBUG]
-        _preset_debug = renpy.display_menu([("DEBUG: which configuration?", None)] + _scelte_preset)
-        debug_prepara(_giorno_debug, _preset_debug)
-    jump ep1_inizio

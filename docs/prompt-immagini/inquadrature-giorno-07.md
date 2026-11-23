@@ -19,7 +19,7 @@ Bozza di lavoro | 19 novembre 2026 · Testo del giorno 7 in `game/episodio1/ep1_
 Blocco di stile (in fondo a ogni prompt):
 `Visible pencil sketch lines, soft watercolor washes with gentle color bleeding, textured paper grain. No readable text, no logos, no signature. Same art style as the reference images. Clearly a hand-painted illustration, not photorealistic. Wide 16:9 composition.`
 
-Totale: **12 immagini nuove** (10 + C2b e C2c aggiunte il 19/11), più **1 luogo nuovo** da fare prima: il sentiero lungo il fiume (prompt in fondo). Le immagini dei rami si vedono solo con certe scelte (colonna «Quando compare»).
+Totale: **13 immagini** (10 iniziali, C2b, C2c e B1b), più **1 luogo nuovo**: il sentiero lungo il fiume (prompt in fondo). Le immagini dei rami si vedono solo con certe scelte (colonna «Quando compare»).
 
 ---
 
@@ -56,6 +56,7 @@ The apartment building landing from the reference image: on the stairs going dow
 | ID | File | Inquadratura | Allega | Quando compare |
 |---|---|---|---|---|
 | B1 | `d7_05_scrivere` | Sara scrive al tavolo vicino alla finestra, assorta, capelli raccolti con una matita; dietro, Josh addormentato sul divano col joypad sul petto | `casa_soggiorno_sera`, `d1_08_capitolo_tre`, Sara, Josh | scelta «Write» |
+| B1b ✅ | `d7_05b_romanzo_soglia` | Nel romanzo, in soggettiva dalla soglia: una mano sullo stipite, l'uomo si ferma vicino alla protagonista, il suo viso resta fuori campo | B1 (stile e luce) | scelta «She lets him come closer, without asking his name» |
 | B2 | `d7_06_fiume` | Il sentiero sul fiume: Sara e Josh mano nella mano con due coni gelato, Josh indica le anatre | `fiume`, Sara, Josh | scelta «A walk by the river» |
 | B3 | `d7_07_panchina` | Una panchina sul fiume all'ora d'oro: Sara con la testa sulla spalla di Josh, occhi socchiusi | `fiume`, B2 | scelta «A walk by the river» |
 

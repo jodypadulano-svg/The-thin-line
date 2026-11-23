@@ -92,7 +92,7 @@ label ep1_d8_simon:
     $ ambiente("palestra")
     $ suono("armadietto")
     if fatto("ep1_top_joanie"):
-        $ cg("Sara in the locker room mirror wearing Joanie's black top", "images/cg/ep1/d2_06_top_specchio.webp")
+        $ cg("Sara alone in front of the locker room mirror wearing Joanie's black top, the bench beside the lockers empty", "images/cg/ep1/d8_03b_spogliatoio_top.webp")
         n "In the locker room she pulls out the black top. It never went back to Joanie, somehow. She puts it on before she can change her mind."
     else:
         $ cg("The gym locker room", "images/cg/ep1/d8_spogliatoio.webp")
@@ -126,9 +126,10 @@ label ep1_d8_simon:
         "«Fix the other one too?», with a smile." (corruption=7):
             $ interest("simon", 6, "Simon noticed your smile.")
             $ corruption(3, "An innocent game. Almost.")
-            $ cg("Simon's hand lightly correcting Sara's shoulder as she lifts the dumbbell", tuta_d8("06_spalla"))
+            $ segna("ep1_d8_seconda_spalla")
             s "While you're at it... fix the other one too?"
             si "Yes, ma'am."
+            $ cg("Sara lowers the dumbbell and looks back at Simon with a small smile as he rests his hands on her shoulders", tuta_d8("06b_seconda_spalla"))
             n "This time his hands stay a second longer. Neither of them mentions it."
             sp "What am I doing?"
         "«I'll do it myself, thanks. Just tell me how.»":

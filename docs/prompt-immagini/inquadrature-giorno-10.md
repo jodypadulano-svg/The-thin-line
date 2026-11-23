@@ -24,6 +24,7 @@ Totale: **7 immagini**, nessun luogo nuovo (redazione, cucina di casa, camera).
 |---|---|---|---|---|
 | A1 ✅ | `d10_01_barbara_cartella` | Barbara si china sulla scrivania di Sara e le butta davanti una cartella gonfia; Sara alza gli occhi dal caffè, presa alla sprovvista | `redazione`, Sara, `@barbara_wc` | sempre |
 | A1b ✅ | `d10_01b_bottone` | Primo piano: la mano di Barbara, unghie rosse lunghe, al colletto di Sara; due dita sbottonano il primo bottone, un'unghia le sfiora la clavicola; Sara immobile, labbra socchiuse | A1, Sara, `@barbara_wc` | sempre (aggiunta 21/11) |
+| A1c ✅ | `d10_01c_sara_bottone` | Primo piano di Sara alla scrivania: la sua mano si ferma al colletto aperto e lei accenna un sorriso | `d10_02_oroscopi_aperto` | scelta «Leave it open. All day.» |
 | A2 ✅ | `d10_02_oroscopi` | Pomeriggio: Sara alla scrivania, mento sulla mano, scrive gli oroscopi con un sorriso mezzo colpevole e mezzo divertito | `redazione`, Sara | sempre |
 | A2 ✅ | `d10_02_oroscopi_aperto` | Come A2, ma la camicetta aperta sul seno (bottone lasciato aperto) | — | se `ep1_d10_bottone_aperto` (fatta 21/11) |
 | B1 ✅ | `d10_03_jessica_libri` | Pausa pranzo, redazione semivuota: Jessica in ginocchio accanto a uno scatolone butta dentro vecchi libri; in cima un grosso romanzo russo consumato; Sara in piedi che la guarda | `redazione`, Sara, `@jessica_wc` | sempre |

@@ -120,7 +120,10 @@ label ep1_d7_pomeriggio:
                 "She lets him come closer, without asking his name.":
                     $ corruption(1, "Sara writes a scene she wouldn't read aloud.")
                     $ segna("ep1_d7_scena_audace")
-                    n "Her heroine doesn't ask. She lets him cross the room. She lets him stand close enough to feel the warmth of him, and the scene doesn't need a name."
+                    n "Her heroine doesn't ask. She lets him cross the room."
+                    $ cg("Inside Sara's novel, from the heroine's point of view: her hand against the doorframe, the man close enough to see the weave of his shirt, his face out of frame", "images/cg/ep1/d7_05b_romanzo_soglia.webp")
+                    n "She lets him stand close enough to feel the warmth of him, and the scene doesn't need a name."
+                    $ cg("Sara writing at the table by the window in the afternoon light, completely absorbed; in the background Josh asleep on the sofa with a game controller on his chest", "images/cg/ep1/d7_05_scrivere.webp")
                     n "Sara writes it in one breath. When she reads it back her cheeks are burning, and she glances at the sofa as if she'd been caught."
                     sp "It's fiction. It's {i}her{/i}, not me."
                     sp "...I'm not reading this one to anybody."

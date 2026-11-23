@@ -36,36 +36,37 @@ Thank you for being here. Follow for free to get the news, and see where the lin
 
 ## Livelli (tiers)
 
-**Adesso:** solo il livello gratuito (Patreon lo chiama *Free membership* / *Follow*).
-
-**Free — Follower** (subito)
+**Free — Follower**
 ```
 Free
 Follow the development: news, progress updates and selected watercolor illustrations from the game.
 ```
 
-**Da attivare quando l'Episodio 1 è finito** (prezzi da decidere con Jody; proposta: 5 $ e 10 $):
+**Supporter — 1 USD/mese**
 
-**Base** (es. 5 $/mese)
 ```
-Early Access
-- New episodes before everyone else
-- Builds for Windows, Mac, Linux and Android
-- Progress posts and previews
-- My eternal gratitude, and Sara's
+If you've enjoyed The Thin Line and would like to help me keep making it, this tier is a simple way to chip in. There are no exclusive rewards at this level. Thank you for helping me tell Sara's story.
 ```
 
-**Sostenitore** (es. 10 $/mese)
+**Early Access — 5 USD/mese**
 ```
-Insider
-Everything in Early Access, plus:
-- The full CG gallery in high resolution, including variants
-- Sneak peeks of upcoming scenes
-- Polls on small things (an outfit, a bonus illustration)
-- Your name in the game credits
+Get early access to new episodes of The Thin Line as they're ready, along with patron-only development updates and previews. Your support helps me keep writing and building Sara's story.
 ```
 
-Nota: i voti riguardano solo piccole cose, mai la storia (la scrive Jody). Nessuna data fissa promessa: «un aggiornamento ogni 6-8 settimane».
+**Insider — 10 USD/mese**
+```
+Everything in Early Access, plus selected high-resolution illustrations, alternate versions, and a look at how scenes come together. From time to time, you can vote on things like an outfit or a bonus illustration. Thank you for helping me make The Thin Line.
+```
+
+**True Supporter — proposta: 25 USD/mese, 3 posti**
+
+Benefit su Patreon: `One personalized bonus piece per month`.
+
+```
+Everything in Insider, plus one small personalized bonus piece each month. Tell me which character, outfit, or moment you'd like to see, and we'll agree on either a custom illustration or a short side scene set in the world of The Thin Line. These pieces are separate from the game's main story. I'll confirm the idea and delivery timing with you before I start.
+```
+
+L'Episodio 1 resta gratuito. I voti riguardano elementi come gli abiti e le illustrazioni bonus. Le fasce non indicano una data fissa per i nuovi episodi.
 
 ## Primo post (gratuito)
 

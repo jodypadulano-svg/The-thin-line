@@ -79,11 +79,12 @@ label ep1_d10_barbara:
         "Leave it open. All day.":
             $ corruption(1, "Sara leaves her blouse the way Barbara wanted it.")
             $ segna("ep1_d10_bottone_aperto")
+            $ cg("At her desk, Sara looks down with a small smile, her own fingers paused at the open collar of her cream blouse", "images/cg/ep1/d10_01c_sara_bottone.webp")
             n "Her hand goes up to the collar. And stops there. And comes back down."
-            n "She feels it all morning: a little more air at her throat, a little more skin than she'd have chosen."
-            n "Twice Barbara walks past the desk. Twice her eyes drop to the open collar, and twice she smiles, pleased, as if at a plant that has finally been watered."
-            sp "It's one button. It's hot in here anyway."
-            sp "...It isn't hot in here."
+            n "She feels it all morning: a little more air at her throat, a little more skin than she usually shows at work."
+            n "When Barbara passes again, she glances at the button she undid. A small, pleased smile, and she keeps walking."
+            sp "I could have done it up the minute she walked away."
+            sp "I had all morning."
 
     $ musica("redazione")
     ## Doppia immagine: la camicetta come l'ha lasciata Sara (bottone aperto o richiuso).

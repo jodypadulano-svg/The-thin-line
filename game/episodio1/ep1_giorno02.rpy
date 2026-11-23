@@ -136,6 +136,7 @@ label ep1_d2_terrazzino:
             $ segna("ep1_guarda_fumo")
             n "Sara can't take her eyes off their mouths. The pout. The patience. The way the smoke leaves them like a sigh."
             sp "It's ridiculous. It's just smoke."
+            $ cg("Reverse angle from the railing: Sara at the newsroom door, watching offscreen with parted lips; a thin wisp of smoke drifts past the railing", "images/cg/ep1/d2_22b_sara_guarda_fumo.webp")
             sp "So why does it look so... pleasant?"
 
 label ep1_d2_terrazzino_fine:

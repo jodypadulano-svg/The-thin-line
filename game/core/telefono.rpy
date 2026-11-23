@@ -23,6 +23,7 @@ init -6 python:
 init -5 python:
 
     FASCE = ["mattina", "lavoro", "pranzo", "sera", "notte"]
+    ORARI_FASCE_TELEFONO = (8 * 60, 9 * 60, 12 * 60 + 30, 20 * 60, 23 * 60)
 
     SOGLIE_RAPPORTO = {
         "simon":   (5, 10, 16, 22),
@@ -78,7 +79,7 @@ init -5 python:
     class Discorso(object):
         """Una conversazione a più scambi (11.1). Vive nel registro DISCORSI,
         costruito all'avvio: nei salvataggi ci finiscono solo gli id."""
-        def __init__(self, id, chiave, gradino, se, flirt, prova, scrive_lui=False):
+        def __init__(self, id, chiave, gradino, se, flirt, prova, scrive_lui=False, orario=None):
             self.scrive_lui = scrive_lui
             self.id = id
             self.chiave = chiave
@@ -86,14 +87,16 @@ init -5 python:
             self.se = se
             self.flirt = flirt
             self.prova = prova
+            self.orario = orario
 
     DISCORSI = {}
 
-    def discorso(id, chiave, gradino=CONOSCENTI, se=None, flirt=False, prova=False, scrive_lui=False):
+    def discorso(id, chiave, gradino=CONOSCENTI, se=None, flirt=False, prova=False, scrive_lui=False, orario=None):
         """Registra un discorso. se = condizione come testo, es. "fatto('ep1_festa')".
+        orario = (inizio, fine esclusa), in minuti da mezzanotte, anche a cavallo della notte.
         scrive_lui=True: può aprirlo lui con un messaggio in entrata anche sotto B
         (es. Daniel dopo la festa, Magnus che aspetta le pagine)."""
-        DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova, scrive_lui)
+        DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova, scrive_lui, orario)
 
     ## Discorsi segnaposto per la prova degli sviluppatori (non escono nel gioco vero).
     _SEGNAPOSTO = {ESTRANEI: 1, CONOSCENTI: 3, CONFIDENZA: 2, COMPLICI: 2, INTIMI: 1}
@@ -109,6 +112,16 @@ init -5 python:
         valore = percorso(chiave).interest
         return sum(1 for s in SOGLIE_RAPPORTO[chiave] if valore >= s)
 
+    def discorso_contesto_ok(d):
+        if d.se and not eval(d.se):
+            return False
+        if d.orario is None:
+            return True
+        minuto = store.telefono_minuti_ora
+        ora = ORARI_FASCE_TELEFONO[store.fascia_corrente] if minuto is None else minuto % 1440
+        inizio, fine = d.orario
+        return inizio <= ora < fine if inizio < fine else ora >= inizio or ora < fine
+
     def discorso_disponibile(d):
         k = d.chiave
         if d.id in store.discorsi_fatti:
@@ -119,9 +132,7 @@ init -5 python:
             return False
         if d.flirt and store.freno.get(k, -99) > store.giorno:
             return False
-        if d.se and not eval(d.se):
-            return False
-        return True
+        return discorso_contesto_ok(d)
 
     def discorsi_disponibili(chiave):
         return [d for _, d in sorted(DISCORSI.items()) if d.chiave == chiave and discorso_disponibile(d)]
@@ -142,8 +153,10 @@ init -5 python:
         return _parte(id, n) is not None or (DISCORSI[id].prova and n <= 2)
 
     def caldo():
-        """Nel discorso Sara ha scelto una risposta calda: +2 Interest alla fine."""
-        store.discorso_aperto[store.chat_aperta]["caldo"] = True
+        """Premia la reazione e conserva il bonus di chiusura del discorso."""
+        k = store.chat_aperta
+        store.discorso_aperto[k]["caldo"] = True
+        interest(k, 1, "The conversation made an impression on Sara.")
 
     def frena():
         """Sara smorza: il discorso finisce senza Interest e per un po' niente flirt."""
@@ -203,9 +216,9 @@ init -5 python:
         return [k for k in store.rubrica if not percorso(k).chiuso]
 
     def stato_contatto(k):
-        """attesa: tocca all'altro · aperto: Sara ha messo giù · nuovo: c'è un discorso · vuoto."""
+        """risposta: da leggere · attesa: tocca all'altro · aperto: Sara ha messo giù · nuovo · vuoto."""
         if k in store.coda_chat:
-            return "attesa"
+            return "risposta" if store.coda_chat[k]["arrivo"] <= adesso() else "attesa"
         if k in store.discorso_aperto:
             return "aperto"
         if discorsi_disponibili(k):
@@ -227,9 +240,17 @@ init -5 python:
 
     ## --- Messaggi a schermo ---------------------------------------------------------
 
-    def msg(chi, testo):
+    def msg(chi, testo, immagine=None):
         """Un messaggio nella chat aperta. chi = "sara", "josh" o la chiave del contatto."""
-        store.chat_log.setdefault(store.chat_aperta, []).append((chi, renpy.substitute(testo)))
+        renpy.stop_skipping()
+        messaggio = (chi, renpy.substitute(testo))
+        if immagine:
+            messaggio += (immagine,)
+        k = store.chat_aperta
+        store.chat_log.setdefault(k, []).append(messaggio)
+        aperto = store.discorso_aperto.get(k)
+        if chi == "sara" and aperto and aperto.pop("premio_avvio", False):
+            interest(k, 1, "Sara started a new conversation.")
         renpy.restart_interaction()
         renpy.pause()
 
@@ -251,7 +272,7 @@ default discorso_aperto = {}           # chiave -> {"id", "parte", "caldo", "fre
 default coda_chat = {}                 # chiave -> {"arrivo", "letto", "rimandata", "insiste"}
 default freno = {}                     # chiave -> giorno fino al quale niente flirt
 default chat_lasciate = []             # id dei discorsi compromettenti non cancellati
-default chat_log = {}                  # chiave -> [(mittente, testo)]
+default chat_log = {}                  # chiave -> [(mittente, testo[, immagine])]
 default chat_aperta = None
 default giorno_slot = -1
 default fascia_corrente = 0
@@ -272,22 +293,21 @@ label telefono_fascia(nome, con_josh=False):
                      if v["arrivo"] <= adesso() and k in contatti()]
     while _arrivate:
         $ _k = _arrivate.pop(0)
-        if con_josh and not coda_chat[_k].get("rimandata"):
+        $ _nome = nome_percorso(percorso(_k))
+        if not coda_chat[_k].get("rimandata"):
             $ suono("telefono_vibra")
-            $ _nome = nome_percorso(percorso(_k))
-            n "Sara's phone lights up on the table. [_nome]."
-            menu:
-                "Read it now.":
+            n "[_nome] replied."
+        else:
+            n "Sara still has a reply from [_nome] to read."
+        menu:
+            "Read it now.":
+                if con_josh:
                     $ suspicion(1)
                     if gradino(_k) >= COMPLICI:
                         $ corruption(1)
-                    call telefono_risposta(_k)
-                "Leave it for later.":
-                    $ coda_chat[_k]["rimandata"] = True
-                    $ coda_chat[_k]["arrivo"] = adesso() + 1
-        else:
-            $ suono("telefono_vibra")
-            call telefono_risposta(_k)
+                call telefono_risposta(_k)
+            "Leave it for later.":
+                $ coda_chat[_k]["rimandata"] = True
     if telefono_libero:
         call telefono_entrata
     return
@@ -296,8 +316,12 @@ label telefono_fascia(nome, con_josh=False):
 label telefono_slot:
     if not slot_libero() or not contatti_attivi():
         return
+    $ renpy.stop_skipping()
     $ _scelta = renpy.call_screen("telefono") if not renpy.is_in_test() else _test_contatto()
-    if _scelta is None:
+    while _scelta is not None and stato_contatto(_scelta[1]) == "risposta":
+        call telefono_risposta(_scelta[1])
+        $ _scelta = renpy.call_screen("telefono") if not renpy.is_in_test() else _test_contatto()
+    if _scelta is None or _scelta[0] == "chiudi":
         n "Sara leaves her phone face-down on the table."
         return
     $ _azione, _k = _scelta
@@ -317,7 +341,7 @@ label telefono_invia(k):
         call telefono_continua(k)
     else:
         $ _d = renpy.random.choice(discorsi_disponibili(k))
-        $ discorso_aperto[k] = {"id": _d.id, "parte": 0, "caldo": False, "frenato": False}
+        $ discorso_aperto[k] = {"id": _d.id, "parte": 0, "caldo": False, "frenato": False, "premio_avvio": True}
         if renpy.has_label("chat_%s" % _d.id):
             call expression "chat_%s" % _d.id
         else:
@@ -437,6 +461,8 @@ label telefono_sollecito(k):
         _anticipo, _int, _corr, _conf = SOLLECITI[k]
         if _anticipo:
             coda_chat[k]["arrivo"] = max(adesso(), coda_chat[k]["arrivo"] - _anticipo)
+            while not _fascia_ok(k, coda_chat[k]["arrivo"]):
+                coda_chat[k]["arrivo"] += 1
         if _int:
             interest(k, _int)
         if _corr:
@@ -517,51 +543,89 @@ style tel_testo is default:
     size 30
     color "#f3e6ea"
 
-## La rubrica.
+## La rubrica del telefono.
 screen telefono():
     modal True
     zorder 150
     add Solid("#00000088")
     frame:
         xalign 0.5 yalign 0.5
-        xysize (560, 940)
-        padding (34, 40)
-        background Solid("#1b1117")
+        xysize (540, 930)
+        padding (24, 24)
+        background Solid("#49333e")
         vbox:
-            spacing 18
-            text "Messages" style "tel_testo" size 44 color "#ffb3c1"
-            text "One message today. Who will she write to?" style "tel_testo" size 26 color "#c9a3a0"
-            null height 10
-            viewport:
-                ysize 640
-                scrollbars "vertical"
-                mousewheel True
+            spacing 10
+            add Solid("#22171e") xysize (92, 7) xalign 0.5
+            frame:
+                xfill True
+                padding (18, 18)
+                background Solid("#21171e")
                 vbox:
-                    spacing 12
-                    for k in contatti():
-                        $ stato = stato_contatto(k)
-                        $ attesa = coda_chat.get(k)
-                        frame:
+                    spacing 14
+                    hbox:
+                        spacing 20
+                        text "Messages" style "tel_testo" size 40
+                        if telefono_minuti_attivo():
+                            text ("%s  ·  %d min left" % (telefono_orario(telefono_minuti_ora), telefono_minuti_rimasti())) style "tel_testo" size 21 yalign 0.5
+                    viewport:
+                        ysize 680
+                        mousewheel True
+                        draggable True
+                        vbox:
                             xfill True
-                            padding (20, 14)
-                            background Solid("#2b1d25" if stato != "vuoto" else "#1f171c")
-                            hbox:
-                                xfill True
-                                vbox:
-                                    text nome_percorso(percorso(k)) style "tel_testo" size 34 color ("#f3e6ea" if stato != "vuoto" else "#7d6870")
-                                    if stato == "attesa" and attesa["letto"]:
-                                        text "Read. No reply yet." style "tel_testo" size 24 color "#c9a3a0"
-                                    elif stato == "attesa":
-                                        text "Delivered." style "tel_testo" size 24 color "#c9a3a0"
-                                    elif stato == "aperto":
-                                        text "You left the conversation hanging." style "tel_testo" size 24 color "#c9a3a0"
-                                    elif stato == "vuoto":
-                                        text "Nothing new to say... yet." style "tel_testo" size 24 color "#7d6870"
-                                if stato == "attesa":
-                                    textbutton "Nudge" xalign 1.0 yalign 0.5 action Return(("sollecita", k))
-                                elif stato != "vuoto":
-                                    textbutton "Write" xalign 1.0 yalign 0.5 action Return(("scrivi", k))
-            textbutton "Put the phone down" xalign 0.5 action Return(None)
+                            for k in contatti():
+                                $ stato = telefono_minuti_stato(k) if telefono_minuti_attivo() else stato_contatto(k)
+                                $ attesa = coda_chat.get(k)
+                                button:
+                                    xfill True
+                                    ysize 105
+                                    padding (10, 9)
+                                    background Solid("#35252f")
+                                    hover_background Solid("#503749")
+                                    insensitive_background Solid("#292029")
+                                    if stato == "risposta":
+                                        action Return(("leggi", k))
+                                    elif stato == "attesa" and not telefono_minuti_attivo():
+                                        action Return(("sollecita", k))
+                                    elif stato in ("nuovo", "aperto"):
+                                        action Return(("scrivi", k))
+                                    else:
+                                        sensitive False
+                                    hbox:
+                                        spacing 15
+                                        yalign 0.5
+                                        add Transform("images/ui/telefono/" + k + ".webp", xysize=(76, 76))
+                                        vbox:
+                                            xsize 220
+                                            yalign 0.5
+                                            spacing 3
+                                            text nome_percorso(percorso(k)) style "tel_testo" size 29 color ("#f3e6ea" if stato != "vuoto" else "#b8a8b1")
+                                            if stato == "risposta":
+                                                text "New reply" style "tel_testo" size 21 color "#ffb3c1"
+                                            elif stato == "rinviata":
+                                                text ("Unread · %d min needed" % telefono_minuti_inbox[k]["bolle"]) style "tel_testo" size 21 color "#ffb3c1"
+                                            elif stato == "contesto":
+                                                text "Unavailable right now" style "tel_testo" size 21 color "#b8a8b1"
+                                            elif stato == "attesa":
+                                                text ("Read" if (attesa and attesa["letto"]) or k == "daniel" else "Delivered") style "tel_testo" size 21 color "#dbc4cc"
+                                            elif stato == "aperto":
+                                                text "Chat paused" style "tel_testo" size 21 color "#dbc4cc"
+                                            elif stato == "vuoto":
+                                                text "No new topics" style "tel_testo" size 21 color "#b8a8b1"
+                                        if stato == "risposta":
+                                            text "Read ›" style "tel_testo" size 21 color "#ffb3c1" yalign 0.5
+                                        elif stato == "attesa" and not telefono_minuti_attivo():
+                                            text "Nudge ›" style "tel_testo" size 21 color "#dbc4cc" yalign 0.5
+                                        elif stato in ("nuovo", "aperto"):
+                                            text "›" style "tel_testo" size 29 color "#dbc4cc" yalign 0.5
+            if telefono_minuti_attivo():
+                hbox:
+                    spacing 32
+                    xalign 0.5
+                    textbutton "Wait" action Return(("aspetta", None))
+                    textbutton telefono_minuti_uscita action Return(("chiudi", None))
+            else:
+                textbutton "Put the phone down" xalign 0.5 action Return(("chiudi", None))
 
 ## La chat aperta: bolle di Sara a destra, dell'altro a sinistra.
 ## Quando arriva un messaggio e la chat si allunga, scorre da sola all'ultimo
@@ -580,7 +644,12 @@ screen telefono_chat(k):
         background Solid("#1b1117f2")
         vbox:
             spacing 14
-            text nome_mittente(k) style "tel_testo" size 38 color "#ffb3c1" xalign 0.5
+            hbox:
+                spacing 18
+                xalign 0.5
+                text nome_mittente(k) style "tel_testo" size 38 color "#ffb3c1"
+                if telefono_minuti_attivo():
+                    text telefono_orario(telefono_minuti_ora) style "tel_testo" size 22 yalign 0.5
             viewport:
                 ysize 800
                 yinitial 1.0
@@ -589,24 +658,19 @@ screen telefono_chat(k):
                 vbox:
                     spacing 10
                     xfill True
-                    for chi, testo in chat_log.get(k, [])[-30:]:
-                        if chi == "sara":
-                            frame:
-                                xalign 1.0
-                                xmaximum 400
-                                padding (18, 10)
-                                background Solid("#7a2e45")
+                    for messaggio in chat_log.get(k, [])[-30:]:
+                        $ chi, testo = messaggio[:2]
+                        frame:
+                            xalign (1.0 if chi == "sara" else 0.0)
+                            xmaximum 400
+                            padding (18, 10)
+                            background Solid("#7a2e45" if chi == "sara" else "#352a31")
+                            vbox:
+                                if chi == "josh" and k != "josh":
+                                    text nome_mittente(chi) style "tel_testo" size 20 color "#8fb3e0"
                                 text testo style "tel_testo" size 28
-                        else:
-                            frame:
-                                xalign 0.0
-                                xmaximum 400
-                                padding (18, 10)
-                                background Solid("#352a31")
-                                vbox:
-                                    if chi == "josh" and k != "josh":
-                                        text nome_mittente(chi) style "tel_testo" size 20 color "#8fb3e0"
-                                    text testo style "tel_testo" size 28
+                                if len(messaggio) > 2 and renpy.loadable(messaggio[2]):
+                                    add Transform(messaggio[2], xysize=(364, 208), fit="contain")
             $ attesa = coda_chat.get(k)
             if attesa and attesa["letto"]:
                 text "Read" style "tel_testo" size 22 color "#c9a3a0" xalign 1.0

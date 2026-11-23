@@ -24,7 +24,7 @@ define gui.show_name = False  # il titolo è disegnato in gui/main_menu.png
 
 ## La versione del gioco.
 
-define config.version = "0.1.0-dev"
+define config.version = "0.1.0"
 
 
 ## Testo che viene inserito nella schermata informazioni del gioco. Inserisci il
@@ -191,6 +191,19 @@ init python:
     build.classify('**/.**', None)
     build.classify('**/#**', None)
     build.classify('**/thumbs.db', None)
+    build.classify('dist/**', None)
+    build.classify('docs/**', None)
+    build.classify('notes/**', None)
+    build.classify('riferimenti/**', None)
+    build.classify('tests/**', None)
+    build.classify('tools/**', None)
+    build.classify('AGENTS.md', None)
+    build.classify('CLAUDE.md', None)
+    build.classify('README.md', None)
+    build.classify('game/saves/**', None)
+    build.classify('game/test/**', None)
+    build.classify('game/core/debug.rpy*', None)
+    build.classify('game/**.rpy', None)
 
     ## Per archiviare i file, classificali come 'archive'.
 

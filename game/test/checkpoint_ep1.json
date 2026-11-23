@@ -1,0 +1,2553 @@
+{
+  "giorni": {
+    "10": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {
+        "amica": [
+          [
+            "amica",
+            "The gym posted this. For science. You're welcome.",
+            "images/cg/ep1/d9_02b_foto_simon.webp"
+          ],
+          [
+            "amica",
+            "Well??"
+          ],
+          [
+            "sara",
+            "I'm WORKING, Jo."
+          ]
+        ],
+        "josh": [
+          [
+            "josh",
+            "Survived the morning?"
+          ],
+          [
+            "josh",
+            "I've been thinking about last night. All morning. Sorry about Daniel. And about the car."
+          ],
+          [
+            "sara",
+            "You have nothing to be sorry for. He's the idiot."
+          ],
+          [
+            "josh",
+            "Pompous, insecure bully in a nice suit. I wrote it on a post-it. It's in my drawer."
+          ],
+          [
+            "josh",
+            "Speaking of Daniel. Guess who has to redo the quarterly spreadsheet. Third time."
+          ],
+          [
+            "sara",
+            "Make it the most beautiful spreadsheet he's ever seen. Colour-coded. With a little heart in cell A1."
+          ],
+          [
+            "josh",
+            "A heart in A1. Career suicide. Worth it."
+          ],
+          [
+            "josh",
+            "Pizza tonight? Or do you have drinks with the girls?"
+          ],
+          [
+            "sara",
+            "Drinks with the girls. I promised Jessica on Monday."
+          ],
+          [
+            "josh",
+            "Have fun. Don't let your boss make you drink anything green."
+          ],
+          [
+            "josh",
+            "Love you!"
+          ],
+          [
+            "sara",
+            "Love you more!"
+          ]
+        ]
+      },
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true,
+        "ep1_d4_drink_barbara": true,
+        "ep1_d5_film_josh": true,
+        "ep1_d5_howard_minuto": true,
+        "ep1_d6_balla_josh": true,
+        "ep1_d6_vestito_sobrio": true,
+        "ep1_d7_iniziativa": true,
+        "ep1_d7_josh_precoce": true,
+        "ep1_d7_scrive": true,
+        "ep1_d9_zoom_simon": true,
+        "ep1_howard_caffe": "si",
+        "ep1_palestra_da_sola": true,
+        "simon_numero": true
+      },
+      "freno": {},
+      "giorno": 9,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 1,
+      "in_retroscena": false,
+      "interest_josh": 97,
+      "josh_suspicion": 0,
+      "luogo_corrente": "Home — 9:20 p.m.",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [
+            "[nome_compagno]'s best friend since school. Loud, kind, almost family."
+          ],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [
+            "Jessica and Roberta wear the same little gold heart. «You get one when you belong.»"
+          ],
+          "sai_tu": [
+            "At the drinks Barbara and Jessica exchanged a look about Sara: «not yet»."
+          ],
+          "tappa": 1
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening.",
+            "Arrogant in daylight too. He never misses a chance."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself.",
+            "Daniel humiliates [nome_compagno] above all when Sara is there to see it."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 7,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [
+            "The neighbour. A bit odd. Lonely, but kind.",
+            "He helped with the shopping. Lonely, a bit clumsy, a good heart.",
+            "A lonely man. She feels enormously tender towards him."
+          ],
+          "sai_tu": [
+            "He stole a piece of Sara's underwear from the clothes horse in the hall.",
+            "He also stole Sara's house keys, the ring with the silver pen, from the bowl by the door.",
+            "He knows the couple's timetable: he knew Sara would come home alone on Tuesday, with no keys.",
+            "The crying was fake: he wanted Sara's compassion."
+          ],
+          "tappa": 3
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 7,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage.",
+            "Outside the gym he's spontaneous and funny. A different man.",
+            "Funny. Kind. Remembers everything. End of story."
+          ],
+          "sai_tu": [],
+          "tappa": 3
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico",
+        "simon"
+      ],
+      "sara_confidence": 28,
+      "sara_corruption": 1,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "11": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {
+        "amica": [
+          [
+            "amica",
+            "The gym posted this. For science. You're welcome.",
+            "images/cg/ep1/d9_02b_foto_simon.webp"
+          ],
+          [
+            "amica",
+            "Well??"
+          ],
+          [
+            "sara",
+            "I'm WORKING, Jo."
+          ]
+        ],
+        "josh": [
+          [
+            "josh",
+            "Survived the morning?"
+          ],
+          [
+            "josh",
+            "I've been thinking about last night. All morning. Sorry about Daniel. And about the car."
+          ],
+          [
+            "sara",
+            "You have nothing to be sorry for. He's the idiot."
+          ],
+          [
+            "josh",
+            "Pompous, insecure bully in a nice suit. I wrote it on a post-it. It's in my drawer."
+          ],
+          [
+            "josh",
+            "Speaking of Daniel. Guess who has to redo the quarterly spreadsheet. Third time."
+          ],
+          [
+            "sara",
+            "Make it the most beautiful spreadsheet he's ever seen. Colour-coded. With a little heart in cell A1."
+          ],
+          [
+            "josh",
+            "A heart in A1. Career suicide. Worth it."
+          ],
+          [
+            "josh",
+            "Pizza tonight? Or do you have drinks with the girls?"
+          ],
+          [
+            "sara",
+            "Drinks with the girls. I promised Jessica on Monday."
+          ],
+          [
+            "josh",
+            "Have fun. Don't let your boss make you drink anything green."
+          ],
+          [
+            "josh",
+            "Love you!"
+          ],
+          [
+            "sara",
+            "Love you more!"
+          ]
+        ]
+      },
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d10_jessica_chiesto": true,
+        "ep1_d10_racconta_howard": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true,
+        "ep1_d4_drink_barbara": true,
+        "ep1_d5_film_josh": true,
+        "ep1_d5_howard_minuto": true,
+        "ep1_d6_balla_josh": true,
+        "ep1_d6_vestito_sobrio": true,
+        "ep1_d7_iniziativa": true,
+        "ep1_d7_josh_precoce": true,
+        "ep1_d7_scrive": true,
+        "ep1_d9_zoom_simon": true,
+        "ep1_howard_caffe": "si",
+        "ep1_palestra_da_sola": true,
+        "simon_numero": true
+      },
+      "freno": {},
+      "giorno": 10,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 1,
+      "in_retroscena": false,
+      "interest_josh": 98,
+      "josh_suspicion": 0,
+      "luogo_corrente": "The bedroom — 11:50 p.m.",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [
+            "[nome_compagno]'s best friend since school. Loud, kind, almost family."
+          ],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [
+            "Jessica and Roberta wear the same little gold heart. «You get one when you belong.»",
+            "Jessica is giving away all her books, even Anna Karenina. «That was the old Jessica. I'm so much better now.»"
+          ],
+          "sai_tu": [
+            "At the drinks Barbara and Jessica exchanged a look about Sara: «not yet»."
+          ],
+          "tappa": 1
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening.",
+            "Arrogant in daylight too. He never misses a chance."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself.",
+            "Daniel humiliates [nome_compagno] above all when Sara is there to see it."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 7,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [
+            "The neighbour. A bit odd. Lonely, but kind.",
+            "He helped with the shopping. Lonely, a bit clumsy, a good heart.",
+            "A lonely man. She feels enormously tender towards him."
+          ],
+          "sai_tu": [
+            "He stole a piece of Sara's underwear from the clothes horse in the hall.",
+            "He also stole Sara's house keys, the ring with the silver pen, from the bowl by the door.",
+            "He knows the couple's timetable: he knew Sara would come home alone on Tuesday, with no keys.",
+            "The crying was fake: he wanted Sara's compassion."
+          ],
+          "tappa": 3
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 7,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage.",
+            "Outside the gym he's spontaneous and funny. A different man.",
+            "Funny. Kind. Remembers everything. End of story."
+          ],
+          "sai_tu": [],
+          "tappa": 3
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico",
+        "simon"
+      ],
+      "sara_confidence": 28,
+      "sara_corruption": 1,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "12": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {
+        "amica": [
+          [
+            "amica",
+            "The gym posted this. For science. You're welcome.",
+            "images/cg/ep1/d9_02b_foto_simon.webp"
+          ],
+          [
+            "amica",
+            "Well??"
+          ],
+          [
+            "sara",
+            "I'm WORKING, Jo."
+          ]
+        ],
+        "josh": [
+          [
+            "josh",
+            "Survived the morning?"
+          ],
+          [
+            "josh",
+            "I've been thinking about last night. All morning. Sorry about Daniel. And about the car."
+          ],
+          [
+            "sara",
+            "You have nothing to be sorry for. He's the idiot."
+          ],
+          [
+            "josh",
+            "Pompous, insecure bully in a nice suit. I wrote it on a post-it. It's in my drawer."
+          ],
+          [
+            "josh",
+            "Speaking of Daniel. Guess who has to redo the quarterly spreadsheet. Third time."
+          ],
+          [
+            "sara",
+            "Make it the most beautiful spreadsheet he's ever seen. Colour-coded. With a little heart in cell A1."
+          ],
+          [
+            "josh",
+            "A heart in A1. Career suicide. Worth it."
+          ],
+          [
+            "josh",
+            "Pizza tonight? Or do you have drinks with the girls?"
+          ],
+          [
+            "sara",
+            "Drinks with the girls. I promised Jessica on Monday."
+          ],
+          [
+            "josh",
+            "Have fun. Don't let your boss make you drink anything green."
+          ],
+          [
+            "josh",
+            "Love you!"
+          ],
+          [
+            "sara",
+            "Love you more!"
+          ]
+        ]
+      },
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d10_jessica_chiesto": true,
+        "ep1_d10_racconta_howard": true,
+        "ep1_d11_numero_howard": true,
+        "ep1_d11_pranzo_roberta": true,
+        "ep1_d11_stretta": true,
+        "ep1_d11_visita": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true,
+        "ep1_d4_drink_barbara": true,
+        "ep1_d5_film_josh": true,
+        "ep1_d5_howard_minuto": true,
+        "ep1_d6_balla_josh": true,
+        "ep1_d6_vestito_sobrio": true,
+        "ep1_d7_iniziativa": true,
+        "ep1_d7_josh_precoce": true,
+        "ep1_d7_scrive": true,
+        "ep1_d9_zoom_simon": true,
+        "ep1_howard_caffe": "si",
+        "ep1_palestra_da_sola": true,
+        "simon_numero": true
+      },
+      "freno": {},
+      "giorno": 11,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 2,
+      "in_retroscena": false,
+      "interest_josh": 98,
+      "josh_suspicion": 0,
+      "luogo_corrente": "",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [
+            "[nome_compagno]'s best friend since school. Loud, kind, almost family."
+          ],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [
+            "Jessica and Roberta wear the same little gold heart. «You get one when you belong.»",
+            "Jessica is giving away all her books, even Anna Karenina. «That was the old Jessica. I'm so much better now.»",
+            "Roberta: «She reads everything you write. She has a folder.»"
+          ],
+          "sai_tu": [
+            "At the drinks Barbara and Jessica exchanged a look about Sara: «not yet»."
+          ],
+          "tappa": 1
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening.",
+            "Arrogant in daylight too. He never misses a chance."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself.",
+            "Daniel humiliates [nome_compagno] above all when Sara is there to see it."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 10,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [
+            "The neighbour. A bit odd. Lonely, but kind.",
+            "He helped with the shopping. Lonely, a bit clumsy, a good heart.",
+            "A lonely man. She feels enormously tender towards him.",
+            "He found the keys. Kind, clumsy, a little too attentive.",
+            "Coffee at his flat. He'd tidied up for me, and bought new cups. He listened to my novel."
+          ],
+          "sai_tu": [
+            "He stole a piece of Sara's underwear from the clothes horse in the hall.",
+            "He also stole Sara's house keys, the ring with the silver pen, from the bowl by the door.",
+            "He knows the couple's timetable: he knew Sara would come home alone on Tuesday, with no keys.",
+            "The crying was fake: he wanted Sara's compassion.",
+            "He kept the cup Sara drank from, unwashed.",
+            "He gave Sara her keys back, but first he had a copy made. He keeps it in his bedside drawer, on her pink lace."
+          ],
+          "tappa": 3
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 7,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage.",
+            "Outside the gym he's spontaneous and funny. A different man.",
+            "Funny. Kind. Remembers everything. End of story."
+          ],
+          "sai_tu": [],
+          "tappa": 3
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico",
+        "simon",
+        "howard"
+      ],
+      "sara_confidence": 28,
+      "sara_corruption": 1,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "13": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {
+        "amica": [
+          [
+            "amica",
+            "The gym posted this. For science. You're welcome.",
+            "images/cg/ep1/d9_02b_foto_simon.webp"
+          ],
+          [
+            "amica",
+            "Well??"
+          ],
+          [
+            "sara",
+            "I'm WORKING, Jo."
+          ]
+        ],
+        "josh": [
+          [
+            "josh",
+            "Survived the morning?"
+          ],
+          [
+            "josh",
+            "I've been thinking about last night. All morning. Sorry about Daniel. And about the car."
+          ],
+          [
+            "sara",
+            "You have nothing to be sorry for. He's the idiot."
+          ],
+          [
+            "josh",
+            "Pompous, insecure bully in a nice suit. I wrote it on a post-it. It's in my drawer."
+          ],
+          [
+            "josh",
+            "Speaking of Daniel. Guess who has to redo the quarterly spreadsheet. Third time."
+          ],
+          [
+            "sara",
+            "Make it the most beautiful spreadsheet he's ever seen. Colour-coded. With a little heart in cell A1."
+          ],
+          [
+            "josh",
+            "A heart in A1. Career suicide. Worth it."
+          ],
+          [
+            "josh",
+            "Pizza tonight? Or do you have drinks with the girls?"
+          ],
+          [
+            "sara",
+            "Drinks with the girls. I promised Jessica on Monday."
+          ],
+          [
+            "josh",
+            "Have fun. Don't let your boss make you drink anything green."
+          ],
+          [
+            "josh",
+            "Love you!"
+          ],
+          [
+            "sara",
+            "Love you more!"
+          ]
+        ]
+      },
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d10_jessica_chiesto": true,
+        "ep1_d10_racconta_howard": true,
+        "ep1_d11_numero_howard": true,
+        "ep1_d11_pranzo_roberta": true,
+        "ep1_d11_stretta": true,
+        "ep1_d11_visita": true,
+        "ep1_d12_consiglio_joanie": true,
+        "ep1_d12_parla_simon": true,
+        "ep1_d12_primo_josh": true,
+        "ep1_d12_ride_battuta": true,
+        "ep1_d12_scaletta": true,
+        "ep1_d12_visita": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true,
+        "ep1_d4_drink_barbara": true,
+        "ep1_d5_film_josh": true,
+        "ep1_d5_howard_minuto": true,
+        "ep1_d6_balla_josh": true,
+        "ep1_d6_vestito_sobrio": true,
+        "ep1_d7_iniziativa": true,
+        "ep1_d7_josh_precoce": true,
+        "ep1_d7_scrive": true,
+        "ep1_d9_zoom_simon": true,
+        "ep1_howard_caffe": "si",
+        "ep1_palestra_da_sola": true,
+        "simon_numero": true
+      },
+      "freno": {},
+      "giorno": 12,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 3,
+      "in_retroscena": false,
+      "interest_josh": 99,
+      "josh_suspicion": 0,
+      "luogo_corrente": "Home — 10:40 p.m.",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "11",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 3,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [
+            "[nome_compagno]'s best friend since school. Loud, kind, almost family."
+          ],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [
+            "Jessica and Roberta wear the same little gold heart. «You get one when you belong.»",
+            "Jessica is giving away all her books, even Anna Karenina. «That was the old Jessica. I'm so much better now.»",
+            "Roberta: «She reads everything you write. She has a folder.»",
+            "My first real piece came out. Barbara left a note on it: she liked it, and she'll never say so out loud."
+          ],
+          "sai_tu": [
+            "At the drinks Barbara and Jessica exchanged a look about Sara: «not yet»."
+          ],
+          "tappa": 1
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening.",
+            "Arrogant in daylight too. He never misses a chance."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself.",
+            "Daniel humiliates [nome_compagno] above all when Sara is there to see it."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 11,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [
+            "The neighbour. A bit odd. Lonely, but kind.",
+            "He helped with the shopping. Lonely, a bit clumsy, a good heart.",
+            "A lonely man. She feels enormously tender towards him.",
+            "He found the keys. Kind, clumsy, a little too attentive.",
+            "Coffee at his flat. He'd tidied up for me, and bought new cups. He listened to my novel.",
+            "I changed his light bulb. From the bottom of the ladder he made a joke about my... about me. Out loud."
+          ],
+          "sai_tu": [
+            "He stole a piece of Sara's underwear from the clothes horse in the hall.",
+            "He also stole Sara's house keys, the ring with the silver pen, from the bowl by the door.",
+            "He knows the couple's timetable: he knew Sara would come home alone on Tuesday, with no keys.",
+            "The crying was fake: he wanted Sara's compassion.",
+            "He kept the cup Sara drank from, unwashed.",
+            "He gave Sara her keys back, but first he had a copy made. He keeps it in his bedside drawer, on her pink lace.",
+            "He keeps Sara's article in his drawer, with the key and the pink lace."
+          ],
+          "tappa": 3
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 8,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage.",
+            "Outside the gym he's spontaneous and funny. A different man.",
+            "Funny. Kind. Remembers everything. End of story.",
+            "I told Joanie about Simon. She knew already, before I said a word."
+          ],
+          "sai_tu": [],
+          "tappa": 3
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico",
+        "simon",
+        "howard"
+      ],
+      "sara_confidence": 28,
+      "sara_corruption": 3,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "2": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {},
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true
+      },
+      "freno": {},
+      "giorno": 1,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 0,
+      "in_retroscena": false,
+      "interest_josh": 84,
+      "josh_suspicion": 0,
+      "luogo_corrente": "Home — night",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 0,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico"
+      ],
+      "sara_confidence": 20,
+      "sara_corruption": 0,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "3": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {},
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true
+      },
+      "freno": {},
+      "giorno": 2,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 0,
+      "in_retroscena": false,
+      "interest_josh": 85,
+      "josh_suspicion": 0,
+      "luogo_corrente": "Home — evening",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 0,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage."
+          ],
+          "sai_tu": [],
+          "tappa": 1
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico"
+      ],
+      "sara_confidence": 20,
+      "sara_corruption": 0,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "4": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {},
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true
+      },
+      "freno": {},
+      "giorno": 3,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 0,
+      "in_retroscena": false,
+      "interest_josh": 88,
+      "josh_suspicion": 0,
+      "luogo_corrente": "In the car — night",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 0,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage."
+          ],
+          "sai_tu": [],
+          "tappa": 1
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico"
+      ],
+      "sara_confidence": 21,
+      "sara_corruption": 0,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "5": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {
+        "josh": [
+          [
+            "josh",
+            "Survived the morning?"
+          ],
+          [
+            "josh",
+            "I've been thinking about last night. All morning. Sorry about Daniel. And about the car."
+          ],
+          [
+            "sara",
+            "You have nothing to be sorry for. He's the idiot."
+          ],
+          [
+            "josh",
+            "Pompous, insecure bully in a nice suit. I wrote it on a post-it. It's in my drawer."
+          ],
+          [
+            "josh",
+            "Speaking of Daniel. Guess who has to redo the quarterly spreadsheet. Third time."
+          ],
+          [
+            "sara",
+            "Make it the most beautiful spreadsheet he's ever seen. Colour-coded. With a little heart in cell A1."
+          ],
+          [
+            "josh",
+            "A heart in A1. Career suicide. Worth it."
+          ],
+          [
+            "josh",
+            "Pizza tonight? Or do you have drinks with the girls?"
+          ],
+          [
+            "sara",
+            "Drinks with the girls. I promised Jessica on Monday."
+          ],
+          [
+            "josh",
+            "Have fun. Don't let your boss make you drink anything green."
+          ],
+          [
+            "josh",
+            "Love you!"
+          ],
+          [
+            "sara",
+            "Love you more!"
+          ]
+        ]
+      },
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true,
+        "ep1_d4_drink_barbara": true
+      },
+      "freno": {},
+      "giorno": 4,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 0,
+      "in_retroscena": false,
+      "interest_josh": 90,
+      "josh_suspicion": 0,
+      "luogo_corrente": "Home — night",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [
+            "Jessica and Roberta wear the same little gold heart. «You get one when you belong.»"
+          ],
+          "sai_tu": [
+            "At the drinks Barbara and Jessica exchanged a look about Sara: «not yet»."
+          ],
+          "tappa": 1
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage."
+          ],
+          "sai_tu": [],
+          "tappa": 1
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico"
+      ],
+      "sara_confidence": 21,
+      "sara_corruption": 0,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "6": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {
+        "josh": [
+          [
+            "josh",
+            "Survived the morning?"
+          ],
+          [
+            "josh",
+            "I've been thinking about last night. All morning. Sorry about Daniel. And about the car."
+          ],
+          [
+            "sara",
+            "You have nothing to be sorry for. He's the idiot."
+          ],
+          [
+            "josh",
+            "Pompous, insecure bully in a nice suit. I wrote it on a post-it. It's in my drawer."
+          ],
+          [
+            "josh",
+            "Speaking of Daniel. Guess who has to redo the quarterly spreadsheet. Third time."
+          ],
+          [
+            "sara",
+            "Make it the most beautiful spreadsheet he's ever seen. Colour-coded. With a little heart in cell A1."
+          ],
+          [
+            "josh",
+            "A heart in A1. Career suicide. Worth it."
+          ],
+          [
+            "josh",
+            "Pizza tonight? Or do you have drinks with the girls?"
+          ],
+          [
+            "sara",
+            "Drinks with the girls. I promised Jessica on Monday."
+          ],
+          [
+            "josh",
+            "Have fun. Don't let your boss make you drink anything green."
+          ],
+          [
+            "josh",
+            "Love you!"
+          ],
+          [
+            "sara",
+            "Love you more!"
+          ]
+        ]
+      },
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true,
+        "ep1_d4_drink_barbara": true,
+        "ep1_d5_film_josh": true,
+        "ep1_d5_howard_minuto": true
+      },
+      "freno": {},
+      "giorno": 5,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 0,
+      "in_retroscena": false,
+      "interest_josh": 92,
+      "josh_suspicion": 0,
+      "luogo_corrente": "Home — 7:40 p.m.",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [
+            "Jessica and Roberta wear the same little gold heart. «You get one when you belong.»"
+          ],
+          "sai_tu": [
+            "At the drinks Barbara and Jessica exchanged a look about Sara: «not yet»."
+          ],
+          "tappa": 1
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening.",
+            "Arrogant in daylight too. He never misses a chance."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself.",
+            "Daniel humiliates [nome_compagno] above all when Sara is there to see it."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 2,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [
+            "The neighbour. A bit odd. Lonely, but kind."
+          ],
+          "sai_tu": [],
+          "tappa": 1
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage."
+          ],
+          "sai_tu": [],
+          "tappa": 1
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico"
+      ],
+      "sara_confidence": 21,
+      "sara_corruption": 0,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "7": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {
+        "josh": [
+          [
+            "josh",
+            "Survived the morning?"
+          ],
+          [
+            "josh",
+            "I've been thinking about last night. All morning. Sorry about Daniel. And about the car."
+          ],
+          [
+            "sara",
+            "You have nothing to be sorry for. He's the idiot."
+          ],
+          [
+            "josh",
+            "Pompous, insecure bully in a nice suit. I wrote it on a post-it. It's in my drawer."
+          ],
+          [
+            "josh",
+            "Speaking of Daniel. Guess who has to redo the quarterly spreadsheet. Third time."
+          ],
+          [
+            "sara",
+            "Make it the most beautiful spreadsheet he's ever seen. Colour-coded. With a little heart in cell A1."
+          ],
+          [
+            "josh",
+            "A heart in A1. Career suicide. Worth it."
+          ],
+          [
+            "josh",
+            "Pizza tonight? Or do you have drinks with the girls?"
+          ],
+          [
+            "sara",
+            "Drinks with the girls. I promised Jessica on Monday."
+          ],
+          [
+            "josh",
+            "Have fun. Don't let your boss make you drink anything green."
+          ],
+          [
+            "josh",
+            "Love you!"
+          ],
+          [
+            "sara",
+            "Love you more!"
+          ]
+        ]
+      },
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true,
+        "ep1_d4_drink_barbara": true,
+        "ep1_d5_film_josh": true,
+        "ep1_d5_howard_minuto": true,
+        "ep1_d6_balla_josh": true,
+        "ep1_d6_vestito_sobrio": true
+      },
+      "freno": {},
+      "giorno": 6,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 0,
+      "in_retroscena": false,
+      "interest_josh": 94,
+      "josh_suspicion": 0,
+      "luogo_corrente": "The landing — 1:40 a.m.",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [
+            "Jessica and Roberta wear the same little gold heart. «You get one when you belong.»"
+          ],
+          "sai_tu": [
+            "At the drinks Barbara and Jessica exchanged a look about Sara: «not yet»."
+          ],
+          "tappa": 1
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening.",
+            "Arrogant in daylight too. He never misses a chance."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself.",
+            "Daniel humiliates [nome_compagno] above all when Sara is there to see it."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [
+            "The neighbour. A bit odd. Lonely, but kind.",
+            "He helped with the shopping. Lonely, a bit clumsy, a good heart."
+          ],
+          "sai_tu": [
+            "He stole a piece of Sara's underwear from the clothes horse in the hall.",
+            "He also stole Sara's house keys, the ring with the silver pen, from the bowl by the door."
+          ],
+          "tappa": 2
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage.",
+            "Outside the gym he's spontaneous and funny. A different man."
+          ],
+          "sai_tu": [],
+          "tappa": 2
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico"
+      ],
+      "sara_confidence": 21,
+      "sara_corruption": 0,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "8": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {
+        "josh": [
+          [
+            "josh",
+            "Survived the morning?"
+          ],
+          [
+            "josh",
+            "I've been thinking about last night. All morning. Sorry about Daniel. And about the car."
+          ],
+          [
+            "sara",
+            "You have nothing to be sorry for. He's the idiot."
+          ],
+          [
+            "josh",
+            "Pompous, insecure bully in a nice suit. I wrote it on a post-it. It's in my drawer."
+          ],
+          [
+            "josh",
+            "Speaking of Daniel. Guess who has to redo the quarterly spreadsheet. Third time."
+          ],
+          [
+            "sara",
+            "Make it the most beautiful spreadsheet he's ever seen. Colour-coded. With a little heart in cell A1."
+          ],
+          [
+            "josh",
+            "A heart in A1. Career suicide. Worth it."
+          ],
+          [
+            "josh",
+            "Pizza tonight? Or do you have drinks with the girls?"
+          ],
+          [
+            "sara",
+            "Drinks with the girls. I promised Jessica on Monday."
+          ],
+          [
+            "josh",
+            "Have fun. Don't let your boss make you drink anything green."
+          ],
+          [
+            "josh",
+            "Love you!"
+          ],
+          [
+            "sara",
+            "Love you more!"
+          ]
+        ]
+      },
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true,
+        "ep1_d4_drink_barbara": true,
+        "ep1_d5_film_josh": true,
+        "ep1_d5_howard_minuto": true,
+        "ep1_d6_balla_josh": true,
+        "ep1_d6_vestito_sobrio": true,
+        "ep1_d7_iniziativa": true,
+        "ep1_d7_josh_precoce": true,
+        "ep1_d7_scrive": true
+      },
+      "freno": {},
+      "giorno": 7,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 0,
+      "in_retroscena": false,
+      "interest_josh": 96,
+      "josh_suspicion": 0,
+      "luogo_corrente": "The bedroom — 11:15 p.m.",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [
+            "[nome_compagno]'s best friend since school. Loud, kind, almost family."
+          ],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [
+            "Jessica and Roberta wear the same little gold heart. «You get one when you belong.»"
+          ],
+          "sai_tu": [
+            "At the drinks Barbara and Jessica exchanged a look about Sara: «not yet»."
+          ],
+          "tappa": 1
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening.",
+            "Arrogant in daylight too. He never misses a chance."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself.",
+            "Daniel humiliates [nome_compagno] above all when Sara is there to see it."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [
+            "The neighbour. A bit odd. Lonely, but kind.",
+            "He helped with the shopping. Lonely, a bit clumsy, a good heart."
+          ],
+          "sai_tu": [
+            "He stole a piece of Sara's underwear from the clothes horse in the hall.",
+            "He also stole Sara's house keys, the ring with the silver pen, from the bowl by the door."
+          ],
+          "tappa": 2
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage.",
+            "Outside the gym he's spontaneous and funny. A different man."
+          ],
+          "sai_tu": [],
+          "tappa": 2
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico"
+      ],
+      "sara_confidence": 24,
+      "sara_corruption": 0,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    },
+    "9": {
+      "_history": false,
+      "_history_list": [],
+      "_menu": true,
+      "_nvl_language": null,
+      "_version": "0.1.0-dev",
+      "abiti_visti": [],
+      "chat_aperta": null,
+      "chat_lasciate": [],
+      "chat_log": {
+        "josh": [
+          [
+            "josh",
+            "Survived the morning?"
+          ],
+          [
+            "josh",
+            "I've been thinking about last night. All morning. Sorry about Daniel. And about the car."
+          ],
+          [
+            "sara",
+            "You have nothing to be sorry for. He's the idiot."
+          ],
+          [
+            "josh",
+            "Pompous, insecure bully in a nice suit. I wrote it on a post-it. It's in my drawer."
+          ],
+          [
+            "josh",
+            "Speaking of Daniel. Guess who has to redo the quarterly spreadsheet. Third time."
+          ],
+          [
+            "sara",
+            "Make it the most beautiful spreadsheet he's ever seen. Colour-coded. With a little heart in cell A1."
+          ],
+          [
+            "josh",
+            "A heart in A1. Career suicide. Worth it."
+          ],
+          [
+            "josh",
+            "Pizza tonight? Or do you have drinks with the girls?"
+          ],
+          [
+            "sara",
+            "Drinks with the girls. I promised Jessica on Monday."
+          ],
+          [
+            "josh",
+            "Have fun. Don't let your boss make you drink anything green."
+          ],
+          [
+            "josh",
+            "Love you!"
+          ],
+          [
+            "sara",
+            "Love you more!"
+          ]
+        ]
+      },
+      "coda_chat": {},
+      "complesso_crocerossina": false,
+      "diario_pagina": "sara",
+      "discorsi_fatti": [],
+      "discorso_aperto": {},
+      "episodio": 1,
+      "fascia_corrente": 0,
+      "fatti": {
+        "ep1_aperitivo_accettato": true,
+        "ep1_d3_consola": true,
+        "ep1_d3_emma_daniel": true,
+        "ep1_d3_risposta_daniel": true,
+        "ep1_d3_sobrio": true,
+        "ep1_d4_drink_barbara": true,
+        "ep1_d5_film_josh": true,
+        "ep1_d5_howard_minuto": true,
+        "ep1_d6_balla_josh": true,
+        "ep1_d6_vestito_sobrio": true,
+        "ep1_d7_iniziativa": true,
+        "ep1_d7_josh_precoce": true,
+        "ep1_d7_scrive": true,
+        "ep1_palestra_da_sola": true,
+        "simon_numero": true
+      },
+      "freno": {},
+      "giorno": 8,
+      "giorno_entrata": -1,
+      "giorno_slot": -1,
+      "howard_abbraccio_prolungamenti": 0,
+      "howard_visite": 0,
+      "in_retroscena": false,
+      "interest_josh": 96,
+      "josh_suspicion": 0,
+      "luogo_corrente": "Home — 7:40 p.m.",
+      "nome_compagno": "Josh",
+      "pagina_articolo": "",
+      "passi_chat": {},
+      "percorsi": {
+        "amica": {
+          "chiave": "amica",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 1,
+          "nome": "Joanie",
+          "ruolo": "Your best friend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "amico": {
+          "chiave": "amico",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 0,
+          "nome": "Darius",
+          "ruolo": "Your partner's best friend",
+          "sa_sara": [
+            "[nome_compagno]'s best friend since school. Loud, kind, almost family."
+          ],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "capa": {
+          "chiave": "capa",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 1,
+          "nome": "Barbara",
+          "ruolo": "The newspaper's owner",
+          "sa_sara": [
+            "Jessica and Roberta wear the same little gold heart. «You get one when you belong.»"
+          ],
+          "sai_tu": [
+            "At the drinks Barbara and Jessica exchanged a look about Sara: «not yet»."
+          ],
+          "tappa": 1
+        },
+        "daniel": {
+          "chiave": "daniel",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Daniel",
+          "ruolo": "Your partner's boss",
+          "sa_sara": [
+            "An arrogant show-off. He humiliated [nome_compagno] all evening.",
+            "Arrogant in daylight too. He never misses a chance."
+          ],
+          "sai_tu": [
+            "At the dinner Daniel noticed Sara, and not as an employee's partner.",
+            "Daniel now knows that Sara is writing a novel.",
+            "The more Sara stands up to him, the more Daniel enjoys himself.",
+            "Daniel humiliates [nome_compagno] above all when Sara is there to see it."
+          ],
+          "tappa": 1
+        },
+        "editore": {
+          "chiave": "editore",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Magnus",
+          "ruolo": "The publisher",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "ex": {
+          "chiave": "ex",
+          "chiuso": false,
+          "incontrato": false,
+          "interest": 0,
+          "nome": "Jacob",
+          "ruolo": "Your ex-boyfriend",
+          "sa_sara": [],
+          "sai_tu": [],
+          "tappa": 0
+        },
+        "howard": {
+          "chiave": "howard",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 3,
+          "nome": "Howard",
+          "ruolo": "The neighbour",
+          "sa_sara": [
+            "The neighbour. A bit odd. Lonely, but kind.",
+            "He helped with the shopping. Lonely, a bit clumsy, a good heart."
+          ],
+          "sai_tu": [
+            "He stole a piece of Sara's underwear from the clothes horse in the hall.",
+            "He also stole Sara's house keys, the ring with the silver pen, from the bowl by the door."
+          ],
+          "tappa": 2
+        },
+        "simon": {
+          "chiave": "simon",
+          "chiuso": false,
+          "incontrato": true,
+          "interest": 7,
+          "nome": "Simon",
+          "ruolo": "The personal trainer",
+          "sa_sara": [
+            "A good-looking guy. She admits it without a problem.",
+            "He was kind with Joanie, and he didn't take advantage.",
+            "Outside the gym he's spontaneous and funny. A different man.",
+            "Funny. Kind. Remembers everything. End of story."
+          ],
+          "sai_tu": [],
+          "tappa": 3
+        }
+      },
+      "quick_menu": true,
+      "rubrica": [
+        "amica",
+        "amico",
+        "simon"
+      ],
+      "sara_confidence": 28,
+      "sara_corruption": 0,
+      "segreti": {},
+      "segreti_trovati": [],
+      "telefono_libero": false,
+      "telefono_segnaposto": false,
+      "ultima_entrata": {},
+      "uscite": []
+    }
+  },
+  "strategia": "prima",
+  "versione": 1
+}

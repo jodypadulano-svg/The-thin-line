@@ -107,7 +107,10 @@ screen say(who, what):
                 style "namebox"
                 text who id "who"
 
-        text what id "what"
+        text what id "what":
+            if chat_aperta is not None:
+                ## Lascia il testo a sinistra del pannello della chat.
+                xsize min(gui.dialogue_width, 1290 - gui.dialogue_xpos)
 
 
     ## Se c'è una side image, mostrala sopra al testo. Non mostrarla nella

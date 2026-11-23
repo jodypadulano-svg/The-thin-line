@@ -90,7 +90,7 @@ Pochi e chiari, al massimo tre:
 - [ ] Episodio 1 completo: testo, immagini, audio, teaser dell'Episodio 2.
 - [ ] Episodio 2 almeno al giorno 20, con le immagini del teaser pronte.
 - [ ] Rilettura dell'inglese (meglio con 1-2 lettori di prova madrelingua o molto bravi).
-- [ ] Test completi (`tools/test.sh`) e una partita a mano per ogni percorso principale.
+- [ ] Test completi (`tools/test.sh --completo`) e una partita a mano per ogni percorso principale.
 - [ ] Build Windows, Mac, Android; peso dei file sotto controllo.
 - [ ] Salvataggi compatibili con l'Episodio 2 (vedi [sistema di gioco](sistema-di-gioco.md), sezione 8).
 - [ ] Avviso 18+ all'avvio del gioco; tutti i personaggi adulti.

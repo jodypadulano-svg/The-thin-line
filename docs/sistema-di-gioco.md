@@ -137,6 +137,12 @@ Sono cose che la bibbia lascia aperte e che il codice ha dovuto riempire per fun
 
 ## 9. Test
 
+Per una modifica locale si esegue solo la suite interessata. `tools/test.sh` senza argomenti mostra l'uso. `tools/test.sh --completo` esegue il giro di release, che include le simulazioni dell'intero episodio.
+
+La suite `checkpoint_ep1` genera `game/test/checkpoint_ep1.json` con un solo passaggio fino all'apertura del giorno 13, scegliendo sempre la prima opzione disponibile. Il giorno 1 usa i valori iniziali. La serie base copre lo stato prima dei giorni 2–13. Nei test mirati, `carica_checkpoint_ep1(giorno)` ripristina quello stato e restituisce la label della giornata. Una prova si ferma alla scena o alla giornata interessata. La serie base rappresenta una sola storia possibile. Le altre combinazioni si preparano solo quando il caso da verificare le richiede.
+
+La generazione si lancia esplicitamente con `tools/test.sh checkpoint_ep1`. Si rigenera la serie base quando cambia uno stato precedente da considerare nei test o cambia il formato dei checkpoint.
+
 Dalla cartella dell'SDK (`C:\Users\Jody\RenPy\renpy-8.5.3-sdk`):
 
 ```
