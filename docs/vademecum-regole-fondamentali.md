@@ -24,9 +24,46 @@ Le regole qui approvate **non sono suggerimenti facoltativi**. Una proposta dell
 
 **Formula operativa per le AI:** `Applica il vademecum. Se una tua proposta contraddice una regola, segnalala prima e attendi approvazione esplicita; se viene respinta, produci la versione conforme.`
 
+## Identificatori dei personaggi
+
+Le lettere identificano stabilmente i personaggi. Le regole anagrafiche approvate sono vincolanti; non attribuire dati mancanti.
+
+| Lettera | Personaggio |
+|---|---|
+| A | Sara |
+| B | Barbara |
+| C | Jessica |
+| D | Daniel |
+| E | Emma |
+| F | Josh |
+| G | Joanie |
+| H | Hugo |
+| I | Darius |
+| J | Jacob |
+| K | Mark |
+| L | Sally |
+| M | Magnus |
+| N | Samantha |
+| O | Howard |
+| P | Andrew |
+| Q | Slot libero |
+| R | Roberta |
+| S | Simon |
+| T–Z | Slot liberi |
+
+## A — Sara
+
+### A1 — Identità e dati anagrafici
+Sara si chiama **Sara Collins**, ha **22 anni**, è nata l'**11 novembre** ed è alta **165 cm**.
+
+## B — Barbara
+
+### B1 — Identità e dati anagrafici
+Barbara si chiama **Barbara Dupont**, ha **63 anni**, è nata il **1° luglio** ed è alta **172 cm**.
+
 ## Regole successive
 
-Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (es. `REGOLA_01`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
+Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
 
 ## Documenti collegati
 
