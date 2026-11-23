@@ -106,6 +106,11 @@ Jacob si chiama **Jacob Trevor**, ha **27 anni**, è nato il **19 novembre** ed 
 ### K1 — Identità e dati anagrafici
 Mark si chiama **Mark Andersson**, ha **24 anni**, è nato il **14 marzo** ed è alto **177 cm**.
 
+## L — Sally
+
+### L1 — Identità e dati anagrafici
+Sally si chiama **Sally Spencer**, ha **49 anni**, è nata l'**8 ottobre** ed è alta **164 cm**.
+
 ## Regole successive
 
 Le prossime regole fondamentali saranno definite con Jody una alla volta e inserite qui con un identificatore stabile (per esempio `A2`, `B2`, `C1`), la loro formulazione approvata e gli eventuali chiarimenti autorizzati. **Non anticipare, dedurre o creare altre regole vincolanti di propria iniziativa.**
