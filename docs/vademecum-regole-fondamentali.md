@@ -80,6 +80,9 @@ Jessica si chiama **Jessica Hummels**, ha **21 anni**, è nata il **19 giugno** 
 ### D1 — Identità e dati anagrafici
 Daniel si chiama **Daniel Blake**, ha **43 anni**, è nato il **7 novembre** ed è alto **182 cm**.
 
+### D2 — Sara come donna ideale di Daniel
+Per Daniel Blake, **Sara Collins è la donna più bella che abbia mai visto** e **rappresenta esattamente la sua donna ideale**. Questo è un tratto canonico della percezione e dell'attrazione di Daniel verso Sara, da rispettare nella caratterizzazione del personaggio.
+
 ## E — Emma
 
 ### E1 — Identità e dati anagrafici
