@@ -1,6 +1,7 @@
 # The Thin Line — Regole di lavoro
 
 **Da leggere sempre, all'inizio di ogni sessione di lavoro su The Thin Line.**
+**Vincolo preliminare per qualsiasi AI (Claude e GPT):** leggere e applicare il [vademecum delle regole fondamentali](vademecum-regole-fondamentali.md). La sua **Regola 0** impone di sottoporre a Jody qualsiasi deroga prima di scriverla definitivamente e di rispettare la regola vigente se la deroga viene rifiutata.
 **Per dialoghi, monologhi, scene, scelte e prompt, leggere obbligatoriamente anche la [visione artistica](visione-artistica.md): autonomia di Sara, felicità soggettiva in tutti i finali, non moralismo, slow burn e specificità dei percorsi.**
 Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude.
 
