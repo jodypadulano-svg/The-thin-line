@@ -65,6 +65,9 @@ Sara **sogna da sempre di diventare scrittrice** ed è **molto brava a scrivere*
 ### A4 — Corporatura e fascino del seno
 Sara è **magra** e ha **seni molto grandi**. Il suo seno è una caratteristica fisica estremamente evidente: **tutti lo notano** e, nell'universo narrativo di *The Thin Line*, **nessuno, comprese le donne, direbbe di aver visto seni più affascinanti**. Questi elementi sono vincoli canonici per le descrizioni e la rappresentazione del personaggio.
 
+### A5 — Prima relazione sentimentale con Jacob
+Prima di Josh, Sara Collins ha avuto **una sola relazione sentimentale**, con **Jacob Trevor**. Jacob è stato **il suo primo ragazzo**; la relazione è durata **quattro anni**. È stata **Sara a lasciarlo, perché Jacob la tradiva**. Questi eventi costituiscono il passato sentimentale canonico di Sara.
+
 ## B — Barbara
 
 ### B1 — Identità e dati anagrafici
