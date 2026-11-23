@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Finali degli otto percorsi — approvazione temporanea (23/11/2026)
+
+**Stato: tutti e otto accettati PROVVISORIAMENTE da Jody, da sviluppare; non implementati.** Destinazioni: **Howard** matrimonio con Sara; **Simon** aprono una palestra insieme; **Joanie** matrimonio con Sara; **Darius** Sara ha già un bambino piccolo ed è incinta del secondo; **Jacob** finale tragico, Sara resta single e non trova un nuovo rapporto soddisfacente; **Magnus** Sara è una scrittrice famosa e donna di carriera (può perfino restare con Josh, eventualmente suo marito, ma non è requisito); **Daniel** trasferimento all'estero insieme e rottura con la vecchia vita; **Barbara** Sara assume un'immagine e un carattere da cougar simile a Barbara, abiti glamour/rosa, fumo e atteggiamento da seduttrice. **Non tutti i finali richiedono matrimonio.** La conclusione di Jacob è in potenziale tensione con la regola di felicità soggettiva del manifesto creativo: non risolverla senza revisione con Jody. Tempistiche, condizioni e scene finali da stabilire. **[Documento permanente con le otto proposte e le questioni aperte](narrative/finali-otto-percorsi-2026-11-23.md).**
+
 ### Giorno 17 · Foto per il sito, makeover di Barbara e gioco al bar (23/11/2026)
 
 **Stato: decisione approvata, da sceneggiare e implementare nell'Episodio 2.** Il giorno 17 l'ufficio ha un fotografo incaricato degli **scatti delle dipendenti per il sito del giornale**, fissati **subito dopo pranzo (orientativamente alle 14)**. Sara si è dimenticata dell'appuntamento. **In mattinata** Barbara la riprende in modo lieve e le propone di andare nel suo ufficio, dove pensa lei a prepararla.
