@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Regola 0 del vademecum — nessuna deroga autonoma dell'AI (23/11/2026)
+
+**Stato: principio di lavoro approvato da Jody, documentato; da applicare a ogni futura scrittura di scene e dialoghi.** Le regole fondamentali saranno raccolte nel [vademecum dedicato](vademecum-regole-fondamentali.md). Qualunque scena o decisione in contraddizione con esse richiede che l'AI segnali esplicitamente la regola coinvolta e sottoponga a Jody una proposta separata. **Non scrivere la variante come testo definitivo senza approvazione esplicita.** Se Jody la rifiuta, l'AI deve applicare le regole originali, senza riproporre di nascosto la propria soluzione. Silenzio e approvazioni generiche non valgono come deroghe. La Regola 0 è già registrata nel vademecum; ulteriori regole saranno aggiunte quando definite da Jody. Nessuna modifica Ren'Py richiesta.
+
 ### Decimo finale segreto — Hugo (23/11/2026)
 
 **Stato: decisione autoriale interna approvata, non implementata.** Il gioco prevede **dieci finali in totale**: otto percorsi alternativi, il finale fedele con Josh e il **decimo finale nascosto di Hugo**. La sua esistenza **non compare né viene contata nelle liste di finali o percorsi visibili al giocatore**. In questo finale Hugo **non lascia Sally** (madre di Sara, con cui ha già una relazione segreta): **pretende di mantenere contemporaneamente la relazione con Sally e quella con Sara**. È un finale autonomo, ma non un percorso ordinario mostrato al giocatore. Modalità di accesso, reazioni di Sara e Sally, rapporto con Samantha e sceneggiatura restano da definire; non inventarli. **Solo documentazione di design, nessuna modifica al codice.** Scheda canonica: [dieci finali, incluso quello segreto](narrative/finali-otto-percorsi-2026-11-23.md).
