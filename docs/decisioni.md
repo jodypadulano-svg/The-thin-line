@@ -4,6 +4,73 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Barbara · Convocazioni della stagista speciale (24/11/2026)
+
+**Stato:** elenco approvato da Jody. Nei giorni in cui Sara lavora, se è attivo `sara_stagista`, Barbara può convocarla nel suo ufficio per una consegna a sua scelta. Sara può accettare o rifiutare. Dopo la convocazione torna alla scrivania.
+
+1. Leccare le scarpe di Barbara.
+2. Farle un massaggio alle spalle.
+3. Danzare nuda davanti a lei.
+4. Farsi fare da Barbara body painting sul seno.
+5. Baciarsi a lungo con Barbara.
+6. Farsi mettere un guinzaglio al collo e restare lì così.
+7. Prendere in nota in ginocchio una correzione reale per il giornale, usando la seduta della poltrona come piano d'appoggio.
+8. Baciare i piedi di Barbara, uno alla volta, mentre lei sfoglia le bozze.
+9. Spogliarsi davanti alla scrivania, un capo alla volta su indicazione di Barbara, e aspettare che finisca la pagina.
+10. Farsi bendare in sottoveste e indovinare dove Barbara la bacerà. Se indovina, Sara sceglie il bacio successivo. Può togliersi la benda da sola.
+11. Sedersi a cavalcioni su Barbara e dirle che cosa vuole quando Barbara glielo chiede.
+12. Farsi scrivere *Mine* in rossetto sul fianco e tenere la scritta sotto i vestiti per il resto del turno.
+13. Posare nuda accanto alla finestra schermata. Barbara sceglie la posa, osserva e la aggiusta una volta con le mani.
+14. Dopo un bacio sul collo, chiedere ad alta voce il prossimo e indicare dove lo vuole.
+15. Servire il caffè con addosso solo i tacchi e aspettare accanto alla poltrona fino al primo sorso.
+16. Offrire i polsi a Barbara perché li leghi con un nastro di seta a fiocco, poi scegliere se tenere il nastro durante il bacio o scioglierlo prima.
+17. Sfilare la giacca di Barbara, sbottonarle la camicetta e sistemarle la sottoveste davanti allo specchio, al ritmo indicato da lei.
+18. Baciare Barbara finché il suo rossetto scuro passa sulle labbra di entrambe, poi scegliere se sistemarlo o tornare fuori con quel colore.
+19. Spogliarsi e farsi vestire da Barbara con un abito aderente scelto da lei. Poi sedersi nella poltrona da direttrice e riceverla come se l'ufficio fosse di Sara.
+20. Sedersi ai piedi di Barbara con la guancia contro il suo ginocchio. Barbara firma due lettere e accarezza i capelli di Sara tra l'una e l'altra, poi la congeda.
+
+### Giorno 17 · Dopo gli scatti extra, invito nell'ufficio di Barbara
+
+**Stato:** integrato in Ren'Py nel ramo glamour. Dopo gli scatti approvati, il ramo A del contratto è «I don't know I may have to think about it». La conferma avverte che la sequenza blocca lo skip e il ritorno al bivio. La clip 2 copre tutta la firma guidata e porta direttamente alla CG 4, seguita dalla clip 4. Gli asset della sequenza mantengono i numeri 1, 2 e 4. I bonus scattano a firma completata.
+
+Dopo l'ultimo scatto frontale, Barbara invita Sara nel suo ufficio. Sara può andare, ottenendo **Interest Barbara +3**, oppure rifiutare. Se accetta, Barbara e Sara parlano in privato e Sara è ancora nuda come nello scatto precedente. L'invito segue la sequenza di scatti facoltativi: ogni scatto accettato vale **Interest Barbara +1** e togliere il reggiseno vale anche **Corruption +3**. Dopo la prima proposta sussurrata all'orecchio, Barbara chiede gli altri scatti da fuori campo.
+
+Nell'ufficio Barbara propone a Sara un contratto da stagista speciale. Le dice che le piacciono le ragazze che seguono ogni sua indicazione, come Sara ha appena fatto durante gli scatti, e le chiede di firmare con aria predatoria. Sara può firmare o rifiutare. **Firma:** Corruption +10, Interest Barbara +10 e flag persistente `sara_stagista`, inizialmente falsa. Come `sara_cameriera`, la flag registra che Sara ha assunto consapevolmente un ruolo, in questo caso quello di stagista speciale di Barbara. **Rifiuto:** nessun bonus della firma, flag inattiva. L'Interest +3 per aver accettato l'invito è indipendente dal contratto.
+
+### Giorno 17 · La provocazione con l'hot dog al bar
+
+Nel ramo glamour, se Sara sceglie di recitare come Jessica e ha **Corruption strettamente superiore a 25**, usa l'hot dog per mimare una fellatio mentre guarda lo sconosciuto negli occhi. Lo fa deliberatamente per provocare Jessica e dimostrarle che raccoglie la sfida. Lo sconosciuto è visibilmente eccitato. Il gesto del colletto resta il fuori copione spontaneo. La CG 2 già importata mostra l'hot dog sul piatto di Sara.
+
+### Giorno 18 · Top nero per il pranzo con Daniel (24/11/2026)
+
+Se il pranzo è confermato, offrire il top nero tra le opzioni solo se Sara lo ha ricevuto il 17 (`ep2_d17_top_ricevuto`). Rispettare l'eventuale promessa di avvisare Josh prima dell'incontro.
+
+### Howard · Giro delle faccende a domicilio (23/11/2026)
+
+**Stato: motore implementato e collegato al giorno 17.** Negli incontri spontanei sopra **Interest 50**, se Sara sa che Howard è in casa, bussa e gli chiede se può rendersi utile. Howard dice sempre di sì, le indica la faccenda, poi riposa e la guarda mentre lei lavora da sola. La visita non assegna punti e non avanza la scala delle tappe fisse. Dopo la ventesima faccenda si riparte dalla prima.
+
+**Ordine:** pavimento della cucina, forno, tappeto, pensili, vetri, scatole della dispensa, doccia, sotto il divano, bucato a mano, letto, frigorifero, pavimento del corridoio, credenza, tende, pentole, sedute delle poltrone, balcone, ripostiglio, battiscopa, pavimento sotto il tavolo.
+
+Alla prima visita Howard manda Sara a cambiarsi in bagno per proteggere i suoi vestiti. La CG bonus mostra Sara mentre si cambia, inquadrata dalla serratura dal punto di vista di Howard. Dalla seconda Sara va a cambiarsi di sua iniziativa. Al cambio di fascia Howard le regala il nuovo abito quando è previsto e lei lo ringrazia. Le quattro fasce sono cameriera classica (0–49), cameriera sexy (50–99), cameriera seminuda (100–150) e faccende senza abiti (151+). **Corruption può superare 100** per decisione di Jody.
+
+**Piano CG:** 20 faccende × 4 tenute = 80 CG, più la CG bonus del primo cambio. Una consegna da chiedere a Jody durante la preparazione di ciascuna giornata di gioco, dal **17 al 97 inclusi**. Si comincia con il pavimento della cucina in tenuta classica. Le CG entrano nella rotazione secondo la faccenda e la Corruption del salvataggio, indipendentemente dal giorno in cui sono state prodotte.
+
+**Flag persistente `sara_cameriera`:** parte da `False` e diventa `True` quando Sara completa la prima faccenda della rotazione. Sara sa di fare da cameriera a Howard senza essere pagata e la cosa le sta bene. Dal suo punto di vista sta dando una mano a un signore. La flag indica che ha assunto quel ruolo e può essere letta anche fuori dalle scene delle faccende.
+
+**Motore Ren'Py disponibile per il calendario dal 17.** La chiamata va al rientro dal lavoro, solo se Sara è libera, sa che Howard è in casa e non lo ha già incontrato né lo incontrerà per altri motivi quel giorno. Il 17, Sara lo sente al telefono sul pianerottolo e ha tempo prima della palestra. Il ritiro del pacco da lui esclude la visita. Il primo incontro include la scena del bagno. Il primo accesso a ciascuna fascia vestita regala la relativa tenuta una sola volta.
+
+### Giorno 16 · Copertura CG e telefono dopo cena (23/11/2026)
+
+**Stato: applicato.** Il testo dell'apertura della cena scorre sulla CG dell'arrivo di Mark, lo scambio dei biscotti avviene sulla CG della tavolata e le ultime battute in cucina restano sulla CG del ritorno dal flashback. Dopo la partenza di Darius, Sara usa il telefono libero dalle **22:00 alle 23:00**, con ripresa delle chat sospese e possibilità di andare a letto prima. Per la sessione si riusa la CG di Sara al telefono del giorno 15.
+
+### Giorno 16 · Hugo passa a riprendere la teglia (23/11/2026)
+
+**Stato: approvato da Jody e collegato al giorno 16.** Dopo il lavoro e prima della serata tra amici, Hugo passa a casa di Sara e Josh a riprendere la teglia del pranzo di domenica. Sara può salutarlo o fermarsi a parlare. Solo se si ferma e ha litigato con Josh il giorno 15, si lascia scappare della lite per il manoscritto. Hugo le dà ragione con fermezza. Sara ne è sorpresa e ammirata: **Interesse Hugo +1 nascosto**.
+
+Hugo le tira fuori una sedia e le ordina: «Put your bag down. Sit here.» Sara può obbedire (**Interesse Hugo +2 nascosto**, per un totale di +3) o restare in piedi (nessun punto ulteriore). Nel ramo obbediente posa subito la borsa, si siede esattamente dove lui le indica, tiene le mani in grembo e aspetta composta che Hugo riprenda la parola. Dice esattamente **«Yes, Hugo.»**, come prescritto da A6. Il tono è di obbedienza estrema, senza battute o repliche scherzose.
+
+**CG essenziale del ramo obbediente:** Sara ha appena eseguito l'ordine. La borsa è a terra, Hugo è accanto alla sedia che le ha indicato e Sara, seduta con le mani in grembo, alza gli occhi verso di lui e aspetta. L'incontro si chiude con il dialogo. Per il resto della giornata non accade altro tra Sara e Hugo.
+
 ### Regola 0 del vademecum — nessuna deroga autonoma dell'AI (23/11/2026)
 
 **Stato: principio di lavoro approvato da Jody, documentato; da applicare a ogni futura scrittura di scene e dialoghi.** Le regole fondamentali saranno raccolte nel [vademecum dedicato](vademecum-regole-fondamentali.md). Qualunque scena o decisione in contraddizione con esse richiede che l'AI segnali esplicitamente la regola coinvolta e sottoponga a Jody una proposta separata. **Non scrivere la variante come testo definitivo senza approvazione esplicita.** Se Jody la rifiuta, l'AI deve applicare le regole originali, senza riproporre di nascosto la propria soluzione. Silenzio e approvazioni generiche non valgono come deroghe. La Regola 0 è già registrata nel vademecum; ulteriori regole saranno aggiunte quando definite da Jody. Nessuna modifica Ren'Py richiesta.
@@ -28,7 +95,7 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ### Giorno 17 · Foto per il sito, makeover di Barbara e gioco al bar (23/11/2026)
 
-**Stato: decisione approvata, da sceneggiare e implementare nell'Episodio 2.** Il giorno 17 l'ufficio ha un fotografo incaricato degli **scatti delle dipendenti per il sito del giornale**, fissati **subito dopo pranzo (orientativamente alle 14)**. Sara si è dimenticata dell'appuntamento. **In mattinata** Barbara la riprende in modo lieve e le propone di andare nel suo ufficio, dove pensa lei a prepararla.
+**Stato: sceneggiato e integrato nell'Episodio 2.** Il giorno 17 l'ufficio ha un fotografo incaricato degli **scatti delle dipendenti per il sito del giornale**, fissati **subito dopo pranzo (orientativamente alle 14)**. Sara si è dimenticata dell'appuntamento. **In mattinata** Barbara la riprende in modo lieve e le propone di andare nel suo ufficio, dove pensa lei a prepararla.
 
 **Scelta del giocatore:** (a) Sara rifiuta gentilmente, dice che si sente bene così, va allo shooting col proprio aspetto usuale: nessun makeover e nessun effetto numerico approvato; (b) Sara accetta e Barbara **le apre un po' la camicetta, le sistema i capelli e le applica un trucco più vistoso e appariscente, nello stile glamour di Barbara**. La trasformazione è deliberata e reversibile, con un'eco di quanto Barbara ha fatto con Jessica; il giocatore deve poter cogliere il parallelismo, **senza rivelare il mistero di Jessica**.
 
@@ -36,7 +103,7 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 **Pomeriggio:** il fotografo scatta le foto per il sito del giornale, con variante Sara glamour / Sara normale. **Il makeover non è un cambiamento permanente:** quando **Sara torna a casa** è di nuovo vestita e truccata normalmente, come prima. Non tenere la sua immagine glamour nella serata o nelle giornate successive, salvo ricordi e conseguenze narrative successivamente concordate.
 
-**Restano gli eventi già approvati del giorno 17:** consegna del maglione HYPNO ordinato da Joanie e, la sera, palestra con la scoperta di Joanie e Simon. La novità in redazione **non** deve aggiungere un secondo episodio in cui Sara sorprende Jessica e Barbara di nascosto: sarebbe ripetitivo, quindi un'eventuale scena di quel tipo va collocata in un altro giorno. I punteggi del makeover, del flirt e dell'interpretazione «bimbo» **non sono ancora stati decisi**: non attribuirli d'ufficio. **Dettaglio fuori copione ora approvato:** aggiustare il colletto dello sconosciuto, poi ritirare la mano imbarazzata; battuta di Jessica. Il *foreshadowing* rimane circoscritto a questa singola deviazione volontaria/non prevista dalla recita, senza imporre una trasformazione reale o duratura. **Il giorno 17 è ora completo come scaletta narrativa**; la sceneggiatura e il codice sono ancora da realizzare.
+**Restano gli eventi già approvati del giorno 17:** consegna del pacco con lo scherzo di Joanie e, la sera, palestra con la scoperta di Joanie e Simon. La novità in redazione **non** deve aggiungere un secondo episodio in cui Sara sorprende Jessica e Barbara di nascosto: sarebbe ripetitivo, quindi un'eventuale scena di quel tipo va collocata in un altro giorno. I punteggi del makeover, del flirt e dell'interpretazione «bimbo» **non sono ancora stati decisi**. Il *foreshadowing* resta nel gesto fuori copione del colletto e nella battuta di Jessica.
 
 ### Giorno 15 · Josh legge il manoscritto di nascosto, Sara lo riscrive e decide sul pranzo (23/11/2026)
 
@@ -474,7 +541,13 @@ Scelte fatte da Claude per rendere il gioco giocabile, non ancora confermate da 
 
 ## Applicate
 
+### Giorno 17 · Foto, scherzo di Joanie e palestra (24/11/2026)
+
+[Scene e dialoghi in Ren'Py](../game/episodio2/ep2_giorno17.rpy). Makeover facoltativo, bar con il bivio della recita e il gesto del colletto nel ramo glamour, foto alle 14, rientro e palestra. HYPNO resta l'annuncio-esca del giorno 14. All'apertura del pacco Sara scopre il vero regalo: top in mesh nera, maniche lunghe, collo alto ondulato e due pannelli tondi opachi uniti da un ponticello. Joanie confessa lo scherzo e si offre di comprarle anche quello con le spirali. Se c'è un ordine, la consegna diretta o da Howard è scelta dal gioco. L'offerta di Joanie non registra un secondo ordine. Le CG del 17 ancora mancanti usano segnaposti.
+
 ### Giorno 15 · Riunione, palestra, manoscritto e conferma a Daniel
+
+Dopo la palestra, a casa, Sara ha uno slot libero a minuti dalle 21:30 alle 22:00. Può riprendere le chat del giorno 14 o chiudere in anticipo. La sessione precede il confronto con Josh.
 
 Il flusso dell'Episodio 2 prosegue dal giorno 14 al [giorno 15](../game/episodio2/ep2_giorno15.rpy). In palestra Joanie propone a Simon di mostrare a Sara degli esercizi per i pettorali. Accettare dà **Interest Simon +2 e Corruption +1**. La ripetizione extra, in cui Sara si scopre deliberatamente di più, dà **Corruption +1** aggiuntiva. Durante il litigio con Josh Sara conferma il pranzo a Daniel in una chat di trama, con una CG distinta alla risposta. In entrambi i rami Sara rivede e invia le pagine a Magnus.
 

@@ -7,4 +7,6 @@ label ep2_inizio:
     n "{size=+20}Episode 2{/size}"
     call ep2_d14
     call ep2_d15
+    call ep2_d16
+    call ep2_d17
     return

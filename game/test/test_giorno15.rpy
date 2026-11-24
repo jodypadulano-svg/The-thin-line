@@ -27,10 +27,15 @@ testsuite giorno15:
         $ _d15_chat_start = len(chat_log.get("daniel", []))
         $ segna("test_giorno15_finito", False)
         $ segna("ep2_d18_pranzo_daniel_confermato", False)
-        $ discorso_aperto["daniel"] = {"premio_avvio": True}
+        $ giorno_entrata = 15
+        $ da_numero("daniel")
+        $ discorso_aperto["daniel"] = {"id": "daniel_intro", "contesto_verificato": True, "premio_avvio": True}
         $ telefono_minuti_riprese["daniel"] = "tel_chat_daniel_intro_1"
         $ telefono_minuti_inbox["daniel"] = {"arrivo": 22000, "bolle": 2, "notificata": False}
         run Jump("test_giorno15")
+        advance until screen "telefono" timeout 60.0
+        assert eval telefono_minuti_ora == 15 * 1440 + 21 * 60 + 30 and telefono_minuti_rimasti() == 30
+        click "Put the phone down"
         advance until eval fatto("test_giorno15_finito") timeout 120.0
         assert eval ha_numero("simon") and fatto("ep2_d15_josh_letto_di_nascosto")
         assert eval fatto("ep2_d15_manoscritto_rivisto") and fatto("ep2_pagine_magnus")

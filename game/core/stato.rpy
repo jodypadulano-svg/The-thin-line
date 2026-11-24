@@ -144,7 +144,8 @@ init -10 python:
         if delta == 0:
             return
         campo = VARIABILE_STORE[nome]
-        setattr(store, campo, _limita(getattr(store, campo) + delta))
+        valore = getattr(store, campo) + delta
+        setattr(store, campo, max(0, valore) if nome == "corruption" else _limita(valore))
         _annuncia(NOMI_VARIABILI[nome], delta, COLORI[nome], motivo)
 
     def corruption(delta, motivo=None):
@@ -286,6 +287,7 @@ default complesso_crocerossina = False
 ## è lo step 1; ogni «sì» a un invito porta allo step successivo, ogni «no» non
 ## cambia niente. Vedi docs/narrative/howard-scala-visite.md.
 default howard_visite = 0
+default sara_cameriera = False
 
 ## Giorno 12: la pagina del primo pezzo di Sara («7» il cinema, «11» il parcheggio).
 default pagina_articolo = ""

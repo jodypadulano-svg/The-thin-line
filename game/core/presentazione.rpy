@@ -120,10 +120,10 @@ init python:
         else:
             renpy.show_screen("segnaposto_cg", descrizione=descrizione)
 
-    def filmato(video):
+    def filmato(video, stop_music=True):
         """Filmato a schermo intero (WebM). Se il file manca ancora, si salta."""
         if renpy.loadable(video):
-            renpy.movie_cutscene(video)
+            renpy.movie_cutscene(video, stop_music=stop_music)
 
     def zoom_cg(descrizione, immagine, area, durata=4.5):
         """Zoom lento su un dettaglio di una CG già fatta (lo «sguardo» di un personaggio).

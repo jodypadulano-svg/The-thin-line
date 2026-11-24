@@ -3,6 +3,7 @@ label ep2_d15:
     $ fascia_corrente = FASCE.index("lavoro")
     call ep2_d15_redazione
     call ep2_d15_palestra
+    call ep2_d15_telefono
     call ep2_d15_casa
     $ musica(None)
     $ luogo_corrente = ""
@@ -107,6 +108,16 @@ label ep2_d15_palestra:
     $ via_cg()
     return
 
+label ep2_d15_telefono:
+    $ vai("casa", "Home — Monday evening")
+    $ musica("casa")
+    $ fascia_corrente = FASCE.index("sera")
+    $ cg("Sara checks her phone at the writing table", "images/cg/ep2/d15_05_daniel.webp")
+    n "Sara sets her gym bag down and plugs in her laptop. While it wakes, she picks up her phone."
+    call telefono_minuti_sessione(21 * 60 + 30, 22 * 60)
+    $ via_cg()
+    return
+
 label ep2_d15_casa:
     $ fascia_corrente = FASCE.index("notte")
     $ vai("casa", "Home — Late Monday evening")
@@ -183,7 +194,7 @@ label ep2_d15_daniel:
     $ cg("Sara confirms Thursday lunch with Daniel", "images/cg/ep2/d15_05_daniel.webp")
     $ chat_aperta = "daniel"
     show screen telefono_chat("daniel")
-    n "The last message on the screen is his. Sara scrolls just far enough to see the reply box. Her hands are still warm from the argument. She types before they cool."
+    n "Sara opens Daniel's conversation. Her hands are still warm from the argument. She types before they cool."
     $ msg("sara", "Thursday. I can do lunch. I\'d like to.", premia_avvio=False)
     $ segna("ep2_d18_pranzo_daniel_confermato")
     n "She sends it. A little later, while she’s reading the same sentence on page forty-nine for the fourth time, the phone lights up."

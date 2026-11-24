@@ -16,7 +16,7 @@ Quando il valore numerico dell'**interesse di Sara verso un personaggio supera s
 
 | Personaggio | Conseguenza di `interesse > 50` |
 | --- | --- |
-| **Howard** | Sara decide **ogni giorno** di suonare alla sua porta **se sa che Howard è in casa**. L'iniziativa è sua. Non presentare la visita come un evento casuale. |
+| **Howard** | Dal giorno 17, Sara decide di suonare **dopo il lavoro** se è libera, sa che Howard è in casa e **non lo incontra per altri motivi quel giorno**. L'iniziativa è sua. La visita spontanea fa avanzare solo la rotazione delle faccende. |
 | **Simon** | Sara può prendere l'iniziativa di andare in **palestra almeno un paio di volte a settimana** per aumentare le occasioni d'incontro. Coordinare le visite con il calendario. |
 | **Joanie** | **Nessun cambiamento aggiuntivo** nella frequenza degli incontri: Sara interagisce con lei principalmente tramite telefono. |
 | **Darius** | **Nessun cambiamento aggiuntivo**: il contatto è principalmente telefonico. |
@@ -36,7 +36,7 @@ Quando il valore numerico dell'**interesse di Sara verso un personaggio supera s
 
 ## Casi di controllo
 
-- `interesse_Howard = 50`: non scatta la nuova routine; `> 50` e Sara sa che è in casa: Sara decide di suonare quel giorno.
+- `interesse_Howard = 50`: non scatta la nuova routine. Con `> 50`, dopo il lavoro, Sara decide di suonare se è libera, sa che lui è in casa e non lo incontra per altri motivi quel giorno.
 - `interesse_Simon > 50`: Sara può pianificare almeno due occasioni settimanali in palestra, compatibilmente con il calendario.
 - `interesse_Jacob > 50`: in ogni sera libera Sara propone un'uscita; Jacob può non essere disponibile.
 - `interesse_Daniel > 50`: si rendono possibili iniziative di Sara per passare dal lavoro di Josh, anche con l'aiuto di Joanie.

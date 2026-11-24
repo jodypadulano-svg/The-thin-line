@@ -146,10 +146,10 @@ flowchart TD
     H --> C["In cucina · Sally consiglia a Sara di farsi una vita propria"]
     C --> T["Si sblocca il telefono libero"]
     T --> J{"Sera · risposta all'invito di Daniel del giorno 13"}
-    J -->|Forse o Josh lo saprà| O["Chat di trama · Joanie ordina il maglione"]
+    J -->|Forse o Josh lo saprà| O["Chat di trama · Joanie mostra HYPNO e registra l'ordine"]
     J -->|Nessuna risposta registrata| F{"Slot facoltativo con la rubrica effettiva"}
     O --> F
-    O -.-> K["Giorno 17 · consegna prevista"]
+    O -.-> K["Giorno 17 · Sara riceve il top nero e scopre lo scherzo"]
     K -.-> L["Giorno 18 · se il pranzo è confermato, scelta dell'abito"]
     F -->|Scrive a un contatto| A["Il controller gestisce il dialogo e le risposte"]
     F -->|Salta| N["Notte · eventuali risposte in arrivo"]
@@ -169,9 +169,69 @@ flowchart TD
     C -->|Accetta · Simon +2, Corruption +1| E{Ripetizione extra?}
     E -->|Posa le maniglie| G
     E -->|Si mostra di più · Corruption +1| G
-    G --> J{"Josh ha letto il manoscritto senza permesso"}
+    G --> F["21:30–22:00 · telefono libero a casa"]
+    F --> J{"Josh ha letto il manoscritto senza permesso"}
     J -->|Lo affronta · Josh -7| D["Conferma il pranzo con Daniel del 18"]
     J -->|Lascia correre · Josh -3, Confidence -10| M["Sara riscrive il finale"]
     D --> M
     M --> I["Invia le 50 pagine a Magnus · Confidence +2, Magnus +1"]
+```
+
+## Episodio 2 · Giorno 16
+
+```mermaid
+flowchart TD
+    D15([Fine del giorno 15]) --> J{"Jessica riprende «quella cosa»"}
+    J -->|Chiede| H{"Hugo passa a riprendere la teglia"}
+    J -->|Lascia perdere| H
+    H -->|Saluta| A["Arrivano Joanie, Mark e Darius"]
+    H -->|Si ferma| C{"Ha litigato con Josh il 15?"}
+    C -->|No| A
+    C -->|Sì| O{"Hugo le dà ragione e le dice di sedersi"}
+    O -->|Si siede| A
+    O -->|Resta in piedi| A
+    A --> T{"Mark chiede del romanzo"}
+    T -->|Sta vicina a Josh · Josh +1| S["Josh e Mark si scambiano il numero"]
+    T -->|Ride con Darius · Darius +1| S
+    T -->|Si confida con Joanie · Joanie +1| S
+    S --> R["Retroscena · Josh parla a Darius di Jacob"]
+    R --> F["Flashback · Sara e Josh"]
+    F --> P["Josh chiede a Darius di tenere la confidenza per sé"]
+    P --> TEL["22:00–23:00 · telefono libero a casa"]
+    TEL --> D16([Fine del giorno 16])
+```
+
+## Episodio 2 · Giorno 17
+
+```mermaid
+flowchart TD
+    D16([Fine del giorno 16]) --> M{Accetta il makeover?}
+    M -->|Look abituale| B["Pranzo al bar"]
+    M -->|Glamour| F{"Lo sconosciuto si avvicina"}
+    F -->|Risposta naturale| P["14:00 · foto per il sito"]
+    F -->|Recita alla Jessica| C["Il gesto del colletto"]
+    C --> P
+    B --> P
+    P -->|Look abituale| O{Ordine del 14?}
+    P -->|Look glamour| E["Scatti extra · Barbara +1 per scatto accettato"]
+    E -->|Interrompe o declina l'invito| O
+    E -->|Accetta l'invito · Barbara +3| U{"In ufficio · contratto di stagista speciale"}
+    U -->|Declina| O
+    U -->|Conferma l'avviso| L["Firma guidata · Corruption +10 · Barbara +10 · sara_stagista"]
+    L --> O
+    O -->|Sì| R{Dove arriva il pacco?}
+    R -->|Consegna diretta| S["Top nero · Joanie confessa lo scherzo"]
+    R -->|Ritiro da Howard| H["Top nero · Joanie confessa lo scherzo · Howard già incontrato"]
+    O -->|No| W{Può passare da Howard?}
+    S --> W
+    H --> G["Palestra · scelta del top da allenamento"]
+    W -->|Sì · spazio prima della palestra| A["Visita spontanea · rotazione faccende"]
+    W -->|No| G
+    A --> G
+    G --> X{Sara sorprende Joanie e Simon}
+    X -->|Resta · Corruption +2| Y{Allenamento}
+    X -->|Si allontana| Y
+    Y -->|Con Simon · Interest +3| Z["Sara apre la chat di Joanie"]
+    Y -->|Da sola · Confidence +1| Z
+    Z --> D17([Fine del giorno 17])
 ```
