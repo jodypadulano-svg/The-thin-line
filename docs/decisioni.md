@@ -6,28 +6,40 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ### Barbara · Convocazioni della stagista speciale (24/11/2026)
 
-**Stato:** elenco approvato da Jody. Nei giorni in cui Sara lavora, se è attivo `sara_stagista`, Barbara può convocarla nel suo ufficio per una consegna a sua scelta. Sara può accettare o rifiutare. Dopo la convocazione torna alla scrivania.
+**Stato:** revisione autoriale del 24/11/2026 approvata; sostituisce integralmente il precedente elenco. Specifica di design da implementare in Ren'Py.
 
-1. Leccare le scarpe di Barbara.
-2. Farle un massaggio alle spalle.
-3. Danzare nuda davanti a lei.
-4. Farsi fare da Barbara body painting sul seno.
-5. Baciarsi a lungo con Barbara.
-6. Farsi mettere un guinzaglio al collo e restare lì così.
-7. Prendere in nota in ginocchio una correzione reale per il giornale, usando la seduta della poltrona come piano d'appoggio.
-8. Baciare i piedi di Barbara, uno alla volta, mentre lei sfoglia le bozze.
-9. Spogliarsi davanti alla scrivania, un capo alla volta su indicazione di Barbara, e aspettare che finisca la pagina.
-10. Farsi bendare in sottoveste e indovinare dove Barbara la bacerà. Se indovina, Sara sceglie il bacio successivo. Può togliersi la benda da sola.
-11. Sedersi a cavalcioni su Barbara e dirle che cosa vuole quando Barbara glielo chiede.
-12. Farsi scrivere *Mine* in rossetto sul fianco e tenere la scritta sotto i vestiti per il resto del turno.
-13. Posare nuda accanto alla finestra schermata. Barbara sceglie la posa, osserva e la aggiusta una volta con le mani.
-14. Dopo un bacio sul collo, chiedere ad alta voce il prossimo e indicare dove lo vuole.
-15. Servire il caffè con addosso solo i tacchi e aspettare accanto alla poltrona fino al primo sorso.
-16. Offrire i polsi a Barbara perché li leghi con un nastro di seta a fiocco, poi scegliere se tenere il nastro durante il bacio o scioglierlo prima.
-17. Sfilare la giacca di Barbara, sbottonarle la camicetta e sistemarle la sottoveste davanti allo specchio, al ritmo indicato da lei.
-18. Baciare Barbara finché il suo rossetto scuro passa sulle labbra di entrambe, poi scegliere se sistemarlo o tornare fuori con quel colore.
-19. Spogliarsi e farsi vestire da Barbara con un abito aderente scelto da lei. Poi sedersi nella poltrona da direttrice e riceverla come se l'ufficio fosse di Sara.
-20. Sedersi ai piedi di Barbara con la guancia contro il suo ginocchio. Barbara firma due lettere e accarezza i capelli di Sara tra l'una e l'altra, poi la congeda.
+La firma resta al **giorno 17**: attiva `sara_stagista` e apre il percorso, senza conferire il livello di Jessica o Roberta. Nei cinque giorni lavorativi su sette, con il contratto attivo, si sorteggia prima se Barbara convoca Sara, poi una missione non completata tra quelle di cui sono soddisfatte tutte le soglie e i prerequisiti. Le soglie sono inclusive. Gli ID non sono un ordine cronologico. Sara può rifiutare o interrompere ogni proposta. Non assegnare premi o penalità non concordati. Conservare separatamente nel salvataggio lo stato di ciascuna missione; ripetere una missione non incrementa il contatore. Accettare non equivale a completare.
+
+**Solo 20 missioni distinte su 20** sbloccano la tappa successiva, che conduce al cuoricino dorato, ai privilegi del club e alla relazione completa con Barbara. Il solo Interest non basta. L'appuntamento romantico è la missione finale di questa fase.
+
+La probabilità di convocazione resta da fissare: con tutte le missioni accettate e sempre estraibili, al 50% occorrono mediamente 40 giorni lavorativi (56 di calendario, circa giorno 73); al 30% circa 67 lavorativi (93 di calendario, giorno 110); al 20% 100 lavorativi (140 di calendario, giorno 157). Requisiti e rifiuti possono allungare la durata. Ingresso precoce, maturazione lenta; nessuna data garantita.
+
+| ID | Missione | Difficoltà /10 | Interest Barbara min. | Corruption min. | Prerequisiti |
+|---|---|---:|---:|---:|---|
+| 1 | Leccare le scarpe di Barbara. | 2 | 25 | 15 | Nessuno |
+| 2 | Massaggio alle spalle di Barbara. | 1 | 20 | 10 | Nessuno |
+| 3 | Danzare nuda davanti a Barbara. | 3 | 30 | 20 | Nessuno |
+| 4 | Body painting sul seno di Sara da parte di Barbara. | 4 | 35 | 25 | Nessuno |
+| 5 | Baciarsi a lungo con Barbara. | 5 | 40 | 30 | Nessuno |
+| 6 | Guinzaglio al collo, con libertà di interrompere. | 4 | 35 | 25 | Nessuno |
+| 7 | Pausa pranzo: Barbara propone di usare il torso di Sara come superficie per servire le vivande. | 5 | 40 | 30 | 4 |
+| 8 | Baciare i piedi di Barbara, uno alla volta, mentre sfoglia le bozze. | 2 | 25 | 15 | Nessuno |
+| 9 | Spogliarello con accompagnamento musicale. | 3 | 30 | 20 | Nessuno |
+| 10 | Calco in gesso del seno di Sara, che rimane a Barbara. | 4 | 35 | 25 | 4 |
+| 11 | Sedersi a cavalcioni su Barbara e dirle che cosa desidera. | 6 | 50 | 40 | 5 |
+| 12 | Scritta «Mine» in rossetto sul fianco, da tenere sotto i vestiti per il resto del turno. | 4 | 35 | 25 | Nessuno |
+| 13 | Intimità consensuale: Barbara chiede un contatto orale con il seno di Sara per qualche minuto. | 7 | 55 | 45 | 5 |
+| 14 | Confidare a Barbara un segreto che nessun altro conosce; il giocatore sceglie quale. | 5 | 50 | 10 | Nessuno |
+| 15 | Vero appuntamento romantico con Barbara in una serata libera, vissuto seriamente e non come recita. | 7 | 55 | 30 | 5 e tutte le altre 19 missioni (tappa finale) |
+| 16 | Dire a Barbara esattamente «I love you», sinceramente o per soddisfare la richiesta. | 5 | 40 | 30 | Nessuno; non richiede il date |
+| 17 | Indossare per tutta la giornata lavorativa un vestito leopardato identico a quello di Barbara, ricevuto in regalo. | 3 | 30 | 20 | Nessuno |
+| 18 | Bacio con trasferimento del rossetto; scegliere se sistemarlo o uscire con quel colore. | 3 | 30 | 20 | Nessuno |
+| 19 | Indossare per tutta la giornata, anche in redazione, un abito in latex nero regalato da Barbara. | 6 | 50 | 40 | Nessuno |
+| 20 | Sedersi ai piedi di Barbara, con la guancia contro il suo ginocchio, mentre firma due lettere e le accarezza i capelli. | 2 | 25 (proposta) | 15 (proposta) | Nessuno (proposta) |
+
+**Dettagli:** il calco può ricomparire in seguito. Il segreto non è noto neppure a Josh o Joanie; conseguenze da definire. Per il date, concordare una serata libera e registrarla nel calendario; la missione resta in sospeso fino all'appuntamento effettivamente svolto, senza imporre innamoramento o esito romantico prestabilito. Entrambe le varianti di «I love you» completano la missione, conservando la distinzione narrativa. I due abiti regalati restano nel guardaroba e possono essere indossati in futuro; il completamento richiede l'intera giornata prevista, con reazioni delle colleghe. Per la missione 20 è approvata la difficoltà 2; le soglie 25/15 e l'assenza di prerequisiti restano proposte da confermare.
+
+**Sostituzioni:** eliminate le vecchie missioni degli appunti in ginocchio (7), della benda (10), della posa alla finestra (13), della richiesta del bacio successivo (14), del caffè (15), del nastro ai polsi (16), dello spogliare Barbara davanti allo specchio (17). I sette ID sono riutilizzati per le nuove missioni nell'ordine di proposta. Riscritte la 9 e la 19. Non estrarre le vecchie versioni. Nessuna modifica al codice, agli asset o ai bonus della firma in questo commit.
 
 ### Giorno 17 · Dopo gli scatti extra, invito nell'ufficio di Barbara
 
