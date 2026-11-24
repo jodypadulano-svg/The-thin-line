@@ -4,7 +4,10 @@ label ep2_d17_foto_extra:
     $ musica("barbara_shooting")
     $ via_cg()
     $ cg("Barbara whispers to Sara after the portrait", "images/cg/ep2/d17_barbara_sussurro.png")
-    ba "Would you do one more? Something a little sexier, if you feel like it."
+    ba "That first portrait is the one for the company website. We have everything we need for that."
+    ba "Since we have a professional photographer here today, why not take the opportunity to get some lovely pictures just for yourself?"
+    s "Just for me?"
+    ba "Of course. Anything we take from now on is private, not for the website. Only if you want to."
     menu:
         "I'll do one.":
             pass
