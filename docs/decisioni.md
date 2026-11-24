@@ -4,6 +4,21 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 18 · Pranzo con Daniel, Barbara e Howard (24/11/2026)
+
+**Stato: bozza scritta in Ren'Py, da rivedere con Jody.** [Scene e dialoghi](../game/episodio2/ep2_giorno18.rpy), [inquadrature](prompt-immagini/inquadrature-giorno-18.md), test `giorno18`.
+
+- **Mattina:** solo con il pranzo confermato, Sara sceglie l'abito: top nero (se ricevuto il 17, Corr +1), vestito grigio o abiti da lavoro. Con «Josh will know» (`ep1_d13_pranzo_no`) gli scrive del pranzo prima di andare; Josh non si oppone (F2).
+- **Pranzo:** saletta privata, romanzo e Magnus, poi Daniel sfotte Josh (stasera lo tiene lui in ufficio, I14). **Il privato** solo se il 13 hanno dondolato (`ep1_d13_videoclip`) oppure con top nero e Corruption ≥ 20. Senza privato: ridere (Daniel +1) o fermarlo (Conf +1). Nel privato, con Corruption > 25, Sara non lo confessa ma con una battuta gli fa capire che può continuare (Daniel +2, Corr +2); altrimenti ridere (Daniel +1) o fermarlo (Conf +1).
+- **Il ballo**, sulla canzone della terrazza con gli stessi tempi e la stessa scelta guarda/salta: se hanno già dondolato il 13 Sara sogna di rifarlo e Daniel glielo concede (Daniel +3, Corr +3); altrimenti è il primo ballo, molto probabile ma scelto da Sara (Daniel +3, Corr +2). Rifiutare: Conf +1. Il gesto: se c'è stato il bacio sull'orecchio (`ep1_d13_cerniera`), oggi collo, mandibola e angolo della bocca, poi lui si ferma («Not today»); altrimenti oggi il bacio sull'orecchio. Niente bacio in bocca. Teasing reciproco: è il loro gioco, e stavolta si vede che a Sara piace sentir sminuire Josh.
+- **Barbara:** mezz'ora per scegliere il ritratto del 17. Restare: Barbara +1 e il suo numero. Rifiutare con garbo: Conf +1. Con `sara_stagista` una riga, nessuna missione.
+- **Howard:** invito sul pianerottolo, Josh in straordinario. Accettare: Howard +2 e lo step successivo della scala (`howard_visite` 1 → tazze, 2 → lampadina, 3+ → ragù), con le scelte della bozza della scala. Rifiuto grigio col Complesso.
+- **Flag nuovi:** `ep2_d18_top_nero`, `ep2_d18_vestito_grigio`, `ep2_d18_josh_avvisato`, `ep2_d18_pranzo_daniel`, `ep2_d18_privato`, `ep2_d18_lascia_proseguire`, `ep2_d18_ballo`, `ep2_d18_ballo_ripetuto`, `ep2_d18_angolo_bocca`, `ep2_d18_bacio_orecchio`, `ep2_d18_resta_barbara`, `ep2_d18_visita_howard`, `ep2_d18_rifiuta_howard`, `ep2_d18_battuta_howard`, `ep2_d18_ragu_mani`.
+
+### Barbara · Motore delle convocazioni e opzione GATTINA (24/11/2026)
+
+**Stato: da applicare, a partire dal giorno 19.** Con `sara_stagista`, ogni giorno lavorativo Barbara convoca Sara con probabilità **20%**, per una missione fra quelle con soglie e prerequisiti soddisfatti. Se esce il 20% ma nessuna missione è disponibile, nessuna convocazione. **Opzione GATTINA:** con Interest Barbara > 50 Sara può presentarsi spontaneamente da Barbara **una volta al giorno**: se ci sono missioni disponibili ne fa una; se non ce ne sono, si gioca una **21ª scena**, in cui Sara si spoglia volontariamente e chiacchiera nuda con Barbara. **Dopo le 20 missioni** Barbara le chiede se ha capito che cosa vuole vederla fare: il giocatore scrive un testo; se contiene «smoking»/«smoke» e simili (maiuscole o minuscole) si va avanti. Sara ha avuto tutti gli indizi (B2: Barbara è affascinata dalle donne che fumano). Il seguito si definisce più avanti.
+
 ### Barbara · Convocazioni della stagista speciale (24/11/2026)
 
 **Stato:** revisione autoriale del 24/11/2026 approvata; sostituisce integralmente il precedente elenco. Specifica di design da implementare in Ren'Py.

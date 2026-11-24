@@ -60,6 +60,10 @@ init python:
                 "Keep it simple", "Skip it", "Defend [nome_compagno].", "Downplay it, shyly.",
                 "Stay cool with him.", "«I can do it myself.»", "«[nome_compagno] will know.»",
                 "Tell [nome_compagno] about Magnus.",
+                ## Giorno 18
+                "My usual work clothes.", "«Don't talk about him like that.»", "«Not here.»",
+                "«I'm sorry, I can't tonight.»", "Get down and leave it there.",
+                "Step aside and hand him the spoon.",
             ],
         },
         "barbara": {
@@ -114,6 +118,10 @@ init python:
                 "Let Joanie choose.", "Watch the scene.", "Go to the open gym.", "«Show me. Hands on.»", "«Just tell me.",
                 "Smile at the joke.", "Tell him about the novel", "Thank Daniel, sincerely.",
                 "Let him do it.", "«Maybe.»", "Keep the card to herself",
+                ## Giorno 18
+                "The good grey dress.", "Laugh.", "Take his hand.", "Skip the scene.",
+                "«Of course.»", "Go in.", "Another cup.", "Laugh and give it back.",
+                "Let him guide the spoon.",
             ],
         },
         "daniel": {
@@ -167,6 +175,10 @@ init python:
                 "Something elegant.", "Skip it", "Say nothing.", "«I'll send you the first fifty pages",
                 "Tell him about the novel", "Thank Daniel, sincerely.", "Let him do it.", "«Maybe.»",
                 "Keep the card to herself",
+                ## Giorno 18
+                "Joanie's black top, under the blazer.", "«Go on, then. What else did he do?»",
+                "Laugh.", "Take his hand.", "Watch the scene.", "«Of course.»", "Go in.",
+                "Another cup.", "Laugh and give it back.", "Let him guide the spoon.",
             ],
         },
         "mista": {
