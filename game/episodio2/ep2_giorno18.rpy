@@ -85,7 +85,11 @@ label ep2_d18_redazione:
     $ vai("redazione", "The newsroom — Thursday morning")
     $ musica("redazione")
     $ ambiente("redazione")
-    $ cg("Sara at her desk on Thursday morning, Jessica leaning over the partition", "images/cg/ep2/d18_02_redazione.webp")
+    ## Variante col top nero sotto il blazer (24/11), altrimenti la camicetta da lavoro.
+    if fatto("ep2_d18_top_nero"):
+        $ cg("Sara at her desk in her blazer and black top, Jessica leaning over the partition", "images/cg/ep2/d18_02b_redazione_top.webp")
+    else:
+        $ cg("Sara at her desk on Thursday morning, Jessica leaning over the partition", "images/cg/ep2/d18_02_redazione.webp")
     n "Jessica leans over the partition with yesterday's proofs in her hand."
     je "They've put the website pictures up on the shared drive. Yours is in the folder already."
     s "Is it awful?"
@@ -657,8 +661,93 @@ label ep2_d18_howard_ragu:
         "Step aside and hand him the spoon.":
             s "Show me. I'll watch."
             ho "Of course. Watching is how I learned."
-    n "They eat at his little table. When she leaves, he gives her a jar of sauce wrapped in a tea towel."
+    n "He makes her chop the onion his mother's way. «You don't cut it. You make it cry first.» Sara laughs so hard her eyes water, and he says that proves his point."
+
+    ## Il sugo sulla camicetta (Jody, 24/11): solo con Interest Howard ≥ 15 o col Complesso.
+    if valore_interest("howard") >= 15 or complesso_crocerossina:
+        call ep2_d18_howard_macchia
+
+    $ via_cg()
+    if fatto("ep2_d18_cena_reggiseno"):
+        $ cg("Howard's little kitchen table: Sara in her bra, perfectly at ease, laughing at something Howard said over two plates of ragù; her blouse drying on the radiator behind her", "images/cg/ep2/d18_13b_cena_reggiseno.webp")
+    else:
+        $ cg("Howard's little kitchen table laid with his mother's good tablecloth; Sara and Howard eating ragù and laughing", "images/cg/ep2/d18_13a_cena.webp")
+    n "Howard lays the table with a cloth that smells of a drawer. Embroidered cherries in the corners. His mother's, for best."
+    ho "Not that one. That one wobbles. Sit there. That's the good chair."
+    n "He pulls it out for her. It's the one facing the window, with a cushion on it someone has plumped recently."
+    ho "So. Tell me about your day. All of it. I've got nothing on the stove but this."
+    n "He listens the way nobody listens. Fork down, eyes on her face, nodding at the right places. He never once looks at a phone. He doesn't seem to own one he cares about."
+    if fatto("ep2_d18_pranzo_daniel"):
+        ho "You're different tonight. Lit up. Like someone's been telling you you're wonderful."
+        s "Somebody bought me lunch, that's all."
+        ho "Lucky somebody."
+        n "He smiles and asks nothing else. Sara has the odd feeling he didn't need to."
+    else:
+        ho "Your boss. The one with the hair. Is she being nice to you?"
+        s "In her own way."
+        ho "That's the only way anyone's ever nice."
+    ho "He's always late on Thursdays, isn't he? Your [nome_compagno]."
+    s "Is he?"
+    ho "Thursdays and most Tuesdays. The walls here are very thin, my dear. You get to know a man's footsteps."
+    sp "He knows when [nome_compagno] comes home better than I do."
+
+    menu:
+        sp "It's ten to nine."
+        "Stay for dessert.":
+            $ segna("ep2_d18_dolce_howard")
+            $ interest("howard", 1, "Sara stayed for his mother's tiramisù.")
+            $ via_cg()
+            if fatto("ep2_d18_cena_reggiseno"):
+                $ cg("Sara in her bra at Howard's table, licking tiramisù off a spoon and laughing, Howard beaming", "images/cg/ep2/d18_13c_dolce_reggiseno.webp")
+            else:
+                $ cg("Sara and Howard sharing tiramisù at his little table, both laughing", "images/cg/ep2/d18_13c_dolce.webp")
+            n "The tiramisù comes out of the fridge in a glass dish with a chipped corner. His mother's again. He watches her take the first spoonful as if it were an exam."
+            s "Howard. This is criminal."
+            ho "Thirty years I've waited for someone to say that."
+            n "She hears the front door next door while she's scraping the dish. [nome_compagno], home. She stays another five minutes anyway."
+        "Get home before [nome_compagno].":
+            s "I'd better get back before [nome_compagno] does."
+            ho "Of course. He'll be tired. Daniel works him so hard."
+    if fatto("ep2_d18_cena_reggiseno"):
+        n "Her blouse is still a little damp when she buttons it. There's a faint pink shadow where the sauce was. You'd only see it if you were looking."
+    n "At the door he gives her a jar of sauce wrapped in a tea towel."
     ho "For [nome_compagno]. Tell him the neighbour made it. That's all he needs to know."
-    $ nota_sara("howard", "His mother's ragù. A jar for [nome_compagno], wrapped in a tea towel.")
+    if fatto("ep2_d18_cena_reggiseno"):
+        call ep2_d18_howard_retroscena
+    $ nota_sara("howard", "His mother's ragù, at his little table. A jar for [nome_compagno], wrapped in a tea towel.")
     $ ambiente(None)
+    return
+
+label ep2_d18_howard_macchia:
+    $ via_cg()
+    $ cg("At Howard's stove, a splash of red sauce lands across the front of Sara's cream blouse; Howard holding the ladle, all apology", "images/cg/ep2/d18_13d_macchia.webp")
+    n "Howard reaches past her for the ladle. It slips. A fat red splash lands right across the front of her blouse."
+    ho "Oh! Oh, clumsy old fool. Look what I've done. Your lovely blouse."
+    s "It's fine, Howard, really—"
+    ho "Not if it sets, it isn't. Rinse it now, cold water, and hang it on the radiator. It'll be dry by the time we've eaten. Go on. Bathroom's there."
+    if complesso_crocerossina:
+        sp "Take it off. At Howard's. Why am I already undoing the buttons?"
+        sp "It's only a blouse. It's nothing serious."
+    else:
+        sp "He's right. Tomato never comes out once it's dry."
+    $ via_cg()
+    $ cg("In Howard's kitchen Sara pulls her stained blouse off over her head, left in her bra; Howard openly staring at her chest, not even pretending", "images/cg/ep2/d18_13f_si_toglie.webp")
+    n "Sara doesn't ask any questions. She doesn't even go to the bathroom. She unbuttons the blouse right there by the stove and peels it off."
+    n "Howard doesn't look away. He doesn't pretend to. His eyes are on her chest and they stay there, frankly, the way he'd look at a sunset."
+    s "Howard!"
+    ho "Old eyes, my dear. They go where they like. I gave up arguing with them years ago."
+    n "She laughs, because it's Howard. She rinses the blouse in his little sink, wrings it out, and lays it over the radiator by the window, smoothing the sleeves."
+    n "Then she sits down at his table in her bra, as if that were the most natural thing in the world. After a minute, it is."
+    $ segna("ep2_d18_cena_reggiseno")
+    $ corruption(2, "Sara had dinner at Howard's in her bra.")
+    $ interest("howard", 2, "Sara stayed for dinner in her bra.")
+    return
+
+label ep2_d18_howard_retroscena:
+    call inizio_retroscena
+    $ cg("Retroscena: Howard alone in his kitchen after Sara has gone, looking at a red splash on the stove top and smiling", "images/cg/ep2/d18_13e_retroscena.webp")
+    rs "When the door has closed, Howard wipes the stove. He leaves one small red splash on the enamel, just for a moment, and looks at it."
+    rs "Thirty-one years in a factory. His hands have never once dropped anything he didn't mean to drop."
+    $ retroscena("howard", "The sauce on Sara's blouse wasn't an accident.")
+    call fine_retroscena
     return

@@ -63,7 +63,7 @@ init python:
                 ## Giorno 18
                 "My usual work clothes.", "«Don't talk about him like that.»", "«Not here.»",
                 "«I'm sorry, I can't tonight.»", "Get down and leave it there.",
-                "Step aside and hand him the spoon.", "«Come on. Don't say that.»",
+                "Step aside and hand him the spoon.", "«Come on. Don't say that.»", "Get home before [nome_compagno].",
             ],
         },
         "barbara": {
@@ -121,7 +121,7 @@ init python:
                 ## Giorno 18
                 "The good grey dress.", "Laugh.", "Take his hand.", "Skip the scene.",
                 "«Of course.»", "Go in.", "Another cup.", "Laugh and give it back.",
-                "Let him guide the spoon.",
+                "Let him guide the spoon.", "Stay for dessert.",
             ],
         },
         "daniel": {
@@ -179,7 +179,7 @@ init python:
                 "Joanie's black top, under the blazer.", "«Go on, then. What else did he do?»",
                 "Laugh.", "Take his hand.", "Watch the scene.", "«Of course.»", "Go in.",
                 "Another cup.", "Laugh and give it back.", "Let him guide the spoon.",
-                "Give him exactly what he wants.",
+                "Give him exactly what he wants.", "Stay for dessert.",
             ],
         },
         "mista": {

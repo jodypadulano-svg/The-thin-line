@@ -1,6 +1,6 @@
 # The Thin Line — Inquadrature del giorno 18
 
-**Bozza del 24/11/2026. 25 CG nuove per Mage 5 clip video per il ballo e 1 video con audio (06c); 2 CG riusate dall'Episodio 1.** Esportazione WebP, 16:9; video WebM muti (la canzone `daniel_seduzione` resta sotto). Il codice è in [ep2_giorno18.rpy](../../game/episodio2/ep2_giorno18.rpy).
+**Bozza del 24/11/2026. 33 CG nuove per Mage 5 clip video per il ballo e 1 video con audio (06c); 2 CG riusate dall'Episodio 1.** Esportazione WebP, 16:9; video WebM muti (la canzone `daniel_seduzione` resta sotto). Il codice è in [ep2_giorno18.rpy](../../game/episodio2/ep2_giorno18.rpy).
 
 **Abito base del pranzo (Jody, 24/11):** il **top nero trasparente**. Al tavolo (04, 05, 07) Sara lo porta sotto il blazer aperto; nel ballo (08, 08c, 08d, 09, 09b, 09c e clip) il blazer è appeso alla sedia e si vede il top intero, con le mani di Daniel sulla rete. Il vestito grigio e gli abiti da lavoro restano varianti da fare solo se serviranno; oggi il codice usa una sola immagine per momento.
 
@@ -34,6 +34,10 @@ Anteporre a ogni prompt:
 ### 02 · `d18_02_redazione.webp` — base
 
 > Newsroom, morning. Sara at her desk; Jessica leans over the low partition holding a stack of proofs, teasing. Cool daylight, desks receding.
+
+### 02b · `d18_02b_redazione_top.webp` — da 02, solo col top nero
+
+> Same scene; Sara wears the dark blazer over the black sheer mesh top.
 
 ### 03 · `d18_03_pranzo_scrivania.webp` — base (senza pranzo)
 
@@ -118,6 +122,30 @@ Stessa posa di 08, lui dietro; la mano di Daniel visibile sulla rete al fianco.
 ### 13 · `d18_13_ragu.webp` — step 4
 
 > Howard's small kitchen, a big pot simmering. Sara at the stove with a wooden spoon; Howard stands close behind her, shorter than her, his hands over hers on the spoon, his gaze lower than her shoulder. Warm steam and lamplight, homely and a little mischievous.
+
+### 13d · `d18_13d_macchia.webp` — da 13 (gate: Interest Howard ≥ 15 o Complesso)
+
+> Same kitchen and pose. A splash of red sauce has just landed across the front of Sara's cream blouse; Howard, holding the ladle, all apologetic dismay, a glint in his eye. Sara looks down at the stain, surprised, not upset.
+
+### 13f · `d18_13f_si_toglie.webp` — da 13d
+
+> Same kitchen. Sara pulls the stained blouse off over her head by the stove, left in her bra, arms raised, laughing; Howard stares openly and unashamedly at her chest.
+
+### 13a · `d18_13a_cena.webp` — cena
+
+> Howard's little kitchen table laid with an old embroidered tablecloth with cherries in the corners, two plates of ragù, a carafe of red wine. Sara in her cream blouse and Howard in his cardigan eat and laugh together; she sits in the good chair facing the window, with a cushion. Warm lamplight, homely.
+
+### 13b · `d18_13b_cena_reggiseno.webp` — da 13a, ramo della macchia
+
+> Same table and light. Sara sits in her plain bra and work trousers, perfectly natural and at ease, laughing at something Howard said, fork in hand. Her rinsed blouse is spread to dry on the radiator under the window behind her. Howard beams at her across the table, relaxed and delighted.
+
+### 13c · `d18_13c_dolce.webp` / `d18_13c_dolce_reggiseno.webp` — il dolce
+
+> Same table, a glass dish of tiramisù with a chipped corner. Sara licks a spoonful, eyes closed in pleasure, then laughs; Howard watches her taste it as if it were an exam. In the `_reggiseno` version Sara is in her bra as in 13b, the blouse still on the radiator.
+
+### 13e · `d18_13e_retroscena.webp` — retroscena
+
+> Howard alone in his kitchen after Sara has gone, the door closed, a cloth in his hand; he looks at one small red splash left on the white enamel of the stove and smiles to himself. Dim light, quiet satisfaction.
 
 ## Clip del ballo (WebM, muti)
 
