@@ -9,7 +9,7 @@ label ep2_d18:
     $ fascia_corrente = FASCE.index("lavoro")
     call ep2_d18_redazione
     $ fascia_corrente = FASCE.index("pranzo")
-    if fatto("ep2_d18_pranzo_daniel_confermato"):
+    if fatto("ep2_d18_pranzo_daniel_confermato") and not fatto("ep2_d18_pranzo_annullato"):
         call ep2_d18_pranzo_daniel
     else:
         call ep2_d18_pranzo_scrivania
@@ -55,11 +55,35 @@ label ep2_d18_mattina:
             n "The grey dress is the one she wears when she wants to be taken seriously. It does that. It also does a little more than that, and she knows it."
         "My usual work clothes.":
             n "Trousers, blouse, flat shoes. If anyone asks, it's just a Thursday."
+        ## Via d'uscita dal pranzo (Jody, 24/11): Sara può annullarlo da sola.
+        "Cancel. Text Daniel something came up.":
+            call ep2_d18_annulla_pranzo
+            return
     $ via_cg()
 
     ## La promessa del giorno 13: «Josh will know» va rispettata prima del pranzo.
     if fatto("ep1_d13_pranzo_no"):
         call ep2_d18_avvisa_josh
+    return
+
+label ep2_d18_annulla_pranzo:
+    $ segna("ep2_d18_pranzo_annullato")
+    $ confidence(1, "Sara cancelled lunch with Daniel on her own terms.")
+    $ via_cg()
+    $ chat_aperta = "daniel"
+    show screen telefono_chat("daniel")
+    n "Sara sits on the edge of the bed with the phone in both hands. She types it three times before it sounds like nothing."
+    $ msg("sara", "I'm so sorry, something's come up at work. I can't make lunch today.", premia_avvio=False)
+    n "The reply comes before she's put the phone down."
+    $ suono("telefono_vibra")
+    $ msg("daniel", "Of course. Another time, Sara. There will be one.")
+    hide screen telefono_chat
+    $ chat_aperta = None
+    sp "No questions. Not one. As if he'd already written it in his diary for another day."
+    if fatto("ep2_d17_top_ricevuto"):
+        n "She leaves the black top where it is, over the back of the chair, and puts on what she wears every Thursday."
+    else:
+        n "She closes the wardrobe and puts on what she wears every Thursday."
     return
 
 label ep2_d18_avvisa_josh:
@@ -99,7 +123,7 @@ label ep2_d18_redazione:
     else:
         je "You look like you're about to ask the photographer a question."
     s "I was."
-    if fatto("ep2_d18_pranzo_daniel_confermato"):
+    if fatto("ep2_d18_pranzo_daniel_confermato") and not fatto("ep2_d18_pranzo_annullato"):
         n "Sara checks the time in the corner of the screen. Then again, four minutes later."
         if fatto("ep2_d18_top_nero"):
             n "She keeps her blazer buttoned all morning. Jessica notices, and decides not to say anything. Sara can see her deciding."

@@ -61,7 +61,7 @@ init python:
                 "Stay cool with him.", "«I can do it myself.»", "«[nome_compagno] will know.»",
                 "Tell [nome_compagno] about Magnus.",
                 ## Giorno 18
-                "My usual work clothes.", "«Don't talk about him like that.»", "«Not here.»",
+                "Cancel. Text Daniel something came up.", "«Don't talk about him like that.»", "«Not here.»",
                 "«I'm sorry, I can't tonight.»", "Get down and leave it there.",
                 "Step aside and hand him the spoon.", "«Come on. Don't say that.»", "Get home before [nome_compagno].",
             ],
