@@ -170,6 +170,20 @@ label ep2_d18_pranzo_daniel:
     s "You'll have to read it."
     da "Then I'll read it."
 
+    ## Consigli su Magnus e il «ci rivedremo» (pianificazione 19-22, 24/11).
+    s "I'm seeing him on Saturday. At the publishing house."
+    da "I know. He told me he'd asked."
+    da "Three things. Don't apologise for anything on those pages. He can smell an apology through a closed door."
+    da "Don't ask him what he thought. Wait. He'll tell you, and he'll respect you for being able to wait."
+    da "And when he starts talking about the old days, the first books, let him. That's when he decides about people."
+    s "You've known him a long time."
+    da "Long enough to know he's never wrong about a writer. Only about how long they last."
+    n "Sara realises she's been memorising every word, like a student the night before an exam."
+    da "Afterwards, you'll tell me how it went."
+    s "Will I?"
+    da "We'll see each other again, Sara. To talk it over. Properly. I'll want every detail, and you'll want to tell someone who understands what it means."
+    sp "Again. He says it as if the date's already in his diary."
+
     ## Josh: Daniel lo sfotte (24/11). Stasera lo tiene in ufficio lui.
     da "I'll have plenty of time this evening. [nome_compagno] won't. I've given him the Harrow contracts to do again."
     s "Again?"
@@ -310,7 +324,7 @@ label ep2_d18_professionale:
     $ via_cg()
     $ cg("Daniel signs the bill without looking at it while Sara puts on her coat", "images/cg/ep2/d18_06_conto.webp")
     n "The rest of lunch is about the book. He asks good questions, the kind that make her want to go home and write. At ten to two he signs the bill without looking at it."
-    da "Saturday, Magnus will want to see you. Wear something you can think in."
+    da "One more piece of advice for Saturday. Wear something you can think in."
     s "Is that advice?"
     da "That's an order. I'm told you don't take them."
     return

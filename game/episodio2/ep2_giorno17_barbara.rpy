@@ -1,6 +1,8 @@
 default sara_stagista = False
 
 label ep2_d17_foto_extra:
+    ## Solo la canzone dello shooting: spegnere il rumore della redazione (24/11).
+    $ ambiente(None, dissolvenza=0.5)
     $ musica("barbara_shooting")
     $ via_cg()
     $ cg("Barbara whispers to Sara after the portrait", "images/cg/ep2/d17_barbara_sussurro.png")
@@ -99,7 +101,7 @@ label ep2_d17_foto_extra_fine:
 
 label ep2_d17_barbara_ufficio:
     $ via_cg()
-    $ ambiente("ufficio")
+    ## Niente ambiente d'ufficio sopra la canzone dello shooting (24/11).
     $ vai("redazione", "Barbara's office — After the photoshoot")
     $ cg("Sara and Barbara talk in private", "images/cg/ep2/d17_barbara_ufficio.png")
     n "Sara puts her clothes on the spare chair and sits down. Barbara shuts the door."
@@ -123,13 +125,15 @@ label ep2_d17_barbara_ufficio:
 label ep2_d17_barbara_scelta_contratto:
     menu:
         "I don't know I may have to think about it":
+            ## La firma come filmato a tempo, come la terrazza del 13 (Jody, 24/11).
+            n "{i}The next scene plays to music and runs on its own, about a minute and a half.{/i}"
             menu:
-                "This choice starts a scene you cannot skip. Once you confirm, you cannot return to this choice."
-                "Continue":
+                "Watch the scene.":
+                    call ep2_d17_barbara_firma_tempo
+                    return
+                "Skip the scene.":
                     call ep2_d17_barbara_firma
                     return
-                "Go back":
-                    jump ep2_d17_barbara_scelta_contratto
         "I liked the photos. I'm leaving it there.":
             s "I liked the photos. I'm leaving it there."
             n "Sara reaches for her blouse. Barbara sets the contract back on the desk."
@@ -173,6 +177,56 @@ label ep2_d17_barbara_firma:
     n "Sara lifts her face to meet her. Barbara kisses her briefly on the lips and lets go."
     ba "Get dressed. You start tomorrow."
     $ musica(None)
+    $ _skipping = _ep2_d17_skipping_precedente
+    $ renpy.block_rollback()
+    return
+
+
+## --- La firma a tempo (Jody, 24/11) -------------------------------------------------------
+## Sulla canzone barbara_firma: 0:17 il foglio, 0:38 la penna, 0:45 la firma (video del polso).
+## Battute non saltabili (vc_* del giorno 13). Gli effetti sono gli stessi della versione a clic.
+
+define D17_BARBARA = "#e07fb0"
+
+init python:
+    def d17_firma_inizia():
+        f = _file_audio("musica", "barbara_firma")
+        if f:
+            renpy.music.play(f, channel="music", loop=False, fadein=0.5)
+        _vc["inizio"] = _tempo_vc.time()
+        _vc["pausa"] = None
+
+label ep2_d17_barbara_firma_tempo:
+    $ renpy.stop_skipping()
+    $ renpy.block_rollback()
+    $ _ep2_d17_skipping_precedente = _skipping
+    $ _skipping = False
+    $ ambiente(None, dissolvenza=0)
+    $ via_cg()
+    $ luogo_corrente = ""
+    $ d17_firma_inizia()
+    $ vc_a(0); vc_quadro("images/cg/ep2/d17_barbara_firma_01_avvicinamento.png", "Barbara approaches Sara with the contract")
+    $ vc_a(1); vc_riga("Sara", "I don't know... I may have to think about it.", VC_SARA)
+    $ vc_a(8); vc_riga(None, "Barbara crosses the room slowly, watching her. Sara stays where she is.")
+    $ vc_a(17); vc_riga(None, "Barbara lays the contract flat in front of her and turns it toward Sara.")
+    $ vc_a(24); vc_quadro("images/cg/ep2/d17_barbara_firma_02_sussurro.png", "Barbara leans close to Sara's ear"); vc_riga("Barbara", "I know you want me to guide you.", D17_BARBARA)
+    $ vc_a(30); vc_riga(None, "Sara's hand trembles. She looks down at the signature line.", pensiero=False)
+    $ vc_a(34); vc_riga("Sara", "Show me.", VC_SARA)
+    $ vc_a(38); vc_video("images/video/ep2/d17_barbara_firma_01_penna.webm", "images/cg/ep2/d17_barbara_firma_02_sussurro.png", "Barbara puts the pen between Sara's fingers")
+    $ vc_a(43); vc_riga("Barbara", "Sign.", D17_BARBARA)
+    $ vc_a(45); vc_video("images/video/ep2/d17_barbara_firma_02_polso.webm", "images/cg/ep2/d17_barbara_firma_02_sussurro.png", "Barbara guides Sara's wrist across the signature line")
+    $ corruption(10, "Sara signed Barbara's special internship contract.")
+    $ interest("capa", 10, "Sara signed Barbara's special internship contract.")
+    $ sara_stagista = True
+    $ vc_a(52); vc_quadro("images/cg/ep2/d17_barbara_firma_04_firmato.png", "Sara sets the pen down after signing")
+    $ vc_a(53); vc_riga(None, "Sara sets down the pen. Her knees shift apart slightly. She is suddenly aware of how wet she is.")
+    $ vc_a(61); vc_riga(None, "When she looks up, Barbara is smiling. She takes Sara's chin in one hand and tilts it up.")
+    $ vc_a(68); vc_riga("Barbara", "You're mine now.", D17_BARBARA)
+    $ vc_a(72); vc_video("images/video/ep2/d17_barbara_firma_04_bacio.webm", "images/cg/ep2/d17_barbara_firma_04_firmato.png", "Barbara kisses Sara briefly on the lips")
+    $ vc_a(77); vc_quadro("images/cg/ep2/d17_barbara_firma_04_firmato.png"); vc_riga(None, "Sara lifts her face to meet her. Barbara kisses her briefly on the lips and lets go.")
+    $ vc_a(84); vc_riga("Barbara", "Get dressed. You start tomorrow.", D17_BARBARA)
+    $ vc_a(90); vc_via()
+    $ musica(None, dissolvenza=3.0)
     $ _skipping = _ep2_d17_skipping_precedente
     $ renpy.block_rollback()
     return

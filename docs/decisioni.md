@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 17 · La firma diventa un filmato a tempo (24/11/2026)
+
+**Stato: applicato in Ren'Py** (`ep2_d17_barbara_firma_tempo`). La conferma «scena non saltabile / Continue / Go back» è sostituita dall'avviso e dalla scelta «Watch the scene / Skip the scene», come la terrazza del 13. Versione a tempo sulla canzone `barbara_firma`: 0:17 il foglio, 0:38 il video della penna, 0:45 la firma (video del polso), poi «You're mine now» e il bacio; chiusura verso 1:30 con dissolvenza. Battute non saltabili. «Skip» mostra la versione a clic. Effetti identici nei due modi (Corr +10, Barbara +10, `sara_stagista`). Il nuovo filmato di Joanie e Simon sostituisce il vecchio `d17_palestra_joanie_simon.webm`.
+
 ### Giorno 18 · Pranzo con Daniel, Barbara e Howard (24/11/2026)
 
 **Stato: bozza scritta in Ren'Py, da rivedere con Jody.** [Scene e dialoghi](../game/episodio2/ep2_giorno18.rpy), [inquadrature](prompt-immagini/inquadrature-giorno-18.md), test `giorno18`.
