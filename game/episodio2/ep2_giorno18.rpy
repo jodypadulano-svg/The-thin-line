@@ -123,6 +123,8 @@ label ep2_d18_pranzo_scrivania:
 
 label ep2_d18_pranzo_daniel:
     $ segna("ep2_d18_pranzo_daniel")
+    ## Sara «ragazzina» (24/11): fiducia e intimità, solo con Interest Daniel ≥ 12 all'arrivo.
+    $ segna("ep2_d18_ragazzina", valore_interest("daniel") >= 12)
     $ vai("ristorante", "Ristorante Verde — a private room, 1 p.m.")
     $ musica("ristorante")
     $ cg("A small private dining room: Daniel already seated, standing as Sara comes in", "images/cg/ep2/d18_04_saletta.webp")
@@ -141,6 +143,8 @@ label ep2_d18_pranzo_daniel:
         s "Is it working?"
         da "I'm listening."
     n "He pulls out her chair. When she sits, his hand rests on the back of it a moment longer than a waiter's would."
+    if fatto("ep2_d18_ragazzina"):
+        call ep2_d18_ragazzina
 
     $ via_cg()
     $ cg("Daniel and Sara at the table, a basket of bread between them, Daniel turning his glass", "images/cg/ep2/d18_05_tavolo.webp")
@@ -172,9 +176,121 @@ label ep2_d18_pranzo_daniel:
     else:
         call ep2_d18_professionale
     $ via_cg()
+    if fatto("ep2_d18_ragazzina"):
+        call ep2_d18_dopo_conto
+    if fatto("ep2_d18_ballo"):
+        $ musica("ristorante")
+        $ vai("ristorante", "Ristorante Verde — 1:55 p.m.")
+        if fatto("ep2_d18_sfotto_josh"):
+            n "He walks her to the door of the restaurant with his hand at the small of her back, the whole way, as if the corridor belonged to him. She lets it stay there."
+        else:
+            n "He walks her to the door of the restaurant and doesn't touch her again, not even to say goodbye. That is somehow worse."
+        $ nota_sara("daniel", "We danced in a little room with a fig tree in the window. His song. He stopped before I wanted him to.")
+    else:
+        $ vai("strada", "Outside the restaurant — 2 p.m.")
+        n "Outside, the air is cold. She realizes she's smiling and stops, and then starts again on the bus."
+    $ via_cg()
+    return
+
+
+## --- Sara «ragazzina» (24/11) -------------------------------------------------------------
+## Solo con Interest Daniel ≥ 12: non sta composta, confessa l'abito, gli ruba il pane.
+## Nessun effetto numerico: è il segno della fiducia. Niente teasing in questo momento.
+
+label ep2_d18_ragazzina:
+    $ via_cg()
+    $ cg("Sara at the table, blushing, confessing something with a hand half over her mouth; Daniel listening, surprised", "images/cg/ep2/d18_05b_confessione.webp")
+    n "She means to sit the way she sits at work. Back straight, napkin on her knee. It lasts about four seconds."
+    s "Can I tell you something stupid?"
+    da "Please."
+    if fatto("ep2_d18_top_nero"):
+        s "Joanie bought it. The top. As a joke, sort of. But this morning I picked it. For you."
+        s "I didn't even think about it. I just knew it was the one I'd wear to see you."
+        n "She hears it out loud and her hand flies up to her mouth, too late."
+        s "Oh God. Forget I said that."
+    elif fatto("ep2_d18_vestito_grigio"):
+        s "I changed three times this morning. Three. I ended up in the first one."
+        s "I wanted you to think I look like this every Thursday."
+        n "She laughs at herself before he can, a hand over her mouth."
+    else:
+        s "I changed three times this morning. And then I put my work clothes back on, so it wouldn't look like I'd changed three times."
+        n "She laughs at herself before he can, a hand over her mouth."
+    da "I'm not going to forget a word of it."
+
+    $ via_cg()
+    $ cg("Sara with her elbows on the table and her chin in her hands, beaming, leaning toward Daniel as she talks", "images/cg/ep2/d18_05c_raggiante.webp")
+    n "Then the words start and she can't stop them. Elbows on the table, chin in her hands. The website photo. The yellow slip under her monitor. Fifty pages sent at midnight, with her own name at the bottom."
+    s "And Jess said my portrait looks like I'm about to ask the photographer a question. Which I was. I was going to ask him if I could—sorry. I'm talking too much."
+    da "You're not."
+    s "I am. I can hear myself."
+    da "Then keep going. I want to hear the rest."
+    sp "I'm happy. I don't even care if he can see it."
+
+    $ via_cg()
+    $ cg("Sara steals a piece of bread from Daniel's plate and bites it, looking straight at him; Daniel laughing openly", "images/cg/ep2/d18_05d_pane.webp")
+    n "His bread is on the side of his plate, untouched. Sara reaches across, takes it, and bites into it, looking him straight in the eye."
+    s "You weren't eating it."
+    n "For a second Daniel just looks at her. Then he laughs. Not the half smile she knows. A real laugh, surprised out of him, his head back."
+    da "Nobody has taken food off my plate since I was nine years old."
+    s "Then you were overdue."
+    da "I've never seen you like this, Sara."
+    s "Like what?"
+    da "Happy where I can see it. I like it. I like it more than I expected to."
+    n "She feels her face go hot. She doesn't look away and she doesn't stop smiling."
+    return
+
+
+## --- Dopo il conto (24/11): il bacio sulla guancia e lo sfottò di Josh ---------------------
+
+label ep2_d18_dopo_conto:
+    $ via_cg()
+    $ cg("Standing by the door of the private room, Sara rises on her toes to kiss Daniel's cheek; he has just put his wallet away", "images/cg/ep2/d18_06b_bacio_guancia.webp")
+    if not fatto("ep2_d18_professionale"):
+        n "The bill comes in a leather folder. Daniel signs it without looking."
+    n "Sara is on her feet before he is, almost bouncing. At the door she rises on her toes and kisses his cheek, quickly, the way she'd thank a friend who'd given her the best afternoon of her week."
+    s "Thank you. Really. This was the nicest lunch I've ever had."
+    s "You're the most interesting man I've ever sat across a table from."
+    n "Daniel doesn't move. He looks at her the way he looks at a contract, to see exactly how much it's worth."
+    da "Interesting. Not like the one at home, then. Doing page four again, right way up, if he's lucky."
+    menu:
+        sp "He's waiting to hear what I'll say."
+        "«Come on. Don't say that.»":
+            s "Come on. Don't say that."
+            n "She says it lightly, with a little push to his arm. Daniel smiles as if he'd lost nothing at all."
+            da "As you like."
+        "Give him exactly what he wants.":
+            call ep2_d18_premio
+    return
+
+label ep2_d18_premio:
+    ## Prima volta che Sara partecipa allo sfottò su Josh: non da ragazzina, da donna
+    ## seducente. Ha capito che prevalere su Josh è ciò che eccita Daniel, e glielo regala.
+    $ segna("ep2_d18_sfotto_josh")
+    $ interest("daniel", 3, "Sara joined in, and gave him exactly what he wanted.")
+    $ corruption(3, "Sara mocked Josh for Daniel, on purpose.")
+    sp "That's what he wants. Not me laughing. Me choosing. Him over [nome_compagno]."
+    sp "Just once. I can give him that."
+    if renpy.loadable("images/video/ep2/d18_06c_premio.webm"):
+        $ filmato("images/video/ep2/d18_06c_premio.webm", stop_music=False)
+        $ via_cg()
+        $ cg("Daniel holds Sara by the nape of her neck, a breath from her mouth, her eyes in his", "images/cg/ep2/d18_06c_premio.webp")
+    else:
+        $ via_cg()
+        $ cg("Daniel holds Sara by the nape of her neck, a breath from her mouth, her eyes in his", "images/cg/ep2/d18_06c_premio.webp")
+        n "The girl who stole his bread is gone. Sara steps close, slowly, and straightens his collar with two fingers. When she speaks, her voice is low and very near his mouth."
+        s "He'd have asked me if he could pay. And then said sorry for asking."
+        n "Daniel's hand comes up to the back of her neck and holds her there, a breath away."
+        da "Say it again."
+        s "He'd have said sorry."
+    n "Daniel lets her go with the slow smile of a man who has just won, and collected."
+    da "Thank you, Sara. That was the best part of lunch."
+    n "She smooths her hair. Her hands aren't quite steady, and her smile is enormous."
+    sp "I gave it to him. On purpose. And I liked giving it."
+    $ nota_sara("daniel", "I said it for him. About [nome_compagno]. He made me say it twice, and I did.")
     return
 
 label ep2_d18_professionale:
+    $ segna("ep2_d18_professionale")
     menu:
         sp "He's talking about [nome_compagno]."
         "Laugh.":
@@ -193,7 +309,6 @@ label ep2_d18_professionale:
     da "Saturday, Magnus will want to see you. Wear something you can think in."
     s "Is that advice?"
     da "That's an order. I'm told you don't take them."
-    n "Outside, the air is cold. She realizes she's smiling and stops, and then starts again on the bus."
     return
 
 label ep2_d18_privato:
@@ -247,7 +362,10 @@ label ep2_d18_privato:
     menu:
         sp "He's holding out his hand."
         "Take his hand.":
-            pass
+            if fatto("ep2_d18_top_nero"):
+                ## Il blazer resta sulla sedia: nel ballo si vede il top (24/11).
+                n "Sara stands and slips off her blazer. She hangs it on the back of her chair, taking her time, and only then gives him her hand."
+                n "His palm settles at her waist, on the mesh. She feels the warmth of it through the holes, on her bare skin."
         "«Not here.»":
             $ confidence(1, "Sara turned down the dance.")
             s "Not here, Daniel."
@@ -257,6 +375,8 @@ label ep2_d18_privato:
             sp "That's not a no. He's right, and he knows he's right."
             return
 
+    ## Il dondolio (24/11): lei davanti, lui dietro, come alla cerniera del 13.
+    n "Daniel turns her gently by the shoulders until she's facing the window, and steps in close behind her. The fig tree. The courtyard. His chest against her back."
     $ segna("ep2_d18_ballo")
     if fatto("ep1_d13_videoclip"):
         $ segna("ep2_d18_ballo_ripetuto")
@@ -321,13 +441,13 @@ label ep2_d18_ballo(a_tempo):
         $ musica("daniel_seduzione")
     python:
         righe = [
-            (0, "quadro", D18_ABBRACCIO, "Daniel draws Sara in by the waist in the small private room, the fig tree in the window behind them"),
+            (0, "quadro", D18_ABBRACCIO, "Daniel stands close behind Sara, his hands on her waist, both facing the fig tree window; the door shut"),
             (3, "riga", "Daniel", "Closer. I won't break."),
-            (8, "quadro", D18_PP_SARA, "Close-up of Sara against Daniel's shoulder, eyes half closed"),
+            (8, "quadro", D18_PP_SARA, "Close-up of Sara leaning back against Daniel's chest, eyes half closed"),
             (8, "pensiero", None, "His hand on my back. Exactly where it was."
                 if fatto("ep1_d13_videoclip") else "I've never danced with anyone but [nome_compagno]. Not like this."),
             (15, "riga", "Sara", "Someone could come in."),
-            (19, "quadro", D18_PP_DANIEL, "Close-up of Daniel, amused, looking down at her"),
+            (19, "quadro", D18_PP_DANIEL, "Close-up of Daniel over Sara's shoulder, amused, looking down at her"),
             (19, "riga", "Daniel", "Nobody comes in unless I call them."),
             (26, "riga", "Daniel", "He'll be at the photocopier by now. Page four. Right way up, if he's lucky."),
             (33, "quadro", D18_PP_SARA, "Close-up of Sara biting back a smile"),
@@ -335,12 +455,12 @@ label ep2_d18_ballo(a_tempo):
             (40, "riga", "Daniel", "You're smiling."),
             (44, "riga", "Sara", "I'm not."),
             ## Ritornello 1: il dondolio.
-            (49, "video", "images/video/ep2/d18_va_dondolio.webm", (D18_ABBRACCIO, "Daniel and Sara sway together, her forehead nearly at his collar")),
+            (49, "video", "images/video/ep2/d18_va_dondolio.webm", (D18_ABBRACCIO, "Daniel and Sara sway together, he behind her, her back against his chest")),
             (64, "riga", "Daniel", "You've been thinking about this since Saturday." if fatto("ep1_d13_videoclip") else "You've been wanting to do this since the terrace."),
             (70, "riga", "Sara", "You don't know that."),
             (74, "riga", "Daniel", "I know exactly where to put my hands. So do you."),
             ## Strofa 2: lui la gira piano, la tiene più stretta.
-            (78, "video", "images/video/ep2/d18_vb_giro.webm", (D18_ABBRACCIO, "Daniel turns Sara slowly in his arms, her back to the window")),
+            (78, "video", "images/video/ep2/d18_vb_giro.webm", (D18_ABBRACCIO, "Daniel's mouth at Sara's hair as they sway, one hand flat on the mesh over her stomach")),
             (93, "quadro", D18_PP_DANIEL, "Close-up of Daniel, his mouth near her hair"),
             (93, "riga", "Daniel", "Does he dance with you?"),
             (98, "quadro", D18_PP_SARA, "Close-up of Sara, eyes closed"),
@@ -349,21 +469,21 @@ label ep2_d18_ballo(a_tempo):
             (106, "pensiero", None, "That was unkind. I said it to make him say that."),
             (112, "riga", "Daniel", "Say something else unkind. I like it on you."),
             ## Ritornello 2: le mani sui fianchi, più vicini.
-            (120, "video", "images/video/ep2/d18_vc_fianchi.webm", (D18_ABBRACCIO, "Daniel's hands low on Sara's hips as they sway, her hands flat on his chest")),
+            (120, "video", "images/video/ep2/d18_vc_fianchi.webm", (D18_ABBRACCIO, "Daniel's hands low on Sara's hips from behind as they sway, her hands resting over his")),
             (135, "riga", "Daniel", "Don't move."),
         ]
         if fatto("ep1_d13_cerniera"):
             ## Il passo in più: dall'orecchio alla bocca, senza arrivarci.
             righe += [
-                (149, "video", "images/video/ep2/d18_vd_mandibola.webm", ("images/cg/ep2/d18_09_mandibola.webp", "Daniel's lips trace from below Sara's ear down her jaw, stopping at the corner of her mouth; her eyes closed, her face turning toward him")),
+                (149, "video", "images/video/ep2/d18_vd_mandibola.webm", ("images/cg/ep2/d18_09_mandibola.webp", "From behind, Daniel's lips trace from below Sara's ear down her jaw to the corner of her mouth; she turns her face back over her shoulder toward him")),
                 (156, "pensiero", None, "Below my ear. Then lower. Then my jaw."),
                 (161, "pensiero", None, "The corner of my mouth. Turn. Just turn your head."),
-                (166, "quadro", "images/cg/ep2/d18_09b_si_ferma.webp", "Sara turns her face to meet him; Daniel has already drawn back an inch, smiling"),
+                (166, "quadro", "images/cg/ep2/d18_09b_si_ferma.webp", "Sara has turned her face over her shoulder to meet him; Daniel has already drawn back an inch, smiling"),
                 (167, "riga", "Daniel", "Not today."),
             ]
         else:
             righe += [
-                (149, "video", "images/video/ep2/d18_vd_orecchio.webm", ("images/cg/ep2/d18_09c_orecchio.webp", "Daniel kisses Sara just below the ear as they sway; she tilts her head, offering her neck")),
+                (149, "video", "images/video/ep2/d18_vd_orecchio.webm", ("images/cg/ep2/d18_09c_orecchio.webp", "From behind, Daniel kisses Sara just below the ear as they sway; she tilts her head, offering her neck")),
                 (156, "pensiero", None, "Just below my ear. And I'm tilting my head."),
                 (162, "riga", "Daniel", "There you are."),
             ]
@@ -383,9 +503,6 @@ label ep2_d18_ballo(a_tempo):
         sp "My neck. I gave him my neck. And he gave me back my collar."
     $ via_cg()
     $ musica("ristorante")
-    $ vai("ristorante", "Ristorante Verde — 1:55 p.m.")
-    n "He walks her to the door of the restaurant and doesn't touch her again, not even to say goodbye. That is somehow worse."
-    $ nota_sara("daniel", "We danced in a little room with a fig tree in the window. His song. He stopped before I wanted him to.")
     return
 
 

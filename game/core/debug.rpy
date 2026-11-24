@@ -63,7 +63,7 @@ init python:
                 ## Giorno 18
                 "My usual work clothes.", "«Don't talk about him like that.»", "«Not here.»",
                 "«I'm sorry, I can't tonight.»", "Get down and leave it there.",
-                "Step aside and hand him the spoon.",
+                "Step aside and hand him the spoon.", "«Come on. Don't say that.»",
             ],
         },
         "barbara": {
@@ -179,6 +179,7 @@ init python:
                 "Joanie's black top, under the blazer.", "«Go on, then. What else did he do?»",
                 "Laugh.", "Take his hand.", "Watch the scene.", "«Of course.»", "Go in.",
                 "Another cup.", "Laugh and give it back.", "Let him guide the spoon.",
+                "Give him exactly what he wants.",
             ],
         },
         "mista": {

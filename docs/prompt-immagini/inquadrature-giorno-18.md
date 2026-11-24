@@ -1,8 +1,8 @@
 # The Thin Line — Inquadrature del giorno 18
 
-**Bozza del 24/11/2026. 20 CG nuove per Mage e 5 clip video per il ballo; 2 CG riusate dall'Episodio 1.** Esportazione WebP, 16:9; video WebM muti (la canzone `daniel_seduzione` resta sotto). Il codice è in [ep2_giorno18.rpy](../../game/episodio2/ep2_giorno18.rpy).
+**Bozza del 24/11/2026. 25 CG nuove per Mage 5 clip video per il ballo e 1 video con audio (06c); 2 CG riusate dall'Episodio 1.** Esportazione WebP, 16:9; video WebM muti (la canzone `daniel_seduzione` resta sotto). Il codice è in [ep2_giorno18.rpy](../../game/episodio2/ep2_giorno18.rpy).
 
-**Da decidere con Jody:** al pranzo Sara può avere tre abiti (top nero sotto il blazer, vestito grigio, abiti da lavoro). Oggi il codice usa una sola immagine per momento. Proposta: generare le CG del pranzo e del ballo con il **top nero** come base, che è il ramo più visivo, e aggiungere varianti con il vestito grigio solo per 04, 08 e 09 se servono.
+**Abito base del pranzo (Jody, 24/11):** il **top nero trasparente**. Al tavolo (04, 05, 07) Sara lo porta sotto il blazer aperto; nel ballo (08, 08c, 08d, 09, 09b, 09c e clip) il blazer è appeso alla sedia e si vede il top intero, con le mani di Daniel sulla rete. Il vestito grigio e gli abiti da lavoro restano varianti da fare solo se serviranno; oggi il codice usa una sola immagine per momento.
 
 ## Riferimenti
 
@@ -47,9 +47,29 @@ Anteporre a ogni prompt:
 
 > Seated two-shot across the table, a bread basket between them. Daniel turns his wine glass slowly, watching Sara; Sara tears a piece of bread, holding back a smile. Fig tree soft in the window.
 
+### 05b · `d18_05b_confessione.webp` — da 05 (Sara «ragazzina», Interest Daniel ≥ 12)
+
+> Same table, light and clothes. Sara leans forward, blushing hard, one hand flying up to cover her mouth just after confessing something too honest; her eyes are wide and laughing. Daniel, leaning back, looks at her with genuine surprise, his glass forgotten.
+
+### 05c · `d18_05c_raggiante.webp` — da 05
+
+> Same table. Sara has abandoned all composure: elbows on the tablecloth, chin in her hands, leaning toward Daniel, talking excitedly, beaming, radiant, girlish. Daniel listens with an unguarded, warm attention, chin resting on his knuckles.
+
+### 05d · `d18_05d_pane.webp` — da 05
+
+> Same table. Sara has reached across and stolen the bread from Daniel's side plate; she bites into it, looking him straight in the eye, playful and defiant. Daniel laughs openly, head tipped back, a real surprised laugh, not his usual half smile.
+
 ### 06 · `d18_06_conto.webp` — da 04 (ramo professionale)
 
 > Daniel signs the bill without looking at it while Sara stands putting on her coat. Courteous distance between them, the table cleared.
+
+### 06b · `d18_06b_bacio_guancia.webp` — dopo il conto (ragazzina)
+
+> By the closed door of the private room. Daniel has just put his wallet away. Sara, on tiptoe, gives him a quick, sincere, happy kiss on the cheek, her eyes closed, smiling; her blazer over her arm if she wears the black top. Daniel stands still, pleased, studying her.
+
+### 06c · `d18_06c_premio.webp` — riserva del video, ramo dello sfottò seducente
+
+> Same spot by the door. Sara is no longer girlish: she stands very close, one hand straightening Daniel's collar with two fingers, her lips a breath from his, eyes locked on his, a slow knowing seductive smile. Daniel holds her by the nape of her neck, keeping her there, his face lit with the satisfaction of having won. Their mouths do not touch.
 
 ### 07 · `d18_07_musica.webp` — da 04 (ramo privato)
 
@@ -57,27 +77,31 @@ Anteporre a ogni prompt:
 
 ### 08 · `d18_08_abbraccio.webp` — base del ballo
 
-> Daniel draws Sara close by the waist in the small room, the fig tree window behind them. Her forehead almost at his collar, her hands on his chest. Slow, close, unhurried; Sara visibly enjoying it.
+**Regia (Jody, 24/11): nel dondolio lei davanti, lui dietro**, come alla cerniera della terrazza. Porta della saletta **chiusa**, nessun cameriere. Sara senza blazer (appeso alla sedia, visibile): top in mesh nera trasparente con i due pannelli tondi opachi, pantaloni da lavoro.
+
+> The same small private dining room, the door firmly closed, nobody else in the room. Sara's dark blazer hangs on the back of her chair beside the table. Sara wears only the black sheer mesh top, long sheer sleeves, wavy high collar, two large opaque round black panels joined by a thin strip over her very large, full breasts, bare skin visible through the mesh, with dark work trousers. She stands in the middle of the room facing the fig tree window and the viewer; Daniel, in his white open-collared shirt with rolled sleeves, stands close behind her, his chest against her back, both hands on her waist over the mesh, his chin near her temple. They sway slowly together. Sara's eyes are half closed, cheeks flushed, a small blissful smile, her hands resting over his; Daniel looks down at her over her shoulder, calm, amused and certain. Warm midday light through the fig leaves. Medium shot at eye level from the window side, both faces readable.
 
 ### 08c · `d18_08c_daniel_pp.webp` — primo piano
 
-> Close-up of Daniel looking down at Sara, amused and certain, his mouth near her hair.
+> Close-up of Daniel just behind Sara's shoulder, his mouth near her hair, looking down at her, amused and certain. Her auburn waves and the mesh collar in soft focus in the foreground.
 
 ### 08d · `d18_08d_sara_pp.webp` — primo piano
 
-> Close-up of Sara against Daniel's shoulder, eyes half closed, cheeks flushed, biting back a smile.
+> Close-up of Sara leaning back against Daniel's chest, eyes half closed, cheeks flushed, biting back a smile; Daniel's jaw and white collar out of focus behind her.
 
 ### 09 · `d18_09_mandibola.webp` — ramo «salto in avanti» (bacio sull'orecchio già avvenuto il 13)
 
-> Close-up: Daniel's lips trace from just below Sara's ear along her jaw, stopping at the corner of her mouth. Her eyes closed, lips parted, face beginning to turn toward him. Blissful, wanting.
+Stessa posa di 08, lui dietro; la mano di Daniel visibile sulla rete al fianco.
+
+> Close-up from the front: Daniel, behind Sara, traces his lips from just below her ear along her jaw toward the corner of her mouth. Sara's eyes are closed, lips parted, and she is turning her face back over her shoulder toward him. One of his hands is on the mesh at her hip. Blissful, wanting.
 
 ### 09b · `d18_09b_si_ferma.webp` — da 09
 
-> The instant after: Sara has turned her face to meet his mouth, but Daniel has drawn back an inch, smiling, teasing. Her eyes just opening, half laughing at being caught.
+> The instant after: Sara has turned her face over her shoulder to meet his mouth, but Daniel has drawn back an inch, smiling, teasing. Her eyes just opening, half laughing at being caught.
 
 ### 09c · `d18_09c_orecchio.webp` — ramo primo bacio sull'orecchio
 
-> Close-up while they sway: Daniel kisses Sara lightly just below the ear; she tilts her head to offer her neck, eyes closed, smiling.
+> Close-up while they sway, Daniel behind her: he kisses Sara lightly just below the ear; she tilts her head to the side, offering her neck, eyes closed, smiling.
 
 ### 10 · `d18_10_barbara.webp` — base
 
@@ -101,8 +125,12 @@ Stessi tempi della terrazza: ritornello 1 a 0:49, strofa 2 a 1:18, ritornello 2 
 
 | File | Momento | Contenuto |
 |---|---|---|
-| `d18_va_dondolio.webm` | 0:49, 15 s | Dondolano lenti, lei con la fronte quasi sul colletto |
-| `d18_vb_giro.webm` | 1:18, 15 s | Lui la fa girare piano, lei finisce di schiena alla finestra |
-| `d18_vc_fianchi.webm` | 2:00, 15 s | Le mani di lui basse sui fianchi, quelle di lei piatte sul suo petto |
-| `d18_vd_mandibola.webm` | 2:29, 15 s | Labbra dall'orecchio alla mandibola fino all'angolo della bocca; lei gira il viso, lui si ritrae sorridendo |
-| `d18_vd_orecchio.webm` | 2:29, 12 s | Bacio leggero sotto l'orecchio, lei inclina la testa |
+| `d18_va_dondolio.webm` | 0:49, 15 s | Dondolano lenti, lui dietro di lei, la schiena di lei contro il suo petto |
+| `d18_vb_giro.webm` | 1:18, 15 s | Le labbra di lui tra i capelli di lei, una mano piatta sulla rete sulla pancia |
+| `d18_vc_fianchi.webm` | 2:00, 15 s | Le mani di lui basse sui fianchi da dietro, quelle di lei sopra le sue |
+| `d18_vd_mandibola.webm` | 2:29, 15 s | Da dietro, labbra dall'orecchio alla mandibola fino all'angolo della bocca; lei gira il viso oltre la spalla, lui si ritrae sorridendo |
+| `d18_vd_orecchio.webm` | 2:29, 12 s | Da dietro, bacio leggero sotto l'orecchio, lei inclina la testa |
+
+## Video con audio: `d18_06c_premio.webm` (circa 15 s, base 06c)
+
+Sara fa la sexy apposta. 1) Si avvicina lenta, gli occhi nei suoi, e gli sistema il colletto con due dita. 2) Voce bassa, vicinissima alla bocca: **Sara:** «He'd have asked me if he could pay. And then said sorry for asking.» 3) Lui la prende per la nuca, a un respiro: **Daniel:** «Say it again.» 4) **Sara**, lentissima: «He'd have said sorry.» 5) Lui la lascia andare con il sorriso di chi ha vinto; lei si sistema i capelli, raggiante. Niente bacio in bocca. Se il file manca, il gioco mostra la CG 06c con le battute in testo.
