@@ -406,6 +406,19 @@ label ep2_d18_privato:
 ## della bocca, poi lui si ferma; altrimenti oggi arriva il bacio sull'orecchio.
 
 init python:
+    def d18_video(video, riserva, descrizione="", fine=None):
+        """Come vc_video del giorno 13, ma a video finito resta un'immagine (fine o la
+        riserva) invece dello schermo vuoto: i video possono durare meno della finestra."""
+        renpy.hide_screen("battuta_tempo")
+        if renpy.loadable(video):
+            renpy.hide_screen("segnaposto_cg")
+            dopo = fine if fine and renpy.loadable(fine) else riserva
+            renpy.show("cg_corrente", what=Movie(play=video, loop=False, size=(config.screen_width, config.screen_height),
+                                                 image=Transform(dopo, fit="cover", xysize=(config.screen_width, config.screen_height)) if renpy.loadable(dopo) else None))
+            renpy.with_statement(dissolve)
+        else:
+            vc_quadro(riserva, descrizione)
+
     def d18_sequenza(righe, a_tempo):
         """righe: (secondi, tipo, a, b). Tipi: quadro (file, descrizione), video
         (file, (riserva, descrizione)), riga (chi, testo), pensiero (None, testo)."""
@@ -415,7 +428,7 @@ init python:
                 if tipo == "quadro":
                     vc_quadro(a, b)
                 elif tipo == "video":
-                    vc_video(a, b[0], b[1])
+                    d18_video(a, b[0], b[1], b[2] if len(b) > 2 else None)
                 elif tipo == "riga":
                     vc_riga(a, b, VC_DANIEL if a == "Daniel" else VC_SARA)
                 else:
@@ -479,7 +492,7 @@ label ep2_d18_ballo(a_tempo):
         if fatto("ep1_d13_cerniera"):
             ## Il passo in più: dall'orecchio alla bocca, senza arrivarci.
             righe += [
-                (149, "video", "images/video/ep2/d18_vd_mandibola.webm", ("images/cg/ep2/d18_09_mandibola.webp", "From behind, Daniel's lips trace from below Sara's ear down her jaw to the corner of her mouth; she turns her face back over her shoulder toward him")),
+                (149, "video", "images/video/ep2/d18_vd_mandibola.webm", ("images/cg/ep2/d18_09_mandibola.webp", "From behind, Daniel's lips trace from below Sara's ear down her jaw to the corner of her mouth; she turns her face back over her shoulder toward him", "images/cg/ep2/d18_09b_si_ferma.webp")),
                 (156, "pensiero", None, "Below my ear. Then lower. Then my jaw."),
                 (161, "pensiero", None, "The corner of my mouth. Turn. Just turn your head."),
                 (166, "quadro", "images/cg/ep2/d18_09b_si_ferma.webp", "Sara has turned her face over her shoulder to meet him; Daniel has already drawn back an inch, smiling"),
