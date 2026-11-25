@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 22+ · Fascino di Sara come strumento investigativo (25/11/2026)
+
+**Stato: approvato, da implementare.** Nell'inchiesta Sara può scegliere di usare consapevolmente il proprio aspetto fisico e il proprio fascino per ottenere informazioni, anche in scene di infiltrazione narrativa. Il giocatore può optare per abbigliamento e atteggiamento seduttivo, oppure per un approccio professionale, empatico o sincero. Le reazioni dipendono dall'interlocutore: la seduzione non funziona sempre e non implica interesse sentimentale, né apre automaticamente un percorso. La disinvoltura di Sara evolve con la sua sicurezza; ogni scelta resta facoltativa. Da definire scene, condizioni, effetti e implementazione. [Scheda dell'inchiesta](narrative/inchiesta-giorno22-2026-11-25.md).
+
 ### Giorno 22 · Inchiesta crime e magnate (25/11/2026)
 
 **Stato: progettazione, da applicare; nessun codice.** Dal lunedì 22 Barbara assegna a Sara la verifica di una lettera anonima sulla morte di una giovane prostituta. L'autrice è l'amica della vittima, che teme per sé e cerca giustizia, conoscendo soltanto parte dei fatti. L'inchiesta ricorrente è autonoma dal percorso di Barbara e approfondibile o trascurabile a favore del romanzo. Il mandante è il magnate più ricco della città (56–57 anni, più ricco di Magnus), rispettabile in pubblico e in segreto boss del narcotraffico e dello sfruttamento della prostituzione. Il poliziotto corrotto e l'esecutore materiale sono distinti. Tre livelli deduttivi: esecutore, delitto su commissione, mandante/organizzazione. Presentare il magnate in un contesto sociale indipendente (possibile evento di Magnus o Daniel, da scegliere), senza svelarne subito il ruolo. Sara può cercare di smascherarlo, rinunciare o scegliere di diventare sua sottoposta; non imporre un undicesimo percorso sentimentale. Taccuino, collegamento attivo di indizi e altri dettagli tecnici da progettare. [Scheda completa e questioni aperte](narrative/inchiesta-giorno22-2026-11-25.md).

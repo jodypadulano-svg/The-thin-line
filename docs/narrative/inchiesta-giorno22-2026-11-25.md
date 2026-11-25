@@ -34,6 +34,14 @@ Durante il fine settimana arriva in redazione una lettera anonima: contesta la v
 - Livello 3: risalire al mandante e dimostrare il collegamento con l'organizzazione criminale.
 - Il giocatore può fermarsi a un livello intermedio, anche credendo di aver concluso il caso. Non basta identificare l'esecutore per scoprire automaticamente il boss. Equilibrio fra banalità e complessità eccessiva; indizi verificabili, inferenze e piste alternative. Distinguere verità, sospetti e prove pubblicabili.
 
+## Fascino come strumento investigativo (approvato il 25/11)
+
+- Durante l'inchiesta il giocatore può scegliere di far usare a Sara il proprio aspetto fisico e fascino per ottenere informazioni, anche in scene di infiltrazione narrativa. È una meccanica effettiva da prevedere, non soltanto un elemento decorativo.
+- Possibili approcci nelle scene: professionale, empatico/sincero oppure seduttivo; abbigliamento scelto per l'occasione e flirt facoltativo. Non tutte le persone rispondono positivamente allo stesso approccio: comprendere l'interlocutore è parte del gioco.
+- Sara può essere inizialmente impacciata e diventare più disinvolta man mano che acquisisce sicurezza in sé. L'uso del fascino resta una scelta del giocatore, coerente con l'autonomia della protagonista.
+- L'approccio seduttivo non presuppone un interesse sentimentale reale verso l'interlocutore e non crea automaticamente un nuovo percorso. Gli indizi ottenuti devono comunque essere valutati e collegati dal giocatore.
+- Da definire le singole scene, le condizioni di disponibilità, gli effetti sulle variabili e le alternative; nessuna soglia o penalità è stata fissata. Nessuna implementazione Ren'Py in questa fase.
+
 ## Proposte di meccaniche Ren'Py (da approvare e progettare)
 - Il giocatore deve investigare attivamente e collegare indizi, non limitarsi a scegliere risposte prestabilite. Il progresso dipende dalle deduzioni, non solo da un punteggio.
 - Taccuino persistente con persone/testimonianze, prove (foto, documenti, messaggi), cronologia e deduzioni.
