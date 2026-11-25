@@ -4,6 +4,11 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorni 22–35 · Calendario di brainstorming dei dieci percorsi (25/11/2026)
+
+**Stato: selezione narrativa concordata, date/fasce flessibili, da sviluppare; nessun codice.** Registrati 19 nuovi avvenimenti: uno per personaggio per settimana, eccetto Barbara nella settimana 22–28, già occupata dall'inchiesta e dalle eventuali convocazioni. Il 26 pomeriggio torta di Howard e la sera fotografie da Joanie; preservare la serata libera del 22. Nella settimana 29–35 nuova occasione facoltativa di ingresso come stagista. Darius: condivisione opzionale del manoscritto e successivo riscontro; Jacob: argomento telefonico neutro legato a una conoscenza del passato e successivo appuntamento di scuse condizionale. Mantenere Hugo sottotraccia e il suo finale segreto esclusivamente nei documenti interni. Tutti i dettagli, le fasce e gli incastri con gli eventi preesistenti sono nel [calendario dei giorni 22–35](narrative/calendario-giorni22-35-2026-11-25.md). Nessuna nuova soglia o punteggio approvato.
+
+
 ### Giorno 22+ · Due decessi apparentemente scollegati (25/11/2026)
 
 **Stato: principio narrativo approvato, da sviluppare.** La morte della prostituta è collegata a un altro decesso, avvenuto con modalità e circostanze diverse. Nessuno ha ancora individuato il filo conduttore. Il collegamento costituisce una pista investigativa da costruire; identità della seconda vittima, cronologia, cause, natura del legame e indizi restano da concordare. [Scheda dell'inchiesta](narrative/inchiesta-giorno22-2026-11-25.md).
