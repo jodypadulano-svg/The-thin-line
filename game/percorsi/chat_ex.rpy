@@ -122,7 +122,7 @@ label chat_ex_a1_1:
     label tel_chat_ex_a1_1_1:
     if telefono_minuti_blocco("tel_chat_ex_a1_1_1", "ricevi", 2):
         return
-    $ msg("ex", "tony and the twins come to the bar every friday")
+    $ msg("ex", "tony and the twins come by the club every friday")
     $ msg("ex", "lucy got married. to a vet. she's unbearable now. very happy and unbearable")
     label tel_chat_ex_a1_1_2:
     if telefono_minuti_blocco("tel_chat_ex_a1_1_2", "scelta"):
@@ -323,15 +323,17 @@ label chat_ex_a4:
     label tel_chat_ex_a4_1:
     if telefono_minuti_blocco("tel_chat_ex_a4_1", "invia", 1):
         return
-    $ msg("sara", "So you own a bar now. Since when?")
+    $ msg("sara", "So what kind of place do you run? You never said.")
     return
 
 label chat_ex_a4_1:
     label tel_chat_ex_a4_1_1:
-    if telefono_minuti_blocco("tel_chat_ex_a4_1_1", "ricevi", 2):
+    if telefono_minuti_blocco("tel_chat_ex_a4_1_1", "ricevi", 3):
         return
-    $ msg("ex", "two years. remember the place where we met? the one with the broken jukebox")
-    $ msg("ex", "it closed. i bought the jukebox. it's in my bar now. still broken")
+    $ msg("ex", "a strip club. two years now. don't make that face")
+    sp "I'm making that face."
+    $ msg("ex", "remember the place where we met? the one with the broken jukebox")
+    $ msg("ex", "it closed. i bought the jukebox. it's in my club now. still broken")
     label tel_chat_ex_a4_1_2:
     if telefono_minuti_blocco("tel_chat_ex_a4_1_2", "scelta"):
         return
@@ -455,7 +457,7 @@ label chat_ex_a5_2:
     label tel_chat_ex_a5_2_1:
     if telefono_minuti_blocco("tel_chat_ex_a5_2_1", "ricevi", 1):
         return
-    $ msg("ex", "i'm the same though. just with a bar and better shoes")
+    $ msg("ex", "i'm the same though. just with a club and better shoes")
     return
 
 
@@ -520,14 +522,14 @@ label chat_ex_a7:
     label tel_chat_ex_a7_1:
     if telefono_minuti_blocco("tel_chat_ex_a7_1", "invia", 1):
         return
-    $ msg("sara", "So, what's your life like now? Apart from the bar.")
+    $ msg("sara", "So, what's your life like now? Apart from work.")
     return
 
 label chat_ex_a7_1:
     label tel_chat_ex_a7_1_1:
     if telefono_minuti_blocco("tel_chat_ex_a7_1_1", "ricevi", 2):
         return
-    $ msg("ex", "bar till 3. gym. sleep. repeat. no complaints")
+    $ msg("ex", "club till 3. gym. sleep. repeat. no complaints")
     $ msg("ex", "and you? still writing?")
     label tel_chat_ex_a7_1_2:
     if telefono_minuti_blocco("tel_chat_ex_a7_1_2", "scelta"):
@@ -606,7 +608,7 @@ label chat_ex_a8:
     label tel_chat_ex_a8_1:
     if telefono_minuti_blocco("tel_chat_ex_a8_1", "invia", 1):
         return
-    $ msg("sara", "Do you ever miss being twenty-five?")
+    $ msg("sara", "Do you ever miss being twenty-two?")
     return
 
 label chat_ex_a8_1:

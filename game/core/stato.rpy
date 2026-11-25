@@ -179,7 +179,25 @@ init -10 python:
         return "Interest " + nome_interest(chiave)
 
     ## Argomenti delle scelte che NON sono requisiti (es. la scelta segreta).
-    CHIAVI_SPECIALI = ("segreto", "rifiuto_howard")
+    CHIAVI_SPECIALI = ("segreto", "rifiuto_howard", "acceleratore")
+
+    ## Scelte che attivano un tratto kinky permanente (Jody, 24/11): Crocerossina,
+    ## stagista, fantasia di Joanie. Nel menu: "Testo" (acceleratore=True). Anche
+    ## con una condizione: (acceleratore=howard_abbraccio_prolungamenti >= 2).
+    COLORE_ACCELERATORE = "#ffb347"
+    COLORE_ACCELERATORE_HOVER = "#ffe3b0"
+    AVVISO_ACCELERATORE = ("KINK ACCELERATOR: this choice fast-tracks kinky content.",
+        "If you want the story to keep its normal pace, don't choose it.")
+
+    ## (acceleratore="finale"): esce dalla storia e va a un finale forzato.
+    AVVISO_FINALE = ("FORCED ENDING: this choice leaves the main story and goes straight to an ending.",
+        "You can come back to this choice afterwards.")
+
+    def avviso_acceleratore(kwargs):
+        return AVVISO_FINALE if (kwargs or {}).get("acceleratore") == "finale" else AVVISO_ACCELERATORE
+
+    def scelta_acceleratore(kwargs):
+        return bool((kwargs or {}).get("acceleratore"))
 
     def requisiti_di(kwargs):
         """Solo i requisiti veri di una scelta, senza le chiavi speciali."""

@@ -1,7 +1,7 @@
 # Sara — Protagonista
 Scheda personaggio | Estratta da [The Thin Line — Bibbia narrativa](../bibbia-narrativa.md) | Bozza di lavoro | 15 novembre 2026
 ## Identità e situazione iniziale
-Nome: Sara. Età: giovane adulta già inserita nel mondo del lavoro, **22-23 anni** (deciso il 16/11/2026). Segno zodiacale: **Toro** (deciso il 21/11/2026, giorno 10). Piatto preferito: la **carbonara** (21/11/2026, giorno 8). Situazione sentimentale: **fidanzata (girlfriend) di Josh, convivente, non sposata** (stabilito da Jody, 21/11/2026). All’inizio è sinceramente felice e innamorata, e non manifesta insoddisfazioni preesistenti. Gli eventi che cambieranno gli equilibri devono apparire come un fulmine a ciel sereno.
+Nome: Sara. Età: giovane adulta già inserita nel mondo del lavoro, **27 anni** (deciso il 24/11/2026). Segno zodiacale: **Toro** (deciso il 21/11/2026, giorno 10). Piatto preferito: la **carbonara** (21/11/2026, giorno 8). Situazione sentimentale: **fidanzata (girlfriend) di Josh, convivente, non sposata** (stabilito da Jody, 21/11/2026). All’inizio è sinceramente felice e innamorata, e non manifesta insoddisfazioni preesistenti. Gli eventi che cambieranno gli equilibri devono apparire come un fulmine a ciel sereno.
 ## Personalità, lavoro e ambizioni
 **Tratto essenziale (23/11/2026):** Sara è una ragazza **fresca, vitale, dinamica, energica**, una persona «viva». Questa scintilla è il nucleo riconoscibile della sua personalità, anche quando cambia nel corso dei percorsi. **Possibilità da valutare:** il finale di Jacob potrebbe essere l'unico a spegnerla o almeno a smorzarla; non è ancora definito quanto o come.
 

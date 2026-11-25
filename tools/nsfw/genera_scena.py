@@ -13,7 +13,7 @@ Il risultato va sempre riletto da Jody prima di entrare nel gioco.
 import argparse, json, pathlib, re, sys, urllib.request
 
 SERVER = "http://localhost:1234/v1"
-CODICI = {"s", "sp", "c", "ch", "si", "da", "ho", "ed", "n"}
+CODICI = {"s", "sp", "c", "ch", "si", "da", "ho", "ed", "jacob", "n"}
 RIGA = re.compile(r'^\s*([a-z]+)\s+"(.*)"\s*$')
 RADICE = pathlib.Path(__file__).resolve().parents[2]
 

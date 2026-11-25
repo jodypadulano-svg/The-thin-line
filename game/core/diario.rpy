@@ -86,6 +86,12 @@ screen diario_sara():
             for s in segreti_trovati:
                 text "• " + s
 
+        if persistent.finali_visti:
+            null height 10
+            label "Endings found"
+            for f in persistent.finali_visti:
+                text "• " + f
+
         null height 10
         label "Wardrobe"
         for a in abiti_sbloccati():

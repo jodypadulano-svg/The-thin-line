@@ -124,7 +124,7 @@ label ep2_d17_barbara_ufficio:
 
 label ep2_d17_barbara_scelta_contratto:
     menu:
-        "I don't know I may have to think about it":
+        "I don't know I may have to think about it" (acceleratore=True):
             ## La firma come filmato a tempo, come la terrazza del 13 (Jody, 24/11).
             n "{i}The next scene plays to music and runs on its own, about a minute and a half.{/i}"
             menu:

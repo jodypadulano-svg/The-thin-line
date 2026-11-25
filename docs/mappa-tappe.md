@@ -143,7 +143,7 @@ Con Simon, il percorso più veloce.
 
 | Tappa | Cosa succede | Interest | Corr. | Quando |
 |---|---|---|---|---|
-| 1 Incontro | Il rincontro al suo locale, organizzato da Joanie (I9) | — | — | giorno 19 |
+| 1 Incontro | Il rincontro a The Lantern, organizzato da Joanie (I9); Jacob possiede uno strip club | — | — | giorno 19 |
 | 2 Conoscenza | I messaggi; lei è fredda, lui leggero e rispettoso | — | — | giorno 21 |
 | 3 Complicità | Il primo incontro a due, da vecchi amici: la risata per un ricordo | — | — | giorno 23 |
 | 4 La crepa | Sara comincia a confrontare Josh e Jacob nella vita di tutti i giorni | 20 | — | mese 2 |
@@ -211,7 +211,7 @@ Già amica di Sara dalla prima scena; il lato sentimentale emerge molto più ava
 | 2 Conoscenza | La palestra insieme, le confidenze | — | — | giorni 2-12 |
 | 3 Complicità | Joanie consiglia, spinge, ride con lei | — | — | mese 1 |
 | 4 La crepa | Sara nota che i consigli di Joanie vanno sempre nella stessa direzione | 20 | — | mese 2-3 |
-| 5 Il segreto | **La rivelazione:** Joanie lascia un indizio apposta; Sara capisce il gioco e il desiderio, e lo tiene per sé | 35 | — | mese 3-4 |
+| 5 Il segreto | **La rivelazione:** Joanie lascia un indizio apposta; Sara capisce il gioco e il desiderio, e lo tiene per sé _(la sola fantasia di vedere Sara con un altro può essere già confessata al giorno 19, 24/11)_ | 35 | — | mese 3-4 |
 | 6a Il bacio | Sara fa il primo passo, come Joanie voleva | 50 | 55 | mese 4 |
 | 6b Il seno | Una prova di vestiti: Joanie la aiuta e la tocca | 55 | 58 | mese 4-5 |
 | 7a Nuda | Joanie la spoglia e la riveste come una bambola: la «casa delle bambole» diventa reale | 60 | 61 | mese 5 |

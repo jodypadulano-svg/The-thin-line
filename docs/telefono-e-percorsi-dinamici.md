@@ -113,7 +113,8 @@ Non serve una variabile `conoscenza`: le scene leggono `percorsi[x].interest`. O
 |---|---|---|---|---|
 | Simon | 5 | 10 | 16 | 22 |
 | Howard | 4 | 9 | 14 | 20 |
-| Daniel, Magnus, Jacob, Joanie, Darius | 3 | 7 | 12 | 18 |
+| Daniel, Magnus, Joanie, Darius | 3 | 7 | 12 | 18 |
+| Jacob (24/11/2026) | 5 | 12 | 18 | 25 |
 | Barbara | 3 | 7 | 15 | 25 |
 
 Il fisico resta sempre dietro la soglia di Corruption del percorso (mappa a tappe).

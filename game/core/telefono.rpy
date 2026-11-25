@@ -30,7 +30,7 @@ init -5 python:
         "howard":  (4, 9, 14, 20),
         "daniel":  (3, 7, 12, 18),
         "editore": (3, 7, 12, 18),
-        "ex":      (3, 7, 12, 18),
+        "ex":      (5, 12, 18, 25),
         "amica":   (3, 7, 12, 18),
         "amico":   (3, 7, 12, 18),
         "capa":    (3, 7, 15, 25),
@@ -693,6 +693,17 @@ screen scelta_telefono(items):
                     vbox:
                         text i.caption style "tel_testo" color "#f3e6ea55"
                         text "Requires " + testo_requisiti(i.kwargs) style "tel_testo" size 22 color "#ff5c7a"
+            elif scelta_acceleratore(i.kwargs):
+                button:
+                    action i.action
+                    background Solid("#2b1d25ee")
+                    hover_background Solid("#7a2e45ee")
+                    padding (26, 14)
+                    xminimum 520
+                    vbox:
+                        text "!!! " + i.caption + " !!!" style "tel_testo" color COLORE_ACCELERATORE
+                        for riga in avviso_acceleratore(i.kwargs):
+                            text riga style "tel_testo" size 22 color COLORE_ACCELERATORE
             else:
                 textbutton i.caption:
                     action i.action

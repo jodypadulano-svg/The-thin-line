@@ -23,11 +23,11 @@ I tratti segnati **(P)** non sono nella bibbia: li ho proposti io, e sono annota
 ---
 
 ## Sara — `@sara`
-Dalla [scheda](../personaggi/sara.md): capelli castani leggermente mossi, occhi castani, molto snella, lineamenti dolci, seno molto sviluppato, abbigliamento sobrio. Età: 22-23 anni (deciso). **Lentiggini leggere su naso e guance** (tratto fisso, dal primo ritratto approvato il 16/11). Ritratto approvato da Jody; figura intera da rigenerare in 2:3.
+Dalla [scheda](../personaggi/sara.md): capelli castani leggermente mossi, occhi castani, molto snella, lineamenti dolci, seno molto sviluppato, abbigliamento sobrio. Età: 27 anni (deciso il 24/11/2026). **Lentiggini leggere su naso e guance** (tratto fisso, dal primo ritratto approvato il 16/11). Ritratto approvato da Jody; figura intera da rigenerare in 2:3.
 
 **Ritratto 4:5**
 ```
-Portrait of Sara, an adult woman aged 22-23, soft gentle facial features with no sharp angles, warm brown eyes, shoulder-length brown hair with a slight natural wave, light freckles across the nose and cheeks, light natural makeup, a shy warm smile, wearing a plain cream knit sweater. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+Portrait of Sara, an adult woman aged 27, soft gentle facial features with no sharp angles, warm brown eyes, shoulder-length brown hair with a slight natural wave, light freckles across the nose and cheeks, light natural makeup, a shy warm smile, wearing a plain cream knit sweater. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
 **Figura intera 2:3**
@@ -53,7 +53,7 @@ Dalla [scheda](../personaggi/joanie.md): intraprendente, più sfacciata di Sara.
 
 **Ritratto 4:5**
 ```
-Portrait of Joanie, an adult woman in her early twenties, confident playful expression with a mischievous grin, bright green eyes, long straight honey-blonde hair in a high ponytail, bold eyeliner, small gold hoop earrings, wearing a fitted black sports top. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+Portrait of Joanie, an adult woman aged 27, confident playful expression with a mischievous grin, bright green eyes, long straight honey-blonde hair in a high ponytail, bold eyeliner, small gold hoop earrings, wearing a fitted black sports top. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
 **Figura intera 2:3**
@@ -101,11 +101,11 @@ Full-body reference of @howard standing slightly hunched, front view. Overweight
 ```
 
 ## Magnus, l'editore — `@magnus`
-Dalla [scheda](../personaggi/editore.md): più anziano e meno attraente di Daniel, ma carismatico per cultura, raffinatezza, esperienza e ricchezza. Nome: **Magnus**, circa 68 anni (deciso). Dettagli **(P)**.
+Dalla [scheda](../personaggi/editore.md): più anziano e meno attraente di Daniel, ma carismatico per cultura, raffinatezza, esperienza e ricchezza. Nome: **Magnus**, 71 anni (deciso il 24/11/2026). Dettagli **(P)**.
 
 **Ritratto 4:5**
 ```
-Portrait of Magnus, a distinguished man aged 68, a wealthy book publisher, not conventionally handsome, lined intelligent face, neatly trimmed salt-and-pepper beard, receding silver hair, thin tortoiseshell glasses, attentive amused eyes, wearing a dark-navy velvet blazer over a black turtleneck. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+Portrait of Magnus, a distinguished man aged 71, a wealthy book publisher, not conventionally handsome, lined intelligent face, neatly trimmed salt-and-pepper beard, receding silver hair, thin tortoiseshell glasses, attentive amused eyes, wearing a dark-navy velvet blazer over a black turtleneck. Head-and-shoulders framing, looking at the camera. High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look, realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
 **Figura intera 2:3**
@@ -120,11 +120,11 @@ Full-body reference of @magnus standing at ease holding a whisky glass, front vi
 Dopo il primo Josh lo **stile va messo all'inizio** del prompt, altrimenti Mango tende al fotografico. Josh è bello: Simon, Daniel e Jacob devono staccarsi da lui ancora di più.
 
 ## Jacob — `@jacob`
-Dalla [scheda](../personaggi/jacob.md): circa 35 anni, bellissimo, atletico, fisicamente imponente, carismatico, dominante, donnaiolo. Dettagli **(P)**.
+Dalla [scheda](../personaggi/jacob.md): 31 anni (deciso il 24/11/2026), bellissimo, atletico, fisicamente imponente, carismatico, dominante, donnaiolo. Dettagli **(P)**.
 
 **Ritratto 4:5** (stile all'inizio, come per Josh)
 ```
-High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look. Portrait of Jacob, a strikingly handsome adult man around thirty-five, tall and physically imposing, broad powerful shoulders, chiseled jaw, short dark hair with a slight undercut, dark stubble, intense dark eyes, a confident cocky half-smile of a man who always gets what he wants, wearing a fitted black t-shirt that shows strong arms. Head-and-shoulders framing, looking at the camera. Realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
+High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look. Portrait of Jacob, a strikingly handsome adult man aged 31, tall and physically imposing, broad powerful shoulders, chiseled jaw, short dark hair with a slight undercut, dark stubble, intense dark eyes, a confident cocky half-smile of a man who always gets what he wants, wearing a fitted black t-shirt that shows strong arms. Head-and-shoulders framing, looking at the camera. Realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
 
 ## Darius — `@darius`

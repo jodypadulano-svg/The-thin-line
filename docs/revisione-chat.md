@@ -2374,7 +2374,7 @@ Scelte di Sara:
 
 **Pezzo 1**
 
-> **Jacob:** tony and the twins come to the bar every friday  
+> **Jacob:** tony and the twins come by the club every friday  
 > **Jacob:** lucy got married. to a vet. she's unbearable now. very happy and unbearable  
 
 Scelte di Sara:
@@ -2456,12 +2456,12 @@ Scelte di Sara:
 
 *Se scrive Sara:*
 
-> **Sara:** So you own a bar now. Since when?  
+> **Sara:** So what kind of place do you run? You never said.  
 
 **Pezzo 1**
 
-> **Jacob:** two years. remember the place where we met? the one with the broken jukebox  
-> **Jacob:** it closed. i bought the jukebox. it's in my bar now. still broken  
+> **Jacob:** a strip club. two years now. don't make that face … remember the place where we met? the one with the broken jukebox  
+> **Jacob:** it closed. i bought the jukebox. it's in my club now. still broken  
 
 Scelte di Sara:
 - «You bought the jukebox?!» — *calda*
@@ -2506,7 +2506,7 @@ Scelte di Sara:
 
 **Pezzo 2**
 
-> **Jacob:** i'm the same though. just with a bar and better shoes  
+> **Jacob:** i'm the same though. just with a club and better shoes  
 
 ### ex_a6 · A
 
@@ -2536,11 +2536,11 @@ Scelte di Sara:
 
 *Se scrive Sara:*
 
-> **Sara:** So, what's your life like now? Apart from the bar.  
+> **Sara:** So, what's your life like now? Apart from work.  
 
 **Pezzo 1**
 
-> **Jacob:** bar till 3. gym. sleep. repeat. no complaints  
+> **Jacob:** club till 3. gym. sleep. repeat. no complaints  
 > **Jacob:** and you? still writing?  
 
 Scelte di Sara:
@@ -2568,7 +2568,7 @@ Scelte di Sara:
 
 *Se scrive Sara:*
 
-> **Sara:** Do you ever miss being twenty-five?  
+> **Sara:** Do you ever miss being twenty-two?  
 
 **Pezzo 1**
 

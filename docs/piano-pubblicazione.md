@@ -16,7 +16,7 @@ Durata stimata dell'Episodio 1 alla prima partita: **circa 1h30** (1h-2h secondo
 
 Dopo il finale del giorno 13 e prima della schermata «Fine dell'Episodio 1».
 
-- **Una parte comune** (2-3 immagini dell'Episodio 2): il pranzo delle due famiglie (giorno 14), il locale di Jacob (giorno 19), una frase misteriosa.
+- **Una parte comune** (2-3 immagini dell'Episodio 2): il pranzo delle due famiglie (giorno 14), The Lantern e il ritorno di Jacob (giorno 19), una frase misteriosa.
 - **Una parte personalizzata** secondo le scelte del giocatore, 1-2 anteprime fra:
   - biglietto di Magnus tenuto → la casa editrice (giorno 20);
   - Interest Simon più alto → la palestra (giorno 17);

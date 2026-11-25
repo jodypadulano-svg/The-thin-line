@@ -3,7 +3,7 @@
 Documento di aggiornamento: prevale sulle vecchie indicazioni della mappa quando in conflitto. Le date sono orientative e subordinate alle scelte del giocatore e al bilanciamento delle soglie.
 
 ## Personalità e cerchia
-Magnus, editore facoltoso di circa 68 anni, non è innamorato di Sara: la desidera come nuova presenza preziosa nella sua cerchia esclusiva. Riconosce però sinceramente il suo talento letterario e prende decisioni editoriali per merito, non come compenso per favori intimi. Ha relazioni non esclusive con altre donne della cerchia, apertamente e senza gelosie. Josh gli è indifferente: non cerca di umiliarlo né di interferire nella loro coppia.
+Magnus, editore facoltoso di 71 anni, non è innamorato di Sara: la desidera come nuova presenza preziosa nella sua cerchia esclusiva. Riconosce però sinceramente il suo talento letterario e prende decisioni editoriali per merito, non come compenso per favori intimi. Ha relazioni non esclusive con altre donne della cerchia, apertamente e senza gelosie. Josh gli è indifferente: non cerca di umiliarlo né di interferire nella loro coppia.
 
 Le donne della cerchia accolgono Sara con calore, senza rivalità o gerarchie competitive. Alcune sono indipendenti e affermate, altre hanno ricevuto sostegno economico o professionale da Magnus. Sara può stringere amicizie autentiche e, secondo le scelte del giocatore, anche legami romantici o fisici con una donna della cerchia. Magnus ne è sinceramente felice e non pretende di partecipare. Sara è membro alla pari delle altre, non assistente o servitrice permanente; i gesti di attenzione a Magnus sono volontari.
 

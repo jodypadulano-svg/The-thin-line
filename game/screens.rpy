@@ -249,6 +249,16 @@ screen choice(items):
                         xalign 0.5 ypos 0 yanchor 0.0
                         text i.caption xalign 0.5 color "#ffffff55"
                         text "Requires " + testo_requisiti(i.kwargs) xalign 0.5 size 22 color "#ff5c7a"
+            ## Acceleratori (Jody, 24/11): altro colore, !!! e avviso sotto.
+            elif scelta_acceleratore(i.kwargs):
+                button:
+                    action i.action
+                    xalign 0.5
+                    vbox:
+                        xalign 0.5 ypos 0 yanchor 0.0 spacing 2
+                        text "!!! " + i.caption + " !!!" xalign 0.5 textalign 0.5 color COLORE_ACCELERATORE hover_color COLORE_ACCELERATORE_HOVER
+                        for riga in avviso_acceleratore(i.kwargs):
+                            text riga xalign 0.5 textalign 0.5 size 26 color COLORE_ACCELERATORE
             else:
                 textbutton i.caption action i.action
 

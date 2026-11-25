@@ -22,6 +22,8 @@ image bg bar_aperitivo = Solid("#2a1f1c")
 image bg enoteca = Solid("#2b1a1f")
 image bg fiume = Solid("#1d2a24")
 image bg negozio = Solid("#2b2428")
+image bg casa_joanie = Solid("#2b2026")
+image bg strip_club = Solid("#2b1620")
 
 
 ## Cartello del luogo (in alto a sinistra) -------------------------------------

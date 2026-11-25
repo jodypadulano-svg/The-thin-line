@@ -235,3 +235,53 @@ flowchart TD
     Y -->|Da sola · Confidence +1| Z
     Z --> D17([Fine del giorno 17])
 ```
+
+## Episodio 2 · Giorno 19
+
+```mermaid
+flowchart TD
+    D18([Fine del giorno 18]) --> J{"Il libro di Jessica"}
+    J -->|Legge l'appunto · Confidence +1| R{"Il ciondolo di Roberta"}
+    J -->|Lo ridà| R
+    R -->|Chiede · Barbara +1| B{"sara_stagista e sorteggio 20%?"}
+    R -->|Non chiede| B
+    B -->|Sì| M{"Barbara · missione 2"}
+    B -->|No| S{"Shopping accettato il 14?"}
+    M -->|Massaggio · completata| S
+    M -->|Rifiuta · resta estraibile| S
+    S -->|Sì| V{"Boutique · l'abito per Magnus"}
+    S -->|No| K["Caffè con Samantha"]
+    V -->|Di Samantha · Magnus +1, Confidence +1| E{"Da Joanie · il ricordo di Jacob"}
+    V -->|Il proprio · Confidence +2| E
+    K --> E
+    E -->|Si lascia portare · Jacob +1, Corruption +1| G1{"Joanie come guida?"}
+    E -->|Come è finita · Confidence +1| G2{"Joanie come guida?"}
+    G1 -->|Guida · 6 box · Joanie +3, Jacob +2, Corruption +2| I{"Interest Joanie > 8?"}
+    G1 -->|Razionale · Confidence +1| X["Retroscena · il messaggio a Jacob"]
+    G2 -->|Guida · Joanie +1| X
+    G2 -->|Razionale · Confidence +1| X
+    I -->|No| X
+    I -->|Sì| C{"La confidenza"}
+    C -->|Non detto| X
+    C -->|"!!! Ascolta · Joanie +3, Corruption +1, sara_bad_girl"| W{"Dirle di Simon?"}
+    W -->|Sì · Joanie spiega le sue ragioni| X
+    W -->|No| X
+    X --> L{"The Lantern · Jacob"}
+    L -->|Fredda| Q{"Il drink"}
+    L -->|Ride · Jacob +3, Corruption +1| Q
+    Q -.->|"Tradimento, Josh, un ballo se ha riso"| N
+    L -->|"sara_bad_girl · 17 occhiolini"| OB{"Bancone · 5 occhiolini"}
+    OB -->|Due salti di fila · Joanie smette| N
+    OB --> OP{"Pista · 3 occhiolini"}
+    OP -->|Due salti di fila| N
+    OP --> OD{"Divanetto · 3 occhiolini"}
+    OD --> N
+    N -.->|"Almeno 2 seguiti per momento"| PO{"!!! La porta"}
+    PO -->|Casa, in taxi| Z
+    PO -->|Va con Jacob| FW(["FINALE FORZATO · The Wink"])
+    FW -.->|Go back to the choice| PO
+    Q -->|Rifiuta| N{"Il numero"}
+    Q -->|Accetta · Jacob +1, Corruption +1| N
+    N -->|Glielo dà · Jacob +2| Z([Fine del giorno 19])
+    N -->|No · retroscena, glielo dà Joanie| Z
+```

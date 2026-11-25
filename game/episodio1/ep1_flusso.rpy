@@ -31,6 +31,7 @@ label ep1_inizio:
 
 
 label ep1_fine:
+    $ musica(None, dissolvenza=0)
     $ luogo_corrente = ""
     scene bg nero with fade
     n "{size=+20}End of Episode 1{/size}"

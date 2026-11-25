@@ -4,6 +4,98 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 19 · L'incontro normale con Jacob, arricchito (25/11/2026)
+
+**Stato: scritto in Ren'Py** (`ep2_d19_parlano`), 3 CG da fare. Solo nella sera normale, fra il drink e il numero (chi ha `sara_bad_girl` vive gli occhiolini):
+
+- **Il tradimento:** «You cheated on me.» → Conf +1, flag `ep2_d19_detto_tradimento`; Jacob lo ammette ma **non chiede scusa** · «Let it lie.» → nessuno.
+- **Josh («So who's at home?»):** rispondere subito → Josh +1, flag `ep2_d19_difende_josh` · un secondo di troppo → nessun effetto, flag `ep2_d19_esita_josh`.
+- **Un ballo**, solo se Sara ha riso al ricordo: «One song.» → Jacob +1, Corr +1, flag `ep2_d19_ballo_jacob`; il corpo ricorda da solo · «Not tonight.» → nessuno.
+- Massimo Jacob della serata normale: **+10** (livello A del telefono; il B è a 12).
+
+### Giorno 19 · Gli occhiolini di Joanie e il finale forzato (24/11/2026)
+
+**Stato: scritto in Ren'Py il 24/11** (`ep2_giorno19_occhiolini.rpy`, test `giorno19`), immagini e scena di LM Studio da fare. **Per ora vale solo per Joanie** (Crocerossina e stagista restano nella storia come sono).
+
+- **La sera del 19, se Sara segue Joanie e i suoi occhiolini finisce nel letto di Jacob.** Le conseguenze sarebbero troppe, quindi si va a un **finale forzato**, come in un librogame. Chi vuole divertirsi può farlo; su quella strada le scale (soglie, date, ritmo) non valgono.
+- **Joanie non si offende MAI se Sara salta un occhiolino.** È la loro regola: se Sara se la sente lo fa, altrimenti Joanie capisce e accetta. Si vogliono bene così. Chi salta resta nella storia normale.
+- Joanie può essere **molto, molto ingorda**; per Sara è piacevolissimo, perché può buttarsi e **deresponsabilizzarsi**.
+- **I diciassette occhiolini (approvati da Jody, 24/11):** *bancone* 1 la mano sul petto, 2 il bicchiere, 3 il pollice (gli toglie una goccia di whisky dal labbro), 4 il sussurro all'orecchio, 5 la ciliegia · *pista* 6 balla di schiena, 7 capelli e bottone, 8 gli posa le mani sui fianchi · *divanetto* 9 in braccio, 10 la scarpa, 11 il reggiseno nella borsa di Joanie · *la porta* **12 il bacio (ambra, finale forzato)** · *strip club a locale chiuso* 13 il sedile di dietro, 14 il jukebox, 15 il palco, 16 i vestiti, 17 il letto di Jacob con Joanie in poltrona (brief LM Studio). Poi la mattina, mesi dopo, ultimo occhiolino; «Go back to the choice».
+- **Regole della serata (approvate):** i primi 11 restano in storia (niente baci); effetti una volta per momento (Joanie +2, Jacob +1, Corr +1, massimo 3 volte); per la porta servono almeno due occhiolini seguiti in ciascuno dei primi tre momenti; dopo la porta si può ancora saltare ma si arriva comunque al finale; Josh resta fuori fino alla mattina. **Dopo due salti di fila Joanie smette** di fare occhiolini, senza malus. **L'anello è stato tolto** (Jody, 24/11): costringeva a CG doppie con e senza. Nessun occhiolino deve lasciare tracce visibili nelle immagini seguenti.
+- **La scena del letto (25/11):** struttura sobria in `game/nsfw/d19_the_wink.rpy`, sei momenti; CG N01-N05 e testi espliciti a cura di Jody nei punti «TESTO DI JODY».
+- **Immagini:** [inquadrature-giorno-19.md](prompt-immagini/inquadrature-giorno-19.md).
+- **Testo della serata (bozza da rivedere):** [giorno19-occhiolini](narrative/giorno19-occhiolini-2026-11-24.md), brief [d19_the_wink](nsfw/brief/d19_the_wink.md).
+- **Il finale «The Wink» (approvato da Jody, 24/11):** la mattina Sara legge i quattordici messaggi di Josh e decide di dirgli la verità, senza pentirsi; mesi dopo scrive per il locale di Jacob, il suo romanzo è pubblicato, Josh sta con un'altra ed è sereno; ultima inquadratura, l'occhiolino di Joanie. È una felicità soggettiva, come chiede la visione artistica (3). Magnus non compare.
+
+### Sara bad girl per Joanie: i regali (24/11/2026)
+
+**Stato: in definizione con Jody; nessun codice oltre al primo uso del giorno 19.** Con `sara_bad_girl`:
+
+- **Solo con Joanie presente.** Se Joanie è assente Sara non fa niente per lei: nessun racconto, foto o sfida a distanza.
+- **Anche più regali nello stesso giorno**, se Joanie fa capire che è eccitata. Nessun tetto di uno al giorno.
+- **Il segnale è sempre lo stesso: un semplice occhiolino.** Con quello Joanie fa capire a Sara che è eccitata da ciò che vede.
+
+### Scelte «acceleratore»: colore, !!! e avviso (24/11/2026)
+
+**Stato: applicato nella schermata delle scelte (scene e telefono), regola permanente.** Ogni scelta che **attiva** un tratto kinky si mostra in **ambra**, tra **!!!**, con sotto l'avviso: «KINK ACCELERATOR: this choice fast-tracks kinky content. If you want the story to keep its normal pace, don't choose it.» Nel menu si scrive `"Testo" (acceleratore=True)`.
+
+- **Crocerossina:** il terzo «Keep holding him a little longer.» (giorno 9) e ogni futura occasione di attivarla.
+- **Stagista:** accettare il contratto al giorno 17 e ogni futura occasione di diventarlo.
+- **Fantasia di Joanie:** «Whatever it is, I won't judge you.» (giorno 19, da scrivere).
+
+### Giorno 19 · Scheda completa (24/11/2026)
+
+**Stato: scritto in Ren'Py il 24/11** (`ep2_giorno19.rpy`, `barbara_convocazioni.rpy`, test `giorno19`), immagini da fare. Applicate anche le correzioni della chat di Jacob (strip club, «twenty-two») e l'età di Magnus nel giorno 13. Dialoghi, scelte ed effetti in [narrative/giorno19-scheda-2026-11-24.md](narrative/giorno19-scheda-2026-11-24.md).
+
+### Giorno 19 · Barbara: solo la missione 2 (24/11/2026)
+
+**Stato: approvato da Jody, da scrivere.** Per il 19 si scrivono il motore delle convocazioni e **solo la missione 2** (massaggio alle spalle, 20/10); il motore estrae soltanto missioni già scritte. La 1, la 8 e la 20 nella settimana del 22.
+
+- Fine mattina: Barbara manda a chiamare Sara, che deve presentarsi. «My shoulders, Sara. Ten minutes.» **Farlo** → missione completata (1 su 20), alla fine Barbara le tiene un momento la mano · **«I'd rather not, today.»** → «Then sit down and keep me company.», la missione resta estraibile. Nessun premio numerico.
+
+### Giorno 19 · Mattina in redazione: Jessica e Roberta (24/11/2026)
+
+**Stato: approvato da Jody, da scrivere.** Nessuna rivelazione anticipata.
+
+- **Il libro di Jessica:** gliene regala uno dei vecchi (giorno 10), con appunti a matita che si fermano a metà, datati tre mesi prima. **Scelta:** leggere l'ultimo appunto («She keeps waiting for someone to tell her what she wants.») → nota nel Diario, Conf +1 · ridarglielo («Keep it, Jess. You'll want to finish it.») → nessun effetto, per un attimo Jessica è quella di prima.
+- **Il ciondolo di Roberta:** dentro c'è una foto di Barbara che **non si vede mai**; lo richiude di scatto. **Scelta:** chiederle chi c'è dentro («Somebody who's good to me.») → Barbara +1 · non chiedere → nota nel Diario, Roberta racconta com'era sola prima del giornale.
+- **La pausa sul terrazzino:** Jessica e Roberta fumano nello stesso identico modo, nessuno lo commenta. Con `sara_fuma` Sara sta con loro, nessun effetto; con `sara_stagista` Roberta la tratta già da «una di noi» (una riga).
+
+### Giorno 19 · Pomeriggio: Samantha (24/11/2026)
+
+**Stato: approvato da Jody, da scrivere.** Dipende da `ep2_d14_shopping_samantha`; nessuna versione rivela il suo segreto con Magnus.
+
+- **Accettato al 14 → shopping** nella boutique di Samantha (`boutique.webp`). Allo specchio Sara vede la somiglianza, una commessa le scambia per madre e figlia. Sara nomina l'editore di domani: Samantha si ferma un istante, poi sceglie l'abito per l'appuntamento («Wear something you can forget you're wearing. He'll be listening.»). **Scelta:** l'abito di Samantha → Magnus +1, Conf +1 · quello che Sara avrebbe scelto da sola → Conf +2. L'abito torna sabato 20 da Magnus.
+- **Rifiutato al 14 → caffè** per caso uscendo dalla redazione, più breve, stessa esitazione e stesso consiglio, senza abito. **Scelta:** chiederle come ha capito che è un uomo che ascolta → nota nel Diario · lasciar cadere → nessun effetto.
+- In entrambe, se al 15 c'è stata la lite, una riga su Josh e il romanzo: Samantha vede solo che Sara è giù.
+
+### Età di Magnus: 71 anni (24/11/2026)
+
+**Stato: deciso da Jody; schede e prompt aggiornati.** Vale M1 del vademecum. Nel lotto: didascalia «in his late sixties» di `ep1_giorno13.rpy`.
+
+### Giorno 19 · Sera: Joanie, il ricordo rosa e Jacob al Lantern (24/11/2026)
+
+**Stato: deciso da Jody, da scrivere.**
+
+- **Da Joanie:** Sara va da lei e racconta che **Josh ha spiato il suo romanzo** (giorno 15). Joanie ne fa l'aggancio per **riesumare Jacob** e parlarne bene. Qui Joanie è **davvero manipolativa** e porta Sara a una **rosy retrospective**: i ricordi belli coprono il tradimento.
+- **L'incontro con Jacob avviene a The Lantern** (il locale del giorno 6), obbligatorio. «Same bar» del montaggio del 13 = The Lantern.
+- **Jacob non possiede un bar ma uno strip club.** Come proprietario non è costretto a stare sempre lì. Da correggere le battute «my bar» in `chat_ex.rpy`.
+- **Seconda scelta (Jody, 24/11):** dopo la scelta sul ricordo («lasciarsi portare» / «You're leaving out how it ended.») Sara sceglie di nuovo: **ascoltare Joanie come una guida** oppure **essere razionale**.
+- **Il dialogo a ripetizione:** solo con «lasciarsi portare dal ricordo» **e poi** «Joanie come guida». Joanie le chiede di ripetere delle frasi; il giocatore ha **box con una sola scelta**, ripetere ciò che ha detto Joanie, **almeno 5 volte**. Alla fine Sara è «spezzata» e ammette che a volte si tocca pensando a Jacob; Joanie, vittoriosa: «te l'avevo detto». Da lì sono super complici e Sara racconta quanto Jacob fosse virile, prestante e molto meglio di Josh.
+- **La confidenza di Joanie:** solo in questo ramo, con **Interest Joanie > 8** (soglia abbassata da 15 da Jody, 24/11). Joanie dice di avere una confidenza stranissima, che rischia di compromettere l'amicizia, e che le sta bene se Sara non è pronta. **Sara può dire** che non vuole perderla e che certe cose è meglio non dirle (Joanie è d'accordo), **oppure** che ascolterà qualsiasi cosa senza giudicare: Joanie, timida e piangendo di gioia, confessa la **fantasia sessuale di vedere Sara a letto con un altro** e teme il giudizio. Sara la abbraccia e la ringrazia. Non sono mai state così amiche.
+- **Flag persistente `sara_bad_girl`** dopo la confessione: in alcune scelte future Sara può fare la **bad girl solo per far felice Joanie**, per esempio flirtare apposta con qualcuno guardandola negli occhi.
+- **Effetti (approvati da Jody, 24/11):** lasciarsi portare dal ricordo → Jacob +1, Corr +1 · «You're leaving out how it ended.» → Conf +1 · guida dopo il ricordo (box a ripetizione, 6 frasi) → Joanie +3, Jacob +2, Corr +2 · guida senza il ricordo → Joanie +1 · razionale → Conf +1 · confidenza: «Some things are better left unsaid.» → nessuno · «Whatever it is, I won't judge you.» → Joanie +3, Corr +1, flag persistente **`sara_bad_girl`**. Il +3 dei box arriva prima del controllo della soglia.
+- **Primo uso di `sara_bad_girl` al Lantern:** all'arrivo di Jacob, scelta in più: flirtare con lui guardando Joanie negli occhi → Joanie +2, Jacob +1, Corr +1. **Diario:** «Cosa sa Sara» riceve la fantasia, «Cosa sai tu» il messaggio di Joanie a Jacob.
+- **Soglie del telefono di Jacob (Jody, 24/11):** A 5, B 12, C 18, D 25, **applicato** in `telefono.rpy`. Gli effetti del 19 restano (massimo Jacob +9), quindi il livello B non si raggiunge il 19.
+- **Dire a Josh del ritorno di Jacob (Jody, 24/11):** la scelta è **domenica 21 sera**, effetti da concordare. Il 19 solo un pensiero di Sara.
+- **Teaser del 13 (Jody, 24/11):** «in a bar across town», **applicato**. Resta da ritoccare `teaser_jacob.webp`: la sagoma ha i capelli, Jacob è rasato.
+- **Joanie e Simon (Jody, 24/11):** dopo la confessione Sara può scegliere se dire a Joanie di averla vista con Simon il 17. Se lo fa, **Joanie non si scompone e le spiega le sue ragioni in modo convincente**. Nessun effetto numerico, flag `ep2_d19_sa_di_simon`.
+- **Limite della confessione (Jody, 24/11): solo la fantasia.** Restano segreti per la tappa 5 (mese 3-4) l'attrazione di Joanie per Sara, la bisessualità e la «casa delle bambole» (buca del giorno 6, messaggio a Jacob). Deroga approvata alla sola parte «non anticipare la fantasia».
+
+### Età di Sara e Joanie: 27 anni (24/11/2026)
+
+**Stato: deciso da Jody; vademecum (A1, G1), scheda di Sara e prompt degli attori aggiornati, nessun codice da cambiare.** Sara e Joanie hanno **27 anni**. Così la storia con Jacob (quattro anni, A5) va dai **19 ai 23 anni** di Sara, e finisce quattro anni prima del gioco (teaser del giorno 13, chat Joanie B4). **Jacob ha 31 anni** (Jody, 24/11): ne aveva 23 all'inizio e 27 alla rottura. Da correggere nel lotto «twenty-five» in `chat_ex.rpy:609`, proposta «twenty-two». Con 22 anni sarebbe cominciata a 14: **ogni ricordo della relazione con Jacob, specie se intimo, riguarda una Sara dai 19 anni in su.** Non nominare scuola o adolescenza nei ricordi con lui.
+
 ### Giorno 17 · La firma diventa un filmato a tempo (24/11/2026)
 
 **Stato: applicato in Ren'Py** (`ep2_d17_barbara_firma_tempo`). La conferma «scena non saltabile / Continue / Go back» è sostituita dall'avviso e dalla scelta «Watch the scene / Skip the scene», come la terrazza del 13. Versione a tempo sulla canzone `barbara_firma`: 0:17 il foglio, 0:38 il video della penna, 0:45 la firma (video del polso), poi «You're mine now» e il bacio; chiusura verso 1:30 con dissolvenza. Battute non saltabili. «Skip» mostra la versione a clic. Effetti identici nei due modi (Corr +10, Barbara +10, `sara_stagista`). Il nuovo filmato di Joanie e Simon sostituisce il vecchio `d17_palestra_joanie_simon.webm`.
@@ -24,7 +116,7 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ### Barbara · Motore delle convocazioni e opzione GATTINA (24/11/2026)
 
-**Stato: da applicare, a partire dal giorno 19.** Con `sara_stagista`, ogni giorno lavorativo Barbara convoca Sara con probabilità **20%**, per una missione fra quelle con soglie e prerequisiti soddisfatti. Se esce il 20% ma nessuna missione è disponibile, nessuna convocazione. **Opzione GATTINA:** con Interest Barbara > 50 Sara può presentarsi spontaneamente da Barbara **una volta al giorno**: se ci sono missioni disponibili ne fa una; se non ce ne sono, si gioca una **21ª scena**, in cui Sara si spoglia volontariamente e chiacchiera nuda con Barbara. **Dopo le 20 missioni** Barbara le chiede se ha capito che cosa vuole vederla fare: il giocatore scrive un testo; se contiene «smoking»/«smoke» e simili (maiuscole o minuscole) si va avanti. Sara ha avuto tutti gli indizi (B2: Barbara è affascinata dalle donne che fumano). Il seguito si definisce più avanti.
+**Stato: da applicare, a partire dal giorno 19.** Con `sara_stagista`, ogni giorno lavorativo Barbara convoca Sara con probabilità **20%**, per una missione fra quelle con soglie e prerequisiti soddisfatti. Se esce il 20% ma nessuna missione è disponibile, nessuna convocazione. **Obbligo (Jody, 24/11):** quando Barbara convoca, **presentarsi è obbligatorio** (Sara ha firmato); **la missione si può sempre rifiutare** o interrompere, e se rifiutata resta tra quelle non completate, quindi ancora estraibile. Nessuna penalità concordata per il rifiuto. **Opzione GATTINA:** con Interest Barbara > 50 Sara può presentarsi spontaneamente da Barbara **una volta al giorno**: se ci sono missioni disponibili ne fa una; se non ce ne sono, si gioca una **21ª scena**, in cui Sara si spoglia volontariamente e chiacchiera nuda con Barbara. **Dopo le 20 missioni** Barbara le chiede se ha capito che cosa vuole vederla fare: il giocatore scrive un testo; se contiene «smoking»/«smoke» e simili (maiuscole o minuscole) si va avanti. Sara ha avuto tutti gli indizi (B2: Barbara è affascinata dalle donne che fumano). Il seguito si definisce più avanti.
 
 ### Barbara · Convocazioni della stagista speciale (24/11/2026)
 
@@ -311,7 +403,8 @@ Mercoledì 17 arriva il pacco se Joanie ha ordinato il maglione al giorno 14. Gi
   |---|---|---|---|---|
   | Simon | 5 | 10 | 16 | 22 |
   | Howard | 4 | 9 | 14 | 20 |
-  | Daniel, Magnus, Jacob, Joanie, Darius | 3 | 7 | 12 | 18 |
+  | Daniel, Magnus, Joanie, Darius | 3 | 7 | 12 | 18 |
+  | Jacob (24/11/2026) | 5 | 12 | 18 | 25 |
   | Barbara | 3 | 7 | 15 | 25 |
 
 - **Scene fisse:** sotto B restano come sono scritte; da B una o due frasi in più; da **C e D l'incontro cambia** (tono, porzioni nuove, bivi). Ogni scena controlla solo le soglie che le servono. L'Episodio 1 (giorni 1-13) non ha varianti, salvo verificare Simon e Howard.
@@ -461,7 +554,7 @@ Questa decisione modifica solo la collocazione delle due serate e aggiunge la br
 
 **Stato:** canone narrativo approvato; da implementare in un lotto futuro, senza aggiungere scene ora. Le alternative elencate come scelte del giocatore non sono eventi obbligatori.
 
-- **Identità e passato:** Jacob è l'ex di Sara, circa 35 anni, bellissimo, atletico, fisicamente imponente, carismatico, dominante, impulsivo e donnaiolo. La relazione terminò 3–4 anni prima del gioco: Sara, che si fidava delle promesse di fedeltà, scoprì un suo tradimento e lo lasciò. Era attratta dalla sua guida dominante e dalla forte intesa fisica, ma sapeva porre limiti. Jacob soffrì soprattutto per l'orgoglio ferito di essere stato lasciato, non per amore romantico.
+- **Identità e passato:** Jacob è l'ex di Sara, 31 anni (24/11/2026, prima «circa 35»), bellissimo, atletico, fisicamente imponente, carismatico, dominante, impulsivo e donnaiolo. La relazione terminò 3–4 anni prima del gioco: Sara, che si fidava delle promesse di fedeltà, scoprì un suo tradimento e lo lasciò. Era attratta dalla sua guida dominante e dalla forte intesa fisica, ma sapeva porre limiti. Jacob soffrì soprattutto per l'orgoglio ferito di essere stato lasciato, non per amore romantico.
 - **Personalità attuale:** negli anni è diventato ancora più sfacciato, sicuro e abile nella seduzione; non è maturato moralmente. Promette fedeltà quando gli conviene senza intenzione di mantenerla. Si vanta con gli amici di conquiste reali, raccontando anche particolari intimi e privati, senza inventarli o gonfiarli. Il fatto che Sara sia con Josh lo diverte, non lo rende geloso: considera la riconquista una sfida piacevole, senza ossessione. A differenza di Magnus, ha bisogno di conferme del proprio fascino.
 - **Ritorno e approccio:** Sara e Jacob si rincontrano casualmente. Lei è inizialmente fredda e diffidente. Lui cerca successivamente occasioni di contatto, le scrive e propone incontri; resta leggero e rispettoso dei rifiuti. Il primo disgelo è una risata per un ricordo divertente. Al primo incontro a due si presenta soprattutto da vecchio amico, senza avances esplicite, facendo leva su nostalgia e complicità. Continua intanto a frequentare altre donne **nascondendolo** a Sara; non dichiara esplicitamente di essere cambiato, ma lascia che lei lo deduca dalla sua pazienza apparente.
 - **Sara e il confronto con Josh:** Sara parte sinceramente felice e innamorata di Josh. Con Jacob aveva vissuto una relazione più centrata sul sesso, con un amante che lei ricorda come più prestante di Josh; con Josh sente amore autentico. L'attrazione risvegliata da Jacob le sembra inizialmente nostalgia innocua. Poi comincia a confrontare mentalmente Josh e Jacob, anche nella quotidianità: all'inizio resta affettuosa con Josh, senza esprimere impazienza. **Scelta di gioco:** il giocatore orienta i pensieri di Sara, valorizzando le qualità di Josh o soffermandosi sulle attrattive di Jacob. Il cambiamento di prospettiva di Sara non equivale a un peggioramento oggettivo di Josh.
@@ -477,7 +570,7 @@ Questa decisione modifica solo la collocazione delle due serate e aggiunge la br
 
 **Stato:** canone narrativo approvato; da integrare nel gioco in un lotto successivo. Non scrivere ora nuove scene.
 
-- **Identità:** Magnus è l'editore ricchissimo introdotto da Daniel, suo amico stretto, durante una festa privata (terzo incontro di Daniel). È il percorso già previsto dell'uomo ricco e di successo, non un nono percorso. Circa **68 anni**, più anziano e meno attraente fisicamente di Daniel; eleganza impeccabile, cultura, raffinatezza, esperienza e carisma fondato su prestigio e autorità. Aspetto preciso e cognome ancora aperti. La vecchia bozza visiva che lo raffigura sulla cinquantina non è più valida.
+- **Identità:** Magnus è l'editore ricchissimo introdotto da Daniel, suo amico stretto, durante una festa privata (terzo incontro di Daniel). È il percorso già previsto dell'uomo ricco e di successo, non un nono percorso. **71 anni** (24/11/2026, prima «circa 68»), più anziano e meno attraente fisicamente di Daniel; eleganza impeccabile, cultura, raffinatezza, esperienza e carisma fondato su prestigio e autorità. Aspetto preciso e cognome ancora aperti. La vecchia bozza visiva che lo raffigura sulla cinquantina non è più valida.
 - **Biografia:** imprenditore ed editore **self-made**, ha costruito personalmente patrimonio e casa editrice. Dominante, ambizioso e sicuro di sé fin da giovane, anche prima della ricchezza. Conosce davvero la letteratura e sa riconoscere il talento. **Scapolo da sempre e per sempre**, senza desiderio di matrimonio o relazione esclusiva.
 - **Collezionista:** non cerca amore romantico; considera le conquiste femminili una collezione personale. Conserva e riconsulta un archivio/albo privato di fotografie consensuali con donne adulte nude e felici insieme a lui. Può mostrarlo a Sara **anche prima** che lei entri nella cerchia: non nasconde la natura non esclusiva delle sue relazioni.
 - **La cerchia:** le ex conquiste continuano a orbitare nel suo mondo, si conoscono, non manifestano gelosia e accolgono con piacere nuove compagne; considerano un privilegio essere state scelte. Magnus non è gratuitamente cattivo o crudele: può aiutarle e sostenerle, purché non cerchino di approfittarsi di lui. Alcune, spontaneamente e senza ordini di Magnus, sviluppano gusto per avvicinare altre donne adulte, anche inesperte o già fidanzate, a questo stile di vita. Magnus valuta liberamente se interessarsi alle persone presentate.
@@ -511,7 +604,7 @@ Decisioni prese ma non ancora riportate nel codice. Si applicano tutte insieme q
 
 - **A4 — Dialoghi troppo corti** (Jody): le scene dell'Episodio 1 sono bozze-scheletro (circa 2.100 parole in tutto); vanno riscritte per intero, con una lunghezza adatta a un episodio di circa un'ora.
 - **A11 — Il gioco è in inglese** (Jody, 16/11/2026): tutti i testi del gioco (dialoghi, menu, Diario, notifiche, avvisi) vanno scritti direttamente in inglese, a partire dalla riscrittura dell'Episodio 1 (A4). I documenti di lavoro restano in italiano.
-- **A12 — Età di Sara e Josh: 22-23 anni** (Jody, 16/11/2026). Coerente con Darius (22-24, amico di Josh dalle superiori). Già aggiornati la scheda di Sara e i prompt degli attori.
+- **A12 — Età di Sara e Josh: 22-23 anni** (Jody, 16/11/2026). Coerente con Darius (22-24, amico di Josh dalle superiori). Già aggiornati la scheda di Sara e i prompt degli attori. **Superata:** Sara ha 27 anni dal 24/11/2026, vedi «Età di Sara e Joanie» in Da applicare; per Josh vale F1 (25).
 - **I1 — Hugo spiega il silenzio di Josh davanti a Daniel** (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): Josh è cresciuto abbassando la testa davanti a un padre autoritario, e con Daniel rifà lo stesso. Nell'E1 una riga di Josh in auto dopo la cena («mio padre parla così da sempre»); più avanti Sara lo capisce da sola vedendo Hugo a un pranzo di famiglia.
 - **I2 — Sara ha sposato suo padre** (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): Sara nota, con tenerezza, che Josh è «dolce come papà» (Andrew); più avanti, a casa dei genitori, vede Andrew farsi piccolo davanti a Sally e rivede Josh davanti a Daniel. Solo pensieri di Sara, mai giudizi del gioco.
 - **I3 — Le due famiglie a tavola** (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): le famiglie di Sara e Josh si conoscono e si frequentano (fatto nuovo approvato). In un pranzo o cena di festa nei primi episodi dopo l'E1: Hugo domina e sminuisce Josh (I1), Andrew si fa piccolo (I2), Sally approva Hugo un po' troppo, Samantha è calorosa e somiglia a Sara (semina I4). Uno sguardo di troppo tra Sally e Hugo solo se I7 viene approvato.
@@ -520,7 +613,7 @@ Decisioni prese ma non ancora riportate nel codice. Si applicano tutte insieme q
 - **I6 — Samantha consiglia Sara** (approvato con modifiche il 16/11/2026, [dettagli](intrecci-proposti.md)): se Sara ne parla con Samantha dopo l'album, Samantha ha **solo ricordi positivi** del suo passato con Magnus: la incoraggia e la consiglia, e la Corruption di Sara sale. Nessuna variante «avvertimento». **Hugo non sa** del passato di Samantha con Magnus.
 - **I7 — L'amante di Sally è Hugo** (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): Sally tradisce Andrew con Hugo, padre di Josh. Al pranzo delle famiglie (I3) uno sguardo/gesto di troppo che solo il giocatore nota. Nei percorsi di forte trasformazione Sara può scoprirli (es. auto di Hugo davanti a casa dei genitori mentre Andrew lavora) e Sally le dice che sta accettando la propria natura. Negli altri percorsi non emerge mai. Samantha non sa del tradimento di Hugo.
 - **I8 — Joanie ha dato buca apposta** (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): nel giorno 6 dell'E1 la cancellazione della palestra era voluta, per lasciare Sara sola con Simon. Nessuna modifica all'E1; a metà gioco un retroscena mostra Joanie sul divano con Mark mentre scrive il messaggio («Oggi tocca a Sara»), con voce nel Diario.
-- **I9 — Il rincontro con Jacob lo organizza Joanie** (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): per Sara è un caso; per il giocatore un retroscena mostra il messaggio di Joanie a Jacob con luogo, ora e consiglio («falla ridere»). Voce nel Diario alla pagina di Jacob. Prima mossa visibile della «casa delle bambole». **Luogo:** il locale serale dove Jacob va con i suoi amici (il suo territorio); Joanie ci porta Sara con una scusa (compleanno, serata tra ragazze). La palestra resta solo di Simon (I10 scartato).
+- **I9 — Il rincontro con Jacob lo organizza Joanie** _(luogo aggiornato da Jody il 24/11/2026: **The Lantern**; Jacob possiede uno strip club, non un bar; sostituisce «il suo territorio»)_ (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): per Sara è un caso; per il giocatore un retroscena mostra il messaggio di Joanie a Jacob con luogo, ora e consiglio («falla ridere»). Voce nel Diario alla pagina di Jacob. Prima mossa visibile della «casa delle bambole». **Luogo:** il locale serale dove Jacob va con i suoi amici (il suo territorio); Joanie ci porta Sara con una scusa (compleanno, serata tra ragazze). La palestra resta solo di Simon (I10 scartato).
 - **I12 — Joanie tifa per Darius** (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): solo se il giocatore ha già aperto il percorso 7, Joanie nota per prima i segnali, consiglia a Sara di invitare Darius più spesso, scherza su Josh «coinquilino» e la incoraggia nei dubbi. Non può aprire il percorso da sola.
 - **I13 — Mark, il confidente di Josh** (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): Josh e Mark diventano amici; quando Josh ha dubbi su Sara si confida con Mark, che in buona fede gli consiglia di non essere possessivo e di fidarsi. Dopo queste chiacchierate la Suspicion di Josh scende. **Mark non sa niente** delle fantasie di Joanie su Sara e Josh.
 - **I14 — Le assenze di Josh le decide Daniel** (approvato il 16/11/2026, [dettagli](intrecci-proposti.md)): turni lunghi, straordinari e trasferte importanti li assegna Daniel, spesso apposta (retroscena). Nell'E1 il turno lungo del giorno 7 è un suo ordine («Daniel mi ha messo di turno fino alle otto»). Le stesse assenze le sfruttano Howard, Darius e Jacob. Solo le assenze che aprono scene chiave, non tutte.

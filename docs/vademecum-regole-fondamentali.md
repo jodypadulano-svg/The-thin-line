@@ -54,7 +54,7 @@ Le lettere identificano stabilmente i personaggi. Le regole anagrafiche approvat
 ## A — Sara
 
 ### A1 — Identità e dati anagrafici
-Sara si chiama **Sara Collins**, ha **22 anni**, è nata l'**11 novembre** ed è alta **165 cm**.
+Sara si chiama **Sara Collins**, ha **27 anni**, è nata l'**11 novembre** ed è alta **165 cm**.
 
 ### A2 — Amore per gli animali ed empatia sociale
 Sara **ama gli animali** ed è **molto empatica e socievole con le persone**. Questi tratti fanno parte stabilmente del suo carattere e devono essere rispettati nella sua rappresentazione narrativa.
@@ -114,7 +114,7 @@ Josh Barnett **non è molto prestante** e **ha il pene molto piccolo**. Queste c
 ## G — Joanie
 
 ### G1 — Identità e dati anagrafici
-Joanie si chiama **Joanie O'Naughfrey**, ha **22 anni**, è nata il **4 luglio** ed è alta **165 cm**.
+Joanie si chiama **Joanie O'Naughfrey**, ha **27 anni**, è nata il **4 luglio** ed è alta **165 cm**.
 
 ### G2 — Eccitazione erotica legata al tradimento
 Joanie O'Naughfrey **trova eroticamente eccitante il tradimento**, sia quando riguarda lei stessa sia quando coinvolge altre persone. **Trova erotico che Sara si avvicini ad altre persone** in modo potenzialmente sentimentale o sessuale al di fuori della relazione con Josh. **Questa è la motivazione per cui Joanie vuole aiutare Sara** ad avvicinarsi ad altri. Il tratto è canonico e va rispettato nella caratterizzazione, senza dedurre automaticamente azioni specifiche non ancora approvate.
@@ -132,7 +132,7 @@ Darius si chiama **Darius Zedman**, ha **25 anni**, è nato il **25 dicembre** e
 ## J — Jacob
 
 ### J1 — Identità e dati anagrafici
-Jacob si chiama **Jacob Trevor**, ha **27 anni**, è nato il **19 novembre** ed è alto **192 cm**.
+Jacob si chiama **Jacob Trevor**, ha **31 anni**, è nato il **19 novembre** ed è alto **192 cm**.
 
 ## K — Mark
 

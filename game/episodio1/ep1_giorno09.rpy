@@ -236,7 +236,7 @@ label ep1_d9_da_howard:
                         n "Sara gently straightens up. Howard doesn't release her until she moves away."
                         s "There. See? You're not on your own."
                         jump ep1_d9_abbraccio_finito
-                    "Keep holding him a little longer.":
+                    "Keep holding him a little longer." (acceleratore=howard_abbraccio_prolungamenti >= 2):
                         $ howard_abbraccio_prolungamenti += 1
                         $ interest("howard", 1, "Sara chose to prolong the comforting hug.")
                         if howard_abbraccio_prolungamenti == 1:

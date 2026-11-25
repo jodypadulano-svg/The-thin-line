@@ -323,8 +323,8 @@ label ep1_d13_festa:
         da "It was better than «not bad». Ada and Walter. Row F. I'm not going to tell him that."
     else:
         da "You made a car park sad. That's harder than it sounds. I'm not going to tell him that."
-    $ cg13("A warm wood-panelled library in the villa: an elegant man in his late sixties with silver hair and thin glasses, a tumbler of whisky in his hand; beside him a poised woman in her forties with a silver bob and a dark dress, smiling at Sara as if she knew her; Daniel making the introduction", "d13_08_magnus")
-    n "By the fire, a man in his late sixties, silver-haired, thin glasses, a suit so well cut it looks like it grew on him. Beside him, a woman of about forty with a silver bob and a dark dress, who isn't introduced."
+    $ cg13("A warm wood-panelled library in the villa: an elegant man in his early seventies with silver hair and thin glasses, a tumbler of whisky in his hand; beside him a poised woman in her forties with a silver bob and a dark dress, smiling at Sara as if she knew her; Daniel making the introduction", "d13_08_magnus")
+    n "By the fire, a man in his early seventies, silver-haired, thin glasses, a suit so well cut it looks like it grew on him. Beside him, a woman of about forty with a silver bob and a dark dress, who isn't introduced."
     da "Magnus. An old friend. He publishes novels, when he has nothing better to do."
     $ incontra("editore")
     ed "Daniel exaggerates. I publish novels even when I have something better to do. It's a vice."
@@ -437,7 +437,7 @@ label ep1_d13_terrazza:
                 call ep1_d13_videoclip
                 jump ep1_d13_terrazza_pranzo
             "Skip the scene.":
-                pass
+                $ musica(None, dissolvenza=0)
     da "Escaping?"
     s "Breathing. It's allowed, I think. Even in your house."
     da "In my house almost everything is allowed. That's why people come."
@@ -738,7 +738,7 @@ label ep1_teaser:
         $ cg(_anteprime[1][0], _anteprime[1][2] if len(_anteprime[1]) > 2 else None)
         $ renpy.say(n, _anteprime[1][1])
     $ cg("Episode 2 preview: a sketch of a man in shadow at a bar, his ring catching the light on the counter", "images/cg/ep2/teaser_jacob.webp")
-    n "And on a Friday night, in a little bar across town, a man Sara left four years ago. And has never quite forgotten."
+    n "And on a Friday night, in a bar across town, a man Sara left four years ago. And has never quite forgotten."
     n "{i}«Some doors you close. Some doors you only think you closed.»{/i}"
     $ via_cg()
     $ luogo_corrente = ""
