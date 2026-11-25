@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 22 · Inchiesta crime e magnate (25/11/2026)
+
+**Stato: progettazione, da applicare; nessun codice.** Dal lunedì 22 Barbara assegna a Sara la verifica di una lettera anonima sulla morte di una giovane prostituta. L'autrice è l'amica della vittima, che teme per sé e cerca giustizia, conoscendo soltanto parte dei fatti. L'inchiesta ricorrente è autonoma dal percorso di Barbara e approfondibile o trascurabile a favore del romanzo. Il mandante è il magnate più ricco della città (56–57 anni, più ricco di Magnus), rispettabile in pubblico e in segreto boss del narcotraffico e dello sfruttamento della prostituzione. Il poliziotto corrotto e l'esecutore materiale sono distinti. Tre livelli deduttivi: esecutore, delitto su commissione, mandante/organizzazione. Presentare il magnate in un contesto sociale indipendente (possibile evento di Magnus o Daniel, da scegliere), senza svelarne subito il ruolo. Sara può cercare di smascherarlo, rinunciare o scegliere di diventare sua sottoposta; non imporre un undicesimo percorso sentimentale. Taccuino, collegamento attivo di indizi e altri dettagli tecnici da progettare. [Scheda completa e questioni aperte](narrative/inchiesta-giorno22-2026-11-25.md).
+
 ### Giorno 19 · L'incontro normale con Jacob, arricchito (25/11/2026)
 
 **Stato: scritto in Ren'Py** (`ep2_d19_parlano`), 3 CG da fare. Solo nella sera normale, fra il drink e il numero (chi ha `sara_bad_girl` vive gli occhiolini):
