@@ -3,6 +3,8 @@
 
 @ capa_t1 | ESTRANEI | The website portrait | fatto('ep2_d18_resta_barbara')
 > Is the portrait online yet? I'm afraid to look.
+< Your face is on my newspaper.
+>> The portrait? I'm afraid to look.
 ---
 < It's been up since nine. I've looked for you.
 ? And? [caldo]
@@ -27,6 +29,8 @@
 
 @ capa_t2 | ESTRANEI | The dark lipstick | fatto('ep2_d17_glamour')
 > What was that lipstick called? The dark one?
+< I passed your colour in a window today.
+>> The dark lipstick? What was it called?
 ---
 < Why? Have you come to your senses?
 ? I keep seeing it in shop windows. [caldo]
@@ -76,6 +80,8 @@
 
 @ capa_t4 | CONOSCENTI | The armchair | fatto('barbara_missione_02_fatta')
 > How are your shoulders?
+< I have slept.
+>> How are your shoulders?
 ---
 < Where you left them. Lower than they've been since March.
 ? I could feel something give. [caldo]

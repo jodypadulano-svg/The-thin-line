@@ -22,6 +22,17 @@ label chat_capa_t1:
     $ msg("sara", "Is the portrait online yet? I'm afraid to look.")
     return
 
+label chat_capa_t1_entrata:
+    label tel_chat_capa_t1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_capa_t1_entrata_1", "ricevi", 1):
+        return
+    $ msg("capa", "Your face is on my newspaper.")
+    label tel_chat_capa_t1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_capa_t1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "The portrait? I'm afraid to look.")
+    return
+
 label chat_capa_t1_1:
     label tel_chat_capa_t1_1_1:
     if telefono_minuti_blocco("tel_chat_capa_t1_1_1", "ricevi", 1):
@@ -150,6 +161,17 @@ label chat_capa_t2:
     if telefono_minuti_blocco("tel_chat_capa_t2_1", "invia", 1):
         return
     $ msg("sara", "What was that lipstick called? The dark one?")
+    return
+
+label chat_capa_t2_entrata:
+    label tel_chat_capa_t2_entrata_1:
+    if telefono_minuti_blocco("tel_chat_capa_t2_entrata_1", "ricevi", 1):
+        return
+    $ msg("capa", "I passed your colour in a window today.")
+    label tel_chat_capa_t2_entrata_2:
+    if telefono_minuti_blocco("tel_chat_capa_t2_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "The dark lipstick? What was it called?")
     return
 
 label chat_capa_t2_1:
@@ -416,6 +438,17 @@ label chat_capa_t3_3:
 label chat_capa_t4:
     label tel_chat_capa_t4_1:
     if telefono_minuti_blocco("tel_chat_capa_t4_1", "invia", 1):
+        return
+    $ msg("sara", "How are your shoulders?")
+    return
+
+label chat_capa_t4_entrata:
+    label tel_chat_capa_t4_entrata_1:
+    if telefono_minuti_blocco("tel_chat_capa_t4_entrata_1", "ricevi", 1):
+        return
+    $ msg("capa", "I have slept.")
+    label tel_chat_capa_t4_entrata_2:
+    if telefono_minuti_blocco("tel_chat_capa_t4_entrata_2", "invia", 1):
         return
     $ msg("sara", "How are your shoulders?")
     return

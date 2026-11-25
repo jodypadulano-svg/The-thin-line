@@ -64,7 +64,7 @@ init -4 python:
                 if not vibrato:
                     suono("telefono_vibra")
                     vibrato = True
-                _annuncia_testo("%s replied." % nome_mittente(k))
+                _annuncia_testo(("%s wrote to Sara." if risposta.get("entrata") else "%s replied.") % nome_mittente(k))
 
     def _telefono_prossimo_minuto():
         ora = store.telefono_minuti_ora
@@ -101,20 +101,85 @@ init -4 python:
                 }
                 del store.coda_chat[k]
 
-    def _telefono_contatto_in_entrata():
+    ## Chi scrive per primo (tabella approvata da Jody, 25/11/2026): probabilità ogni sera,
+    ## giorni minimi fra due messaggi, e le sere in cui un fatto la alza.
+    ENTRATE = {
+        "howard": (0.60, 1, {}),
+        "amica": (0.45, 2, {17: 0.80, 19: 0.80}),
+        "ex": (0.35, 3, {}),
+        "daniel": (0.35, 3, {}),
+        "simon": (0.25, 3, {15: 0.50, 17: 0.50}),
+        "amico": (0.20, 4, {14: 0.40, 16: 0.40}),
+        "editore": (0.10, 7, {}),
+        "capa": (0.20, 4, {}),
+    }
+    ENTRATE_PER_SERA = 2
+    DANIEL_ROMANZO = ("daniel_intro", "daniel_t1", "daniel_t3")
+
+    ## Se Sara lascia il messaggio senza risposta, il giorno dopo (gli altri non insistono).
+    SILENZIO = {
+        "howard": "Sara? Did I say something wrong?",
+        "amica": "?? ok fine. I'll be here. being fascinating. on my own",
+        "amico": "Lol, busy. Got it",
+    }
+
+    def _entrate_possibili(k):
+        """Le chat che k può aprire stasera; se ce n'è, vengono prima i fatti vissuti insieme."""
+        ora = store.telefono_minuti_ora % 1440
+        if k in store.discorso_aperto or k in store.coda_chat or k in store.telefono_minuti_inbox:
+            return []
+        if store.giorno - store.ultima_entrata.get(k, -99) < ENTRATE[k][1]:
+            return []
+        if k == "ex" and not (ora >= 22 * 60 or ora < 2 * 60):
+            return []
+        if k == "simon" and not 18 * 60 <= ora < 23 * 60:
+            return []
+        if k == "capa" and (store.giorno - 1) % 7 >= 5:
+            return []
+        if k == "daniel" and store.daniel_tace:
+            return []
+        tutte = [d for d in discorsi_in_entrata(k) if renpy.has_label("chat_" + d.id + "_entrata")]
+        if k == "daniel" and interesse_altrui(k) == "spento":
+            tutte = [d for d in tutte if d.id in DANIEL_ROMANZO]
+        return [d for d in tutte if d.argomento] or tutte
+
+    def arriva_messaggio(k, id):
+        """Un messaggio nuovo: aspetta nella rubrica, non apre la chat da solo."""
+        store.discorso_aperto[k] = {"id": id, "parte": 0, "caldo": False, "frenato": False,
+                                    "contesto_verificato": True, "premio_avvio": False,
+                                    "premio_risposta": True, "giorno": store.giorno, "entrata": True}
+        store.telefono_minuti_riprese[k] = "tel_chat_%s_entrata_1" % id
+        store.telefono_minuti_inbox[k] = {"arrivo": store.telefono_minuti_ora, "bolle": 1,
+                                          "notificata": False, "entrata": True}
+        store.ultima_entrata[k] = store.giorno
+
+    def _telefono_messaggi_in_entrata():
+        """All'inizio della sera: al massimo due messaggi nuovi, in ordine a sorte."""
         if store.giorno_entrata == store.giorno:
-            return None
-        candidati = [
-            (k, d.id)
-            for k in contatti()
-            if k not in store.discorso_aperto and k not in store.coda_chat
-            and store.giorno - store.ultima_entrata.get(k, -99) >= GIORNI_TRA_ENTRATE
-            for d in discorsi_in_entrata(k)
-            if renpy.has_label("chat_" + d.id + "_entrata")
-        ]
-        if candidati and renpy.random.random() < PROBABILITA_ENTRATA:
-            return renpy.random.choice(candidati)
-        return None
+            return
+        store.giorno_entrata = store.giorno
+        arrivati = 0
+        for k in renpy.random.sample(contatti(), len(contatti())):
+            if arrivati >= ENTRATE_PER_SERA:
+                return
+            possibili = _entrate_possibili(k)
+            base, _, sere = ENTRATE[k]
+            if possibili and renpy.random.random() < sere.get(store.giorno, base):
+                arriva_messaggio(k, renpy.random.choice(possibili).id)
+                arrivati += 1
+
+    def _telefono_silenzi():
+        """Messaggi lasciati senza risposta da almeno un giorno: ognuno reagisce a modo suo."""
+        for k in list(store.discorso_aperto):
+            aperto = store.discorso_aperto[k]
+            if not aperto.get("premio_risposta") or aperto.get("giorno", store.giorno) >= store.giorno:
+                continue
+            if k == "daniel":
+                abbandona_discorso(k)
+                store.daniel_tace = True
+            elif k in SILENZIO and not aperto.get("sollecitato"):
+                aperto["silenzio"] = SILENZIO[k]
+                aperto["sollecitato"] = True    # una volta sola per messaggio
 
     def telefono_minuti_blocco(punto, tipo, bolle=0):
         """True sospende la label. Una risposta si paga tutta prima della prima bolla."""
@@ -160,10 +225,9 @@ label telefono_minuti_sessione(inizio, fine, uscita="Put the phone down"):
     $ telefono_minuti_chiudi = False
     $ _telefono_importa_coda()
     $ chiudi_scadute()
+    $ _telefono_silenzi()
+    $ _telefono_messaggi_in_entrata()
     $ _telefono_notifica_minuti()
-    $ _entrata_minuti = _telefono_contatto_in_entrata()
-    if _entrata_minuti:
-        call telefono_minuti_conversazione(_entrata_minuti[0], _entrata_minuti[1])
     while telefono_minuti_rimasti() > 0 and not telefono_minuti_chiudi:
         $ _azione_minuti = telefono_pilota() if telefono_pilota else renpy.call_screen("telefono")
         if _azione_minuti is None or _azione_minuti[0] == "chiudi":
@@ -178,7 +242,7 @@ label telefono_minuti_sessione(inizio, fine, uscita="Put the phone down"):
     $ telefono_minuti_ora = None
     return
 
-label telefono_minuti_conversazione(k, entrata=None):
+label telefono_minuti_conversazione(k):
     if not _telefono_minuti_ripresa_disponibile(k):
         return
     if k in discorso_aperto:
@@ -186,14 +250,18 @@ label telefono_minuti_conversazione(k, entrata=None):
     $ chat_aperta = k
     show screen telefono_chat(k)
     $ _nuova_minuti = None
+    ## Letto ieri e lasciato lì: l'altro ha aggiunto qualcosa.
+    if k in discorso_aperto and discorso_aperto[k].get("silenzio") and k not in telefono_minuti_inbox and chat_log.get(k) and chat_log[k][-1][0] == k:
+        $ telefono_minuti_ora += 1
+        $ msg(k, discorso_aperto[k].pop("silenzio"))
     ## Chat in sospeso (non appena arrivata): Sara può riprenderla, salutare o cambiare discorso.
-    if not entrata and k in discorso_aperto and telefono_minuti_stato(k) in ("aperto", "attesa") and not chat_introduttiva_aperta(k):
+    if k in discorso_aperto and telefono_minuti_stato(k) in ("aperto", "attesa") and not chat_introduttiva_aperta(k):
         call telefono_sospesa(k)
         if _return == "indietro":
             jump .fine
         if _return != "riprendi":
             $ _nuova_minuti = _return
-    elif not entrata and k not in discorso_aperto and k not in telefono_minuti_riprese:
+    elif k not in discorso_aperto and k not in telefono_minuti_riprese:
         call telefono_scelta_tipo(k)
         if _return is None:
             jump .fine
@@ -208,15 +276,16 @@ label telefono_minuti_conversazione(k, entrata=None):
     if k in telefono_minuti_riprese:
         $ _punto_minuti = telefono_minuti_riprese.pop(k)
         call expression _punto_minuti
+        ## Il messaggio era rimasto lì da ieri: dopo averlo letto, l'altro ha aggiunto qualcosa.
+        if k in discorso_aperto and discorso_aperto[k].get("silenzio") and chat_log.get(k) and chat_log[k][-1][0] == k:
+            $ telefono_minuti_ora += 1
+            $ msg(k, discorso_aperto[k].pop("silenzio"))
     elif k not in discorso_aperto:
-        $ _discorso_minuti = DISCORSI[entrata or _nuova_minuti]
-        $ discorso_aperto[k] = {"id": _discorso_minuti.id, "parte": 0, "caldo": False, "frenato": False, "contesto_verificato": True, "premio_avvio": not entrata, "giorno": giorno}
-        if entrata:
-            $ ultima_entrata[k] = giorno
-            $ giorno_entrata = giorno
-            call expression "chat_" + entrata + "_entrata"
-        else:
-            call expression "chat_" + _discorso_minuti.id
+        $ _discorso_minuti = DISCORSI[_nuova_minuti]
+        $ discorso_aperto[k] = {"id": _discorso_minuti.id, "parte": 0, "caldo": False, "frenato": False, "contesto_verificato": True, "premio_avvio": True, "giorno": giorno}
+        if k == "daniel":
+            $ daniel_tace = False
+        call expression "chat_" + _discorso_minuti.id
 
     while k not in telefono_minuti_riprese:
         $ _parte_minuti = discorso_aperto[k]["parte"] + 1

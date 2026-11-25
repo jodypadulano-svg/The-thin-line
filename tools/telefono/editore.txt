@@ -3,6 +3,8 @@
 
 @ editore_t1 | ESTRANEI | Your card | fatto('ep1_d13_biglietto') and not fatto('ep2_pagine_magnus')
 > I keep your card in my notebook. I've read the back of it more than the front.
+< I have been wondering what became of my card. M.
+>> It's in my notebook. I've read the back of it more than the front.
 ---
 < The front is for the post office. The back is for you. M.
 ? «You're not allowed to hide.» How did you know I was? [caldo]
@@ -26,6 +28,8 @@
 
 @ editore_t2 | ESTRANEI | The pages I sent | fatto('ep2_pagine_magnus') and giorno < 23
 > I promised myself I wouldn't ask if you'd started.
+< You have been admirably silent. M.
+>> I promised myself I wouldn't ask if you'd started.
 ---
 < And you have kept your word beautifully. You have merely informed me that you are not asking. M.
 ? Is it working? [caldo]

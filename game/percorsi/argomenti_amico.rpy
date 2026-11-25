@@ -20,6 +20,17 @@ label chat_amico_t1:
     $ msg("sara", "I wrote the first sentence of the room. On the way home from our coffee.")
     return
 
+label chat_amico_t1_entrata:
+    label tel_chat_amico_t1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_amico_t1_entrata_1", "ricevi", 1):
+        return
+    $ msg("amico", "Did she get into the room yet?")
+    label tel_chat_amico_t1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_amico_t1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "I wrote the first sentence on the way home.")
+    return
+
 label chat_amico_t1_1:
     label tel_chat_amico_t1_1_1:
     if telefono_minuti_blocco("tel_chat_amico_t1_1_1", "ricevi", 1):
@@ -151,6 +162,17 @@ label chat_amico_t2:
     $ msg("sara", "You asked if she'd got her minute. At dinner. Nobody else heard.")
     return
 
+label chat_amico_t2_entrata:
+    label tel_chat_amico_t2_entrata_1:
+    if telefono_minuti_blocco("tel_chat_amico_t2_entrata_1", "ricevi", 1):
+        return
+    $ msg("amico", "Hope I didn't put you on the spot at dinner")
+    label tel_chat_amico_t2_entrata_2:
+    if telefono_minuti_blocco("tel_chat_amico_t2_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "You didn't. Nobody else even heard you ask.")
+    return
+
 label chat_amico_t2_1:
     label tel_chat_amico_t2_1_1:
     if telefono_minuti_blocco("tel_chat_amico_t2_1_1", "ricevi", 1):
@@ -280,6 +302,17 @@ label chat_amico_t3:
     $ msg("sara", "I'd like it on record that the biscuits on the left were the right ones.")
     return
 
+label chat_amico_t3_entrata:
+    label tel_chat_amico_t3_entrata_1:
+    if telefono_minuti_blocco("tel_chat_amico_t3_entrata_1", "ricevi", 1):
+        return
+    $ msg("amico", "A moment of silence for the blue packet")
+    label tel_chat_amico_t3_entrata_2:
+    if telefono_minuti_blocco("tel_chat_amico_t3_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "I'd like it on record that they were the right ones.")
+    return
+
 label chat_amico_t3_1:
     label tel_chat_amico_t3_1_1:
     if telefono_minuti_blocco("tel_chat_amico_t3_1_1", "ricevi", 1):
@@ -405,6 +438,17 @@ label chat_amico_t3_3:
 label chat_amico_c1:
     label tel_chat_amico_c1_1:
     if telefono_minuti_blocco("tel_chat_amico_c1_1", "invia", 1):
+        return
+    $ msg("sara", "You were staring at me when I was drying up.")
+    return
+
+label chat_amico_c1_entrata:
+    label tel_chat_amico_c1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_amico_c1_entrata_1", "ricevi", 1):
+        return
+    $ msg("amico", "I was normal the other night, wasn't I")
+    label tel_chat_amico_c1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_amico_c1_entrata_2", "invia", 1):
         return
     $ msg("sara", "You were staring at me when I was drying up.")
     return

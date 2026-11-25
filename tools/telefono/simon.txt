@@ -3,6 +3,8 @@
 
 @ simon_t1 | CONOSCENTI | The cables | fatto('ep2_d15_cavi_simon')
 > My arms are still shaking from the cables.
+< Checking in on the new cable athlete. How are the arms?
+>> Still shaking.
 ---
 < Ha. Good shaking or bad shaking?
 ? Good. I think. [caldo]
@@ -29,6 +31,8 @@
 
 @ simon_t2 | CONOSCENTI | The evening I came alone | fatto('ep1_palestra_da_sola')
 > I nearly turned round and went home, that night Joanie didn't come.
+< Was just thinking about the night you came on your own.
+>> I nearly turned round and went home.
 ---
 < I know. I saw you through the glass. You read the timetable for five minutes.
 ? It's a very complicated timetable. [caldo]
@@ -52,6 +56,8 @@
 
 @ simon_t3 | CONOSCENTI | Both shoulders | fatto('ep1_d8_seconda_spalla')
 > My left shoulder would like you to know it's behaving.
+< Trainer question. How's that left shoulder?
+>> Behaving itself.
 ---
 < Glad to hear it. And the right?
 ? Jealous. [caldo]
@@ -99,6 +105,8 @@
 
 @ simon_t5 | CONOSCENTI | Gym squad | giorno >= 15
 > Has Joanie posted in Gym squad again?
+< Have you seen Gym squad today?
+>> I'm scared to look. What's Joanie posted?
 ---
 < Eleven photos. Nine are of the vending machine.
 ? And the other two? [caldo]
@@ -122,6 +130,8 @@
 
 @ simon_c1 | COMPLICI | Flirt: complimenti sul corpo
 > Be honest. Can you see a difference?
+< Good session the other day. You're coming on.
+>> Be honest. Can you see a difference?
 ---
 < In your lifts? Sure. Every week.
 ? That's not what I asked. [caldo]
@@ -145,6 +155,8 @@
 
 @ simon_c2 | COMPLICI | Flirt: allenarsi da soli
 > What's the gym like after closing?
+< Locking up. Last one out again.
+>> What's it like after closing?
 ---
 < Quiet. You can hear the fridge. I put my own music on.
 ? What music? [caldo]

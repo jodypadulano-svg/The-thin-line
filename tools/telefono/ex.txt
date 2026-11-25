@@ -3,6 +3,9 @@
 
 @ ex_t1 | ESTRANEI | Seeing you again | fatto('jacob_tornato')
 > So you're back in the world.
+< hey
+< it's me. don't panic
+>> So you're back in the world.
 ---
 < never left it. you did
 < you looked good tonight. I'd planned to say something clever and then you turned round
@@ -60,6 +63,8 @@
 
 @ ex_t3 | ESTRANEI | One song | fatto('ep2_d19_ballo_jacob')
 > You kept your word. One song, and you didn't talk.
+< one song. not a word. I'd like that noted
+>> Noted. You kept quiet the whole way through.
 ---
 < nearly killed me
 < I had things. I had a whole list
@@ -88,6 +93,8 @@
 
 @ ex_t4 | ESTRANEI | Eleven coffees | fatto('ep2_d19_jacob_risata')
 > Eleven coffees. I'd managed to forget that for years.
+< eleven
+>> Don't. I'd managed to forget those coffees for years.
 ---
 < he put the tray down like he was serving a king
 < and you said gracias eleven times. once each
@@ -117,6 +124,8 @@
 
 @ ex_c1 | COMPLICI | Flirt: un incontro da soli
 > What's it like, your place, when it's empty?
+< closing up. last one out
+>> What's it like, when it's empty?
 ---
 < quiet. smells of lemon and last night
 < you'd like it. there's a jukebox with a crack down the glass. plays what it wants
@@ -143,6 +152,8 @@
 
 @ ex_c2 | COMPLICI | Flirt: l'attrazione che ritorna
 > You still write to me at the worst possible hour.
+< you up
+>> You still write at the worst possible hour.
 ---
 < it's the only one with no one else in it
 ? I should have been asleep.

@@ -5,6 +5,9 @@
 
 @ howard_t1 | CONOSCENTI | The sauce on the blouse | fatto('ep2_d18_cena_reggiseno')
 > Howard. We need to talk about the blouse.
+< Sara. I've been meaning to ask.
+< The blouse. How is it?
+>> It's had an eventful evening, Howard.
 ---
 < Is it ruined?
 < It's ruined. I knew it. I've thought of nothing else since you closed the door.
@@ -58,6 +61,8 @@
 
 @ howard_t2 | CONOSCENTI | Tidying your flat | fatto('ep1_d9_aiuto_pulire')
 > I haven't forgotten, you know. I said I'd help you with the flat.
+< I bought something today. I'll say no more.
+>> Is this about tidying the flat? I haven't forgotten.
 ---
 < You remembered!
 < I didn't want to bring it up. I've been not bringing it up ever since.
@@ -137,6 +142,8 @@
 
 @ howard_t4 | CONOSCENTI | Three copies of the paper | fatto('ep1_d12_visita') or fatto('ep1_d12_rifiuta_invito')
 > Did you really buy three copies of the paper?
+< There's a parcel come for you. Well. For me. But it's you that's in it.
+>> Howard, is this about the newspaper?
 ---
 < The newsagent still looks at me.
 < The frame came, by the way. It's oak. A bit big, so there's a nice margin all round you.
@@ -176,6 +183,8 @@
 
 @ howard_t5 | CONOSCENTI | The light bulb | fatto('ep1_d12_scaletta')
 > How's the new bulb in your hall holding up?
+< It's lit up like Christmas in here.
+>> The new bulb's holding up, then?
 ---
 < Beautifully. I switch it on just to look at it.
 < I kept the old one. It's silly. It was the last one Mother put in.
@@ -215,6 +224,8 @@
 
 @ howard_t6 | CONOSCENTI | The pink slippers | fatto('ep1_d12_scaletta') and fatto('ep1_d11_pantofole')
 > Are my slippers still by your door?
+< There's something of yours at mine, in case you were missing them.
+>> My slippers. Where did you put them?
 ---
 < Side by side. Toes in, so you can step straight into them.
 < I gave them a brush. They pick up fluff.
@@ -292,6 +303,9 @@
 
 @ howard_t8 | CONOSCENTI | The mother in my book | giorno in (18, 19) and fatto('ep2_d18_visita_howard') and howard_visite == 2
 > What you said about my heroine's mother. Did you mean it?
+< I've been thinking about your lady.
+< The mother, I mean.
+>> Did you mean what you said about her?
 ---
 < That I could pick her out on a bus? Every word.
 < I had a look for her from the window, after you'd gone. Three women got off. None of them was her.
@@ -328,6 +342,8 @@
 
 @ howard_t9 | CONOSCENTI | The bathroom bulb | giorno in (18, 19) and fatto('ep2_d18_visita_howard') and howard_visite == 3
 > I hope you're enjoying your bathroom, now you can see it.
+< Let there be light, eh?
+>> Enjoying your bathroom, Howard?
 ---
 < I've been in there twice for no reason.
 < It's cruel, a new bulb. It shows you the tiles.
@@ -364,6 +380,8 @@
 
 @ howard_t10 | CONOSCENTI | The jar of ragù | fatto('ep2_d18_visita_howard') and howard_visite >= 4 and not fatto('ep2_d18_cena_reggiseno')
 > Your mother's ragù is in our fridge, and I keep opening the door to look at it.
+< Is my mother in your fridge? The sauce, I mean.
+>> Second shelf. I keep opening the door to look at it.
 ---
 < Don't leave it too long. It sulks.
 < Low heat, lid off. And stir it the way I told you.
@@ -400,6 +418,9 @@
 
 @ howard_t11 | CONOSCENTI | Saying no on the landing | fatto('ep2_d18_rifiuta_howard')
 > I hope I wasn't rude on the landing, Howard.
+< It's only me.
+< I wanted to say, no hard feelings about the landing.
+>> I was worried I'd been rude.
 ---
 < Rude! You couldn't be rude with a manual.
 < I put one cup back. It's no trouble. It was a clean cup.
@@ -437,6 +458,8 @@
 
 @ howard_t12 | CONOSCENTI | The parcel you weighed | fatto('ep2_d17_ritiro_howard')
 > Thank you again for taking my parcel in.
+< Did the parcel get home safely? It's a long way, next door.
+>> Safe and sound. Thank you for taking it in.
 ---
 < It was no trouble. I was standing by the door anyway.
 < I did hold it up to the light. Only to see which way up it went.
@@ -510,6 +533,8 @@
 
 @ howard_c1 | COMPLICI | Flirt: quanto gli manca
 > It was quiet today. I didn't hear your door once.
+< Very quiet today, on your side.
+>> It was quiet on yours. I didn't hear your door once.
 ---
 < I was keeping still. I was listening for yours.
 < So there we were. Two people being quiet at each other.
@@ -537,6 +562,8 @@
 
 @ howard_c2 | COMPLICI | Flirt: abitudini condivise
 > I caught myself making two cups of tea.
+< Are you still up? I can see your light under the door.
+>> I'm up. I made two cups of tea by mistake.
 ---
 < Did you drink the other one?
 ? I nearly brought it round. [caldo]
@@ -561,6 +588,8 @@
 
 @ howard_c3 | COMPLICI | Flirt: sentirsi a casa
 > I sat in your chair the other day as if I'd bought it.
+< The chair's still warm, would you believe.
+>> I did rather sit in it as if I'd bought it.
 ---
 < I noticed. I went into the kitchen so as not to make a thing of it.
 ? You made a thing of it. I heard you humming. [caldo]

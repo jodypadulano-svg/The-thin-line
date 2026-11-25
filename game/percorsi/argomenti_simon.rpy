@@ -22,6 +22,17 @@ label chat_simon_t1:
     $ msg("sara", "My arms are still shaking from the cables.")
     return
 
+label chat_simon_t1_entrata:
+    label tel_chat_simon_t1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_simon_t1_entrata_1", "ricevi", 1):
+        return
+    $ msg("simon", "Checking in on the new cable athlete. How are the arms?")
+    label tel_chat_simon_t1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_simon_t1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Still shaking.")
+    return
+
 label chat_simon_t1_1:
     label tel_chat_simon_t1_1_1:
     if telefono_minuti_blocco("tel_chat_simon_t1_1_1", "ricevi", 1):
@@ -161,6 +172,17 @@ label chat_simon_t2:
     $ msg("sara", "I nearly turned round and went home, that night Joanie didn't come.")
     return
 
+label chat_simon_t2_entrata:
+    label tel_chat_simon_t2_entrata_1:
+    if telefono_minuti_blocco("tel_chat_simon_t2_entrata_1", "ricevi", 1):
+        return
+    $ msg("simon", "Was just thinking about the night you came on your own.")
+    label tel_chat_simon_t2_entrata_2:
+    if telefono_minuti_blocco("tel_chat_simon_t2_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "I nearly turned round and went home.")
+    return
+
 label chat_simon_t2_1:
     label tel_chat_simon_t2_1_1:
     if telefono_minuti_blocco("tel_chat_simon_t2_1_1", "ricevi", 1):
@@ -288,6 +310,17 @@ label chat_simon_t3:
     if telefono_minuti_blocco("tel_chat_simon_t3_1", "invia", 1):
         return
     $ msg("sara", "My left shoulder would like you to know it's behaving.")
+    return
+
+label chat_simon_t3_entrata:
+    label tel_chat_simon_t3_entrata_1:
+    if telefono_minuti_blocco("tel_chat_simon_t3_entrata_1", "ricevi", 1):
+        return
+    $ msg("simon", "Trainer question. How's that left shoulder?")
+    label tel_chat_simon_t3_entrata_2:
+    if telefono_minuti_blocco("tel_chat_simon_t3_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Behaving itself.")
     return
 
 label chat_simon_t3_1:
@@ -549,6 +582,17 @@ label chat_simon_t5:
     $ msg("sara", "Has Joanie posted in Gym squad again?")
     return
 
+label chat_simon_t5_entrata:
+    label tel_chat_simon_t5_entrata_1:
+    if telefono_minuti_blocco("tel_chat_simon_t5_entrata_1", "ricevi", 1):
+        return
+    $ msg("simon", "Have you seen Gym squad today?")
+    label tel_chat_simon_t5_entrata_2:
+    if telefono_minuti_blocco("tel_chat_simon_t5_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "I'm scared to look. What's Joanie posted?")
+    return
+
 label chat_simon_t5_1:
     label tel_chat_simon_t5_1_1:
     if telefono_minuti_blocco("tel_chat_simon_t5_1_1", "ricevi", 1):
@@ -674,6 +718,17 @@ label chat_simon_t5_3:
 label chat_simon_c1:
     label tel_chat_simon_c1_1:
     if telefono_minuti_blocco("tel_chat_simon_c1_1", "invia", 1):
+        return
+    $ msg("sara", "Be honest. Can you see a difference?")
+    return
+
+label chat_simon_c1_entrata:
+    label tel_chat_simon_c1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_simon_c1_entrata_1", "ricevi", 1):
+        return
+    $ msg("simon", "Good session the other day. You're coming on.")
+    label tel_chat_simon_c1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_simon_c1_entrata_2", "invia", 1):
         return
     $ msg("sara", "Be honest. Can you see a difference?")
     return
@@ -806,6 +861,17 @@ label chat_simon_c2:
     if telefono_minuti_blocco("tel_chat_simon_c2_1", "invia", 1):
         return
     $ msg("sara", "What's the gym like after closing?")
+    return
+
+label chat_simon_c2_entrata:
+    label tel_chat_simon_c2_entrata_1:
+    if telefono_minuti_blocco("tel_chat_simon_c2_entrata_1", "ricevi", 1):
+        return
+    $ msg("simon", "Locking up. Last one out again.")
+    label tel_chat_simon_c2_entrata_2:
+    if telefono_minuti_blocco("tel_chat_simon_c2_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "What's it like after closing?")
     return
 
 label chat_simon_c2_1:

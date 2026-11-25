@@ -21,6 +21,17 @@ label chat_daniel_t1:
     $ msg("sara", "You left me alone with Magnus the other night. On purpose?")
     return
 
+label chat_daniel_t1_entrata:
+    label tel_chat_daniel_t1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_daniel_t1_entrata_1", "ricevi", 1):
+        return
+    $ msg("daniel", "Have you forgiven me for leaving you with Magnus?")
+    label tel_chat_daniel_t1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_daniel_t1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "That depends. Was it on purpose?")
+    return
+
 label chat_daniel_t1_1:
     label tel_chat_daniel_t1_1_1:
     if telefono_minuti_blocco("tel_chat_daniel_t1_1_1", "ricevi", 2):
@@ -319,6 +330,17 @@ label chat_daniel_t3:
     $ msg("sara", "Thank you for lunch. It was nice to talk about the book.")
     return
 
+label chat_daniel_t3_entrata:
+    label tel_chat_daniel_t3_entrata_1:
+    if telefono_minuti_blocco("tel_chat_daniel_t3_entrata_1", "ricevi", 1):
+        return
+    $ msg("daniel", "The fish sends its regards.")
+    label tel_chat_daniel_t3_entrata_2:
+    if telefono_minuti_blocco("tel_chat_daniel_t3_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Thank it from me. It was nice to talk about the book.")
+    return
+
 label chat_daniel_t3_1:
     label tel_chat_daniel_t3_1_1:
     if telefono_minuti_blocco("tel_chat_daniel_t3_1_1", "ricevi", 1):
@@ -465,6 +487,17 @@ label chat_daniel_t4:
     if telefono_minuti_blocco("tel_chat_daniel_t4_1", "invia", 1):
         return
     $ msg("sara", "You stopped before the song did.")
+    return
+
+label chat_daniel_t4_entrata:
+    label tel_chat_daniel_t4_entrata_1:
+    if telefono_minuti_blocco("tel_chat_daniel_t4_entrata_1", "ricevi", 1):
+        return
+    $ msg("daniel", "I've had a tune in my head all evening.")
+    label tel_chat_daniel_t4_entrata_2:
+    if telefono_minuti_blocco("tel_chat_daniel_t4_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "You stopped before it did.")
     return
 
 label chat_daniel_t4_1:
@@ -616,6 +649,17 @@ label chat_daniel_t5:
     $ msg("sara", "I'm not proud of what I said about [nome_compagno]. At lunch.")
     return
 
+label chat_daniel_t5_entrata:
+    label tel_chat_daniel_t5_entrata_1:
+    if telefono_minuti_blocco("tel_chat_daniel_t5_entrata_1", "ricevi", 1):
+        return
+    $ msg("daniel", "I keep hearing your voice. One line of it.")
+    label tel_chat_daniel_t5_entrata_2:
+    if telefono_minuti_blocco("tel_chat_daniel_t5_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "I'm not proud of that line.")
+    return
+
 label chat_daniel_t5_1:
     label tel_chat_daniel_t5_1_1:
     if telefono_minuti_blocco("tel_chat_daniel_t5_1_1", "ricevi", 1):
@@ -756,6 +800,17 @@ label chat_daniel_c1:
     $ msg("sara", "What do you do when somebody doesn't do what you want?")
     return
 
+label chat_daniel_c1_entrata:
+    label tel_chat_daniel_c1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_daniel_c1_entrata_1", "ricevi", 1):
+        return
+    $ msg("daniel", "You've been ignoring me beautifully.")
+    label tel_chat_daniel_c1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_daniel_c1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "What do you do when somebody doesn't do what you want?")
+    return
+
 label chat_daniel_c1_1:
     label tel_chat_daniel_c1_1_1:
     if telefono_minuti_blocco("tel_chat_daniel_c1_1_1", "ricevi", 1):
@@ -885,6 +940,17 @@ label chat_daniel_c2:
     if telefono_minuti_blocco("tel_chat_daniel_c2_1", "invia", 1):
         return
     $ msg("sara", "You said there was a place you'd never taken anyone.")
+    return
+
+label chat_daniel_c2_entrata:
+    label tel_chat_daniel_c2_entrata_1:
+    if telefono_minuti_blocco("tel_chat_daniel_c2_entrata_1", "ricevi", 1):
+        return
+    $ msg("daniel", "I've been thinking of going away for a day or two.")
+    label tel_chat_daniel_c2_entrata_2:
+    if telefono_minuti_blocco("tel_chat_daniel_c2_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "To the place you've never taken anyone?")
     return
 
 label chat_daniel_c2_1:

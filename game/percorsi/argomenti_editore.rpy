@@ -19,6 +19,17 @@ label chat_editore_t1:
     $ msg("sara", "I keep your card in my notebook. I've read the back of it more than the front.")
     return
 
+label chat_editore_t1_entrata:
+    label tel_chat_editore_t1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_editore_t1_entrata_1", "ricevi", 1):
+        return
+    $ msg("editore", "I have been wondering what became of my card. M.")
+    label tel_chat_editore_t1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_editore_t1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "It's in my notebook. I've read the back of it more than the front.")
+    return
+
 label chat_editore_t1_1:
     label tel_chat_editore_t1_1_1:
     if telefono_minuti_blocco("tel_chat_editore_t1_1_1", "ricevi", 1):
@@ -144,6 +155,17 @@ label chat_editore_t1_3:
 label chat_editore_t2:
     label tel_chat_editore_t2_1:
     if telefono_minuti_blocco("tel_chat_editore_t2_1", "invia", 1):
+        return
+    $ msg("sara", "I promised myself I wouldn't ask if you'd started.")
+    return
+
+label chat_editore_t2_entrata:
+    label tel_chat_editore_t2_entrata_1:
+    if telefono_minuti_blocco("tel_chat_editore_t2_entrata_1", "ricevi", 1):
+        return
+    $ msg("editore", "You have been admirably silent. M.")
+    label tel_chat_editore_t2_entrata_2:
+    if telefono_minuti_blocco("tel_chat_editore_t2_entrata_2", "invia", 1):
         return
     $ msg("sara", "I promised myself I wouldn't ask if you'd started.")
     return

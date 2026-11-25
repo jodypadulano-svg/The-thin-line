@@ -3,6 +3,8 @@
 
 @ daniel_t1 | CONOSCENTI | Magnus's card | fatto('ep1_d13_biglietto')
 > You left me alone with Magnus the other night. On purpose?
+< Have you forgiven me for leaving you with Magnus?
+>> That depends. Was it on purpose?
 ---
 < I don't do anything else.
 < He doesn't read people I'm standing next to.
@@ -60,6 +62,8 @@
 
 @ daniel_t3 | CONOSCENTI | Keeping it about the novel | fatto('ep2_d18_professionale')
 > Thank you for lunch. It was nice to talk about the book.
+< The fish sends its regards.
+>> Thank it from me. It was nice to talk about the book.
 ---
 < You thanked me again.
 ? I'm thanking the fish.
@@ -88,6 +92,8 @@
 
 @ daniel_t4 | CONOSCENTI | The dance | fatto('ep2_d18_ballo')
 > You stopped before the song did.
+< I've had a tune in my head all evening.
+>> You stopped before it did.
 ---
 < You noticed.
 ? Anyone would have. [caldo]
@@ -116,6 +122,8 @@
 
 @ daniel_t5 | CONOSCENTI | What I said for you | fatto('ep2_d18_sfotto_josh')
 > I'm not proud of what I said about [nome_compagno]. At lunch.
+< I keep hearing your voice. One line of it.
+>> I'm not proud of that line.
 ---
 < No? You were smiling when you said it.
 ? That's what I'm not proud of.
@@ -142,6 +150,8 @@
 
 @ daniel_c1 | COMPLICI | Flirt: il piacere delle sfide
 > What do you do when somebody doesn't do what you want?
+< You've been ignoring me beautifully.
+>> What do you do when somebody doesn't do what you want?
 ---
 < It's so rare. I generally send flowers.
 ? And if she sends them back? [caldo]
@@ -166,6 +176,8 @@
 
 @ daniel_c2 | COMPLICI | Flirt: un invito riservato
 > You said there was a place you'd never taken anyone.
+< I've been thinking of going away for a day or two.
+>> To the place you've never taken anyone?
 ---
 < There's a house on the coast. No signal. Very bad paintings.
 ? Why no one? [caldo]

@@ -188,7 +188,8 @@ init -5 python:
         tutti = [d for _, d in sorted(DISCORSI.items()) if d.chiave == chiave and discorso_disponibile(d, scrive_altro=True) and prende_iniziativa(d)]
         if gradino(chiave) >= CONFIDENZA:
             return tutti
-        return [d for d in tutti if getattr(d, "scrive_lui", False)]
+        ## Sotto Confidenza scrivono solo per un fatto vissuto insieme.
+        return [d for d in tutti if d.argomento or getattr(d, "scrive_lui", False)]
 
     ## --- Iniziative di Sara: tipo o argomento (specifica del 25/11/2026) ------------
 
@@ -368,6 +369,8 @@ init -5 python:
         aperto = store.discorso_aperto.get(k)
         if premia_avvio and chi == "sara" and aperto and aperto.pop("premio_avvio", False):
             interest(k, 1, "Sara started a new conversation.")
+        if premia_avvio and chi == "sara" and aperto and aperto.pop("premio_risposta", False):
+            interest(k, 1, "Sara answered.")
         if telefono_pilota:
             return
         renpy.restart_interaction()
@@ -400,6 +403,7 @@ default ultima_entrata = {}
 default giorno_entrata = -1
 default uscite = []                    # [(giorno, chiave, detto_a_josh)]
 default giorno_tipo = {}               # chiave -> ultimo giorno con una chat nuova per tipo
+default daniel_tace = False            # Sara lo ha ignorato: non scrive finché non lo cerca lei
 default anteprime_chat = {}            # (chiave, tipo) -> (giorno, id della chat proposta)
 default telefono_anteprima = False     # True: msg() non manda, ricorda solo il testo
 default telefono_anteprima_testo = ""
@@ -715,7 +719,7 @@ screen telefono():
                                             spacing 3
                                             text nome_percorso(percorso(k)) style "tel_testo" size 29 color ("#f3e6ea" if stato != "vuoto" else "#b8a8b1")
                                             if stato == "risposta":
-                                                text "New reply" style "tel_testo" size 21 color "#ffb3c1"
+                                                text ("New message" if telefono_minuti_inbox.get(k, {}).get("entrata") else "New reply") style "tel_testo" size 21 color "#ffb3c1"
                                             elif stato == "rinviata":
                                                 text ("Unread · %d min needed" % telefono_minuti_inbox[k]["bolle"]) style "tel_testo" size 21 color "#ffb3c1"
                                             elif stato == "contesto":

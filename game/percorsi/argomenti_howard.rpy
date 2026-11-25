@@ -30,6 +30,18 @@ label chat_howard_t1:
     $ msg("sara", "Howard. We need to talk about the blouse.")
     return
 
+label chat_howard_t1_entrata:
+    label tel_chat_howard_t1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t1_entrata_1", "ricevi", 2):
+        return
+    $ msg("howard", "Sara. I've been meaning to ask.")
+    $ msg("howard", "The blouse. How is it?")
+    label tel_chat_howard_t1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "It's had an eventful evening, Howard.")
+    return
+
 label chat_howard_t1_1:
     label tel_chat_howard_t1_1_1:
     if telefono_minuti_blocco("tel_chat_howard_t1_1_1", "ricevi", 3):
@@ -268,6 +280,17 @@ label chat_howard_t2:
     if telefono_minuti_blocco("tel_chat_howard_t2_1", "invia", 1):
         return
     $ msg("sara", "I haven't forgotten, you know. I said I'd help you with the flat.")
+    return
+
+label chat_howard_t2_entrata:
+    label tel_chat_howard_t2_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t2_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "I bought something today. I'll say no more.")
+    label tel_chat_howard_t2_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t2_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Is this about tidying the flat? I haven't forgotten.")
     return
 
 label chat_howard_t2_1:
@@ -649,6 +672,17 @@ label chat_howard_t4:
     $ msg("sara", "Did you really buy three copies of the paper?")
     return
 
+label chat_howard_t4_entrata:
+    label tel_chat_howard_t4_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t4_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "There's a parcel come for you. Well. For me. But it's you that's in it.")
+    label tel_chat_howard_t4_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t4_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Howard, is this about the newspaper?")
+    return
+
 label chat_howard_t4_1:
     label tel_chat_howard_t4_1_1:
     if telefono_minuti_blocco("tel_chat_howard_t4_1_1", "ricevi", 2):
@@ -836,6 +870,17 @@ label chat_howard_t5:
     if telefono_minuti_blocco("tel_chat_howard_t5_1", "invia", 1):
         return
     $ msg("sara", "How's the new bulb in your hall holding up?")
+    return
+
+label chat_howard_t5_entrata:
+    label tel_chat_howard_t5_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t5_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "It's lit up like Christmas in here.")
+    label tel_chat_howard_t5_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t5_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "The new bulb's holding up, then?")
     return
 
 label chat_howard_t5_1:
@@ -1032,6 +1077,17 @@ label chat_howard_t6:
     if telefono_minuti_blocco("tel_chat_howard_t6_1", "invia", 1):
         return
     $ msg("sara", "Are my slippers still by your door?")
+    return
+
+label chat_howard_t6_entrata:
+    label tel_chat_howard_t6_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t6_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "There's something of yours at mine, in case you were missing them.")
+    label tel_chat_howard_t6_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t6_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "My slippers. Where did you put them?")
     return
 
 label chat_howard_t6_1:
@@ -1419,6 +1475,18 @@ label chat_howard_t8:
     $ msg("sara", "What you said about my heroine's mother. Did you mean it?")
     return
 
+label chat_howard_t8_entrata:
+    label tel_chat_howard_t8_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t8_entrata_1", "ricevi", 2):
+        return
+    $ msg("howard", "I've been thinking about your lady.")
+    $ msg("howard", "The mother, I mean.")
+    label tel_chat_howard_t8_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t8_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Did you mean what you said about her?")
+    return
+
 label chat_howard_t8_1:
     label tel_chat_howard_t8_1_1:
     if telefono_minuti_blocco("tel_chat_howard_t8_1_1", "ricevi", 2):
@@ -1603,6 +1671,17 @@ label chat_howard_t9:
     if telefono_minuti_blocco("tel_chat_howard_t9_1", "invia", 1):
         return
     $ msg("sara", "I hope you're enjoying your bathroom, now you can see it.")
+    return
+
+label chat_howard_t9_entrata:
+    label tel_chat_howard_t9_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t9_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "Let there be light, eh?")
+    label tel_chat_howard_t9_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t9_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Enjoying your bathroom, Howard?")
     return
 
 label chat_howard_t9_1:
@@ -1791,6 +1870,17 @@ label chat_howard_t10:
     $ msg("sara", "Your mother's ragù is in our fridge, and I keep opening the door to look at it.")
     return
 
+label chat_howard_t10_entrata:
+    label tel_chat_howard_t10_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t10_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "Is my mother in your fridge? The sauce, I mean.")
+    label tel_chat_howard_t10_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t10_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Second shelf. I keep opening the door to look at it.")
+    return
+
 label chat_howard_t10_1:
     label tel_chat_howard_t10_1_1:
     if telefono_minuti_blocco("tel_chat_howard_t10_1_1", "ricevi", 2):
@@ -1975,6 +2065,18 @@ label chat_howard_t11:
     if telefono_minuti_blocco("tel_chat_howard_t11_1", "invia", 1):
         return
     $ msg("sara", "I hope I wasn't rude on the landing, Howard.")
+    return
+
+label chat_howard_t11_entrata:
+    label tel_chat_howard_t11_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t11_entrata_1", "ricevi", 2):
+        return
+    $ msg("howard", "It's only me.")
+    $ msg("howard", "I wanted to say, no hard feelings about the landing.")
+    label tel_chat_howard_t11_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t11_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "I was worried I'd been rude.")
     return
 
 label chat_howard_t11_1:
@@ -2162,6 +2264,17 @@ label chat_howard_t12:
     if telefono_minuti_blocco("tel_chat_howard_t12_1", "invia", 1):
         return
     $ msg("sara", "Thank you again for taking my parcel in.")
+    return
+
+label chat_howard_t12_entrata:
+    label tel_chat_howard_t12_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_t12_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "Did the parcel get home safely? It's a long way, next door.")
+    label tel_chat_howard_t12_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_t12_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Safe and sound. Thank you for taking it in.")
     return
 
 label chat_howard_t12_1:
@@ -2544,6 +2657,17 @@ label chat_howard_c1:
     $ msg("sara", "It was quiet today. I didn't hear your door once.")
     return
 
+label chat_howard_c1_entrata:
+    label tel_chat_howard_c1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_c1_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "Very quiet today, on your side.")
+    label tel_chat_howard_c1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_c1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "It was quiet on yours. I didn't hear your door once.")
+    return
+
 label chat_howard_c1_1:
     label tel_chat_howard_c1_1_1:
     if telefono_minuti_blocco("tel_chat_howard_c1_1_1", "ricevi", 2):
@@ -2678,6 +2802,17 @@ label chat_howard_c2:
     $ msg("sara", "I caught myself making two cups of tea.")
     return
 
+label chat_howard_c2_entrata:
+    label tel_chat_howard_c2_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_c2_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "Are you still up? I can see your light under the door.")
+    label tel_chat_howard_c2_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_c2_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "I'm up. I made two cups of tea by mistake.")
+    return
+
 label chat_howard_c2_1:
     label tel_chat_howard_c2_1_1:
     if telefono_minuti_blocco("tel_chat_howard_c2_1_1", "ricevi", 1):
@@ -2807,6 +2942,17 @@ label chat_howard_c3:
     if telefono_minuti_blocco("tel_chat_howard_c3_1", "invia", 1):
         return
     $ msg("sara", "I sat in your chair the other day as if I'd bought it.")
+    return
+
+label chat_howard_c3_entrata:
+    label tel_chat_howard_c3_entrata_1:
+    if telefono_minuti_blocco("tel_chat_howard_c3_entrata_1", "ricevi", 1):
+        return
+    $ msg("howard", "The chair's still warm, would you believe.")
+    label tel_chat_howard_c3_entrata_2:
+    if telefono_minuti_blocco("tel_chat_howard_c3_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "I did rather sit in it as if I'd bought it.")
     return
 
 label chat_howard_c3_1:

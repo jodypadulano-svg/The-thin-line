@@ -20,6 +20,18 @@ label chat_ex_t1:
     $ msg("sara", "So you're back in the world.")
     return
 
+label chat_ex_t1_entrata:
+    label tel_chat_ex_t1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_ex_t1_entrata_1", "ricevi", 2):
+        return
+    $ msg("ex", "hey")
+    $ msg("ex", "it's me. don't panic")
+    label tel_chat_ex_t1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_ex_t1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "So you're back in the world.")
+    return
+
 label chat_ex_t1_1:
     label tel_chat_ex_t1_1_1:
     if telefono_minuti_blocco("tel_chat_ex_t1_1_1", "ricevi", 2):
@@ -310,6 +322,17 @@ label chat_ex_t3:
     $ msg("sara", "You kept your word. One song, and you didn't talk.")
     return
 
+label chat_ex_t3_entrata:
+    label tel_chat_ex_t3_entrata_1:
+    if telefono_minuti_blocco("tel_chat_ex_t3_entrata_1", "ricevi", 1):
+        return
+    $ msg("ex", "one song. not a word. I'd like that noted")
+    label tel_chat_ex_t3_entrata_2:
+    if telefono_minuti_blocco("tel_chat_ex_t3_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Noted. You kept quiet the whole way through.")
+    return
+
 label chat_ex_t3_1:
     label tel_chat_ex_t3_1_1:
     if telefono_minuti_blocco("tel_chat_ex_t3_1_1", "ricevi", 2):
@@ -449,6 +472,17 @@ label chat_ex_t4:
     if telefono_minuti_blocco("tel_chat_ex_t4_1", "invia", 1):
         return
     $ msg("sara", "Eleven coffees. I'd managed to forget that for years.")
+    return
+
+label chat_ex_t4_entrata:
+    label tel_chat_ex_t4_entrata_1:
+    if telefono_minuti_blocco("tel_chat_ex_t4_entrata_1", "ricevi", 1):
+        return
+    $ msg("ex", "eleven")
+    label tel_chat_ex_t4_entrata_2:
+    if telefono_minuti_blocco("tel_chat_ex_t4_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "Don't. I'd managed to forget those coffees for years.")
     return
 
 label chat_ex_t4_1:
@@ -593,6 +627,17 @@ label chat_ex_c1:
     $ msg("sara", "What's it like, your place, when it's empty?")
     return
 
+label chat_ex_c1_entrata:
+    label tel_chat_ex_c1_entrata_1:
+    if telefono_minuti_blocco("tel_chat_ex_c1_entrata_1", "ricevi", 1):
+        return
+    $ msg("ex", "closing up. last one out")
+    label tel_chat_ex_c1_entrata_2:
+    if telefono_minuti_blocco("tel_chat_ex_c1_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "What's it like, when it's empty?")
+    return
+
 label chat_ex_c1_1:
     label tel_chat_ex_c1_1_1:
     if telefono_minuti_blocco("tel_chat_ex_c1_1_1", "ricevi", 2):
@@ -727,6 +772,17 @@ label chat_ex_c2:
     if telefono_minuti_blocco("tel_chat_ex_c2_1", "invia", 1):
         return
     $ msg("sara", "You still write to me at the worst possible hour.")
+    return
+
+label chat_ex_c2_entrata:
+    label tel_chat_ex_c2_entrata_1:
+    if telefono_minuti_blocco("tel_chat_ex_c2_entrata_1", "ricevi", 1):
+        return
+    $ msg("ex", "you up")
+    label tel_chat_ex_c2_entrata_2:
+    if telefono_minuti_blocco("tel_chat_ex_c2_entrata_2", "invia", 1):
+        return
+    $ msg("sara", "You still write at the worst possible hour.")
     return
 
 label chat_ex_c2_1:

@@ -119,3 +119,18 @@ La prima realizzazione (commit `98d7e3a`) è stata **ritirata**: grafica cambiat
 - **Scadenze e incontri dal vivo** (`scade`): le chat legate a una giornata si chiudono il giorno dopo; «The parcel» si chiude se Sara ritira il pacco di persona.
 - **Preferenze:** «Show chat type», spenta all'inizio.
 - **Da fare:** frequenza con cui scrivono per primi (valori da approvare), testi nei diversi toni, reazioni al silenzio e al flirt non ricambiato, messaggi di trama che interrompono, appuntamenti, inchiesta dal 22, argomenti degli altri, Flirt e Sexting. Test: `telefono_tipi`.
+
+### 12.2 Chi scrive per primo (tabella approvata da Jody, 25/11; «al limite editeremo»)
+
+| | Ogni sera | Giorni fra due | Quando | Se Sara non risponde |
+|---|---|---|---|---|
+| Howard | 60% | 1 | sempre | il giorno dopo: «Did I say something wrong?» |
+| Joanie | 45% (80% il 17 e il 19) | 2 | sempre | «??» e ci ride sopra |
+| Jacob | 35% | 3 | dopo le 22 | niente |
+| Daniel | 35% | 3 | sotto il giorno solo del romanzo | sparisce finché non lo cerca Sara |
+| Simon | 25% (50% il 15 e il 17) | 3 | 18-23 | niente |
+| Darius | 20% (40% il 14 e il 16) | 4 | sempre | «Lol, busy. Got it» |
+| Magnus | 10% | 7 | solo romanzo | niente |
+| Barbara | 20% | 4 | giorni di lavoro | niente |
+
+Al massimo due messaggi nuovi per sera, in ordine a sorte; aspettano nella rubrica («New message») e non aprono la chat da soli. I fatti vissuti insieme vengono prima delle chat generiche. Rispondere dà Interest +1. Valori in `ENTRATE` e `SILENZIO` (`game/core/telefono_temporizzato.rpy`). Da fare nelle scene: la battuta di Simon e la freddezza di Barbara al lavoro.

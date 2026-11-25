@@ -20,6 +20,8 @@ init python:
     _ttipi_arrivo = _telefono_arrivo_minuti
 
     def _ttipi_menu_telefono(items, **kwargs):
+        if not _ttipi_scelte:
+            return [v for t, v in items if t.startswith("Pick up")][0]
         voluta = _ttipi_scelte.pop(0)
         for testo, valore in items:
             if testo.startswith(voluta):
@@ -145,6 +147,61 @@ testsuite telefono_tipi:
         assert eval _ttipi_aperture[0] == 2
         ## Gli argomenti non consumano la chat per tipo del giorno, Flirt e Sexting sì.
         assert eval (_ttipi_k in giorno_tipo) == (not DISCORSI[chat].argomento)
+
+    ## Ogni chat che l'altro può aprire per primo: il messaggio aspetta nella rubrica,
+    ## Sara risponde e la chat arriva in fondo.
+    testcase entrate:
+        parameter chat = ["amica_t1", "amica_t3", "amica_t4", "amica_t5", "amica_t7", "amica_c2", "amica_c3", "amico_t1", "amico_t2", "amico_t3", "amico_c1", "capa_t1", "capa_t2", "capa_t4", "daniel_t1", "daniel_t3", "daniel_t4", "daniel_t5", "daniel_c1", "daniel_c2", "editore_t1", "editore_t2", "ex_t1", "ex_t3", "ex_t4", "ex_c1", "ex_c2", "howard_t1", "howard_t2", "howard_t4", "howard_t5", "howard_t6", "howard_t8", "howard_t9", "howard_t10", "howard_t11", "howard_t12", "howard_c1", "howard_c2", "howard_c3", "simon_t1", "simon_t2", "simon_t3", "simon_t5", "simon_c1", "simon_c2", "amica_intro", "amica_b1", "amica_b4", "amico_intro", "amico_b1", "capa_b3", "daniel_intro", "daniel_b1", "editore_intro_pagine", "editore_intro_attesa", "ex_a2", "ex_b1", "ex_b4", "howard_a3", "howard_a6", "howard_a8", "howard_b1", "howard_b3", "simon_a1", "simon_a2", "simon_b1"]
+        $ _ttipi_prepara_chat(chat, 0)
+        $ _ttipi_scelte[:] = []
+        $ telefono_minuti_ora = giorno * 1440 + 22 * 60
+        $ arriva_messaggio(_ttipi_k, chat)
+        $ _ttipi_prima = valore_interest(_ttipi_k)
+        run Jump("test_telefono_tipi")
+        advance until eval fatto("test_telefono_tipi_finito") timeout 30.0
+        $ _ttipi_chiudi()
+        assert eval chat in discorsi_fatti and fatto("chat_" + chat)
+        assert eval chat_log[_ttipi_k][0][0] == _ttipi_k and "sara" in [m[0] for m in chat_log[_ttipi_k]]
+        assert eval valore_interest(_ttipi_k) > _ttipi_prima
+
+    ## La tabella di chi scrive per primo e le reazioni al silenzio.
+    testcase sera_e_silenzi:
+        $ debug_azzera_stato()
+        $ giorno = 18
+        $ giorno_entrata = -1
+        $ telefono_minuti_ora = giorno * 1440 + 22 * 60
+        $ rubrica = ["howard", "amica", "simon", "amico", "daniel", "ex"]
+        $ segna("ep1_d12_visita")
+        $ segna("jacob_tornato")
+        $ segna("ep1_palestra_da_sola")
+        $ [interest(k, 12) for k in rubrica]
+        $ _ttipi_entrate = dict(ENTRATE)
+        $ ENTRATE.update({k: (1.0, 1, {}) for k in ENTRATE})
+        $ _telefono_messaggi_in_entrata()
+        assert eval len(discorso_aperto) == ENTRATE_PER_SERA == 2
+        ## Una volta sola per sera.
+        $ _telefono_messaggi_in_entrata()
+        assert eval len(discorso_aperto) == 2
+        $ ENTRATE.update(_ttipi_entrate)
+        ## Daniel sotto il giorno scrive solo del romanzo; Jacob solo di notte.
+        $ discorso_aperto = {}
+        $ telefono_minuti_inbox = {}
+        $ ultima_entrata = {}
+        $ segna("ep1_d13_biglietto")
+        $ segna("ep2_d18_ballo")
+        assert eval {d.id for d in _entrate_possibili("daniel")} <= set(DANIEL_ROMANZO)
+        $ telefono_minuti_ora = giorno * 1440 + 21 * 60
+        assert eval not _entrate_possibili("ex") and _entrate_possibili("simon")
+        ## Silenzi: Howard insiste, Daniel sparisce finché non lo cerca lei.
+        $ arriva_messaggio("howard", "howard_t4")
+        $ arriva_messaggio("daniel", "daniel_t1")
+        $ _telefono_silenzi()
+        assert eval "silenzio" not in discorso_aperto["howard"] and not daniel_tace
+        $ giorno = 19
+        $ _telefono_silenzi()
+        assert eval discorso_aperto["howard"]["silenzio"] and daniel_tace and "daniel" not in discorso_aperto
+        assert eval not _entrate_possibili("daniel")
+        $ telefono_minuti_ora = None
 
     testcase tipo_e_annulla:
         $ _ttipi_prepara(["Casual", "Not now", "Casual", "«"])

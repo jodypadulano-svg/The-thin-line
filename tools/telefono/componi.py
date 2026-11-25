@@ -8,6 +8,7 @@ Formato del testo:
                                         per tipo e il titolo è solo un promemoria
   > messaggio con cui Sara apre la chat
   < messaggio in entrata (se scrive per primo l'altro; facoltativo, prima della prima parte)
+  >> come risponde Sara a quel messaggio: deve portare alla prima parte come l'apertura >
   ---                                   nuova parte (comincia sempre l'altro)
   < messaggio dell'altro
   * pensiero di Sara
@@ -79,7 +80,9 @@ def leggi(testo):
         if seg == "@":
             c = [x.strip() for x in t.split("|")]
             chat.append({"id": c[0], "gradino": c[1], "titolo": c[2], "se": c[3] if len(c) > 3 else "",
-                         "apre": None, "entrata": [], "parti": []})
+                         "apre": None, "entrata": [], "risponde": None, "parti": []})
+        elif r.startswith(">>"):
+            chat[-1]["risponde"] = r[2:].strip()
         elif seg == ">":
             assert chat[-1]["apre"] is None, "due aperture in " + chat[-1]["id"]
             chat[-1]["apre"] = t
@@ -118,6 +121,8 @@ def componi(chiave, chat):
             b = Blocco("chat_%s_entrata" % c["id"])
             b.agg(0, "label chat_%s_entrata:" % c["id"])
             b.ricevi(1, chiave, [("<", m) for m in c["entrata"]])
+            b.punto(1, "invia", 1)
+            b.agg(1, '$ msg("sara", "%s")' % q(c["risponde"]))
             b.agg(1, "return")
             out += [""] + b.righe
         for i, p in enumerate(c["parti"], 1):

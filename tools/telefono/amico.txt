@@ -3,6 +3,8 @@
 
 @ amico_t1 | ESTRANEI | The room beyond the door | giorno in (14, 15)
 > I wrote the first sentence of the room. On the way home from our coffee.
+< Did she get into the room yet?
+>> I wrote the first sentence on the way home.
 ---
 < No way. Between the café and your door? That's eight minutes
 ? Seven. I walked fast. [caldo]
@@ -28,6 +30,8 @@
 
 @ amico_t2 | CONOSCENTI | Her minute | fatto('ep2_d16_minuto_darius')
 > You asked if she'd got her minute. At dinner. Nobody else heard.
+< Hope I didn't put you on the spot at dinner
+>> You didn't. Nobody else even heard you ask.
 ---
 < I was whispering. I'm a big lad, it takes effort
 ? I liked that you remembered. [caldo]
@@ -51,6 +55,8 @@
 
 @ amico_t3 | CONOSCENTI | The blue packet | giorno >= 16
 > I'd like it on record that the biscuits on the left were the right ones.
+< A moment of silence for the blue packet
+>> I'd like it on record that they were the right ones.
 ---
 < Objection. You picked them up without looking
 ? Because I trusted you. [caldo]
@@ -74,6 +80,8 @@
 
 @ amico_c1 | COMPLICI | Flirt: un gioco di provocazioni
 > You were staring at me when I was drying up.
+< I was normal the other night, wasn't I
+>> You were staring at me when I was drying up.
 ---
 < I was staring at the plate
 ? I wasn't holding a plate. [caldo]

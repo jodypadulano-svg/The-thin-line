@@ -3,6 +3,9 @@
 
 @ amica_t1 | CONOSCENTI | Lunch with Daniel | giorno < 18 and fatto('ep1_d13_pranzo_forse')
 > I keep hearing myself say «maybe» to Daniel.
+< ok so
+< daniel. lunch. SPEAK
+>> I said maybe. I keep hearing myself say it.
 ---
 < how did it sound
 < in your head. do the voice
@@ -63,6 +66,8 @@
 
 @ amica_t3 | CONOSCENTI | What I told you in the kitchen | fatto('ep2_d16_confida_joanie')
 > Thank you for Tuesday. For the kitchen.
+< still thinking about you and that jug
+>> Thank you for that. For the kitchen.
 ---
 < thank YOU. I was about to dry the same plate for the fifth time
 < have you two talked since. properly
@@ -92,6 +97,9 @@
 
 @ amica_t4 | CONOSCENTI | The black top | fatto('ep2_d17_top_ricevuto')
 > I'm holding your top up to the light. I can see the whole kitchen through it.
+< have you opened it
+< have you held it up
+>> I can see the whole kitchen through it.
 ---
 < that's how you know it's good
 < put it ON
@@ -122,6 +130,9 @@
 
 @ amica_t5 | CONOSCENTI | After the Lantern | fatto('jacob_tornato')
 > What were the odds, Joanie?
+< soooo
+< fancy that
+>> What were the odds, Joanie?
 ---
 < of what
 < of a person being in a bar. on a friday. in a town. pretty good I'd say
@@ -178,6 +189,9 @@
 
 @ amica_t7 | CONFIDENZA | What you told me on the carpet | fatto('ep2_d19_fantasia_joanie')
 > I'm not looking at you differently. I thought you might be lying there wondering.
+< are you up
+< you're allowed not to answer
+>> I'm up, and I'm not looking at you differently. Were you lying there wondering?
 ---
 < I was
 < I've been looking at the ceiling since you left. there's a stain like a rabbit
@@ -238,6 +252,8 @@
 
 @ amica_c2 | COMPLICI | Flirt: segreti solo per Joanie
 > Tell me something you've never told anybody.
+< can't sleep. entertain me
+>> Tell me something you've never told anybody.
 ---
 < in exchange for what
 ? One of mine. Same size.
@@ -266,6 +282,8 @@
 
 @ amica_c3 | COMPLICI | Flirt: la paura di perdersi
 > Would anything I did make you stop liking me?
+< random question. do I ever annoy you
+>> Never. Would anything I did make you stop liking me?
 ---
 < if you got a fringe like mine. that's copyright
 ? Seriously.
