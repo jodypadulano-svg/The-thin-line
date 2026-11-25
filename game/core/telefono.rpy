@@ -378,10 +378,16 @@ init -5 python:
             store.telefono_anteprima_testo = renpy.substitute(testo)
             return
         renpy.stop_skipping()
-        messaggio = (chi, renpy.substitute(testo))
-        if immagine:
-            messaggio += (immagine,)
         k = store.chat_aperta
+        ## «typing…» prima di un messaggio dell'altro, per il tempo di scriverlo.
+        if chi == k and not telefono_pilota and not renpy.is_in_test():
+            store.tel_scrive = k
+            renpy.restart_interaction()
+            renpy.pause(min(1.6, 0.5 + len(testo) * 0.012))
+            store.tel_scrive = None
+        ## Mittente, testo, immagine, minuto e giorno (i vecchi messaggi hanno solo i primi).
+        ora = store.telefono_minuti_ora
+        messaggio = (chi, renpy.substitute(testo), immagine, None if ora is None else ora % 1440, store.giorno)
         store.chat_log.setdefault(k, []).append(messaggio)
         aperto = store.discorso_aperto.get(k)
         if premia_avvio and chi == "sara" and aperto and aperto.pop("premio_avvio", False):
@@ -421,6 +427,7 @@ default giorno_entrata = -1
 default uscite = []                    # [(giorno, chiave, detto_a_josh)]
 default giorno_tipo = {}               # chiave -> ultimo giorno con una chat nuova per tipo
 default daniel_tace = False            # Sara lo ha ignorato: non scrive finché non lo cerca lei
+default tel_scrive = None              # chi sta scrivendo, per «typing…»
 default anteprime_chat = {}            # (chiave, tipo) -> (giorno, id della chat proposta)
 default telefono_anteprima = False     # True: msg() non manda, ricorda solo il testo
 default telefono_anteprima_testo = ""
@@ -673,10 +680,102 @@ label serata_sostituibile:
 ## SCREEN
 ## =============================================================================
 
+## Grafica del telefono (Jody, 25/11/2026): un telefono di fantasia coi colori del gioco.
+## I pezzi si ridisegnano con tools/telefono/disegna_grafica.py.
+
 style tel_testo is default:
-    font gui.interface_text_font
-    size 30
-    color "#f3e6ea"
+    font "DejaVuSans.ttf"
+    size 24
+    color "#2a171e"
+
+style tel_piccolo is tel_testo:
+    size 17
+    color "#8d7580"
+
+init python:
+    TEL = "images/ui/telefono/gui/"
+    TEL_GIORNI = ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")
+
+    def tel_pezzo(nome, bordo=20):
+        return Frame(TEL + nome + ".png", bordo, bordo)
+
+    def tel_foto(k, lato):
+        """La foto del contatto, o un tondo con l'iniziale (Josh e chi non ce l'ha)."""
+        foto = "images/ui/telefono/%s.webp" % k
+        if renpy.loadable(foto):
+            return Transform(foto, xysize=(lato, lato))
+        return Fixed(Transform(TEL + "foto_vuota.png", xysize=(lato, lato)),
+                     Text(nome_mittente(k)[:1], style="tel_testo", size=lato // 2, color="#ffffff", align=(0.5, 0.5)),
+                     xysize=(lato, lato))
+
+    def tel_ora_barra():
+        """L'ora nella barra: quella della sessione, o quella della fascia."""
+        ora = store.telefono_minuti_ora
+        return telefono_orario(ORARI_FASCE_TELEFONO[store.fascia_corrente] if ora is None else ora)
+
+    def tel_ultimo(k):
+        """Anteprima dell'ultimo messaggio nella rubrica."""
+        log = store.chat_log.get(k)
+        if not log:
+            return ""
+        chi, testo = log[-1][:2]
+        testo = renpy.filter_text_tags(testo, allow=[])
+        testo = testo if len(testo) < 34 else testo[:32].rstrip() + "…"
+        return ("You: " if chi == "sara" else "") + testo.replace("[", "[[").replace("{", "{{")
+
+    def tel_letto(k, posizione):
+        """Le spunte di un messaggio di Sara: letto se l'altro ha scritto dopo."""
+        log = store.chat_log.get(k, [])
+        if any(m[0] == k for m in log[posizione + 1:]):
+            return True
+        coda = store.coda_chat.get(k)
+        return bool(coda and coda["letto"]) or k == "daniel"
+
+    def tel_altezza_scelte():
+        """Quanto posto lasciare alle risposte, che stanno dentro il telefono."""
+        schermo = renpy.get_screen("scelta_telefono")
+        voci = (schermo.scope.get("items") or schermo.scope.get("_kwargs", {}).get("items")) if schermo else None
+        return tel_altezza(voci) if voci else 0
+
+    def tel_altezza(voci):
+        h = 20
+        for i in voci:
+            righe = 1 + len(i.caption) // 40
+            if requisiti_di(i.kwargs) and not requisiti_ok(i.kwargs):
+                righe += 1
+            elif scelta_acceleratore(i.kwargs):
+                righe += len(avviso_acceleratore(i.kwargs))
+            h += righe * 28 + 27
+        return min(h, 520)
+
+## La barra in alto, uguale in rubrica e in chat.
+screen tel_testata(titolo, sotto=None, k=None):
+    fixed:
+        xysize (530, 126)
+        add (TEL + "testa.png")
+        text tel_ora_barra() style "tel_piccolo" color "#f9e9ee" xpos 42 ypos 12
+        if k:
+            hbox:
+                xpos 14 ypos 48
+                spacing 12
+                add (TEL + "freccia.png") yalign 0.5
+                add tel_foto(k, 58) yalign 0.5
+                vbox:
+                    yalign 0.5
+                    xsize 260
+                    text titolo style "tel_testo" color "#ffffff" size (26 if len(titolo) < 15 else 22)
+                    if sotto:
+                        text sotto style "tel_piccolo" color "#f0c9d5"
+            hbox:
+                xalign 1.0 xoffset -18 ypos 60
+                spacing 18
+                add (TEL + "video.png")
+                add (TEL + "cornetta.png")
+                add (TEL + "punti.png")
+        else:
+            text titolo style "tel_testo" color "#ffffff" size 34 xpos 30 ypos 58
+            if sotto:
+                text sotto style "tel_piccolo" color "#f0c9d5" xalign 1.0 xoffset -30 ypos 74
 
 ## La rubrica del telefono.
 screen telefono():
@@ -684,83 +783,101 @@ screen telefono():
     zorder 150
     add Solid("#00000088")
     frame:
+        at tel_sale
         xalign 0.5 yalign 0.5
-        xysize (540, 930)
-        padding (24, 24)
-        background Solid("#49333e")
+        xysize (560, 1040)
+        padding (15, 20)
+        background (TEL + "cornice.png")
         vbox:
-            spacing 10
-            add Solid("#22171e") xysize (92, 7) xalign 0.5
-            frame:
-                xfill True
-                padding (18, 18)
-                background Solid("#21171e")
-                vbox:
-                    spacing 14
-                    hbox:
-                        spacing 20
-                        text "Messages" style "tel_testo" size 40
-                        if telefono_minuti_attivo():
-                            text ("%s  ·  %d min left" % (telefono_orario(telefono_minuti_ora), telefono_minuti_rimasti())) style "tel_testo" size 21 yalign 0.5
-                    viewport:
-                        ysize 680
-                        mousewheel True
-                        draggable True
-                        vbox:
-                            xfill True
-                            for k in contatti():
-                                $ stato = telefono_minuti_stato(k) if telefono_minuti_attivo() else stato_contatto(k)
-                                $ attesa = coda_chat.get(k)
-                                button:
-                                    xfill True
-                                    ysize 105
-                                    padding (10, 9)
-                                    background Solid("#35252f")
-                                    hover_background Solid("#503749")
-                                    insensitive_background Solid("#292029")
-                                    if stato == "risposta":
-                                        action Return(("leggi", k))
-                                    elif stato == "attesa" and not telefono_minuti_attivo():
-                                        action Return(("sollecita", k))
-                                    elif stato in ("nuovo", "aperto") or (stato == "attesa" and k in discorso_aperto and not chat_introduttiva_aperta(k)):
-                                        action Return(("scrivi", k))
-                                    else:
-                                        sensitive False
-                                    hbox:
-                                        spacing 15
-                                        yalign 0.5
-                                        add Transform("images/ui/telefono/" + k + ".webp", xysize=(76, 76))
-                                        vbox:
-                                            xsize 220
-                                            yalign 0.5
-                                            spacing 3
-                                            text nome_percorso(percorso(k)) style "tel_testo" size 29 color ("#f3e6ea" if stato != "vuoto" else "#b8a8b1")
-                                            if stato == "risposta":
-                                                text ("New message" if telefono_minuti_inbox.get(k, {}).get("entrata") else "New reply") style "tel_testo" size 21 color "#ffb3c1"
-                                            elif stato == "rinviata":
-                                                text ("Unread · %d min needed" % telefono_minuti_inbox[k]["bolle"]) style "tel_testo" size 21 color "#ffb3c1"
-                                            elif stato == "contesto":
-                                                text "Unavailable right now" style "tel_testo" size 21 color "#b8a8b1"
-                                            elif stato == "attesa":
-                                                text ("Read" if (attesa and attesa["letto"]) or k == "daniel" else "Delivered") style "tel_testo" size 21 color "#dbc4cc"
-                                            elif stato == "aperto":
-                                                text "Chat paused" style "tel_testo" size 21 color "#dbc4cc"
-                                            elif stato == "vuoto":
-                                                text "No new topics" style "tel_testo" size 21 color "#b8a8b1"
-                                        if stato == "risposta":
-                                            text "Read ›" style "tel_testo" size 21 color "#ffb3c1" yalign 0.5
-                                        elif stato == "attesa" and not telefono_minuti_attivo():
-                                            text "Nudge ›" style "tel_testo" size 21 color "#dbc4cc" yalign 0.5
-                                        elif stato in ("nuovo", "aperto"):
-                                            text "›" style "tel_testo" size 29 color "#dbc4cc" yalign 0.5
             if telefono_minuti_attivo():
-                hbox:
-                    spacing 32
-                    xalign 0.5
-                    textbutton "Wait" action Return(("aspetta", None))
-                    textbutton telefono_minuti_uscita action Return(("chiudi", None))
+                use tel_testata("Messages", "%d min left" % telefono_minuti_rimasti())
             else:
-                textbutton "Put the phone down" xalign 0.5 action Return(("chiudi", None))
+                use tel_testata("Messages")
+            frame:
+                xysize (530, 786)
+                padding (0, 6)
+                background Solid("#f3e8e1")
+                viewport:
+                    mousewheel True
+                    draggable True
+                    vbox:
+                        xfill True
+                        for k in contatti():
+                            $ stato = telefono_minuti_stato(k) if telefono_minuti_attivo() else stato_contatto(k)
+                            $ attesa = coda_chat.get(k)
+                            $ ultimo = tel_ultimo(k)
+                            button:
+                                xfill True
+                                ysize 104
+                                padding (18, 10)
+                                background None
+                                hover_background Solid("#ecd5d3")
+                                if stato == "risposta":
+                                    action Return(("leggi", k))
+                                elif stato == "attesa" and not telefono_minuti_attivo():
+                                    action Return(("sollecita", k))
+                                elif stato in ("nuovo", "aperto") or (stato == "attesa" and k in discorso_aperto and not chat_introduttiva_aperta(k)):
+                                    action Return(("scrivi", k))
+                                else:
+                                    sensitive False
+                                hbox:
+                                    spacing 16
+                                    yalign 0.5
+                                    add tel_foto(k, 76) yalign 0.5
+                                    vbox:
+                                        xsize 330
+                                        yalign 0.5
+                                        spacing 2
+                                        text nome_percorso(percorso(k)) style "tel_testo" size 26 color ("#2a171e" if stato != "vuoto" else "#a08a93")
+                                        if ultimo:
+                                            text ultimo style "tel_piccolo" size 18
+                                        if stato == "risposta":
+                                            text ("New message" if telefono_minuti_inbox.get(k, {}).get("entrata") else "New reply") style "tel_piccolo" color "#b0355c"
+                                        elif stato == "rinviata":
+                                            text ("Unread · %d min needed" % telefono_minuti_inbox[k]["bolle"]) style "tel_piccolo" color "#b0355c"
+                                        elif stato == "contesto":
+                                            text "Unavailable right now" style "tel_piccolo"
+                                        elif stato == "attesa":
+                                            text ("Read" if (attesa and attesa["letto"]) or k == "daniel" else "Delivered") style "tel_piccolo"
+                                        elif stato == "aperto":
+                                            text "Chat paused" style "tel_piccolo"
+                                        elif stato == "vuoto":
+                                            text "No new topics" style "tel_piccolo"
+                                    if stato in ("risposta", "rinviata"):
+                                        add (TEL + "pallino.png") yalign 0.5
+                                    elif stato == "attesa" and not telefono_minuti_attivo():
+                                        text "Nudge" style "tel_piccolo" yalign 0.5
+                                    elif stato in ("nuovo", "aperto"):
+                                        text "›" style "tel_testo" size 30 color "#a08a93" yalign 0.5
+                            add Solid("#e2cfc8") xysize (410, 1) xpos 110
+            fixed:
+                xysize (530, 88)
+                add (TEL + "piede_rubrica.png")
+                hbox:
+                    spacing 14
+                    xalign 0.5 ypos 8
+                    if telefono_minuti_attivo():
+                        use tel_tasto("Wait", Return(("aspetta", None)))
+                        use tel_tasto(telefono_minuti_uscita, Return(("chiudi", None)))
+                    else:
+                        use tel_tasto("Put the phone down", Return(("chiudi", None)))
+
+screen tel_tasto(scritta, azione):
+    textbutton scritta:
+        action azione
+        background tel_pezzo("risposta", 26)
+        hover_background tel_pezzo("risposta_sopra", 26)
+        padding (24, 14)
+        text_style "tel_testo"
+        text_color "#5e2136"
+
+## Quando Sara prende il telefono, sale dal basso.
+transform tel_sale:
+    on show:
+        yoffset 1060
+        easeout 0.28 yoffset 0
+    on hide:
+        easein 0.2 yoffset 1060
 
 ## La chat aperta: bolle di Sara a destra, dell'altro a sinistra.
 ## Quando arriva un messaggio e la chat si allunga, scorre da sola all'ultimo
@@ -772,82 +889,109 @@ init python:
 
 screen telefono_chat(k):
     zorder 40
+    $ log = chat_log.get(k, [])
+    $ inizio = max(0, len(log) - 30)
+    $ scelte_h = tel_altezza_scelte()
     frame:
         xpos 1330 yalign 0.5
-        xysize (540, 960)
-        padding (26, 30)
-        background Solid("#1b1117f2")
+        xysize (560, 1040)
+        padding (15, 20)
+        background (TEL + "cornice.png")
         vbox:
-            spacing 14
-            hbox:
-                spacing 18
-                xalign 0.5
-                text nome_mittente(k) style "tel_testo" size 38 color "#ffb3c1"
-                if telefono_minuti_attivo():
-                    text telefono_orario(telefono_minuti_ora) style "tel_testo" size 22 yalign 0.5
-            viewport:
-                ysize 800
-                yinitial 1.0
-                yadjustment tel_scorrimento
-                mousewheel True
-                vbox:
-                    spacing 10
-                    xfill True
-                    for messaggio in chat_log.get(k, [])[-30:]:
-                        $ chi, testo = messaggio[:2]
-                        frame:
-                            xalign (1.0 if chi == "sara" else 0.0)
-                            xmaximum 400
-                            padding (18, 10)
-                            background Solid("#7a2e45" if chi == "sara" else "#352a31")
-                            vbox:
-                                if chi == "josh" and k != "josh":
-                                    text nome_mittente(chi) style "tel_testo" size 20 color "#8fb3e0"
-                                text testo style "tel_testo" size 28
-                                if len(messaggio) > 2 and renpy.loadable(messaggio[2]):
-                                    add Transform(messaggio[2], xysize=(364, 208), fit="contain")
-            $ attesa = coda_chat.get(k)
-            if attesa and attesa["letto"]:
-                text "Read" style "tel_testo" size 22 color "#c9a3a0" xalign 1.0
-            elif attesa:
-                text "Delivered" style "tel_testo" size 22 color "#c9a3a0" xalign 1.0
+            use tel_testata(nome_mittente(k), "typing…" if tel_scrive == k else ("online" if telefono_minuti_attivo() and _telefono_orario_adatto(k, telefono_minuti_ora) else None), k)
+            frame:
+                xysize (530, 786)
+                padding (14, 10, 14, 6)
+                background Solid("#f3e8e1")
+                viewport:
+                    ysize (770 - scelte_h)
+                    yinitial 1.0
+                    yadjustment tel_scorrimento
+                    mousewheel True
+                    vbox:
+                        spacing 8
+                        xfill True
+                        $ giorno_prima = None
+                        for n_msg, messaggio in enumerate(log[inizio:]):
+                            $ chi, testo = messaggio[:2]
+                            $ immagine = messaggio[2] if len(messaggio) > 2 else None
+                            $ minuto = messaggio[3] if len(messaggio) > 3 else None
+                            $ giorno_msg = messaggio[4] if len(messaggio) > 4 else None
+                            if giorno_msg is not None and giorno_msg != giorno_prima:
+                                $ giorno_prima = giorno_msg
+                                frame:
+                                    xalign 0.5
+                                    padding (16, 5)
+                                    background tel_pezzo("etichetta", 13)
+                                    text ("Today" if giorno_msg == giorno else TEL_GIORNI[(giorno_msg - 1) % 7]) style "tel_piccolo"
+                            frame:
+                                xalign (1.0 if chi == "sara" else 0.0)
+                                xmaximum 410
+                                padding (16, 9, 16, 7)
+                                background tel_pezzo("bolla_sara" if chi == "sara" else "bolla_altro")
+                                vbox:
+                                    spacing 2
+                                    if chi == "josh" and k != "josh":
+                                        text nome_mittente(chi) style "tel_piccolo" color "#3f6fa8"
+                                    if immagine and renpy.loadable(immagine):
+                                        add Transform(immagine, xysize=(364, 208), fit="contain")
+                                    text testo style "tel_testo"
+                                    if minuto is not None or chi == "sara":
+                                        hbox:
+                                            xalign 1.0
+                                            spacing 6
+                                            if minuto is not None:
+                                                text telefono_orario(minuto) style "tel_piccolo" size 15
+                                            if chi == "sara":
+                                                add (TEL + ("spunte_lette.png" if tel_letto(k, inizio + n_msg) else "spunte.png")) yalign 0.5
+            add (TEL + "piede.png")
 
-## Le scelte dentro una chat: accanto al telefono, non sopra.
+## Le scelte dentro una chat: risposte nel telefono, sopra la barra.
 screen scelta_telefono(items):
     zorder 60
-    $ tipo = tipo_chat_aperta()
-    vbox:
-        xpos 1300 xanchor 1.0 yalign 0.7
-        spacing 14
-        for i in items:
-            ## Risposte con requisito: in grigio, con il requisito sotto (come nelle scene).
-            if requisiti_di(i.kwargs) and not requisiti_ok(i.kwargs):
-                frame:
-                    background Solid("#1f171cee")
-                    padding (26, 14)
-                    xminimum 520
-                    vbox:
-                        text i.caption style "tel_testo" color "#f3e6ea55"
-                        text "Requires " + testo_requisiti(i.kwargs) style "tel_testo" size 22 color "#ff5c7a"
-            elif scelta_acceleratore(i.kwargs):
-                button:
-                    action i.action
-                    background Solid("#2b1d25ee")
-                    hover_background Solid("#7a2e45ee")
-                    padding (26, 14)
-                    xminimum 520
-                    vbox:
-                        text "!!! " + i.caption + " !!!" style "tel_testo" color COLORE_ACCELERATORE
-                        for riga in avviso_acceleratore(i.kwargs):
-                            text riga style "tel_testo" size 22 color COLORE_ACCELERATORE
-            else:
-                textbutton (("(%s) " % tipo if tipo and i.caption.startswith("«") else "") + i.caption):
-                    action i.action
-                    background Solid("#2b1d25ee")
-                    hover_background Solid("#7a2e45ee")
-                    padding (26, 14)
-                    xminimum 520
-                    text_style "tel_testo"
+    frame:
+        xpos 1345 ypos 952 yanchor 1.0
+        xysize (530, tel_altezza(items))
+        padding (12, 10, 12, 4)
+        background Solid("#f8f0eb")
+        viewport:
+            mousewheel True
+            draggable True
+            vbox:
+                spacing 8
+                xfill True
+                for i in items:
+                    ## Risposte con requisito: in grigio, con il requisito sotto (come nelle scene).
+                    if requisiti_di(i.kwargs) and not requisiti_ok(i.kwargs):
+                        frame:
+                            xfill True
+                            background tel_pezzo("risposta_no", 26)
+                            padding (20, 10)
+                            vbox:
+                                text i.caption style "tel_testo" size 22 color "#a08a93"
+                                text "Requires " + testo_requisiti(i.kwargs) style "tel_piccolo" color "#b0355c"
+                    elif scelta_acceleratore(i.kwargs):
+                        button:
+                            xfill True
+                            action i.action
+                            background tel_pezzo("risposta_ambra", 26)
+                            hover_background tel_pezzo("risposta_ambra_sopra", 26)
+                            padding (20, 10)
+                            vbox:
+                                text "!!! " + i.caption + " !!!" style "tel_testo" size 22 color "#8a4d00"
+                                for riga in avviso_acceleratore(i.kwargs):
+                                    text riga style "tel_piccolo" color "#8a4d00"
+                    else:
+                        $ tipo = tipo_chat_aperta()
+                        textbutton (("(%s) " % tipo if tipo and i.caption.startswith("«") else "") + i.caption):
+                            xfill True
+                            action i.action
+                            background tel_pezzo("risposta", 26)
+                            hover_background tel_pezzo("risposta_sopra", 26)
+                            padding (20, 10)
+                            text_style "tel_testo"
+                            text_size 22
+                            text_color "#5e2136"
 
 
 ## =============================================================================

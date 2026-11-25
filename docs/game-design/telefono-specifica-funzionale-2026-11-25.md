@@ -102,6 +102,8 @@ La preferenza C sulla variazione dell'Interest, inizialmente formulata con un du
 ## 12. Punti fermi aggiunti da Jody dopo la prima prova (25/11/2026, sera)
 La prima realizzazione (commit `98d7e3a`) è stata **ritirata**: grafica cambiata, conversazioni che finivano subito, nessun tempo di attesa. Il telefono nel gioco è tornato a quello del 24/11. Ogni nuova realizzazione parte da lì e rispetta tre vincoli, che prevalgono sul resto della specifica:
 
+> **Cambiato da Jody (25/11, sera):** la grafica è ora un telefono di fantasia coi colori del gioco (bolle, ore, spunte, typing, risposte dentro il telefono). Pezzi in `tools/telefono/disegna_grafica.py`. Il punto 1 qui sotto resta come storia.
+
 1. **La grafica resta quella esistente.** Schermate `telefono`, `telefono_chat` e `scelta_telefono` (pannello a destra, orologio, bolle, stato della risposta, scelte accanto al telefono). Le funzioni nuove (registri, argomenti, congedo) entrano in quella grafica; niente menu generici al suo posto.
 2. **Restano i tempi di attesa di ogni personaggio** e l'orologio in minuti delle sessioni (`TELEFONO_ATTESE`, orari in cui rispondono, ripresa della chat in sospeso, notifica all'arrivo). Nessuno risponde all'istante, salvo chi già lo faceva (Howard).
 3. **Le conversazioni non finiscono subito.** Sono chat vere, a più scambi e con scelte, con un inizio, uno sviluppo e una chiusura. Lunghezza da approvare.
