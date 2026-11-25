@@ -19,11 +19,7 @@ label ep2_d18:
     call ep2_d18_howard
     $ vai("casa", "Home — Thursday night")
     $ cg("Sara checks her phone on the sofa on Thursday evening", "images/cg/ep2/d18_divano_telefono_libero.png")
-    menu:
-        "Check the phone.":
-            call telefono_nuovo_sessione("Go to bed")
-        "Go to bed.":
-            pass
+    call telefono_minuti_sessione(22 * 60, 23 * 60, "Go to bed")
     $ via_cg()
     $ musica(None)
     $ luogo_corrente = ""

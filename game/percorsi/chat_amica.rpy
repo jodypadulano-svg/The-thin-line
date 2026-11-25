@@ -9,7 +9,7 @@
 init python:
     discorso("amica_intro", "amica", ESTRANEI)
     discorso("amica_a1", "amica", CONOSCENTI)
-    discorso("amica_a2", "amica", CONOSCENTI, se="fatto('ep2_shopping_joanie_vigilia') == giorno")
+    discorso("amica_a2", "amica", CONOSCENTI, se="fatto('ep2_shopping_joanie_vigilia') == giorno", argomento="The shopping trip", scade="aperta_da >= 1")
     discorso("amica_a3", "amica", CONOSCENTI)
     discorso("amica_a4", "amica", CONOSCENTI)
     discorso("amica_a5", "amica", CONOSCENTI)
@@ -19,7 +19,7 @@ init python:
     discorso("amica_b1", "amica", CONFIDENZA)
     discorso("amica_b2", "amica", CONFIDENZA)
     discorso("amica_b3", "amica", CONFIDENZA)
-    discorso("amica_b4", "amica", CONFIDENZA, se="fatto('jacob_tornato')")
+    discorso("amica_b4", "amica", CONFIDENZA, se="fatto('jacob_tornato')", argomento="Jacob")
     discorso("amica_b5", "amica", CONFIDENZA)
 
 

@@ -11,17 +11,17 @@
 
 init python:
     discorso("capa_intro", "capa", ESTRANEI, se="fatto('ep2_pezzo_extra_inviato_barbara')")
-    discorso("capa_a1", "capa", CONOSCENTI, se="fatto('ep2_scadenza_redazione_venerdi')")
+    discorso("capa_a1", "capa", CONOSCENTI, se="fatto('ep2_scadenza_redazione_venerdi')", argomento="Friday's deadline")
     discorso("capa_a2", "capa", ESTRANEI)
-    discorso("capa_a3", "capa", CONOSCENTI, se="fatto('ep2_riunione_sponsor_vigilia') == giorno")
-    discorso("capa_a4", "capa", CONOSCENTI, se="fatto('ep2_sessione_foto_riprogrammata')")
+    discorso("capa_a3", "capa", CONOSCENTI, se="fatto('ep2_riunione_sponsor_vigilia') == giorno", argomento="The sponsor meeting", scade="aperta_da >= 1")
+    discorso("capa_a4", "capa", CONOSCENTI, se="fatto('ep2_sessione_foto_riprogrammata')", argomento="The photo session")
     discorso("capa_a5", "capa", CONOSCENTI)
     discorso("capa_a6", "capa", CONOSCENTI)
     discorso("capa_a7", "capa", CONOSCENTI)
     discorso("capa_a8", "capa", CONOSCENTI)
     discorso("capa_b1", "capa", CONFIDENZA)
     discorso("capa_b2", "capa", CONFIDENZA)
-    discorso("capa_b3", "capa", CONFIDENZA, se="fatto('ep2_intervista_consigliere_vigilia') == giorno")
+    discorso("capa_b3", "capa", CONFIDENZA, se="fatto('ep2_intervista_consigliere_vigilia') == giorno", argomento="The councillor interview", scade="aperta_da >= 1")
     discorso("capa_b4", "capa", CONFIDENZA)
     discorso("capa_b5", "capa", CONFIDENZA)
 

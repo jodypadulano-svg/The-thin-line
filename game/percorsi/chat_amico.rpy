@@ -11,7 +11,7 @@ init python:
     discorso("amico_a1", "amico", ESTRANEI)
     discorso("amico_a2", "amico", CONOSCENTI)
     discorso("amico_a3", "amico", CONOSCENTI)
-    discorso("amico_a4", "amico", CONOSCENTI, se="giorno >= 17 and fatto('ep2_serata_amici_giorno') == giorno - 1")
+    discorso("amico_a4", "amico", CONOSCENTI, se="giorno >= 17 and fatto('ep2_serata_amici_giorno') == giorno - 1", argomento="The night out with everyone", scade="aperta_da >= 1")
     discorso("amico_a5", "amico", CONOSCENTI)
     discorso("amico_a6", "amico", CONOSCENTI)
     discorso("amico_a7", "amico", CONOSCENTI)

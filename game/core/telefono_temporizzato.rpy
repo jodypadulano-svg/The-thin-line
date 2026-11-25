@@ -104,7 +104,7 @@ init -4 python:
         candidati = [
             (k, d.id)
             for k in contatti()
-            if telefono_minuti_stato(k) == "nuovo"
+            if k not in store.discorso_aperto and k not in store.coda_chat
             and store.giorno - store.ultima_entrata.get(k, -99) >= GIORNI_TRA_ENTRATE
             for d in discorsi_in_entrata(k)
             if renpy.has_label("chat_" + d.id + "_entrata")
@@ -115,7 +115,7 @@ init -4 python:
 
     def telefono_minuti_blocco(punto, tipo, bolle=0):
         """True sospende la label. Una risposta si paga tutta prima della prima bolla."""
-        if not telefono_minuti_attivo():
+        if not telefono_minuti_attivo() or store.telefono_anteprima:
             return False
         k = store.chat_aperta
         if tipo == "ricevi":
@@ -149,6 +149,7 @@ label telefono_minuti_sessione(inizio, fine, uscita="Put the phone down"):
     $ telefono_minuti_uscita = uscita
     $ telefono_minuti_chiudi = False
     $ _telefono_importa_coda()
+    $ chiudi_scadute()
     $ _telefono_notifica_minuti()
     $ _entrata_minuti = _telefono_contatto_in_entrata()
     if _entrata_minuti:
@@ -174,6 +175,19 @@ label telefono_minuti_conversazione(k, entrata=None):
         $ discorso_aperto[k]["contesto_verificato"] = True
     $ chat_aperta = k
     show screen telefono_chat(k)
+    $ _nuova_minuti = None
+    ## Chat in sospeso (non appena arrivata): Sara può riprenderla, salutare o cambiare discorso.
+    if not entrata and k in discorso_aperto and telefono_minuti_stato(k) in ("aperto", "attesa") and not chat_introduttiva_aperta(k):
+        call telefono_sospesa(k)
+        if _return == "indietro":
+            jump .fine
+        if _return != "riprendi":
+            $ _nuova_minuti = _return
+    elif not entrata and k not in discorso_aperto and k not in telefono_minuti_riprese:
+        call telefono_scelta_tipo(k)
+        if _return is None:
+            jump .fine
+        $ _nuova_minuti = _return
     $ _legacy_minuti = telefono_minuti_inbox.get(k, {}).get("precedente")
     if _legacy_minuti:
         $ telefono_minuti_inbox.pop(k)
@@ -185,8 +199,8 @@ label telefono_minuti_conversazione(k, entrata=None):
         $ _punto_minuti = telefono_minuti_riprese.pop(k)
         call expression _punto_minuti
     elif k not in discorso_aperto:
-        $ _discorso_minuti = DISCORSI[entrata] if entrata else renpy.random.choice(discorsi_disponibili(k))
-        $ discorso_aperto[k] = {"id": _discorso_minuti.id, "parte": 0, "caldo": False, "frenato": False, "contesto_verificato": True, "premio_avvio": not entrata}
+        $ _discorso_minuti = DISCORSI[entrata or _nuova_minuti]
+        $ discorso_aperto[k] = {"id": _discorso_minuti.id, "parte": 0, "caldo": False, "frenato": False, "contesto_verificato": True, "premio_avvio": not entrata, "giorno": giorno}
         if entrata:
             $ ultima_entrata[k] = giorno
             $ giorno_entrata = giorno
@@ -208,3 +222,60 @@ label telefono_minuti_conversazione(k, entrata=None):
     hide screen telefono_chat
     $ chat_aperta = None
     return
+
+## Sara apre una chat: prima il tipo (o un argomento), poi vede il messaggio e lo conferma.
+## Restituisce l'id della chat, o None se torna ai messaggi.
+label telefono_scelta_tipo(k):
+    python:
+        _voci_tel = [(t, ("tipo", t)) for t in TIPI_CHAT if discorsi_di_tipo(k, t)]
+        _voci_tel += [(d.argomento, ("argomento", d.id)) for d in argomenti_disponibili(k)]
+        _voci_tel.append(("Back to messages.", ("indietro", None)))
+        _come_tel, _cosa_tel = renpy.display_menu(_voci_tel, screen="scelta_telefono")
+    if _come_tel == "indietro":
+        return None
+    $ _tipo_tel = _cosa_tel if _come_tel == "tipo" else None
+    $ _id_tel = discorso_pescato(k, _tipo_tel) if _tipo_tel else _cosa_tel
+    ## I label d'apertura contengono solo il messaggio di Sara: qui si leggono senza mandarlo.
+    $ telefono_anteprima = True
+    $ telefono_anteprima_testo = ""
+    call expression "chat_" + _id_tel
+    $ _manda_tel = renpy.display_menu([("«%s»" % telefono_anteprima_testo.replace("[", "[[").replace("{", "{{"), True), ("Not now.", False)], screen="scelta_telefono")
+    $ telefono_anteprima = False
+    if not _manda_tel:
+        jump telefono_scelta_tipo_ancora
+    if _tipo_tel:
+        $ giorno_tipo[k] = giorno
+    return _id_tel
+
+label telefono_scelta_tipo_ancora:
+    call telefono_scelta_tipo(chat_aperta)
+    return _return
+
+## Una chat lasciata a metà: riprenderla, salutare (si chiude per sempre) o cambiare discorso.
+label telefono_sospesa(k):
+    python:
+        _voci_tel = []
+        if telefono_minuti_stato(k) == "aperto":
+            _voci_tel.append(("Pick up where you left off.", "riprendi"))
+        if iniziative(k):
+            _voci_tel.append(("Change the subject.", "cambia"))
+        _voci_tel.append(("Say goodbye.", "saluta"))
+        _voci_tel.append(("Back to messages.", "indietro"))
+        _cosa_tel = renpy.display_menu(_voci_tel, screen="scelta_telefono")
+    if _cosa_tel == "saluta":
+        $ abbandona_discorso(k)
+        $ msg("sara", saluto_chat(k))
+        $ telefono_minuti_ora += 1
+        return "indietro"
+    if _cosa_tel == "cambia":
+        call telefono_scelta_tipo(k)
+        if _return is None:
+            return "indietro"
+        $ _id_nuovo_tel = _return
+        $ abbandona_discorso(k)
+        $ _raccordo_tel = raccordo_chat(k)
+        if _raccordo_tel:
+            $ msg("sara", _raccordo_tel)
+            $ telefono_minuti_ora += 1
+        return _id_nuovo_tel
+    return _cosa_tel

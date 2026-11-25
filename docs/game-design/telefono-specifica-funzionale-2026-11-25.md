@@ -98,3 +98,24 @@ Casi di test essenziali: soglie esatte 5 e 15; bacio per romantico/sexy; flirt i
 La progettazione funzionale generale è conclusa. I dettagli individuali, gli argomenti effettivi, le parole chiave, le soglie ulteriori, i valori dei punti, le probabilità, i tempi, il comportamento preciso di Daniel e la pianificazione tecnica degli appuntamenti restano da definire durante la costruzione degli alberi. Gli esempi numerici e narrativi del Q&A non sono quote o scene canoniche approvate.
 La preferenza C sulla variazione dell'Interest, inizialmente formulata con un dubbio sulla continuità delle chat, è stata mantenuta esplicitamente nelle decisioni successive: tutte le modalità non investigative possono modificarlo. La domanda iniziale sugli appuntamenti è stata poi risolta con l'approvazione degli appuntamenti anche dinamici.
 **Questo documento non modifica il codice, non riscrive i dialoghi e non implementa la migrazione.**
+
+## 12. Punti fermi aggiunti da Jody dopo la prima prova (25/11/2026, sera)
+La prima realizzazione (commit `98d7e3a`) è stata **ritirata**: grafica cambiata, conversazioni che finivano subito, nessun tempo di attesa. Il telefono nel gioco è tornato a quello del 24/11. Ogni nuova realizzazione parte da lì e rispetta tre vincoli, che prevalgono sul resto della specifica:
+
+1. **La grafica resta quella esistente.** Schermate `telefono`, `telefono_chat` e `scelta_telefono` (pannello a destra, orologio, bolle, stato della risposta, scelte accanto al telefono). Le funzioni nuove (registri, argomenti, congedo) entrano in quella grafica; niente menu generici al suo posto.
+2. **Restano i tempi di attesa di ogni personaggio** e l'orologio in minuti delle sessioni (`TELEFONO_ATTESE`, orari in cui rispondono, ripresa della chat in sospeso, notifica all'arrivo). Nessuno risponde all'istante, salvo chi già lo faceva (Howard).
+3. **Le conversazioni non finiscono subito.** Sono chat vere, a più scambi e con scelte, con un inizio, uno sviluppo e una chiusura. Lunghezza da approvare.
+
+### 12.1 Cosa è applicato sul telefono vecchio (25/11, notte)
+- **Tipi** (Jody): Casual, Friendly, Flirt, Sexting. Le 113 chat esistenti sono classificate: A e introduzioni = Casual, B = Friendly, sette B già sensuali = Flirt (Daniel B1 B4 B5, Magnus B3 B4, Jacob B1 B4). Sexting: nessuna chat ancora; un tipo senza chat non si mostra.
+- **Soglie:** Friendly oltre 5, Flirt oltre 15, Sexting dopo un bacio (`bacio_<chiave>`). Una chat nuova per tipo al giorno per contatto; gli argomenti non contano. Anteprima confermabile, uguale per tutto il giorno.
+- **Argomenti:** undici chat legate a un fatto si scelgono per nome; prima chat nuova `howard_t1`, «The sauce on the blouse».
+- **Chat in sospeso:** riprendere, cambiare discorso (raccordo secondo l'ultimo messaggio) o salutare. La chat introduttiva non si può perdere.
+- **Sere 17, 18 e 19:** telefono a orario, con le CG già fatte.
+- **Testi nuovi:** si scrivono in `tools/telefono/<chiave>.txt` e si compongono con `tools/telefono/componi.py`.
+- **Casual** sempre aperto, senza gradino; l'introduzione viene prima e ogni contatto ne gioca una sola.
+- **Privacy:** tolte la Suspicion dai messaggi letti davanti a Josh e la scelta di cancellare le chat.
+- **Interesse degli altri** (`interesse_altrui`): Howard, Jacob e Joanie alto; Barbara e Magnus sereno; Daniel acceso con Interest almeno pari al giorno; Simon e Darius specchio della soglia Flirt. Regola chi può prendere iniziative romantiche per primo.
+- **Scadenze e incontri dal vivo** (`scade`): le chat legate a una giornata si chiudono il giorno dopo; «The parcel» si chiude se Sara ritira il pacco di persona.
+- **Preferenze:** «Show chat type», spenta all'inizio.
+- **Da fare:** frequenza con cui scrivono per primi (valori da approvare), testi nei diversi toni, reazioni al silenzio e al flirt non ricambiato, messaggi di trama che interrompono, appuntamenti, inchiesta dal 22, argomenti degli altri, Flirt e Sexting. Test: `telefono_tipi`.

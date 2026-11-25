@@ -7,7 +7,7 @@
 
 init python:
     discorso("simon_intro", "simon", ESTRANEI)
-    discorso("simon_a1", "simon", CONOSCENTI, se="(giorno == 14 and fatto('ep1_d13_palestra')) or (giorno >= 16 and fatto('ep2_ultimo_allenamento_simon') == giorno - 1)")
+    discorso("simon_a1", "simon", CONOSCENTI, se="(giorno == 14 and fatto('ep1_d13_palestra')) or (giorno >= 16 and fatto('ep2_ultimo_allenamento_simon') == giorno - 1)", argomento="The last workout", scade="aperta_da >= 1")
     discorso("simon_a2", "simon", CONOSCENTI)
     discorso("simon_a3", "simon", CONOSCENTI)
     discorso("simon_a4", "simon", CONOSCENTI)

@@ -1,0 +1,55 @@
+# HOWARD — argomenti legati a un fatto. Tono: troppi messaggi, troppo presto,
+# sa cose che non dovrebbe sapere; Sara non nota niente.
+
+@ howard_t1 | CONOSCENTI | The sauce on the blouse | fatto('ep2_d18_cena_reggiseno')
+> Howard. We need to talk about the blouse.
+---
+< Is it ruined?
+< It's ruined. I knew it. I've thought of nothing else since you closed the door.
+< I can get you another one. Same make. I saw the label.
+* He saw the label?
+? It's not ruined. It's got a little pink cloud on it. [caldo]
+< A pink cloud. Only you could be kind about a stain.
+? You don't have to buy me anything.
+< No. Of course not. You're independent. I admire that.
+? You read the label on my blouse?
+< It was drying on my radiator, my dear. A man reads what's put in front of him.
+---
+< My mother swore by white vinegar and cold water. Never hot. Hot is how you lose a blouse.
+< Where's the mark, exactly? So I can advise.
+? Right in the middle. You've got very good aim. [caldo]
+< Aim! Ask anyone. Clumsiest man in the building.
+< It was a lovely dinner, though. Even allowing for the blouse.
+? By the second button. You can hardly see it.
+< The second button. Yes. I remember the second button.
+* He's got such a good memory. Bless him.
+? I'll try the vinegar. Thank you.
+< Two spoons. Then tell me how it went. Any time. I'm up.
+---
+< Can I say something without you being cross with me?
+? Depends what it is.
+< Sensible. My mother would have liked you.
+< You sat down at that table as if it were the most ordinary thing in the world. No fuss at all. I thought, there's a woman who feels at home.
+? Go on. [caldo]
+< I'd forgotten what it's like, hearing someone laugh with her mouth full in that kitchen.
+< I left your chair where it was.
+? You were staring, Howard.
+< I was. I said so at the time. I'd sooner be honest than polite.
+* You can't even be angry with him. He's like a child at a shop window.
+---
+< Did [nome_compagno] say anything? About the mark, I mean.
+? He didn't notice the blouse at all. [caldo]
+< No. Well. You stop looking at the good china when you eat off it every day.
+? I told him it was sauce. It was sauce.
+< It was sauce. I always say, if the truth's that small, you might as well tell it.
+? He loved the jar.
+< Did he? Good lad. There's another one with his name on it. You'd have to come and collect it, of course.
+---
+< I'll be making it again. I thought I'd hold the ladle with both hands this time.
+? I'll bring an apron. [caldo]
+< You bring whatever you like. Or don't bring anything. It's only next door.
+< Sleep well, Sara. I'll hear you put the light out.
+* The walls really are thin.
+? We'll see, Howard.
+< «We'll see» isn't no. I'll keep the good chair free.
+< Goodnight, Sara.

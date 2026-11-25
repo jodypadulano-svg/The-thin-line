@@ -840,6 +840,7 @@ screen preferences():
                     label _("Choices")
                     textbutton _("Show effects") action ToggleField(persistent, "effetti_visibili")
                     textbutton _("Show numbers") action ToggleField(persistent, "numeri_visibili")
+                    textbutton _("Show chat type") action ToggleField(persistent, "mostra_tipo_chat")
 
                 ## Vbox addizionali del tipo "radio_pref" o "check_pref" possono
                 ## venire aggiunti qui, per offrire ulteriori opzioni al

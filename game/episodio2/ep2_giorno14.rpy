@@ -170,7 +170,6 @@ label ep2_d14_darius:
     s "Save them for Tuesday."
     dr "You say that now. I'm putting your name on the good ones."
     n "She walks home smiling. By the time she gets there, she's worked out the first sentence of the room."
-    $ segna("phone_d14_darius_room")
     $ via_cg()
     return
 
@@ -183,7 +182,7 @@ label ep2_d14_sera:
     if fatto("ep1_d13_pranzo_forse") or fatto("ep1_d13_pranzo_no"):
         call ep2_d14_maglione
     $ fascia_corrente = FASCE.index("sera")
-    call telefono_nuovo_sessione("Go to bed")
+    call telefono_minuti_sessione(22 * 60, 23 * 60, "Go to bed")
     n "Sara rubs her eyes, puts the phone down and goes to bed."
     $ via_cg()
 

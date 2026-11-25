@@ -10,11 +10,7 @@ label ep2_d17:
     call ep2_d17_rientro
     call ep2_d17_palestra
     $ cg("Sara checks her phone outside the gym", "images/cg/ep2/d17_palestra_telefono_libero.png")
-    menu:
-        "Check the phone.":
-            call telefono_nuovo_sessione("Go to bed")
-        "Go to bed.":
-            pass
+    call telefono_minuti_sessione(22 * 60, 23 * 60)
     $ via_cg()
     $ musica(None)
     $ luogo_corrente = ""

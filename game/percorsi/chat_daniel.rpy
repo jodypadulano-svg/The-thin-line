@@ -15,12 +15,12 @@ init python:
     discorso("daniel_a5", "daniel", CONOSCENTI)
     discorso("daniel_a6", "daniel", CONOSCENTI)
     discorso("daniel_a7", "daniel", CONOSCENTI)
-    discorso("daniel_a8", "daniel", CONOSCENTI, se="fatto('ep2_relazione_trimestrale_josh') == giorno")
-    discorso("daniel_b1", "daniel", CONFIDENZA)
+    discorso("daniel_a8", "daniel", CONOSCENTI, se="fatto('ep2_relazione_trimestrale_josh') == giorno", argomento="[nome_compagno]'s quarterly report", scade="aperta_da >= 1")
+    discorso("daniel_b1", "daniel", CONFIDENZA, tipo="Flirt")
     discorso("daniel_b2", "daniel", CONFIDENZA)
     discorso("daniel_b3", "daniel", CONFIDENZA)
-    discorso("daniel_b4", "daniel", CONFIDENZA)
-    discorso("daniel_b5", "daniel", CONFIDENZA)
+    discorso("daniel_b4", "daniel", CONFIDENZA, tipo="Flirt")
+    discorso("daniel_b5", "daniel", CONFIDENZA, tipo="Flirt")
 
 
 ## --- Introduzione: il romanzo e il primo messaggio ---------------------------

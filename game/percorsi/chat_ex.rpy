@@ -16,10 +16,10 @@ init python:
     discorso("ex_a6", "ex", CONOSCENTI)
     discorso("ex_a7", "ex", CONOSCENTI)
     discorso("ex_a8", "ex", CONOSCENTI)
-    discorso("ex_b1", "ex", CONFIDENZA)
+    discorso("ex_b1", "ex", CONFIDENZA, tipo="Flirt")
     discorso("ex_b2", "ex", CONFIDENZA)
     discorso("ex_b3", "ex", CONFIDENZA)
-    discorso("ex_b4", "ex", CONFIDENZA)
+    discorso("ex_b4", "ex", CONFIDENZA, tipo="Flirt")
     discorso("ex_b5", "ex", CONFIDENZA)
 
 

@@ -22,11 +22,7 @@ label ep2_d19:
     $ fascia_corrente = FASCE.index("notte")
     call ep2_d19_notte
     $ cg("Sara checks her phone at home after The Lantern", "images/cg/ep2/d19_casa_telefono_libero.png")
-    menu:
-        "Check the phone.":
-            call telefono_nuovo_sessione("Go to bed")
-        "Go to bed.":
-            pass
+    call telefono_minuti_sessione(24 * 60 + 55, 24 * 60 + 85, "Go to bed")
     $ via_cg()
     $ musica(None)
     $ luogo_corrente = ""
@@ -710,7 +706,6 @@ label ep2_d19_notte:
     $ cg("Josh asleep on the sofa with a cardboard shield on his chest; Sara in the doorway with her shoes in her hand", "images/cg/ep2/d19_26_josh_dorme.webp")
     n "[nome_compagno] has fallen asleep on the sofa with the shield on his chest. It says something in an alphabet he made up himself."
     n "She takes the paintbrush out of his hand, and puts a blanket over him, and the shield somewhere safe."
-    $ segna("phone_d19_josh_shield")
     sp "I do love you. I do."
     sp "I'll tell him about Jacob. There's nothing to tell."
     if fatto("ep2_d19_jacob_risata"):

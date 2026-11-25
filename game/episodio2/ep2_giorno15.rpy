@@ -85,7 +85,6 @@ label ep2_d15_palestra:
             si "You've got it."
             n "He takes his hands away. Sara can still feel where his fingers were. She could put the handles back now. Simon would let her."
             $ interest("simon", 2, "Sara asked Simon to show her the cable exercise.")
-            $ segna("phone_d15_simon_cables")
             $ corruption(1, "Sara enjoyed catching Simon looking.")
             menu:
                 "Rack the handles.":
@@ -105,7 +104,6 @@ label ep2_d15_palestra:
     n "Joanie creates a group chat and names it Gym squad."
     ch "proof we all showed up on the same day"
     si "You can put that on my calendar instead of a photograph."
-    $ segna("phone_d15_gym_squad")
     $ ambiente(None)
     $ via_cg()
     return
@@ -116,7 +114,7 @@ label ep2_d15_telefono:
     $ fascia_corrente = FASCE.index("sera")
     $ cg("Sara checks her phone at the writing table", "images/cg/ep2/d15_05_daniel.webp")
     n "Sara sets her gym bag down and plugs in her laptop. While it wakes, she picks up her phone."
-    call telefono_nuovo_sessione
+    call telefono_minuti_sessione(21 * 60 + 30, 22 * 60)
     $ via_cg()
     return
 

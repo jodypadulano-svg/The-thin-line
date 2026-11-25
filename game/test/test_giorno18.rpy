@@ -42,6 +42,8 @@ testsuite giorno18:
         $ _d18_howard = valore_interest("howard")
         $ segna("test_giorno18_finito", False)
         run Jump("test_giorno18")
+        advance until screen "telefono" timeout 120.0
+        click "Go to bed"
         advance until eval fatto("test_giorno18_finito") timeout 120.0
         assert eval not _d18_scelte
         assert eval fatto("ep2_d18_pranzo_daniel") == (ramo not in ("senza_pranzo", "ragu_macchia", "annulla_pranzo"))

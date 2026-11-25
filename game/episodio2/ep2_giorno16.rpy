@@ -166,7 +166,6 @@ label ep2_d16_cena:
             n "Sara remembers the room beyond the door."
             s "She did. It ended up being almost a whole page."
             dr "Good. I liked hearing you talk about that bit."
-            $ segna("phone_d16_darius_page")
             $ interest("amico", 1)
         "Confide in Joanie in the kitchen.":
             s "I knew I could keep changing it until Thursday and I'd still find something to change on Thursday."
@@ -174,7 +173,6 @@ label ep2_d16_cena:
             $ cg("Joanie listens while filling the jug", "images/cg/ep2/d16_05_confidenza_joanie.webp")
             ch "What happened?"
             s "[nome_compagno] read the draft last night. It was open on my laptop. He sat down and read it."
-            $ segna("phone_d16_joanie_draft")
             ch "Did he tell you?"
             s "He asked me about a scene. Took me a second to work out how he knew it."
             if fatto("ep2_d15_litigio_josh"):
@@ -257,6 +255,6 @@ label ep2_d16_telefono:
     $ vai("casa", "Home — Late Tuesday evening")
     $ cg("Sara checks her phone at the writing table", "images/cg/ep2/d15_05_daniel.webp")
     n "Once Darius has gone, Sara changes out of her work clothes and takes her phone to the writing table."
-    call telefono_nuovo_sessione("Go to bed")
+    call telefono_minuti_sessione(22 * 60, 23 * 60, "Go to bed")
     $ via_cg()
     return

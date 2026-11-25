@@ -13,14 +13,14 @@ init python:
     discorso("howard_a3", "howard", CONOSCENTI, orario=(17 * 60, 20 * 60 + 30))
     discorso("howard_a4", "howard", CONOSCENTI)
     discorso("howard_a5", "howard", CONOSCENTI)
-    discorso("howard_a6", "howard", CONOSCENTI, se="giorno >= 17 and fatto('ep2_pacco_joanie_da_howard')")
+    discorso("howard_a6", "howard", CONOSCENTI, se="giorno >= 17 and fatto('ep2_pacco_joanie_da_howard') and not fatto('ep2_d17_ritiro_howard')", argomento="The parcel", scade="fatto('ep2_d17_ritiro_howard')")
     discorso("howard_a7", "howard", CONOSCENTI)
     discorso("howard_a8", "howard", CONOSCENTI)
     discorso("howard_b1", "howard", CONFIDENZA)
     discorso("howard_b2", "howard", CONFIDENZA)
     discorso("howard_b3", "howard", CONFIDENZA, orario=(22 * 60, 2 * 60))
     discorso("howard_b4", "howard", CONFIDENZA)
-    discorso("howard_b5", "howard", CONFIDENZA, se="giorno >= 17 and fatto('ep2_corriere_atteso_turno_sara') == giorno")
+    discorso("howard_b5", "howard", CONFIDENZA, se="giorno >= 17 and fatto('ep2_corriere_atteso_turno_sara') == giorno", argomento="The courier", scade="aperta_da >= 1")
 
 ## Retroscena breve alla fine di una chat (la chat si chiude prima).
 label howard_retroscena_chat(testo_rs, testo_diario):

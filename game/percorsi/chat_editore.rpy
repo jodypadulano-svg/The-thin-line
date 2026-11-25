@@ -22,8 +22,8 @@ init python:
     discorso("editore_a8", "editore", CONOSCENTI)
     discorso("editore_b1", "editore", CONFIDENZA)
     discorso("editore_b2", "editore", CONFIDENZA)
-    discorso("editore_b3", "editore", CONFIDENZA)
-    discorso("editore_b4", "editore", CONFIDENZA)
+    discorso("editore_b3", "editore", CONFIDENZA, tipo="Flirt")
+    discorso("editore_b4", "editore", CONFIDENZA, tipo="Flirt")
     discorso("editore_b5", "editore", CONFIDENZA)
 
 

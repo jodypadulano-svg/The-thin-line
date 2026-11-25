@@ -121,6 +121,8 @@ testsuite giorno19:
         $ persistent.finali_visti = []
         $ segna("test_giorno19_finito", False)
         run Jump("test_giorno19")
+        advance until screen "telefono" timeout 120.0
+        click "Go to bed"
         advance until eval fatto("test_giorno19_finito") timeout 120.0
         $ BARBARA_CONVOCAZIONI["probabilita"] = 0.20
         assert eval not _d19_scelte

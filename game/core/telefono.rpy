@@ -79,8 +79,11 @@ init -5 python:
     class Discorso(object):
         """Una conversazione a più scambi (11.1). Vive nel registro DISCORSI,
         costruito all'avvio: nei salvataggi ci finiscono solo gli id."""
-        def __init__(self, id, chiave, gradino, se, flirt, prova, scrive_lui=False, orario=None):
+        def __init__(self, id, chiave, gradino, se, flirt, prova, scrive_lui=False, orario=None, tipo=None, argomento=None, scade=None):
             self.scrive_lui = scrive_lui
+            self.tipo = tipo or TIPO_DI_GRADINO[gradino]
+            self.argomento = argomento
+            self.scade = scade
             self.id = id
             self.chiave = chiave
             self.gradino = gradino
@@ -91,12 +94,21 @@ init -5 python:
 
     DISCORSI = {}
 
-    def discorso(id, chiave, gradino=CONOSCENTI, se=None, flirt=False, prova=False, scrive_lui=False, orario=None):
+    ## Tipo di chat (specifica del 25/11/2026). Quelli non detti si ricavano dal gradino.
+    TIPI_CHAT = ("Casual", "Friendly", "Flirt", "Sexting")
+    TIPO_DI_GRADINO = {ESTRANEI: "Casual", CONOSCENTI: "Casual", CONFIDENZA: "Friendly",
+                       COMPLICI: "Flirt", INTIMI: "Sexting"}
+
+    def discorso(id, chiave, gradino=CONOSCENTI, se=None, flirt=False, prova=False, scrive_lui=False, orario=None, tipo=None, argomento=None, scade=None):
         """Registra un discorso. se = condizione come testo, es. "fatto('ep1_festa')".
         orario = (inizio, fine esclusa), in minuti da mezzanotte, anche a cavallo della notte.
         scrive_lui=True: può aprirlo lui con un messaggio in entrata anche sotto B
-        (es. Daniel dopo la festa, Magnus che aspetta le pagine)."""
-        DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova, scrive_lui, orario)
+        (es. Daniel dopo la festa, Magnus che aspetta le pagine).
+        tipo = "Casual", "Friendly", "Flirt" o "Sexting" (se no lo dice il gradino).
+        argomento = titolo: la chat è un argomento specifico, si sceglie per nome.
+        scade = condizione che chiude per sempre la chat rimasta aperta: un fatto vissuto di
+        persona (es. "fatto('ep2_d17_ritiro_howard')") o il tempo ("aperta_da >= 1", in giorni)."""
+        DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova, scrive_lui, orario, tipo, argomento, scade)
 
     ## Discorsi segnaposto per la prova degli sviluppatori (non escono nel gioco vero).
     _SEGNAPOSTO = {ESTRANEI: 1, CONOSCENTI: 3, CONFIDENZA: 2, COMPLICI: 2, INTIMI: 1}
@@ -122,13 +134,29 @@ init -5 python:
         inizio, fine = d.orario
         return inizio <= ora < fine if inizio < fine else ora >= inizio or ora < fine
 
-    def discorso_disponibile(d):
+    def tipo_aperto(k, tipo):
+        """Le soglie di Sara (specifica del 25/11/2026): strette, 5 e 15 non bastano."""
+        if tipo == "Friendly":
+            return valore_interest(k) > 5
+        if tipo == "Flirt":
+            return valore_interest(k) > 15
+        if tipo == "Sexting":
+            return fatto("bacio_" + k)
+        return True
+
+    def discorso_disponibile(d, scrive_altro=False):
+        """scrive_altro: chi scrive per primo non è legato alle soglie di Sara."""
         k = d.chiave
         if d.id in store.discorsi_fatti:
             return False
         if d.prova and not store.telefono_segnaposto:
             return False
-        if gradino(k) < d.gradino:
+        if "_intro" in d.id and any(f.startswith(k + "_intro") for f in store.discorsi_fatti):
+            return False
+        if d.argomento or scrive_altro:
+            if gradino(k) < d.gradino:
+                return False
+        elif not tipo_aperto(k, d.tipo):
             return False
         if d.flirt and store.freno.get(k, -99) > store.giorno:
             return False
@@ -137,13 +165,102 @@ init -5 python:
     def discorsi_disponibili(chiave):
         return [d for _, d in sorted(DISCORSI.items()) if d.chiave == chiave and discorso_disponibile(d)]
 
+    def interesse_altrui(k):
+        """Quanto l'altro è preso da Sara (specifica 25/11, sezione 6): "alto", "sereno"
+        oppure, per chi dipende da lei, "acceso" o "spento"."""
+        if k in ("howard", "ex", "amica"):
+            return "alto"
+        if k in ("capa", "editore"):
+            return "sereno"
+        if k == "daniel":
+            return "acceso" if valore_interest(k) >= store.giorno else "spento"
+        return "acceso" if tipo_aperto(k, "Flirt") else "spento"
+
+    def prende_iniziativa(d):
+        """Iniziative romantiche degli altri: Daniel solo con Interest almeno pari al giorno,
+        Simon e Darius specchio di Sara, Magnus e Barbara mai. Le altre chat sono libere."""
+        return d.tipo in ("Casual", "Friendly") or interesse_altrui(d.chiave) in ("alto", "acceso")
+
     def discorsi_in_entrata(chiave):
         """I discorsi che lui o lei può aprire scrivendo per primo: tutti da B in su,
         sotto B solo quelli segnati scrive_lui."""
-        tutti = discorsi_disponibili(chiave)
+        tutti = [d for _, d in sorted(DISCORSI.items()) if d.chiave == chiave and discorso_disponibile(d, scrive_altro=True) and prende_iniziativa(d)]
         if gradino(chiave) >= CONFIDENZA:
             return tutti
         return [d for d in tutti if getattr(d, "scrive_lui", False)]
+
+    ## --- Iniziative di Sara: tipo o argomento (specifica del 25/11/2026) ------------
+
+    def argomenti_disponibili(chiave):
+        return [d for d in discorsi_disponibili(chiave) if d.argomento]
+
+    def discorsi_di_tipo(chiave, tipo):
+        """Una sola chat nuova per tipo al giorno con ogni contatto; gli argomenti non contano."""
+        if store.giorno_tipo.get(chiave) == store.giorno:
+            return []
+        tutti = [d for d in discorsi_disponibili(chiave) if not d.argomento and d.tipo == tipo]
+        ## L'introduzione viene prima di ogni altra chat Casual.
+        return [d for d in tutti if "_intro" in d.id] or tutti
+
+    def iniziative(chiave):
+        return bool(argomenti_disponibili(chiave)) or any(discorsi_di_tipo(chiave, t) for t in TIPI_CHAT)
+
+    def discorso_pescato(chiave, tipo):
+        """La chat proposta per quel tipo: per tutto il giorno resta la stessa."""
+        candidati = discorsi_di_tipo(chiave, tipo)
+        salvata = store.anteprime_chat.get((chiave, tipo))
+        if salvata and salvata[0] == store.giorno and any(d.id == salvata[1] for d in candidati):
+            return salvata[1]
+        scelto = renpy.random.choice(candidati).id
+        store.anteprime_chat[(chiave, tipo)] = (store.giorno, scelto)
+        return scelto
+
+    def chat_introduttiva_aperta(k):
+        return DISCORSI[store.discorso_aperto[k]["id"]].gradino == ESTRANEI
+
+    def abbandona_discorso(k):
+        """Chiusa per sempre, senza premi: la chat non si ripete (i messaggi restano)."""
+        aperto = store.discorso_aperto.pop(k, None)
+        if aperto and aperto["id"] not in store.discorsi_fatti:
+            store.discorsi_fatti.append(aperto["id"])
+        for dove in (store.coda_chat, store.telefono_minuti_inbox, store.telefono_minuti_riprese):
+            dove.pop(k, None)
+        store.telefono_minuti_risposte_lette.discard(k)
+
+    def chiudi_scadute():
+        """All'apertura del telefono: le chat scadute o concluse dal vivo si chiudono."""
+        for k in list(store.discorso_aperto):
+            aperto = store.discorso_aperto[k]
+            scade = DISCORSI[aperto["id"]].scade
+            if scade and eval(scade, {"aperta_da": store.giorno - aperto.get("giorno", store.giorno)}, vars(store)):
+                abbandona_discorso(k)
+
+    def tipo_chat_aperta():
+        """Il tipo da mostrare accanto alle risposte, se il giocatore lo vuole."""
+        aperto = store.discorso_aperto.get(store.chat_aperta) if persistent.mostra_tipo_chat and not store.telefono_anteprima else None
+        return DISCORSI[aperto["id"]].tipo if aperto else None
+
+    def raccordo_chat(k):
+        """Come Sara cambia discorso, secondo l'ultimo messaggio rimasto lì."""
+        ultimi = store.chat_log.get(k, [])
+        if not ultimi:
+            return None
+        chi, testo = ultimi[-1][:2]
+        if chi != "sara" and testo.rstrip().endswith("?"):
+            frasi = ["Sorry, I never answered you. Can I ask you something else first?",
+                     "I know, I left that hanging. Something else came up.",
+                     "I owe you an answer. Can it wait a bit?"]
+        elif chi != "sara":
+            frasi = ["Anyway. Changing the subject.", "Anyway, I wanted to tell you something.",
+                     "Right. Completely different thing."]
+        else:
+            frasi = ["Forget that. Something else.", "Never mind what I said before.",
+                     "Actually, let me start again."]
+        return renpy.random.choice(frasi)
+
+    def saluto_chat(k):
+        return renpy.random.choice(["I've got to go. Talk soon.", "I'm putting the phone down. Night.",
+                                    "I have to run. Speak later."])
 
     def _parte(id, n):
         nome = "chat_%s_%d" % (id, n)
@@ -221,7 +338,7 @@ init -5 python:
             return "risposta" if store.coda_chat[k]["arrivo"] <= adesso() else "attesa"
         if k in store.discorso_aperto:
             return "aperto"
-        if discorsi_disponibili(k):
+        if (iniziative(k) if telefono_minuti_attivo() else discorsi_disponibili(k)):
             return "nuovo"
         return "vuoto"
 
@@ -234,14 +351,13 @@ init -5 python:
     def slot_libero():
         return store.telefono_libero and store.giorno_slot != store.giorno
 
-    def chat_compromettenti():
-        """Discorsi «complici» o «intimi» lasciati sul telefono: Josh può trovarli."""
-        return list(store.chat_lasciate)
-
     ## --- Messaggi a schermo ---------------------------------------------------------
 
     def msg(chi, testo, immagine=None, premia_avvio=True):
         """Un messaggio nella chat aperta. chi = "sara", "josh" o la chiave del contatto."""
+        if store.telefono_anteprima:
+            store.telefono_anteprima_testo = renpy.substitute(testo)
+            return
         renpy.stop_skipping()
         messaggio = (chi, renpy.substitute(testo))
         if immagine:
@@ -271,7 +387,8 @@ default discorsi_fatti = []            # id dei discorsi finiti
 default discorso_aperto = {}           # chiave -> {"id", "parte", "caldo", "frenato"}
 default coda_chat = {}                 # chiave -> {"arrivo", "letto", "rimandata", "insiste"}
 default freno = {}                     # chiave -> giorno fino al quale niente flirt
-default chat_lasciate = []             # id dei discorsi compromettenti non cancellati
+default chat_lasciate = []             # non più usato: resta per i vecchi salvataggi
+default persistent.mostra_tipo_chat = False
 default chat_log = {}                  # chiave -> [(mittente, testo[, immagine])]
 default chat_aperta = None
 default giorno_slot = -1
@@ -279,6 +396,10 @@ default fascia_corrente = 0
 default ultima_entrata = {}
 default giorno_entrata = -1
 default uscite = []                    # [(giorno, chiave, detto_a_josh)]
+default giorno_tipo = {}               # chiave -> ultimo giorno con una chat nuova per tipo
+default anteprime_chat = {}            # (chiave, tipo) -> (giorno, id della chat proposta)
+default telefono_anteprima = False     # True: msg() non manda, ricorda solo il testo
+default telefono_anteprima_testo = ""
 
 
 ## =============================================================================
@@ -301,10 +422,8 @@ label telefono_fascia(nome, con_josh=False):
             n "Sara still has a reply from [_nome] to read."
         menu:
             "Read it now.":
-                if con_josh:
-                    $ suspicion(1)
-                    if gradino(_k) >= COMPLICI:
-                        $ corruption(1)
+                if con_josh and gradino(_k) >= COMPLICI:
+                    $ corruption(1)
                 call telefono_risposta(_k)
             "Leave it for later.":
                 $ coda_chat[_k]["rimandata"] = True
@@ -431,15 +550,7 @@ label telefono_fine_discorso(k):
             if _d.gradino == ESTRANEI:
                 _delta = max(_delta, SOGLIE_RAPPORTO[k][0] - percorso(k).interest)
             interest(k, _delta)
-    ## Le chat compromettenti: cancellarle o lasciarle (11.5).
-    if _d.gradino >= COMPLICI and not _a["frenato"]:
-        menu (screen="scelta_telefono"):
-            "Delete the chat.":
-                $ corruption(1)
-                $ suspicion(-1)
-                $ chat_log[k] = []
-            "Keep it.":
-                $ chat_lasciate.append(_d.id)
+    ## Il telefono di Sara è privato (25/11/2026): niente chat da cancellare o lasciare.
     return
 
 label telefono_josh_interrompe(k):
@@ -587,7 +698,7 @@ screen telefono():
                                         action Return(("leggi", k))
                                     elif stato == "attesa" and not telefono_minuti_attivo():
                                         action Return(("sollecita", k))
-                                    elif stato in ("nuovo", "aperto"):
+                                    elif stato in ("nuovo", "aperto") or (stato == "attesa" and k in discorso_aperto and not chat_introduttiva_aperta(k)):
                                         action Return(("scrivi", k))
                                     else:
                                         sensitive False
@@ -680,6 +791,7 @@ screen telefono_chat(k):
 ## Le scelte dentro una chat: accanto al telefono, non sopra.
 screen scelta_telefono(items):
     zorder 60
+    $ tipo = tipo_chat_aperta()
     vbox:
         xpos 1300 xanchor 1.0 yalign 0.7
         spacing 14
@@ -705,7 +817,7 @@ screen scelta_telefono(items):
                         for riga in avviso_acceleratore(i.kwargs):
                             text riga style "tel_testo" size 22 color COLORE_ACCELERATORE
             else:
-                textbutton i.caption:
+                textbutton (("(%s) " % tipo if tipo and i.caption.startswith("«") else "") + i.caption):
                     action i.action
                     background Solid("#2b1d25ee")
                     hover_background Solid("#7a2e45ee")
