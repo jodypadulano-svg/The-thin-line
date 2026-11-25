@@ -8,6 +8,10 @@ Le relazioni romantiche non sono obbligatorie. Le scelte del giocatore devono de
 ## Daniel
 Daniel è sicuro di sé, non un seduttore seriale e non insegue indefinitamente Sara. Confrontare il numero del giorno di gioco con il valore di interesse di Sara verso Daniel: se interesse >= giorno corrente, può continuare a corteggiarla; se interesse < giorno corrente, smette di prendere iniziative romantiche. Sara può cercarlo e far risalire l'interesse, ma Daniel riprende il corteggiamento solo quando il valore torna almeno pari al giorno corrente. La soglia oltre il giorno 100, se l'interesse ha massimo 100, è un caso limite da definire; non fissare una soluzione senza ulteriore decisione. Il secondo appuntamento può essere rifiutato, e la trama deve rispettare la scelta.
 
+
+## Daniel — tappe narrative (integrazione del 25/11)
+Oltre alla soglia matematica, il rapporto procede attraverso tappe significative: festa, pranzo insieme e ulteriori incontri da progettare. Saltare una tappa rende più difficile sviluppare il rapporto in seguito, senza renderlo automaticamente impossibile. Non introdurre ancora penalità o blocchi numerici non concordati.
+
 ## Magnus
 Non fa nulla di attivo per conquistare Sara. È selettivo: il rapporto nasce professionale e può diventare anche sentimentale solo attraverso ripetute scelte volontarie del giocatore. È Sara a doverlo incuriosire e avvicinare, non viceversa. Non trattare il percorso come automatico.
 
