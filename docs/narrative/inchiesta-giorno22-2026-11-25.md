@@ -25,8 +25,12 @@
 
 Ipotesi di retroscena da precisare: la vittima ha riconosciuto il poliziotto e scoperto il suo rapporto con il magnate; potrebbe aver udito una conversazione compromettente e confidato una parte di ciò che sapeva all'amica. La versione ufficiale potrebbe suggerire una lite con un cliente. Fissare il fatto concreto scoperto e la ricostruzione completa prima di scrivere gli indizi definitivi. Nessun dettaglio operativo del delitto è necessario in questa fase.
 
-## Lunedì 22 — innesco approvato
-Durante il fine settimana arriva in redazione una lettera anonima: contesta la versione ufficiale della morte e riferisce che la vittima aveva paura prima di morire. Barbara convoca Sara il lunedì e le chiede di verificare l'attendibilità della segnalazione, non di risolvere da subito un grande caso. È un incarico professionale ordinario, indipendente dallo stato di stagista di Barbara. Solo se Sara trova materiale rilevante l'inchiesta cresce. La lettera è stata scritta dall'amica, che vuole far emergere la verità ma teme le autorità. Il giocatore conserva la libertà di non approfondire.
+## Lunedì 22 — proposta facoltativa di Barbara (aggiornamento approvato il 25/11)
+Durante il fine settimana arriva in redazione una lettera anonima: contesta la versione ufficiale della morte e riferisce che la vittima aveva paura prima di morire. La mittente è l'amica della vittima, ma Barbara e Sara inizialmente non lo sanno.
+
+Lunedì 22 Barbara convoca Sara, le mostra la lettera e le **propone**, senza imporle l'incarico, di verificare se la segnalazione meriti un'inchiesta. Barbara spiega che, fra tutte le persone della redazione, considera Sara la più adatta: non è ancora una figura esposta o riconoscibile e potrebbe muoversi senza attirare attenzioni. La formulazione deve far percepire la fiducia professionale di Barbara, non una pressione.
+
+**Scelta esplicita del giocatore:** Sara può accettare oppure rifiutare liberamente, senza che Barbara la obblighi. Se accetta, inizia una verifica preliminare e soltanto eventuali riscontri potranno far crescere l'inchiesta. Se rifiuta, non si deve avviare automaticamente il filone investigativo; eventuali conseguenze o possibilità di riprenderlo restano da progettare, senza inventare penalità. Questa scelta di ingresso è distinta dalle successive scelte sul grado di approfondimento.
 
 ## Un secondo decesso apparentemente scollegato (25/11)
 
