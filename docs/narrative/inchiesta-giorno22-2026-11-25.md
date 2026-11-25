@@ -28,6 +28,12 @@ Ipotesi di retroscena da precisare: la vittima ha riconosciuto il poliziotto e s
 ## Lunedì 22 — innesco approvato
 Durante il fine settimana arriva in redazione una lettera anonima: contesta la versione ufficiale della morte e riferisce che la vittima aveva paura prima di morire. Barbara convoca Sara il lunedì e le chiede di verificare l'attendibilità della segnalazione, non di risolvere da subito un grande caso. È un incarico professionale ordinario, indipendente dallo stato di stagista di Barbara. Solo se Sara trova materiale rilevante l'inchiesta cresce. La lettera è stata scritta dall'amica, che vuole far emergere la verità ma teme le autorità. Il giocatore conserva la libertà di non approfondire.
 
+## Un secondo decesso apparentemente scollegato (25/11)
+
+- La morte della giovane prostituta è effettivamente collegata a un altro decesso. Le due morti sono avvenute in modo diverso e in circostanze diverse; inizialmente nessuno ha individuato il loro filo conduttore.
+- Questa connessione offre una pista per l'inchiesta deduttiva di Sara. Da progettare come e quando il giocatore possa riconoscerla attraverso gli indizi.
+- Non sono ancora stabiliti identità della seconda vittima, ordine cronologico delle morti, cause, responsabilità o natura precisa del collegamento. Non dare per scontato che la seconda morte sia un omicidio o che abbia lo stesso esecutore.
+
 ## Progressione investigativa
 - Livello 1: identificare l'esecutore materiale.
 - Livello 2: riconoscere che l'omicidio è stato commissionato, comprendere il ruolo del poliziotto.

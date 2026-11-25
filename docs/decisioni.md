@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 22+ · Due decessi apparentemente scollegati (25/11/2026)
+
+**Stato: principio narrativo approvato, da sviluppare.** La morte della prostituta è collegata a un altro decesso, avvenuto con modalità e circostanze diverse. Nessuno ha ancora individuato il filo conduttore. Il collegamento costituisce una pista investigativa da costruire; identità della seconda vittima, cronologia, cause, natura del legame e indizi restano da concordare. [Scheda dell'inchiesta](narrative/inchiesta-giorno22-2026-11-25.md).
+
 ### Giorno 22+ · Fascino di Sara come strumento investigativo (25/11/2026)
 
 **Stato: approvato, da implementare.** Nell'inchiesta Sara può scegliere di usare consapevolmente il proprio aspetto fisico e il proprio fascino per ottenere informazioni, anche in scene di infiltrazione narrativa. Il giocatore può optare per abbigliamento e atteggiamento seduttivo, oppure per un approccio professionale, empatico o sincero. Le reazioni dipendono dall'interlocutore: la seduzione non funziona sempre e non implica interesse sentimentale, né apre automaticamente un percorso. La disinvoltura di Sara evolve con la sua sicurezza; ogni scelta resta facoltativa. Da definire scene, condizioni, effetti e implementazione. [Scheda dell'inchiesta](narrative/inchiesta-giorno22-2026-11-25.md).
