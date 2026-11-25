@@ -141,3 +141,6 @@ Riguarda i Flirt e i Sexting cominciati da Sara, secondo `interesse_altrui`:
 - **Magnus e Barbara** (sereni): il primo Flirt e il primo Sexting sono una chat in cui prendono tempo; dopo si aprono le altre.
 - **Howard, Jacob, Joanie** (alto) e **Simon, Darius** (specchio): sempre ricambiati quando Sara può aprire il tipo.
 Nessuna penalità: le risposte calde danno Interest come nelle altre chat. Id con `_n`, `ricambiato=False`.
+
+### 12.4 Appuntamenti (25/11)
+Approvati, da scrivere con i giorni dal 20: [Il mercoledì di Josh](../narrative/mercoledi-di-josh-2026-11-25.md).

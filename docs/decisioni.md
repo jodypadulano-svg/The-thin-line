@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Appuntamenti al telefono · Il mercoledì di Josh (Jody, 25/11/2026)
+
+**Stato: approvato in ogni punto; nessun codice (parte quando si scrivono i giorni dal 20).** Ogni mercoledì sera, dal 24, Josh gioca a D&D da Mark: Sara sta a casa a scrivere oppure esce di nascosto con chi ha preso appuntamento in chat. Josh umiliato passa al lunedì 22; Jacob del 23 diventa un appuntamento come gli altri; il 33 resta, con l'alibi di Joanie. Soglie, effetti, rischi, uscite e CG nella [scheda](narrative/mercoledi-di-josh-2026-11-25.md).
+
 ### Giorni 22–35 · Calendario di brainstorming dei dieci percorsi (25/11/2026)
 
 **Stato: selezione narrativa concordata, date/fasce flessibili, da sviluppare; nessun codice.** Registrati 19 nuovi avvenimenti: uno per personaggio per settimana, eccetto Barbara nella settimana 22–28, già occupata dall'inchiesta e dalle eventuali convocazioni. Il 26 pomeriggio torta di Howard e la sera fotografie da Joanie; preservare la serata libera del 22. Nella settimana 29–35 nuova occasione facoltativa di ingresso come stagista. Darius: condivisione opzionale del manoscritto e successivo riscontro; Jacob: argomento telefonico neutro legato a una conoscenza del passato e successivo appuntamento di scuse condizionale. Mantenere Hugo sottotraccia e il suo finale segreto esclusivamente nei documenti interni. Tutti i dettagli, le fasce e gli incastri con gli eventi preesistenti sono nel [calendario dei giorni 22–35](narrative/calendario-giorni22-35-2026-11-25.md). Nessuna nuova soglia o punteggio approvato.

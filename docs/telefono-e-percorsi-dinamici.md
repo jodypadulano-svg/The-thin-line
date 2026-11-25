@@ -165,7 +165,7 @@ Sara può riscrivere a chi non ha ancora risposto; il sollecito usa lo slot.
 | Barbara | Barbara −1, Conf −1 |
 
 ### 10.8 Serate alternative
-- Primo mese: solo il **giorno 22** è sostituibile; le altre dal secondo mese, segnate nel calendario.
+- **Sostituito il 25/11/2026:** Sara può uscire solo il **mercoledì sera**, ogni settimana dal 24, mentre Josh gioca a D&D (registro). Non vale più la serata del 22.
 - Si può uscire con chi è almeno a C; da D, entro la soglia di Corruption, l'uscita può prendere una piega romantica con scelta esplicita.
 - Josh: dirglielo (Susp +1, Josh +1 se innocente) o una scusa (Corr +1, segreto «uscita con X», scopribile da chi può vederla, es. Howard). Restare con Josh è sempre possibile.
 - Ogni uscita = un set di immagini nuovo: poche per episodio.

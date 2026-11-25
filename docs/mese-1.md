@@ -100,14 +100,14 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 | Giorno | Fascia | Scena | Chi | Scelte → effetti |
 |---|---|---|---|---|
 | **22 Lun** | Lavoro | Barbara commenta l'abbigliamento di Sara | Barbara | **Il giorno dopo:** Vestirsi come sempre → — · Una scollatura in più → Barbara +1, Corr +1 |
-|  | Sera | **Serata sostituibile (18/11/2026):** uscita con un contatto almeno a C, oppure a casa con Josh | contatto scelto / Josh | **Con chi?:** Josh → — · un contatto a C o più → vedi [telefono](telefono-e-percorsi-dinamici.md), sezione 10.8<br>**Dirlo a Josh?:** Sì → Susp +1 · Una scusa → Corr +1, segreto |
+|  | Sera | Josh torna a casa umiliato da Daniel **(spostata dal 24 il 25/11/2026)** | Josh, Daniel | ★ **Josh è a pezzi:** Consolarlo 🔒 Josh 30 → Josh +3 · Irritarsi per la sua debolezza → Josh -3, Daniel +1, Corr +1 |
 | **23 Mar** | Lavoro | Giornata normale |  | — |
-|  | Sera | Primo incontro a due con Jacob, da vecchi amici (se ha risposto) | Jacob, Josh | ★ **Cosa dire a Josh:** La verità: vede l'ex → — · «Esco con una collega» → Corr +2, Susp +3<br>**All'incontro:** Parlare dei ricordi → Jacob +2 · Parlare di Josh → Josh +1 · 🔒 Corr 10 Lasciarlo avvicinare → Jacob +4, Corr +2 |
+|  | Sera | Serata normale a casa (l'incontro con Jacob passa al mercoledì, 25/11/2026) | Josh | — |
 | **24 Mer** | Lavoro | Giornata normale |  | — |
-|  | Sera | Josh torna a casa umiliato da Daniel | Josh, Daniel | ★ **Josh è a pezzi:** Consolarlo 🔒 Josh 30 → Josh +3 · Irritarsi per la sua debolezza → Josh -3, Daniel +1, Corr +1 |
+|  | Sera | **Il mercoledì di Josh (25/11/2026):** Josh gioca a Dungeons & Dragons. Sara resta a casa a scrivere, oppure esce **di nascosto** con chi ha preso appuntamento in chat, Jacob compreso. Torna ogni mercoledì (31, 38, 45…). Sostituisce la serata del 22 | contatto scelto | ★ **Con Jacob, se l'appuntamento è con lui:** Parlare dei ricordi → Jacob +2 · Parlare di Josh → Josh +1 · 🔒 Corr 10 Lasciarlo avvicinare → Jacob +4, Corr +2. Il resto da progettare (registro, 25/11) |
 | **25 Gio** | Lavoro | Giornata normale |  | — |
 |  | Sera | Palestra | Simon | ★ **Dopo l'allenamento:** Andare a casa → Simon +2 · 🔒 Corr 15 Restare dopo la chiusura → Simon +5, Corr +3, Susp +1 |
-| **26 Ven** | Sera | Howard ha visto Sara uscire elegante martedì (I19): se Interest Howard 5+, tace e lo fa capire a Sara; altrimenti lo dice a Josh «per caso» | Howard, Josh | **Esito (non sceglie il giocatore):** Howard tace → Howard +2 · Howard parla a Josh → Susp +3<br>**Dopo:** Serata a casa → — · Aiutare Howard a sistemare la cucina → Howard +2 |
+| **26 Ven** | Sera | Howard ha visto Sara uscire elegante mercoledì, **solo se è uscita** (I19): se Interest Howard 5+, tace e lo fa capire a Sara; altrimenti lo dice a Josh «per caso» | Howard, Josh | **Esito (non sceglie il giocatore):** Howard tace → Howard +2 · Howard parla a Josh → Susp +3<br>**Dopo:** Serata a casa → — · Aiutare Howard a sistemare la cucina → Howard +2 |
 | **27 Sab** | Sera | Uscita a quattro con Joanie e Mark; Mark tranquillizza Josh (I13) | Joanie, Mark, Josh | **Effetto di Mark (automatico):** Josh si calma → Susp -3<br>**In bagno con Joanie:** Parlare d'altro → — · Raccontarle di Jacob → Joanie +2, Corr +1 |
 | **28 Dom** | Sera | Finale dell'Episodio 2: se Susp 8+, Josh le chiede del telefono; altrimenti Magnus la invita nella sua villa | Josh / Magnus | ★ **Se c'è il confronto:** Mentire bene → Corr +2 · Confessare una parte → Josh -2, Susp -5 |
 
