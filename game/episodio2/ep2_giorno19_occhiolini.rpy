@@ -104,6 +104,7 @@ label ep2_d19_occhiolini:
     if d19_porta_aperta():
         call ep2_d19_porta
     else:
+        $ cg("Sara and Joanie head for The Lantern exit arm in arm", "images/cg/ep2/d19_sara_joanie_uscita_lantern.png")
         n "Last orders. Joanie yawns like a cat and hooks her arm through Sara's."
         ch "Right. Bed. Mine, I mean."
         s "You're {i}humming{/i}."
@@ -114,6 +115,7 @@ label ep2_d19_occhiolini:
 ## --- 1 · Il bancone --------------------------------------------------------------------------
 
 label ep2_d19_occhi_bancone:
+    $ cg("Jacob offers to get Sara a drink at The Lantern", "images/cg/ep2/d19_jacob_offre_da_bere.png")
     jacob "Let me get you one. For old times' sake. Or for new ones, I'm not fussy."
     call ep2_d19_ammicca("bancone")
     n "Over his shoulder, Joanie winks."
@@ -132,6 +134,7 @@ label ep2_d19_occhi_bancone:
             call ep2_d19_mestiere
         "Not this one.":
             call ep2_d19_salta
+            $ cg("Jacob offers to get Sara a drink at The Lantern", "images/cg/ep2/d19_jacob_offre_da_bere.png")
             call ep2_d19_drink
 
     if d19_ancora():
@@ -192,6 +195,7 @@ label ep2_d19_occhi_bancone:
 ## --- 2 · La pista ----------------------------------------------------------------------------
 
 label ep2_d19_occhi_pista:
+    $ cg("Jacob invites Sara onto the dance floor at The Lantern", "images/cg/ep2/d19_jacob_invito_pista.png")
     jacob "You used to dance."
     s "I used to do a lot of things."
     n "The floor at The Lantern is the size of a living room, and it's full. Joanie finds a pillar with a view."
@@ -248,6 +252,7 @@ label ep2_d19_occhi_pista:
 ## --- 3 · Il divanetto ------------------------------------------------------------------------
 
 label ep2_d19_occhi_divanetto:
+    $ cg("Joanie takes a seat at the booth while Sara and Jacob stand beside it", "images/cg/ep2/d19_divanetto_arrivo.png")
     n "There's a booth behind the plants that nobody ever finds. Joanie finds it. She slides in on one side with all the coats. There's one seat on the other."
     call ep2_d19_ammicca("divanetto")
     n "Joanie, all innocence, spreads out the coats a little further. And winks."
@@ -338,6 +343,7 @@ label ep2_d19_porta:
             ch "Come on, then. I'll get us a taxi. God, what a {i}night{/i}."
             n "Jacob watches them go from the kerb with his hands in his pockets, like a man who's been told the film's finished and can't see why."
             $ via_cg()
+            $ cg("Joanie rests her head on Sara's shoulder in the taxi home", "images/cg/ep2/d19_taxi_verso_casa.png")
             n "In the taxi she puts her head on Sara's shoulder."
             ch "Thank you. That was already too much. That was Christmas."
     return
@@ -363,6 +369,7 @@ label ep2_d19_finale:
     $ ambiente(None)
     $ vai("strada", "A taxi — 2:10 a.m.")
     $ musica("notte")
+    $ cg("Joanie checks her lipstick while Sara and Jacob sit in the back of the taxi", "images/cg/ep2/d19_taxi_verso_locale_jacob.png")
     n "Joanie takes the front seat before anyone can be polite about it. She pulls the sun visor down and fixes her lipstick in the mirror for the entire journey. Her lipstick's perfect."
     menu:
         n "In the little square of glass, an eye closes, and opens."
@@ -421,6 +428,7 @@ label ep2_d19_finale:
 
     $ via_cg()
     $ vai("strip_club", "Upstairs")
+    $ cg("Sara gestures towards the armchair as Joanie pauses in the doorway", "images/cg/ep2/d19_stanza_piano_di_sopra.png")
     n "There's a staircase behind the bar. There's a room at the top of it, and a bed, and one big chair in the corner."
     n "Joanie stops at the door. It's the only time all night she's looked unsure."
     ch "I can go. If you'd rather. I can honestly just go."

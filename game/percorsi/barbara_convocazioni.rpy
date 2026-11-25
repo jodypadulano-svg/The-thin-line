@@ -58,6 +58,7 @@ label barbara_convocazione:
 
 label barbara_missione_02:
     $ suono("telefono_vibra")
+    $ cg("Sara reads Barbara's summons at her newsroom desk", "images/cg/ep2/barbara_m02_00_convocazione.png")
     n "The message on her screen is four words long. {i}My office, please. Now.{/i}"
     sp "I signed it. When she calls, I go. That's what I signed."
     $ vai("redazione", "Barbara's office — 12:10 p.m.")

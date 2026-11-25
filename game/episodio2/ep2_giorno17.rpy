@@ -9,6 +9,13 @@ label ep2_d17:
     $ fascia_corrente = FASCE.index("sera")
     call ep2_d17_rientro
     call ep2_d17_palestra
+    $ cg("Sara checks her phone outside the gym", "images/cg/ep2/d17_palestra_telefono_libero.png")
+    menu:
+        "Check the phone.":
+            call telefono_nuovo_sessione("Go to bed")
+        "Go to bed.":
+            pass
+    $ via_cg()
     $ musica(None)
     $ luogo_corrente = ""
     scene bg nero with fade
@@ -162,26 +169,34 @@ label ep2_d17_foto:
 
 label ep2_d17_rientro:
     $ vai("casa", "Home — After work")
-    if fatto("ep2_d17_glamour"):
-        n "Sara washes off the lipstick and makeup, takes out the pins and changes out of her work clothes."
-
     if fatto("ep2_d14_maglione_ordinato"):
         ## Il corriere può lasciare il pacco a Sara o al vicino.
         $ segna("ep2_pacco_joanie_da_howard", renpy.random.choice((False, True)))
+        if not fatto("ep2_pacco_joanie_da_howard"):
+            $ cg("Sara notices the parcel by her front door", "images/cg/ep2/d17_rientro_pacco.png")
+            n "A parcel is waiting by the front door. Sara recognizes the shop name from the link Joanie sent on Sunday."
+            $ via_cg()
+
+    if fatto("ep2_d17_glamour"):
+        $ cg("Sara removes her makeup and hairpins at the bathroom mirror", "images/cg/ep2/d17_rientro_strucco.png")
+        n "Sara washes off the lipstick and makeup, takes out the pins and changes out of her work clothes."
+        $ via_cg()
+
+    if fatto("ep2_d14_maglione_ordinato"):
         if fatto("ep2_pacco_joanie_da_howard"):
             call ep2_d17_ritiro_howard
-        else:
-            n "A parcel is waiting by the front door. Sara recognizes the shop name from the link Joanie sent on Sunday."
         call ep2_d17_pacco
 
     ## La finestra si chiude prima di partire per arrivare in anticipo in palestra.
     if howard_puo_fare_faccenda(giorno, FASCE[fascia_corrente], True, True, fatto("ep2_d17_ritiro_howard"), howard_ultima_faccenda_giorno, valore_interest("howard")):
+        $ cg("Sara pauses by Howard's closed door with her gym bag at her feet", "images/cg/ep2/d17_pianerottolo_prima_palestra.png")
         n "Sara has already packed her gym bag. She checks the time. There's still an hour before she needs to leave."
         n "On the landing she hears Howard saying goodbye to someone on the phone behind his door. She sets her bag down."
         call howard_faccende_dopo_lavoro(True, True, False)
     return
 
 label ep2_d17_ritiro_howard:
+    $ cg("Sara checks the delivery notice and knocks at Howard's door", "images/cg/ep2/d17_ritiro_pacco_porta_howard.png")
     n "The delivery notice says the courier left the parcel with Howard. Sara knocks at his door."
     $ cg("Howard answers Sara's knock", "images/cg/ep1/d9_04_howard_porta.webp")
     ho "Ah. I put it on the table. Hang on."

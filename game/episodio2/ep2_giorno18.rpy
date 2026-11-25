@@ -17,6 +17,14 @@ label ep2_d18:
     call ep2_d18_barbara
     $ fascia_corrente = FASCE.index("sera")
     call ep2_d18_howard
+    $ vai("casa", "Home — Thursday night")
+    $ cg("Sara checks her phone on the sofa on Thursday evening", "images/cg/ep2/d18_divano_telefono_libero.png")
+    menu:
+        "Check the phone.":
+            call telefono_nuovo_sessione("Go to bed")
+        "Go to bed.":
+            pass
+    $ via_cg()
     $ musica(None)
     $ luogo_corrente = ""
     scene bg nero with fade
@@ -70,6 +78,7 @@ label ep2_d18_annulla_pranzo:
     $ segna("ep2_d18_pranzo_annullato")
     $ confidence(1, "Sara cancelled lunch with Daniel on her own terms.")
     $ via_cg()
+    $ cg("Sara sits on the edge of her bed to cancel lunch with Daniel", "images/cg/ep2/d18_01c_annulla_pranzo.png")
     $ chat_aperta = "daniel"
     show screen telefono_chat("daniel")
     n "Sara sits on the edge of the bed with the phone in both hands. She types it three times before it sounds like nothing."
@@ -84,10 +93,12 @@ label ep2_d18_annulla_pranzo:
         n "She leaves the black top where it is, over the back of the chair, and puts on what she wears every Thursday."
     else:
         n "She closes the wardrobe and puts on what she wears every Thursday."
+    $ via_cg()
     return
 
 label ep2_d18_avvisa_josh:
     $ segna("ep2_d18_josh_avvisato")
+    $ cg("Sara rereads Josh's reply beside the bus window", "images/cg/ep2/d18_autobus_avvisa_josh.png")
     $ chat_aperta = "josh"
     show screen telefono_chat("josh")
     n "On the bus she opens [nome_compagno]'s chat. The last message is from Tuesday, a photo of a sandwich. Nothing since Monday night."
@@ -100,6 +111,7 @@ label ep2_d18_avvisa_josh:
     hide screen telefono_chat
     $ chat_aperta = None
     n "Sara reads «Don't let me get in the way» twice. She doesn't know if it's kindness or if he just can't say no to anything with Daniel's name on it."
+    $ via_cg()
     return
 
 
@@ -224,12 +236,15 @@ label ep2_d18_pranzo_daniel:
         $ musica("ristorante")
         $ vai("ristorante", "Ristorante Verde — 1:55 p.m.")
         if fatto("ep2_d18_sfotto_josh"):
+            $ cg("Daniel walks Sara to the restaurant door with his hand on her back", "images/cg/ep2/d18_uscita_daniel_mano_schiena.png")
             n "He walks her to the door of the restaurant with his hand at the small of her back, the whole way, as if the corridor belonged to him. She lets it stay there."
         else:
+            $ cg("Daniel walks beside Sara to the restaurant door without touching her", "images/cg/ep2/d18_uscita_daniel_senza_contatto.png")
             n "He walks her to the door of the restaurant and doesn't touch her again, not even to say goodbye. That is somehow worse."
         $ nota_sara("daniel", "We danced in a little room with a fig tree in the window. His song. He stopped before I wanted him to.")
     else:
         $ vai("strada", "Outside the restaurant — 2 p.m.")
+        $ cg("Sara catches herself smiling outside the restaurant", "images/cg/ep2/d18_uscita_ristorante_sara.png")
         n "Outside, the air is cold. She realizes she's smiling and stops, and then starts again on the bus."
     $ via_cg()
     return
@@ -607,6 +622,7 @@ label ep2_d18_barbara:
 
 label ep2_d18_howard:
     $ vai("pianerottolo", "The landing — Thursday evening")
+    $ cg("Sara checks her phone on the landing with her keys in hand", "images/cg/ep2/d18_pianerottolo_messaggio_josh.png")
     $ musica("casa")
     if fatto("ep2_d18_josh_avvisato"):
         n "[nome_compagno] said nine. The flat will be dark for another three hours."
@@ -645,7 +661,9 @@ label ep2_d18_howard:
     $ via_cg()
     if fatto("ep2_d18_ballo"):
         $ vai("casa", "Home — Thursday night")
+        $ cg("Sara sits alone on the sofa, remembering the dance with Daniel", "images/cg/ep2/d18_divano_ricordo_ballo.png")
         n "Later, alone on the sofa with the television off, Sara hears the song again. Not in the room. In her shoulders, where his hands were."
+        $ via_cg()
     return
 
 label ep2_d18_howard_tazze:

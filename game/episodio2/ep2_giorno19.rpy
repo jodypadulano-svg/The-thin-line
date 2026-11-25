@@ -21,6 +21,13 @@ label ep2_d19:
     call ep2_d19_lantern
     $ fascia_corrente = FASCE.index("notte")
     call ep2_d19_notte
+    $ cg("Sara checks her phone at home after The Lantern", "images/cg/ep2/d19_casa_telefono_libero.png")
+    menu:
+        "Check the phone.":
+            call telefono_nuovo_sessione("Go to bed")
+        "Go to bed.":
+            pass
+    $ via_cg()
     $ musica(None)
     $ luogo_corrente = ""
     scene bg nero with fade
@@ -521,10 +528,12 @@ label ep2_d19_lantern:
     if sara_bad_girl:
         call ep2_d19_occhiolini
         return
+    $ cg("Jacob offers to get Sara a drink at The Lantern", "images/cg/ep2/d19_jacob_offre_da_bere.png")
     jacob "Let me get you one. For old times' sake. Or for new ones, I'm not fussy."
     call ep2_d19_drink
     call ep2_d19_parlano
     call ep2_d19_numero
+    $ cg("Sara and Joanie head for The Lantern exit arm in arm", "images/cg/ep2/d19_sara_joanie_uscita_lantern.png")
     ch "So."
     s "Don't."
     ch "I didn't say anything."
@@ -685,6 +694,7 @@ label ep2_d19_numero:
             jacob "Fair enough."
             $ via_cg()
             call inizio_retroscena
+            $ cg("Jacob checks the number Joanie sent him outside The Lantern", "images/cg/ep2/d19_jacob_riceve_numero.png")
             rs "Later, on the pavement, his phone lights up. Joanie. A number, and nothing else."
             $ retroscena("ex", "Joanie gave him Sara's number.")
             call fine_retroscena
@@ -700,6 +710,7 @@ label ep2_d19_notte:
     $ cg("Josh asleep on the sofa with a cardboard shield on his chest; Sara in the doorway with her shoes in her hand", "images/cg/ep2/d19_26_josh_dorme.webp")
     n "[nome_compagno] has fallen asleep on the sofa with the shield on his chest. It says something in an alphabet he made up himself."
     n "She takes the paintbrush out of his hand, and puts a blanket over him, and the shield somewhere safe."
+    $ segna("phone_d19_josh_shield")
     sp "I do love you. I do."
     sp "I'll tell him about Jacob. There's nothing to tell."
     if fatto("ep2_d19_jacob_risata"):
