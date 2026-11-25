@@ -235,7 +235,8 @@ init -5 python:
         return scelto
 
     def chat_introduttiva_aperta(k):
-        return DISCORSI[store.discorso_aperto[k]["id"]].gradino == ESTRANEI
+        ## Solo l'introduzione vera: anche alcuni argomenti partono da Estranei (Jacob, Magnus).
+        return "_intro" in store.discorso_aperto[k]["id"]
 
     def abbandona_discorso(k):
         """Chiusa per sempre, senza premi: la chat non si ripete (i messaggi restano)."""
@@ -578,7 +579,7 @@ label telefono_fine_discorso(k):
             _delta = 2 if _a["caldo"] else 1
             ## La chat introduttiva (l'unica da estranei) rompe il ghiaccio:
             ## dopo, Sara e l'altro sono almeno conoscenti (decisione 18/11/2026).
-            if _d.gradino == ESTRANEI:
+            if _d.gradino == ESTRANEI and not _d.argomento:
                 _delta = max(_delta, SOGLIE_RAPPORTO[k][0] - percorso(k).interest)
             interest(k, _delta)
     ## Il telefono di Sara è privato (25/11/2026): niente chat da cancellare o lasciare.

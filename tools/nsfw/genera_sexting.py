@@ -158,6 +158,32 @@ def controlla(righe, chat=""):
     return errori
 
 
+def controlla_forma(righe):
+    """Per i testi scritti da Jody: solo quello che farebbe rompere il gioco."""
+    errori = []
+    for n, r in enumerate(righe, 1):
+        if r != "---" and not re.match(r"^[<?*] \S", r):
+            errori.append("riga %d: deve cominciare con ---, <, ? oppure * e uno spazio: %s" % (n, r[:70]))
+            continue
+        corpo = re.sub(r"\[(nome_compagno|frena)\]", "", r[2:])
+        if re.search(r'["\[\]{}%]', corpo):
+            errori.append("riga %d: caratteri vietati (\" [ ] { } %%): %s" % (n, r[:70]))
+        if len(corpo) > 260:
+            errori.append("riga %d: piu' di 260 caratteri, spezzala in due: %s" % (n, r[:50]))
+    if not righe or righe[0] != "---":
+        errori.append("la prima riga deve essere ---")
+    parti = [x for x in "\n".join(righe).split("---") if x.strip()]
+    if not 1 <= len(parti) <= 4:
+        errori.append("servono da 1 a 4 parti, ne trovo %d" % len(parti))
+    for n, x in enumerate(parti, 1):
+        segni = "".join(r[0] for r in x.strip().split("\n") if r and r[0] in "<?")
+        if not segni.startswith("<"):
+            errori.append("parte %d: comincia sempre l'altro (<)" % n)
+        elif not re.match(r"^<{1,5}(\?<{1,4}){2,4}$", segni):
+            errori.append("parte %d: prima i messaggi dell'altro, poi da 2 a 4 risposte di Sara (?), e dopo OGNI ? almeno un < (ora e': %s)" % (n, segni))
+    return errori
+
+
 def genera(id, a, sistema, brief, modello):
     chiave, _, _, chat = leggi_chat(id)
     conv = [{"role": "system", "content": sistema},
@@ -187,9 +213,9 @@ def inserisci(id):
     if not bozza.exists():
         sys.exit("Nessuna bozza per " + id)
     righe = pulisci(bozza.read_text(encoding="utf-8"))
-    errori = controlla(righe, chat)
+    errori = controlla_forma(righe)
     if errori:
-        sys.exit("La bozza non passa il controllo:\n- " + "\n- ".join(errori))
+        sys.exit("La bozza ha errori di forma, non tocco niente:\n- " + "\n- ".join(errori))
     if chat.count("\n---\n") != 3:
         sys.exit(id + ": gia' inserita o struttura diversa, non tocco niente.")
     taglio = chat.rindex("\n---\n")
@@ -204,6 +230,7 @@ def main():
     ap.add_argument("id", nargs="*")
     ap.add_argument("--tutte", action="store_true")
     ap.add_argument("--inserisci", action="store_true")
+    ap.add_argument("--controlla", action="store_true", help="controlla la forma delle bozze senza inserirle")
     ap.add_argument("--rifai", action="store_true", help="con --tutte, rifa' anche le bozze gia' valide")
     ap.add_argument("--modello")
     ap.add_argument("--temperatura", type=float, default=0.8)
@@ -211,13 +238,19 @@ def main():
     a = ap.parse_args()
     brief = sezioni((RADICE / "docs/nsfw/brief/sexting.md").read_text(encoding="utf-8").replace("\r\n", "\n"))
     ids = [k for k in brief if re.search(r"_d\d+$", k)] if a.tutte else a.id
-    if a.tutte and not a.inserisci and not a.rifai:
+    if a.tutte and not a.inserisci and not a.controlla and not a.rifai:
         ids = [i for i in ids if not (BOZZE / (i + ".txt")).exists()]
     if not ids:
         ap.error("indica una chat (per esempio ex_d1) oppure --tutte")
     for id in ids:
         if id not in brief:
             sys.exit("Nessuna scaletta per " + id)
+    if a.controlla:
+        for id in ids:
+            f = BOZZE / (id + ".txt")
+            errori = controlla_forma(pulisci(f.read_text(encoding="utf-8"))) if f.exists() else ["manca il file"]
+            print("%s: %s" % (id, "a posto" if not errori else "\n  - " + "\n  - ".join(errori)))
+        return
     if a.inserisci:
         for id in ids:
             inserisci(id)
