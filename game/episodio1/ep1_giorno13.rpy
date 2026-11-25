@@ -777,11 +777,27 @@ init python:
         renpy.pause(durata, hard=True)
         renpy.hide_screen("battuta_tempo")
 
+## L'epilogo si può saltare (Jody, 25/11): un pulsante discreto, sempre visibile.
+## Va mostrato dopo inizio_retroscena e tolto prima di fine_retroscena, perché il
+## salto dentro quelle chiamate lascerebbe il ritorno nel punto sbagliato.
+screen salta_epilogo():
+    zorder 70
+    textbutton "Skip epilogue":
+        xalign 0.98 ypos 30
+        padding (24, 12)
+        background Solid("#00000080")
+        hover_background Solid("#000000d0")
+        text_size 26
+        text_color "#d9c8d0"
+        text_hover_color "#ffffff"
+        action Jump("ep1_d13_montaggio_fine")
+
 label ep1_d13_montaggio:
     $ luogo_corrente = ""
     scene bg nero with fade
     $ musica("chiusura_ep1")
     call inizio_retroscena
+    show screen salta_epilogo
     $ quadro("Sara in bed in the dark, her phone on her chest, smiling to herself, Josh asleep beside her", "images/cg/ep1/d13_m01_sara.webp", "destra")
     $ renpy.pause(8.0, hard=True)
     $ quadro("Howard's hand in the yellow lamplight, holding a pair of pale pink lace panties, the drawer open, the brass key beside it", "images/cg/ep1/d13_m02_howard.webp", "sinistra")
@@ -811,6 +827,13 @@ label ep1_d13_montaggio:
     $ battuta_montaggio("Very.", 3.0, "Magnus", "#d4b483")
     $ battuta_montaggio("Daniel smiles, pleased with himself. He thinks it's a compliment to his taste.", 5.0)
     $ battuta_montaggio("It doesn't occur to him, not even for a second, that it might not be about him at all.", 6.5)
+
+label ep1_d13_montaggio_fine:
+    hide screen salta_epilogo
+    hide screen battuta_tempo
+    ## Le note del Diario valgono anche per chi salta (chi ha visto tutto non le ripete).
+    $ retroscena("editore", "Magnus keeps an old photo of a young woman who looks a lot like Sara.")
+    $ retroscena("editore", "The woman with the silver bob asked him: «Is it her?»")
     $ retroscena("daniel", "He thinks Magnus was complimenting him. He doesn't see his old friend as a rival.")
     call fine_retroscena
     $ via_cg()

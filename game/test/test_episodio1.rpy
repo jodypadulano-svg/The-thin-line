@@ -57,6 +57,27 @@ testsuite episodio1:
         click "Barbara"
         click "Sara"
 
+## Il pulsante «Skip epilogue» salta il montaggio e tiene le note del Diario (pochi secondi).
+## Lancia con:  ... test epilogo
+label test_epilogo:
+    call ep1_d13_montaggio
+    $ segna("test_epilogo_finito")
+    pause
+    return
+
+testsuite epilogo:
+    testcase salta:
+        $ debug_azzera_stato()
+        $ segna("test_epilogo_finito", False)
+        run Jump("test_epilogo")
+        advance until screen "salta_epilogo" timeout 15.0
+        pause 2.0
+        click "Skip epilogue"
+        advance until eval fatto("test_epilogo_finito") timeout 15.0
+        assert eval not in_retroscena
+        assert eval not renpy.get_screen("salta_epilogo")
+        assert eval len(percorso("editore").sai_tu) == 2 and len(percorso("daniel").sai_tu) == 1
+
 ## Foto del Diario per controllo a vista (non parte con la suite globale).
 ## Lancia con:  ... test foto --enable-all --overwrite-screenshots
 testsuite foto:
