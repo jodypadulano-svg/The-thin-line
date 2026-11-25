@@ -11,6 +11,8 @@ init python:
     discorso("capa_c3", "capa", COMPLICI, flirt=True)
     discorso("capa_d1", "capa", INTIMI, flirt=True)
     discorso("capa_d2", "capa", INTIMI, flirt=True)
+    discorso("capa_n1", "capa", COMPLICI, flirt=True, ricambiato=False)
+    discorso("capa_n2", "capa", INTIMI, flirt=True, ricambiato=False)
 
 
 ## --- The website portrait
@@ -1347,6 +1349,246 @@ label chat_capa_d2_3:
             return
         "[telefono_minuti_uscita]" if telefono_minuti_attivo():
             $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_d2_3_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+
+## --- Non ricambiato: le scale
+
+label chat_capa_n1:
+    label tel_chat_capa_n1_1:
+    if telefono_minuti_blocco("tel_chat_capa_n1_1", "invia", 1):
+        return
+    $ msg("sara", "You smelled wonderful today. I've been meaning to say.")
+    return
+
+label chat_capa_n1_1:
+    label tel_chat_capa_n1_1_1:
+    if telefono_minuti_blocco("tel_chat_capa_n1_1_1", "ricevi", 1):
+        return
+    $ msg("capa", "I know. It costs a great deal. Who put you up to this?")
+    label tel_chat_capa_n1_1_2:
+    if telefono_minuti_blocco("tel_chat_capa_n1_1_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«Nobody. I just noticed.»":
+            label tel_chat_capa_n1_1_3:
+            if telefono_minuti_blocco("tel_chat_capa_n1_1_3", "invia", 1):
+                return
+            $ msg("sara", "Nobody. I just noticed.")
+            $ caldo()
+            label tel_chat_capa_n1_1_4:
+            if telefono_minuti_blocco("tel_chat_capa_n1_1_4", "ricevi", 1):
+                return
+            $ msg("capa", "How refreshing. People generally notice when they want a holiday.")
+        "«I shouldn't have said that.»":
+            label tel_chat_capa_n1_1_5:
+            if telefono_minuti_blocco("tel_chat_capa_n1_1_5", "invia", 1):
+                return
+            $ msg("sara", "I shouldn't have said that.")
+            label tel_chat_capa_n1_1_6:
+            if telefono_minuti_blocco("tel_chat_capa_n1_1_6", "ricevi", 1):
+                return
+            $ msg("capa", "Nonsense. It's the first thing anyone's said to me all day without a spreadsheet.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n1_1_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n1_1_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_capa_n1_2:
+    label tel_chat_capa_n1_2_1:
+    if telefono_minuti_blocco("tel_chat_capa_n1_2_1", "ricevi", 1):
+        return
+    $ msg("capa", "Let's be clear, darling. I'm not offended, and I'm not flattered. I'm interested. It's rarer.")
+    label tel_chat_capa_n1_2_2:
+    if telefono_minuti_blocco("tel_chat_capa_n1_2_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«Interested in what?»":
+            label tel_chat_capa_n1_2_3:
+            if telefono_minuti_blocco("tel_chat_capa_n1_2_3", "invia", 1):
+                return
+            $ msg("sara", "Interested in what?")
+            $ caldo()
+            label tel_chat_capa_n1_2_4:
+            if telefono_minuti_blocco("tel_chat_capa_n1_2_4", "ricevi", 1):
+                return
+            $ msg("capa", "In whether you'll say it again when I'm looking at you.")
+        "«I'll stop.»":
+            label tel_chat_capa_n1_2_5:
+            if telefono_minuti_blocco("tel_chat_capa_n1_2_5", "invia", 1):
+                return
+            $ msg("sara", "I'll stop.")
+            label tel_chat_capa_n1_2_6:
+            if telefono_minuti_blocco("tel_chat_capa_n1_2_6", "ricevi", 1):
+                return
+            $ msg("capa", "I didn't ask you to stop. I asked you nothing at all.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n1_2_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n1_2_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_capa_n1_3:
+    label tel_chat_capa_n1_3_1:
+    if telefono_minuti_blocco("tel_chat_capa_n1_3_1", "ricevi", 1):
+        return
+    $ msg("capa", "I won't help you. I never do. People ought to find their own way up the stairs.")
+    label tel_chat_capa_n1_3_2:
+    if telefono_minuti_blocco("tel_chat_capa_n1_3_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«Then I'll find it.»":
+            label tel_chat_capa_n1_3_3:
+            if telefono_minuti_blocco("tel_chat_capa_n1_3_3", "invia", 1):
+                return
+            $ msg("sara", "Then I'll find it.")
+            label tel_chat_capa_n1_3_4:
+            if telefono_minuti_blocco("tel_chat_capa_n1_3_4", "ricevi", 1):
+                return
+            $ msg("capa", "Good. Mind the carpet. Back to work.")
+        "«I'm not sure I'm on any stairs.»":
+            label tel_chat_capa_n1_3_5:
+            if telefono_minuti_blocco("tel_chat_capa_n1_3_5", "invia", 1):
+                return
+            $ msg("sara", "I'm not sure I'm on any stairs.")
+            label tel_chat_capa_n1_3_6:
+            if telefono_minuti_blocco("tel_chat_capa_n1_3_6", "ricevi", 1):
+                return
+            $ msg("capa", "You're on the third, darling. I can hear you.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n1_3_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n1_3_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+
+## --- Non ricambiato: in archivio
+
+label chat_capa_n2:
+    label tel_chat_capa_n2_1:
+    if telefono_minuti_blocco("tel_chat_capa_n2_1", "invia", 1):
+        return
+    $ msg("sara", "I keep thinking about you kissing me.")
+    return
+
+label chat_capa_n2_1:
+    label tel_chat_capa_n2_1_1:
+    if telefono_minuti_blocco("tel_chat_capa_n2_1_1", "ricevi", 1):
+        return
+    $ msg("capa", "Do you? I've had a lunch and two lawyers since.")
+    label tel_chat_capa_n2_1_2:
+    if telefono_minuti_blocco("tel_chat_capa_n2_1_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«That's not an answer.»":
+            label tel_chat_capa_n2_1_3:
+            if telefono_minuti_blocco("tel_chat_capa_n2_1_3", "invia", 1):
+                return
+            $ msg("sara", "That's not an answer.")
+            $ caldo()
+            label tel_chat_capa_n2_1_4:
+            if telefono_minuti_blocco("tel_chat_capa_n2_1_4", "ricevi", 1):
+                return
+            $ msg("capa", "No. It's an agenda.")
+        "«Had you forgotten?»":
+            label tel_chat_capa_n2_1_5:
+            if telefono_minuti_blocco("tel_chat_capa_n2_1_5", "invia", 1):
+                return
+            $ msg("sara", "Had you forgotten?")
+            label tel_chat_capa_n2_1_6:
+            if telefono_minuti_blocco("tel_chat_capa_n2_1_6", "ricevi", 1):
+                return
+            $ msg("capa", "I forget nothing. I file it.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n2_1_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n2_1_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_capa_n2_2:
+    label tel_chat_capa_n2_2_1:
+    if telefono_minuti_blocco("tel_chat_capa_n2_2_1", "ricevi", 1):
+        return
+    $ msg("capa", "It was a signature, Sara. I kissed you as one blots a page.")
+    label tel_chat_capa_n2_2_2:
+    if telefono_minuti_blocco("tel_chat_capa_n2_2_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«It didn't feel like blotting.»":
+            label tel_chat_capa_n2_2_3:
+            if telefono_minuti_blocco("tel_chat_capa_n2_2_3", "invia", 1):
+                return
+            $ msg("sara", "It didn't feel like blotting.")
+            $ caldo()
+            label tel_chat_capa_n2_2_4:
+            if telefono_minuti_blocco("tel_chat_capa_n2_2_4", "ricevi", 1):
+                return
+            $ msg("capa", "No. ...It ran a little, at the edges.")
+        "«I see.»":
+            label tel_chat_capa_n2_2_5:
+            if telefono_minuti_blocco("tel_chat_capa_n2_2_5", "invia", 1):
+                return
+            $ msg("sara", "I see.")
+            label tel_chat_capa_n2_2_6:
+            if telefono_minuti_blocco("tel_chat_capa_n2_2_6", "ricevi", 1):
+                return
+            $ msg("capa", "Don't sulk. You do it too well, and I've a meeting.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n2_2_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n2_2_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_capa_n2_3:
+    label tel_chat_capa_n2_3_1:
+    if telefono_minuti_blocco("tel_chat_capa_n2_3_1", "ricevi", 1):
+        return
+    $ msg("capa", "If you want something from me, bring it in person and shut the door behind you. I don't do it by post.")
+    label tel_chat_capa_n2_3_2:
+    if telefono_minuti_blocco("tel_chat_capa_n2_3_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«I'll come.»":
+            label tel_chat_capa_n2_3_3:
+            if telefono_minuti_blocco("tel_chat_capa_n2_3_3", "invia", 1):
+                return
+            $ msg("sara", "I'll come.")
+            label tel_chat_capa_n2_3_4:
+            if telefono_minuti_blocco("tel_chat_capa_n2_3_4", "ricevi", 1):
+                return
+            $ msg("capa", "We'll see. Chin up, darling.")
+        "«And if I'm not brave enough?»":
+            label tel_chat_capa_n2_3_5:
+            if telefono_minuti_blocco("tel_chat_capa_n2_3_5", "invia", 1):
+                return
+            $ msg("sara", "And if I'm not brave enough?")
+            label tel_chat_capa_n2_3_6:
+            if telefono_minuti_blocco("tel_chat_capa_n2_3_6", "ricevi", 1):
+                return
+            $ msg("capa", "Then send me another of these. I find I rather like the post.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n2_3_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_capa_n2_3_2"
             $ telefono_minuti_chiudi = True
             return
     return

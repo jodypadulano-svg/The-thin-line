@@ -8,6 +8,8 @@ init python:
     discorso("editore_c2", "editore", COMPLICI, flirt=True)
     discorso("editore_d1", "editore", INTIMI, flirt=True)
     discorso("editore_d2", "editore", INTIMI, flirt=True)
+    discorso("editore_n1", "editore", COMPLICI, flirt=True, ricambiato=False)
+    discorso("editore_n2", "editore", INTIMI, flirt=True, ricambiato=False)
 
 
 ## --- Your card
@@ -942,6 +944,255 @@ label chat_editore_d2_3:
             return
         "[telefono_minuti_uscita]" if telefono_minuti_attivo():
             $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_d2_3_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+
+## --- Non ricambiato: una virgola
+
+label chat_editore_n1:
+    label tel_chat_editore_n1_1:
+    if telefono_minuti_blocco("tel_chat_editore_n1_1", "invia", 1):
+        return
+    $ msg("sara", "Has anyone ever told you that you've got a beautiful voice?")
+    return
+
+label chat_editore_n1_1:
+    label tel_chat_editore_n1_1_1:
+    if telefono_minuti_blocco("tel_chat_editore_n1_1_1", "ricevi", 1):
+        return
+    $ msg("editore", "Several people, and one of them was a surgeon holding a knife. What would you like it to say? M.")
+    label tel_chat_editore_n1_1_2:
+    if telefono_minuti_blocco("tel_chat_editore_n1_1_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«Nothing. I just wanted to tell you.»":
+            label tel_chat_editore_n1_1_3:
+            if telefono_minuti_blocco("tel_chat_editore_n1_1_3", "invia", 1):
+                return
+            $ msg("sara", "Nothing. I just wanted to tell you.")
+            $ caldo()
+            label tel_chat_editore_n1_1_4:
+            if telefono_minuti_blocco("tel_chat_editore_n1_1_4", "ricevi", 1):
+                return
+            $ msg("editore", "Then I have been told, and I shall carry it about all day, like a flower in a book. M.")
+        "«Anything.»":
+            label tel_chat_editore_n1_1_5:
+            if telefono_minuti_blocco("tel_chat_editore_n1_1_5", "invia", 1):
+                return
+            $ msg("sara", "Anything.")
+            label tel_chat_editore_n1_1_6:
+            if telefono_minuti_blocco("tel_chat_editore_n1_1_6", "ricevi", 1):
+                return
+            $ msg("editore", "A dangerous commission. I decline it with regret. M.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n1_1_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n1_1_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_editore_n1_2:
+    label tel_chat_editore_n1_2_1:
+    if telefono_minuti_blocco("tel_chat_editore_n1_2_1", "ricevi", 1):
+        return
+    $ msg("editore", "You are wondering whether I have understood. I have. I am merely in no hurry to be the one who did.")
+    label tel_chat_editore_n1_2_2:
+    if telefono_minuti_blocco("tel_chat_editore_n1_2_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«Is that a no?»":
+            label tel_chat_editore_n1_2_3:
+            if telefono_minuti_blocco("tel_chat_editore_n1_2_3", "invia", 1):
+                return
+            $ msg("sara", "Is that a no?")
+            $ caldo()
+            label tel_chat_editore_n1_2_4:
+            if telefono_minuti_blocco("tel_chat_editore_n1_2_4", "ricevi", 1):
+                return
+            $ msg("editore", "It is a comma. M.")
+        "«Now I'm embarrassed.»":
+            label tel_chat_editore_n1_2_5:
+            if telefono_minuti_blocco("tel_chat_editore_n1_2_5", "invia", 1):
+                return
+            $ msg("sara", "Now I'm embarrassed.")
+            label tel_chat_editore_n1_2_6:
+            if telefono_minuti_blocco("tel_chat_editore_n1_2_6", "ricevi", 1):
+                return
+            $ msg("editore", "Pray do not be. It is the nicest thing to have happened since the post. M.")
+        "«I shouldn't have said it.»":
+            label tel_chat_editore_n1_2_7:
+            if telefono_minuti_blocco("tel_chat_editore_n1_2_7", "invia", 1):
+                return
+            $ msg("sara", "I shouldn't have said it.")
+            label tel_chat_editore_n1_2_8:
+            if telefono_minuti_blocco("tel_chat_editore_n1_2_8", "ricevi", 1):
+                return
+            $ msg("editore", "On the contrary. One should always have said it. What follows is another matter. M.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n1_2_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n1_2_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_editore_n1_3:
+    label tel_chat_editore_n1_3_1:
+    if telefono_minuti_blocco("tel_chat_editore_n1_3_1", "ricevi", 1):
+        return
+    $ msg("editore", "I shall be exactly the same tomorrow. You will find that either restful or maddening.")
+    label tel_chat_editore_n1_3_2:
+    if telefono_minuti_blocco("tel_chat_editore_n1_3_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«Both, I think.»":
+            label tel_chat_editore_n1_3_3:
+            if telefono_minuti_blocco("tel_chat_editore_n1_3_3", "invia", 1):
+                return
+            $ msg("sara", "Both, I think.")
+            label tel_chat_editore_n1_3_4:
+            if telefono_minuti_blocco("tel_chat_editore_n1_3_4", "ricevi", 1):
+                return
+            $ msg("editore", "Then you are reading me correctly. Good night. M.")
+        "«I'll get used to it.»":
+            label tel_chat_editore_n1_3_5:
+            if telefono_minuti_blocco("tel_chat_editore_n1_3_5", "invia", 1):
+                return
+            $ msg("sara", "I'll get used to it.")
+            label tel_chat_editore_n1_3_6:
+            if telefono_minuti_blocco("tel_chat_editore_n1_3_6", "ricevi", 1):
+                return
+            $ msg("editore", "I do hope not entirely. Good night. M.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n1_3_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n1_3_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+
+## --- Non ricambiato: camomilla
+
+label chat_editore_n2:
+    label tel_chat_editore_n2_1:
+    if telefono_minuti_blocco("tel_chat_editore_n2_1", "invia", 1):
+        return
+    $ msg("sara", "If I told you what I was thinking, would you blush?")
+    return
+
+label chat_editore_n2_1:
+    label tel_chat_editore_n2_1_1:
+    if telefono_minuti_blocco("tel_chat_editore_n2_1_1", "ricevi", 1):
+        return
+    $ msg("editore", "I have not blushed in forty years, and that was the heat. You may try. M.")
+    label tel_chat_editore_n2_1_2:
+    if telefono_minuti_blocco("tel_chat_editore_n2_1_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«I was thinking about your hands, turning a page.»":
+            label tel_chat_editore_n2_1_3:
+            if telefono_minuti_blocco("tel_chat_editore_n2_1_3", "invia", 1):
+                return
+            $ msg("sara", "I was thinking about your hands, turning a page.")
+            $ caldo()
+            label tel_chat_editore_n2_1_4:
+            if telefono_minuti_blocco("tel_chat_editore_n2_1_4", "ricevi", 1):
+                return
+            $ msg("editore", "They have been informed. They are pretending not to care. M.")
+        "«Perhaps I'd better not.»":
+            label tel_chat_editore_n2_1_5:
+            if telefono_minuti_blocco("tel_chat_editore_n2_1_5", "invia", 1):
+                return
+            $ msg("sara", "Perhaps I'd better not.")
+            label tel_chat_editore_n2_1_6:
+            if telefono_minuti_blocco("tel_chat_editore_n2_1_6", "ricevi", 1):
+                return
+            $ msg("editore", "As you like. I enjoy a locked drawer almost as much. M.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n2_1_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n2_1_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_editore_n2_2:
+    label tel_chat_editore_n2_2_1:
+    if telefono_minuti_blocco("tel_chat_editore_n2_2_1", "ricevi", 1):
+        return
+    $ msg("editore", "Tonight I am an old man with a cup of camomile. I should make you a poor accomplice.")
+    label tel_chat_editore_n2_2_2:
+    if telefono_minuti_blocco("tel_chat_editore_n2_2_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«I don't mind camomile.»":
+            label tel_chat_editore_n2_2_3:
+            if telefono_minuti_blocco("tel_chat_editore_n2_2_3", "invia", 1):
+                return
+            $ msg("sara", "I don't mind camomile.")
+            $ caldo()
+            label tel_chat_editore_n2_2_4:
+            if telefono_minuti_blocco("tel_chat_editore_n2_2_4", "ricevi", 1):
+                return
+            $ msg("editore", "Then drink yours, and I shall drink mine, and we shall say nothing. You would be surprised what that does. M.")
+        "«Another night, then.»":
+            label tel_chat_editore_n2_2_5:
+            if telefono_minuti_blocco("tel_chat_editore_n2_2_5", "invia", 1):
+                return
+            $ msg("sara", "Another night, then.")
+            label tel_chat_editore_n2_2_6:
+            if telefono_minuti_blocco("tel_chat_editore_n2_2_6", "ricevi", 1):
+                return
+            $ msg("editore", "The very words I should have chosen. M.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n2_2_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n2_2_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_editore_n2_3:
+    label tel_chat_editore_n2_3_1:
+    if telefono_minuti_blocco("tel_chat_editore_n2_3_1", "ricevi", 1):
+        return
+    $ msg("editore", "Keep the thought. Do not write it down yet. They improve when they have been slept on.")
+    label tel_chat_editore_n2_3_2:
+    if telefono_minuti_blocco("tel_chat_editore_n2_3_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«You always make me wait.»":
+            label tel_chat_editore_n2_3_3:
+            if telefono_minuti_blocco("tel_chat_editore_n2_3_3", "invia", 1):
+                return
+            $ msg("sara", "You always make me wait.")
+            label tel_chat_editore_n2_3_4:
+            if telefono_minuti_blocco("tel_chat_editore_n2_3_4", "ricevi", 1):
+                return
+            $ msg("editore", "I make everyone wait. You are the first to do it well. M.")
+        "«Good night, Magnus.»":
+            label tel_chat_editore_n2_3_5:
+            if telefono_minuti_blocco("tel_chat_editore_n2_3_5", "invia", 1):
+                return
+            $ msg("sara", "Good night, Magnus.")
+            label tel_chat_editore_n2_3_6:
+            if telefono_minuti_blocco("tel_chat_editore_n2_3_6", "ricevi", 1):
+                return
+            $ msg("editore", "Good night, my dear. M.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n2_3_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_editore_n2_3_2"
             $ telefono_minuti_chiudi = True
             return
     return

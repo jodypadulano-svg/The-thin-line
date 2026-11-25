@@ -134,3 +134,10 @@ La prima realizzazione (commit `98d7e3a`) è stata **ritirata**: grafica cambiat
 | Barbara | 20% | 4 | giorni di lavoro | niente |
 
 Al massimo due messaggi nuovi per sera, in ordine a sorte; aspettano nella rubrica («New message») e non aprono la chat da soli. I fatti vissuti insieme vengono prima delle chat generiche. Rispondere dà Interest +1. Valori in `ENTRATE` e `SILENZIO` (`game/core/telefono_temporizzato.rpy`). Da fare nelle scene: la battuta di Simon e la freddezza di Barbara al lavoro.
+
+### 12.3 Flirt non ricambiato (25/11)
+Riguarda i Flirt e i Sexting cominciati da Sara, secondo `interesse_altrui`:
+- **Daniel** con Interest sotto il giorno: tre chat proprie (due Flirt, un Sexting). Non rifiuta: non insegue, e dice a Sara come ritrovarlo. Finite quelle, il tipo sparisce finché l'Interest non torna almeno pari al giorno.
+- **Magnus e Barbara** (sereni): il primo Flirt e il primo Sexting sono una chat in cui prendono tempo; dopo si aprono le altre.
+- **Howard, Jacob, Joanie** (alto) e **Simon, Darius** (specchio): sempre ricambiati quando Sara può aprire il tipo.
+Nessuna penalità: le risposte calde danno Interest come nelle altre chat. Id con `_n`, `ricambiato=False`.

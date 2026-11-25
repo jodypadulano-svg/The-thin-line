@@ -10,6 +10,9 @@ init python:
     discorso("daniel_c2", "daniel", COMPLICI, flirt=True)
     discorso("daniel_d1", "daniel", INTIMI, flirt=True)
     discorso("daniel_d2", "daniel", INTIMI, flirt=True)
+    discorso("daniel_n1", "daniel", COMPLICI, flirt=True, ricambiato=False)
+    discorso("daniel_n2", "daniel", COMPLICI, flirt=True, ricambiato=False)
+    discorso("daniel_n3", "daniel", INTIMI, flirt=True, ricambiato=False)
 
 
 ## --- Magnus's card
@@ -1338,6 +1341,395 @@ label chat_daniel_d2_3:
             return
         "[telefono_minuti_uscita]" if telefono_minuti_attivo():
             $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_d2_3_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+
+## --- Non ricambiato: ha perso il filo
+
+label chat_daniel_n1:
+    label tel_chat_daniel_n1_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n1_1", "invia", 1):
+        return
+    $ msg("sara", "I wore the dress with the buttons today. You'd have had something to say.")
+    return
+
+label chat_daniel_n1_1:
+    label tel_chat_daniel_n1_1_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n1_1_1", "ricevi", 1):
+        return
+    $ msg("daniel", "I'm sure it deserved it.")
+    sp "That's all? That's all he's going to say?"
+    label tel_chat_daniel_n1_1_2:
+    if telefono_minuti_blocco("tel_chat_daniel_n1_1_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«You'd normally ask how many buttons.»":
+            label tel_chat_daniel_n1_1_3:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_1_3", "invia", 1):
+                return
+            $ msg("sara", "You'd normally ask how many buttons.")
+            $ caldo()
+            label tel_chat_daniel_n1_1_4:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_1_4", "ricevi", 1):
+                return
+            $ msg("daniel", "Normally I'd have time.")
+        "«You're busy.»":
+            label tel_chat_daniel_n1_1_5:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_1_5", "invia", 1):
+                return
+            $ msg("sara", "You're busy.")
+            label tel_chat_daniel_n1_1_6:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_1_6", "ricevi", 1):
+                return
+            $ msg("daniel", "Quite. How's the book?")
+        "«Have I done something?»":
+            label tel_chat_daniel_n1_1_7:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_1_7", "invia", 1):
+                return
+            $ msg("sara", "Have I done something?")
+            label tel_chat_daniel_n1_1_8:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_1_8", "ricevi", 1):
+                return
+            $ msg("daniel", "No. That's rather it.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n1_1_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n1_1_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_daniel_n1_2:
+    label tel_chat_daniel_n1_2_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n1_2_1", "ricevi", 1):
+        return
+    $ msg("daniel", "I'm not cross, Sara. I don't do cross. I lose the thread, that's all.")
+    label tel_chat_daniel_n1_2_2:
+    if telefono_minuti_blocco("tel_chat_daniel_n1_2_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«Then pick it up again.»":
+            label tel_chat_daniel_n1_2_3:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_2_3", "invia", 1):
+                return
+            $ msg("sara", "Then pick it up again.")
+            $ caldo()
+            label tel_chat_daniel_n1_2_4:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_2_4", "ricevi", 1):
+                return
+            $ msg("daniel", "You're holding the end of it. You have been for a while.")
+        "«I've had a lot on.»":
+            label tel_chat_daniel_n1_2_5:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_2_5", "invia", 1):
+                return
+            $ msg("sara", "I've had a lot on.")
+            label tel_chat_daniel_n1_2_6:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_2_6", "ricevi", 1):
+                return
+            $ msg("daniel", "So has everyone. Some people make room.")
+        "«That's not very fair.»":
+            label tel_chat_daniel_n1_2_7:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_2_7", "invia", 1):
+                return
+            $ msg("sara", "That's not very fair.")
+            label tel_chat_daniel_n1_2_8:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_2_8", "ricevi", 1):
+                return
+            $ msg("daniel", "It isn't. It's only true.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n1_2_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n1_2_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_daniel_n1_3:
+    label tel_chat_daniel_n1_3_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n1_3_1", "ricevi", 1):
+        return
+    $ msg("daniel", "Ask me something you'd like to know. Not something you'd like me to say.")
+    label tel_chat_daniel_n1_3_2:
+    if telefono_minuti_blocco("tel_chat_daniel_n1_3_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«Did you mind, when I went quiet?»":
+            label tel_chat_daniel_n1_3_3:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_3_3", "invia", 1):
+                return
+            $ msg("sara", "Did you mind, when I went quiet?")
+            label tel_chat_daniel_n1_3_4:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_3_4", "ricevi", 1):
+                return
+            $ msg("daniel", "More than I'd planned to. Goodnight, Sara.")
+        "«Do you still want to hear about the book?»":
+            label tel_chat_daniel_n1_3_5:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_3_5", "invia", 1):
+                return
+            $ msg("sara", "Do you still want to hear about the book?")
+            label tel_chat_daniel_n1_3_6:
+            if telefono_minuti_blocco("tel_chat_daniel_n1_3_6", "ricevi", 1):
+                return
+            $ msg("daniel", "That, always. Send me a line of it. Goodnight.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n1_3_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n1_3_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+
+## --- Non ricambiato: non insegue
+
+label chat_daniel_n2:
+    label tel_chat_daniel_n2_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n2_1", "invia", 1):
+        return
+    $ msg("sara", "You used to write first.")
+    return
+
+label chat_daniel_n2_1:
+    label tel_chat_daniel_n2_1_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n2_1_1", "ricevi", 1):
+        return
+    $ msg("daniel", "I used to get answers.")
+    label tel_chat_daniel_n2_1_2:
+    if telefono_minuti_blocco("tel_chat_daniel_n2_1_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«I like it when you write first.»":
+            label tel_chat_daniel_n2_1_3:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_1_3", "invia", 1):
+                return
+            $ msg("sara", "I like it when you write first.")
+            $ caldo()
+            label tel_chat_daniel_n2_1_4:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_1_4", "ricevi", 1):
+                return
+            $ msg("daniel", "Then give me something to write about.")
+        "«I'm writing first now.»":
+            label tel_chat_daniel_n2_1_5:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_1_5", "invia", 1):
+                return
+            $ msg("sara", "I'm writing first now.")
+            label tel_chat_daniel_n2_1_6:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_1_6", "ricevi", 1):
+                return
+            $ msg("daniel", "You are. I've noted the time.")
+        "«Did you count them?»":
+            label tel_chat_daniel_n2_1_7:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_1_7", "invia", 1):
+                return
+            $ msg("sara", "Did you count them?")
+            label tel_chat_daniel_n2_1_8:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_1_8", "ricevi", 1):
+                return
+            $ msg("daniel", "Yes. I shan't tell you the number. It's unflattering to us both.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n2_1_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n2_1_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_daniel_n2_2:
+    label tel_chat_daniel_n2_2_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n2_2_1", "ricevi", 1):
+        return
+    $ msg("daniel", "I don't chase. It ruins the shoes.")
+    label tel_chat_daniel_n2_2_2:
+    if telefono_minuti_blocco("tel_chat_daniel_n2_2_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«What do you do instead?»":
+            label tel_chat_daniel_n2_2_3:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_2_3", "invia", 1):
+                return
+            $ msg("sara", "What do you do instead?")
+            $ caldo()
+            label tel_chat_daniel_n2_2_4:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_2_4", "ricevi", 1):
+                return
+            $ msg("daniel", "I leave a chair out. And then I read.")
+        "«I never asked you to chase me.»":
+            label tel_chat_daniel_n2_2_5:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_2_5", "invia", 1):
+                return
+            $ msg("sara", "I never asked you to chase me.")
+            label tel_chat_daniel_n2_2_6:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_2_6", "ricevi", 1):
+                return
+            $ msg("daniel", "No. You only ever looked round to see whether I was.")
+            sp "I did. I do look round."
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n2_2_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n2_2_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_daniel_n2_3:
+    label tel_chat_daniel_n2_3_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n2_3_1", "ricevi", 1):
+        return
+    $ msg("daniel", "When you want something, come and get it. I'm very easy to find.")
+    label tel_chat_daniel_n2_3_2:
+    if telefono_minuti_blocco("tel_chat_daniel_n2_3_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«I want you to ask me again.»":
+            label tel_chat_daniel_n2_3_3:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_3_3", "invia", 1):
+                return
+            $ msg("sara", "I want you to ask me again.")
+            label tel_chat_daniel_n2_3_4:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_3_4", "ricevi", 1):
+                return
+            $ msg("daniel", "No. But I'd listen, if you did.")
+        "«And if I don't know what I want?»":
+            label tel_chat_daniel_n2_3_5:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_3_5", "invia", 1):
+                return
+            $ msg("sara", "And if I don't know what I want?")
+            label tel_chat_daniel_n2_3_6:
+            if telefono_minuti_blocco("tel_chat_daniel_n2_3_6", "ricevi", 1):
+                return
+            $ msg("daniel", "Then you're not there yet. There's no hurry. I've a great deal to read.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n2_3_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n2_3_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+
+## --- Non ricambiato: l'ora difficile
+
+label chat_daniel_n3:
+    label tel_chat_daniel_n3_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n3_1", "invia", 1):
+        return
+    $ msg("sara", "I'm in bed. I can't sleep.")
+    return
+
+label chat_daniel_n3_1:
+    label tel_chat_daniel_n3_1_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n3_1_1", "ricevi", 1):
+        return
+    $ msg("daniel", "Read something dull. I could send you our quarterly figures.")
+    label tel_chat_daniel_n3_1_2:
+    if telefono_minuti_blocco("tel_chat_daniel_n3_1_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«I wasn't asking for figures.»":
+            label tel_chat_daniel_n3_1_3:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_1_3", "invia", 1):
+                return
+            $ msg("sara", "I wasn't asking for figures.")
+            $ caldo()
+            label tel_chat_daniel_n3_1_4:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_1_4", "ricevi", 1):
+                return
+            $ msg("daniel", "I know what you were asking for.")
+        "«You've gone cold.»":
+            label tel_chat_daniel_n3_1_5:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_1_5", "invia", 1):
+                return
+            $ msg("sara", "You've gone cold.")
+            label tel_chat_daniel_n3_1_6:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_1_6", "ricevi", 1):
+                return
+            $ msg("daniel", "Room temperature. One gets used to being warmed up.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n3_1_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n3_1_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_daniel_n3_2:
+    label tel_chat_daniel_n3_2_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n3_2_1", "ricevi", 1):
+        return
+    $ msg("daniel", "It was very good, Sara. I don't take any of it back.")
+    label tel_chat_daniel_n3_2_2:
+    if telefono_minuti_blocco("tel_chat_daniel_n3_2_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«But?»":
+            label tel_chat_daniel_n3_2_3:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_2_3", "invia", 1):
+                return
+            $ msg("sara", "But?")
+            $ caldo()
+            label tel_chat_daniel_n3_2_4:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_2_4", "ricevi", 1):
+                return
+            $ msg("daniel", "But I won't be the thing you do when he's asleep and you're bored.")
+        "«I'm not bored.»":
+            label tel_chat_daniel_n3_2_5:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_2_5", "invia", 1):
+                return
+            $ msg("sara", "I'm not bored.")
+            label tel_chat_daniel_n3_2_6:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_2_6", "ricevi", 1):
+                return
+            $ msg("daniel", "Then be here when it's light. That's the harder hour.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n3_2_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n3_2_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_daniel_n3_3:
+    label tel_chat_daniel_n3_3_1:
+    if telefono_minuti_blocco("tel_chat_daniel_n3_3_1", "ricevi", 1):
+        return
+    $ msg("daniel", "Go to sleep. I mean it kindly, and I'm not often accused of that.")
+    label tel_chat_daniel_n3_3_2:
+    if telefono_minuti_blocco("tel_chat_daniel_n3_3_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«Tomorrow, then. In daylight.»":
+            label tel_chat_daniel_n3_3_3:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_3_3", "invia", 1):
+                return
+            $ msg("sara", "Tomorrow, then. In daylight.")
+            label tel_chat_daniel_n3_3_4:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_3_4", "ricevi", 1):
+                return
+            $ msg("daniel", "I'll look out for you.")
+        "«Goodnight, Daniel.»":
+            label tel_chat_daniel_n3_3_5:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_3_5", "invia", 1):
+                return
+            $ msg("sara", "Goodnight, Daniel.")
+            label tel_chat_daniel_n3_3_6:
+            if telefono_minuti_blocco("tel_chat_daniel_n3_3_6", "ricevi", 1):
+                return
+            $ msg("daniel", "Goodnight.")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n3_3_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_daniel_n3_3_2"
             $ telefono_minuti_chiudi = True
             return
     return

@@ -250,3 +250,77 @@
 < So am I. I'm in a meeting. They think I like the figures.
 ? Come and see.
 < Friday. Bring nothing you'd mind losing.
+
+# NON RICAMBIATO: Sara flirta mentre il suo Interest è sotto il giorno. Daniel ha smesso di
+# aspettare: non è un rifiuto, è un uomo che non insegue. Si può risalire.
+
+@ daniel_n1 | COMPLICI | Non ricambiato: ha perso il filo
+> I wore the dress with the buttons today. You'd have had something to say.
+---
+< I'm sure it deserved it.
+* That's all? That's all he's going to say?
+? You'd normally ask how many buttons. [caldo]
+< Normally I'd have time.
+? You're busy.
+< Quite. How's the book?
+? Have I done something?
+< No. That's rather it.
+---
+< I'm not cross, Sara. I don't do cross. I lose the thread, that's all.
+? Then pick it up again. [caldo]
+< You're holding the end of it. You have been for a while.
+? I've had a lot on.
+< So has everyone. Some people make room.
+? That's not very fair.
+< It isn't. It's only true.
+---
+< Ask me something you'd like to know. Not something you'd like me to say.
+? Did you mind, when I went quiet?
+< More than I'd planned to. Goodnight, Sara.
+? Do you still want to hear about the book?
+< That, always. Send me a line of it. Goodnight.
+
+@ daniel_n2 | COMPLICI | Non ricambiato: non insegue
+> You used to write first.
+---
+< I used to get answers.
+? I like it when you write first. [caldo]
+< Then give me something to write about.
+? I'm writing first now.
+< You are. I've noted the time.
+? Did you count them?
+< Yes. I shan't tell you the number. It's unflattering to us both.
+---
+< I don't chase. It ruins the shoes.
+? What do you do instead? [caldo]
+< I leave a chair out. And then I read.
+? I never asked you to chase me.
+< No. You only ever looked round to see whether I was.
+* I did. I do look round.
+---
+< When you want something, come and get it. I'm very easy to find.
+? I want you to ask me again.
+< No. But I'd listen, if you did.
+? And if I don't know what I want?
+< Then you're not there yet. There's no hurry. I've a great deal to read.
+
+@ daniel_n3 | INTIMI | Non ricambiato: l'ora difficile
+> I'm in bed. I can't sleep.
+---
+< Read something dull. I could send you our quarterly figures.
+? I wasn't asking for figures. [caldo]
+< I know what you were asking for.
+? You've gone cold.
+< Room temperature. One gets used to being warmed up.
+---
+< It was very good, Sara. I don't take any of it back.
+? But? [caldo]
+< But I won't be the thing you do when he's asleep and you're bored.
+? I'm not bored.
+< Then be here when it's light. That's the harder hour.
+---
+< Go to sleep. I mean it kindly, and I'm not often accused of that.
+? Tomorrow, then. In daylight.
+< I'll look out for you.
+? Goodnight, Daniel.
+< Goodnight.

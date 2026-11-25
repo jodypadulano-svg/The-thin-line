@@ -5,7 +5,8 @@ Uso, dalla cartella del gioco:  python tools/telefono/componi.py howard
 Formato del testo:
   @ howard_t1 | CONOSCENTI | The sauce stain | fatto('...')   id, gradino, titolo, condizione
                                         COMPLICI = chat di Flirt, INTIMI = Sexting: si scelgono
-                                        per tipo e il titolo è solo un promemoria
+                                        per tipo e il titolo è solo un promemoria.
+                                        id con _n (daniel_n1) = chat non ricambiata
   > messaggio con cui Sara apre la chat
   < messaggio in entrata (se scrive per primo l'altro; facoltativo, prima della prima parte)
   >> come risponde Sara a quel messaggio: deve portare alla prima parte come l'apertura >
@@ -108,6 +109,8 @@ def componi(chiave, chat):
     for c in chat:
         se = ', se="%s"' % c["se"] if c["se"] else ""
         come = ", flirt=True" if c["gradino"] in ("COMPLICI", "INTIMI") else ', argomento="%s"' % q(c["titolo"])
+        if re.search(r"_n\d+$", c["id"]):
+            come += ", ricambiato=False"
         out.append('    discorso("%s", "%s", %s%s%s)' % (c["id"], chiave, c["gradino"], come, se))
     for c in chat:
         out += ["", "", "## --- %s" % c["titolo"]]

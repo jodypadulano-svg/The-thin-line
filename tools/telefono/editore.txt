@@ -170,3 +170,50 @@
 < It was intended as a courtesy. The two are often confused. M.
 ? Good. Because I expect a great deal.
 < Then I shall try to live up to the edition. Good night. M.
+
+# NON RICAMBIATO: la prima volta che Sara ci prova. Magnus non dice né sì né no: aspetta.
+# Dopo n1 si aprono i Flirt, dopo n2 i Sexting.
+
+@ editore_n1 | COMPLICI | Non ricambiato: una virgola
+> Has anyone ever told you that you've got a beautiful voice?
+---
+< Several people, and one of them was a surgeon holding a knife. What would you like it to say? M.
+? Nothing. I just wanted to tell you. [caldo]
+< Then I have been told, and I shall carry it about all day, like a flower in a book. M.
+? Anything.
+< A dangerous commission. I decline it with regret. M.
+---
+< You are wondering whether I have understood. I have. I am merely in no hurry to be the one who did.
+? Is that a no? [caldo]
+< It is a comma. M.
+? Now I'm embarrassed.
+< Pray do not be. It is the nicest thing to have happened since the post. M.
+? I shouldn't have said it.
+< On the contrary. One should always have said it. What follows is another matter. M.
+---
+< I shall be exactly the same tomorrow. You will find that either restful or maddening.
+? Both, I think.
+< Then you are reading me correctly. Good night. M.
+? I'll get used to it.
+< I do hope not entirely. Good night. M.
+
+@ editore_n2 | INTIMI | Non ricambiato: camomilla
+> If I told you what I was thinking, would you blush?
+---
+< I have not blushed in forty years, and that was the heat. You may try. M.
+? I was thinking about your hands, turning a page. [caldo]
+< They have been informed. They are pretending not to care. M.
+? Perhaps I'd better not.
+< As you like. I enjoy a locked drawer almost as much. M.
+---
+< Tonight I am an old man with a cup of camomile. I should make you a poor accomplice.
+? I don't mind camomile. [caldo]
+< Then drink yours, and I shall drink mine, and we shall say nothing. You would be surprised what that does. M.
+? Another night, then.
+< The very words I should have chosen. M.
+---
+< Keep the thought. Do not write it down yet. They improve when they have been slept on.
+? You always make me wait.
+< I make everyone wait. You are the first to do it well. M.
+? Good night, Magnus.
+< Good night, my dear. M.

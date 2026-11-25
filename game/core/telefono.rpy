@@ -79,11 +79,12 @@ init -5 python:
     class Discorso(object):
         """Una conversazione a più scambi (11.1). Vive nel registro DISCORSI,
         costruito all'avvio: nei salvataggi ci finiscono solo gli id."""
-        def __init__(self, id, chiave, gradino, se, flirt, prova, scrive_lui=False, orario=None, tipo=None, argomento=None, scade=None):
+        def __init__(self, id, chiave, gradino, se, flirt, prova, scrive_lui=False, orario=None, tipo=None, argomento=None, scade=None, ricambiato=True):
             self.scrive_lui = scrive_lui
             self.tipo = tipo or TIPO_DI_GRADINO[gradino]
             self.argomento = argomento
             self.scade = scade
+            self.ricambiato = ricambiato
             self.id = id
             self.chiave = chiave
             self.gradino = gradino
@@ -99,7 +100,7 @@ init -5 python:
     TIPO_DI_GRADINO = {ESTRANEI: "Casual", CONOSCENTI: "Casual", CONFIDENZA: "Friendly",
                        COMPLICI: "Flirt", INTIMI: "Sexting"}
 
-    def discorso(id, chiave, gradino=CONOSCENTI, se=None, flirt=False, prova=False, scrive_lui=False, orario=None, tipo=None, argomento=None, scade=None):
+    def discorso(id, chiave, gradino=CONOSCENTI, se=None, flirt=False, prova=False, scrive_lui=False, orario=None, tipo=None, argomento=None, scade=None, ricambiato=True):
         """Registra un discorso. se = condizione come testo, es. "fatto('ep1_festa')".
         orario = (inizio, fine esclusa), in minuti da mezzanotte, anche a cavallo della notte.
         scrive_lui=True: può aprirlo lui con un messaggio in entrata anche sotto B
@@ -107,8 +108,9 @@ init -5 python:
         tipo = "Casual", "Friendly", "Flirt" o "Sexting" (se no lo dice il gradino).
         argomento = titolo: la chat è un argomento specifico, si sceglie per nome.
         scade = condizione che chiude per sempre la chat rimasta aperta: un fatto vissuto di
-        persona (es. "fatto('ep2_d17_ritiro_howard')") o il tempo ("aperta_da >= 1", in giorni)."""
-        DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova, scrive_lui, orario, tipo, argomento, scade)
+        persona (es. "fatto('ep2_d17_ritiro_howard')") o il tempo ("aperta_da >= 1", in giorni).
+        ricambiato=False: come reagisce a un Flirt o Sexting di Sara che non ricambia."""
+        DISCORSI[id] = Discorso(id, chiave, gradino, se, flirt, prova, scrive_lui, orario, tipo, argomento, scade, ricambiato)
 
     ## Discorsi segnaposto per la prova degli sviluppatori (non escono nel gioco vero).
     _SEGNAPOSTO = {ESTRANEI: 1, CONOSCENTI: 3, CONFIDENZA: 2, COMPLICI: 2, INTIMI: 1}
@@ -145,6 +147,21 @@ init -5 python:
             return fatto("bacio_" + k) or (k == "capa" and store.sara_stagista)
         return True
 
+    def risposta_giusta(d):
+        """Flirt e Sexting cominciati da Sara: ricambiati o no? Daniel sotto il giorno non
+        ricambia. Magnus e Barbara, sereni, la prima volta prendono tempo: una chat non
+        ricambiata per tipo, poi si aprono le altre. Con gli altri è sempre ricambiata."""
+        if d.tipo not in ("Flirt", "Sexting"):
+            return True
+        interesse = interesse_altrui(d.chiave)
+        if interesse == "spento":
+            return not d.ricambiato
+        if interesse == "sereno":
+            provato = any(not x.ricambiato and x.chiave == d.chiave and x.tipo == d.tipo and x.id in store.discorsi_fatti
+                          for x in DISCORSI.values())
+            return d.ricambiato == provato
+        return d.ricambiato
+
     def discorso_disponibile(d, scrive_altro=False):
         """scrive_altro: chi scrive per primo non è legato alle soglie di Sara."""
         k = d.chiave
@@ -157,7 +174,7 @@ init -5 python:
         if d.argomento or scrive_altro:
             if gradino(k) < d.gradino:
                 return False
-        elif not tipo_aperto(k, d.tipo):
+        elif not tipo_aperto(k, d.tipo) or not risposta_giusta(d):
             return False
         if d.flirt and store.freno.get(k, -99) > store.giorno:
             return False
@@ -185,7 +202,7 @@ init -5 python:
     def discorsi_in_entrata(chiave):
         """I discorsi che lui o lei può aprire scrivendo per primo: tutti da B in su,
         sotto B solo quelli segnati scrive_lui."""
-        tutti = [d for _, d in sorted(DISCORSI.items()) if d.chiave == chiave and discorso_disponibile(d, scrive_altro=True) and prende_iniziativa(d)]
+        tutti = [d for _, d in sorted(DISCORSI.items()) if d.chiave == chiave and d.ricambiato and discorso_disponibile(d, scrive_altro=True) and prende_iniziativa(d)]
         if gradino(chiave) >= CONFIDENZA:
             return tutti
         ## Sotto Confidenza scrivono solo per un fatto vissuto insieme.

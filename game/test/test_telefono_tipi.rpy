@@ -7,8 +7,13 @@
 label test_telefono_tipi:
     call telefono_minuti_sessione(22 * 60, 23 * 60, "Go to bed")
     $ segna("test_telefono_tipi_finito")
+    ## Mai «return»: un clic di troppo farebbe tornare al menu principale, che azzera lo
+    ## stato proprio mentre il caso dopo lo sta preparando.
+    jump test_telefono_fermo
+
+label test_telefono_fermo:
     pause
-    return
+    jump test_telefono_fermo
 
 init python:
     _ttipi_scelte = []      # scelte del telefono, per inizio di frase
@@ -75,7 +80,11 @@ init python:
         _ttipi_prepara([d.argomento or d.tipo, "«"], risposta)
         store._ttipi_k = d.chiave
         store.rubrica = [d.chiave]
-        interest(d.chiave, 30)
+        ## Le non ricambiate: Daniel sotto il giorno (16 al giorno 18); Magnus e Barbara al
+        ## primo tentativo. Per le altre, il primo tentativo c'è già stato.
+        interest(d.chiave, 30 if d.ricambiato else 16)
+        if d.ricambiato:
+            store.discorsi_fatti.extend(i for i, x in DISCORSI.items() if not x.ricambiato and x.chiave == d.chiave)
         segna("bacio_" + d.chiave)
         if not d.argomento:
             store.anteprime_chat[(d.chiave, d.tipo)] = (store.giorno, id)
@@ -135,7 +144,7 @@ testsuite telefono_tipi:
     ## fondo, con la prima, la seconda e la terza risposta. Qui si gioca il testo: attese a
     ## zero e condizioni di trama tolte.
     testcase chat_nuove:
-        parameter chat = ["howard_t1", "howard_t2", "howard_t3", "howard_t4", "howard_t5", "howard_t6", "howard_t7", "howard_t8", "howard_t9", "howard_t10", "howard_t11", "howard_t12", "howard_t13", "howard_c1", "howard_c2", "howard_c3", "howard_d1", "howard_d2", "amica_t1", "amica_t2", "amica_t3", "amica_t4", "amica_t5", "amica_t6", "amica_t7", "amica_c1", "amica_c2", "amica_c3", "amica_d1", "amica_d2", "ex_t1", "ex_t2", "ex_t3", "ex_t4", "ex_c1", "ex_c2", "ex_d1", "ex_d2", "daniel_t1", "daniel_t2", "daniel_t3", "daniel_t4", "daniel_t5", "daniel_c1", "daniel_c2", "daniel_d1", "daniel_d2", "simon_t1", "simon_t2", "simon_t3", "simon_t4", "simon_t5", "simon_c1", "simon_c2", "simon_c3", "simon_d1", "simon_d2", "amico_t1", "amico_t2", "amico_t3", "amico_c1", "amico_c2", "amico_c3", "amico_d1", "amico_d2", "editore_t1", "editore_t2", "editore_t3", "editore_c1", "editore_c2", "editore_d1", "editore_d2", "capa_t1", "capa_t2", "capa_t3", "capa_t4", "capa_t5", "capa_c1", "capa_c2", "capa_c3", "capa_d1", "capa_d2"]
+        parameter chat = ["daniel_n1", "daniel_n2", "daniel_n3", "editore_n1", "editore_n2", "capa_n1", "capa_n2", "howard_t1", "howard_t2", "howard_t3", "howard_t4", "howard_t5", "howard_t6", "howard_t7", "howard_t8", "howard_t9", "howard_t10", "howard_t11", "howard_t12", "howard_t13", "howard_c1", "howard_c2", "howard_c3", "howard_d1", "howard_d2", "amica_t1", "amica_t2", "amica_t3", "amica_t4", "amica_t5", "amica_t6", "amica_t7", "amica_c1", "amica_c2", "amica_c3", "amica_d1", "amica_d2", "ex_t1", "ex_t2", "ex_t3", "ex_t4", "ex_c1", "ex_c2", "ex_d1", "ex_d2", "daniel_t1", "daniel_t2", "daniel_t3", "daniel_t4", "daniel_t5", "daniel_c1", "daniel_c2", "daniel_d1", "daniel_d2", "simon_t1", "simon_t2", "simon_t3", "simon_t4", "simon_t5", "simon_c1", "simon_c2", "simon_c3", "simon_d1", "simon_d2", "amico_t1", "amico_t2", "amico_t3", "amico_c1", "amico_c2", "amico_c3", "amico_d1", "amico_d2", "editore_t1", "editore_t2", "editore_t3", "editore_c1", "editore_c2", "editore_d1", "editore_d2", "capa_t1", "capa_t2", "capa_t3", "capa_t4", "capa_t5", "capa_c1", "capa_c2", "capa_c3", "capa_d1", "capa_d2"]
         parameter risposta = [0, 1, 2]
         $ _ttipi_prepara_chat(chat, risposta)
         run Jump("test_telefono_tipi")
@@ -163,6 +172,28 @@ testsuite telefono_tipi:
         assert eval chat in discorsi_fatti and fatto("chat_" + chat)
         assert eval chat_log[_ttipi_k][0][0] == _ttipi_k and "sara" in [m[0] for m in chat_log[_ttipi_k]]
         assert eval valore_interest(_ttipi_k) > _ttipi_prima
+
+    ## Flirt non ricambiato: Daniel sotto il giorno, Magnus e Barbara la prima volta.
+    testcase non_ricambiato:
+        $ debug_azzera_stato()
+        $ giorno = 18
+        $ rubrica = ["daniel", "editore", "capa", "howard", "simon"]
+        $ [interest(k, 17) for k in rubrica]
+        assert eval {d.id for d in discorsi_di_tipo("daniel", "Flirt")} == {"daniel_n1", "daniel_n2"}
+        $ interest("daniel", 1)
+        assert eval all(d.ricambiato for d in discorsi_di_tipo("daniel", "Flirt")) and discorsi_di_tipo("daniel", "Flirt")
+        assert eval [d.id for d in discorsi_di_tipo("editore", "Flirt")] == ["editore_n1"]
+        assert eval [d.id for d in discorsi_di_tipo("capa", "Flirt")] == ["capa_n1"]
+        $ discorsi_fatti.extend(["editore_n1", "capa_n1"])
+        assert eval len(discorsi_di_tipo("editore", "Flirt")) == 4 and len(discorsi_di_tipo("capa", "Flirt")) == 3
+        ## Il Sexting ha il suo primo tentativo.
+        $ sara_stagista = True
+        assert eval [d.id for d in discorsi_di_tipo("capa", "Sexting")] == ["capa_n2"]
+        assert eval all(d.ricambiato for k in ("howard", "simon") for d in discorsi_di_tipo(k, "Flirt"))
+        ## Daniel esaurite le sue reazioni non si lascia più cercare così finché non risale.
+        $ interest("daniel", -1)
+        $ discorsi_fatti.extend(["daniel_n1", "daniel_n2"])
+        assert eval not discorsi_di_tipo("daniel", "Flirt")
 
     ## La tabella di chi scrive per primo e le reazioni al silenzio.
     testcase sera_e_silenzi:

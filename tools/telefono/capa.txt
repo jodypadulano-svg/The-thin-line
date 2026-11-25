@@ -244,3 +244,48 @@
 < No. I'm stopping so that you'll want to tomorrow. It's called editing.
 ? And you? Are you all right?
 < Nobody's ever asked me that afterwards. I'll need a moment. Good night, Sara.
+
+# NON RICAMBIATO: la prima volta che Sara ci prova. Barbara non si scompone: è interessata,
+# e non aiuta. Dopo n1 si aprono i Flirt, dopo n2 i Sexting.
+
+@ capa_n1 | COMPLICI | Non ricambiato: le scale
+> You smelled wonderful today. I've been meaning to say.
+---
+< I know. It costs a great deal. Who put you up to this?
+? Nobody. I just noticed. [caldo]
+< How refreshing. People generally notice when they want a holiday.
+? I shouldn't have said that.
+< Nonsense. It's the first thing anyone's said to me all day without a spreadsheet.
+---
+< Let's be clear, darling. I'm not offended, and I'm not flattered. I'm interested. It's rarer.
+? Interested in what? [caldo]
+< In whether you'll say it again when I'm looking at you.
+? I'll stop.
+< I didn't ask you to stop. I asked you nothing at all.
+---
+< I won't help you. I never do. People ought to find their own way up the stairs.
+? Then I'll find it.
+< Good. Mind the carpet. Back to work.
+? I'm not sure I'm on any stairs.
+< You're on the third, darling. I can hear you.
+
+@ capa_n2 | INTIMI | Non ricambiato: in archivio
+> I keep thinking about you kissing me.
+---
+< Do you? I've had a lunch and two lawyers since.
+? That's not an answer. [caldo]
+< No. It's an agenda.
+? Had you forgotten?
+< I forget nothing. I file it.
+---
+< It was a signature, Sara. I kissed you as one blots a page.
+? It didn't feel like blotting. [caldo]
+< No. ...It ran a little, at the edges.
+? I see.
+< Don't sulk. You do it too well, and I've a meeting.
+---
+< If you want something from me, bring it in person and shut the door behind you. I don't do it by post.
+? I'll come.
+< We'll see. Chin up, darling.
+? And if I'm not brave enough?
+< Then send me another of these. I find I rather like the post.
