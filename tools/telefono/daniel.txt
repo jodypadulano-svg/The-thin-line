@@ -1,0 +1,240 @@
+# DANIEL — sicuro, brillante, messaggi brevi, niente emoticon. Frecciate su Josh: difenderlo
+# è sempre possibile. Con Interest sotto il giorno non cerca Sara, ma risponde.
+
+@ daniel_t1 | CONOSCENTI | Magnus's card | fatto('ep1_d13_biglietto')
+> You left me alone with Magnus the other night. On purpose?
+---
+< I don't do anything else.
+< He doesn't read people I'm standing next to.
+? So you were being considerate. [caldo]
+< Don't spread it about.
+? I was terrified.
+< It didn't show. That's the same as not being.
+? What did you tell him about me?
+< That you'd be worth the trouble, and that you'd argue.
+---
+< What did he write on the card?
+? «Fifty pages. No more, no less.»
+< He wrote me «Come when you've something to say.» I was twenty-six. It took me a year.
+? That's between him and me. [caldo]
+< Good. Keep him that way. He's no use to people who share him.
+? Wouldn't you like to know.
+< Yes. That's why I asked.
+---
+< One piece of advice. Don't thank him.
+? I'm not good at that.
+< You thank doors, Sara. Practise on me.
+? Then I won't thank you either.
+< There. You've got it.
+? I like thanking people.
+< I know. It's how they know where you keep your purse.
+
+@ daniel_t2 | CONOSCENTI | That dinner | fatto('ep1_d3_risposta_daniel')
+> I still can't believe I answered you back in front of your whole table.
+---
+< Respect. «Something they don't teach in every job.»
+< I've had it quoted at me twice since.
+? I hope it stung. [caldo]
+< It did. Do it again some time.
+? You laughed.
+< I was delighted. Nobody's thrown anything at me in years.
+? You'd deserved it.
+< Entirely. That isn't why I liked it.
+---
+< You were defending him. It was rather magnificent.
+? He doesn't need defending.
+< Everyone at that table thought otherwise. Including him.
+? Somebody had to. [caldo]
+< Yes. I wondered how long he'd wait. He was still waiting when I left.
+* I was waiting too. With my fork in my hand.
+? I'd do it again. [frena]
+< I know. Goodnight, Sara.
+---
+< Tell me one thing. Were you angry with me, or with him?
+? With you.
+< Mostly, I think.
+? Both.
+< That's the honest answer. Nobody ever gives me that one before coffee.
+? That's a horrible question.
+< They're the only ones worth the stamp.
+
+@ daniel_t3 | CONOSCENTI | Keeping it about the novel | fatto('ep2_d18_professionale')
+> Thank you for lunch. It was nice to talk about the book.
+---
+< You thanked me again.
+? I'm thanking the fish.
+< Then I'll pass it on.
+? You behaved very well. [caldo]
+< I did, didn't I? It was exhausting.
+? Force of habit.
+< We'll find you a better one.
+---
+< You talk faster when it's the book. You use your hands.
+< I kept moving your glass. You didn't notice.
+? I noticed. [caldo]
+< Ah.
+? I get carried away.
+< Nobody's ever been carried anywhere by staying put.
+? I nearly knocked it over, didn't I?
+< Three times. I was enjoying the suspense.
+---
+< You set the rules at that table. I kept to them.
+? I'd like it to stay that way.
+< Then it will. You can have that for as long as you want it.
+? For now.
+< Two very small words. I'll have them framed.
+? I'm not sure you did keep to them.
+< I kept my hands to them. The rest of me I can't answer for.
+
+@ daniel_t4 | CONOSCENTI | The dance | fatto('ep2_d18_ballo')
+> You stopped before the song did.
+---
+< You noticed.
+? Anyone would have. [caldo]
+< Anyone would have been relieved. You looked robbed.
+? I was going to stop anyway.
+< Of course. You were building up to it.
+? Was it on purpose?
+< Sara. Everything.
+---
+< What were you looking at, all that time? You were facing the window.
+? The fig tree.
+< And what did it tell you?
+? You. In the glass. [caldo]
+< I know. I was looking back.
+* I saw him looking back.
+? Nothing. My eyes were shut.
+< Not for the last verse.
+---
+< I haven't played it since. It's got you in it now.
+? You say that to everyone.
+< I say a good many things to everyone. Not that.
+? What happens in the last minute? Of the song?
+< You'll have to come back for it.
+? We shouldn't do that again, Daniel. [frena]
+< «Shouldn't.» I heard you. Goodnight.
+
+@ daniel_t5 | CONOSCENTI | What I said for you | fatto('ep2_d18_sfotto_josh')
+> I'm not proud of what I said about [nome_compagno]. At lunch.
+---
+< No? You were smiling when you said it.
+? That's what I'm not proud of.
+< Then we agree on the facts.
+? You made me say it twice. [caldo]
+< I asked you twice. You're the one with the voice.
+? It was cruel.
+< It was accurate. Cruel would have been saying it to him.
+---
+< Shall I tell you what I heard? Not the joke. Under it.
+? Go on.
+< Somebody who's been carrying a tray for years and has just been told she can put it down.
+? No. I don't want it explained. [frena]
+< Wise. It never sounds as good the second time.
+? I heard it too. [caldo]
+< Yes. It's a nice sound, isn't it? Glass.
+---
+< You needn't do it again. I only wanted to know that you could.
+? And now you know.
+< Now we both do. That's rather the point.
+? He's a good man, Daniel.
+< The best. I'd trust him with anything. I frequently do.
+* He didn't even have to finish the sentence.
+
+@ daniel_c1 | COMPLICI | Flirt: il piacere delle sfide
+> What do you do when somebody doesn't do what you want?
+---
+< It's so rare. I generally send flowers.
+? And if she sends them back? [caldo]
+< Then I keep the vase.
+? Does anyone?
+< You. Twice a week, on average. It's done wonders for me.
+---
+< Let's play something. I say a thing you won't dare do tomorrow. You tell me why.
+? Go on. I'm not scared of you. [caldo]
+< Wear something under your office clothes that nobody will ever know about but the two of us.
+* Nobody would know. He'd know.
+? And if I do dare?
+< Then I'll have lost. I'm told it's good for the character.
+? I don't play games with you. [frena]
+< You've been playing for weeks. You're ahead. Goodnight.
+---
+< You've gone quiet. I'll take that as thinking.
+? I was choosing a colour.
+< Don't tell me. I'd rather guess, across a room, and be right.
+? You won't win, you know.
+< I never mind how it ends. I like watching you decide.
+
+@ daniel_c2 | COMPLICI | Flirt: un invito riservato
+> You said there was a place you'd never taken anyone.
+---
+< There's a house on the coast. No signal. Very bad paintings.
+? Why no one? [caldo]
+< People talk. The sea doesn't need the help.
+? I don't believe you.
+< Good. I'd be disappointed if you did.
+---
+< I'm not inviting you. I'm describing it.
+? Describe the bedroom, then. [caldo]
+< White. One window. The light gets in before anyone's decent.
+? Describe the kitchen.
+< You'd sit on the table. I'd cook. You'd pretend to help.
+? You're inviting me.
+< I'm describing it very slowly.
+---
+< What would you tell him?
+? I'm not going, so I don't need to tell him anything.
+< Then it costs nothing to think about it. Think about it.
+? That I was writing.
+< You would be. Afterwards. I'd find you a desk.
+? Stop there, Daniel. [frena]
+< I've stopped. The house isn't going anywhere.
+
+@ daniel_d1 | INTIMI | Sexting: confessare l'attrazione
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> I can't concentrate on anything.
+---
+< I know. I've read the same contract four times.
+? You? [caldo]
+< I signed it in the end. I may have sold something.
+? Good. I'd hate it to be only me.
+< It isn't. Don't tell the office.
+---
+< Where are you?
+? In bed. He's working late. You should know. [caldo]
+< I do. I gave him the file.
+* He gave him the file.
+? At my desk. With the door shut.
+< Lock it.
+? Somewhere I can't talk.
+< Then don't. Read. Put your free hand where I'd put mine.
+---
+< Don't say sorry. Whatever you were about to type.
+? I wasn't going to.
+< No. I believe you weren't. I've waited a long time for that.
+? Say something nice.
+< You've stopped asking permission. There isn't anything nicer.
+< Goodnight, Sara.
+
+@ daniel_d2 | INTIMI | Sexting: i limiti di una relazione segreta
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> What are the rules?
+---
+< There's one. You can stop it with a word, any time, and I'll open the door for you.
+? And yours? [caldo]
+< Mine are for me. You needn't keep them.
+? What's the word?
+< «Enough.» It's a good word. I've hardly ever heard you use it.
+---
+< Now you. What won't you do?
+? Lie to his face.
+< Then we'll never make you. There are plenty of rooms he isn't in.
+? I don't know yet. Ask me one thing at a time. [caldo]
+< One thing, then. Tomorrow. In the lift. You don't touch me and I don't touch you, and we see who looks away.
+? Less than I thought.
+< That's the most dangerous thing you've ever written to me. I've read it twice.
+---
+< Are you smiling?
+? Yes.
+< So am I. I'm in a meeting. They think I like the figures.
+? Come and see.
+< Friday. Bring nothing you'd mind losing.

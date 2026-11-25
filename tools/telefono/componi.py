@@ -4,12 +4,15 @@ Uso, dalla cartella del gioco:  python tools/telefono/componi.py howard
 
 Formato del testo:
   @ howard_t1 | CONOSCENTI | The sauce stain | fatto('...')   id, gradino, titolo, condizione
+                                        COMPLICI = chat di Flirt, INTIMI = Sexting: si scelgono
+                                        per tipo e il titolo è solo un promemoria
   > messaggio con cui Sara apre la chat
   < messaggio in entrata (se scrive per primo l'altro; facoltativo, prima della prima parte)
   ---                                   nuova parte (comincia sempre l'altro)
   < messaggio dell'altro
   * pensiero di Sara
-  ? risposta di Sara [caldo] [frena]    una scelta; sotto, le righe < e * che la seguono
+  ? risposta di Sara [caldo] [frena] [rifiuto]   una scelta; sotto, le righe < e * che la seguono
+                                        [rifiuto] = grigia col Complesso (solo Howard)
   $ comando Ren'Py                      nella parte o nella scelta corrente
 
 Le parti senza scelte finiscono con l'altro. I tempi d'attesa li mette il gioco.
@@ -83,14 +86,17 @@ def leggi(testo):
         elif seg == "<" and not chat[-1]["parti"]:
             chat[-1]["entrata"].append(t)
         elif seg == "?":
-            segni = re.findall(r"\[(caldo|frena)\]", t)
-            t = re.sub(r"\s*\[(caldo|frena)\]", "", t).strip()
+            segni = re.findall(r"\[(caldo|frena|rifiuto)\]", t)
+            t = re.sub(r"\s*\[(caldo|frena|rifiuto)\]", "", t).strip()
             chat[-1]["parti"][-1]["scelte"].append({"testo": t, "segni": segni, "righe": []})
         elif seg in "<*$":
             p = chat[-1]["parti"][-1]
             (p["scelte"][-1]["righe"] if p["scelte"] else p["righe"]).append((seg, t))
         else:
             raise ValueError("riga non riconosciuta: " + r)
+    for c in chat:
+        calde = sum(any("caldo" in s["segni"] for s in p["scelte"]) for p in c["parti"])
+        assert calde <= 2, "troppe parti calde in " + c["id"]
     return chat
 
 
@@ -98,7 +104,8 @@ def componi(chiave, chat):
     out = ["## GENERATO da tools/telefono/componi.py: si modifica tools/telefono/%s.txt." % chiave, "", "init python:"]
     for c in chat:
         se = ', se="%s"' % c["se"] if c["se"] else ""
-        out.append('    discorso("%s", "%s", %s, argomento="%s"%s)' % (c["id"], chiave, c["gradino"], q(c["titolo"]), se))
+        come = ", flirt=True" if c["gradino"] in ("COMPLICI", "INTIMI") else ', argomento="%s"' % q(c["titolo"])
+        out.append('    discorso("%s", "%s", %s%s%s)' % (c["id"], chiave, c["gradino"], come, se))
     for c in chat:
         out += ["", "", "## --- %s" % c["titolo"]]
         b = Blocco("chat_" + c["id"])
@@ -121,10 +128,13 @@ def componi(chiave, chat):
                 punto = b.punto(1, "scelta")
                 b.agg(1, 'menu (screen="scelta_telefono"):')
                 for s in p["scelte"]:
-                    b.agg(2, '"«%s»":' % q(s["testo"]))
+                    no = " (rifiuto_howard=True)" if "rifiuto" in s["segni"] else ""
+                    b.agg(2, '"«%s»"%s:' % (q(s["testo"]), no))
                     b.punto(3, "invia", 1)
                     b.agg(3, '$ msg("sara", "%s")' % q(s["testo"]))
                     for segno in s["segni"]:
+                        if segno == "rifiuto":
+                            continue
                         b.agg(3, "$ %s()" % segno)
                     b.ricevi(3, chiave, s["righe"])
                 for voce, chiude in (("Back to messages.", False), ("[telefono_minuti_uscita]", True)):

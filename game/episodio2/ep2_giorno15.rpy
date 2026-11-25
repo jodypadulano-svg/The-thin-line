@@ -85,6 +85,7 @@ label ep2_d15_palestra:
             si "You've got it."
             n "He takes his hands away. Sara can still feel where his fingers were. She could put the handles back now. Simon would let her."
             $ interest("simon", 2, "Sara asked Simon to show her the cable exercise.")
+            $ segna("ep2_d15_cavi_simon")
             $ corruption(1, "Sara enjoyed catching Simon looking.")
             menu:
                 "Rack the handles.":

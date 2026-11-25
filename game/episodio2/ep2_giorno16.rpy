@@ -166,6 +166,7 @@ label ep2_d16_cena:
             n "Sara remembers the room beyond the door."
             s "She did. It ended up being almost a whole page."
             dr "Good. I liked hearing you talk about that bit."
+            $ segna("ep2_d16_minuto_darius")
             $ interest("amico", 1)
         "Confide in Joanie in the kitchen.":
             s "I knew I could keep changing it until Thursday and I'd still find something to change on Thursday."
@@ -173,6 +174,7 @@ label ep2_d16_cena:
             $ cg("Joanie listens while filling the jug", "images/cg/ep2/d16_05_confidenza_joanie.webp")
             ch "What happened?"
             s "[nome_compagno] read the draft last night. It was open on my laptop. He sat down and read it."
+            $ segna("ep2_d16_confida_joanie")
             ch "Did he tell you?"
             s "He asked me about a scene. Took me a second to work out how he knew it."
             if fatto("ep2_d15_litigio_josh"):

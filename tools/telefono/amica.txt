@@ -1,0 +1,342 @@
+# JOANIE — minuscole, maiuscole quando urla, niente punti finali, «;)». Tifosa e complice.
+# La sua attrazione per Sara non viene mai dichiarata prima del bacio.
+
+@ amica_t1 | CONOSCENTI | Lunch with Daniel | giorno < 18 and fatto('ep1_d13_pranzo_forse')
+> I keep hearing myself say «maybe» to Daniel.
+---
+< how did it sound
+< in your head. do the voice
+? Like someone else's voice. Lower. [caldo]
+< ok I need that voice on my answering machine
+? Like a mistake.
+< mistakes are quieter. you've got a whole tone
+? Like «maybe». It's a normal word.
+< it's the least normal word there is. it's yes in a coat
+---
+< so what's the worst that happens. you eat a fish. he looks at you. you come home
+? The looking is the part I can't picture. [caldo]
+< liar. you've pictured the jacket and everything
+* I have pictured the jacket.
+? The worst is that [nome_compagno] finds out.
+< finds out you had LUNCH. with a FORK
+? The worst is that I enjoy it.
+< oh no. not that. call someone
+---
+< can I say one serious thing and then I'll stop
+? Go on.
+< you never want anything out loud. you want it under a pile of coats
+< I'd just like to see you want something with the lights on. even if it's a fish
+? You've never said one serious thing in your life.
+< true. so imagine how bad it must be
+< go to bed. maybe
+
+@ amica_t2 | CONOSCENTI | My first piece | fatto('ep1_d12_prima_joanie')
+> Did you really frame my article in the bathroom?
+---
+< opposite the bath. it's the only place I sit still
+< mark asked if he could move it. I asked if he'd like to move out
+? What does he do when he's in there? [caldo]
+< reads it. out loud. he does all the voices
+? You're ridiculous.
+< I'm an early collector
+? The steam will ruin it.
+< I LAMINATED it. who do you think I am
+---
+< you sent it to me first. before anyone
+< I haven't mentioned it. I've been incredibly cool about it
+? You screamed for a whole minute. [caldo]
+< coolly
+? You've believed in it the longest.
+< ok well now I've got something in my eye and I'm at work
+? Alphabetical order.
+< J comes after everyone I know. nice try
+---
+< what did he say when you sent it to him
+? He's printing it for the whole office. He's lovely about it.
+< he is. he's a puppy with a printer
+< and what do YOU think of it. nobody ever asks the writer
+? I think it's good. I think it's actually good.
+< say it again and don't look round to check if anybody heard
+* How does she know I looked round?
+? There's a comma I'd move.
+< there's always a comma with you. leave it. let it live
+
+@ amica_t3 | CONOSCENTI | What I told you in the kitchen | fatto('ep2_d16_confida_joanie')
+> Thank you for Tuesday. For the kitchen.
+---
+< thank YOU. I was about to dry the same plate for the fifth time
+< have you two talked since. properly
+? A bit. Around the edges.
+< that's not talking that's hoovering
+? Not really. [caldo]
+< ok. I'm not going to push. I'm going to sit here and push silently
+? He said sorry. He meant it.
+< I know he did. he'd say sorry to a chair
+---
+< can I ask you what bothered you. him reading it. or him reading THAT
+? That he didn't ask.
+< yeah. it's yours. it's the one thing that was only yours
+? That bit. The terrace bit. [caldo]
+< thought so
+< was he in it
+* The fiancé laughing behind the glass. Yes. He was in it.
+? I haven't worked it out yet.
+< you will. it'll come out on page ninety in somebody else's mouth
+---
+< next time write it at mine. I've got a desk. it's under some things
+? What things?
+< it's mostly things. there's a desk shape
+? I might, you know.
+< I'll clear it. I'll make that horrible coffee you like. and I will NOT look over your shoulder
+< I'll look at you from the sofa. you do a thing with your mouth when it's going well
+
+@ amica_t4 | CONOSCENTI | The black top | fatto('ep2_d17_top_ricevuto')
+> I'm holding your top up to the light. I can see the whole kitchen through it.
+---
+< that's how you know it's good
+< put it ON
+? It's on. [caldo]
+< ......
+< ok and
+? It's on the back of a chair.
+< the chair must be having a great night
+? It's back in the box.
+< that box gets more action than most people
+---
+< what exactly are you scared of. list them. I'll tick them off
+? That people will look.
+< yes that's the feature
+? That I'll like it when they do. [caldo]
+< ah. there she is. hello
+* I typed that. I typed that and sent it.
+? That I'll look like somebody else.
+< you'll look like you without the seven layers of sorry
+---
+< you don't have to wear it anywhere. wear it to do the washing up
+? In that? To do the washing up?
+< best washed plates in england
+? Would you wear it?
+< I've got one. I bought two. I wasn't going to make you do it on your own
+* She bought two.
+< go on. night. give the chair my love
+
+@ amica_t5 | CONOSCENTI | After the Lantern | fatto('jacob_tornato')
+> What were the odds, Joanie?
+---
+< of what
+< of a person being in a bar. on a friday. in a town. pretty good I'd say
+? You were humming. [caldo]
+< I hum. I'm a hummer. it's a medical thing
+? Did you know he'd be there?
+< define know
+< define there
+? I nearly fell off my stool.
+< I saw. you went pink from the collar up. it was like a sunrise
+---
+< so. four years. how was it
+? It was like putting on an old coat and finding money in it. [caldo]
+< SARA. you can't just say things like that and then be a person who writes horoscopes
+? It was strange.
+< strange good or strange dentist
+? He hasn't changed.
+< no. you have though. he noticed. I watched him notice
+---
+< are you telling [nome_compagno]
+? There's nothing to tell.
+< then it'll be a short conversation
+? I will. I just want to have it to myself for a night.
+< one night. that's fair. I won't even ask you what you do with it
+? Should I?
+< you should do what lets you sleep. I sleep like a baby and look at me
+< you laughed tonight. or you nearly did. either way I was there. night night
+
+@ amica_t6 | CONOSCENTI | Mark and Simon | fatto('ep2_d19_sa_di_simon')
+> I'm still thinking about what you said. About Mark.
+---
+< good thinking or looking at me differently thinking
+? Neither. Just thinking.
+< that's the one that scares me
+? I couldn't find the hole in it. [caldo]
+< I know. I've looked. I turn it round at night like a jumper
+? I felt sorry for Mark.
+< yeah. I do too sometimes. then he whistles while he does the bins and I think, would he swap
+---
+< you can ask me anything. I'd rather you asked
+? Are you ever afraid he'll find out?
+< every day for about a minute. usually in the queue at the bank
+? Do you love Simon? [caldo]
+< no. god no. I like him the way you like swimming
+? Does it make you happy?
+< it makes me nice. I don't know if that's the same. it might be better
+---
+< I haven't told anyone but you. ever. I want you to know that
+? I know. I won't say a word.
+< I know you won't. you've got the face of a safe
+? I'm glad you told me. Even if I don't know what to do with it.
+< you don't do anything with it. you just hold the other end
+< thanks for not going all quiet. night
+
+@ amica_t7 | CONFIDENZA | What you told me on the carpet | fatto('ep2_d19_fantasia_joanie')
+> I'm not looking at you differently. I thought you might be lying there wondering.
+---
+< I was
+< I've been looking at the ceiling since you left. there's a stain like a rabbit
+? I know that rabbit. I've lain under that rabbit.
+< don't. I'll cry again and I've only just got my eyes back
+? You could have told me years ago. [caldo]
+< I couldn't. years ago you'd have said sorry. for existing. near me. while I had it
+? It was brave, telling me.
+< it was wine and a good rug
+---
+< can I ask. you don't have to answer. was it horrible to hear
+? No. It was strange, and then it wasn't. [caldo]
+< how long was the strange bit
+? About as long as it took you to stop crying.
+* She'd be just there, she said. And I'd look at her, and not be sorry.
+? A little. Not the way you think.
+< ok. I can live with a little
+? I don't know yet. Ask me on Sunday.
+< I'll put it in my diary. «ask sara if horrible»
+---
+< it's only a thing in my head. it doesn't need to go anywhere. it's been very happy in there
+? It can stay there. Safe.
+< safe. good. I'd hate for it to catch cold
+? And if one day I felt like teasing you about it?
+< then I'd die. happily. you'd get the flat
+< goodnight best person. one eye open ;)
+
+@ amica_c1 | COMPLICI | Flirt: indispensabili
+> I had a bad day and I noticed you were the first person I wanted to tell.
+---
+< before the puppy
+< interesting. go on. I've put my face cream down
+? Before anyone. [caldo]
+< you can't say that to a woman with one eyebrow on
+? Alphabetical order again.
+< J. sara. we've BEEN through J
+? He'd have tried to fix it.
+< and me
+* You'd have taken my side before I'd finished.
+---
+< what do you need. options. one, I come round. two, I tell you you're gorgeous until you get annoyed
+? Two. Until I get annoyed. [caldo]
+< gorgeous. the neck. the hands. that mouth when you're trying not to laugh at somebody's shoes
+< are you annoyed
+? Not yet.
+< good because I've only done the top half
+? One, but it's midnight.
+< I've got a coat and no morals
+? Let's leave it there, Jo. You'll make me blush. [frena]
+< I have made you blush. I'll stop while I'm winning
+---
+< you know it's the same for me. you're the first one
+? Even before Simon?
+< simon is a hobby. you're the house
+? I know.
+< good. I don't say it enough. I say it in shoes and lunches
+< sleep. the neck can have the night off
+
+@ amica_c2 | COMPLICI | Flirt: segreti solo per Joanie
+> Tell me something you've never told anybody.
+---
+< in exchange for what
+? One of mine. Same size.
+< oh I like this shop
+? Nothing. I'm greedy.
+< you ARE. nobody ever sees it. I do
+? A look, next time I see you. [caldo]
+< which look. I know all of them. I've got favourites
+---
+< ok. I kept a photo of you from last summer. in the green dress. it's in my purse behind the library card
+? The one that kept slipping off my shoulder? [caldo]
+< I don't know WHICH shoulder. I haven't STUDIED it
+? You don't have a library card.
+< I got one so it'd have something to be behind
+? Why that one?
+< you'd forgotten anybody was there. you should see yourself when you've forgotten
+---
+< now you. same size
+? Sometimes I get dressed and think, would Joanie wink?
+< .......
+< and do I
+? More often than you'd believe.
+< I'm going to lie down on my own floor for a minute
+? I can't think of one that good.
+< you will. in the bath. it's where they all live
+
+@ amica_c3 | COMPLICI | Flirt: la paura di perdersi
+> Would anything I did make you stop liking me?
+---
+< if you got a fringe like mine. that's copyright
+? Seriously.
+< seriously. no. I've looked for the edge of it. there isn't one
+? Anything? [caldo]
+< try me. start small. stolen a pen
+? What if I turned into someone else?
+< then I'd want to meet her. I think I've seen her at parties
+---
+< your turn. what would make you stop liking me
+? If you stopped winking at me. [caldo]
+< my eye would have to fall out
+? Nothing so far, and you've tried.
+< I HAVE tried. I've been magnificent
+? If you lied to me.
+< I leave things out. it's different. leaving out is manners
+---
+< you go quiet sometimes and I think, that's it, I've gone too far
+? I go quiet when I like something too much.
+< oh
+< OH. ok. noted. in ink
+? Let's not poke at it, Jo. [frena]
+< no poking. I'll put it on the high shelf. night
+
+@ amica_d1 | INTIMI | Sexting: oltre l'amicizia
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> I can still taste your lip balm. Is it the cherry one?
+---
+< it's the cherry one
+< I've put some more on. it seemed only right
+? Where are you? [caldo]
+< in bed. under the rabbit. thinking about your face
+? I keep touching my mouth. Like an idiot.
+< don't stop on my account
+---
+< I've imagined talking to you like this so many times and now I've got no lines. it's humiliating
+? You don't need lines. Just tell me what you're looking at. [caldo]
+< the photo. the shoulder. I've got it propped on the lamp
+? Then let me. You're wearing that grey shirt. One button's wrong.
+< how do you DO that
+? Slowly, then. We've got all night.
+< slowly. yes. ok. I'm going to need both hands for the phone and I resent it
+---
+< you're laughing aren't you. I can hear it from here
+? I'm laughing and I'm on fire. Is that allowed?
+< it's my favourite combination in a person
+? Come over tomorrow.
+< I was already putting my shoes on
+< goodnight. I mean it. stop smiling. I'm not stopping either
+
+@ amica_d2 | INTIMI | Sexting: una vita insieme
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> If you were here, what would we be doing?
+---
+< honest answer or nice answer
+? Honest. [caldo]
+< first I'd look at you for about an hour. you'd get cross. you'd tell me to hurry up
+? Nice, then honest.
+< nice: toast. honest: not toast
+---
+< would you be shy
+? For a minute. You'd wink and I'd forget to be. [caldo]
+< I'd do it with my whole face. you'd have no chance
+? I think you would.
+< me. SHY. ......ok yes. for a minute. don't tell anyone
+? You'd find out.
+< that's a terrible thing to say to somebody who has to get up at seven
+---
+< and after
+? After, you'd steal all the covers.
+< and you'd let me. and we'd eat the toast after all. in bed. crumbs everywhere
+? After, I'd want you to stay.
+< say that one again tomorrow when it's light. I want to see if it still works
+< goodnight you. one eye open. the other one's dreaming

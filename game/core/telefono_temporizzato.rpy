@@ -8,6 +8,9 @@ default telefono_minuti_inbox = {}
 default telefono_minuti_risposte_lette = set()
 
 init -4 python:
+    ## Solo nei test: una funzione che sceglie il contatto al posto della rubrica.
+    telefono_pilota = None
+
     ## Minimo e massimo di attesa alla prima fascia utile, in minuti.
     TELEFONO_ATTESE = {
         "amica": (1, 4), "howard": (0, 0), "simon": (3, 20),
@@ -121,8 +124,15 @@ init -4 python:
         if tipo == "ricevi":
             risposta = store.telefono_minuti_inbox.get(k)
             if risposta is None:
+                arrivo = _telefono_arrivo_minuti(k)
+                ## Chi risponde subito (Howard) lascia la chat aperta, se il tempo basta.
+                if arrivo <= store.telefono_minuti_ora and bolle <= telefono_minuti_rimasti():
+                    store.telefono_minuti_risposte_lette.add(k)
+                    store.telefono_minuti_ora += bolle
+                    _telefono_notifica_minuti()
+                    return False
                 store.telefono_minuti_inbox[k] = {
-                    "arrivo": _telefono_arrivo_minuti(k), "bolle": bolle, "notificata": False,
+                    "arrivo": arrivo, "bolle": bolle, "notificata": False,
                 }
                 _telefono_notifica_minuti()
                 store.telefono_minuti_riprese[k] = punto
@@ -155,7 +165,7 @@ label telefono_minuti_sessione(inizio, fine, uscita="Put the phone down"):
     if _entrata_minuti:
         call telefono_minuti_conversazione(_entrata_minuti[0], _entrata_minuti[1])
     while telefono_minuti_rimasti() > 0 and not telefono_minuti_chiudi:
-        $ _azione_minuti = renpy.call_screen("telefono")
+        $ _azione_minuti = telefono_pilota() if telefono_pilota else renpy.call_screen("telefono")
         if _azione_minuti is None or _azione_minuti[0] == "chiudi":
             jump .fine
         if _azione_minuti[0] == "aspetta":

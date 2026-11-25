@@ -1,0 +1,193 @@
+# DARIUS — l'amico di sempre: battute, «Lol», ricordi con Josh. Leale a Josh fino al Flirt;
+# poi la svolta arriva piano e per scelta di Sara. Specchio del suo Interest.
+
+@ amico_t1 | ESTRANEI | The room beyond the door | giorno in (14, 15)
+> I wrote the first sentence of the room. On the way home from our coffee.
+---
+< No way. Between the café and your door? That's eight minutes
+? Seven. I walked fast. [caldo]
+< Lol. Don't tell me it. Actually tell me it. No, don't
+? It came all at once.
+< Best kind. I get that with crosswords and it's nowhere near as useful
+---
+< So does she get her minute on her own in there?
+? She does. She sits on the bed and doesn't take her coat off.
+< Yeah. That's exactly what she'd do. You don't take your coat off till you're sure
+? You're the reason she gets it. [caldo]
+< Me? All I said was I'd want one
+* Nobody else had said it, though.
+? I haven't decided yet.
+< Take your time. She's waited this long
+---
+< Can I ask why you don't talk about it much? When we're all together
+? Because everyone's so nice about it.
+< Lol. Yeah. That's the worst. Nice is where things go to sleep
+? I don't know. I do with you, apparently.
+< Good. I've got room. Ask anyone, I'm mostly room
+< See you Tuesday. I'm bringing the ones on the left
+
+@ amico_t2 | CONOSCENTI | Her minute | fatto('ep2_d16_minuto_darius')
+> You asked if she'd got her minute. At dinner. Nobody else heard.
+---
+< I was whispering. I'm a big lad, it takes effort
+? I liked that you remembered. [caldo]
+< It stuck. I've been thinking about that coat on the bed
+? It made my evening.
+< Yeah? That and the biscuit. Admit it
+---
+< What was it like, sending it? I'd have hit the button and then thrown the laptop in the river
+? I opened the sent copy just to look at my name.
+< Lol. I'd have printed that bit. Just the name
+? Like leaving a dog at the kennels. [caldo]
+< Lol. And it looks back at you the whole way down the drive
+? Awful.
+< But you did it. Awful and done is a good combination
+---
+< When I said I'd like to read it I wasn't being polite, by the way
+? I know. You don't do polite.
+< I do for your mum-in-law-to-be. Just about
+? I might let you. One day.
+< Whenever. And if it's rubbish I'll tell you it's got lovely margins
+
+@ amico_t3 | CONOSCENTI | The blue packet | giorno >= 16
+> I'd like it on record that the biscuits on the left were the right ones.
+---
+< Objection. You picked them up without looking
+? Because I trusted you. [caldo]
+< Lol. Nobody's ever trusted me with a biscuit
+? My hand knew.
+< You can't say «my hand knew» in a court of law
+---
+< [nome_compagno] ate the last one, you know. I had my eye on it. He saw me looking and ate it in two goes
+? He does that when he's happy.
+< I know. Twenty years I've been losing biscuits to that man
+? I was saving it for you. [caldo]
+< Don't tell me that now! It's gone, Sara. I'm grieving
+? You should've been quicker.
+< Story of my life
+---
+< It was a good night though. I like it round yours. It's loud in the right way
+? You always stay to do the glasses.
+< It's when people talk. Everyone says the real stuff to a tea towel
+? Come whenever you want.
+< Careful. I'll turn up with a blue packet and a toothbrush
+
+@ amico_c1 | COMPLICI | Flirt: un gioco di provocazioni
+> You were staring at me when I was drying up.
+---
+< I was staring at the plate
+? I wasn't holding a plate. [caldo]
+< ...Then I was staring at where the plate should have been
+? Which one?
+< The round one. Lol. Ok. Busted
+---
+< I shouldn't say this. I'm going to put it like a joke so we can both pretend
+? Then I'll laugh, so you know it landed. [caldo]
+< If you weren't his I'd have burnt the dinner just to stay longer
+* It isn't a joke. He's written it like one, and it isn't.
+? Say it straight.
+< I can't. I've known him too long. Straight's the one way I can't say it
+? Then don't, Darius. [frena]
+< Yeah. You're right. Forget it. I'll bring biscuits and behave
+---
+< Are we ok?
+? We're fine. I've kept it somewhere.
+< Where?
+? With the coat on the bed.
+< Oh, man. Goodnight, Sara
+
+@ amico_c2 | COMPLICI | Flirt: confronti con Josh
+> Do you ever compare yourself with him?
+---
+< Since forever. He got the girl, the job and the good hair. I got tall
+? You got the hands. [caldo]
+< Lol what? What's wrong with his hands
+* Nothing. Nothing's wrong with them.
+? You got the sense of humour.
+< He's funny. He's just funny with a run-up
+---
+< He's the best person I know. I need to say that before anything else
+? I know. So do I.
+< Right. So we both know. And here we are at midnight anyway
+? Then say the anything else. [caldo]
+< He'd have asked what the woman did next. I wanted to know how she felt. That's it. That's the whole difference
+? Let's stop while he's still the best person we know. [frena]
+< Yeah. Good place to stop. Night
+---
+< You're hard to be mates with sometimes
+? Why?
+< Because you listen with your whole face. A bloke can get ideas
+? You could have them quietly.
+< I've been having them quietly for ages. I thought you'd noticed
+
+@ amico_c3 | COMPLICI | Flirt: una complicità da nascondere
+> I deleted our last chat. Then I felt guilty, and then I missed it.
+---
+< I've still got mine. I'm not proud of it
+? Do you read it back? [caldo]
+< The bit about the coat. Yeah
+? Your phone's not locked, Darius.
+< It is now. First time in my life. My thumb's in shock
+---
+< So what is this? I'm not being funny. For once
+? I don't know. I like who I am in it. [caldo]
+< Yeah. Me too. I'm quicker in it
+? Two friends who talk too late.
+< Too late's about right. In every sense
+? A mistake we can still not make. [frena]
+< Ok. I hear you. I do. I'm putting the kettle on and the phone in the fridge
+---
+< Next Tuesday I'm going to sit at the far end and not look at you once
+? You won't last through the starter.
+< I'll look at the salt. I'll give the salt everything I've got
+? Sit next to me.
+< That'd be so much worse. ...Save me the chair
+
+@ amico_d1 | INTIMI | Sexting: cosa vogliamo davvero
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> I'm not sorry. Are you?
+---
+< I've been trying to be. I've been sat here trying since ten
+? And? [caldo]
+< And I keep smiling instead. I'm a terrible person with a great memory
+? You're allowed not to be.
+< Say that again, slower
+---
+< I think about it all the time. Not just the kiss. You. Saying what you want, in a normal voice
+? I want you to stop being careful with me. [caldo]
+< I'm twice your size, careful's all I know
+* I know. I've noticed. I've thought about very little else.
+? I want to hear you. Not the jokes.
+< No jokes. Ok. I want my hands in your hair and all night to do it
+? I want you to ask.
+< Can I? ...Yeah. Like that. Just like that
+---
+< You've gone quiet. I'm picturing things
+? Picture the coat coming off.
+< I've been picturing that since the café, Sara
+? Keep going.
+< I will. I've got room, remember? I'm mostly room
+
+@ amico_d2 | INTIMI | Sexting: un equilibrio fra tre
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> Can I tell you something that might frighten you?
+---
+< You've been frightening me since the biscuits. Go on
+? I don't want to lose either of you. [caldo]
+< ...Ok. That one I've thought about too
+? Sometimes I think about the two of you.
+< At once? Lol. Sorry. That was nerves. Go on
+---
+< How does it go, in your head?
+? Nobody's lying. That's the strangest part. [caldo]
+< Yeah. That's the part I can't picture. The rest I can picture fine
+? You're both there, and nobody's the one left outside.
+< I've always been the one outside. I wouldn't know where to put my feet
+? I look at him, and then I look at you, and you're both smiling.
+< I'd need a minute. On my own. With my coat on
+---
+< It'd have to be his choice as well. All three. Or it's nothing
+? I know. I wouldn't want it any other way.
+< Good. Then I can think about it without hating myself
+? Think about it with me. Tonight.
+< Yeah. Lie down. I'll tell you how I'd say hello

@@ -1,0 +1,221 @@
+# JACOB — scrive di notte, minuscole, pochi punti. Sfrontato, mai insistente: lancia l'amo.
+# Non chiede mai scusa davvero. Nessun ricordo prima dei 19 anni di Sara.
+
+@ ex_t1 | ESTRANEI | Seeing you again | fatto('jacob_tornato')
+> So you're back in the world.
+---
+< never left it. you did
+< you looked good tonight. I'd planned to say something clever and then you turned round
+? What was the clever thing? [caldo]
+< no idea. it's still on the bar somewhere
+? You've lost your hair.
+< it was holding me back
+? You didn't look surprised.
+< I'm never surprised. it's the only talent I've got
+---
+< joanie's the same
+? Joanie's always the same. Thank God.
+< she used to look after you like a lioness with a handbag
+? She arranged it, didn't she? [caldo]
+< I'm not a man who gives up his sources
+* That's a yes.
+? Let's leave Joanie out of it.
+< nobody's ever managed that
+---
+< one question and you can ignore it. were you happy to see me
+? For about a second. Then I remembered.
+< I'll take the second
+? I don't know what I was.
+< that's the best answer anybody's given me all year
+? Goodnight, Jacob.
+< see. there's a full stop. you never used to bother with those. night
+
+@ ex_t2 | ESTRANEI | What I said to you | fatto('ep2_d19_detto_tradimento')
+> I meant it, you know. What I said at the bar.
+---
+< I know. you said it like the weather
+< I've had it shouted at me. yours was worse
+? Good. [caldo]
+< yeah. I thought so too
+? I'd been saving it for four years.
+< it kept well
+? I didn't do it to hurt you.
+< that's why it did
+---
+< you want me to say something
+? You could say sorry.
+< I could. you'd know. you always knew when I was reading off the card
+? No. I just wanted it said. [caldo]
+< then it's said. I was there. I heard it
+* He heard it. That's more than I thought I'd get.
+? Why did you do it?
+< because I wanted to. and because I thought you'd stay. both were true, that's what's wrong with me
+---
+< here's a thing I can say without the card. nobody ever made that flat sound like you did
+? It was a tiny flat.
+< you filled it. you'd sing with the hoover on and think nobody could hear
+? That's not an apology.
+< no. it's just true. I've got a lot of those and nowhere to put them
+< night sara
+
+@ ex_t3 | ESTRANEI | One song | fatto('ep2_d19_ballo_jacob')
+> You kept your word. One song, and you didn't talk.
+---
+< nearly killed me
+< I had things. I had a whole list
+? Like what? [caldo]
+< like you still lead with your left
+? You counted under your breath.
+< somebody had to. you were miles away
+? I noticed the gap. Very proper.
+< you could have driven a bus through it. I was showing off
+---
+< your feet remember me
+? My feet aren't in charge.
+< no. but they've got a vote
+? I noticed that as well. [caldo]
+< I felt you notice. about the second verse
+* He felt it. Of course he felt it.
+? It was the song. Anyone's would.
+< sure. it's a very well known song for feet
+---
+< I'm not asking for another one
+? Good.
+< I'm just telling you I know where they keep them
+? Not asking is how you ask.
+< you always were the clever one
+< night. go and put them up
+
+@ ex_t4 | ESTRANEI | Eleven coffees | fatto('ep2_d19_jacob_risata')
+> Eleven coffees. I'd managed to forget that for years.
+---
+< he put the tray down like he was serving a king
+< and you said gracias eleven times. once each
+? I was being polite! [caldo]
+< you were shaking by the fourth. I had to walk you round a fountain
+? You could have helped me drink them.
+< I was busy watching
+? We never did find out what I'd actually asked for.
+< I looked it up after. you'd asked him for «one for everyone»
+* One for everyone.
+---
+< I tell people that story. I leave your name out
+? What do you call me? [caldo]
+< a girl I knew who couldn't hurt anybody's feelings
+* It isn't even unkind. That's the worst of it.
+? Why leave it out?
+< so it stays mine
+? Do they laugh?
+< every time. not like you did
+---
+< you were loud tonight. for a second there the whole place turned round
+? I know. I heard it too.
+< don't put it away again
+? It was only a story about coffee.
+< yeah. it's always only something
+< night
+
+@ ex_c1 | COMPLICI | Flirt: un incontro da soli
+> What's it like, your place, when it's empty?
+---
+< quiet. smells of lemon and last night
+< you'd like it. there's a jukebox with a crack down the glass. plays what it wants
+? What does it want? [caldo]
+< slow stuff. it's older than it looks
+? I'm not asking to come.
+< no. you're asking what it smells like
+---
+< say you were here. where do you sit
+? At the bar. Where I can see the door.
+< smart. I'd stand where you couldn't see me and make you turn round
+? Nowhere. I walk about and touch everything. [caldo]
+< that's the one. I'd leave you to it. I'd just listen to your shoes
+? I'm not there, Jacob. [frena]
+< no. ok. lights off then. night
+---
+< I wouldn't try anything
+? Yes, you would.
+< I'd try not to. it'd be interesting to watch
+? I'd be disappointed if you didn't.
+< careful. I save these
+* Why did I send that?
+< go to bed sara. I'll leave a stool out. doesn't mean anything. it's just a stool
+
+@ ex_c2 | COMPLICI | Flirt: l'attrazione che ritorna
+> You still write to me at the worst possible hour.
+---
+< it's the only one with no one else in it
+? I should have been asleep.
+< you've never been asleep at one in the morning in your life
+? I was waiting to see if you would. [caldo]
+< say that again without the little pause before it
+---
+< what are you wearing. I'm kidding
+< I'm mostly kidding
+? A jumper you'd hate.
+< down to the knees. sleeves over your hands. I don't hate it. I used to find it on chairs
+? Not much. It's hot up here. [caldo]
+< ok. I've put the phone down. I've picked it up again. that's where we are
+? Mind your own business.
+< it was my business once. I was very good at it
+---
+< do you ever think about it. not me. it
+? More than I'd like.
+< me too. more than I'd say out loud
+? I think about how loud I used to be.
+< the neighbours moved
+* They did. They actually moved.
+? No, and nor should you. [frena]
+< I'll try to be a better man by breakfast
+
+@ ex_d1 | INTIMI | Sexting: desideri mai dimenticati
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> I can still feel your hand on the back of my neck.
+---
+< it's still warm. I haven't washed it
+? Idiot. [caldo]
+< yours. occasionally
+? I keep going over it.
+< where do you start
+---
+< tell me what you want and I'll tell you what I remember. we'll see where they meet
+? I want it slow. You were always in a hurry. [caldo]
+< I'm older. I've learned to read the whole page
+? I want you to stop asking and tell me.
+< lie back. put the phone by your ear. now you're mine till the battery goes
+? You first.
+< you used to shut your eyes right before. I'd wait for it. I'd do anything to get there
+---
+< you're being quiet
+? There's someone asleep in the next room.
+< then bite something
+? I'm not going to be quiet for much longer.
+< there she is. four years. there she is
+< sleep now. I'll know if you don't
+
+@ ex_d2 | INTIMI | Sexting: esclusività e libertà
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> Are you on your own tonight?
+---
+< would it matter
+? No. I was curious. [caldo]
+< you really are different. I like it. it's a bit frightening
+? A little.
+< then yes. just me and the jukebox
+---
+< you can ask me who and when and I'll tell you. that's new. I never used to
+? Tell me about the last one. Slowly. [caldo]
+< you want that
+? I want to see if I mind.
+* I don't mind. My heart's going like mad and I don't mind.
+? I'd rather you told me about me.
+< that's easier. that's a longer story. get comfortable
+? Not tonight. Just talk to me.
+< all right. your shoulder. the left one. I'll work down from there
+---
+< so do you mind
+? Not the way I used to.
+< what's the way now
+? Come and find out, one of these nights.
+< I'll leave the side door. it's always been the side door with us
+< night, loud girl

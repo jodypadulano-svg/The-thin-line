@@ -141,7 +141,8 @@ init -5 python:
         if tipo == "Flirt":
             return valore_interest(k) > 15
         if tipo == "Sexting":
-            return fatto("bacio_" + k)
+            ## Barbara bacia Sara quando firma da stagista (giorno 17).
+            return fatto("bacio_" + k) or (k == "capa" and store.sara_stagista)
         return True
 
     def discorso_disponibile(d, scrive_altro=False):
@@ -367,6 +368,8 @@ init -5 python:
         aperto = store.discorso_aperto.get(k)
         if premia_avvio and chi == "sara" and aperto and aperto.pop("premio_avvio", False):
             interest(k, 1, "Sara started a new conversation.")
+        if telefono_pilota:
+            return
         renpy.restart_interaction()
         renpy.pause()
 

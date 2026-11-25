@@ -1,5 +1,7 @@
 # HOWARD — argomenti legati a un fatto. Tono: troppi messaggi, troppo presto,
-# sa cose che non dovrebbe sapere; Sara non nota niente.
+# sa cose che non dovrebbe sapere; Sara non nota niente. Mai riferimenti a ciò che sa
+# solo il giocatore (lacrime finte, calendario, copia della chiave).
+# Al massimo due parti con [caldo] per chat, come nelle chat di prima.
 
 @ howard_t1 | CONOSCENTI | The sauce on the blouse | fatto('ep2_d18_cena_reggiseno')
 > Howard. We need to talk about the blouse.
@@ -8,7 +10,7 @@
 < It's ruined. I knew it. I've thought of nothing else since you closed the door.
 < I can get you another one. Same make. I saw the label.
 * He saw the label?
-? It's not ruined. It's got a little pink cloud on it. [caldo]
+? It's not ruined. It's got a little pink cloud on it.
 < A pink cloud. Only you could be kind about a stain.
 ? You don't have to buy me anything.
 < No. Of course not. You're independent. I admire that.
@@ -30,7 +32,7 @@
 ? Depends what it is.
 < Sensible. My mother would have liked you.
 < You sat down at that table as if it were the most ordinary thing in the world. No fuss at all. I thought, there's a woman who feels at home.
-? Go on. [caldo]
+? Go on.
 < I'd forgotten what it's like, hearing someone laugh with her mouth full in that kitchen.
 < I left your chair where it was.
 ? You were staring, Howard.
@@ -38,7 +40,7 @@
 * You can't even be angry with him. He's like a child at a shop window.
 ---
 < Did [nome_compagno] say anything? About the mark, I mean.
-? He didn't notice the blouse at all. [caldo]
+? He didn't notice the blouse at all.
 < No. Well. You stop looking at the good china when you eat off it every day.
 ? I told him it was sauce. It was sauce.
 < It was sauce. I always say, if the truth's that small, you might as well tell it.
@@ -53,3 +55,581 @@
 ? We'll see, Howard.
 < «We'll see» isn't no. I'll keep the good chair free.
 < Goodnight, Sara.
+
+@ howard_t2 | CONOSCENTI | Tidying your flat | fatto('ep1_d9_aiuto_pulire')
+> I haven't forgotten, you know. I said I'd help you with the flat.
+---
+< You remembered!
+< I didn't want to bring it up. I've been not bringing it up ever since.
+< I bought two pairs of rubber gloves. One's small.
+? You bought me gloves? [caldo]
+< Yellow ones. The lady at the shop asked who they were for. I said a friend.
+? Two hours, Howard. That's what I promised.
+< Two hours. I've written it down so I won't be greedy.
+? We could get someone in to do it.
+< A stranger? Going through Mother's things? Oh no. I'd sooner leave it.
+---
+< I've made a start, so you won't be shocked. The newspapers are tied up with string.
+< I found one from the week I moved in. There was a picture of this street. It had more trees.
+? Keep that one. [caldo]
+< I kept it. It's on the kitchen table, under the good lamp. You can see it when you come.
+? How many are there altogether?
+< I stopped counting at four hundred. It sounds worse than it is. The recent ones are thin.
+* Four hundred.
+? Just bin the lot, Howard.
+< You're right. You're right. I'll do it as soon as there's somebody here to make me.
+---
+< When would suit you? He's late on Thursdays, isn't he? Your [nome_compagno].
+* How does he... well, everyone knows that. He's always late.
+? One evening after work, maybe.
+< An evening. I'm in all of them. You just choose which one.
+? Some weekend. [nome_compagno] can help too.
+< The three of us. Yes. Of course. I'll get another pair of gloves.
+< Big ones.
+? Let me look at my week.
+< You look. The dust isn't going anywhere.
+---
+< Thank you for remembering. People say things like that and then they don't.
+? I'm not people. I'm next door.
+< You are. I sometimes put my hand on the wall, just to be sure it's still there.
+* That's... lonely. God, that's lonely.
+? Goodnight, Howard.
+< Goodnight, Sara. I'll leave the gloves by the sink.
+
+@ howard_t3 | CONOSCENTI | What you said about my keys | fatto('ep1_d11_capisce_howard')
+> That joke you made on the landing, Howard. When I hugged you.
+---
+< Oh dear.
+< I've been waiting to hear about that one.
+< Was it too much? I don't get the practice. You say a thing and then it's out.
+? It made me laugh. You know it did. [caldo]
+< I did hear a laugh. I thought I might have imagined it. I've played it back a few times, to be sure.
+? It was a bit much, yes.
+< I thought so. I said to the kettle, Howard, that was a bit much. The kettle agreed.
+? I'd just like to know if you meant it.
+< At my age you mean everything. There isn't time for the other thing.
+---
+< May I say how it felt from this side? Or is that a bit much as well?
+? Say it.
+< It's a long while since anybody put their arms round me when I wasn't being helped up off something.
+< I wasn't in a hurry for it to stop. That's all. That's the whole crime.
+? Briefly. [caldo]
+< Warm.
+< That was brief, wasn't it?
+? Perhaps tell that one to the kettle.
+< I'll put it back on the shelf, then.
+---
+< If you lose anything else, I'm told I've got a good eye.
+? From now on I'm keeping them on a string.
+< Round your neck? Then I'd always know where to look.
+* Howard!
+? I'm not losing anything else.
+< No. That's a pity for me and very sensible of you.
+? You'd only want paying.
+< I've never sent a bill in my life. I take whatever people leave.
+---
+< You're not cross, then. I'll sleep tonight.
+? I'm not cross.
+< I can hear that you're not. Even written down.
+? Just mind your manners.
+< I'll mind them. They've been sitting about doing nothing for years.
+< Goodnight, my dear.
+
+@ howard_t4 | CONOSCENTI | Three copies of the paper | fatto('ep1_d12_visita') or fatto('ep1_d12_rifiuta_invito')
+> Did you really buy three copies of the paper?
+---
+< The newsagent still looks at me.
+< The frame came, by the way. It's oak. A bit big, so there's a nice margin all round you.
+? You framed it! [caldo]
+< It's in the hall, where the light's good. You see it as you come in.
+? Round my article, you mean.
+< Round your article. What did I say?
+? You're making me shy.
+< Good. It suits you. Some people go blotchy.
+---
+< I've got a question about it, if you don't mind one from a reader.
+< The people nobody notices. How do you know what they're thinking?
+? I look at them for a long time. [caldo]
+< I do that. I thought it was only me.
+< It's a great comfort to find out it's a profession.
+? I make it up.
+< Then you make it up very close to the truth. Closer than most people would like.
+? I ask them.
+< You ask! I never thought of asking. I generally just wait.
+---
+< I tried it the other day, from the window. Looking at people your way.
+? And what did you see?
+< A man in a grey coat who checks his pocket every ten steps. I think it's a letter. I think he hasn't opened it.
+* That's good. That's really good, actually.
+? Careful, or I'll steal it.
+< Steal it. I'd like to be in there somewhere, even as a coat.
+? People might not like being watched.
+< No. You have to be very quiet about it.
+---
+< Will there be another one? I've told him to keep me three again.
+? One copy's enough, you know.
+< For one person, perhaps. I like to have you in more than one room.
+* He means the article.
+? If my boss lets me.
+< She'd be a fool not to. I'd write her a letter. I've got the paper for it.
+< I'm reading it again tonight before I turn in. It does more for me than the pills.
+
+@ howard_t5 | CONOSCENTI | The light bulb | fatto('ep1_d12_scaletta')
+> How's the new bulb in your hall holding up?
+---
+< Beautifully. I switch it on just to look at it.
+< I kept the old one. It's silly. It was the last one Mother put in.
+? That's not silly at all. [caldo]
+< You say that as if you meant it. I wrapped it in a sock.
+? Howard, it doesn't work.
+< No. Well. Neither do I, strictly speaking.
+? Did the ladder go back in its cupboard?
+< Not yet. You never know what might go next.
+---
+< I've been thinking about what I said. From down there.
+< About the weight at the top.
+? I've been trying not to. [caldo]
+< Have you managed?
+< I haven't.
+? You should have been looking at the bulb.
+< I'd seen the bulb. It was sixty watts. There was nothing left to learn.
+? Let's call it your sense of humour.
+< Mother always said I hadn't got one. She'd be astonished.
+---
+< You didn't tell [nome_compagno], did you? He'd think me a rude old man.
+? It's between me and the ladder.
+< And me. I was holding it.
+? He'd only laugh.
+< Would he? He's a generous boy. I don't know that I would, in his shoes.
+? I tell him most things.
+< Most things. That's a good healthy amount.
+---
+< The kitchen one's begun to flicker. I only mention it.
+? Of course it has.
+< It does it in the evenings, mostly. After six.
+? Buy two, this time.
+< I bought six. They come out cheaper.
+? Get an electrician, Howard.
+< For a bulb? He'd want to hold his own ladder.
+< Goodnight, my dear. I'll leave the hall on.
+
+@ howard_t6 | CONOSCENTI | The pink slippers | fatto('ep1_d12_scaletta') and fatto('ep1_d11_pantofole')
+> Are my slippers still by your door?
+---
+< Side by side. Toes in, so you can step straight into them.
+< I gave them a brush. They pick up fluff.
+? You brushed my slippers? [caldo]
+< They were looking a bit neglected.
+? They're a size too big, you know.
+< I had to guess. Bare feet are hard to judge through a wall.
+* Through a wall. He's so odd.
+? They're very pink, Howard.
+< The girl said, is it for a lady? I said yes. She went straight to the pink.
+---
+< It's a curious thing. A pair of slippers makes a hall look lived in.
+< The man came to read the meter and he noticed. He said, got company? I said, now and then.
+? What did you tell him that for?
+< It was true. And he seemed the sort who needs something to think about.
+? «Now and then» is about right. [caldo]
+< We've had then. I'm quite ready for now.
+? You should have said they were mine.
+< I nearly did. I liked having it to myself.
+---
+< You'd tell me, if you thought it was odd?
+? I think it's sweet.
+< Sweet. I'll take that to bed with me.
+? I don't really think about it.
+< No. That's the nicest part. You just step out of your shoes.
+* I do, don't I? When did I start doing that?
+? Shoes off at the door is normal.
+< Perfectly normal. It's exactly what I tell myself.
+---
+< I'll move them by the radiator of an evening. Then they'll be warm if you come.
+? I'm not promising, Howard.
+< Nobody's asked you to. They're only slippers.
+? Warm slippers. You spoil me.
+< I'm only just getting the hang of it.
+< Goodnight, my dear.
+
+@ howard_t7 | CONOSCENTI | That second coffee | fatto('ep1_d11_bottoni')
+> I keep thinking about that second coffee, at yours.
+---
+< I let mine go cold. I've never minded a cold coffee less.
+< We don't have to say anything about it.
+? No. We don't.
+< It's rather nice, though. Not saying it together.
+? It was warm in there. That's all it was.
+< It was very warm. I've kept the window shut ever since, in case.
+? You stopped in the middle of a sentence. [caldo]
+< Did I? I was telling you about Lorna. I've no idea what became of her after that. Nobody has.
+---
+< I'm not a man who expects things. I'd like you to know that.
+< I never asked you. You'll remember that I never asked.
+? No. You didn't ask. [caldo]
+< That's the part I keep coming back to.
+? I know. It was me.
+< It was you. I've turned that over so many times it's gone quite smooth.
+? You did look, a little.
+< I looked a great deal. I'd be lying to you if I said a little.
+* He always just says it.
+---
+< Would you like me to pretend it didn't happen? I'm told I've a blank sort of face.
+? Pretend, please.
+< Pretend what? There. You see?
+? You'd be hopeless at it.
+< I would. I went pink just writing that.
+? You don't have to pretend with me.
+< No. I hoped I mightn't.
+---
+< Shall I put the kettle on, next time you're passing? It's only coffee.
+? It's only coffee.
+< That's what I'll tell the cups.
+? I'll keep my coat on.
+< You do that. I'll see to the radiator.
+* He's terrible. Why am I smiling at my phone?
+? Let's leave it there, Howard. [frena] [rifiuto]
+< Of course. Of course. Not another word. I'm very good at not another word.
+
+@ howard_t8 | CONOSCENTI | The mother in my book | giorno in (18, 19) and fatto('ep2_d18_visita_howard') and howard_visite == 2
+> What you said about my heroine's mother. Did you mean it?
+---
+< That I could pick her out on a bus? Every word.
+< I had a look for her from the window, after you'd gone. Three women got off. None of them was her.
+? I always thought she was the weakest part. [caldo]
+< Then you've been reading it to the wrong people.
+? What gave her away?
+< Her hands. You say what she does with her hands when nobody's talking to her.
+? You were being kind.
+< I'm not kind about books. I've left two on a train on purpose.
+---
+< Is she anybody real? Or am I not supposed to ask that?
+? A bit of everyone's.
+< That'll be why I knew her, then.
+? She started as someone else, and then she wouldn't leave.
+< They don't. Mine's been gone a good while, and she still chooses the biscuits.
+? You're not supposed to ask that.
+< I apologise. Nobody gave me the rules.
+---
+< I've started noticing what I do with mine. My hands. Since you read it.
+? And what do they do? [caldo]
+< They fold the tea towel. Then they unfold it, so there's something to fold.
+* I'm using that.
+? Now I've made you self-conscious.
+< It's the most attention anyone's paid them in years.
+? It's only a paragraph, Howard.
+< It was a very good paragraph. It's followed me about all evening.
+---
+< Would you read me the next bit? When there is one. I'd get the cups out.
+? When it's ready.
+< I'd take it unready. I'm not particular.
+? There's a queue.
+< Then I'll bring a chair.
+< Goodnight, Sara. If she gets off the next one, I'll give her your love.
+
+@ howard_t9 | CONOSCENTI | The bathroom bulb | giorno in (18, 19) and fatto('ep2_d18_visita_howard') and howard_visite == 3
+> I hope you're enjoying your bathroom, now you can see it.
+---
+< I've been in there twice for no reason.
+< It's cruel, a new bulb. It shows you the tiles.
+? Better than the ceiling, though? [caldo]
+< Ah.
+< You understood that, then.
+? You were supposed to be holding me up.
+< I was. Both hands. It's only the eyes that weren't needed.
+? Get yourself a proper step. You'll break your neck on that bath.
+< If I had a proper step I'd never need anybody.
+---
+< I've got quite a grip, for my age. Was it too firm?
+? You wouldn't have dropped me. [caldo]
+< Not for anything. I'd have gone down first, and you'd have had something soft to land on.
+? It was a bit firm, yes.
+< I thought so. I could still feel it in my palms at eight o'clock.
+? I was thinking about the electricity.
+< Very wise. One of us should be.
+---
+< There are eleven bulbs in this flat, you know. I went round and counted.
+? And how many are about to go?
+< It's hard to say. They go when they feel like it. I could ring you.
+? I'm charging for the next one.
+< Name it. I've got a pension and nobody to spend it on.
+? You'll have to wait your turn.
+< I'm very good at it. I did thirty-one years, with a hooter at each end.
+---
+< I've left it on, if you're wondering what the light is under my door.
+? I wasn't wondering.
+< No. But you'd have looked, and then you would have.
+? It's company, isn't it? A light.
+< It is. I'll tell it you said so.
+< Goodnight, my dear.
+
+@ howard_t10 | CONOSCENTI | The jar of ragù | fatto('ep2_d18_visita_howard') and howard_visite >= 4 and not fatto('ep2_d18_cena_reggiseno')
+> Your mother's ragù is in our fridge, and I keep opening the door to look at it.
+---
+< Don't leave it too long. It sulks.
+< Low heat, lid off. And stir it the way I told you.
+? Like I'm telling it a secret. [caldo]
+< You were listening! I thought you were only being polite.
+? How long for?
+< Until you've run out of secrets. Twenty minutes, for most people.
+? I was going to microwave it.
+< Sara. I'll pretend the signal went.
+---
+< It's pleasant, two people at one stove. I'd forgotten you have to take turns breathing.
+? It smelled like somebody's childhood. [caldo]
+< It was mine. You're welcome to it.
+? It's a very small kitchen.
+< It is. I've never once thought of that as a fault.
+? I still smell of onions.
+< It'll be gone by morning. If it isn't, come and complain.
+---
+< What did [nome_compagno] say, when he saw the jar?
+? I told him the neighbour made it.
+< There. That's all he needs to know.
+? He hasn't seen it yet. It's at the back.
+< Behind the milk? That's where I'd have put it.
+? He'll love it.
+< I'm sure he will. He'll eat it in front of the television and tell you it was nice.
+* He would, too. Those exact words.
+---
+< I'm making it again before long. It's no trouble, I can only make it for four.
+? I might hold you to that.
+< Hold away.
+? We'll see, Howard.
+< We will. I'll keep you the good chair. Not the one that wobbles.
+< Goodnight, my dear.
+
+@ howard_t11 | CONOSCENTI | Saying no on the landing | fatto('ep2_d18_rifiuta_howard')
+> I hope I wasn't rude on the landing, Howard.
+---
+< Rude! You couldn't be rude with a manual.
+< I put one cup back. It's no trouble. It was a clean cup.
+* One cup.
+? Oh, Howard. I'm sorry. [caldo]
+< Now don't. If you're sorry, I'll feel I've done something.
+? You'd got everything ready?
+< Only the kettle. It's got nowhere else to be.
+? I'd had a long day.
+< I could tell. You come up slower when you have.
+---
+< You mustn't come because you think you ought to. I'd hate that.
+< I'd sooner have ten minutes you wanted than a whole evening you didn't.
+? Then I'll come when I want to. [caldo]
+< That's the one. I'll listen out.
+? That's good of you.
+< It isn't, really. It's arithmetic. I've got more evenings than you have.
+? I just need a few evenings to myself.
+< Of course you do. I've plenty, if you run short.
+---
+< Did you do something nice instead?
+? Sat on the sofa with the television off.
+< I know that one. I can recommend the second half.
+? Waited for [nome_compagno].
+< I heard him come in. He takes the last three stairs together when he's hungry.
+? Not really.
+< No. Nor me. We might have done it together.
+---
+< I'm not keeping you up?
+? A little.
+< Then I'll stop. I'm stopping. That was me, stopping.
+? No. I wanted to be sure you were all right.
+< I am now. I'll put the cup away properly.
+< Goodnight, Sara.
+
+@ howard_t12 | CONOSCENTI | The parcel you weighed | fatto('ep2_d17_ritiro_howard')
+> Thank you again for taking my parcel in.
+---
+< It was no trouble. I was standing by the door anyway.
+< I did hold it up to the light. Only to see which way up it went.
+? Howard! [caldo]
+< I didn't open it. I'd like that understood. A man has to stop somewhere.
+? It was a top. From Joanie.
+< A top. There must be a good deal of it missing, going by the weight.
+? And which way up did it go?
+< I couldn't tell you. It seemed to be mostly air.
+---
+< Is it for an occasion? You needn't say.
+? I haven't decided if I'm brave enough. [caldo]
+< You're braver than you think. It's the rest of us who aren't ready.
+? It's a joke between friends.
+< Some of the best clothes start out that way.
+? It's not the sort of thing you wear on the stairs.
+< That's a shame. The stairs could do with it.
+---
+< If you ever want an opinion before you go out in it, I'm only next door. I'd be honest.
+? You'd say it was lovely whatever it was.
+< Then we'd both have had a nice evening.
+? I've got a mirror, thank you.
+< Mirrors only tell you what you already think.
+? That's what Joanie's for.
+< Of course. She's got an eye. I've got two, but they're old.
+---
+< I'll take in anything they send you, mind. Any hour. I sign very neatly.
+? My personal post office.
+< I'd want a little window. And a bell you'd have to ring.
+? I'll try to be in, next time.
+< Don't go out of your way. I like having something of yours on the table.
+< Goodnight, Sara.
+
+@ howard_t13 | CONFIDENZA | The housework | sara_cameriera
+> My arms ache, Howard, and it's entirely your fault.
+---
+< That's honest work, my dear. It's the good kind of ache.
+< I've been walking about with my hands behind my back, so as not to spoil anything.
+? It did come up well, didn't it? [caldo]
+< It came up like a church. I felt I ought to whisper.
+? You could do it yourself next time.
+< I could. It wouldn't be half so nice to look at.
+? You just sat there.
+< I was supervising. It's very tiring, concentrating that hard.
+---
+< And the dress fits, then.
+? You guessed my size.
+< I'd had it in my head for a while.
+? It's a bit much for housework. [caldo]
+< It's to save your own clothes. That's what I told them in the shop.
+? It's only to keep my things clean.
+< That's all it is. We're both very practical people.
+* It's a kindness. He can't manage on his own.
+---
+< I've started a list. It's only short. It goes over the page.
+? Read me the first line.
+< It says «Sara». I haven't got any further.
+? One thing at a time, Howard.
+< One at a time. I wouldn't want to run out.
+? You're spoiling yourself.
+< Somebody had to, in the end.
+---
+< Does it bother you, being looked at while you work?
+? I forget you're there.
+< That's the nicest thing you could have said. And I'm always there.
+? A bit. Then it doesn't.
+< That's how it was at the factory, with the foreman. Only he never made anybody tea.
+? You'd look anyway.
+< I would. But it's good manners to ask.
+< Rest your arms. I'll wash my own cup tonight.
+
+@ howard_c1 | COMPLICI | Flirt: quanto gli manca
+> It was quiet today. I didn't hear your door once.
+---
+< I was keeping still. I was listening for yours.
+< So there we were. Two people being quiet at each other.
+? I missed you, I think. [caldo]
+< You think. I'll take a thought. I'll put it on the shelf with the sherry.
+? You should go out more.
+< I did. I went as far as the landing and came back for my glasses.
+---
+< It's a funny word, missing. You'd think it would go down with practice.
+? What do you miss? Be specific. [caldo]
+< Your heels on the third stair. The way you breathe out before you find your keys. A certain green jumper, going away.
+< It's got a very good back to it, that jumper.
+? You see me every other day, Howard.
+< I do. It's the one in between that's the trouble.
+? That's enough for tonight. [frena] [rifiuto]
+< Quite right. I'd got carried away. Goodnight, my dear.
+---
+< I shan't ask you for anything. I only wanted it said to somebody.
+? Come and knock, next time. Instead of listening.
+< I'd have to have a reason.
+< I've three ready. One of them's a fuse.
+? Make one up. You're good at it.
+* He is good at it, isn't he?
+< Goodnight, my dear. I'll start on one in the morning.
+
+@ howard_c2 | COMPLICI | Flirt: abitudini condivise
+> I caught myself making two cups of tea.
+---
+< Did you drink the other one?
+? I nearly brought it round. [caldo]
+< Nearly! I'd my hand on the latch. I don't know why. I just felt like holding it.
+? I poured it on the plant.
+< Lucky plant.
+---
+< I've a habit of my own, if we're owning up. When you put your light out, I put mine out.
+? Every night? [caldo]
+< Every night you're in. I say goodnight to the wall. I've never told anybody that.
+? And if I read till two?
+< Then I'm a bit of a wreck in the mornings.
+? I wish you hadn't told me that one. [frena] [rifiuto]
+< Then I haven't. It's gone. I'll leave mine on tonight.
+---
+< I used to think I'd got set in my ways. It turns out I was only waiting for some better ones.
+? Goodnight, then. Count to ten and I'll do the lamp.
+< One. I'm going to go slowly.
+? You could knock on the wall.
+< Twice. Softly. And you needn't do anything about it.
+* Two knocks. I'm lying here, listening for two knocks.
+
+@ howard_c3 | COMPLICI | Flirt: sentirsi a casa
+> I sat in your chair the other day as if I'd bought it.
+---
+< I noticed. I went into the kitchen so as not to make a thing of it.
+? You made a thing of it. I heard you humming. [caldo]
+< It's the extractor fan. ...It was me.
+? It's just a habit.
+< That's what I was humming about.
+---
+< You've a way of sitting in it now. Legs under you. As if you'd been poured.
+? And where do you look, when I'm poured? [caldo]
+< I start at the feet, to be polite. Then I give up being polite.
+? It's a comfy chair.
+< It wasn't, before. I've sat in it. It's you that does it.
+? I'd better go home earlier, next time. [frena] [rifiuto]
+< You go when you like. I'm only glad of the chair.
+---
+< May I say the thing I oughtn't?
+? You always do.
+< You look more at home at mine than at yours. I said I oughtn't.
+* It's an awful thing to say. And it's a bit true.
+? No. Let me guess it.
+< You'd be right first time. You generally are, about me.
+< Goodnight, my dear. Your cup's on the drainer, upside down, the way you leave it.
+
+@ howard_d1 | INTIMI | Sexting: importanti l'uno per l'altra
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> Can you hear me through the wall, when I'm quiet?
+---
+< I can hear you being quiet. It's got a different sound from empty.
+? What am I doing, then? [caldo]
+< You're lying on your side. You've got the phone under the sheet. I'm guessing. I'm hoping.
+? Good. I like that you can.
+< Then I'll leave my hand where it is. It's flat on the paper. On the roses.
+---
+< I'm not used to being wanted, Sara. You'll have to tell me how it goes.
+? Slowly. And you tell me everything you're thinking of. [caldo]
+< I've the lamp on and my eyes shut. I'm looking up at you, only there isn't any bulb.
+? You start. You're better at it than you think.
+< I'd ask for your hand first. I'd want to look at it. I'd work my way along.
+? You talk, and I'll try not to make a sound.
+< Make one. Just one. I've lived next door to silence for thirty years.
+---
+< Was that you?
+? That was me.
+< I've sat up in bed. I've got my glasses on, and I don't know what for.
+? Knock twice.
+< There. Did you feel it? I did, right up the arm.
+< God bless you, my dear.
+
+@ howard_d2 | INTIMI | Sexting: una quotidianità comune
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> If I lived at yours, what would a Sunday be like?
+---
+< I'd be up at six, so as to come back to bed at seven and find you in it.
+? And I'd be cross. [caldo]
+< You'd be warm and cross. I've thought about it a good deal. I've thought about the warm.
+? And then?
+< Then I wouldn't go and get the paper. For the first time in thirty years, I'd let it lie.
+---
+< You'd have one of my shirts on. The blue. It'd be buttoned wrong.
+? You'd want to do it up properly. [caldo]
+< I'd have to undo it first, to get it straight. You can't hurry a thing like that.
+? There'd be nothing under it.
+< I'd put the kettle on. I'd need something to hold.
+? I'd let you look all morning.
+< Oh, my dear. I'd look as if there were going to be a test.
+---
+< I've let my tea go cold again. I seem to do it whenever it matters.
+? You could come and have mine.
+< It's nine steps to your door. I've counted them, for no reason.
+? Nine isn't many.
+< It's the longest walk in the building. I'll start now, and you can tell me to stop.
+< I'll listen for you not saying it.

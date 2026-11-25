@@ -1,0 +1,168 @@
+# MAGNUS — messaggi lunghi ed eleganti, firma «M.». Sereno: non fa nulla per conquistarla.
+# Niente giudizio sulle cinquanta pagine (arriva più avanti, di persona o per messaggio).
+
+@ editore_t1 | ESTRANEI | Your card | fatto('ep1_d13_biglietto') and not fatto('ep2_pagine_magnus')
+> I keep your card in my notebook. I've read the back of it more than the front.
+---
+< The front is for the post office. The back is for you. M.
+? «You're not allowed to hide.» How did you know I was? [caldo]
+< You stood beside every door in that house. People who are not hiding stand beside the food. M.
+? Why fifty?
+< At thirty a writer is still clearing her throat. At seventy she has begun to like the sound of it. M.
+---
+< May I ask what you are doing to them, at this moment? You are doing something. I can hear the rustling.
+? Moving one sentence back and forth. [caldo]
+< Then it is the one. Leave it where it frightens you. M.
+? Taking out the bits I'm ashamed of.
+< Kindly put them back. I can buy modesty anywhere. M.
+? Nothing. I'm afraid to open the file.
+< Open it and change one comma. The rest will think you mean business. M.
+---
+< You will be told, by kind people, that they are wonderful. Thank them, and do not listen.
+? Who should I listen to, then?
+< To whoever falls silent. M.
+? You sound as if you've been told that yourself.
+< Once, for eleven years, by a charming man. I have not written a line since he died. Good night, Sara. M.
+
+@ editore_t2 | ESTRANEI | The pages I sent | fatto('ep2_pagine_magnus') and giorno < 23
+> I promised myself I wouldn't ask if you'd started.
+---
+< And you have kept your word beautifully. You have merely informed me that you are not asking. M.
+? Is it working? [caldo]
+< I am seventy-one. I have been not-asked by experts. M.
+? I'm sorry. I'll go away.
+< Please do not apologise. It is a good sign. Bad writers are never curious. M.
+---
+< I can tell you how I read, if it would help you to sleep. I print them. I sit by a window with no telephone. I begin only when I have nothing to do afterwards.
+? How long does it take you?
+< As long as it deserves. I have finished some manuscripts between two floors, in a lift. M.
+? So they're being read by daylight. [caldo]
+< By nothing else. Lamps are for people who already know how it ends. M.
+* He prints them. He sits by a window with me in his hands.
+? That makes it worse.
+< I expect it does. Good. M.
+---
+< While you wait, do not touch page fifty-one. Let it come to the fence by itself.
+? It already has.
+< Then do not look it in the eye. M.
+? I changed the ending the night I sent them.
+< I know. The ink is different. I do not mean the ink. M.
+
+@ editore_t3 | ESTRANEI | Your two questions | fatto('ep1_d13_magnus_pagine')
+> You asked me who's telling it, and whether she wants to be found. I've changed my mind about the second.
+---
+< How splendid. I ask it of everyone. You are the first to send in a correction. M.
+? I said «not yet». I think she does. [caldo]
+< By whom? That is the third question. I never ask it in the same evening. M.
+? I think she wants to be looked for.
+< Ah. That is a different animal. It sleeps in the day. M.
+---
+< Does she know it herself?
+? She's the last to know.
+< Then keep her ignorant a little longer. It is becoming, in a heroine, up to about page two hundred. M.
+? She's starting to. It's in how she stands. [caldo]
+< Yes. Bodies are such gossips. M.
+? I'd rather not say.
+< Quite right. Never tell an editor anything you have not yet told the page. M.
+---
+< I shall be frank. I do not much care for plots. People want things, and then they reach for them. Everything else is furniture.
+? And if she reaches?
+< Then I shall turn the page rather quickly, for a man of my age. M.
+? And if she doesn't?
+< Then you will have written a very well-furnished room. Good night. M.
+
+@ editore_c1 | COMPLICI | Flirt: una musa
+> Have you ever been somebody's muse?
+---
+< Twice. One painted me as a lamp. I was very good-looking at the time, and it is a fair likeness. M.
+? And yours? Who were they? [caldo]
+< They would not wish to be a list. Each was an only copy. M.
+? I can't picture it.
+< Nobody can, now. It is one of the liberties of age. M.
+---
+< You ask because somebody has told you that you might be one. Or because you would like to be told.
+? The second. [caldo]
+< Then I will tell you. A muse is not beautiful. She is attentive, and one becomes interesting in her presence. You have that. It is rather ruinous. M.
+? Neither. I want to write one.
+< Then give her bad shoes and a will of her own. M.
+? I'd rather be the one with the pen.
+< My dear, you already are. I am the one sitting still. M.
+---
+< You must not think I am courting you. I gave it up, as one gives up stairs.
+? I might be. Courting you.
+< Then I shall put on the better jacket and say nothing at all. M.
+? I know. That's what's restful about it.
+< Restful. I have been called worse by handsomer women, though not recently. M.
+? Good night, Magnus. [frena]
+< Good night, Sara. You see? One may stop in the middle of a line. M.
+
+@ editore_c2 | COMPLICI | Flirt: un incontro privato
+> Would you let me see the library, one day? Only the library.
+---
+< It is the only room in the house that has never been tidied for guests. I should have to think who you would be. M.
+? A reader. [caldo]
+< Then there is a chair by the second window. Nobody has sat there since a lady who corrected my Greek. M.
+? Not a guest, then.
+< No. I rather thought not. M.
+---
+< You would have to be quiet. I read aloud, when I am alone, and I do not stop for company.
+? What would you read me? [caldo]
+< Something improper, in a very proper voice. It is the only way to hear the grammar. M.
+? I'm very good at quiet.
+< I had noticed. I have wondered what it costs you. M.
+? On second thoughts, I'd better not. [frena]
+< Second thoughts are the best edition. The chair is patient. M.
+---
+< There would be tea. There might be a fire. I make no other promises, and I ask for none.
+? I'd bring nothing but a pencil.
+< Then you will be overdressed for the occasion. I mean the pencil. M.
+? And if I fell asleep in the chair?
+< I should mark the place. M.
+
+@ editore_d1 | INTIMI | Sexting: confessioni
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> I tried to write about it, and I couldn't find a verb.
+---
+< There is only ever one, and everyone has used it. Try a noun. M.
+? Warmth. [caldo]
+< Good. Go on. Do not explain it. M.
+? Silk. The sleeve of your jacket.
+< It is a very old jacket. It has not been spoken of so kindly in years. M.
+---
+< I shall set you an exercise. Describe only what you can hear. I shall do the same, from here.
+? My own breath. The sheet. The clock, too slow. [caldo]
+< A fire going down. A page I have not turned for twenty minutes. My heart, which is being rather vulgar. M.
+? You, reading. In that very proper voice.
+< Then lie still, and I shall read. It is not a long passage, but I take my time. M.
+? I'd rather you described me.
+< From memory, then. The light was on your left. I began at the collar. M.
+---
+< You have stopped writing. I shall assume that the exercise is going well.
+? I lost the pencil.
+< They roll. Leave it where it is. M.
+? I'm still listening.
+< And I am still reading. Good night, my dear. Do not revise a word of it. M.
+
+@ editore_d2 | INTIMI | Sexting: desiderio e anni
+# TESTO DI JODY: la parte esplicita va fra la seconda e la terza parte.
+> Does it bother you? The years between us?
+---
+< They do not bother me. I was there for all of them. Do they bother you? M.
+? No. It's the patience I can't get over. [caldo]
+< It is not patience. It is knowing what one is waiting for. M.
+? Only on stairs.
+< Wretched girl. I shall have a lift put in. M.
+---
+< A young man wants to arrive. I have arrived nearly everywhere. I find I should like to look out of the window on the way.
+? What can you see? [caldo]
+< A shoulder. A strap that has given up. You, pretending that you have not noticed. M.
+? Then take the long road.
+< I know of no other. Put out the lamp, and I shall begin with your wrist. M.
+? You make it sound like a train.
+< The slow one, along the coast. One has the compartment to oneself. M.
+---
+< You ought to know that I expect nothing. It leaves one's hands free.
+? That's the most indecent thing you've ever said.
+< It was intended as a courtesy. The two are often confused. M.
+? Good. Because I expect a great deal.
+< Then I shall try to live up to the edition. Good night. M.
