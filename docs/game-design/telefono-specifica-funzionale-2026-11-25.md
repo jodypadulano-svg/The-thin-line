@@ -80,7 +80,7 @@ I messaggi in entrata possono essere spontanei (probabilità specifica del perso
 La mancata risposta viene gestita secondo personalità; frequenze, ritardi e condizioni individuali ancora da parametrizzare.
 
 ## 8. Privacy, incontri e continuità
-Privacy assoluta del cellulare: Sara ha il blocco tasti, Josh non accede alle conversazioni; la ricezione dei messaggi non aumenta la Suspicion. Non introdurre letture clandestine o sistemi di notifiche compromettenti.
+Privacy assoluta del cellulare: Sara ha il blocco tasti, Josh non accede alle conversazioni; la ricezione dei messaggi non aumenta la Suspicion. **(Jody, 25/11, sera): la Suspicion la possono dare i gesti di Sara davanti a Josh, per esempio guardare il telefono a cena; mai i messaggi da soli.** Non introdurre letture clandestine o sistemi di notifiche compromettenti.
 Gli appuntamenti possono essere prestabiliti o dinamici nelle fasce libere, rispettando disponibilità e requisiti. Distinguere appuntamenti importanti e incontri ordinari; non sostituire eventi canonici indispensabili. Restano da definire le concrete condizioni e modalità di pianificazione. Mantenere le regole già approvate sugli incontri spontanei dopo Interest > 50, dove applicabili ([specifica](regola-interesse-superiore-50-incontri-spontanei.md)).
 Dopo l'acquisizione del numero, le scene personali dal vivo devono rispettare il rapporto raggiunto, i fatti significativi e le informazioni effettivamente condivise, senza riproporre conoscenze già superate.
 
@@ -128,7 +128,7 @@ La prima realizzazione (commit `98d7e3a`) è stata **ritirata**: grafica cambiat
 |---|---|---|---|---|
 | Howard | 60% | 1 | sempre | il giorno dopo: «Did I say something wrong?» |
 | Joanie | 45% (80% il 17 e il 19) | 2 | sempre | «??» e ci ride sopra |
-| Jacob | 35% | 3 | dopo le 22 | niente |
+| Jacob | 35%, **mai prima del 21** (Jody, 25/11) | 3 | dopo le 22 | niente |
 | Daniel | 35% | 3 | sotto il giorno solo del romanzo | sparisce finché non lo cerca Sara |
 | Simon | 25% (50% il 15 e il 17) | 3 | 18-23 | niente |
 | Darius | 20% (40% il 14 e il 16) | 4 | sempre | «Lol, busy. Got it» |

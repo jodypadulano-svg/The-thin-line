@@ -130,7 +130,8 @@ init -4 python:
             return []
         if store.giorno - store.ultima_entrata.get(k, -99) < ENTRATE[k][1]:
             return []
-        if k == "ex" and not (ora >= 22 * 60 or ora < 2 * 60):
+        ## Jacob non comincia mai prima del 21 (il suo invito), poi solo di notte.
+        if k == "ex" and (store.giorno < 21 or not (ora >= 22 * 60 or ora < 2 * 60)):
             return []
         if k == "simon" and not 18 * 60 <= ora < 23 * 60:
             return []

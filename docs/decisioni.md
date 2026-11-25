@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 20 · «Page Fifty» (Jody, 25/11/2026)
+
+**Stato: scheda approvata, codice scritto (25/11), immagini da fare.** Mattina da Magnus (responso al 23, la domanda «Which of them is it about?»), pomeriggio a scelta fra palestra, Joanie e scrivere, cena con Josh con terza scelta neutra e scena intima solo con la serata romantica, semina del mercoledì. Due vestiti, 35 CG, un luogo nuovo. Samantha non viene citata a Magnus. Jacob non comincia per primo prima del 21. Tutto nella [scheda](narrative/giorno20-scheda-2026-11-25.md); parte esplicita col brief `d20_josh`.
+
 ### Appuntamenti al telefono · Il mercoledì di Josh (Jody, 25/11/2026)
 
 **Stato: approvato in ogni punto; nessun codice (parte quando si scrivono i giorni dal 20).** Ogni mercoledì sera, dal 24, Josh gioca a D&D da Mark: Sara sta a casa a scrivere oppure esce di nascosto con chi ha preso appuntamento in chat. Josh umiliato passa al lunedì 22; Jacob del 23 diventa un appuntamento come gli altri; il 33 resta, con l'alibi di Joanie. Soglie, effetti, rischi, uscite e CG nella [scheda](narrative/mercoledi-di-josh-2026-11-25.md).
