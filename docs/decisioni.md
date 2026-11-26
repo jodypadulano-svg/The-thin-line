@@ -4,6 +4,15 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Ramo trasversale · Josh complice (Jody, 26/11/2026)
+
+**Stato: possibilità, non evento certo (Jody, 26/11): impostazione approvata se il ramo verrà fatto; nessun codice.** Decisione esplicita di Jody che autorizza ad approfondire Josh (visione artistica, punto 8), limitatamente a questo ramo.
+
+- Non è un nono percorso: è un **ramo trasversale**. Se si apre, Josh diventa **complice di tutti** gli amanti di Sara, in una vita poliamorosa.
+- **Con Daniel diventa un gioco a tre:** Josh si fa sottomettere volentieri, Daniel ne gode, Sara pure. Coerente con D3 e F2.
+- **Dirty talking di Sara verso Josh = roleplay consapevole:** entrambi sanno che le parole umilianti sono un gioco concordato, non un giudizio reale. Josh è felice e consenziente, mai vittima (visione 3, 7, 8).
+- Aggancio previsto: la sincerità di Sara (flag `ep2_d21_detto_josh` e occasioni successive); Josh che fa «una domanda di troppo» e se ne vergogna. Condizioni, tappe, data di apertura e scene: da definire.
+
 ### Prompt immagini · Niente «adult» né «mature face» (Jody, 26/11/2026)
 
 **Stato: regola permanente, applicata dalla scheda del giorno 21.** Nei prompt per Mage non scrivere «adult» né «mature face» (nemmeno nella frase iniziale): li invecchia a 40-45 anni. L'età si indica solo col numero (Sara, 27). Le schede dei giorni precedenti vanno corrette quando si riprendono.
@@ -14,6 +23,7 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 - **Mattina, Darius passa per Josh: solo amicizia.** Nessun opt-in del percorso. «Make him a coffee and talk about the book.» → Darius +1, flag `ep2_d21_darius_caffe` · «Send him on to the convention.» → nessun effetto. Darius non tradisce la confidenza di Josh del 16.
 - **Pomeriggio, Joanie in salotto: tre argomenti, con un'agenda scritta sullo scontrino** (all'arrivo Joanie +1). Jacob: «He was... good. Seeing him.» → Jacob +1, Corr +1 (`ep2_d21_jacob_aperta`) · «It was a drink, Jo. That's all.» → Conf +1 (`ep2_d21_jacob_chiusa`). Daniel **solo con `ep2_d18_pranzo_daniel`**: «All right. He's a bit much. I liked it.» → Daniel +1, Corr +1 (`ep2_d21_daniel_ammesso`) · «It was lunch...» → nessun effetto. Magnus: battute senza scelta. Il dialogo cambia se il 20 Sara è stata da Joanie.
+- **Daniel che sfotte Josh: la confessione (Jody, 26/11), dopo la scelta su Daniel e solo col pranzo del 18.** Con `ep2_d18_sfotto_josh` Sara confessa di averlo sfottuto per eccitare Daniel; altrimenti che le fa effetto quando lo fa lui. Joanie: «Did you like it?». «Not much.» → nessun effetto · «Yes. And I feel guilty about him.» → Daniel +1, Corr +1, e Joanie offre di toglierle la colpa parlando da sola con Josh. **Scelta acceleratore:** «Let Joanie talk to him.» → Joanie +2, Corr +1, flag `ep2_d21_joanie_parla_josh` (apre il possibile ramo di Josh complice: Joanie farà emergere il suo lato cuck) · «No, Jo. Not him.» → Conf +1, flag `ep2_d21_joanie_fermata`. Una CG in più (`d21_b4b_offerta`).
 - **La svolta pepata: il messaggio a Jacob.** Joanie prende il telefono di Sara e scrive a Jacob in minuscolo, «così sa che sei tu». Se Sara non ha il numero, Joanie lo digita a memoria. «Let her send it.» → Jacob +1, Corr +1 (`ep2_d21_messaggio_inviato`); la sera Jacob risponde e capisce che l'ha scritto Joanie · «Take the phone back and delete it.» → nessun effetto (`ep2_d21_messaggio_cancellato`); Joanie non se la prende (la loro regola). Joanie non svela nulla di sé.
 - **Sera, dirlo a Josh.** «Tell him about Jacob.» → Josh +1, Conf +1 (`ep2_d21_detto_josh`): Josh si irrigidisce, poi la ringrazia · «Keep it to herself.» → Corr +1 (`ep2_d21_taciuto_josh`).
 - **Jacob scrive per primo** (o risponde al messaggio del pomeriggio), sul divano accanto a Josh. ★ «Answer him.» → Jacob +2, Susp +2 (`ep2_d21_risposto_jacob`); **se Sara ha taciuto a Josh, Susp +1 in più** · «Turn the phone over.» → nessun effetto.

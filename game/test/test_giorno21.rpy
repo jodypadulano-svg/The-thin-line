@@ -20,12 +20,17 @@ init python:
     _D21_DICE, _D21_TACE = "Tell him about Jacob.", "Keep it to herself."
     _D21_RISPONDE, _D21_GIRA = "Answer him.", "Turn the phone over."
     _D21_TIENE, _D21_ELIMINA = "Leave the chat where it is.", "Delete the chat."
+    _D21_POCO, _D21_COLPA = "«Not much.»", "«Yes. And I feel guilty about him.»"
+    _D21_PARLA, _D21_FERMA = "Let Joanie talk to him.", "«No, Jo. Not him.»"
     D21_SCELTE = {
         ## Pranzo del 18 avvenuto: c'è anche la scelta su Daniel.
-        "tutto_aperto": [_D21_CAFFE, _D21_APRE, "«All right. He's a bit much. I liked it.»", _D21_INVIA,
+        "tutto_aperto": [_D21_CAFFE, _D21_APRE, "«All right. He's a bit much. I liked it.»", _D21_COLPA, _D21_PARLA, _D21_INVIA,
                          _D21_DICE, _D21_RISPONDE, _D21_TIENE],
-        "pranzo_chiuso": [_D21_SCALE, _D21_CHIUDE, "«It was lunch. He talked about books.»", _D21_CANCELLA,
+        "pranzo_chiuso": [_D21_SCALE, _D21_CHIUDE, "«It was lunch. He talked about books.»", _D21_COLPA, _D21_FERMA, _D21_CANCELLA,
                           _D21_TACE, _D21_RISPONDE, _D21_ELIMINA],
+        ## Pranzo senza sfottò, Sara dice che non le è piaciuto molto.
+        "poco": [_D21_SCALE, _D21_APRE, "«It was lunch. He talked about books.»", _D21_POCO, _D21_INVIA,
+                 _D21_DICE, _D21_GIRA, _D21_TIENE],
         ## Nessun pranzo e numero negato il 19: Joanie scrive il numero a memoria.
         "senza_numero": [_D21_SCALE, _D21_APRE, _D21_INVIA, _D21_TACE, _D21_GIRA, _D21_TIENE],
         ## Pranzo annullato: niente scelta su Daniel.
@@ -33,8 +38,9 @@ init python:
     }
     ## Josh, Darius, Joanie, Jacob, Daniel, Corruption, Confidence, Suspicion.
     D21_ATTESI = {
-        "tutto_aperto":  (1, 1, 1, 4, 1, 3, 1, 2),
-        "pranzo_chiuso": (0, 0, 1, 2, 0, 2, 1, 2),
+        "tutto_aperto":  (1, 1, 3, 4, 2, 5, 1, 2),
+        "pranzo_chiuso": (0, 0, 1, 2, 1, 3, 2, 2),
+        "poco":          (1, 0, 1, 2, 0, 2, 1, 0),
         "senza_numero":  (0, 0, 1, 2, 0, 3, 0, 0),
         "annullato":     (1, 1, 1, 0, 0, 1, 2, -1),
     }
@@ -45,7 +51,7 @@ init python:
 
 testsuite giorno21:
     testcase bivi:
-        parameter ramo = ["tutto_aperto", "pranzo_chiuso", "senza_numero", "annullato"]
+        parameter ramo = ["tutto_aperto", "pranzo_chiuso", "poco", "senza_numero", "annullato"]
         $ debug_azzera_stato()
         $ _d21_scelte = list(D21_SCELTE[ramo])
         $ _test_menu_giorno15(_d21_scelte)
@@ -54,7 +60,8 @@ testsuite giorno21:
         $ interest_josh = 50
         $ sara_corruption = 20
         $ josh_suspicion = 5
-        $ segna("ep2_d18_pranzo_daniel", ramo in ("tutto_aperto", "pranzo_chiuso"))
+        $ segna("ep2_d18_pranzo_daniel", ramo in ("tutto_aperto", "pranzo_chiuso", "poco"))
+        $ segna("ep2_d18_sfotto_josh", ramo == "tutto_aperto")
         $ segna("ep2_d18_pranzo_annullato", ramo == "annullato")
         $ segna("ep2_d19_numero_dato", ramo != "senza_numero")
         $ segna("ep2_d19_numero_negato", ramo == "senza_numero")
@@ -81,6 +88,8 @@ testsuite giorno21:
         assert eval giorno == 21 and ha_numero("ex")
         assert eval fatto("ep2_d21_detto_josh") == (_D21_DICE in D21_SCELTE[ramo])
         assert eval fatto("ep2_d21_messaggio_inviato") == (_D21_INVIA in D21_SCELTE[ramo])
+        assert eval bool(fatto("ep2_d21_joanie_parla_josh")) == (ramo == "tutto_aperto")
+        assert eval bool(fatto("ep2_d21_joanie_fermata")) == (ramo == "pranzo_chiuso")
         ## La chat di Jacob resta solo se Sara non la cancella; nessun discorso libero consumato.
         assert eval (chat_log.get("ex", []) != []) == (_D21_TIENE in D21_SCELTE[ramo])
         assert eval not discorsi_fatti and not giorno_tipo

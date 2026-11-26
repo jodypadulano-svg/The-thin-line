@@ -66,7 +66,7 @@ init python:
                 "Step aside and hand him the spoon.", "«Come on. Don't say that.»", "Get home before [nome_compagno].",
                 ## Giorno 21
                 "Make him a coffee and talk", "«It was a drink, Jo.", "«It was lunch.", "Take the phone back",
-                "Tell him about Jacob.", "Turn the phone over.", "Leave the chat",
+                "Tell him about Jacob.", "Turn the phone over.", "Leave the chat", "«Not much.»",
             ],
         },
         "barbara": {
@@ -128,6 +128,7 @@ init python:
                 ## Giorno 21
                 "Send him on", "«He was... good.", "«All right. He's a bit much.", "Let her send it.",
                 "Keep it to herself.", "Turn the phone over.", "Delete the chat.",
+                "«Yes. And I feel guilty", "«No, Jo. Not him.»",
             ],
         },
         "daniel": {
@@ -189,6 +190,7 @@ init python:
                 ## Giorno 21
                 "Make him a coffee and talk", "«It was a drink, Jo.", "«All right. He's a bit much.",
                 "Take the phone back", "Tell him about Jacob.", "Turn the phone over.", "Leave the chat",
+                "«Yes. And I feel guilty", "«No, Jo. Not him.»",
             ],
         },
         "mista": {

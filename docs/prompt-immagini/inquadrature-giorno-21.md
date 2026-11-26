@@ -1,7 +1,7 @@
 # Inquadrature del giorno 21 — «Lowercase»
 
 Decisioni: [registro](../decisioni.md), «Giorno 21». Codice: `game/episodio2/ep2_giorno21.rpy`.
-**18 CG, 0 luoghi nuovi, 18 fatte.** Tutto si svolge a casa di Sara e Josh. Per ogni immagine c'è cosa mostra e quali riferimenti allegare; il prompt in inglese si scrive al momento, uno alla volta.
+**19 CG, 0 luoghi nuovi, 19 fatte.** Tutto si svolge a casa di Sara e Josh. Per ogni immagine c'è cosa mostra e quali riferimenti allegare; il prompt in inglese si scrive al momento, uno alla volta.
 
 ## Come si lavora (vale per qualunque assistente)
 
@@ -54,6 +54,7 @@ Jacob non compare: c'è solo il suo nome sullo schermo, che non deve essere legg
 | ✅ | `d21_b2_divano.webp` | Sara e Joanie sul divano con le gambe raccolte e i pasticcini fra loro; Joanie mostra uno scontrino lungo con una lista scritta sul retro (non leggibile). Pomeriggio | `casa_soggiorno_sera.webp`, Sara, Joanie |
 | ✅ | `d21_b3_jacob_racconta.webp` | Sara abbraccia un cuscino e racconta ridendo di sé; Joanie col mento sui pugni, rapita | B2, Sara, Joanie |
 | ✅ | `d21_b4_daniel.webp` | Joanie si fa aria in modo teatrale con lo scontrino; Sara col viso nel cuscino che ride | B2, Sara, Joanie |
+| ✅ | `d21_b4b_offerta.webp` | Solo col «sì» sulla colpa: Joanie, improvvisamente seria, tiene le due mani di Sara sopra la scatola dei pasticcini; Sara si morde il labbro. Niente occhiolino | B4, Sara, Joanie |
 | ✅ | `d21_b5_telefono.webp` | Joanie tiene alto il telefono di Sara, fuori dalla sua portata, e scrive col pollice; Sara è stesa di traverso su di lei, allunga il braccio e ride. Allegria tra amiche, niente di erotico | B2, Joanie, Sara |
 | ✅ | `d21_b6_inviato.webp` | Il telefono a faccia in su sul tavolino fra due pasticcini; le due lo fissano, Joanie con la mano sulla bocca | B5 |
 | ✅ | `d21_b6_cancellato.webp` | Sara stringe il telefono al petto, trionfante e un po' senza fiato, un ginocchio nei pasticcini; Joanie fa il broncio al soffitto con i piedi in grembo a lei | B5 |

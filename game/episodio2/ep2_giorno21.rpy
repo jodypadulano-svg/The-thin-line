@@ -172,6 +172,7 @@ label ep2_d21_joanie:
             "«It was lunch. He talked about books.»":
                 s "It was lunch, Jo. He talked about books. He's my boyfriend's boss."
                 ch "Mm. And Henry the Eighth was a man who liked weddings."
+        call ep2_d21_colpa
     elif fatto("ep2_d18_pranzo_annullato"):
         n "Item two on the receipt has been crossed out. Sara never told her about the lunch she cancelled. Joanie's crossed it out anyway, as if she'd smelt it."
 
@@ -186,6 +187,68 @@ label ep2_d21_joanie:
     $ via_cg()
     call ep2_d21_messaggio
     $ via_cg()
+    return
+
+
+## --- Daniel che sfotte Josh: la confessione e l'offerta di Joanie (Jody 26/11) ----------------
+## Solo col pranzo del 18; segue la scelta su Daniel. Con ep2_d18_sfotto_josh Sara confessa di
+## averlo sfottuto anche lei per eccitare Daniel; altrimenti che le fa effetto quando lo fa lui.
+## «Not much.» → nessun effetto · «Yes. And I feel guilty...» → Daniel +1, Corr +1, poi l'offerta.
+## Lasciar parlare Joanie con Josh (acceleratore) → Joanie +2, Corr +1, flag ep2_d21_joanie_parla_josh:
+## apre il ramo possibile di Josh complice (registro, 26/11). Non lasciarla → Conf +1.
+## Joanie non svela nulla di sé (attrazione per Sara e «casa delle bambole» restano alla tappa 5).
+
+label ep2_d21_colpa:
+    n "Joanie's waiting. She can always tell when there's a bit Sara has left out."
+    if fatto("ep2_d18_sfotto_josh"):
+        s "There's something else. At lunch, he was making fun of [nome_compagno]. The photocopier, all that."
+        s "And I joined in. On purpose. Because I could see what it did to him. To Daniel."
+        n "She says it to the pastry box. Joanie puts her coffee down very slowly, as if it might go off."
+        ch "You teased your boyfriend. To turn his boss on."
+        s "When you say it like that."
+        ch "I'm saying it exactly like that. Did you like it?"
+    else:
+        s "There's something else. At lunch, he made fun of [nome_compagno]. Not nastily. Lightly. Like a man flicking a crumb off his sleeve."
+        s "And it did something to me. Watching him do it. I didn't join in. I just... felt it."
+        ch "Felt what, exactly?"
+        s "Jo."
+        ch "Did you like it?"
+    menu:
+        sp "She isn't laughing. That's how I know she really wants the answer."
+        "«Not much.»":
+            $ segna("ep2_d21_colpa_poco")
+            s "Not much. It was a strange moment, that's all. It's gone."
+            ch "Okay. Strange moments are allowed. Next item."
+        "«Yes. And I feel guilty about him.»":
+            $ segna("ep2_d21_colpa_si")
+            $ interest("daniel", 1, "Sara admitted what Daniel's game did to her.")
+            $ corruption(1, "Sara admitted she liked it.")
+            s "Yes. I liked it. And I feel horrible about him. He wrote topics on his hand for me, Jo."
+            $ via_cg()
+            $ cg("Joanie holding both of Sara's hands across the pastry box, suddenly serious, Sara biting her lip", "images/cg/ep2/d21_b4b_offerta.webp")
+            n "Joanie takes both her hands across the pastry box. It's the voice she uses about three times a year."
+            ch "Listen to me. If you give me the chance, I'll take every bit of that guilt away."
+            ch "But you'd have to let me talk to [nome_compagno]. On my own. And you'd have to trust me."
+            s "Talk to him about what?"
+            ch "About him. Not about you. I promise you that."
+            if sara_bad_girl:
+                n "She doesn't wink. For once she doesn't. That's what makes Sara's stomach turn over."
+            menu:
+                sp "Joanie and [nome_compagno]. On their own. I don't know what she'd say. I don't know what he'd say back."
+                "Let Joanie talk to him." (acceleratore=True):
+                    $ segna("ep2_d21_joanie_parla_josh")
+                    $ interest("amica", 2, "Sara trusted her with Josh.")
+                    $ corruption(1, "Sara let Joanie talk to Josh.")
+                    s "...Okay. Talk to him. But Jo. Be kind."
+                    ch "I'm always kind. I'm just kind in unexpected directions."
+                    n "She squeezes Sara's hands once, hard, and lets go, and is herself again, reaching for an almond croissant as if nothing has been decided."
+                    sp "Something's been decided."
+                "«No, Jo. Not him.»":
+                    $ segna("ep2_d21_joanie_fermata")
+                    $ confidence(1, "Sara kept Josh out of it.")
+                    s "No, Jo. Not him. Whatever this is, it's mine to deal with."
+                    ch "Fair. The offer doesn't expire. Like a really good coupon."
+                    n "That's the rule. If Sara doesn't want to, Joanie doesn't mind. She means it. She also, Sara notices, doesn't say she'll forget it."
     return
 
 
