@@ -2,6 +2,8 @@
 
 **Stato:** regola di game design vincolante.
 
+**Precisazione successiva (25–26/11):** la proposta di Jacob «ogni sera libera» oltre 50 è stata sostituita dal [mercoledì di Josh](../narrative/mercoledi-di-josh-2026-11-25.md), fatte salve le eccezioni narrative già concordate; gli appuntamenti restano step indipendenti dalla data. Per Howard, il mercoledì richiama la scala narrativa mentre le visite spontanee dopo il lavoro alimentano soltanto la rotazione delle faccende. Vedi [pianificazione 22–24](../narrative/giorni22-24-pianificazione-2026-11-26.md).
+
 ## Principio generale
 
 Quando il valore numerico dell'**interesse di Sara verso un personaggio supera strettamente 50** (`interesse > 50`), Sara **inizia a cercare autonomamente occasioni per incontrarlo più spesso**, senza che ogni iniziativa debba partire dal giocatore o dal personaggio interessato.

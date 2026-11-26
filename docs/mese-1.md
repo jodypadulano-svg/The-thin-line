@@ -97,14 +97,18 @@ Totale: **80 scelte**, di cui **18 fondamentali** (★).
 
 ## 5. Settimana 4 — Episodio 2
 
+Per il 22–24 valgono anche le condizioni e gli incontri dinamici della [scheda approvata il 26/11](narrative/giorni22-24-pianificazione-2026-11-26.md).
+
 | Giorno | Fascia | Scena | Chi | Scelte → effetti |
 |---|---|---|---|---|
 | **22 Lun** | Lavoro | Barbara commenta l'abbigliamento di Sara | Barbara | **Il giorno dopo:** Vestirsi come sempre → — · Una scollatura in più → Barbara +1, Corr +1 |
+|  | Lavoro | Barbara propone l'inchiesta sulla lettera anonima | Barbara | Accettare o rifiutare |
 |  | Sera | Josh torna a casa umiliato da Daniel **(spostata dal 24 il 25/11/2026)** | Josh, Daniel | ★ **Josh è a pezzi:** Consolarlo 🔒 Josh 30 → Josh +3 · Irritarsi per la sua debolezza → Josh -3, Daniel +1, Corr +1 |
-| **23 Mar** | Lavoro | Giornata normale |  | — |
-|  | Sera | Serata normale a casa (l'incontro con Jacob passa al mercoledì, 25/11/2026) | Josh | — |
-| **24 Mer** | Lavoro | Giornata normale |  | — |
-|  | Sera | **Il mercoledì di Josh (25/11/2026):** Josh gioca a Dungeons & Dragons. Sara resta a casa a scrivere, oppure esce **di nascosto** con chi ha preso appuntamento in chat, Jacob compreso. Torna ogni mercoledì (31, 38, 45…). Sostituisce la serata del 22 | contatto scelto | ★ **Con Jacob, se l'appuntamento è con lui:** Parlare dei ricordi → Jacob +2 · Parlare di Josh → Josh +1 · 🔒 Corr 10 Lasciarlo avvicinare → Jacob +4, Corr +2. Il resto da progettare (registro, 25/11) |
+| **23 Mar** | Lavoro / pranzo | Responso positivo di Magnus; spazio per eventuale inchiesta | Magnus | Dettagli da scrivere |
+|  | Dopo il lavoro | Allenamento in palestra | Simon | Se nessun appuntamento già fissato e Interest >= 16, Sara può invitarlo per mercoledì |
+|  | Sera | Serata normale a casa; finestra telefonica speciale per organizzare mercoledì | Josh / contatti | Un appuntamento alla volta |
+| **24 Mer** | Lavoro / pranzo | Passione in comune con Darius; possibile condivisione del manoscritto | Darius | Scelta facoltativa; resto del lavoro libero per inchiesta/attività ordinarie |
+|  | Sera | **Il mercoledì di Josh (25/11/2026):** Josh gioca a Dungeons & Dragons. Sara resta a casa a scrivere, oppure esce **di nascosto** con Jacob, Simon, Daniel, Joanie, Darius o Howard, se ha organizzato l'appuntamento. Torna ogni mercoledì (31, 38, 45…). Sostituisce la serata del 22 | contatto scelto | ★ **Con Jacob, se l'appuntamento è con lui:** Parlare dei ricordi → Jacob +2 · Parlare di Josh → Josh +1 · 🔒 Corr 10 Lasciarlo avvicinare → Jacob +4, Corr +2. Il resto da progettare (registro, 25/11) |
 | **25 Gio** | Lavoro | Giornata normale |  | — |
 |  | Sera | Palestra | Simon | ★ **Dopo l'allenamento:** Andare a casa → Simon +2 · 🔒 Corr 15 Restare dopo la chiusura → Simon +5, Corr +3, Susp +1 |
 | **26 Ven** | Sera | Howard ha visto Sara uscire elegante mercoledì, **solo se è uscita** (I19): se Interest Howard 5+, tace e lo fa capire a Sara; altrimenti lo dice a Josh «per caso» | Howard, Josh | **Esito (non sceglie il giocatore):** Howard tace → Howard +2 · Howard parla a Josh → Susp +3<br>**Dopo:** Serata a casa → — · Aiutare Howard a sistemare la cucina → Howard +2 |

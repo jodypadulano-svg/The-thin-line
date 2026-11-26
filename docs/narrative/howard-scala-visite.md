@@ -2,6 +2,8 @@
 
 Bozza di Claude, 21/11/2026, **da correggere con Jody**. Regole decise il 21/11 nel [registro](../decisioni.md) («Howard: la scala delle visite»). Fonti: [scheda di Howard](../personaggi/howard.md) (sezioni F-H), [appunti del 19/11](../../notes/howard-sara-session-2026-11-19.md), [visione artistica](../visione-artistica.md).
 
+**Decisione del 26/11:** il mercoledì di Josh, se Sara sceglie Howard, si richiama il prossimo gradino di questa scala, senza una sequenza separata. Il gradino dipende dagli incontri realmente vissuti, non dalla data; rispettare i requisiti già approvati. La rotazione delle venti faccende spontanee è indipendente dalla scala narrativa. Vedi [pianificazione 22–24](giorni22-24-pianificazione-2026-11-26.md).
+
 ## Il meccanismo, in breve
 
 - A ogni incontro Howard invita Sara da lui, con una scusa diversa e l'aria da cane bastonato. **Non si arrende mai.**

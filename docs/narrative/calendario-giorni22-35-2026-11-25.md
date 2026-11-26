@@ -2,6 +2,8 @@
 
 **Data:** 25 novembre 2026. **Stato:** brainstorming selezionato dall'autore, calendarizzazione di lavoro, da sviluppare. Nessuna implementazione Ren'Py. Documento interno per gli autori, con spoiler sul finale segreto di Hugo.
 
+**Aggiornamento 26/11:** giorni 22–24 approvati nel dettaglio nella [scheda dedicata](giorni22-24-pianificazione-2026-11-26.md), che prevale sulle indicazioni incompatibili.
+
 ## Criteri
 
 - Diciannove nuovi avvenimenti selezionati: nove nella settimana 22–28 e dieci nella 29–35. Barbara non ha un nuovo evento personale nella prima settimana; restano l'inchiesta e le eventuali convocazioni delle stagiste.
@@ -14,11 +16,13 @@
 | Giorno | Fascia indicativa | Avvenimento | Stato / condizioni |
 |---|---|---|---|
 | **22 lun** | Lavoro | Barbara propone a Sara di verificare la lettera anonima sulla morte sospetta. | Già concordato: Sara può accettare o rifiutare. Filone professionale autonomo. |
+| 22 | Lavoro / rientro | Commento di Barbara all'abbigliamento; eventuale convocazione della stagista; eventuale faccenda spontanea da Howard. | Condizioni esistenti. |
 | 22 | Sera | Josh torna a casa umiliato da Daniel; Sara decide come reagire. | Preesistente, **spostato qui dal 24** (Jody, 25/11). È il motivo per cui mercoledì Josh accetta di andare a giocare. |
 | **23 mar** | Pausa pranzo | **Magnus:** comunica il responso positivo sulle cinquanta pagine del romanzo, con eventuali osservazioni costruttive. | Nuovo 1. Riscontro professionale atteso dopo l'invio del 15 e l'incontro del 20. Dettagli del giudizio da scrivere. |
-| 23 | Sera | Serata normale a casa. | L'incontro con Jacob passa al mercoledì, solo se Sara prende l'appuntamento con lui (Jody, 25/11). |
+| 23 | Dopo il lavoro | Allenamento in palestra; possibile invito diretto a Simon per mercoledì. | Se Sara non ha già un appuntamento e Interest Simon >= 16. Eventuale Howard solo se compatibile. |
+| 23 | Sera | Serata normale a casa; finestra telefonica speciale per gli appuntamenti del mercoledì. | Se nessun appuntamento già fissato; Jacob può averla invitata domenica 21. |
 | **24 mer** | Pausa pranzo | **Darius:** Sara scopre una passione in comune con lui; proposta: letteratura psicologica. Può decidere di condividere le cinquanta pagine del manoscritto. | Nuovo 2. Occasione amichevole, non flirt automatico; modalità concreta dell'incontro da definire. |
-| 24 | Sera | **Il mercoledì di Josh:** primo D&D. Sara resta a casa a scrivere, oppure esce di nascosto con chi ha preso appuntamento in chat (anche Jacob). | Regola di Jody (25/11): una sera a settimana, sempre il mercoledì (24, 31, 38…). Sostituisce la serata libera del 22. |
+| 24 | Sera | **Il mercoledì di Josh:** primo D&D. Sara resta a casa a scrivere, oppure esce di nascosto con uno dei sei contatti previsti (Jacob, Simon, Daniel, Joanie, Darius, Howard), se l'appuntamento è stato organizzato. | Regola di Jody (25/11): una sera a settimana, sempre il mercoledì (24, 31, 38…). Sostituisce la serata libera del 22. |
 | **25 gio** | Pausa pranzo / breve incontro diurno | **Daniel:** Sara lo vede in compagnia di un'altra donna elegante. | Nuovo 3. Incontro non necessariamente diretto; identità della donna e reazioni da sviluppare, senza imporre gelosia. |
 | 25 | Sera, palestra | **Simon:** Sara lo vede aiutare con pazienza una persona in difficoltà. | Nuovo 4, integrabile nell'allenamento già previsto, se Sara frequenta la palestra. Conservare il ramo facoltativo dopo la chiusura secondo condizioni vigenti. |
 | **26 ven** | Pomeriggio al rientro dal lavoro | **Howard:** prepara una torta per ringraziare Sara delle attenzioni ricevute. | Nuovo 5. Se coerente con le interazioni precedenti. Fascia pomeridiana confermata dall'autore. |

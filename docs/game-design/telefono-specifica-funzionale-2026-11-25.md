@@ -145,4 +145,4 @@ Riguarda i Flirt e i Sexting cominciati da Sara, secondo `interesse_altrui`:
 Nessuna penalità: le risposte calde danno Interest come nelle altre chat. Id con `_n`, `ricambiato=False`.
 
 ### 12.4 Appuntamenti (25/11)
-Approvati, da scrivere con i giorni dal 20: [Il mercoledì di Josh](../narrative/mercoledi-di-josh-2026-11-25.md).
+Approvati, da scrivere con i giorni dal 20: [Il mercoledì di Josh](../narrative/mercoledi-di-josh-2026-11-25.md). Aggiornamento 26/11: [giorni 22–24](../narrative/giorni22-24-pianificazione-2026-11-26.md). Il martedì è prevista una finestra speciale per organizzare il mercoledì, se Sara non ha già un appuntamento; Jacob invita domenica 21, Simon può essere invitato direttamente in palestra martedì 23. Un appuntamento alla volta.
