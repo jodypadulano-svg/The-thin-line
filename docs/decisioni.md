@@ -4,6 +4,21 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Prompt immagini · Niente «adult» né «mature face» (Jody, 26/11/2026)
+
+**Stato: regola permanente, applicata dalla scheda del giorno 21.** Nei prompt per Mage non scrivere «adult» né «mature face» (nemmeno nella frase iniziale): li invecchia a 40-45 anni. L'età si indica solo col numero (Sara, 27). Le schede dei giorni precedenti vanno corrette quando si riprendono.
+
+### Giorno 21 · «Lowercase» (Jody, 26/11/2026)
+
+**Stato: decisioni di Jody, codice scritto (bozza dei dialoghi), immagini da fare.** File `game/episodio2/ep2_giorno21.rpy`, test `giorno21`, preset in `debug.rpy`, [inquadrature](prompt-immagini/inquadrature-giorno-21.md) (18 CG). Josh è alla convention tutto il giorno; nessuna visita di Daniel.
+
+- **Mattina, Darius passa per Josh: solo amicizia.** Nessun opt-in del percorso. «Make him a coffee and talk about the book.» → Darius +1, flag `ep2_d21_darius_caffe` · «Send him on to the convention.» → nessun effetto. Darius non tradisce la confidenza di Josh del 16.
+- **Pomeriggio, Joanie in salotto: tre argomenti, con un'agenda scritta sullo scontrino** (all'arrivo Joanie +1). Jacob: «He was... good. Seeing him.» → Jacob +1, Corr +1 (`ep2_d21_jacob_aperta`) · «It was a drink, Jo. That's all.» → Conf +1 (`ep2_d21_jacob_chiusa`). Daniel **solo con `ep2_d18_pranzo_daniel`**: «All right. He's a bit much. I liked it.» → Daniel +1, Corr +1 (`ep2_d21_daniel_ammesso`) · «It was lunch...» → nessun effetto. Magnus: battute senza scelta. Il dialogo cambia se il 20 Sara è stata da Joanie.
+- **La svolta pepata: il messaggio a Jacob.** Joanie prende il telefono di Sara e scrive a Jacob in minuscolo, «così sa che sei tu». Se Sara non ha il numero, Joanie lo digita a memoria. «Let her send it.» → Jacob +1, Corr +1 (`ep2_d21_messaggio_inviato`); la sera Jacob risponde e capisce che l'ha scritto Joanie · «Take the phone back and delete it.» → nessun effetto (`ep2_d21_messaggio_cancellato`); Joanie non se la prende (la loro regola). Joanie non svela nulla di sé.
+- **Sera, dirlo a Josh.** «Tell him about Jacob.» → Josh +1, Conf +1 (`ep2_d21_detto_josh`): Josh si irrigidisce, poi la ringrazia · «Keep it to herself.» → Corr +1 (`ep2_d21_taciuto_josh`).
+- **Jacob scrive per primo** (o risponde al messaggio del pomeriggio), sul divano accanto a Josh. ★ «Answer him.» → Jacob +2, Susp +2 (`ep2_d21_risposto_jacob`); **se Sara ha taciuto a Josh, Susp +1 in più** · «Turn the phone over.» → nessun effetto.
+- **Notte, la chat (mese-1):** lasciarla → nessun effetto · cancellarla → Corr +1, Susp −1 (il numero resta). Poi il telefono libero dalle 23:00 alle 23:30.
+
 ### Giorno 22 · Primo incontro con la testimone e convocazioni quotidiane (Jody, 26/11/2026)
 
 **Stato: approvato, da sceneggiare e implementare.** Lunedì, se Sara accetta l'inchiesta, incontra già la sex worker adulta amica della vittima e autrice della lettera anonima (identità inizialmente ignota alla redazione). Incontro breve: è spaventata e non si fida ancora del tutto; racconta qualcosa della vita dell'amica e fornisce il primo indizio concreto. Modalità di contatto, luogo, identità e contenuto dell'indizio da definire; non anticipare la soluzione. Se Sara rifiuta l'incarico, nessun incontro automatico. Vedi [inchiesta](narrative/inchiesta-giorno22-2026-11-25.md) e [giorni 22–24](narrative/giorni22-24-pianificazione-2026-11-26.md).

@@ -1011,37 +1011,128 @@ label chat_ex_d1_2:
 
 label chat_ex_d1_3:
     label tel_chat_ex_d1_3_1:
-    if telefono_minuti_blocco("tel_chat_ex_d1_3_1", "ricevi", 1):
+    if telefono_minuti_blocco("tel_chat_ex_d1_3_1", "ricevi", 2):
         return
-    $ msg("ex", "you're being quiet")
+    $ msg("ex", "you shut your eyes and your tits rose into my hands every time. i still know the weight of them")
+    $ msg("ex", "i'd keep one hand on the back of your neck so you couldn't turn away while i watched")
     label tel_chat_ex_d1_3_2:
     if telefono_minuti_blocco("tel_chat_ex_d1_3_2", "scelta"):
         return
     menu (screen="scelta_telefono"):
-        "«There's someone asleep in the next room.»":
+        "«I still feel your hands on my breasts.»":
             label tel_chat_ex_d1_3_3:
             if telefono_minuti_blocco("tel_chat_ex_d1_3_3", "invia", 1):
                 return
-            $ msg("sara", "There's someone asleep in the next room.")
+            $ msg("sara", "I still feel your hands on my breasts.")
             label tel_chat_ex_d1_3_4:
             if telefono_minuti_blocco("tel_chat_ex_d1_3_4", "ricevi", 1):
                 return
-            $ msg("ex", "then bite something")
-        "«I'm not going to be quiet for much longer.»":
+            $ msg("ex", "good. your chest would warm against my palms and i'd wait for the next breath")
+        "«You always made such a meal of looking.»":
             label tel_chat_ex_d1_3_5:
             if telefono_minuti_blocco("tel_chat_ex_d1_3_5", "invia", 1):
                 return
-            $ msg("sara", "I'm not going to be quiet for much longer.")
+            $ msg("sara", "You always made such a meal of looking.")
             label tel_chat_ex_d1_3_6:
-            if telefono_minuti_blocco("tel_chat_ex_d1_3_6", "ricevi", 2):
+            if telefono_minuti_blocco("tel_chat_ex_d1_3_6", "ricevi", 1):
                 return
-            $ msg("ex", "there she is. four years. there she is")
-            $ msg("ex", "sleep now. I'll know if you don't")
+            $ msg("ex", "only of your cleavage. i'd map every curve until you started to shift under me")
+        "«That hand on my neck still gets me.»":
+            label tel_chat_ex_d1_3_7:
+            if telefono_minuti_blocco("tel_chat_ex_d1_3_7", "invia", 1):
+                return
+            $ msg("sara", "That hand on my neck still gets me.")
+            label tel_chat_ex_d1_3_8:
+            if telefono_minuti_blocco("tel_chat_ex_d1_3_8", "ricevi", 1):
+                return
+            $ msg("ex", "after that i'd lower my mouth to your nipples and feel them answer me before you did")
         "Back to messages." if telefono_minuti_attivo():
             $ telefono_minuti_riprese[chat_aperta] = "tel_chat_ex_d1_3_2"
             return
         "[telefono_minuti_uscita]" if telefono_minuti_attivo():
             $ telefono_minuti_riprese[chat_aperta] = "tel_chat_ex_d1_3_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_ex_d1_4:
+    label tel_chat_ex_d1_4_1:
+    if telefono_minuti_blocco("tel_chat_ex_d1_4_1", "ricevi", 1):
+        return
+    $ msg("ex", "you're still holding something back. those breasts of yours want louder than this")
+    label tel_chat_ex_d1_4_2:
+    if telefono_minuti_blocco("tel_chat_ex_d1_4_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«You've got it wrong. Slower on them now.»":
+            label tel_chat_ex_d1_4_3:
+            if telefono_minuti_blocco("tel_chat_ex_d1_4_3", "invia", 1):
+                return
+            $ msg("sara", "You've got it wrong. Slower on them now.")
+            label tel_chat_ex_d1_4_4:
+            if telefono_minuti_blocco("tel_chat_ex_d1_4_4", "ricevi", 1):
+                return
+            $ msg("ex", "slower than before. i'd stay under your chest until you forgot to stay quiet")
+        "«No more waiting. Take my nipples the way I want.»":
+            label tel_chat_ex_d1_4_5:
+            if telefono_minuti_blocco("tel_chat_ex_d1_4_5", "invia", 1):
+                return
+            $ msg("sara", "No more waiting. Take my nipples the way I want.")
+            label tel_chat_ex_d1_4_6:
+            if telefono_minuti_blocco("tel_chat_ex_d1_4_6", "ricevi", 1):
+                return
+            $ msg("ex", "then say it while the battery lasts. i want to hear how full your breasts feel in your hands")
+        "«I'm already touching them and I'm not staying quiet.»":
+            label tel_chat_ex_d1_4_7:
+            if telefono_minuti_blocco("tel_chat_ex_d1_4_7", "invia", 1):
+                return
+            $ msg("sara", "I'm already touching them and I'm not staying quiet.")
+            label tel_chat_ex_d1_4_8:
+            if telefono_minuti_blocco("tel_chat_ex_d1_4_8", "ricevi", 1):
+                return
+            $ msg("ex", "there. keep going. i'll know the sound of you even through the phone")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_ex_d1_4_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_ex_d1_4_2"
+            $ telefono_minuti_chiudi = True
+            return
+    return
+
+label chat_ex_d1_5:
+    label tel_chat_ex_d1_5_1:
+    if telefono_minuti_blocco("tel_chat_ex_d1_5_1", "ricevi", 1):
+        return
+    $ msg("ex", "you're being quiet")
+    label tel_chat_ex_d1_5_2:
+    if telefono_minuti_blocco("tel_chat_ex_d1_5_2", "scelta"):
+        return
+    menu (screen="scelta_telefono"):
+        "«There's someone asleep in the next room.»":
+            label tel_chat_ex_d1_5_3:
+            if telefono_minuti_blocco("tel_chat_ex_d1_5_3", "invia", 1):
+                return
+            $ msg("sara", "There's someone asleep in the next room.")
+            label tel_chat_ex_d1_5_4:
+            if telefono_minuti_blocco("tel_chat_ex_d1_5_4", "ricevi", 1):
+                return
+            $ msg("ex", "then bite something")
+        "«I'm not going to be quiet for much longer.»":
+            label tel_chat_ex_d1_5_5:
+            if telefono_minuti_blocco("tel_chat_ex_d1_5_5", "invia", 1):
+                return
+            $ msg("sara", "I'm not going to be quiet for much longer.")
+            label tel_chat_ex_d1_5_6:
+            if telefono_minuti_blocco("tel_chat_ex_d1_5_6", "ricevi", 2):
+                return
+            $ msg("ex", "there she is. four years. there she is")
+            $ msg("ex", "sleep now. I'll know if you don't")
+        "Back to messages." if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_ex_d1_5_2"
+            return
+        "[telefono_minuti_uscita]" if telefono_minuti_attivo():
+            $ telefono_minuti_riprese[chat_aperta] = "tel_chat_ex_d1_5_2"
             $ telefono_minuti_chiudi = True
             return
     return
