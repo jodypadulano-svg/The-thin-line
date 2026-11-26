@@ -142,3 +142,24 @@ Dalla [scheda](../personaggi/barbara.md): circa 60 anni, molto corpulenta, visto
 ```
 High-quality 3D render in the style of a premium adult visual novel, Daz3D Iray look. Portrait of Barbara, a flamboyant adult woman around sixty, very full-figured and voluptuous, bright dyed red hair styled in big volume, heavy dramatic makeup with bold red lips and winged eyeliner, large gold earrings, glasses on a gold chain, a theatrical, imperious and mischievous smile, wearing a low-cut leopard-print dress. Head-and-shoulders framing, looking at the camera. Realistic skin with subtle subsurface scattering, soft cinematic lighting, shallow depth of field, clean neutral light-gray studio background, sharp focus on the face.
 ```
+
+---
+
+# Personaggi dell'inchiesta (26/11/2026)
+
+Stile acquerello e matita all'inizio del prompt. **Regola di Jody (26/11):** mai «adult» né «mature face», perché Mage li invecchia. L'età si scrive solo col numero.
+
+## Dawn — `@dawn`
+Personaggio funzionale dell'inchiesta (giorno 22): l'amica di Nadia, autrice della lettera anonima. «Dawn» è il nome che dà a Sara. Ha paura di fare la fine di Nadia, quindi è prudente e diffidente. **Ritratto scelto da Jody il 26/11:** `riferimenti/attori/dawn_acquerello_riferimento.webp`; **figura intera:** `riferimenti/attori/dawn_figura_intera.webp` (26/11). 28 anni, capelli castano scuro **molto ricci**, raccolti in una coda alta e morbida con ciocche sul viso, carnagione olivastra calda, occhi castani stanchi, un piccolo neo sulla guancia sinistra, **orecchini pendenti d'argento a goccia** (rifatto il 26/11 per non confondersi coi cerchi dorati di Joanie), giacca scura col cappuccio e una sciarpa a fiori marroni e senape. Unghie corte rosa conchiglia (gliele faceva Nadia). I prompt qui sotto sono quelli di partenza, generati con l'aspetto proposto prima: il ritratto scelto ha preso un'altra strada e vale lui.
+
+**Ritratto 4:5**
+```
+Soft watercolor and visible graphite pencil on textured paper, gentle color bleeding, warm muted palette, clearly a hand-painted illustration, not photorealistic. Portrait of Dawn, a slim woman aged 28, olive skin, straight black hair pulled back in a low loose ponytail with a few strands falling by her face, dark tired watchful eyes, faint shadows under them, only a little mascara, no freckles, a guarded closed expression, almost a frown, as if deciding whether to trust the viewer. Wearing a dark navy hooded rain jacket, hood down, zipped to the collarbone. Head-and-shoulders framing, looking at the viewer. Plain neutral pale paper background. No readable text, watermarks or logos.
+```
+
+**Figura intera 2:3** (con l'handle del ritratto approvato; aggiornata al ritratto scelto)
+```
+Soft watercolor and visible graphite pencil on textured paper, gentle color bleeding, warm muted palette, clearly a hand-painted illustration, not photorealistic. Full-body reference of @dawn, exactly as in the reference portrait: very curly dark brown hair in a loose high ponytail with curls around her face, warm olive skin, tired brown eyes, small mole on her left cheek, small silver teardrop drop earrings, no freckles. Standing in a neutral pose, front view, weight on one leg, arms folded loosely across her body, a paper takeaway cup in one hand. Slim build. Outfit: the same dark charcoal hooded jacket with the hood down and the brown and mustard flower-print scarf, plain cream top, slim black jeans, worn white sneakers. Short neat nails painted pale shell pink. Guarded, wary expression. Plain neutral pale paper background. No readable text, watermarks or logos.
+```
+
+Nelle scene del 22 Dawn ha il cappuccio alzato e gli occhiali da sole (B2, B4, B5); in B3 «Nadia» gli occhiali sono sollevati sulla testa.

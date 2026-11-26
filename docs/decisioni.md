@@ -4,6 +4,17 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 22 · «Four Lines» (Jody, 26/11/2026)
+
+**Stato: decisioni di Jody, codice scritto (bozza dei dialoghi), 16 CG fatte (26/11).** File `game/episodio2/ep2_giorno22.rpy` (in `ep2_flusso.rpy` dopo `ep2_d21`), test `giorno22`, preset in `debug.rpy`, [inquadrature](prompt-immagini/inquadrature-giorno-22.md) (16 CG; nuova attrice Dawn: `riferimenti/attori/dawn_acquerello_riferimento.webp` e `dawn_figura_intera.webp`).
+
+- **Barbara e gli abiti (mese-1):** «Dress as usual tomorrow.» → nessun effetto (`ep2_d22_abito_solito`) · «A little more neckline tomorrow.» → Barbara +1, Corr +1 (`ep2_d22_scollatura_domani`).
+- **La lettera:** Nadia Reyes, 26 anni; la stampa le ha dato quattro righe. Barbara *propone*. «I'll look into it.» → `ep2_d22_inchiesta_accettata`; sul retro della lettera ci sono luogo e ora («the river, third bench past the boathouse», alle 13) · «I don't think I'm the right person.» → `ep2_d22_inchiesta_rifiutata`, la lettera torna nel cassetto. Nessun effetto numerico.
+- **Dawn al fiume (`fiume`), solo con l'inchiesta accettata.** È il nome che dà, personaggio funzionale (`define dawn` nel file del giorno). Ha paura di fare la fine di Nadia: da qui la prudenza (sorveglia la porta, niente penna né fotocamera). «Ask about Nadia.» → `ep2_d22_dawn_fiducia`: Nadia voleva aprire un centro estetico, mandava soldi alla sorella minore; Dawn indica come ricontattarla («for the third bench», nella porta del giornale, di sabato) · «Stick to the facts.» → `ep2_d22_dawn_fatti`: due settimane di paura, «aveva visto qualcosa». **Primo indizio in entrambi i rami:** mezza targa di un'auto scura sconosciuta, scritta su uno scontrino (`ep2_d22_targa`). Nessun effetto numerico.
+- `call barbara_convocazione` in orario di lavoro; `howard_faccende_dopo_lavoro(True, True, False)` al rientro.
+- **Josh umiliato:** ha mandato a Daniel la scheda del nano per il D&D di Mark (Brother Hollin Ashbeard) al posto del report trimestrale. Alla riunione Daniel la legge ad alta voce, chiede «how was the dragon thing», tutti ridono e Josh ride con loro (F2). Alla fine: «The most beautiful woman in this city, and the brightest… She deserves a man who can tell a quarterly report from a dwarf.» Josh: «Yes, she does.» In entrambi i rami Sara capisce che Daniel lo fa per lei, e le fa effetto. ★ «Comfort him.» (Josh 30) → Josh +3 (`ep2_d22_consola_josh`) · «Get annoyed at how weak he is.» → Josh −3, Daniel +1, Corr +1 (`ep2_d22_irritata_josh`). Poi Josh accetta il mercoledì da Mark (`ep2_d22_josh_dnd`).
+- Flag del 21 usati: `detto_josh`, `taciuto_josh` + `risposto_jacob`, `joanie_parla_josh` (Sara la rimanda: «not this week»), `colpa_si`; del 18 `sfotto_josh`. Notte: telefono dalle 22:30 alle 23:00.
+
 ### Ramo trasversale · Josh complice (Jody, 26/11/2026)
 
 **Stato: possibilità, non evento certo (Jody, 26/11): impostazione approvata se il ramo verrà fatto; nessun codice.** Decisione esplicita di Jody che autorizza ad approfondire Josh (visione artistica, punto 8), limitatamente a questo ramo.

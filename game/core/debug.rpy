@@ -67,6 +67,8 @@ init python:
                 ## Giorno 21
                 "Make him a coffee and talk", "«It was a drink, Jo.", "«It was lunch.", "Take the phone back",
                 "Tell him about Jacob.", "Turn the phone over.", "Leave the chat", "«Not much.»",
+                ## Giorno 22
+                "Dress as usual tomorrow.", "«I'll look into it.»", "Ask about Nadia.", "Comfort him.",
             ],
         },
         "barbara": {
@@ -129,6 +131,8 @@ init python:
                 "Send him on", "«He was... good.", "«All right. He's a bit much.", "Let her send it.",
                 "Keep it to herself.", "Turn the phone over.", "Delete the chat.",
                 "«Yes. And I feel guilty", "«No, Jo. Not him.»",
+                ## Giorno 22
+                "A little more neckline tomorrow.", "«I'll look into it.»", "Stick to the facts.", "Comfort him.",
             ],
         },
         "daniel": {
@@ -191,6 +195,8 @@ init python:
                 "Make him a coffee and talk", "«It was a drink, Jo.", "«All right. He's a bit much.",
                 "Take the phone back", "Tell him about Jacob.", "Turn the phone over.", "Leave the chat",
                 "«Yes. And I feel guilty", "«No, Jo. Not him.»",
+                ## Giorno 22
+                "Dress as usual tomorrow.", "«I don't think I'm the right person.»", "Get annoyed at how weak he is.",
             ],
         },
         "mista": {
