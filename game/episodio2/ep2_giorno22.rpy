@@ -115,7 +115,8 @@ label ep2_d22_lettera:
 label ep2_d22_dawn:
     $ vai("fiume", "The river path — 12:55 p.m.")
     $ ambiente(None)
-    $ musica("stranezza")
+    ## Tema dell'inchiesta (Jody, 26/11): «Detective» di Mureka.
+    $ musica("inchiesta")
     $ cg("The river path at midday, a row of benches past an old boathouse; Sara alone on the third bench with her coat buttoned, looking around", "images/cg/ep2/d22_b1_panchina.webp")
     n "Third bench past the boathouse. There's a man feeding ducks out of a bread bag and a jogger who goes past twice. Sara sits with her hands in her pockets and feels watched by both of them."
     n "One o'clock. Five past. Ten past."

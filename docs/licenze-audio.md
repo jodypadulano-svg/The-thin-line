@@ -26,6 +26,7 @@ Effetti e ambienti: **ElevenLabs** (Sound Effects). L'uso commerciale richiede u
 | `game/audio/musica/darius_caffe.mp3` | Darius' Cafe | 173460139737089 | 22/11/2026 | ✅ Ownership Certificate |
 | `game/audio/musica/magnus.mp3` | — | — | 26/11/2026 | ⚠️ certificato da scaricare e conservare |
 | `game/audio/musica/the_wink.mp3` | — | — | 26/11/2026 | ⚠️ certificato da scaricare e conservare |
+| `game/audio/musica/inchiesta.mp3` | Detective | 174144861765633 | 26/11/2026 | ✅ Ownership Certificate |
 | `game/audio/ambienti/ufficio.ogg` | Open Plan | 172759739269121 | 19/11/2026 | ✅ Ownership Certificate (Mureka) |
 | `game/audio/ambienti/enoteca.ogg` | Bar NIght | 172760078811137 | 19/11/2026 | ✅ Ownership Certificate (Mureka) |
 | `game/audio/ambienti/locale.ogg` | Busy city bar on a S… (effetto) | — | 19/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |

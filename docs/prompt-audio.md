@@ -36,6 +36,7 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `darius_caffe` | Giorno 14, caffè con Darius. Entra quando Darius si ricorda della porta del romanzo di Sara. | ✅ |
 | `magnus` | Giorno 20, la casa editrice: l'incontro con Magnus. | ✅ |
 | `the_wink` | Giorno 19, finale forzato «The Wink»: mesi dopo e cartello finale. | ✅ |
+| `inchiesta` | Tema dell'inchiesta: dal giorno 22, l'incontro con Dawn al fiume; da riusare nelle scene dell'indagine. | ✅ |
 
 **tema_principale**
 ```
@@ -200,6 +201,12 @@ I'm not lost... I'm just beginning
 [Outro]
 One life...
 So many doors...
+```
+
+
+**inchiesta**
+```
+Instrumental quiet investigation theme for a watercolor drama visual novel, a young journalist meeting a frightened witness in secret. Soft muted piano playing a short questioning motif, low sustained cello, a pulsing double bass heartbeat, faint brushed snare, distant airy pads, a lonely clarinet answering the piano. Tense but tender and human, not horror, not action: melancholy, careful, watchful, a sense of a life that deserved more than four lines in the paper. Slow tempo, around 72 BPM. No vocals. Background music for dialogue. Seamless loop.
 ```
 
 ---
