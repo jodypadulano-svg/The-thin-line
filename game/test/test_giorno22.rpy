@@ -1,5 +1,5 @@
 ## Test del giorno 22: abiti, lettera (accettata o rifiutata), Dawn al fiume, Josh umiliato, notte.
-## Niente convocazione (sara_stagista False) né faccenda di Howard (Interest basso): stato azzerato.
+## Niente convocazione (sara_stagista False). La faccenda di Howard c'è solo nel ramo «howard» (Interest 60).
 ## Il telefono della notte si chiude da solo (telefono_pilota): nessun clic, nessun mouse.
 
 label test_giorno22:
@@ -23,12 +23,15 @@ init python:
         "empatica": [_D22_SCOLLATURA, _D22_ACCETTA, _D22_NADIA, _D22_CONSOLA],
         "fatti":    [_D22_SOLITO, _D22_ACCETTA, _D22_FATTI, _D22_IRRITA],
         "rifiuto":  [_D22_SOLITO, _D22_RIFIUTA, _D22_CONSOLA],
+        ## Interest Howard sopra 50: al rientro c'è la faccenda (nessun menu, nessun punteggio).
+        "howard":   [_D22_SOLITO, _D22_RIFIUTA, _D22_CONSOLA],
     }
     ## Josh, Barbara, Daniel, Corruption, Confidence, Suspicion.
     D22_ATTESI = {
         "empatica": (3, 1, 0, 1, 0, 0),
         "fatti":    (-3, 0, 1, 1, 0, 0),
         "rifiuto":  (3, 0, 0, 0, 0, 0),
+        "howard":   (3, 0, 0, 0, 0, 0),
     }
 
     def _d22_stato():
@@ -37,7 +40,7 @@ init python:
 
 testsuite giorno22:
     testcase bivi:
-        parameter ramo = ["empatica", "fatti", "rifiuto"]
+        parameter ramo = ["empatica", "fatti", "rifiuto", "howard"]
         $ debug_azzera_stato()
         $ _d22_scelte = list(D22_SCELTE[ramo])
         $ _test_menu_giorno15(_d22_scelte)
@@ -52,6 +55,7 @@ testsuite giorno22:
         $ segna("ep2_d21_joanie_parla_josh", ramo == "empatica")
         $ segna("ep2_d21_colpa_si", ramo == "fatti")
         $ segna("ep2_d18_sfotto_josh", ramo == "rifiuto")
+        $ percorso("howard").interest = 60 if ramo == "howard" else 0
         $ _d22_prima = _d22_stato()
         $ segna("test_giorno22_finito", False)
         run Jump("test_giorno22")
@@ -63,11 +67,12 @@ testsuite giorno22:
         $ print("GIORNO22", ramo, [b - a for a, b in zip(_d22_prima, _d22_dopo)])
         assert eval tuple(b - a for a, b in zip(_d22_prima, _d22_dopo)) == D22_ATTESI[ramo]
         assert eval giorno == 22 and fatto("ep2_d22_josh_dnd")
-        assert eval bool(fatto("ep2_d22_inchiesta_accettata")) == (ramo != "rifiuto")
-        assert eval bool(fatto("ep2_d22_inchiesta_rifiutata")) == (ramo == "rifiuto")
-        assert eval bool(fatto("ep2_d22_targa")) == (ramo != "rifiuto")
+        assert eval bool(fatto("ep2_d22_inchiesta_accettata")) == (ramo in ("empatica", "fatti"))
+        assert eval bool(fatto("ep2_d22_inchiesta_rifiutata")) == (ramo in ("rifiuto", "howard"))
+        assert eval bool(fatto("ep2_d22_targa")) == (ramo in ("empatica", "fatti"))
         assert eval bool(fatto("ep2_d22_dawn_fiducia")) == (ramo == "empatica")
         assert eval bool(fatto("ep2_d22_dawn_fatti")) == (ramo == "fatti")
         assert eval bool(fatto("ep2_d22_scollatura_domani")) == (ramo == "empatica")
-        assert eval not barbara_missioni_completate and howard_ultima_faccenda_giorno != 22
+        assert eval not barbara_missioni_completate
+        assert eval (howard_ultima_faccenda_giorno == 22) == (ramo == "howard")
         assert eval not discorsi_fatti and not giorno_tipo

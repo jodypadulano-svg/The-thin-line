@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Regola generale · Consumo di token (Jody, 26/11/2026)
+
+**Stato: regola permanente, in vigore subito.** Se un processo occupa troppi token, l'AI avvisa Jody, si interrompe e propone alternative; riprende solo dopo la sua scelta. Testo in [regole di lavoro](regole-di-lavoro.md), punto 9.
+
 ### Giorno 22 · «Four Lines» (Jody, 26/11/2026)
 
 **Stato: decisioni di Jody, codice scritto (bozza dei dialoghi), 16 CG fatte (26/11).** File `game/episodio2/ep2_giorno22.rpy` (in `ep2_flusso.rpy` dopo `ep2_d21`), test `giorno22`, preset in `debug.rpy`, [inquadrature](prompt-immagini/inquadrature-giorno-22.md) (16 CG; nuova attrice Dawn: `riferimenti/attori/dawn_acquerello_riferimento.webp` e `dawn_figura_intera.webp`).

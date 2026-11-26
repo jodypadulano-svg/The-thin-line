@@ -59,3 +59,6 @@ Regole fissate da Jody il 16 novembre 2026. Valgono sopra le abitudini di Claude
 - Salvataggi compatibili tra episodi: vedi [sistema di gioco](sistema-di-gioco.md), sezione 8.
 - Commit e push solo quando Jody lo chiede.
 - A ogni aggiornamento di stato: percentuale stimata di completamento.
+
+## 9. Consumo di token (Jody, 26/11/2026)
+- Se un processo sta consumando troppi token o troppo tempo (test lunghi, cicli di correzioni, letture o ricerche che si allungano, tentativi ripetuti), l'AI **lo dice subito a Jody**, **si interrompe** e **propone alternative** più economiche (es. una verifica più piccola, rimandare, fare a mano un passaggio, cambiare strada). Riprende solo dopo che Jody ha scelto.
