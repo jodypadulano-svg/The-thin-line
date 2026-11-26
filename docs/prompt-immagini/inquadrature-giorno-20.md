@@ -64,6 +64,11 @@ Se un riferimento contraddice la frase (occhiali, barba), **vale il riferimento*
 | ☐ | `d20_b7_lettura.webp` | la finestra alta sulla città, le pagine nella luce, silenzio; i due piccoli nelle poltrone | B4 |
 | ☐ | `d20_b8_uscita.webp` | sulla soglia, la donna con la bob d'argento posa la mano sul braccio di Sara | B2, Sara |
 | ☐ | `d20_b9_cassetto.webp` | retroscena: la mano di Magnus posa la pagina in un cassetto, accanto a una vecchia fotografia **di cui si vede solo un angolo** (un orlo grigioverde, nessun volto) | B5 |
+| ✅ | `d20_b4_magnus_stanza_verde.webp` | **variante verde (Jody, 26/11):** come `d20_b4_magnus_stanza.webp`, cambiando solo il vestito di Sara nel grigioverde di Samantha | `d20_b4_magnus_stanza.webp`, A1 verde |
+| ✅ | `d20_b6_ascolta_verde.webp` | **variante verde (Jody, 26/11):** come `d20_b6_ascolta.webp`, cambiando solo il vestito di Sara nel grigioverde di Samantha | `d20_b6_ascolta.webp`, A1 verde |
+| ✅ | `d20_b6_migliora_verde.webp` | **variante verde (Jody, 26/11):** come `d20_b6_migliora.webp`, cambiando solo il vestito di Sara nel grigioverde di Samantha | `d20_b6_migliora.webp`, A1 verde |
+| ✅ | `d20_b7_lettura_verde.webp` | **variante verde (Jody, 26/11):** come `d20_b7_lettura.webp`, cambiando solo il vestito di Sara nel grigioverde di Samantha | `d20_b7_lettura.webp`, A1 verde |
+| ✅ | `d20_b8_uscita_verde.webp` | **variante verde (Jody, 26/11):** come `d20_b8_uscita.webp`, cambiando solo il vestito di Sara nel grigioverde di Samantha | `d20_b8_uscita.webp`, A1 verde |
 | ☐ | `d20_c1_gradini_verde.webp` | Sara seduta sui gradini del portone, telefono in mano, ride da sola | B1 verde, Sara |
 | ☐ | `d20_c1_gradini_blu.webp` | la stessa, blu | la verde, d19_06 |
 | ☐ | `d20_d1a_simon_solo.webp` | palestra quasi vuota, Simon rimette i dischi sulla rastrelliera | `palestra_sala.webp`, Simon |

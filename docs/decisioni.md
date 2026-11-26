@@ -10,6 +10,8 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ### Giorno 22 · «Four Lines» (Jody, 26/11/2026)
 
+**Correzioni dopo il test a mano (26/11):** giorno 20, le cinque CG della casa editrice nate in blu (`b4`, `b6_ascolta`, `b6_migliora`, `b7`, `b8`) passano a `d20_abito_se()`: col vestito di Samantha usano la variante `_verde` quando esiste (da illustrare). Giorno 21: aggiunto l'invito di Jacob per mercoledì.
+
 **Stato: decisioni di Jody, codice scritto (bozza dei dialoghi), 16 CG fatte (26/11).** File `game/episodio2/ep2_giorno22.rpy` (in `ep2_flusso.rpy` dopo `ep2_d21`), test `giorno22`, preset in `debug.rpy`, [inquadrature](prompt-immagini/inquadrature-giorno-22.md) (16 CG; nuova attrice Dawn: `riferimenti/attori/dawn_acquerello_riferimento.webp` e `dawn_figura_intera.webp`).
 
 - **Barbara e gli abiti (mese-1):** «Dress as usual tomorrow.» → nessun effetto (`ep2_d22_abito_solito`) · «A little more neckline tomorrow.» → Barbara +1, Corr +1 (`ep2_d22_scollatura_domani`).
@@ -42,6 +44,7 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 - **La svolta pepata: il messaggio a Jacob.** Joanie prende il telefono di Sara e scrive a Jacob in minuscolo, «così sa che sei tu». Se Sara non ha il numero, Joanie lo digita a memoria. «Let her send it.» → Jacob +1, Corr +1 (`ep2_d21_messaggio_inviato`); la sera Jacob risponde e capisce che l'ha scritto Joanie · «Take the phone back and delete it.» → nessun effetto (`ep2_d21_messaggio_cancellato`); Joanie non se la prende (la loro regola). Joanie non svela nulla di sé.
 - **Sera, dirlo a Josh.** «Tell him about Jacob.» → Josh +1, Conf +1 (`ep2_d21_detto_josh`): Josh si irrigidisce, poi la ringrazia · «Keep it to herself.» → Corr +1 (`ep2_d21_taciuto_josh`).
 - **Jacob scrive per primo** (o risponde al messaggio del pomeriggio), sul divano accanto a Josh. ★ «Answer him.» → Jacob +2, Susp +2 (`ep2_d21_risposto_jacob`); **se Sara ha taciuto a Josh, Susp +1 in più** · «Turn the phone over.» → nessun effetto.
+- **Jacob invita per mercoledì (Jody, 26/11, correzione dopo il test a mano):** solo se Sara gli ha risposto, «wednesday. one drink. same bar.» «Say yes.» → `ep2_d21_jacob_mercoledi` (appuntamento del 24) · «Not this week.» → `ep2_d21_jacob_rifiutato`. Nessun punteggio. CG `d21_c6_invito`.
 - **Notte, la chat (mese-1):** lasciarla → nessun effetto · cancellarla → Corr +1, Susp −1 (il numero resta). Poi il telefono libero dalle 23:00 alle 23:30.
 
 ### Giorno 22 · Primo incontro con la testimone e convocazioni quotidiane (Jody, 26/11/2026)

@@ -423,6 +423,7 @@ label ep2_d21_jacob:
                 $ suspicion(1)
                 s "Joanie. Being Joanie."
                 n "He doesn't ask anything else. He just lifts his head off her shoulder, and doesn't put it back."
+            call ep2_d21_jacob_invito
         "Turn the phone over.":
             $ segna("ep2_d21_ignorato_jacob")
             n "She turns the phone face down on the cushion. The light goes out through the fabric, like a held breath."
@@ -430,6 +431,42 @@ label ep2_d21_jacob:
     $ via_cg()
     return
 
+
+## --- Sera: Jacob la invita per mercoledì (giorni 22-24 e mercoledì di Josh, Jody 26/11) ------
+## Solo se Sara gli ha risposto. Nessun punteggio: contano le scelte della serata del 24.
+## Sì → flag ep2_d21_jacob_mercoledi (l'appuntamento del 24 è con lui) · No → ep2_d21_jacob_rifiutato.
+
+label ep2_d21_jacob_invito:
+    $ suono("telefono_vibra")
+    $ via_cg()
+    $ cg("Sara on the sofa looking down at her lit phone, Josh half asleep against her shoulder, the TV on low", "images/cg/ep2/d21_c6_invito.webp")
+    $ chat_aperta = "ex"
+    show screen telefono_chat("ex")
+    $ msg("ex", "wednesday. one drink. same bar.")
+    hide screen telefono_chat
+    $ chat_aperta = None
+    sp "Wednesday. [nome_compagno]'s dragons. He doesn't even know, and he picked the one night."
+    menu:
+        sp "One drink. He always said one drink."
+        "Say yes.":
+            $ segna("ep2_d21_jacob_mercoledi")
+            $ chat_aperta = "ex"
+            show screen telefono_chat("ex")
+            $ msg("sara", "One drink.", premia_avvio=False)
+            $ msg("ex", "one. i'll count")
+            hide screen telefono_chat
+            $ chat_aperta = None
+            n "She puts the phone face down on her knee. Her heart is going as if she'd run up the stairs."
+        "Not this week.":
+            $ segna("ep2_d21_jacob_rifiutato")
+            $ chat_aperta = "ex"
+            show screen telefono_chat("ex")
+            $ msg("sara", "Not this week.", premia_avvio=False)
+            $ msg("ex", "this week. noted")
+            hide screen telefono_chat
+            $ chat_aperta = None
+            n "He's read it before she's even put the phone down. «This week.» As if there were others."
+    return
 
 ## --- Notte: la chat (mese-1) e il telefono ---------------------------------------------------
 ## Lasciarla → nessun effetto · Cancellarla → Corr +1, Susp -1.

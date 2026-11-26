@@ -8,6 +8,14 @@ init python:
         colore = "verde" if fatto("ep2_d19_abito_samantha") else "blu"
         return "images/cg/ep2/d20_%s_%s.webp" % (nome, colore)
 
+    def d20_abito_se(nome):
+        """CG nate in blu (casa editrice): col vestito di Samantha usa la variante
+        «_verde» quando il file esiste, altrimenti l'originale (Jody, 26/11)."""
+        verde = "images/cg/ep2/d20_%s_verde.webp" % nome
+        if fatto("ep2_d19_abito_samantha") and renpy.loadable(verde):
+            return verde
+        return "images/cg/ep2/d20_%s.webp" % nome
+
 label ep2_d20:
     call nuovo_giorno(20, "Page Fifty")
     $ fascia_corrente = FASCE.index("mattina")
@@ -82,7 +90,7 @@ label ep2_d20_casa_editrice:
     sp "I'd be cross."
     $ via_cg()
 
-    $ cg("A high room with a window, two armchairs and no desk; fifty printed pages on a low table, the last one face down; Magnus by the fire", "images/cg/ep2/d20_b4_magnus_stanza.webp")
+    $ cg("A high room with a window, two armchairs and no desk; fifty printed pages on a low table, the last one face down; Magnus by the fire", d20_abito_se("b4_magnus_stanza"))
     ed "Sara. Sit wherever you would like to be listened to."
     if fatto("ep2_d19_abito_samantha"):
         n "He gets up to greet her, and for a moment he simply doesn't. He's looking at the dress. Then he is himself again, and holds out his hand."
@@ -111,7 +119,7 @@ label ep2_d20_casa_editrice:
             $ interest("editore", 3, "Sara let him go on.")
             $ confidence(2, "Sara didn't fill the silence.")
             $ via_cg()
-            $ cg("Sara wiping her eyes in the armchair by the window, Magnus courteously turned to the fire", "images/cg/ep2/d20_b6_ascolta.webp")
+            $ cg("Sara wiping her eyes in the armchair by the window, Magnus courteously turned to the fire", d20_abito_se("b6_ascolta"))
             n "She doesn't answer. It's the hardest thing she's done in a chair. She lets him go on."
             ed "It is about neither. It is about the glass. She has spent her life on one side of it, admiring the party. You have written forty-nine pages about a window, and one about a hand on the latch."
             sp "A hand on the latch."
@@ -121,14 +129,14 @@ label ep2_d20_casa_editrice:
             $ interest("editore", 2, "Sara came to work.")
             $ confidence(3, "Sara asked the question she was afraid of.")
             $ via_cg()
-            $ cg("Sara bent over the pages with a pencil, Magnus pointing at a line", "images/cg/ep2/d20_b6_migliora.webp")
+            $ cg("Sara bent over the pages with a pencil, Magnus pointing at a line", d20_abito_se("b6_migliora"))
             s "I don't know yet. How do I make it better?"
             ed "Ah. She has come to work. Good."
             ed "Take out every sentence in which she explains herself. She is always apologising to the reader for wanting something. We did not ask."
             s "That's half the book."
             ed "It is a third. I counted. The other two thirds are alive."
     $ via_cg()
-    $ cg("The high window over the town, the pages in the light, the silence of the house", "images/cg/ep2/d20_b7_lettura.webp")
+    $ cg("The high window over the town, the pages in the light, the silence of the house", d20_abito_se("b7_lettura"))
     ed "One thing more, and then I shall give you back your Saturday. The last paragraph. Aloud."
     menu:
         sp "Aloud. In here. With the fire listening."
@@ -147,7 +155,7 @@ label ep2_d20_casa_editrice:
     $ tappa("editore", 2)
     $ nota_sara("editore", "He's read them twice. He wouldn't say if they're good. He asked me which man it's about.")
     $ via_cg()
-    $ cg("The woman with the silver bob at the street door, her hand on Sara's arm", "images/cg/ep2/d20_b8_uscita.webp")
+    $ cg("The woman with the silver bob at the street door, her hand on Sara's arm", d20_abito_se("b8_uscita"))
     n "«He didn't say yes,» says the woman with the silver bob, on the step."
     s "He didn't say anything."
     n "«He let you have the chair by the window. He's had ministers in the other one.»"

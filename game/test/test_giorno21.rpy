@@ -25,9 +25,9 @@ init python:
     D21_SCELTE = {
         ## Pranzo del 18 avvenuto: c'è anche la scelta su Daniel.
         "tutto_aperto": [_D21_CAFFE, _D21_APRE, "«All right. He's a bit much. I liked it.»", _D21_COLPA, _D21_PARLA, _D21_INVIA,
-                         _D21_DICE, _D21_RISPONDE, _D21_TIENE],
+                         _D21_DICE, _D21_RISPONDE, "Say yes.", _D21_TIENE],
         "pranzo_chiuso": [_D21_SCALE, _D21_CHIUDE, "«It was lunch. He talked about books.»", _D21_COLPA, _D21_FERMA, _D21_CANCELLA,
-                          _D21_TACE, _D21_RISPONDE, _D21_ELIMINA],
+                          _D21_TACE, _D21_RISPONDE, "Not this week.", _D21_ELIMINA],
         ## Pranzo senza sfottò, Sara dice che non le è piaciuto molto.
         "poco": [_D21_SCALE, _D21_APRE, "«It was lunch. He talked about books.»", _D21_POCO, _D21_INVIA,
                  _D21_DICE, _D21_GIRA, _D21_TIENE],
@@ -90,6 +90,8 @@ testsuite giorno21:
         assert eval fatto("ep2_d21_messaggio_inviato") == (_D21_INVIA in D21_SCELTE[ramo])
         assert eval bool(fatto("ep2_d21_joanie_parla_josh")) == (ramo == "tutto_aperto")
         assert eval bool(fatto("ep2_d21_joanie_fermata")) == (ramo == "pranzo_chiuso")
+        assert eval bool(fatto("ep2_d21_jacob_mercoledi")) == (ramo == "tutto_aperto")
+        assert eval bool(fatto("ep2_d21_jacob_rifiutato")) == (ramo == "pranzo_chiuso")
         ## La chat di Jacob resta solo se Sara non la cancella; nessun discorso libero consumato.
         assert eval (chat_log.get("ex", []) != []) == (_D21_TIENE in D21_SCELTE[ramo])
         assert eval not discorsi_fatti and not giorno_tipo

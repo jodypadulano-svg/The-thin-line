@@ -63,5 +63,6 @@ Jacob non compare: c'è solo il suo nome sullo schermo, che non deve essere legg
 | ✅ | `d21_c3_detto.webp` | Josh immobile con le bacchette a mezz'aria, lo sguardo altrove; la mano di Sara sul suo ginocchio | C2 |
 | ✅ | `d21_c4_telefono.webp` | Il telefono illuminato sul cuscino fra loro (nome non leggibile); Josh mezzo addormentato sulla spalla di lei, il telecomando sul petto, la TV bassa | C2 |
 | ✅ | `d21_c5_risponde.webp` | Sara scrive con lo schermo inclinato lontano da lui; Josh ora ha gli occhi aperti e guarda la luce sul viso di lei | C4 |
+| ✅ | `d21_c6_invito.webp` | **Solo se Sara risponde a Jacob (Jody, 26/11):** Sara sul divano guarda il telefono illuminato (testo non leggibile), Josh mezzo addormentato contro la sua spalla, TV bassa | C5 |
 | ✅ | `d21_d1_bagno.webp` | Sara seduta sul bordo della vasca, nella maglietta di Josh, con il telefono in tutte e due le mani; porta chiusa a chiave, luce fredda | Sara, `casa_cucina.webp` (solo stile) |
 | ✅ | `d21_d2_finestra.webp` | La camera al buio: Josh dorme con la coccarda sul petto; Sara alla finestra col telefono | `casa_camera_mattina.webp`, Sara, Josh, C1 (coccarda) |
