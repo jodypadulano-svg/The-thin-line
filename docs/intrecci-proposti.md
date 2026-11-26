@@ -43,6 +43,7 @@ Episodi indicativi: **E1** = Episodio 1 (da riscrivere in inglese) · **Inizio**
 | I25 ✅ | Due cerchie che non si toccano | Magnus, Barbara | Solido | Sempre |
 | I26 ✅ | La rete dei testimoni (Suspicion) | tutti | Solido | Sempre |
 | I27 ✅ | I punti di non ritorno tra i finali | percorsi 1-8 | Solido | Tardi |
+| I28 | Paul e Josh: il possibile ramo Ambra di Josh complice | Paul, Josh, Sara | Audace | Da definire |
 
 ---
 
@@ -230,3 +231,34 @@ Fino a metà gioco si possono seguire più percorsi insieme; poi ogni percorso a
 | **Fedele** | Sara resiste a tutto e resta con Josh | tutti; molto difficile da raggiungere |
 
 Magnus e Daniel sono gli unici finali in cui Josh resta in casa con Sara; un finale combinato è per ora escluso (I15).
+
+---
+
+## H. Ipotesi di ramo Ambra trasversale
+
+### I28 — Paul e Josh: il possibile ramo Ambra di Josh complice · *Audace* · **Proposta non approvata** (26/11/2026)
+
+**Stato:** brainstorming con Jody, non canone. Non implementare in Ren'Py né introdurre Paul come personaggio canonico senza approvazione esplicita. È una possibile evoluzione del ramo trasversale di Josh complice già annotato nel registro delle decisioni; non è automaticamente un nono percorso e non sostituisce gli altri possibili punti di partenza Ambra.
+
+#### Antefatto (solo documentazione autoriale, non mostrato al giocatore)
+
+- In questa ipotesi Josh scopre di desiderare che Sara abbia relazioni con altri uomini; è lui a cercare online una persona di fiducia. Incontra Paul (nome di lavoro). Considera sia una dinamica a tre con la propria presenza, sia una relazione autonoma fra Sara e un altro uomo; preferisce la seconda, che percepisce come più naturale.
+- Paul ha visto fotografie di Sara e ne conosce in parte il carattere tramite Josh: è attratto dal suo volto dolce, dalla sua corporatura snella e dal seno grande, e la trova vicina al proprio ideale. Il suo interesse non è indifferenziato né esclusivamente rivolto a soddisfare Josh.
+- Paul osserva che Sara, innamorata di Josh, potrebbe accettare una relazione soltanto per compiacerlo se conoscesse il suo desiderio. I due decidono quindi di mantenere segreto il loro accordo, nella convinzione soggettiva di preservare la spontaneità dell'attrazione di Sara. Paul si impegna a riferire a Josh in termini generali, senza un resoconto intimo dettagliato; Josh accetta e lo considera corretto. Rimane una distinzione fra scelta spontanea di Sara e mancata conoscenza dell'accordo e della condivisione di informazioni: la sua adesione a quest'ultimo non è presunta.
+- L'ipotesi iniziale di un contatto sui social viene abbandonata perché Sara è fidanzata e potrebbe ignorare un approccio da parte di uno sconosciuto. I due immaginano invece un incontro apparentemente casuale durante una serata di Sara e Josh, con Paul presentato come vecchio amico di Josh, benché la loro conoscenza sia recente.
+- Il riferimento letterario è *Cyrano de Bergerac*: Josh nel ruolo di Cyrano, Paul in quello di Cristiano. Josh confida a Paul informazioni sugli interessi, il carattere, i desideri e i sogni personali di Sara; lei non sa che questo è avvenuto. La prima impressione favorevole di Paul è quindi preparata dietro le quinte, senza garantire l'esito. Il primo incontro è narrativamente importante anche perché una serie di incontri casuali ravvicinati sarebbe poco credibile.
+- Josh è affascinato dalla personalità elegante, scaltra e sicura di Paul e desidera valorizzarlo, favorirlo e assumere volontariamente una posizione subordinata nei suoi confronti. La dinamica fra i due è voluta e consapevole da entrambi, non un caso di coercizione mentale su Josh. Paul incoraggia in Josh l'idea che farsi da parte possa giovare a Sara; questa è la loro convinzione, non un giudizio oggettivo del narratore sul bene di Sara o sul valore di Josh.
+
+#### Parte eventualmente visibile al giocatore
+
+- Una sera Sara e Josh escono; compare Paul, presentato come amico di Josh. Paul appare brillante e affascinante. Sara può essere colpita dalla conversazione; l'interesse e l'eventuale prosecuzione restano dipendenti dalle scelte del giocatore, non garantiti dall'antefatto.
+- Si ipotizza uno scambio di numeri, con modalità da definire. Sara può in seguito scegliere se frequentare Paul da sola, credendo che Josh non sappia nulla.
+- Se Sara e Paul si frequentano, si ipotizzano brevi scene di Paul che comunica a Josh che è con Sara; Josh ne è felice. Queste scene successive non equivalgono alla rappresentazione dell'antefatto, che deve restare invisibile.
+- Non è deciso se gli incontri privati Sara–Paul verranno mostrati direttamente, raccontati, o trattati in altro modo; non è deciso se, quando o come l'accordo verrà scoperto da Sara o dal giocatore.
+
+#### Meccaniche da valutare, non approvate
+
+- Più possibili punti d'ingresso Ambra, come per gli altri acceleratori; l'offerta di Joanie del giorno 21 è un aggancio già esistente per il ramo Josh complice, ma non è stabilito che sia il requisito esclusivo o necessario per Paul.
+- Separare l'eventuale stato nascosto di Josh, il suo accordo con Paul, la conoscenza di Sara e le decisioni effettive del giocatore. Nessun valore, flag nuovo, soglia, data, modifica a Suspicion o condizione di finale è fissato qui.
+- Conservare il diritto del giocatore di non approfondire la conoscenza e di rifiutare o interrompere gli incontri. Il consenso alla dinamica fra Josh e Paul non equivale a consenso di Sara all'accordo segreto.
+- Da definire: se il ramo nascerà davvero; ruolo definitivo di Paul, compatibilità con gli otto percorsi e con il ramo trasversale Josh complice, agganci e condizioni Ambra, calendario, scene e punto di vista, conseguenze e finali. Nessuna implementazione autorizzata.
