@@ -5,6 +5,7 @@
 ## Lunedì 22
 - Lavoro 9–17: Barbara commenta l'abbigliamento di Sara; mantenere la scelta sull'abbigliamento del giorno successivo già prevista nel piano del mese.
 - Barbara propone la verifica della lettera anonima sulla morte della giovane prostituta. Sara può accettare o rifiutare; inchiesta professionale indipendente dal percorso personale di Barbara. Eventuale convocazione della stagista secondo le condizioni esistenti.
+- Sempre lunedì, durante il lavoro se Sara ha accettato l'incarico, primo incontro breve con l'amica della vittima, autrice della lettera anonima. La testimone è spaventata, racconta parte della vita dell'amica e fornisce il primo indizio concreto; contatto, luogo e indizio da definire. Nessun incontro se l'incarico è rifiutato.
 - Dopo il lavoro: possibile visita spontanea a Howard per la rotazione delle faccende, se Interest > 50 e gli altri requisiti sono soddisfatti.
 - Sera: Josh torna umiliato da Daniel; mantenere le reazioni e gli effetti già concordati. È il presupposto per il D&D del mercoledì. Non aggiungere altri eventi fissi.
 
@@ -33,6 +34,10 @@
 **Retroscena solo autori:** se Sara non esce né con Joanie né con Simon, è molto probabile che loro due si vedano di nascosto. Non mostrarlo a Sara né al giocatore in questa fase. Nessuna probabilità numerica fissata.
 
 Conservare gli effetti e i rischi già approvati nella scheda del mercoledì, applicandoli solo se i fatti si verificano davvero (Howard può averla vista uscire, rientro tardivo, ecc.).
+
+## Convocazioni di Barbara (promemoria confermato il 26/11)
+
+Ogni nuova giornata lavorativa deve chiamare il motore `call barbara_convocazione` una volta in orario di lavoro. Mantenere il 20%, le soglie esistenti e l'esclusione delle missioni completate; non forzare il sorteggio per far comparire il massaggio. Nessun nuovo test richiesto.
 
 ## Appuntamenti riutilizzabili
 - Jacob: scene autonome e numerate per progressione, indipendenti dalla data. Se l'uscita non avviene, lo step resta disponibile per un'occasione successiva; non avanzare per il solo passaggio del tempo. Quando si scrive un nuovo avvenimento importante, rivedere retroattivamente gli appuntamenti già scritti e inserire brevi dialoghi condizionali legati agli eventi realmente vissuti. Non riscrivere intere scene né anticipare combinazioni non ancora definite.

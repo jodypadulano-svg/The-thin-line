@@ -16,6 +16,7 @@
 | Giorno | Fascia indicativa | Avvenimento | Stato / condizioni |
 |---|---|---|---|
 | **22 lun** | Lavoro | Barbara propone a Sara di verificare la lettera anonima sulla morte sospetta. | Già concordato: Sara può accettare o rifiutare. Filone professionale autonomo. |
+| 22 | Lavoro | Primo incontro con l'amica della vittima, autrice della lettera; primo indizio. | Solo se Sara accetta l'inchiesta; dettagli da definire (26/11). |
 | 22 | Lavoro / rientro | Commento di Barbara all'abbigliamento; eventuale convocazione della stagista; eventuale faccenda spontanea da Howard. | Condizioni esistenti. |
 | 22 | Sera | Josh torna a casa umiliato da Daniel; Sara decide come reagire. | Preesistente, **spostato qui dal 24** (Jody, 25/11). È il motivo per cui mercoledì Josh accetta di andare a giocare. |
 | **23 mar** | Pausa pranzo | **Magnus:** comunica il responso positivo sulle cinquanta pagine del romanzo, con eventuali osservazioni costruttive. | Nuovo 1. Riscontro professionale atteso dopo l'invio del 15 e l'incontro del 20. Dettagli del giudizio da scrivere. |

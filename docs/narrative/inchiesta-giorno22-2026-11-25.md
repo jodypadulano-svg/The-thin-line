@@ -32,6 +32,10 @@ Lunedì 22 Barbara convoca Sara, le mostra la lettera e le **propone**, senza im
 
 **Scelta esplicita del giocatore:** Sara può accettare oppure rifiutare liberamente, senza che Barbara la obblighi. Se accetta, inizia una verifica preliminare e soltanto eventuali riscontri potranno far crescere l'inchiesta. Se rifiuta, non si deve avviare automaticamente il filone investigativo; eventuali conseguenze o possibilità di riprenderlo restano da progettare, senza inventare penalità. Questa scelta di ingresso è distinta dalle successive scelte sul grado di approfondimento.
 
+### Primo incontro con la testimone — decisione del 26/11
+
+Se accetta l'incarico, Sara incontra già lunedì 22 la sex worker adulta amica della vittima, autrice della lettera anonima. È un incontro breve, durante il lavoro: la donna è spaventata e non si fida ancora pienamente di Sara; racconta qualcosa della vita dell'amica e fornisce il primo indizio concreto. L'obiettivo è avviare davvero l'attività investigativa e dare un'identità umana alla vittima. Non presumere che la redazione conosca la mittente prima del contatto. Il modo in cui Sara la rintraccia, il luogo, i nomi e la natura dell'indizio sono ancora da definire. Non anticipare la soluzione del caso. Se Sara rifiuta l'incarico, l'incontro non avviene automaticamente.
+
 ## Un secondo decesso apparentemente scollegato (25/11)
 
 - La morte della giovane prostituta è effettivamente collegata a un altro decesso. Le due morti sono avvenute in modo diverso e in circostanze diverse; inizialmente nessuno ha individuato il loro filo conduttore.

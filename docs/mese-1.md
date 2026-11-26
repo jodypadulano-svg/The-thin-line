@@ -103,6 +103,7 @@ Per il 22–24 valgono anche le condizioni e gli incontri dinamici della [scheda
 |---|---|---|---|---|
 | **22 Lun** | Lavoro | Barbara commenta l'abbigliamento di Sara | Barbara | **Il giorno dopo:** Vestirsi come sempre → — · Una scollatura in più → Barbara +1, Corr +1 |
 |  | Lavoro | Barbara propone l'inchiesta sulla lettera anonima | Barbara | Accettare o rifiutare |
+|  | Lavoro | Primo incontro con l'amica della vittima e primo indizio | Sara, testimone | Solo se ha accettato l'inchiesta; dettagli da definire |
 |  | Sera | Josh torna a casa umiliato da Daniel **(spostata dal 24 il 25/11/2026)** | Josh, Daniel | ★ **Josh è a pezzi:** Consolarlo 🔒 Josh 30 → Josh +3 · Irritarsi per la sua debolezza → Josh -3, Daniel +1, Corr +1 |
 | **23 Mar** | Lavoro / pranzo | Responso positivo di Magnus; spazio per eventuale inchiesta | Magnus | Dettagli da scrivere |
 |  | Dopo il lavoro | Allenamento in palestra | Simon | Se nessun appuntamento già fissato e Interest >= 16, Sara può invitarlo per mercoledì |
