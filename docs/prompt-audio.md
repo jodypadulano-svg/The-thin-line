@@ -34,6 +34,8 @@ Bozza di lavoro | 17 novembre 2026 · Musica generata con **Mureka** (piano con 
 | `daniel_notte` | Il messaggio di Daniel all'1:12, chiusura dell'Episodio 1 (giorno 13) | ✅ |
 | `chiusura_ep1` | Il montaggio dopo i titoli: un ritratto per ogni strada (giorno 13). **Canzone con voce femminile** | ✅ |
 | `darius_caffe` | Giorno 14, caffè con Darius. Entra quando Darius si ricorda della porta del romanzo di Sara. | ✅ |
+| `magnus` | Giorno 20, la casa editrice: l'incontro con Magnus. | ✅ |
+| `the_wink` | Giorno 19, finale forzato «The Wink»: mesi dopo e cartello finale. | ✅ |
 
 **tema_principale**
 ```

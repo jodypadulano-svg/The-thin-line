@@ -454,7 +454,7 @@ label ep2_d19_finale:
 
     ## Mesi dopo.
     $ via_cg()
-    $ musica("chiusura_ep1")
+    $ musica("the_wink")
     $ vai("strip_club", "Some months later")
     $ cg("The club open and full, warm gold light: Sara in a red dress at the end of the bar, radiant, Jacob behind it, a stranger talking to her", "images/cg/ep2/d19_f2_mesi_dopo.webp")
     n "It turns out the club needed somebody who could write. The sign outside, the little programme, the stories about the girls. People come for those now. There's a shelf by the jukebox with her book on it."
@@ -467,7 +467,7 @@ label ep2_d19_finale:
     n "Across the room, in the best armchair, somebody raises a glass."
     n "And winks."
     $ via_cg()
-    $ musica(None)
+    ## Il tema prosegue sul cartello finale.
     $ luogo_corrente = ""
     scene bg nero with fade
     $ finale_visto("The Wink")
