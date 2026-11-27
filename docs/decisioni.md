@@ -4,6 +4,16 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Inchiesta · Verità dei fatti e ricostruzione (Jody, 27/11/2026)
+
+**Stato: decisioni narrative approvate; giorno 22 già sceneggiato, seguito da progettare.** Riferimento aggiornato: [inchiesta dal giorno 22](narrative/inchiesta-giorno22-2026-11-25.md). Le decisioni odierne superano le ipotesi precedenti incompatibili.
+
+- **Organizzazione:** nota e malvista nella città; i personaggi ne parlano negativamente anche fuori dall'inchiesta. Il capo del giro di droga e prostituzione è noto come figura esistente ma la sua identità resta sconosciuta; pubblicamente è un magnate rilevante. Possibile simbolo/tatuaggio degli affiliati, da definire.
+- **Falsa pista Magnus:** il giocatore parte senza sospetti. Indizi progressivi su una figura potente, insieme ai veri segreti di Magnus, lo rendono sospetto; non è lui il mandante. Gli indizi, riletti, devono combaciare meglio col vero colpevole.
+- **Verità:** cold case precedente, poi Nadia Reyes (26 anni), poi morte del detective. Il detective corrotto riscuote pagamenti per il magnate e tiene un'agenda in codice. Nadia la trova, ne comprende l'importanza senza decifrarla, la nasconde (probabilmente a casa); gli uomini del magnate non la trovano. Dawn non sa dell'agenda. Il detective cerca di farsi dire dov'è, ma Nadia muore durante la tortura senza rivelarlo; lui non intendeva ucciderla. Torna a mani vuote e si fa assegnare il caso. Il magnate lo considera l'anello debole e ne decide la successiva eliminazione, non immediata. Questo sostituisce l'ipotesi dell'esecutore distinto per Nadia. Identità del cold case, ordine iniziale del boss e circostanze delle morti ancora da definire.
+- **Ricostruzione:** conservare il giorno 22 già scritto (Dawn, mezza targa). Sara accumula indizi gradualmente; ritroverà l'agenda solo più avanti se approfondisce. Può indagare di propria iniziativa anche sotto falsa identità, senza essere poliziotta o partecipare a un'operazione ufficiale. Resta aperto se conosca il detective prima della morte, il nascondiglio preciso, il codice, il nesso con il cold case, la catena di prove e gli indizi su Magnus. Nessuna data di risoluzione fissata. Nessuna modifica al codice.
+
+
 ### Howard · Fasce delle tenute raddoppiate (Jody, 27/11/2026)
 
 **Stato: applicato in `howard_faccende.rpy`.** Classica 0–99, sexy 100–199, seminuda 200–300, senza abiti oltre 300. Le CG già fatte restano valide.
