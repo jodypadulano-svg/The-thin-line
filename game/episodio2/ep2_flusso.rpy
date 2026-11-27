@@ -15,4 +15,5 @@ label ep2_inizio:
     call ep2_d21
     call ep2_d22
     call ep2_d23
+    call ep2_d24
     return

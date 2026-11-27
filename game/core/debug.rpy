@@ -69,6 +69,12 @@ init python:
                 "Tell him about Jacob.", "Turn the phone over.", "Leave the chat", "«Not much.»",
                 ## Giorno 22
                 "Dress as usual tomorrow.", "«I'll look into it.»", "Ask about Nadia.", "Comfort him.",
+                ## Giorno 24
+                "Keep them for now.", "Go home.", "Leave Joanie out of it.", "Keep the whole picture.",
+                "«Just a walk. I couldn't settle.»",
+                "«I've got so much on. And I come enough already.»", "The good grey dress.", "«I'll wait for the chair.»",
+                "Stay where she is.", "Pass him the blanket and stay put.", "«Nothing, really. Tell me about you.»",
+                "Talk about the book.", "Wave and go.",
             ],
         },
         "barbara": {
@@ -133,6 +139,12 @@ init python:
                 "«Yes. And I feel guilty", "«No, Jo. Not him.»",
                 ## Giorno 22
                 "A little more neckline tomorrow.", "«I'll look into it.»", "Stick to the facts.", "Comfort him.",
+                ## Giorno 24
+                "Give him the fifty pages.", "Offer to help Howard.", "Text Joanie: «Cover for me tonight?»",
+                "Let herself remember them.", "Don't. Don't make it a thing.", "«One more…»", "«I was at Joanie's.»",
+                "«Deal. I'll come more often.»", "Joanie's black top again.", "Sit on his knee.",
+                "Rest her head on his shoulder.", "Stay in the spell and play along.", "Admit it.",
+                "Share the blanket.", "Let it be.", "Let him sleep.", "Ask him about himself.", "Hug him goodbye.",
             ],
         },
         "daniel": {
@@ -197,6 +209,12 @@ init python:
                 "«Yes. And I feel guilty", "«No, Jo. Not him.»",
                 ## Giorno 22
                 "Dress as usual tomorrow.", "«I don't think I'm the right person.»", "Get annoyed at how weak he is.",
+                ## Giorno 24
+                "Give him the fifty pages.", "Leave Joanie out of it.", "Let herself remember them.",
+                "Give him the point, and laugh it off.", "«I should get back.»", "«I was at Joanie's.»",
+                "«Deal. I'll come more often.»", "Joanie's black top again.", "Sit on his knee.",
+                "Rest her head on his shoulder.", "Stay in the spell and play along.", "Admit it.",
+                "Share the blanket.", "Let it be.", "Let him sleep.", "Ask him about himself.", "Hug him goodbye.",
             ],
         },
         "mista": {
