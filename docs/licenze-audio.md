@@ -48,5 +48,6 @@ Effetti e ambienti: **ElevenLabs** (Sound Effects). L'uso commerciale richiede u
 | `game/audio/ambienti/ristorante.ogg` | Elegant restaurant a… (effetto) | — | 17/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/ambienti/pioggia_auto.ogg` | Inside a small car a… (effetto) | — | 17/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/suoni/rossetto.ogg` | Lipstick tube cap pu… (effetto) | — | 17/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
+| `game/audio/suoni/battito.mp3` | A loud heartbeat re… (effetto) | — | 27/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/suoni/calici.ogg` | Several crystal cham… (effetto) | — | 17/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
 | `game/audio/suoni/portiera_auto.ogg` | Car door closing wit… (effetto) | — | 17/11/2026 | ElevenLabs (Sound Effects) — verificare piano a pagamento |
