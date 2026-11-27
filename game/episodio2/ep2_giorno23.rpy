@@ -1,5 +1,8 @@
 ## Giorno 23 · martedì. L'inchiesta si apre soltanto al giorno 22.
-## Le CG mancanti usano il segnaposto di cg(); gli effetti mancanti sono facoltativi.
+## Le CG mancanti usano il segnaposto di cg().
+## Effetti approvati da Jody il 27/11: Magnus +2 e Conf +2 al responso, Josh +1 a cena, Conf +1 per la pista
+## dell'inchiesta e per Scorpione, Simon +2 se invitato in palestra, Howard +1 se Sara si offre,
+## +1 al contatto invitato al telefono. Niente Corruption: la dà l'uscita del 24.
 
 default ep2_d24_appuntamento = None
 default redazione_prossimo_evento = 0
@@ -97,6 +100,7 @@ label redazione_evento_oroscopo:
     ro "You'd better give it to Libra, then. Think what people would say."
     menu:
         "Leave it with Scorpio.":
+            $ confidence(1, "Sara kept the good horoscope for herself.")
             s "I'm keeping it. I have a difficult conversation at lunch."
             ro "Then you'd better eat first. It's there in black and white."
         "Give it to Libra.":
@@ -123,6 +127,7 @@ label ep2_d23_inchiesta:
             call ep2_d23_commissariato
         "Try the supermarket on the receipt." if fatto("ep2_d22_targa"):
             call ep2_d23_supermercato
+    $ confidence(1, "Sara followed a lead on her own.")
     return
 
 label ep2_d23_archivio:
@@ -205,6 +210,8 @@ label ep2_d23_magnus:
     ed "Then leave it. But read it out loud first."
     n "He rests a finger on the papers until she takes them. This time she picks up the cup, too."
     $ segna("ep2_d23_magnus_responso")
+    $ interest("editore", 2, "Magnus wants to read the rest.")
+    $ confidence(2, "Magnus wants to read the whole book.")
     $ via_cg()
     return
 
@@ -253,6 +260,7 @@ label ep2_d23_palestra:
                 s "It would if you did it with me."
                 si "Yeah. Tomorrow? I'd like that."
                 $ ep2_d24_appuntamento = "simon"
+                $ interest("simon", 2, "Sara asked him out for Wednesday.")
             "Leave it there.":
                 s "Thanks for stopping at eight."
                 si "Any time. You can ask for seven, you know."
@@ -271,6 +279,7 @@ label ep2_d23_rientro:
     menu:
         sp "He's in. I have time before dinner if I want to stop."
         "Offer to help Howard.":
+            $ interest("howard", 1, "Sara offered to help.")
             $ via_cg()
             call howard_faccende_dopo_lavoro(True, True, False)
         "Go home.":
@@ -296,6 +305,7 @@ label ep2_d23_cena:
     $ cg("Reverse angle on Josh at dinner, his fork halfway up as he answers with quiet certainty", "images/cg/ep2/d23_g2_josh.webp")
     c "Of course he does."
     n "He says it with his mouth full, as if it's the least surprising thing either of them has said all evening."
+    $ interest("josh", 1, "He never doubted it.")
     $ via_cg()
     return
 
@@ -320,6 +330,7 @@ label ep2_d23_telefono:
 
 label ep2_d23_invito(contatto, invito, risposta):
     $ ep2_d24_appuntamento = contatto
+    $ interest(contatto, 1, "Sara invited them for Wednesday.")
     $ chat_aperta = contatto
     show screen telefono_chat(contatto)
     $ msg("sara", invito, premia_avvio=False)

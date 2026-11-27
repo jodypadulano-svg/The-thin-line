@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 23 · Effetti delle scelte (Jody, 27/11/2026)
+
+**Stato: applicato in `ep2_giorno23.rpy`, test `giorno23`.** Magnus +2 e Confidence +2 al responso; Josh +1 a cena («Of course he does»); Confidence +1 per la pista dell'inchiesta scelta e per «Leave it with Scorpio»; Simon +2 se invitato in palestra; Howard +1 se Sara si offre; +1 al contatto invitato al telefono. Nessuna Corruption: la dà l'uscita del 24 (regola del mercoledì).
+
 ### Inchiesta · Verità dei fatti e ricostruzione (Jody, 27/11/2026)
 
 **Stato: decisioni narrative approvate; giorno 22 già sceneggiato, seguito da progettare.** Riferimento aggiornato: [inchiesta dal giorno 22](narrative/inchiesta-giorno22-2026-11-25.md). Le decisioni odierne superano le ipotesi precedenti incompatibili.
