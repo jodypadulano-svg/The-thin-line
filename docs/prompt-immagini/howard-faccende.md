@@ -47,3 +47,9 @@ Si fanno con un inpaint del solo abito sulle CG classiche. **Divisa sexy (Jody, 
 | ✅ | `howard_faccenda_04_sexy.webp` | `howard_faccenda_04_classica.webp` |
 | ✅ | `howard_faccenda_05_sexy.webp` | `howard_faccenda_05_classica.webp` |
 | ✅ | `howard_faccenda_06_sexy.webp` | `howard_faccenda_06_classica.webp` |
+
+## Aiuto normale, fuori dal Complesso (Jody, 27/11)
+
+| Fatto | File in `game/images/cg/ep2/` | Cosa mostra |
+|---|---|---|
+| ✅ | `howard_aiuto_normale.webp` | Sara coi suoi vestiti al bancone della cucina di Howard mette via la spesa; Howard le porge le scatolette una alla volta, le buste sul pavimento. Nessuna divisa, tono tenero e quotidiano |

@@ -47,6 +47,11 @@ init python:
 label howard_faccende_dopo_lavoro(libero, howard_in_casa, altro_incontro_howard):
     if not howard_puo_fare_faccenda(giorno, FASCE[fascia_corrente], libero, howard_in_casa, altro_incontro_howard, howard_ultima_faccenda_giorno, valore_interest("howard")):
         return False
+    ## Fuori dal Complesso della Crocerossina niente divisa: Sara gli dà una mano
+    ## con qualcosa di normale (Jody, 27/11). La rotazione delle faccende non avanza.
+    if not complesso_crocerossina:
+        call howard_aiuto_normale
+        return True
 
     $ _faccenda_howard = howard_prossima_faccenda
     $ _tenuta_howard = howard_tenuta_faccende(sara_corruption)
@@ -100,3 +105,55 @@ label howard_faccende_dopo_lavoro(libero, howard_in_casa, altro_incontro_howard)
     $ howard_prossima_faccenda = _faccenda_howard % len(HOWARD_FACCENDE) + 1
     $ via_cg()
     return True
+
+
+## --- Aiuto normale, fuori dal Complesso (Jody, 27/11/2026) -------------------------------
+## Una sola CG. Se Interest Howard e Corruption sono entrambe sopra 50 si converge sempre
+## alla scena «Howard...»: Sara può proporsi di aiutarlo più spesso e riattiva il Complesso
+## (acceleratore). Altrimenti «See you next time.» e la scena si ripropone alla visita dopo.
+
+default howard_aiuti_normali = 0
+
+label howard_aiuto_normale:
+    $ vai("casa_howard", "Howard's flat — After work")
+    $ musica("howard")
+    $ cg("Sara in her own clothes at Howard's kitchen counter, putting his shopping away while he hands her the tins one at a time", "images/cg/ep2/howard_aiuto_normale.webp")
+    n "Sara stops at Howard's door and knocks. He's just back from the shops, and the bags are still on the kitchen floor."
+    s "Let me. You sit down."
+    if howard_aiuti_normali == 0:
+        ho "You don't have to, you know."
+        s "I know. Pass me the tins."
+    else:
+        ho "Same shelf as last time. You remember."
+        s "Beans on the left. I remember."
+    n "He hands them up to her one at a time, and tells her which ones his mother used to buy. It takes twenty minutes. It's nice, mostly."
+    $ howard_aiuti_normali += 1
+    $ howard_ultima_faccenda_giorno = giorno
+    $ via_cg()
+    if valore_interest("howard") > 50 and sara_corruption > 50:
+        call howard_proposta_aiuto
+    return
+
+label howard_proposta_aiuto:
+    $ cg("Sara at Howard's door on her way out, turning back; Howard in his armchair looking up at her", "images/cg/ep1/d9_05_casa_howard.webp")
+    sp "The dust on top of the cupboards. The oven. The rug on the balcony that nobody's beaten in years."
+    sp "He really can't manage on his own. He just won't ask."
+    s "Howard..."
+    ho "Yes?"
+    menu:
+        sp "I could just say goodnight."
+        "«See you next time.»":
+            s "See you next time."
+            ho "Next time, then."
+        "«I could come by more often. Help you properly.»" (acceleratore=True):
+            s "I could come by more often. Help you properly, with the house. Not just the shopping."
+            n "Howard looks at her for a long moment, as if he's afraid she'll take it back."
+            ho "Would you? I wouldn't want to be a bother."
+            s "You're not a bother. Somebody should."
+            $ complesso_crocerossina = True
+            $ segna("howard_crocerossina_riattivata")
+            n "{b}Trait activated: Savior Complex — Howard.{/b}"
+            n "{b}From now on, choices that go against Howard are disabled: they will stay visible, in grey, for the rest of the playthrough.{/b}"
+            sp "Poor Howard. No one should have to ask."
+    $ via_cg()
+    return

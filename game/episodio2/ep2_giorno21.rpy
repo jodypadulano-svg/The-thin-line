@@ -80,6 +80,12 @@ label ep2_d21_darius:
             dr "He's proud of you, you know. Josh. He won't say it right, but he is."
             s "I know. He wrote topics on his hand."
             dr "He did that before his driving test."
+            ## Il congedo anche dopo il caffè, così Joanie non lo trova in casa (Jody 27/11).
+            n "At half past eleven he looks at the clock on the oven and says «the convention» again, as if it were news."
+            $ via_cg()
+            $ cg("Darius halfway down the stairs, turning to wave with a croissant in his mouth; Sara laughing in the doorway", "images/cg/ep2/d21_a3_darius_scale.webp")
+            dr "I'm going. I'll tell him you fed me. He'll be jealous of the croissants."
+            n "He takes one for the road anyway. Halfway down he turns and waves with it in his mouth."
         "Send him on to the convention.":
             $ via_cg()
             $ cg("Darius halfway down the stairs, turning to wave with a croissant in his mouth; Sara laughing in the doorway", "images/cg/ep2/d21_a3_darius_scale.webp")

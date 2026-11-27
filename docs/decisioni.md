@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Howard · Aiuto normale e Complesso della Crocerossina (Jody, 27/11/2026)
+
+**Stato: applicato in `howard_faccende.rpy`.** Le faccende da cameriera (divisa, cambio in bagno, serratura) solo con `complesso_crocerossina`. Altrimenti ogni visita d'aiuto è una scena normale con una sola CG (`howard_aiuto_normale`): Sara gli mette via la spesa coi suoi vestiti; la rotazione delle faccende non avanza. Se Interest Howard > 50 e Corruption > 50, dopo l'aiuto normale si converge sempre alla scena «Howard...» / «Yes?»: «See you next time.» → niente (si ripropone alla visita dopo) · «I could come by more often. Help you properly.» (acceleratore) → riattiva il Complesso (`howard_crocerossina_riattivata`), e dalle visite successive partono le faccende. Modifica la regola Interest > 50 per Howard.
+
 ### Giorno 23 · Effetti delle scelte (Jody, 27/11/2026)
 
 **Stato: applicato in `ep2_giorno23.rpy`, test `giorno23`.** Magnus +2 e Confidence +2 al responso; Josh +1 a cena («Of course he does»); Confidence +1 per la pista dell'inchiesta scelta e per «Leave it with Scorpio»; Simon +2 se invitato in palestra; Howard +1 se Sara si offre; +1 al contatto invitato al telefono. Nessuna Corruption: la dà l'uscita del 24 (regola del mercoledì).

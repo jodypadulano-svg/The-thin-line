@@ -6,6 +6,8 @@
 ## niente; riderci su -> risposta calda per Daniel e Corruption +1.
 ## Daniel scrive per primo già dal numero (giorno 13): l'introduzione ha l'entrata.
 
+default d_a3_cibo = "The food was perfect."
+
 init python:
     discorso("daniel_intro", "daniel", ESTRANEI, scrive_lui=True)
     discorso("daniel_a1", "daniel", CONOSCENTI, se="fatto('chat_daniel_intro')")
@@ -321,16 +323,18 @@ label chat_daniel_a3_1:
     if telefono_minuti_blocco("tel_chat_daniel_a3_1_1", "ricevi", 2):
         return
     $ msg("daniel", "I never need to impress. I just refuse to eat badly.")
-    $ msg("daniel", "Did you like it?")
+    ## Dal 18 c'è anche il pranzo: si precisa che è la cena del giorno 3 (Jody, 27/11).
+    $ msg("daniel", "Did you like it, that night?" if giorno >= 18 else "Did you like it?")
     label tel_chat_daniel_a3_1_2:
     if telefono_minuti_blocco("tel_chat_daniel_a3_1_2", "scelta"):
         return
+    $ d_a3_cibo = "That night? The food was perfect." if giorno >= 18 else "The food was perfect."
     menu (screen="scelta_telefono"):
-        "«The food was perfect. The company was... intense.»":
+        "«[d_a3_cibo] The company was... intense.»":
             label tel_chat_daniel_a3_1_3:
             if telefono_minuti_blocco("tel_chat_daniel_a3_1_3", "invia", 1):
                 return
-            $ msg("sara", "The food was perfect. The company was... intense.")
+            $ msg("sara", d_a3_cibo + " The company was... intense.")
             $ caldo()
             label tel_chat_daniel_a3_1_4:
             if telefono_minuti_blocco("tel_chat_daniel_a3_1_4", "ricevi", 1):

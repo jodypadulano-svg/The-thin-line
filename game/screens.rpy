@@ -212,7 +212,11 @@ screen choice(items):
     style_prefix "choice"
 
     ## Il segnaposto [CG] coprirebbe le scelte: lo nascondiamo.
-    on "show" action Hide("segnaposto_cg")
+    ## Con una scelta ambra: battito, bianco e nero, musica in pausa (core/effetti_ambra.rpy).
+    $ _ambra_menu = any(scelta_acceleratore(i.kwargs) for i in items if i.kwargs)
+    on "show" action [Hide("segnaposto_cg"), If(_ambra_menu, Function(ambra_inizio))]
+    on "hide" action Function(ambra_fine)
+    on "replaced" action Function(ambra_fine)
 
     ## Scelta segreta: "..." (segreto=(x, y, larghezza, altezza)):
     ## un'area invisibile sull'immagine, senza effetti al passaggio del mouse
@@ -252,7 +256,7 @@ screen choice(items):
             ## Acceleratori (Jody, 24/11): altro colore, !!! e avviso sotto.
             elif scelta_acceleratore(i.kwargs):
                 button:
-                    action i.action
+                    action [SetVariable("_ambra_scelta", True), i.action]
                     xalign 0.5
                     vbox:
                         xalign 0.5 ypos 0 yanchor 0.0 spacing 2

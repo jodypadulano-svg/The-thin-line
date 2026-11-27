@@ -1,5 +1,6 @@
 ## GENERATO da tools/telefono/componi.py: si modifica tools/telefono/ex.txt.
 
+## «tonight» solo la notte del 19 (The Lantern); dopo «on friday» (Jody, 27/11).
 init python:
     discorso("ex_t1", "ex", ESTRANEI, argomento="Seeing you again", se="fatto('jacob_tornato')")
     discorso("ex_t2", "ex", ESTRANEI, argomento="What I said to you", se="fatto('ep2_d19_detto_tradimento')")
@@ -37,7 +38,7 @@ label chat_ex_t1_1:
     if telefono_minuti_blocco("tel_chat_ex_t1_1_1", "ricevi", 2):
         return
     $ msg("ex", "never left it. you did")
-    $ msg("ex", "you looked good tonight. I'd planned to say something clever and then you turned round")
+    $ msg("ex", ("you looked good tonight." if giorno == 19 else "you looked good on friday.") + " I'd planned to say something clever and then you turned round")
     label tel_chat_ex_t1_1_2:
     if telefono_minuti_blocco("tel_chat_ex_t1_1_2", "scelta"):
         return
@@ -584,7 +585,7 @@ label chat_ex_t4_3:
     label tel_chat_ex_t4_3_1:
     if telefono_minuti_blocco("tel_chat_ex_t4_3_1", "ricevi", 1):
         return
-    $ msg("ex", "you were loud tonight. for a second there the whole place turned round")
+    $ msg("ex", ("you were loud tonight." if giorno == 19 else "you were loud on friday.") + " for a second there the whole place turned round")
     label tel_chat_ex_t4_3_2:
     if telefono_minuti_blocco("tel_chat_ex_t4_3_2", "scelta"):
         return
