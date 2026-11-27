@@ -809,3 +809,15 @@ Il flusso dell'Episodio 2 prosegue dal giorno 14 al [giorno 15](../game/episodio
 | 17/11/2026 | **Giorno 2 approvato da Jody**; lo squat di Joanie si sposta al rack della sala pesi; varianti CG «_top» se Sara indossa il top di Joanie; piano delle inquadrature del giorno 2 | `ep1_giorno02.rpy`, [inquadrature-giorno-02.md](prompt-immagini/inquadrature-giorno-02.md) |
 | 17/11/2026 | **Audio**: musiche ed effetti con Mureka (uso commerciale); comandi `musica()`, `ambiente()`, `suono()` che restano in silenzio se il file manca; inseriti nei giorni 1-2; prompt in [prompt-audio.md](prompt-audio.md) | `core/audio.rpy`, `ep1_giorno01.rpy`, `ep1_giorno02.rpy` |
 | 17/11/2026 | Registro delle licenze audio (certificati Mureka tenuti fuori dal repository) | [licenze-audio.md](licenze-audio.md) |
+
+## Giorno 23 · In the Margins
+
+Sara può seguire l'inchiesta solo se accettata il 22. Altrimenti svolge il lavoro ordinario, con un tiro del 25% per il prossimo evento di redazione, in ordine fisso. Il primo evento scritto è L'oroscopo in prova. La convocazione di Barbara resta indipendente. Il compito aggiunto è la missione 8 del catalogo (Interest 25, Corruption 15).
+
+Per l'archivio resta da definire l'indirizzo del ritrovamento. Per il commissariato resta da scrivere il contenuto del comunicato. I due rami registrano il documento acquisito. Il supermercato registra solo il tentativo, senza assegnare indizi.
+
+Il Giorno 24 leggerà `ep2_d24_appuntamento` (una chiave dei contatti o `None`). Jacob occupa lo slot se ha ricevuto il sì il 21. Simon può essere invitato in palestra; l'unica finestra serale permette di scrivere a Joanie, Darius, Daniel o Howard secondo le soglie concordate. La faccenda di Howard riusa il motore esistente dopo la palestra, se Sara si offre e soddisfa le condizioni.
+
+Audio facoltativo da produrre: `audio/suoni/d23_pagina_bozze`, breve fruscio di un foglio girato e di una matita appoggiata. La musica riprende i temi esistenti di redazione, inchiesta, Magnus, palestra e casa. Le descrizioni nello script indicano le CG da illustrare.
+
+Promemoria per ogni nuova giornata: prevedere un nuovo evento di redazione, un compito di Barbara da quando Sara è stagista e verificare la disponibilità delle faccende di Howard e degli altri eventi ricorrenti.

@@ -285,3 +285,28 @@ flowchart TD
     N -->|Glielo dà · Jacob +2| Z([Fine del giorno 19])
     N -->|No · retroscena, glielo dà Joanie| Z
 ```
+
+## Episodio 2 · Giorno 23
+
+```mermaid
+flowchart TD
+    A[Arrivo in redazione] --> B[Eventuale convocazione di Barbara]
+    B --> C{Inchiesta accettata il 22?}
+    C -->|Sì| D{Una pista}
+    D --> E[Archivio: luogo del ritrovamento]
+    D --> F[Commissariato: comunicato ufficiale]
+    D --> G[Supermercato: nessun indizio]
+    C -->|No| H[Lavoro ordinario: 25% per il prossimo evento]
+    E --> I[Pranzo: responso di Magnus]
+    F --> I
+    G --> I
+    H --> I
+    I --> J[Redazione nel pomeriggio]
+    J --> K[Palestra: possibile invito a Simon]
+    K --> L[Eventuale faccenda da Howard]
+    L --> M[Cena con Josh]
+    M --> N{Appuntamento già fissato?}
+    N -->|No| O[Finestra del telefono]
+    N -->|Sì| P[Fine giornata]
+    O --> P
+```

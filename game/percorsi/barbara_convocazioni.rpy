@@ -20,6 +20,7 @@ init python:
     ## numero: (label, Interest Barbara minimo, Corruption minima, prerequisiti)
     MISSIONI_BARBARA = {
         2: ("barbara_missione_02", 20, 10, ()),
+        8: ("barbara_missione_08", 25, 15, ()),
     }
 
     def barbara_missioni_disponibili():
@@ -92,5 +93,37 @@ label barbara_missione_02:
             ba "Then sit down and keep me company. You can do that, I hope."
             s "I can do that."
             n "They sit. Barbara asks about the piece Sara is working on, and listens to the answer. After ten minutes she puts her necklace back on."
+    $ via_cg()
+    return
+
+## --- Missione 8: le bozze (Interest 25, Corruption 15) ------------------------------------
+label barbara_missione_08:
+    $ suono("telefono_vibra")
+    $ cg("The summons lighting up Sara's phone among the morning proofs", "images/cg/ep2/barbara_m08_00_convocazione.webp")
+    n "Barbara's message arrives without a greeting. {i}My office. Before lunch, please.{/i}"
+    $ via_cg()
+    $ vai("redazione", "Barbara's office — Before lunch")
+    $ musica("barbara")
+    $ cg("Barbara in the office armchair with galley proofs in her lap, her shoes set neatly aside; Sara framed from the shoulders up at the door", "images/cg/ep2/barbara_m08_01_bozze.webp")
+    ba "I need to get through these before they send a second pile."
+    s "Do you want me to read them to you?"
+    ba "No. I'd like you to kiss my feet. One at a time. While I read."
+    n "She lifts the corner of the first page, then lets it settle again. She gives Sara time to answer."
+    menu:
+        "Agree.":
+            s "All right. You'll have to tell me if they put the wrong headline back in."
+            ba "You'll hear me if they do."
+            $ via_cg()
+            $ cg("Low close-up of Barbara holding a turned proof halfway over, Sara beside the armchair, her face seen in profile", "images/cg/ep2/barbara_m08_02_pagina.webp")
+            n "Sara kneels by the armchair and kisses first one foot, then the other. The paper goes very quiet above her."
+            s "Was it the headline?"
+            ba "No. I think I've read the same line three times."
+            n "Sara looks up. Barbara is still holding the same page. They both laugh."
+            $ barbara_completa(8)
+            $ segna("barbara_missione_08_fatta")
+        "Decline.":
+            s "I can help with the proofs. I'd rather leave it there today."
+            ba "All right. Tell me if you see yesterday's headline. I keep asking them to take it out."
+            n "Barbara hands her half the pile. They find the headline on page three."
     $ via_cg()
     return
