@@ -44,21 +44,25 @@ init python:
 
 ## Il calendario chiama questa label al rientro dal lavoro. Indica anche
 ## incontri già avvenuti e incontri fissi previsti più tardi nello stesso giorno.
-label howard_faccende_dopo_lavoro(libero, howard_in_casa, altro_incontro_howard):
+## alla_porta=True: Sara e Howard sono già sulla soglia (giorno 23), niente bussata.
+label howard_faccende_dopo_lavoro(libero, howard_in_casa, altro_incontro_howard, alla_porta=False):
     if not howard_puo_fare_faccenda(giorno, FASCE[fascia_corrente], libero, howard_in_casa, altro_incontro_howard, howard_ultima_faccenda_giorno, valore_interest("howard")):
         return False
     ## Fuori dal Complesso della Crocerossina niente divisa: Sara gli dà una mano
     ## con qualcosa di normale (Jody, 27/11). La rotazione delle faccende non avanza.
     if not complesso_crocerossina:
-        call howard_aiuto_normale
+        call howard_aiuto_normale(alla_porta)
         return True
 
     $ _faccenda_howard = howard_prossima_faccenda
     $ _tenuta_howard = howard_tenuta_faccende(sara_corruption)
     $ _richiesta_howard, _lavoro_howard = HOWARD_FACCENDE[_faccenda_howard - 1]
     $ vai("casa_howard", "Howard's flat — After work")
-    $ cg("Howard answers Sara's knock", "images/cg/ep1/d9_04_howard_porta.webp")
-    n "Sara stops at Howard's door and knocks."
+    if alla_porta:
+        n "Howard steps back from the door to let her in."
+    else:
+        $ cg("Howard answers Sara's knock", "images/cg/ep1/d9_04_howard_porta.webp")
+        n "Sara stops at Howard's door and knocks."
     s "Is there anything I can do to help?"
     ho "Yes. [_richiesta_howard]"
     $ cg("Inside Howard's flat", "images/cg/ep1/d9_05_casa_howard.webp")
@@ -114,11 +118,14 @@ label howard_faccende_dopo_lavoro(libero, howard_in_casa, altro_incontro_howard)
 
 default howard_aiuti_normali = 0
 
-label howard_aiuto_normale:
+label howard_aiuto_normale(alla_porta=False):
     $ vai("casa_howard", "Howard's flat — After work")
     $ musica("howard")
     $ cg("Sara in her own clothes at Howard's kitchen counter, putting his shopping away while he hands her the tins one at a time", "images/cg/ep2/howard_aiuto_normale.webp")
-    n "Sara stops at Howard's door and knocks. He's just back from the shops, and the bags are still on the kitchen floor."
+    if alla_porta:
+        n "He's just back from the shops: the bags are still on the kitchen floor. Sara follows him in."
+    else:
+        n "Sara stops at Howard's door and knocks. He's just back from the shops, and the bags are still on the kitchen floor."
     s "Let me. You sit down."
     if howard_aiuti_normali == 0:
         ho "You don't have to, you know."

@@ -281,7 +281,9 @@ label ep2_d23_rientro:
         "Offer to help Howard.":
             $ interest("howard", 1, "Sara offered to help.")
             $ via_cg()
-            call howard_faccende_dopo_lavoro(True, True, False)
+            call howard_faccende_dopo_lavoro(True, True, False, alla_porta=True)
+            if not _return:
+                ho "That's kind. But I'm all right tonight. Go and have your dinner."
         "Go home.":
             $ via_cg()
     return
