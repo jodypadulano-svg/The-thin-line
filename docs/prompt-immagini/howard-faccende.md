@@ -33,3 +33,17 @@ Tono: quotidiano e un po' buffo, Sara concentrata e serena nel lavoro, Howard ch
 | ✅ | `howard_faccenda_04_classica.webp` | «Scrub the grease off the cupboards.» | Sara in punta di piedi su uno sgabello, braccia alzate, strofina la cima appiccicosa dei pensili; Howard seduto al tavolo di cucina, guarda in su |
 | ✅ | `howard_faccenda_05_classica.webp` | «Wash the windows, inside and out where you can reach.» | Sara alla finestra del soggiorno con spruzzino e panno, poi in ginocchio ad asciugare il davanzale; Howard nella poltrona col giornale abbassato |
 | ✅ | `howard_faccenda_06_classica.webp` | «Move those boxes into the pantry.» | Sara porta uno scatolone pieno stretto al petto attraverso la cucina verso la dispensa aperta, altri scatoloni impilati; Howard indica col dito dove metterli |
+
+## Tenuta «sexy» (Corruption 100–199, fasce raddoppiate da Jody il 27/11)
+
+Si fanno con un inpaint del solo abito sulle CG classiche. **Divisa sexy (Jody, 27/11: deve staccarsi davvero dalla classica):** minivestito nero aderente con gonna corta e svasata molto sopra metà coscia, scollo quadrato basso che mostra la scollatura, maniche corte a sbuffo, piccolo colletto bianco, grembiulino bianco minuscolo con le balze solo in vita, cuffietta bianca, calze nere velate autoreggenti col bordo di pizzo, scarpe nere col tacco. Posa, luce, Howard e stanza invariati. Tono uguale alle classiche: quotidiano, un po' buffo, niente pose esplicite.
+
+| Fatto | File in `game/images/cg/ep2/` | Base |
+|---|---|---|
+| ✅ | `howard_faccenda_regalo_sexy.webp` | nuova: Howard porge la divisa piegata, Sara la tiene davanti a sé e la guarda, sorpresa e divertita (riferimento: `howard_faccenda_regalo_classica.png`) |
+| ✅ | `howard_faccenda_01_sexy.webp` | `howard_faccenda_01_classica.webp` |
+| ✅ | `howard_faccenda_02_sexy.webp` | `howard_faccenda_02_classica.webp` |
+| ✅ | `howard_faccenda_03_sexy.webp` | `howard_faccenda_03_classica.webp` |
+| ✅ | `howard_faccenda_04_sexy.webp` | `howard_faccenda_04_classica.webp` |
+| ✅ | `howard_faccenda_05_sexy.webp` | `howard_faccenda_05_classica.webp` |
+| ✅ | `howard_faccenda_06_sexy.webp` | `howard_faccenda_06_classica.webp` |

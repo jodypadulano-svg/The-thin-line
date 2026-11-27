@@ -187,6 +187,30 @@ label ep2_d21_joanie:
     $ via_cg()
     call ep2_d21_messaggio
     $ via_cg()
+    call ep2_d21_congedo
+    return
+
+
+## --- Tardo pomeriggio: Joanie se ne va, qualche ora dopo (Jody 27/11) ------------------------
+## Nessuna scelta. Il saluto cambia se il messaggio a Jacob è partito o è stato cancellato.
+
+label ep2_d21_congedo:
+    $ vai("casa", "Home — 7 p.m.")
+    n "The afternoon goes the way afternoons with Joanie always go. The bottle, the rest of the pastries, a film neither of them watches, Joanie asleep for twenty minutes with her feet on Sara's knees."
+    n "By seven the light has gone orange and then grey, and Joanie is hunting for her second shoe."
+    $ cg("Joanie on the landing outside the wooden front door, one shoe in her hand, turning back to wave; Sara in the doorway in her socks", "images/cg/ep2/d21_b7_saluto.webp")
+    if fatto("ep2_d21_messaggio_inviato"):
+        ch "Text me the second he answers. The {i}second{/i}."
+        s "Go home, Jo."
+        n "She's already halfway down the stairs. She calls up without turning round."
+        ch "Lowercase suits you!"
+    else:
+        ch "Coward. I love you. Same thing."
+        n "She presses something into Sara's hand: the last pastry, wrapped in a paper napkin, slightly flattened."
+        ch "For later. For courage."
+    $ via_cg()
+    n "Sara puts the cushions back the way they were, two glasses in the sink, the receipt with the agenda in the bin. Then she takes it out of the bin and puts it in a drawer."
+    sp "He'll be home in an hour. The flat should look like a Sunday."
     return
 
 

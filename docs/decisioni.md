@@ -4,6 +4,10 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Howard · Fasce delle tenute raddoppiate (Jody, 27/11/2026)
+
+**Stato: applicato in `howard_faccende.rpy`.** Classica 0–99, sexy 100–199, seminuda 200–300, senza abiti oltre 300. Le CG già fatte restano valide.
+
 ### Regola generale · Consumo di token (Jody, 26/11/2026)
 
 **Stato: regola permanente, in vigore subito.** Se un processo occupa troppi token, l'AI avvisa Jody, si interrompe e propone alternative; riprende solo dopo la sua scelta. Testo in [regole di lavoro](regole-di-lavoro.md), punto 9.
@@ -44,6 +48,7 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 - **La svolta pepata: il messaggio a Jacob.** Joanie prende il telefono di Sara e scrive a Jacob in minuscolo, «così sa che sei tu». Se Sara non ha il numero, Joanie lo digita a memoria. «Let her send it.» → Jacob +1, Corr +1 (`ep2_d21_messaggio_inviato`); la sera Jacob risponde e capisce che l'ha scritto Joanie · «Take the phone back and delete it.» → nessun effetto (`ep2_d21_messaggio_cancellato`); Joanie non se la prende (la loro regola). Joanie non svela nulla di sé.
 - **Sera, dirlo a Josh.** «Tell him about Jacob.» → Josh +1, Conf +1 (`ep2_d21_detto_josh`): Josh si irrigidisce, poi la ringrazia · «Keep it to herself.» → Corr +1 (`ep2_d21_taciuto_josh`).
 - **Jacob scrive per primo** (o risponde al messaggio del pomeriggio), sul divano accanto a Josh. ★ «Answer him.» → Jacob +2, Susp +2 (`ep2_d21_risposto_jacob`); **se Sara ha taciuto a Josh, Susp +1 in più** · «Turn the phone over.» → nessun effetto.
+- **Congedo di Joanie (Jody, 27/11):** verso le 19, «qualche ora dopo», Joanie se ne va; saluto diverso se il messaggio è partito o cancellato; Sara riordina prima che torni Josh. Nessuna scelta. CG `d21_b7_saluto`.
 - **Jacob invita per mercoledì (Jody, 26/11, correzione dopo il test a mano):** solo se Sara gli ha risposto, «wednesday. one drink. same bar.» «Say yes.» → `ep2_d21_jacob_mercoledi` (appuntamento del 24) · «Not this week.» → `ep2_d21_jacob_rifiutato`. Nessun punteggio. CG `d21_c6_invito`.
 - **Notte, la chat (mese-1):** lasciarla → nessun effetto · cancellarla → Corr +1, Susp −1 (il numero resta). Poi il telefono libero dalle 23:00 alle 23:30.
 
@@ -255,7 +260,7 @@ Se il pranzo è confermato, offrire il top nero tra le opzioni solo se Sara lo h
 
 **Ordine:** pavimento della cucina, forno, tappeto, pensili, vetri, scatole della dispensa, doccia, sotto il divano, bucato a mano, letto, frigorifero, pavimento del corridoio, credenza, tende, pentole, sedute delle poltrone, balcone, ripostiglio, battiscopa, pavimento sotto il tavolo.
 
-Alla prima visita Howard manda Sara a cambiarsi in bagno per proteggere i suoi vestiti. La CG bonus mostra Sara mentre si cambia, inquadrata dalla serratura dal punto di vista di Howard. Dalla seconda Sara va a cambiarsi di sua iniziativa. Al cambio di fascia Howard le regala il nuovo abito quando è previsto e lei lo ringrazia. Le quattro fasce sono cameriera classica (0–49), cameriera sexy (50–99), cameriera seminuda (100–150) e faccende senza abiti (151+). **Corruption può superare 100** per decisione di Jody.
+Alla prima visita Howard manda Sara a cambiarsi in bagno per proteggere i suoi vestiti. La CG bonus mostra Sara mentre si cambia, inquadrata dalla serratura dal punto di vista di Howard. Dalla seconda Sara va a cambiarsi di sua iniziativa. Al cambio di fascia Howard le regala il nuovo abito quando è previsto e lei lo ringrazia. Le quattro fasce sono cameriera classica (0–99), cameriera sexy (100–199), cameriera seminuda (200–300) e faccende senza abiti (301+) — **raddoppiate da Jody il 27/11** (prima 0–49, 50–99, 100–150, 151+). **Corruption può superare 100** per decisione di Jody.
 
 **Piano CG:** 20 faccende × 4 tenute = 80 CG, più la CG bonus del primo cambio. Una consegna da chiedere a Jody durante la preparazione di ciascuna giornata di gioco, dal **17 al 97 inclusi**. Si comincia con il pavimento della cucina in tenuta classica. Le CG entrano nella rotazione secondo la faccenda e la Corruption del salvataggio, indipendentemente dal giorno in cui sono state prodotte.
 

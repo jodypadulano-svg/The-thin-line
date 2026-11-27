@@ -390,6 +390,9 @@ init -5 python:
         ora = store.telefono_minuti_ora
         messaggio = (chi, renpy.substitute(testo), immagine, None if ora is None else ora % 1440, store.giorno)
         store.chat_log.setdefault(k, []).append(messaggio)
+        ## Sempre in fondo all'ultimo messaggio, anche con una chat lunga (Jody 27/11):
+        ## il valore oltre il massimo viene letto come «in fondo» dall'adjustment.
+        tel_scorrimento.value = 10 ** 9
         aperto = store.discorso_aperto.get(k)
         if premia_avvio and chi == "sara" and aperto and aperto.pop("premio_avvio", False):
             interest(k, 1, "Sara started a new conversation.")

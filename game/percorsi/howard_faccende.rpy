@@ -27,11 +27,12 @@ define HOWARD_FACCENDE = (
 
 init python:
     def howard_tenuta_faccende(corruzione):
-        if corruzione > 150:
+        ## Fasce raddoppiate da Jody il 27/11: 0-99, 100-199, 200-300, oltre 300.
+        if corruzione > 300:
             return "nuda"
-        if corruzione >= 100:
+        if corruzione >= 200:
             return "seminuda"
-        if corruzione >= 50:
+        if corruzione >= 100:
             return "sexy"
         return "classica"
 
@@ -62,6 +63,8 @@ label howard_faccende_dopo_lavoro(libero, howard_in_casa, altro_incontro_howard)
             $ cg("Howard gives Sara the classic maid uniform", "images/cg/ep2/howard_faccenda_regalo_classica.png")
             ho "Here. I got you a dress and an apron to work in."
         elif _tenuta_howard == "sexy":
+            if renpy.loadable("images/cg/ep2/howard_faccenda_regalo_sexy.webp"):
+                $ cg("Howard gives Sara the shorter maid uniform", "images/cg/ep2/howard_faccenda_regalo_sexy.webp")
             ho "I got you a new uniform. This one's yours too."
             n "Sara unfolds the shorter black dress and the little white apron."
         else:

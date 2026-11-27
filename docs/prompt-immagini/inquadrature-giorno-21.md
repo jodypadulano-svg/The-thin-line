@@ -58,6 +58,7 @@ Jacob non compare: c'è solo il suo nome sullo schermo, che non deve essere legg
 | ✅ | `d21_b5_telefono.webp` | Joanie tiene alto il telefono di Sara, fuori dalla sua portata, e scrive col pollice; Sara è stesa di traverso su di lei, allunga il braccio e ride. Allegria tra amiche, niente di erotico | B2, Joanie, Sara |
 | ✅ | `d21_b6_inviato.webp` | Il telefono a faccia in su sul tavolino fra due pasticcini; le due lo fissano, Joanie con la mano sulla bocca | B5 |
 | ✅ | `d21_b6_cancellato.webp` | Sara stringe il telefono al petto, trionfante e un po' senza fiato, un ginocchio nei pasticcini; Joanie fa il broncio al soffitto con i piedi in grembo a lei | B5 |
+| ✅ | `d21_b7_saluto.webp` | **Congedo (Jody, 27/11), verso le 19:** Joanie sul pianerottolo davanti alla porta di legno di casa (`pianerottolo.webp`), una scarpa in mano, si gira a salutare; Sara sulla soglia in calzini. Luce della sera dalla finestra delle scale | `pianerottolo.webp`, Joanie, Sara, B1 (abiti) |
 | ✅ | `d21_c1_josh_torna.webp` | Josh sulla porta, sfinito e raggiante, con lo scudo di cartone sotto il braccio e la coccarda di carta storta sul petto. Sera, luce calda dell'ingresso | Josh, `casa_soggiorno_sera.webp` |
 | ✅ | `d21_c2_divano.webp` | Sara e Josh sul divano che mangiano noodles dai cartoni, i piedi di lui sul tavolino, le gambe di lei sopra le sue; TV accesa | C1, Sara, Josh |
 | ✅ | `d21_c3_detto.webp` | Josh immobile con le bacchette a mezz'aria, lo sguardo altrove; la mano di Sara sul suo ginocchio | C2 |
