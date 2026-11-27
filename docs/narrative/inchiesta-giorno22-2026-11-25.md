@@ -1,6 +1,6 @@
-# Inchiesta giornalistica dal giorno 22 — 25 novembre 2026
+# Inchiesta giornalistica dal giorno 22 — aggiornamento 27 novembre 2026
 
-**Stato:** progettazione narrativa e ludica, non implementata. Decisioni della conversazione del 25/11; le proposte tecniche e i dettagli aperti sono distinti dal canone. Documento per gli autori: contiene spoiler.
+**Stato:** giorno 22 già sceneggiato in `game/episodio2/ep2_giorno22.rpy`; seguito da progettare. Decisioni del 25–27/11; le proposte tecniche e i dettagli aperti sono distinti dal canone. Documento per gli autori: contiene spoiler.
 
 ## Funzione nel gioco
 - Da lunedì 22, l'inchiesta diventa un filone ricorrente e importante durante le giornate di lavoro di Sara, autonomo dal percorso personale di Barbara (che resta il suo capo). Aggiunge mystery, drama e un elemento crime alla visual novel.
@@ -13,17 +13,27 @@
 - Pubblicamente magnate rispettato, influente e difficilmente raggiungibile; gruppo immobiliare/alberghiero come facciata. In segreto è un boss della criminalità organizzata, controlla narcotraffico e sfruttamento della prostituzione nella città, e ricicla proventi illeciti. La sua vera attività non è di dominio pubblico.
 - Riferimenti psicologici discussi: autocontrollo, disciplina e doppia identità di Gustavo Fring; enorme ricchezza e influenza cittadina di Mr. Burns. Sono riferimenti interni di scrittura, non personaggi da copiare o citare nel gioco.
 - Calmo, pragmatico, dà valore a lealtà, competenza e controllo. Non è redimibile mediante l'amore di Sara. Il suo potere è economico e locale, distinto da quello culturale/editoriale di Magnus. Sara all'inizio può provare una reverenza simile a quella per Magnus.
-- Il boss è il mandante dell'omicidio, non l'esecutore materiale. Sottovaluta una vita che considera irrilevante e la possibilità che qualcuno indaghi.
+- Il boss è il vertice criminale e decide successivamente di eliminare il detective; la morte di Nadia non era intenzionale da parte del detective. La natura dell'ordine iniziale del boss è ancora aperta.
 - **Presentazione indipendente dall'inchiesta:** non introdurlo contestualmente al caso in modo da segnalare subito al giocatore che è il colpevole. Possibile apparizione come ospite a un evento di Magnus o Daniel, in qualità di normale figura pubblica cittadina. Evento e giorno ancora da scegliere; non implicare complicità di Magnus o Daniel. L'eventuale presentazione deve essere coerente con i rami effettivamente percorsi.
 
-## Delitto e personaggi funzionali (verità riservata agli autori)
-1. **Vittima:** giovane prostituta adulta, indicativamente 25–30 anni, sottoposta all'organizzazione. Viene assassinata perché ha scoperto accidentalmente informazioni compromettenti, senza comprenderne necessariamente tutta la portata. La morte è una messa a tacere; il boss presume che nessuno si interesserà davvero a lei. Ricostruirne la vita, le aspirazioni e l'identità affinché Sara possa affezionarsi alla sua memoria. Nome, storia, luogo, data e modalità esatta della morte da definire.
-2. **Amica della vittima:** amica diretta e possibile collega, persona di fiducia. Conosce soltanto informazioni sommarie, non la spiegazione completa dell'omicidio. Ha paura per la propria vita ma vuole giustizia per l'amica. Invia una lettera anonima alla redazione, non alla polizia, perché teme il coinvolgimento di agenti. Sara non conosce inizialmente la sua identità. La fiducia può svilupparsi nel tempo; non consegnare subito la soluzione.
-3. **Poliziotto corrotto:** figura distinta dall'esecutore. Possibile cliente abituale della vittima; attraverso di lui la ragazza scopre accidentalmente un legame compromettente con il magnate. Contribuisce a ostacolare l'indagine ufficiale e costituisce un collegamento narrativo tra l'organizzazione e le istituzioni. Da definire ruolo, grado e responsabilità precise.
-4. **Esecutore materiale:** uomo di fiducia del boss, con precedenti per violenza e ricorrenti periodi di detenzione. Figura distinta dal poliziotto. Nome e storia da definire.
-5. **Mandante:** il magnate sopra descritto.
+## Organizzazione e falsa pista Magnus (27/11)
 
-Ipotesi di retroscena da precisare: la vittima ha riconosciuto il poliziotto e scoperto il suo rapporto con il magnate; potrebbe aver udito una conversazione compromettente e confidato una parte di ciò che sapeva all'amica. La versione ufficiale potrebbe suggerire una lite con un cliente. Fissare il fatto concreto scoperto e la ricostruzione completa prima di scrivere gli indizi definitivi. Nessun dettaglio operativo del delitto è necessario in questa fase.
+- L'organizzazione è nota in città e ha una pessima reputazione; si sa che esiste un capo del giro di droga e prostituzione, ma la sua identità è ignota. Il magnate è invece una figura pubblica molto rilevante, rispettata e mai scoperta. Possibile simbolo/tatuaggio degli affiliati; nome e simbolo da definire. La disapprovazione di vari personaggi deve permeare anche le conversazioni estranee all'inchiesta. Le principali entrate criminali sono droga e sfruttamento della prostituzione; riciclaggio da definire.
+- Sara e il giocatore partono senza sospetti su Magnus o consapevolezza di un mandante potente: inizialmente sembra una singola morte sospetta. Progressivamente emergono indizi su una persona altolocata, forse al di sopra della giustizia.
+- Magnus deve diventare una falsa pista credibile: ha veri segreti, fra cui la sua cerchia BDSM privata (possibile fonte di reticenze). NON è il mandante; i suoi segreti non implicano complicità criminale. Gli stessi indizi, riletti, devono combaciare meglio con il vero colpevole. Indizi concreti e collegamenti da progettare.
+
+## A — Verità dei fatti, riservata agli autori (27/11)
+
+1. **Cold case precedente:** un altro decesso qualche tempo prima di Nadia, noto alla cronaca per un periodo, collegato alla vicenda. Sara potrebbe ricordarlo. Identità, data, causa e connessione esatta da definire; non assumere un serial killer.
+2. **Nadia Reyes**, 26 anni, sex worker, sogna un centro estetico, fa le unghie alle amiche, manda soldi alla sorella minore che crede lavori in albergo. La presenza di un poliziotto come cliente non è di per sé una scoperta straordinaria.
+3. Il detective corrotto riscuote pagamenti per conto del magnate e annota quelli effettuati e mancanti in un'agenda in codice; è incauto perché ritiene il contenuto illeggibile a terzi. Nadia trova l'agenda e capisce che è compromettente, senza decifrarla. Come lo capisce è aperto.
+4. Nadia sottrae/nasconde l'agenda, probabilmente nella propria abitazione, in un luogo difficile da individuare. Gli uomini del magnate la cercano senza trovarla. Nadia non ne parla a Dawn; eventuale confidenza ad altri e nascondiglio preciso da definire. È spaventata nelle due settimane prima della morte.
+5. Il detective cerca di ottenere da Nadia la posizione dell'agenda mediante tortura; Nadia muore senza rivelarla. Lui non intendeva ucciderla e torna dal magnate senza l'agenda. Nessuna modalità della violenza definita. Questa decisione sostituisce la precedente ipotesi dell'esecutore materiale distinto e dell'omicidio deliberatamente commissionato; il ruolo di un eventuale altro uomo di fiducia è da ridefinire. Resta da stabilire l'esatto ordine iniziale del boss.
+6. Il detective si fa assegnare l'indagine sulla morte di Nadia, pur conoscendone la verità. Il caso viene chiuso in una settimana (lettera del giorno 22); versione ufficiale da definire.
+7. Il magnate considera il detective un anello debole che continua a mettere a repentaglio la segretezza dell'organizzazione. Decide di farlo eliminare, ma non subito: nel frattempo Sara raccoglie indizi. Momento, circostanze ed esecutore della morte del detective ancora aperti.
+8. Dawn, amica di Nadia e autrice della lettera anonima, vuole giustizia ma ha paura e non sa dell'agenda.
+
+Ordine: cold case, Nadia, morte successiva del detective. Il magnate è il vero vertice, non Magnus.
 
 ## Lunedì 22 — proposta facoltativa di Barbara (aggiornamento approvato il 25/11)
 Durante il fine settimana arriva in redazione una lettera anonima: contesta la versione ufficiale della morte e riferisce che la vittima aveva paura prima di morire. La mittente è l'amica della vittima, ma Barbara e Sara inizialmente non lo sanno.
@@ -32,21 +42,22 @@ Lunedì 22 Barbara convoca Sara, le mostra la lettera e le **propone**, senza im
 
 **Scelta esplicita del giocatore:** Sara può accettare oppure rifiutare liberamente, senza che Barbara la obblighi. Se accetta, inizia una verifica preliminare e soltanto eventuali riscontri potranno far crescere l'inchiesta. Se rifiuta, non si deve avviare automaticamente il filone investigativo; eventuali conseguenze o possibilità di riprenderlo restano da progettare, senza inventare penalità. Questa scelta di ingresso è distinta dalle successive scelte sul grado di approfondimento.
 
-### Primo incontro con la testimone — decisione del 26/11
+### Primo incontro con Dawn — già sceneggiato il 26/11
 
-Se accetta l'incarico, Sara incontra già lunedì 22 la sex worker adulta amica della vittima, autrice della lettera anonima. È un incontro breve, durante il lavoro: la donna è spaventata e non si fida ancora pienamente di Sara; racconta qualcosa della vita dell'amica e fornisce il primo indizio concreto. L'obiettivo è avviare davvero l'attività investigativa e dare un'identità umana alla vittima. Non presumere che la redazione conosca la mittente prima del contatto. Il modo in cui Sara la rintraccia, il luogo, i nomi e la natura dell'indizio sono ancora da definire. Non anticipare la soluzione del caso. Se Sara rifiuta l'incarico, l'incontro non avviene automaticamente.
+In `game/episodio2/ep2_giorno22.rpy` («Four Lines»): lettera anonima recapitata a mano il sabato, Nadia Reyes, 26 anni, quattro righe di giornale, caso chiuso in una settimana. Sul retro luogo e ora (terza panchina oltre il rimessaggio delle barche, alle 13). Lunedì 22, se accetta, Sara incontra Dawn al fiume in pausa pranzo. Non anticipare o spostare questa scena.
+- Empatia (`ep2_d22_dawn_fiducia`): vita di Nadia, centro estetico, sorella; Dawn indica come ricontattarla (lettera alla porta del giornale di sabato, «for the third bench»).
+- Fatti (`ep2_d22_dawn_fatti`): Nadia aveva visto qualcosa che non avrebbe dovuto; Dawn non vuole essere ricercata.
+- Entrambi: primo indizio (`ep2_d22_targa`), metà targa di una grossa auto scura sconosciuta, scritta sul retro di uno scontrino; Nadia vi era salita normalmente l'ultima sera. Dawn non ha dato l'indizio alla polizia. Proprietario e collegamenti da decidere.
+- Nessun effetto numerico; nessun incontro se rifiuta. Dawn è un personaggio funzionale, non un percorso.
 
-## Un secondo decesso apparentemente scollegato (25/11)
+## B — Ricostruzione di Sara e del giocatore (27/11)
 
-- La morte della giovane prostituta è effettivamente collegata a un altro decesso. Le due morti sono avvenute in modo diverso e in circostanze diverse; inizialmente nessuno ha individuato il loro filo conduttore.
-- Questa connessione offre una pista per l'inchiesta deduttiva di Sara. Da progettare come e quando il giocatore possa riconoscerla attraverso gli indizi.
-- Non sono ancora stabiliti identità della seconda vittima, ordine cronologico delle morti, cause, responsabilità o natura precisa del collegamento. Non dare per scontato che la seconda morte sia un omicidio o che abbia lo stesso esecutore.
-
-## Progressione investigativa
-- Livello 1: identificare l'esecutore materiale.
-- Livello 2: riconoscere che l'omicidio è stato commissionato, comprendere il ruolo del poliziotto.
-- Livello 3: risalire al mandante e dimostrare il collegamento con l'organizzazione criminale.
-- Il giocatore può fermarsi a un livello intermedio, anche credendo di aver concluso il caso. Non basta identificare l'esecutore per scoprire automaticamente il boss. Equilibrio fra banalità e complessità eccessiva; indizi verificabili, inferenze e piste alternative. Distinguere verità, sospetti e prove pubblicabili.
+- Separare la verità dei fatti dal percorso deduttivo. Iniziare dalla lettera, Dawn e mezza targa già presenti nel giorno 22, non rivelare subito il boss o l'agenda. Procedere lentamente tramite indizi che aprono altri indizi. Il cold case emerge senza nesso iniziale evidente.
+- Sara può trovare l'agenda originale soltanto dopo tempo e attraverso la ricostruzione, se approfondisce; non fissare ancora giorno, nascondiglio, codice o catena di indizi.
+- Non è deciso se Sara conosca e parli con il detective prima della sua morte o se apprenda la notizia senza conoscerlo e senza collegarla subito a Nadia. Non sa inizialmente che è corrotto. Nel tempo prima della sua morte continua ad accumulare indizi.
+- Sara può investigare personalmente in diversi luoghi, anche fingendo un'altra identità: non è una poliziotta e non è un'operazione ufficiale. Scene, luoghi, identità e conseguenze da definire.
+- I tre livelli precedenti vanno adattati alla nuova verità: identificazione del responsabile materiale della morte di Nadia; comprensione della corruzione e dei collegamenti; identificazione e prova della responsabilità del vero vertice. Riformulazione di lavoro, non sequenza di scene approvata. Il giocatore può fermarsi a un livello intermedio; distinguere sospetti, verità e prove pubblicabili.
+- La falsa pista Magnus si sviluppa solo in seguito e deve essere superabile mediante indizi riletti correttamente.
 
 ## Fascino come strumento investigativo (approvato il 25/11)
 
@@ -66,4 +77,5 @@ Se accetta l'incarico, Sara incontra già lunedì 22 la sex worker adulta amica 
 - Il caso può rimanere irrisolto per molto tempo; non fissare una scadenza o un giorno di soluzione senza decisione autoriale. Prevedere compatibilità con altri percorsi, appuntamenti e scrittura del romanzo.
 
 ## Da decidere prima della sceneggiatura completa
-Nome, origini, aspetto e scheda del magnate; anagrafiche di vittima, amica, poliziotto ed esecutore; verità esatta scoperta dalla vittima, dinamica e versione ufficiale della morte; catena probatoria e piste alternative; luogo e momento della presentazione sociale indipendente del magnate; ritmo delle giornate di lavoro, modalità di rinuncia e conseguenze professionali, modalità degli eventuali esiti di complicità. Non attribuire coinvolgimenti criminali ad altri personaggi esistenti senza approvazione.
+
+Nome e schede del magnate, del detective e del cold case; nome e simbolo dell'organizzazione; come Nadia riconosce l'importanza dell'agenda, nascondiglio, eventuali terze persone, codice e contenuto; proprietario dell'auto e catena probatoria; versione ufficiale del decesso di Nadia; circostanze e data della morte del detective e suo eventuale incontro con Sara; indizi che fanno sospettare e poi scagionano Magnus; attività di indagine personale; presentazione pubblica indipendente del magnate; ritmo e conseguenze professionali. Nessun dettaglio di questi punti è ancora approvato. Nessuna modifica a Ren'Py con questo aggiornamento.
