@@ -4,6 +4,16 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 26 · Howard, confidenze con Joanie e nuovo invito (28/11/2026)
+
+**Stato: decisioni narrative approvate, da applicare.** La parte investigativa rimane quella già registrata. Questa pianificazione prevale sulle proposte incompatibili del precedente calendario.
+
+- **Pomeriggio al rientro:** un solo invito da Howard, che richiama il prossimo gradino della scala narrativa in base alle visite accettate, non al calendario. Nel percorso più avanzato il 26 si arriva allo step 5 (le tende); chi è rimasto indietro recupera il proprio gradino. Confermate le tende; il percorso di Howard va rallentato rispetto alla bozza precedente, sviluppando i gradini successivi nell'episodio 3. Nessun nuovo gradino specifico approvato. Non prevedere una seconda visita da Howard la sera. La precedente proposta della torta va eventualmente coordinata con il gradino effettivo.
+- **Conseguenza del mercoledì 24:** se Howard ha realmente visto Sara uscire elegante di nascosto, conservare gli esiti e i valori del calendario originale: Interest Howard ≥ 5, mantiene il segreto e lo fa capire a Sara (Howard +2); altrimenti lo racconta casualmente a Josh (Suspicion +3). Integrare nel pomeriggio/passaggio con Howard, senza una seconda visita; non dipende dall'accettazione dell'invito e non inventare un'uscita se non è avvenuta.
+- **Sera da Joanie:** se il 24 Sara è uscita con Daniel, Simon o Jacob, dialogo esteso e specifico per quella persona, coerente con ciò che è realmente successo; il giocatore può confermare, manifestare incertezza o negare l'interesse verso di lui. Joanie reagisce secondo la propria relazione con ciascuno, senza presumere che Sara sia attratta. Valori e dialoghi da definire. La scena delle vecchie fotografie di Sara quando stava con Jacob era già prevista; coordinare con il nuovo dialogo, senza darla per cancellata.
+- **Nuovo invito durante la conversazione:** se l'uscita del 24 con Daniel, Simon o Jacob è andata bene, arriva un messaggio spontaneo da quell'uomo che le chiede se è libera **mercoledì 31** (seconda serata D&D di Josh, non giorno 30). Joanie commenta la coincidenza («See? It's fate!» o equivalente); può osservare la reazione spontanea di Sara, variabile con l'Interest. Il giocatore decide se accettare, restare indeciso o rifiutare. Rispettare la regola di un appuntamento alla volta. Definire i criteri concreti di esito positivo e gli effetti numerici prima dell'implementazione.
+- Nessun codice, asset o test in questo aggiornamento.
+
 ### Giorno 25 · Hugo, palestra e primo allenamento in coppia con Simon (28/11/2026)
 
 **Stato: decisioni narrative approvate; da applicare.** Integra la pianificazione investigativa già registrata. Howard resta previsto per venerdì 26.
