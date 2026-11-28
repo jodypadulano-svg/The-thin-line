@@ -4,6 +4,17 @@ Ogni decisione presa con Jody, in poche righe. Regole d'uso in [regole-di-lavoro
 
 ## Da applicare
 
+### Giorno 25 · Hugo, palestra e primo allenamento in coppia con Simon (28/11/2026)
+
+**Stato: decisioni narrative approvate; da applicare.** Integra la pianificazione investigativa già registrata. Howard resta previsto per venerdì 26.
+
+- **Hugo nel pomeriggio:** dopo il lavoro, Hugo chiede a Sara un aiuto per preparare un discorso professionale, riconoscendo il suo talento nella scrittura; la invita nel suo ufficio. Occasione per incontrarsi fuori dal contesto familiare, facendo emergere la sua autorevolezza. Dettagli del discorso, dialoghi, scelte e punti ancora da definire.
+- **Simon e Joanie, sera del 25:** secondo incontro in cui Sara li sorprende in un momento intimo in palestra, distinto da quello del 17. Due flag separati per le due occasioni. Solo se Sara ha assistito a entrambe si apre, nei giorni successivi (dal 26), un argomento facoltativo nel telefono per parlarne con Joanie. Non anticipare il confronto nella stessa serata. Nessun nuovo effetto numerico approvato.
+- **Contatore palestra:** introdurre una variabile autonoma che conta le sessioni effettivamente svolte da Sara e rappresenta il suo livello di allenamento, separata da Corruption e Interest Simon. Sessioni possibili finora: 2, 8, 13, 15, 17, 20, 23; il 20 è facoltativo e presente nel codice. Il 25 può essere l'ottava sessione. La frequenza può trasformare progressivamente Sara in una vera ragazza da palestra, sempre più conosciuta e corteggiata anche dagli altri frequentatori; ulteriori soglie e scene da definire.
+- **Progressi:** scena speciale in cui Sara compie un esercizio fisicamente impegnativo e Simon si complimenta per i suoi miglioramenti, indipendentemente dall'Interest. Il settimo allenamento era la soglia inizialmente proposta per i complimenti; confermata invece esplicitamente la soglia di otto per l'allenamento in coppia. Verificare se la revisione a otto debba valere anche per i complimenti prima dell'implementazione.
+- **Primo allenamento in coppia:** almeno **8 allenamenti e Interest Simon ≥ 25**. Simon si allena realmente insieme a Sara, trattandola come una compagna di allenamento alla pari, non come una cliente. La scena deve essere un montaggio speciale di **CG, sequenze video e musica di accompagnamento**, che segna il loro primo allenamento in coppia. Prevedere il momento anche se i requisiti maturano in un giorno successivo. Esercizi, inquadrature, brano, eventuali dialoghi e punti da definire. Nessuna soglia di Interest 35 approvata.
+- Nessuna modifica al codice, alle immagini o ai video; test non eseguiti.
+
 ### Inchiesta · Progressione a caselle e lavoro del 24–26 (28/11/2026)
 
 **Stato: decisioni narrative approvate; da applicare.** Supera la scena automatica del 24 e le precedenti ipotesi incompatibili; resta valida la verità dei fatti del 27/11. Giorno 22 invariato. Vita privata e serate del 25–28 ancora da progettare.
