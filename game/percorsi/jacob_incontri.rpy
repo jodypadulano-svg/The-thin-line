@@ -30,7 +30,7 @@ label jacob_incontro_1:
     $ segna("jacob_incontro_1")
     $ vai("strada", "Outside The Lantern — 8:05 p.m.")
     $ ambiente(None)
-    $ musica("locale")
+    $ musica("jacob_ricordi")
     $ cg("The Lantern's shutters down with a small CLOSED WEDNESDAYS card (not readable); Jacob leaning beside the door with his hands in his jacket pockets, Sara arriving under the street light", "images/cg/ep2/jacob1_01_arrivo.webp")
     n "Same bar, he said. The shutters are down. There's a card in the window, and Jacob is leaning beside it as if he'd put it there himself."
     s "It's closed."
@@ -41,6 +41,7 @@ label jacob_incontro_1:
     $ via_cg()
 
     $ vai("strip_club", "Jacob's place — 8:20 p.m.")
+    $ ambiente("locale_chiuso")
     $ cg("Jacob's empty club after hours: chairs upside down on the tables, the stage dark, only the bar and an old jukebox lit; Jacob behind the bar setting down two glasses, Sara on a stool", "images/cg/ep2/jacob1_02_bancone.webp")
     n "The chairs are upside down on the tables. The stage is dark. Only the bar is lit, and a jukebox in the corner that looks older than both of them put together."
     jacob "One drink."
@@ -62,6 +63,7 @@ label jacob_incontro_1:
     $ via_cg()
 
     $ cg("Jacob at the jukebox feeding it a coin, his back half-turned, Sara watching from the bar stool", "images/cg/ep2/jacob1_04_jukebox.webp")
+    $ suono("jukebox")
     n "He goes to the jukebox. He doesn't need to look at the list."
     jacob "Festival. The second year. You danced on my shoes because the field was mud."
     s "I danced on your shoes because you said I couldn't dance."
@@ -93,6 +95,7 @@ label jacob_incontro_1:
             n "He laughs, not at all offended, and puts the bottle back on the shelf. One was one."
             $ via_cg()
             $ cg("Jacob holding the door of his closed club open for Sara, the street light outside, the bar lights going off behind him", "images/cg/ep2/jacob1_08_uscita.webp")
+            $ suono("serranda")
             jacob "Same time next week? I'll bring better stories."
             s "Bring true ones."
             $ via_cg()
@@ -136,6 +139,7 @@ label jacob_incontro_1_rivalutato:
 ## Chiusura della serata dopo il rientro facoltativo «One more…» (la chiama il giorno).
 label jacob_incontro_1_saluto:
     $ cg("Jacob holding the door of his closed club open for Sara, the street light outside, the bar lights going off behind him", "images/cg/ep2/jacob1_08_uscita.webp")
+    $ suono("serranda")
     jacob "Same time next week?"
     s "Count to one first."
     $ via_cg()

@@ -77,8 +77,8 @@ label ep2_d24_mattina:
 
 label ep2_d24_darius:
     $ vai("strada", "The café opposite the newsroom — Lunch")
-    $ ambiente(None)
-    $ musica("casa")
+    $ ambiente("caffe")
+    $ musica("darius_caffe")
     $ cg("The café opposite the newsroom at lunchtime: Darius alone at a window table, streetwear, a dog-eared paperback open with pencil notes in the margins; Sara at the counter with a sandwich, spotting him", "images/cg/ep2/d24_b1_darius_libro.webp")
     n "Darius is at the window table with a paperback. He's holding a pencil. He's using it."
     s "Darius. You read."
@@ -182,6 +182,7 @@ label ep2_d24_josh_esce:
     $ vai("pianerottolo", "Home — 7:10 p.m.")
     $ musica("casa")
     $ cg("Josh at the open wooden front door on the landing, backpack of dice over one shoulder and two packets of biscuits under his arm; Sara leaning on the door frame", "images/cg/ep2/d24_e1_josh_esce.webp")
+    $ suono("dadi")
     c "Dice. Sheet. Biscuits. Biscuits."
     s "Two packets."
     c "One's for the dwarf."
@@ -312,8 +313,8 @@ label ep2_d24_tardi(contatto):
 
 label ep2_d24_uscita_simon:
     $ vai("fiume", "The riverside — 8 p.m.")
-    $ ambiente(None)
-    $ musica("palestra")
+    $ ambiente("fiume_sera")
+    $ musica("muretto")
     $ cg("Simon waiting on the low river wall in a crisp blue shirt instead of gym clothes, two paper bags of burgers beside him; Sara arriving along the path in the evening light", "images/cg/ep2/d24_s1_camicia.webp")
     n "For a second she walks straight past him. He's wearing a shirt. A blue one, with buttons, ironed by someone who meant it."
     si "Sara. Down here."
@@ -330,6 +331,7 @@ label ep2_d24_uscita_simon:
             si "My confidence, about four seconds ago. Sit down."
     $ via_cg()
     $ cg("Sara and Simon side by side on the river wall eating burgers out of paper, legs dangling, the water dark behind them", "images/cg/ep2/d24_s2_muretto.webp")
+    $ suono("carta_hamburger")
     n "The burgers are enormous and slightly too hot. They eat them anyway, with their legs over the wall, like teenagers who haven't been told off yet."
     s "Why this? The gym. You could do anything, with a shirt like that."
     si "I was the skinny one. All through school. Arms like a coat hanger."
@@ -367,8 +369,8 @@ label ep2_d24_uscita_simon:
 label ep2_d24_uscita_daniel:
     call ep2_d24_daniel_abito
     $ vai("locale", "The jazz club — 8:30 p.m.")
-    $ ambiente("locale")
-    $ musica("locale")
+    $ ambiente("jazz_club")
+    $ musica("jazz_club")
     $ cg("A small elegant jazz club before the show: low lamps, an empty stage with a double bass on its stand, Daniel holding a chair out for Sara at a table near the front", "images/cg/ep2/d24_n1_jazz_arrivo.webp")
     n "The club is half empty, the way places are before something starts. A double bass leans on its stand like it's waiting for a bus."
     da "I like it before. You can hear people deciding what kind of evening it's going to be."
@@ -423,6 +425,7 @@ label ep2_d24_uscita_daniel:
             call ep2_d24_daniel_incanto
         "Stay where she is.":
             n "She stays upright, her hands round her glass, and lets the music do all the leaning. It's enough. It's almost too much."
+            $ suono("applausi_jazz")
     $ via_cg()
     $ cg("Outside the club at night: Daniel holding the car door open for Sara, the club sign glowing behind them (not readable)", "images/cg/ep2/d24_n9_uscita.webp")
     da "I'll drop you at the corner. Not the door. I know how these things work."
@@ -455,6 +458,7 @@ label ep2_d24_daniel_incanto:
     n "She doesn't decide to do it. Her head just finds the place, the way a cat finds the one warm patch in a room."
     n "He turns and kisses her hair. Barely. She closes her eyes."
     $ filmato("images/video/ep2/d24_jazz_isolati.webm", stop_music=False)
+    $ suono("applausi_jazz")
     n "For a whole song there's nobody else in the club. Then there is. Applause, glasses, the lady in pearls coughing."
     if sara_corruption < 40 or valore_interest("daniel") < 25:
         return
@@ -581,8 +585,8 @@ label ep2_d24_confida(nota):
 
 label ep2_d24_uscita_amico:
     $ vai("strada", "The café opposite the newsroom — 8 p.m.")
-    $ ambiente(None)
-    $ musica("casa")
+    $ ambiente("caffe")
+    $ musica("darius_caffe")
     $ cg("The café opposite the newsroom in the evening, almost empty, Darius at the counter pointing at a jar of biscuits, Sara laughing beside him", "images/cg/ep2/d24_r1_biscotti.webp")
     dr "Twice in one day. People will talk."
     s "What people?"
@@ -594,6 +598,7 @@ label ep2_d24_uscita_amico:
         dr "You were going to ask with your eyebrows."
     $ via_cg()
     $ cg("Sara and Darius walking the long way home along the river at night, a paper bag of biscuits between them, street lamps on the water", "images/cg/ep2/d24_r2_via_lunga.webp")
+    $ ambiente("fiume_sera")
     n "They take the long way home without either of them suggesting it. Along the river, past the boathouse, past the bench where nobody ever sits."
     menu:
         sp "I've known him for years and I've never really asked him anything."
@@ -629,8 +634,8 @@ label ep2_d24_uscita_amico:
 
 label ep2_d24_uscita_howard:
     $ vai("casa_howard", "Howard's flat — 8 p.m.")
-    $ ambiente("tv_howard")
-    $ musica(None)
+    $ ambiente(None)
+    $ musica("film_howard")
     $ cg("Howard's sofa in the blue light of an old television: Howard at one end, Sara at the other with a cushion between them, a bowl of crisps on the table", "images/cg/ep2/d24_o1_divano.webp")
     ho "It's an old one. {i}September Rain{/i}. I picked it at random."
     n "On the screen, a young woman meets a man with grey hair at a railway station. He carries her suitcase. She looks at him like he's the station clock."
