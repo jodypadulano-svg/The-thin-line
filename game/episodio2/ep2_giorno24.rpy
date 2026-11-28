@@ -464,27 +464,30 @@ label ep2_d24_daniel_incanto:
         return
     $ via_cg()
     $ cg("Daniel leaning close to Sara's ear with a wicked half-smile as the applause dies down, her head still near his shoulder", "images/cg/ep2/d24_n7_sfotto.webp")
-    da "Do you know what your boyfriend asked me today? Whether a spreadsheet could be too green."
-    da "He meant the colour. He'd been worrying about it since Monday."
+    ## Sfottò (Jody, 28/11): «Can you say something for me?» / «Tell me.» / «Where is your boyfriend
+    ## now... and where are you?». Stare al gioco: il video d24_jazz_sfotto contiene tutto lo scambio,
+    ## con la risposta «He's playing D and D. I'm here... with you.». Difenderlo: scambio in testo.
+    n "Daniel leans down to her ear. She knows that look by now. He's going to ask her for something."
     menu:
-        sp "Poor [nome_compagno]. It's not funny. It's a little bit funny."
+        sp "Whatever it is, I could play along. Or not."
         "Stay in the spell and play along.":
             $ segna("ep2_d24_gioco_daniel")
-            $ interest("daniel", 2, "Sara laughed along about her boyfriend.")
-            $ corruption(1, "Sara played along when Daniel teased her boyfriend.")
-            s "What did you tell him?"
-            da "That green is the colour of growth. He wrote it down."
-            s "He'll have it on a mug by Friday."
-            da "Then I'll have to think of something better to say next week."
-            n "Daniel smiles. Not at the joke. At her, still leaning on him, still laughing. As if he's seen exactly where she is, and it's where he wanted her to be."
+            $ interest("daniel", 2, "Sara played his game about her boyfriend.")
+            $ corruption(1, "Sara played along when Daniel teased her about her boyfriend.")
+            $ filmato("images/video/ep2/d24_jazz_sfotto.webm", stop_music=False)
+            n "Daniel smiles. Not at what she said. At her, still leaning on him, pleased with herself. As if he's seen exactly where she is, and it's where he wanted her to be."
             if sara_corruption >= 50 and valore_interest("daniel") >= 32:
                 call ep2_d24_daniel_provocazione
         "Defend [nome_compagno].":
             $ segna("ep2_d24_difende_josh")
             $ interest("josh", 1, "Sara stood up for him.")
-            s "He cares about getting things right. Somebody in that office should."
+            da "Can you say something for me?"
+            s "Tell me."
+            da "Where is your boyfriend now... and where are you?"
+            n "She understands exactly what he wants to hear. She sits up a little."
+            s "He's with his friends. He trusts me. That's where he is."
             da "Touché."
-            n "He says it lightly. But she's sitting up now, and the song is over, and something that was very warm a minute ago has a draught in it."
+            n "He says it lightly. But she's sitting up now, the song is over, and something that was very warm a minute ago has a draught in it."
     return
 
 label ep2_d24_daniel_provocazione:

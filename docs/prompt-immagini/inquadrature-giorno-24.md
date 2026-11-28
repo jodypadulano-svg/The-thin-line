@@ -1,7 +1,7 @@
 # Inquadrature del giorno 24 — «Dice Night»
 
 Decisioni: [registro](../decisioni.md), «Giorno 24». Codice: `game/episodio2/ep2_giorno24.rpy` e `game/percorsi/jacob_incontri.rpy` (Jacob, incontro #1).
-**58 CG + 2 video: 58 fatte, 12 da ritoccare (🔧):** 19 del giorno, 13 di Jacob #1, 3 di Simon, 11 di Daniel (+ 2 video, li fa Jody), 3 di Joanie, 3 di Darius, 6 di Howard. Ogni giocata ne vede solo una parte: le CG C1-C5 sono alternative (una per pista), H1-H3 pure, e si vede una sola uscita.
+**58 CG + 3 video: 58 fatte, 12 da ritoccare (🔧):** 19 del giorno, 13 di Jacob #1, 3 di Simon, 11 di Daniel (+ 2 video, li fa Jody), 3 di Joanie, 3 di Darius, 6 di Howard. Ogni giocata ne vede solo una parte: le CG C1-C5 sono alternative (una per pista), H1-H3 pure, e si vede una sola uscita.
 **Varianti d'abito con Daniel:** Sara sceglie fra abito verde scuro, vestito grigio e top nero di Joanie. Si genera la base col verde; il grigio e il top si fanno **dalla CG originale cambiando solo l'abito** (stessa posa, luce e inquadratura), con suffisso `_grigio` / `_top`. Per ora il codice usa solo la base: le varianti si agganciano quando ci sono.
 
 Cartella base: `C:\Users\Jody\the-thin-line\`. I riferimenti sono in `C:\Users\Jody\the-thin-line\riferimenti\attori\` e `C:\Users\Jody\the-thin-line\riferimenti\luoghi\`.
@@ -116,9 +116,10 @@ Cartella base: `C:\Users\Jody\the-thin-line\`. I riferimenti sono in `C:\Users\J
 | ✅ | `d24_n3_sedia.webp` | Il club ormai pieno: Sara torna dal bagno e trova una signora anziana con le perle seduta al suo posto, Daniel appoggiato allo schienale, divertito | N1, Daniel, Sara |
 | 🔧 | `d24_n4_grembo.webp` | Sara seduta di lato sulle ginocchia di Daniel al tavolo affollato, schiena dritta, bicchiere in mano, parlano con gli altri; le mani di lui ben in vista sul bracciolo | N3, Daniel, Sara |
 | ✅ | `d24_n5_spettacolo.webp` | Lo spettacolo: una cantante al microfono in una pozza di luce calda, la band dietro; Sara e Daniel al tavolo nel buio, i visi illuminati dal palco | N1, Daniel, Sara |
-| 🎬 | `images/video/ep2/d24_jazz_spettacolo.webm` | **Video senza dialoghi (lo fa Jody):** lo spettacolo | — |
+| ✅ | `images/video/ep2/d24_jazz_spettacolo.webm` | **Video senza dialoghi (Jody):** lo spettacolo, la carezza sulla mano (1344×768) | — |
 | ✅ | `d24_n6_capelli.webp` | Primo piano: la testa di Sara sulla spalla di Daniel nel buio, le labbra di lui sui suoi capelli, gli occhi di lei chiusi | N5, Daniel, Sara |
-| 🎬 | `images/video/ep2/d24_jazz_isolati.webm` | **Video (lo fa Jody):** i due isolati dal resto del mondo | — |
+| ✅ | `images/video/ep2/d24_jazz_isolati.webm` | **Video (Jody):** i due isolati dal resto del mondo; nella parte sognata Sara sembra in braccio a Daniel, tenuto così per scelta di Jody (28/11) | — |
+| ✅ | `images/video/ep2/d24_jazz_sfotto.webm` | **Video con dialoghi (Jody, 28/11):** «Can you say something for me?» / «Tell me.» / «Where is your boyfriend now... and where are you?» / «He's playing D and D. I'm here... with you.» Solo nel ramo «Stay in the spell and play along» (1280×720) | — |
 | 🔧 | `d24_n7_sfotto.webp` | Daniel vicino all'orecchio di Sara con un mezzo sorriso malizioso mentre finiscono gli applausi, la testa di lei ancora vicina alla sua spalla | N6, Daniel, Sara |
 | 🔧 | `d24_n8_provoca.webp` | Il viso di Daniel vicinissimo a quello di Sara, occhi divertiti e indagatori; Sara a metà fra una risata e un rossore | N7, Daniel, Sara |
 | ✅ | `d24_n8b_coccole.webp` | Sara rannicchiata contro il petto di Daniel al tavolo, il viso nascosto sulla sua spalla; il braccio di lui intorno a lei, il mento sui suoi capelli, un sorriso soddisfatto | N7, Daniel, Sara |
